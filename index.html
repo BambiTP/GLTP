@@ -22,10 +22,10 @@
       <table class="table" id="mapsTable">
         <thead>
           <tr>
-            <th>Map Name</th>
-            <th>Time To First Cap</th>
-            <th>Set</th>
-            <th>Capping Player</th>
+            <th data-sort="map_name" data-type="string">Map Name</th>
+            <th data-sort="time_to_first_cap" data-type="numeric">Time To First Cap</th>
+            <th data-sort="timestamp" data-type="numeric">Set</th>
+            <th data-sort="capping_player" data-type="string">Capping Player</th>
           </tr>
         </thead>
         <tbody id="mapsTableBody">
@@ -71,83 +71,60 @@
       return player.name;
     }
 
-    // Format milliseconds as "1h 7m 32s 724ms"
-   // function formatTime(ms) {
-    //  const hours = Math.floor(ms / 3600000);
-     // let remainder = ms % 3600000;
-     // const minutes = Math.floor(remainder / 60000);
-      //remainder %= 60000;
-      //const seconds = Math.floor(remainder / 1000);
-      //const milliseconds = remainder % 1000;
-     // 
-     // const parts = [];
-      //if (hours > 0) parts.push(hours + "h");
-      //if (minutes > 0 || hours > 0) parts.push(minutes + "m");
-      //if (seconds > 0 || minutes > 0 || hours > 0) parts.push(seconds + "s");
-      //parts.push(milliseconds + "ms");
-      
-     // return parts.join(" ");
-    //}
-function formatTime(ms) {
-  const hours = Math.floor(ms / 3600000);
-  const minutes = Math.floor((ms % 3600000) / 60000);
-  const seconds = Math.floor((ms % 60000) / 1000);
-  const milliseconds = ms % 1000;
+    // Format milliseconds into a readable time format.
+    function formatTime(ms) {
+      const hours = Math.floor(ms / 3600000);
+      const minutes = Math.floor((ms % 3600000) / 60000);
+      const seconds = Math.floor((ms % 60000) / 1000);
+      const milliseconds = ms % 1000;
 
-  if (hours > 0) {
-    // Format as H:MM:SS.mmm if one hour or more.
-    const minutesStr = minutes.toString().padStart(2, '0');
-    const secondsStr = seconds.toString().padStart(2, '0');
-    const millisStr = milliseconds.toString().padStart(3, '0');
-    return `${hours}:${minutesStr}:${secondsStr}.${millisStr}`;
-  } else if (minutes > 0) {
-    // Format as M:SS.mmm if at least one minute.
-    const secondsStr = seconds.toString().padStart(2, '0');
-    const millisStr = milliseconds.toString().padStart(3, '0');
-    return `${minutes}:${secondsStr}.${millisStr}`;
-  } else {
-    // Format as S.mmm if less than one minute.
-    const millisStr = milliseconds.toString().padStart(3, '0');
-    return `${seconds}.${millisStr}`;
-  }
-}
-
-    // Format timestamp based on elapsed time.
-    function formatRelativeTime(timestamp) {
-  const now = Date.now();
-  const diff = now - new Date(timestamp).getTime(); // ensure timestamp is numeric
-  
-  // Calculate days, hours, minutes.
-  const days = Math.floor(diff / (24 * 3600000));
-  
-  if (days < 1) {
-    const hours = Math.floor(diff / 3600000);
-    if (hours > 0) {
-      return `${hours} hours ago`;
-    } else {
-      const minutes = Math.floor(diff / 60000);
-      return minutes > 0 ? `${minutes} minutes ago` : "just now";
+      if (hours > 0) {
+        const minutesStr = minutes.toString().padStart(2, '0');
+        const secondsStr = seconds.toString().padStart(2, '0');
+        const millisStr = milliseconds.toString().padStart(3, '0');
+        return `${hours}:${minutesStr}:${secondsStr}.${millisStr}`;
+      } else if (minutes > 0) {
+        const secondsStr = seconds.toString().padStart(2, '0');
+        const millisStr = milliseconds.toString().padStart(3, '0');
+        return `${minutes}:${secondsStr}.${millisStr}`;
+      } else {
+        const millisStr = milliseconds.toString().padStart(3, '0');
+        return `${seconds}.${millisStr}`;
+      }
     }
-  } else if (days < 7) {
-    // For records older than one day but less than a week, include days.
-    const hours = Math.floor((diff % (24 * 3600000)) / 3600000);
-    return `${days} days ${hours} hours ago`;
-  } else if (days < 30) {
-    const weeks = Math.floor(days / 7);
-    const remDays = days % 7;
-    return `${weeks} week${weeks !== 1 ? "s" : ""} ${remDays} day${remDays !== 1 ? "s" : ""} ago`;
-  } else if (days < 365) {
-    const months = Math.floor(days / 30);
-    const remDays = days % 30;
-    return `${months} month${months !== 1 ? "s" : ""} ${remDays} day${remDays !== 1 ? "s" : ""} ago`;
-  } else {
-    const years = Math.floor(days / 365);
-    const remDays = days % 365;
-    const months = Math.floor(remDays / 30);
-    return `${years} year${years !== 1 ? "s" : ""} ${months} month${months !== 1 ? "s" : ""} ago`;
-  }
-}
 
+    // Format timestamp as relative time.
+    function formatRelativeTime(timestamp) {
+      const now = Date.now();
+      const diff = now - new Date(timestamp).getTime();
+      const days = Math.floor(diff / (24 * 3600000));
+
+      if (days < 1) {
+        const hours = Math.floor(diff / 3600000);
+        if (hours > 0) {
+          return `${hours} hours ago`;
+        } else {
+          const minutes = Math.floor(diff / 60000);
+          return minutes > 0 ? `${minutes} minutes ago` : "just now";
+        }
+      } else if (days < 7) {
+        const hours = Math.floor((diff % (24 * 3600000)) / 3600000);
+        return `${days} days ${hours} hours ago`;
+      } else if (days < 30) {
+        const weeks = Math.floor(days / 7);
+        const remDays = days % 7;
+        return `${weeks} week${weeks !== 1 ? "s" : ""} ${remDays} day${remDays !== 1 ? "s" : ""} ago`;
+      } else if (days < 365) {
+        const months = Math.floor(days / 30);
+        const remDays = days % 30;
+        return `${months} month${months !== 1 ? "s" : ""} ${remDays} day${remDays !== 1 ? "s" : ""} ago`;
+      } else {
+        const years = Math.floor(days / 365);
+        const remDays = days % 365;
+        const months = Math.floor(remDays / 30);
+        return `${years} year${years !== 1 ? "s" : ""} ${months} month${months !== 1 ? "s" : ""} ago`;
+      }
+    }
 
     // Navigation toggle.
     const mapsLink = document.getElementById('mapsLink');
@@ -182,11 +159,9 @@ function formatTime(ms) {
             // For games completed leaderboard, count each player once per game.
             const seenForGame = new Set();
             record.players.forEach(player => {
-              // Use leaderboard helper functions for leaderboard grouping.
               let key = getLeaderboardPlayerKey(player);
               let displayName = getLeaderboardPlayerDisplayName(player);
               let hasPlayerId = (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) ? true : false;
-              
               if (!seenForGame.has(key)) {
                 if (!gamesCompletedLeaderboard[key]) {
                   gamesCompletedLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
@@ -195,7 +170,6 @@ function formatTime(ms) {
                 seenForGame.add(key);
               }
             });
-            
             // Update best record for each map.
             if (!bestRecords[record.map_name] || record.time_to_first_cap < bestRecords[record.map_name].time_to_first_cap) {
               bestRecords[record.map_name] = record;
@@ -203,119 +177,176 @@ function formatTime(ms) {
           }
         });
 
-        // Build the Maps table from bestRecords.
+        // Prepare records array for the Maps table.
+        let recordsArray = Object.values(bestRecords);
         const mapsTableBody = document.getElementById('mapsTableBody');
-        const sortedRecords = Object.values(bestRecords).sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-sortedRecords.forEach(record => {          const tr = document.createElement('tr');
-          tr.className = "map-row";
 
-          // Map Name cell with clickable details toggle.
-          const mapNameCell = document.createElement('td');
-          mapNameCell.className = "map-name";
-          mapNameCell.textContent = record.map_name;
+        // Function to render the Maps table.
+        function renderMapsTable(records) {
+          mapsTableBody.innerHTML = "";
+          records.forEach(record => {
+            const tr = document.createElement('tr');
+            tr.className = "map-row";
 
-          // Hidden detail section.
-          const detailDiv = document.createElement('div');
-          detailDiv.className = "detail";
-          detailDiv.style.display = "none";
+            // Map Name cell with clickable details toggle.
+            const mapNameCell = document.createElement('td');
+            mapNameCell.className = "map-name";
+            mapNameCell.textContent = record.map_name;
 
-          // Date information.
-          const dateDiv = document.createElement('div');
-          const date = new Date(record.timestamp).toLocaleDateString();
-          dateDiv.textContent = "Date: " + date;
-          detailDiv.appendChild(dateDiv);
+            // Hidden detail section.
+            const detailDiv = document.createElement('div');
+            detailDiv.className = "detail";
+            detailDiv.style.display = "none";
 
-          // Replay hyperlink using uuid.
-          const replayLink = document.createElement('a');
-          replayLink.href = `https://tagpro.koalabeast.com/replays?uuid=${record.uuid}`;
-          replayLink.textContent = "Watch Replay";
-          replayLink.target = "_blank";
-          detailDiv.appendChild(replayLink);
+            // Date information.
+            const dateDiv = document.createElement('div');
+            const date = new Date(record.timestamp).toLocaleDateString();
+            dateDiv.textContent = "Date: " + date;
+            detailDiv.appendChild(dateDiv);
 
-          // Deduplicate players for the detail section using maps helpers.
-          const playersDiv = document.createElement('div');
-          playersDiv.textContent = "Players: ";
-          const uniquePlayers = [];
-          const seenPlayers = new Set();
-          record.players.forEach(player => {
-            let key = getMapsPlayerKey(player);
-            if (!seenPlayers.has(key)) {
-              seenPlayers.add(key);
-              uniquePlayers.push(player);
-            }
-          });
-          uniquePlayers.forEach((player, index) => {
-            if (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
-              const playerLink = document.createElement('a');
-              playerLink.href = `https://tagpro.koalabeast.com/profile/${player.user_id}`;
-              playerLink.textContent = getMapsPlayerDisplayName(player);
-              playersDiv.appendChild(playerLink);
+            // Replay hyperlink using uuid.
+            const replayLink = document.createElement('a');
+            replayLink.href = `https://tagpro.koalabeast.com/replays?uuid=${record.uuid}`;
+            replayLink.textContent = "Watch Replay";
+            replayLink.target = "_blank";
+            detailDiv.appendChild(replayLink);
+
+            // Deduplicate players for the detail section.
+            const playersDiv = document.createElement('div');
+            playersDiv.textContent = "Players: ";
+            const uniquePlayers = [];
+            const seenPlayers = new Set();
+            record.players.forEach(player => {
+              let key = getMapsPlayerKey(player);
+              if (!seenPlayers.has(key)) {
+                seenPlayers.add(key);
+                uniquePlayers.push(player);
+              }
+            });
+            uniquePlayers.forEach((player, index) => {
+              if (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
+                const playerLink = document.createElement('a');
+                playerLink.href = `https://tagpro.koalabeast.com/profile/${player.user_id}`;
+                playerLink.textContent = getMapsPlayerDisplayName(player);
+                playersDiv.appendChild(playerLink);
+              } else {
+                const span = document.createElement('span');
+                span.textContent = getMapsPlayerDisplayName(player);
+                playersDiv.appendChild(span);
+              }
+              if (index < uniquePlayers.length - 1) {
+                playersDiv.appendChild(document.createTextNode(", "));
+              }
+            });
+            detailDiv.appendChild(playersDiv);
+
+            // Additional map information.
+            const infoDiv = document.createElement('div');
+            infoDiv.textContent = "Preset: " + record.preset + " | Map ID: " + record.map_id;
+            detailDiv.appendChild(infoDiv);
+
+            // Toggle detail section on click.
+            mapNameCell.addEventListener('click', function() {
+              detailDiv.style.display = detailDiv.style.display === "none" ? "block" : "none";
+            });
+            mapNameCell.appendChild(detailDiv);
+
+            // Time To First Cap cell.
+            const timeCell = document.createElement('td');
+            timeCell.textContent = formatTime(record.time_to_first_cap);
+
+            // Set (Relative Time) cell.
+            const relativeTimeCell = document.createElement('td');
+            relativeTimeCell.textContent = formatRelativeTime(record.timestamp);
+
+            // Capping Player cell with profile link if available.
+            const capCell = document.createElement('td');
+            if (record.capping_player) {
+              const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
+              let aggregatedKey = getLeaderboardPlayerKey(dummyPlayer);
+              if (!cappingWorldRecordsLeaderboard[aggregatedKey]) {
+                cappingWorldRecordsLeaderboard[aggregatedKey] = { name: getLeaderboardPlayerDisplayName(dummyPlayer), score: 0, hasPlayerId: (record.capping_player_user_id && !/^Some Ball(?:\s*\d+)?$/i.test(record.capping_player)) };
+              }
+              cappingWorldRecordsLeaderboard[aggregatedKey].score += 1;
+
+              if (record.capping_player_user_id && !/^Some Ball(?:\s*\d+)?$/i.test(record.capping_player)) {
+                const capLink = document.createElement('a');
+                capLink.href = `https://tagpro.koalabeast.com/profile/${record.capping_player_user_id}`;
+                capLink.textContent = getMapsPlayerDisplayName(dummyPlayer);
+                capCell.appendChild(capLink);
+              } else {
+                capCell.textContent = getMapsPlayerDisplayName(dummyPlayer);
+              }
             } else {
-              const span = document.createElement('span');
-              span.textContent = getMapsPlayerDisplayName(player);
-              playersDiv.appendChild(span);
+              capCell.textContent = "DNF";
             }
-            if (index < uniquePlayers.length - 1) {
-              playersDiv.appendChild(document.createTextNode(", "));
-            }
+
+            tr.appendChild(mapNameCell);
+            tr.appendChild(timeCell);
+            tr.appendChild(relativeTimeCell);
+            tr.appendChild(capCell);
+            mapsTableBody.appendChild(tr);
           });
-          detailDiv.appendChild(playersDiv);
+        }
 
-          // Additional map information.
-          const infoDiv = document.createElement('div');
-          infoDiv.textContent = "Preset: " + record.preset + " | Map ID: " + record.map_id;
-          detailDiv.appendChild(infoDiv);
+        // Sorting functionality.
+        let currentSort = {
+          property: "timestamp",
+          direction: "desc"
+        };
 
-          // Toggle detail section on click.
-          mapNameCell.addEventListener('click', function() {
-            detailDiv.style.display = detailDiv.style.display === "none" ? "block" : "none";
-          });
-          mapNameCell.appendChild(detailDiv);
-
-          // Time To First Cap cell.
-          const timeCell = document.createElement('td');
-          timeCell.textContent = formatTime(record.time_to_first_cap);
-
-          // Set (Relative Time) cell.
-          const relativeTimeCell = document.createElement('td');
-          relativeTimeCell.textContent = formatRelativeTime(record.timestamp);
-
-          // Capping Player cell with profile link if available.
-          const capCell = document.createElement('td');
-          if (record.capping_player) {
-            // For aggregator update, use leaderboard helpers to aggregate Some Ball entries.
-            const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
-            let aggregatedKey = getLeaderboardPlayerKey(dummyPlayer);
-            // For map row display, use maps helper to show the individual name.
-            let displayName = getMapsPlayerDisplayName(dummyPlayer);
-            
-            if (!cappingWorldRecordsLeaderboard[aggregatedKey]) {
-              cappingWorldRecordsLeaderboard[aggregatedKey] = { name: getLeaderboardPlayerDisplayName(dummyPlayer), score: 0, hasPlayerId: (record.capping_player_user_id && !/^Some Ball(?:\s*\d+)?$/i.test(record.capping_player)) };
-            }
-            cappingWorldRecordsLeaderboard[aggregatedKey].score += 1;
-            
-            if (record.capping_player_user_id && !/^Some Ball(?:\s*\d+)?$/i.test(record.capping_player)) {
-              const capLink = document.createElement('a');
-              capLink.href = `https://tagpro.koalabeast.com/profile/${record.capping_player_user_id}`;
-              capLink.textContent = displayName;
-              capCell.appendChild(capLink);
-            } else {
-              capCell.textContent = displayName;
-            }
+        function sortRecords(property, type) {
+          if (currentSort.property === property) {
+            currentSort.direction = (currentSort.direction === "asc" ? "desc" : "asc");
           } else {
-            capCell.textContent = "DNF";
+            currentSort.property = property;
+            currentSort.direction = "asc";
           }
+          recordsArray.sort((a, b) => {
+            let aVal = a[property];
+            let bVal = b[property];
+            if (property === "capping_player") {
+              aVal = aVal || "DNF";
+              bVal = bVal || "DNF";
+            }
+            if (type === "numeric") {
+              if (property === "timestamp") {
+                const aTime = new Date(aVal).getTime();
+                const bTime = new Date(bVal).getTime();
+                return currentSort.direction === "asc" ? aTime - bTime : bTime - aTime;
+              } else {
+                return currentSort.direction === "asc" ? aVal - bVal : bVal - aVal;
+              }
+            } else {
+              aVal = aVal ? aVal.toLowerCase() : "";
+              bVal = bVal ? bVal.toLowerCase() : "";
+              if (aVal < bVal) return currentSort.direction === "asc" ? -1 : 1;
+              if (aVal > bVal) return currentSort.direction === "asc" ? 1 : -1;
+              return 0;
+            }
+          });
+          renderMapsTable(recordsArray);
+        }
 
-          tr.appendChild(mapNameCell);
-          tr.appendChild(timeCell);
-          tr.appendChild(relativeTimeCell);
-          tr.appendChild(capCell);
-          mapsTableBody.appendChild(tr);
+        // Attach click listeners to header cells.
+        const thElements = document.querySelectorAll("#mapsTable thead th");
+        thElements.forEach(th => {
+          const sortProperty = th.getAttribute("data-sort");
+          const sortType = th.getAttribute("data-type");
+          if (sortProperty && sortType) {
+            th.style.cursor = "pointer";
+            th.addEventListener("click", () => {
+              sortRecords(sortProperty, sortType);
+            });
+          }
         });
+
+        // Initial rendering: sort by timestamp descending.
+        recordsArray.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+        renderMapsTable(recordsArray);
 
         // Build the Overall and Solo leaderboards.
         Object.values(bestRecords).forEach(record => {
-          // Overall World Records using leaderboard helpers.
           const seenForRecord = new Set();
           record.players.forEach(player => {
             let key = getLeaderboardPlayerKey(player);
@@ -330,7 +361,6 @@ sortedRecords.forEach(record => {          const tr = document.createElement('tr
             }
           });
 
-          // Solo Records.
           if (record.is_solo) {
             const seenForSolo = new Set();
             record.players.forEach(player => {
@@ -348,25 +378,20 @@ sortedRecords.forEach(record => {          const tr = document.createElement('tr
           }
         });
 
-        // Render leaderboards in a table-like layout with centered titles.
+        // Render leaderboards.
         function renderLeaderboards() {
           const leaderboardContainer = document.getElementById('leaderboardContainer');
           leaderboardContainer.innerHTML = "";
           
-          // Always show all players.
           function shouldShow(player) {
             return true;
           }
           
-          // Create a leaderboard section as a table.
           function createSection(title, leaderboardObj) {
             const sectionDiv = document.createElement('div');
             sectionDiv.className = "leaderboard-section";
-            
             const table = document.createElement('table');
             table.className = "leaderboard-table";
-            
-            // Title row with centered title and borders.
             const titleRow = document.createElement('tr');
             const titleCell = document.createElement('th');
             titleCell.textContent = title;
@@ -374,8 +399,6 @@ sortedRecords.forEach(record => {          const tr = document.createElement('tr
             titleCell.className = "leaderboard-title";
             titleRow.appendChild(titleCell);
             table.appendChild(titleRow);
-            
-            // Header row for columns.
             const headerRow = document.createElement('tr');
             const nameHeader = document.createElement('th');
             nameHeader.textContent = "Name";
@@ -384,11 +407,9 @@ sortedRecords.forEach(record => {          const tr = document.createElement('tr
             headerRow.appendChild(nameHeader);
             headerRow.appendChild(scoreHeader);
             table.appendChild(headerRow);
-            
             let playersArray = Object.values(leaderboardObj)
               .filter(player => shouldShow(player))
               .sort((a, b) => b.score - a.score);
-              
             playersArray.forEach(player => {
               const row = document.createElement('tr');
               const nameCell = document.createElement('td');
@@ -399,7 +420,6 @@ sortedRecords.forEach(record => {          const tr = document.createElement('tr
               row.appendChild(scoreCell);
               table.appendChild(row);
             });
-            
             sectionDiv.appendChild(table);
             leaderboardContainer.appendChild(sectionDiv);
           }
@@ -410,7 +430,6 @@ sortedRecords.forEach(record => {          const tr = document.createElement('tr
           createSection("Games Completed", gamesCompletedLeaderboard);
         }
         
-        // Initial rendering.
         renderLeaderboards();
       })
       .catch(error => console.error("Error fetching data:", error));
