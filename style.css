@@ -1,0 +1,166 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+/* Top bar for navigation */
+.top-bar {
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.nav a:hover {
+  background-color: #555;
+}
+
+.nav a.active {
+  background-color: #1e90ff;
+  font-weight: bold;
+}
+
+/* Container for side-by-side layout */
+#mapsRecordsContainer {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left side (Maps Table) */
+#mapsTableContainer {
+  flex: 2;
+  overflow-x: auto;
+}
+
+/* Right side (Recent Records) */
+#recentRecords {
+  flex: 1;
+  overflow-x: auto;
+}
+
+/* Table styles for Maps and Recent Records */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/* Further reduce table font size, padding, and row height for a thinner look */
+#mapsRecordsContainer table th,
+#mapsRecordsContainer table td {
+  font-size: 0.8rem;
+  padding: 4px 6px;
+  line-height: 1.1;
+  height: 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+#mapsRecordsContainer table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+#mapsRecordsContainer table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Hidden detail section for map row */
+.map-name {
+  cursor: pointer;
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+.detail {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+  display: none;
+}
+
+/* Leaderboard page styles */
+#leaderboardPage {
+  display: none;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Leaderboard container: arrange sections side by side */
+#leaderboardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Each leaderboard section */
+.leaderboard-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Leaderboard table styles */
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/* Further reduce leaderboard table font size, padding, and row height for a thinner look */
+#leaderboardPage table th,
+#leaderboardPage table td {
+  font-size: 0.7rem;
+  padding: 3px 4px;
+  line-height: 1.1;
+  height: 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+#leaderboardPage table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+#leaderboardPage table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
