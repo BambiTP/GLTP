@@ -34,23 +34,7 @@
       </table>
     </div>
 
-    <!-- Right: 10 Most Recent World Records Table -->
-    <div id="recentRecords" class="table-container">
-      <h3>10 Most Recent World Records</h3>
-      <table class="table" id="recentRecordsTable">
-        <thead>
-          <tr>
-            <th>Map Name</th>
-            <th>Time To First Cap</th>
-            <th>Set</th>
-            <th>Capping Player</th>
-          </tr>
-        </thead>
-        <tbody id="recentRecordsTableBody">
-          <!-- Recent records rows will be inserted here -->
-        </tbody>
-      </table>
-    </div>
+    <!-- The "10 Most Recent World Records" section has been removed -->
   </div>
 
   <!-- Leaderboard page -->
@@ -244,14 +228,14 @@
           const timeCell = document.createElement('td');
           timeCell.textContent = formatTime(record.time_to_first_cap);
 
-          // New Relative Time cell.
+          // Set (Relative Time) cell.
           const relativeTimeCell = document.createElement('td');
           relativeTimeCell.textContent = formatRelativeTime(record.timestamp);
 
           // Capping Player cell with profile link if available.
           const capCell = document.createElement('td');
           if (record.capping_player) {
-            let hasPlayerId, key, displayName;
+            let key, displayName, hasPlayerId;
             if (record.capping_player_user_id) {
               key = record.capping_player_user_id;
               displayName = record.capping_player;
@@ -280,37 +264,6 @@
           tr.appendChild(relativeTimeCell);
           tr.appendChild(capCell);
           mapsTableBody.appendChild(tr);
-        });
-
-        // Create and render the 10 Most Recent World Records table.
-        const recentRecordsTableBody = document.getElementById('recentRecordsTableBody');
-        const recentRecords = Object.values(bestRecords)
-          .sort((a, b) => b.timestamp - a.timestamp)
-          .slice(0, 10);
-        recentRecords.forEach(record => {
-          const tr = document.createElement('tr');
-          
-          // Map Name
-          const mapCell = document.createElement('td');
-          mapCell.textContent = record.map_name;
-          tr.appendChild(mapCell);
-          
-          // Time To First Cap
-          const timeCell = document.createElement('td');
-          timeCell.textContent = formatTime(record.time_to_first_cap);
-          tr.appendChild(timeCell);
-          
-          // Set (Relative Time)
-          const setCell = document.createElement('td');
-          setCell.textContent = formatRelativeTime(record.timestamp);
-          tr.appendChild(setCell);
-          
-          // Capping Player
-          const capCell = document.createElement('td');
-          capCell.textContent = record.capping_player ? record.capping_player : "DNF";
-          tr.appendChild(capCell);
-          
-          recentRecordsTableBody.appendChild(tr);
         });
 
         // Build the Overall and Solo leaderboards.
