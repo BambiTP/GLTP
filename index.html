@@ -33,16 +33,11 @@
         </tbody>
       </table>
     </div>
-
     <!-- The "10 Most Recent World Records" section has been removed -->
   </div>
 
   <!-- Leaderboard page -->
   <div id="leaderboardPage" style="display: none;">
-    <label>
-      <input type="checkbox" id="toggleNonPlayerId" checked>
-      Show players without a playerID
-    </label>
     <div id="leaderboardContainer"></div>
   </div>
 
@@ -52,49 +47,107 @@
     // Allowed names for players without a playerID.
     const allowedNonPlayerIdNames = [";;", "grav", "::", "leopard", "buddy system"];
 
-    // Format milliseconds as "1h 7m 32s 724ms"
-    function formatTime(ms) {
-      const hours = Math.floor(ms / 3600000);
-      let remainder = ms % 3600000;
-      const minutes = Math.floor(remainder / 60000);
-      remainder %= 60000;
-      const seconds = Math.floor(remainder / 1000);
-      const milliseconds = remainder % 1000;
-      
-      const parts = [];
-      if (hours > 0) parts.push(hours + "h");
-      if (minutes > 0 || hours > 0) parts.push(minutes + "m");
-      if (seconds > 0 || minutes > 0 || hours > 0) parts.push(seconds + "s");
-      parts.push(milliseconds + "ms");
-      
-      return parts.join(" ");
+    // Leaderboard helper functions (combine Some Ball entries)
+    function getLeaderboardPlayerKey(player) {
+      if (/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
+        return "Some Balls";
+      }
+      return player.user_id ? player.user_id : player.name;
     }
+
+    function getLeaderboardPlayerDisplayName(player) {
+      if (/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
+        return "Some Balls";
+      }
+      return player.name;
+    }
+
+    // Maps page helper functions (do not combine Some Ball entries)
+    function getMapsPlayerKey(player) {
+      return player.user_id ? player.user_id : player.name;
+    }
+
+    function getMapsPlayerDisplayName(player) {
+      return player.name;
+    }
+
+    // Format milliseconds as "1h 7m 32s 724ms"
+   // function formatTime(ms) {
+    //  const hours = Math.floor(ms / 3600000);
+     // let remainder = ms % 3600000;
+     // const minutes = Math.floor(remainder / 60000);
+      //remainder %= 60000;
+      //const seconds = Math.floor(remainder / 1000);
+      //const milliseconds = remainder % 1000;
+     // 
+     // const parts = [];
+      //if (hours > 0) parts.push(hours + "h");
+      //if (minutes > 0 || hours > 0) parts.push(minutes + "m");
+      //if (seconds > 0 || minutes > 0 || hours > 0) parts.push(seconds + "s");
+      //parts.push(milliseconds + "ms");
+      
+     // return parts.join(" ");
+    //}
+function formatTime(ms) {
+  const hours = Math.floor(ms / 3600000);
+  const minutes = Math.floor((ms % 3600000) / 60000);
+  const seconds = Math.floor((ms % 60000) / 1000);
+  const milliseconds = ms % 1000;
+
+  if (hours > 0) {
+    // Format as H:MM:SS.mmm if one hour or more.
+    const minutesStr = minutes.toString().padStart(2, '0');
+    const secondsStr = seconds.toString().padStart(2, '0');
+    const millisStr = milliseconds.toString().padStart(3, '0');
+    return `${hours}:${minutesStr}:${secondsStr}.${millisStr}`;
+  } else if (minutes > 0) {
+    // Format as M:SS.mmm if at least one minute.
+    const secondsStr = seconds.toString().padStart(2, '0');
+    const millisStr = milliseconds.toString().padStart(3, '0');
+    return `${minutes}:${secondsStr}.${millisStr}`;
+  } else {
+    // Format as S.mmm if less than one minute.
+    const millisStr = milliseconds.toString().padStart(3, '0');
+    return `${seconds}.${millisStr}`;
+  }
+}
 
     // Format timestamp based on elapsed time.
     function formatRelativeTime(timestamp) {
-      const now = Date.now();
-      const diff = now - timestamp;
-      const diffDays = diff / (24 * 3600000);
-      const days = Math.floor(diffDays);
-
-      if (days < 7) {
-        const hours = Math.floor((diff % (24 * 3600000)) / 3600000);
-        return days + " days " + hours + " hours ago";
-      } else if (days < 30) {
-        const weeks = Math.floor(days / 7);
-        const remDays = days % 7;
-        return weeks + " week" + (weeks !== 1 ? "s" : "") + " " + remDays + " day" + (remDays !== 1 ? "s" : "") + " ago";
-      } else if (days < 365) {
-        const months = Math.floor(days / 30);
-        const remDays = days % 30;
-        return months + " month" + (months !== 1 ? "s" : "") + " " + remDays + " day" + (remDays !== 1 ? "s" : "") + " ago";
-      } else {
-        const years = Math.floor(days / 365);
-        const remDays = days % 365;
-        const months = Math.floor(remDays / 30);
-        return years + " year" + (years !== 1 ? "s" : "") + " " + months + " month" + (months !== 1 ? "s" : "") + " ago";
-      }
+  const now = Date.now();
+  const diff = now - new Date(timestamp).getTime(); // ensure timestamp is numeric
+  
+  // Calculate days, hours, minutes.
+  const days = Math.floor(diff / (24 * 3600000));
+  
+  if (days < 1) {
+    const hours = Math.floor(diff / 3600000);
+    if (hours > 0) {
+      return `${hours} hours ago`;
+    } else {
+      const minutes = Math.floor(diff / 60000);
+      return minutes > 0 ? `${minutes} minutes ago` : "just now";
     }
+  } else if (days < 7) {
+    // For records older than one day but less than a week, include days.
+    const hours = Math.floor((diff % (24 * 3600000)) / 3600000);
+    return `${days} days ${hours} hours ago`;
+  } else if (days < 30) {
+    const weeks = Math.floor(days / 7);
+    const remDays = days % 7;
+    return `${weeks} week${weeks !== 1 ? "s" : ""} ${remDays} day${remDays !== 1 ? "s" : ""} ago`;
+  } else if (days < 365) {
+    const months = Math.floor(days / 30);
+    const remDays = days % 30;
+    return `${months} month${months !== 1 ? "s" : ""} ${remDays} day${remDays !== 1 ? "s" : ""} ago`;
+  } else {
+    const years = Math.floor(days / 365);
+    const remDays = days % 365;
+    const months = Math.floor(remDays / 30);
+    return `${years} year${years !== 1 ? "s" : ""} ${months} month${months !== 1 ? "s" : ""} ago`;
+  }
+}
+
 
     // Navigation toggle.
     const mapsLink = document.getElementById('mapsLink');
@@ -129,16 +182,11 @@
             // For games completed leaderboard, count each player once per game.
             const seenForGame = new Set();
             record.players.forEach(player => {
-              let key, displayName, hasPlayerId;
-              if (player.user_id) {
-                key = player.user_id;
-                displayName = player.name;
-                hasPlayerId = true;
-              } else {
-                key = player.name;
-                displayName = player.name;
-                hasPlayerId = false;
-              }
+              // Use leaderboard helper functions for leaderboard grouping.
+              let key = getLeaderboardPlayerKey(player);
+              let displayName = getLeaderboardPlayerDisplayName(player);
+              let hasPlayerId = (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) ? true : false;
+              
               if (!seenForGame.has(key)) {
                 if (!gamesCompletedLeaderboard[key]) {
                   gamesCompletedLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
@@ -157,8 +205,8 @@
 
         // Build the Maps table from bestRecords.
         const mapsTableBody = document.getElementById('mapsTableBody');
-        Object.values(bestRecords).forEach(record => {
-          const tr = document.createElement('tr');
+        const sortedRecords = Object.values(bestRecords).sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+sortedRecords.forEach(record => {          const tr = document.createElement('tr');
           tr.className = "map-row";
 
           // Map Name cell with clickable details toggle.
@@ -184,27 +232,27 @@
           replayLink.target = "_blank";
           detailDiv.appendChild(replayLink);
 
-          // Deduplicate players for the detail section.
+          // Deduplicate players for the detail section using maps helpers.
           const playersDiv = document.createElement('div');
           playersDiv.textContent = "Players: ";
           const uniquePlayers = [];
           const seenPlayers = new Set();
           record.players.forEach(player => {
-            const key = player.user_id ? player.user_id : player.name;
+            let key = getMapsPlayerKey(player);
             if (!seenPlayers.has(key)) {
               seenPlayers.add(key);
               uniquePlayers.push(player);
             }
           });
           uniquePlayers.forEach((player, index) => {
-            if (player.user_id) {
+            if (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
               const playerLink = document.createElement('a');
               playerLink.href = `https://tagpro.koalabeast.com/profile/${player.user_id}`;
-              playerLink.textContent = player.name;
+              playerLink.textContent = getMapsPlayerDisplayName(player);
               playersDiv.appendChild(playerLink);
             } else {
               const span = document.createElement('span');
-              span.textContent = player.name;
+              span.textContent = getMapsPlayerDisplayName(player);
               playersDiv.appendChild(span);
             }
             if (index < uniquePlayers.length - 1) {
@@ -235,26 +283,25 @@
           // Capping Player cell with profile link if available.
           const capCell = document.createElement('td');
           if (record.capping_player) {
-            let key, displayName, hasPlayerId;
-            if (record.capping_player_user_id) {
-              key = record.capping_player_user_id;
-              displayName = record.capping_player;
-              hasPlayerId = true;
+            // For aggregator update, use leaderboard helpers to aggregate Some Ball entries.
+            const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
+            let aggregatedKey = getLeaderboardPlayerKey(dummyPlayer);
+            // For map row display, use maps helper to show the individual name.
+            let displayName = getMapsPlayerDisplayName(dummyPlayer);
+            
+            if (!cappingWorldRecordsLeaderboard[aggregatedKey]) {
+              cappingWorldRecordsLeaderboard[aggregatedKey] = { name: getLeaderboardPlayerDisplayName(dummyPlayer), score: 0, hasPlayerId: (record.capping_player_user_id && !/^Some Ball(?:\s*\d+)?$/i.test(record.capping_player)) };
+            }
+            cappingWorldRecordsLeaderboard[aggregatedKey].score += 1;
+            
+            if (record.capping_player_user_id && !/^Some Ball(?:\s*\d+)?$/i.test(record.capping_player)) {
               const capLink = document.createElement('a');
               capLink.href = `https://tagpro.koalabeast.com/profile/${record.capping_player_user_id}`;
-              capLink.textContent = record.capping_player;
+              capLink.textContent = displayName;
               capCell.appendChild(capLink);
             } else {
-              key = record.capping_player;
-              displayName = record.capping_player;
-              hasPlayerId = false;
-              capCell.textContent = record.capping_player;
+              capCell.textContent = displayName;
             }
-            // Update the Capping World Records leaderboard.
-            if (!cappingWorldRecordsLeaderboard[key]) {
-              cappingWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
-            }
-            cappingWorldRecordsLeaderboard[key].score += 1;
           } else {
             capCell.textContent = "DNF";
           }
@@ -268,19 +315,12 @@
 
         // Build the Overall and Solo leaderboards.
         Object.values(bestRecords).forEach(record => {
-          // Overall World Records.
+          // Overall World Records using leaderboard helpers.
           const seenForRecord = new Set();
           record.players.forEach(player => {
-            let key, displayName, hasPlayerId;
-            if (player.user_id) {
-              key = player.user_id;
-              displayName = player.name;
-              hasPlayerId = true;
-            } else {
-              key = player.name;
-              displayName = player.name;
-              hasPlayerId = false;
-            }
+            let key = getLeaderboardPlayerKey(player);
+            let displayName = getLeaderboardPlayerDisplayName(player);
+            let hasPlayerId = (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) ? true : false;
             if (!seenForRecord.has(key)) {
               if (!worldRecordsLeaderboard[key]) {
                 worldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
@@ -294,16 +334,9 @@
           if (record.is_solo) {
             const seenForSolo = new Set();
             record.players.forEach(player => {
-              let key, displayName, hasPlayerId;
-              if (player.user_id) {
-                key = player.user_id;
-                displayName = player.name;
-                hasPlayerId = true;
-              } else {
-                key = player.name;
-                displayName = player.name;
-                hasPlayerId = false;
-              }
+              let key = getLeaderboardPlayerKey(player);
+              let displayName = getLeaderboardPlayerDisplayName(player);
+              let hasPlayerId = (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) ? true : false;
               if (!seenForSolo.has(key)) {
                 if (!soloWorldRecordsLeaderboard[key]) {
                   soloWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
@@ -319,14 +352,10 @@
         function renderLeaderboards() {
           const leaderboardContainer = document.getElementById('leaderboardContainer');
           leaderboardContainer.innerHTML = "";
-          const showNonPlayerId = document.getElementById('toggleNonPlayerId').checked;
           
-          // Helper: If a player does not have a playerID and is not in the allowed list,
-          // only show them if the checkbox is checked.
+          // Always show all players.
           function shouldShow(player) {
-            if (player.hasPlayerId) return true;
-            if (allowedNonPlayerIdNames.includes(player.name)) return true;
-            return showNonPlayerId;
+            return true;
           }
           
           // Create a leaderboard section as a table.
@@ -383,9 +412,6 @@
         
         // Initial rendering.
         renderLeaderboards();
-        
-        // Re-render leaderboards when the checkbox toggles.
-        document.getElementById('toggleNonPlayerId').addEventListener('change', renderLeaderboards);
       })
       .catch(error => console.error("Error fetching data:", error));
   </script>
