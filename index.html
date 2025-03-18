@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maps & Leaderboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top bar for navigation -->
+  <div class="top-bar">
+    <div class="nav">
+      <a id="mapsLink" class="active">Maps</a>
+      <a id="leaderboardLink">Leaderboard</a>
+    </div>
+  </div>
+
+  <!-- Container for side-by-side layout -->
+  <div id="mapsRecordsContainer">
+    <!-- Left: Maps Table -->
+    <div id="mapsTableContainer" class="table-container">
+      <table class="table" id="mapsTable">
+        <thead>
+          <tr>
+            <th>Map Name</th>
+            <th>Time To First Cap</th>
+            <th>Set</th>
+            <th>Capping Player</th>
+          </tr>
+        </thead>
+        <tbody id="mapsTableBody">
+          <!-- Data rows will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Right: 10 Most Recent World Records Table -->
+    <div id="recentRecords" class="table-container">
+      <h3>10 Most Recent World Records</h3>
+      <table class="table" id="recentRecordsTable">
+        <thead>
+          <tr>
+            <th>Map Name</th>
+            <th>Time To First Cap</th>
+            <th>Set</th>
+            <th>Capping Player</th>
+          </tr>
+        </thead>
+        <tbody id="recentRecordsTableBody">
+          <!-- Recent records rows will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Leaderboard page -->
+  <div id="leaderboardPage" style="display: none;">
+    <label>
+      <input type="checkbox" id="toggleNonPlayerId" checked>
+      Show players without a playerID
+    </label>
+    <div id="leaderboardContainer"></div>
+  </div>
+
+  <script>
+    const dataUrl = "https://worldrecords.bambitp.workers.dev";
+
+    // Allowed names for players without a playerID.
+    const allowedNonPlayerIdNames = [";;", "grav", "::", "leopard", "buddy system"];
+
+    // Format milliseconds as "1h 7m 32s 724ms"
+    function formatTime(ms) {
+      const hours = Math.floor(ms / 3600000);
+      let remainder = ms % 3600000;
+      const minutes = Math.floor(remainder / 60000);
+      remainder %= 60000;
+      const seconds = Math.floor(remainder / 1000);
+      const milliseconds = remainder % 1000;
+      
+      const parts = [];
+      if (hours > 0) parts.push(hours + "h");
+      if (minutes > 0 || hours > 0) parts.push(minutes + "m");
+      if (seconds > 0 || minutes > 0 || hours > 0) parts.push(seconds + "s");
+      parts.push(milliseconds + "ms");
+      
+      return parts.join(" ");
+    }
+
+    // Format timestamp based on elapsed time.
+    function formatRelativeTime(timestamp) {
+      const now = Date.now();
+      const diff = now - timestamp;
+      const diffDays = diff / (24 * 3600000);
+      const days = Math.floor(diffDays);
+
+      if (days < 7) {
+        const hours = Math.floor((diff % (24 * 3600000)) / 3600000);
+        return days + " days " + hours + " hours ago";
+      } else if (days < 30) {
+        const weeks = Math.floor(days / 7);
+        const remDays = days % 7;
+        return weeks + " week" + (weeks !== 1 ? "s" : "") + " " + remDays + " day" + (remDays !== 1 ? "s" : "") + " ago";
+      } else if (days < 365) {
+        const months = Math.floor(days / 30);
+        const remDays = days % 30;
+        return months + " month" + (months !== 1 ? "s" : "") + " " + remDays + " day" + (remDays !== 1 ? "s" : "") + " ago";
+      } else {
+        const years = Math.floor(days / 365);
+        const remDays = days % 365;
+        const months = Math.floor(remDays / 30);
+        return years + " year" + (years !== 1 ? "s" : "") + " " + months + " month" + (months !== 1 ? "s" : "") + " ago";
+      }
+    }
+
+    // Navigation toggle.
+    const mapsLink = document.getElementById('mapsLink');
+    const leaderboardLink = document.getElementById('leaderboardLink');
+
+    mapsLink.addEventListener('click', function() {
+      document.getElementById('mapsRecordsContainer').style.display = "flex";
+      document.getElementById('leaderboardPage').style.display = "none";
+      mapsLink.classList.add('active');
+      leaderboardLink.classList.remove('active');
+    });
+    leaderboardLink.addEventListener('click', function() {
+      document.getElementById('mapsRecordsContainer').style.display = "none";
+      document.getElementById('leaderboardPage').style.display = "block";
+      leaderboardLink.classList.add('active');
+      mapsLink.classList.remove('active');
+    });
+
+    fetch(dataUrl)
+      .then(response => response.json())
+      .then(data => {
+        let bestRecords = {};
+        // Leaderboard objects keyed by a unique identifier.
+        let gamesCompletedLeaderboard = {};
+        let worldRecordsLeaderboard = {};
+        let soloWorldRecordsLeaderboard = {};
+        let cappingWorldRecordsLeaderboard = {};
+
+        // Process each record.
+        data.forEach(record => {
+          if (record.time_to_first_cap !== null) {
+            // For games completed leaderboard, count each player once per game.
+            const seenForGame = new Set();
+            record.players.forEach(player => {
+              let key, displayName, hasPlayerId;
+              if (player.user_id) {
+                key = player.user_id;
+                displayName = player.name;
+                hasPlayerId = true;
+              } else {
+                key = player.name;
+                displayName = player.name;
+                hasPlayerId = false;
+              }
+              if (!seenForGame.has(key)) {
+                if (!gamesCompletedLeaderboard[key]) {
+                  gamesCompletedLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
+                }
+                gamesCompletedLeaderboard[key].score += 1;
+                seenForGame.add(key);
+              }
+            });
+            
+            // Update best record for each map.
+            if (!bestRecords[record.map_name] || record.time_to_first_cap < bestRecords[record.map_name].time_to_first_cap) {
+              bestRecords[record.map_name] = record;
+            }
+          }
+        });
+
+        // Build the Maps table from bestRecords.
+        const mapsTableBody = document.getElementById('mapsTableBody');
+        Object.values(bestRecords).forEach(record => {
+          const tr = document.createElement('tr');
+          tr.className = "map-row";
+
+          // Map Name cell with clickable details toggle.
+          const mapNameCell = document.createElement('td');
+          mapNameCell.className = "map-name";
+          mapNameCell.textContent = record.map_name;
+
+          // Hidden detail section.
+          const detailDiv = document.createElement('div');
+          detailDiv.className = "detail";
+          detailDiv.style.display = "none";
+
+          // Date information.
+          const dateDiv = document.createElement('div');
+          const date = new Date(record.timestamp).toLocaleDateString();
+          dateDiv.textContent = "Date: " + date;
+          detailDiv.appendChild(dateDiv);
+
+          // Replay hyperlink using uuid.
+          const replayLink = document.createElement('a');
+          replayLink.href = `https://tagpro.koalabeast.com/replays?uuid=${record.uuid}`;
+          replayLink.textContent = "Watch Replay";
+          replayLink.target = "_blank";
+          detailDiv.appendChild(replayLink);
+
+          // Deduplicate players for the detail section.
+          const playersDiv = document.createElement('div');
+          playersDiv.textContent = "Players: ";
+          const uniquePlayers = [];
+          const seenPlayers = new Set();
+          record.players.forEach(player => {
+            const key = player.user_id ? player.user_id : player.name;
+            if (!seenPlayers.has(key)) {
+              seenPlayers.add(key);
+              uniquePlayers.push(player);
+            }
+          });
+          uniquePlayers.forEach((player, index) => {
+            if (player.user_id) {
+              const playerLink = document.createElement('a');
+              playerLink.href = `https://tagpro.koalabeast.com/profile/${player.user_id}`;
+              playerLink.textContent = player.name;
+              playersDiv.appendChild(playerLink);
+            } else {
+              const span = document.createElement('span');
+              span.textContent = player.name;
+              playersDiv.appendChild(span);
+            }
+            if (index < uniquePlayers.length - 1) {
+              playersDiv.appendChild(document.createTextNode(", "));
+            }
+          });
+          detailDiv.appendChild(playersDiv);
+
+          // Additional map information.
+          const infoDiv = document.createElement('div');
+          infoDiv.textContent = "Preset: " + record.preset + " | Map ID: " + record.map_id;
+          detailDiv.appendChild(infoDiv);
+
+          // Toggle detail section on click.
+          mapNameCell.addEventListener('click', function() {
+            detailDiv.style.display = detailDiv.style.display === "none" ? "block" : "none";
+          });
+          mapNameCell.appendChild(detailDiv);
+
+          // Time To First Cap cell.
+          const timeCell = document.createElement('td');
+          timeCell.textContent = formatTime(record.time_to_first_cap);
+
+          // New Relative Time cell.
+          const relativeTimeCell = document.createElement('td');
+          relativeTimeCell.textContent = formatRelativeTime(record.timestamp);
+
+          // Capping Player cell with profile link if available.
+          const capCell = document.createElement('td');
+          if (record.capping_player) {
+            let hasPlayerId, key, displayName;
+            if (record.capping_player_user_id) {
+              key = record.capping_player_user_id;
+              displayName = record.capping_player;
+              hasPlayerId = true;
+              const capLink = document.createElement('a');
+              capLink.href = `https://tagpro.koalabeast.com/profile/${record.capping_player_user_id}`;
+              capLink.textContent = record.capping_player;
+              capCell.appendChild(capLink);
+            } else {
+              key = record.capping_player;
+              displayName = record.capping_player;
+              hasPlayerId = false;
+              capCell.textContent = record.capping_player;
+            }
+            // Update the Capping World Records leaderboard.
+            if (!cappingWorldRecordsLeaderboard[key]) {
+              cappingWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
+            }
+            cappingWorldRecordsLeaderboard[key].score += 1;
+          } else {
+            capCell.textContent = "DNF";
+          }
+
+          tr.appendChild(mapNameCell);
+          tr.appendChild(timeCell);
+          tr.appendChild(relativeTimeCell);
+          tr.appendChild(capCell);
+          mapsTableBody.appendChild(tr);
+        });
+
+        // Create and render the 10 Most Recent World Records table.
+        const recentRecordsTableBody = document.getElementById('recentRecordsTableBody');
+        const recentRecords = Object.values(bestRecords)
+          .sort((a, b) => b.timestamp - a.timestamp)
+          .slice(0, 10);
+        recentRecords.forEach(record => {
+          const tr = document.createElement('tr');
+          
+          // Map Name
+          const mapCell = document.createElement('td');
+          mapCell.textContent = record.map_name;
+          tr.appendChild(mapCell);
+          
+          // Time To First Cap
+          const timeCell = document.createElement('td');
+          timeCell.textContent = formatTime(record.time_to_first_cap);
+          tr.appendChild(timeCell);
+          
+          // Set (Relative Time)
+          const setCell = document.createElement('td');
+          setCell.textContent = formatRelativeTime(record.timestamp);
+          tr.appendChild(setCell);
+          
+          // Capping Player
+          const capCell = document.createElement('td');
+          capCell.textContent = record.capping_player ? record.capping_player : "DNF";
+          tr.appendChild(capCell);
+          
+          recentRecordsTableBody.appendChild(tr);
+        });
+
+        // Build the Overall and Solo leaderboards.
+        Object.values(bestRecords).forEach(record => {
+          // Overall World Records.
+          const seenForRecord = new Set();
+          record.players.forEach(player => {
+            let key, displayName, hasPlayerId;
+            if (player.user_id) {
+              key = player.user_id;
+              displayName = player.name;
+              hasPlayerId = true;
+            } else {
+              key = player.name;
+              displayName = player.name;
+              hasPlayerId = false;
+            }
+            if (!seenForRecord.has(key)) {
+              if (!worldRecordsLeaderboard[key]) {
+                worldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
+              }
+              worldRecordsLeaderboard[key].score += 1;
+              seenForRecord.add(key);
+            }
+          });
+
+          // Solo Records.
+          if (record.is_solo) {
+            const seenForSolo = new Set();
+            record.players.forEach(player => {
+              let key, displayName, hasPlayerId;
+              if (player.user_id) {
+                key = player.user_id;
+                displayName = player.name;
+                hasPlayerId = true;
+              } else {
+                key = player.name;
+                displayName = player.name;
+                hasPlayerId = false;
+              }
+              if (!seenForSolo.has(key)) {
+                if (!soloWorldRecordsLeaderboard[key]) {
+                  soloWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
+                }
+                soloWorldRecordsLeaderboard[key].score += 1;
+                seenForSolo.add(key);
+              }
+            });
+          }
+        });
+
+        // Render leaderboards in a table-like layout with centered titles.
+        function renderLeaderboards() {
+          const leaderboardContainer = document.getElementById('leaderboardContainer');
+          leaderboardContainer.innerHTML = "";
+          const showNonPlayerId = document.getElementById('toggleNonPlayerId').checked;
+          
+          // Helper: If a player does not have a playerID and is not in the allowed list,
+          // only show them if the checkbox is checked.
+          function shouldShow(player) {
+            if (player.hasPlayerId) return true;
+            if (allowedNonPlayerIdNames.includes(player.name)) return true;
+            return showNonPlayerId;
+          }
+          
+          // Create a leaderboard section as a table.
+          function createSection(title, leaderboardObj) {
+            const sectionDiv = document.createElement('div');
+            sectionDiv.className = "leaderboard-section";
+            
+            const table = document.createElement('table');
+            table.className = "leaderboard-table";
+            
+            // Title row with centered title and borders.
+            const titleRow = document.createElement('tr');
+            const titleCell = document.createElement('th');
+            titleCell.textContent = title;
+            titleCell.colSpan = 2;
+            titleCell.className = "leaderboard-title";
+            titleRow.appendChild(titleCell);
+            table.appendChild(titleRow);
+            
+            // Header row for columns.
+            const headerRow = document.createElement('tr');
+            const nameHeader = document.createElement('th');
+            nameHeader.textContent = "Name";
+            const scoreHeader = document.createElement('th');
+            scoreHeader.textContent = "Score";
+            headerRow.appendChild(nameHeader);
+            headerRow.appendChild(scoreHeader);
+            table.appendChild(headerRow);
+            
+            let playersArray = Object.values(leaderboardObj)
+              .filter(player => shouldShow(player))
+              .sort((a, b) => b.score - a.score);
+              
+            playersArray.forEach(player => {
+              const row = document.createElement('tr');
+              const nameCell = document.createElement('td');
+              nameCell.textContent = player.name;
+              const scoreCell = document.createElement('td');
+              scoreCell.textContent = player.score;
+              row.appendChild(nameCell);
+              row.appendChild(scoreCell);
+              table.appendChild(row);
+            });
+            
+            sectionDiv.appendChild(table);
+            leaderboardContainer.appendChild(sectionDiv);
+          }
+          
+          createSection("Overall World Records", worldRecordsLeaderboard);
+          createSection("Solo Records", soloWorldRecordsLeaderboard);
+          createSection("Capping Records", cappingWorldRecordsLeaderboard);
+          createSection("Games Completed", gamesCompletedLeaderboard);
+        }
+        
+        // Initial rendering.
+        renderLeaderboards();
+        
+        // Re-render leaderboards when the checkbox toggles.
+        document.getElementById('toggleNonPlayerId').addEventListener('change', renderLeaderboards);
+      })
+      .catch(error => console.error("Error fetching data:", error));
+  </script>
+
+</body>
+</html>
