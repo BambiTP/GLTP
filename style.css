@@ -59,11 +59,6 @@ body {
   overflow-x: auto;
 }
 
-/* Right side (Recent Records) */
-#recentRecords {
-  flex: 1;
-  overflow-x: auto;
-}
 
 /* Table styles for Maps and Recent Records */
 .table-container table {
