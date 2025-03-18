@@ -159,3 +159,11 @@ body {
 input[type="checkbox"] {
   margin-right: 8px;
 }
+#mapsTable thead th:nth-child(2) {
+  text-indent: -210px;
+
+}
+#mapsTable td:nth-child(2) {
+  text-indent: -200px;
+    font-weight: bold;
+}
