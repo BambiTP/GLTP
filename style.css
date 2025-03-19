@@ -78,11 +78,13 @@ body {
   height: 20px;
   border-bottom: 1px solid #ddd;
   text-align: left;
+
 }
 
 #mapsRecordsContainer table th {
   background-color: #f0f0f0;
   font-weight: bold;
+
 }
 
 #mapsRecordsContainer table tr:hover {
@@ -97,13 +99,15 @@ body {
 }
 
 .detail {
-  padding: 10px;
+  display: inline-block; /* Shrinks to fit the content */
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 4px;
+  padding: 5px;  /* Adjust padding to further control the size */
   margin-top: 5px;
-  display: none;
+  max-width: 400px;
 }
+
 
 /* Leaderboard page styles */
 #leaderboardPage {
@@ -166,4 +170,10 @@ input[type="checkbox"] {
 #mapsTable td:nth-child(2) {
   text-indent: -200px;
     font-weight: bold;
+}
+
+.copy-button {
+  top: 3px; /* Move down 3 pixels */
+   position: relative;
+  font-size: 8px; /* Smaller text */
 }
