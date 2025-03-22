@@ -322,8 +322,7 @@
   "Climb Guys": "gZMefGZxggtuiaaaJyaraaksaaamaakE",
   "Shadow Snipes with bomb": "gZMefHbQtaiaaaJyaraaksaaamaaaE"
 };
-
- const dataUrl = "https://worldrecords.bambitp.workers.dev";
+const dataUrl = "https://worldrecords.bambitp.workers.dev";
 
 // Allowed names for players without a playerID.
 const allowedNonPlayerIdNames = [";;", "grav", "::", "leopard", "buddy system"];
@@ -464,51 +463,53 @@ fetch(dataUrl)
           recordsByMap[record.map_name] = [];
         }
         recordsByMap[record.map_name].push(record);
+      }
+    });
 
-        // Update world records leaderboard (using best record per map later).
-        // Here we count each player from the record once.
-        const seenForRecord = new Set();
+    // Now update leaderboards using only the best records per map.
+    Object.values(bestRecords).forEach(record => {
+      // Update overall world records leaderboard.
+      const seenForRecord = new Set();
+      record.players.forEach(player => {
+        let key = getLeaderboardPlayerKey(player);
+        let displayName = getLeaderboardPlayerDisplayName(player);
+        let hasPlayerId = (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name));
+        if (!seenForRecord.has(key)) {
+          if (!worldRecordsLeaderboard[key]) {
+            worldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
+          }
+          worldRecordsLeaderboard[key].score += 1;
+          seenForRecord.add(key);
+        }
+      });
+
+      // Update solo records leaderboard if the best record is a solo run.
+      if (record.is_solo) {
+        const seenForSolo = new Set();
         record.players.forEach(player => {
           let key = getLeaderboardPlayerKey(player);
           let displayName = getLeaderboardPlayerDisplayName(player);
           let hasPlayerId = (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name));
-          if (!seenForRecord.has(key)) {
-            if (!worldRecordsLeaderboard[key]) {
-              worldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
+          if (!seenForSolo.has(key)) {
+            if (!soloWorldRecordsLeaderboard[key]) {
+              soloWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
             }
-            worldRecordsLeaderboard[key].score += 1;
-            seenForRecord.add(key);
+            soloWorldRecordsLeaderboard[key].score += 1;
+            seenForSolo.add(key);
           }
         });
+      }
 
-        // Update solo records leaderboard if applicable.
-        if (record.is_solo) {
-          const seenForSolo = new Set();
-          record.players.forEach(player => {
-            let key = getLeaderboardPlayerKey(player);
-            let displayName = getLeaderboardPlayerDisplayName(player);
-            let hasPlayerId = (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name));
-            if (!seenForSolo.has(key)) {
-              if (!soloWorldRecordsLeaderboard[key]) {
-                soloWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
-              }
-              soloWorldRecordsLeaderboard[key].score += 1;
-              seenForSolo.add(key);
-            }
-          });
+      // Update capping records leaderboard if the best record has a capping player.
+      if (record.capping_player) {
+        const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
+        let key = getLeaderboardPlayerKey(dummyPlayer);
+        let displayName = getLeaderboardPlayerDisplayName(dummyPlayer);
+        let hasPlayerId = (dummyPlayer.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(dummyPlayer.name));
+        if (!cappingWorldRecordsLeaderboard[key]) {
+          cappingWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
         }
-
-        // NEW: Update capping records leaderboard.
-        if (record.capping_player) {
-          const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
-          let key = getLeaderboardPlayerKey(dummyPlayer);
-          let displayName = getLeaderboardPlayerDisplayName(dummyPlayer);
-          let hasPlayerId = (dummyPlayer.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(dummyPlayer.name));
-          if (!cappingWorldRecordsLeaderboard[key]) {
-            cappingWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
-          }
-          cappingWorldRecordsLeaderboard[key].score += 1;
-        }
+        cappingWorldRecordsLeaderboard[key].score += 1;
       }
     });
 
@@ -649,7 +650,6 @@ fetch(dataUrl)
           medalLabelSpan.style.fontWeight = "bold";
           medalLabelSpan.style.marginRight = "8px";
           medalLabelSpan.style.color = medalColors[index];
-
           medalLabelSpan.textContent = medalLabels[index];
 
           // Create the time span with a colored background.
