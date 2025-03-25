@@ -1,855 +1,855 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Maps & Leaderboard</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Maps & Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
 
-  <!-- Top bar for navigation -->
-  <div class="top-bar">
-    <div class="nav">
-      <a id="mapsLink" class="active">Maps</a>
-      <a id="leaderboardLink">Leaderboard</a>
+    <!-- Top bar for navigation -->
+    <div class="top-bar">
+      <div class="nav">
+        <a id="mapsLink" class="active">Maps</a>
+        <a id="leaderboardLink">Leaderboard</a>
+      </div>
     </div>
-  </div>
 
-  <!-- Container for side-by-side layout -->
-  <div id="mapsRecordsContainer">
-    <!-- Left: Maps Table -->
-    <div id="mapsTableContainer" class="table-container">
-      <table class="table" id="mapsTable">
-        <thead>
-          <tr>
-            <th data-sort="map_name" data-type="string">Map Name</th>
-            <th data-sort="time_to_first_cap" data-type="numeric">Time To First Cap</th>
-            <th data-sort="timestamp" data-type="numeric">Set</th>
-            <th data-sort="capping_player" data-type="string">Capping Player</th>
-          </tr>
-        </thead>
-        <tbody id="mapsTableBody">
-          <!-- Data rows will be inserted here -->
-        </tbody>
-      </table>
+    <!-- Container for side-by-side layout -->
+    <div id="mapsRecordsContainer">
+      <!-- Left: Maps Table -->
+      <div id="mapsTableContainer" class="table-container">
+        <table class="table" id="mapsTable">
+          <thead>
+            <tr>
+              <th data-sort="map_name" data-type="string">Map Name</th>
+              <th data-sort="record_time" data-type="numeric">Record Time</th>
+              <th data-sort="timestamp" data-type="numeric">Set</th>
+              <th data-sort="capping_player" data-type="string">Capping Player</th>
+            </tr>
+          </thead>
+          <tbody id="mapsTableBody">
+            <!-- Data rows will be inserted here -->
+          </tbody>
+        </table>
+      </div>
+      <!-- The "10 Most Recent World Records" section has been removed -->
     </div>
-    <!-- The "10 Most Recent World Records" section has been removed -->
-  </div>
 
-  <!-- Leaderboard page -->
-  <div id="leaderboardPage" style="display: none;">
-    <div id="leaderboardContainer"></div>
-  </div>
+    <!-- Leaderboard page -->
+    <div id="leaderboardPage" style="display: none;">
+      <div id="leaderboardContainer"></div>
+    </div>
 
-  <script>
-  const presets = {
-"The Impossible (Portal Edition) 1.0.2": "gZMefGzCggtaiaaaJraaksaaamaaaE",
-"Gem's Buddy System (v1) Official (FWO)": "gZMefGzDggtaiaaaJraaksaaamabWE",
-"Uptown Funk (2 Jumps) (Instant Bombs)": "gZMefGzEggtaiaaaJraaksaaamaaaE",
-"A Castle on a Cloud 1.0.8": "gZMefGzFggtaiaaaJraaksaaamaaaE",
-"Buddy Pipe System Version 1.0.1": "gZMefGzIggtaiaaaJraaksaaamaaaE",
-"Quick Race (1v1)": "gZMefGzKggtaiaaaJraaksaaamaaaE",
-"A-Maze-Ing (Official)": "gZMefGzLggtaiaaaJraaksaaamaaaE",
-"Mini Test (Official FWO)": "gZMefGzMggtaiaaaJraaksaaamaaaE",
-"The Challenge of Secrets (Official FWO)": "gZMefGzNggtaiaaaJraaksaaamaaaE",
-"Cancer[buddy system] (Official)": "gZMefGAnggtaiaaaJraaksaaamaaaE",
-"AUSSIE Teambuilding 1 v1.3 (Official FWO)": "gZMefEsnggtaiaaaJraaksaaaE",
-"Buddy Well Test (Official FWO)": "gZMefFKMggtaiaaaJraaksaaamaaaE",
-"PacMan with Gravity (Easier) (Official FWO)": "gZMefEsjggtaiaaaJraaksaaamaaaE",
-"Buddy System 11 (TM1 Version) 9bob9": "gZMefErxggtaiaaaJraaksaaamaaaE",
-"Trust Fall 2! (Official FWO)": "gZMefGRbggtaiaaaJraaksaaamaaaE",
-"Buddy System 4 (TM1 version) 9bob9": "gZMefrJJggtaiaaaJraaksaaamaaaunqqjbE",
-"Trust Fall 3: The Return of Trust Fall (Official)": "gZMefErCggtaiaaaJraaksaaamaaaE",
-"Trust Fall (3 Person Buddy)": "gZMefErvggtaiaaaJraaksaaamaaaE",
-"Jasmine 2023": "gZMefDVOggtaiaaaJraaksaaamaaaE",
-"Jasmine 2023 (Solo)": "gZMefDVQggtaiaaaJraaksaaamaaaE",
-"Hall of Ball (Official FWO)": "gZMefEsqggtaiaaaJraaksaaamaaaE",
-"Tower Race Down 1.0.3 (Official FWO)": "gZMefEssggtaiaaaJraaksaaamaaaE",
-"Oh Man, Oh Boy (Official FWO)": "gZMefEtgggtaiaaaJraaksaaamaaapfE",
-"Buddy Race (Official FWO v2)": "gZMefEAkggtaiaaaJraaksaaamaaaE",
-"Buddy System Complete with perma portals": "gZMefvAutaiaaaJyaraaksaaamacUE",
-"Gravity Buddy Guy V.2.6.0 (Official FWO v2)": "gZMefEviggtaiaaaJraaksaaaE",
-"Buddy (Official FWO)": "gZMefEtkggtaiaaaJraaksaaamaaaE",
-"Super Smash Buddy (testing delete)": "gZMefGkhggtaiaaaJraaksaaamabWE",
-"2 Person Buddy' (Official FWO)": "gZMefEtbggtaiaaaJraaksaaamaaaE",
-"Tower Race Down 3 (Official FWO)": "gZMefEsSggtaiaaaJraaksaaamaaaE",
-"Tower Race Down 2": "gZMefGjKggtaiaaaJraaksaaamaaaE",
-"The Impossible Map (Official FWO)": "gZMefEtfggtaiaaaJraaksaaamaaauaaajTE",
-"Celestial Tether (Buddy System Grav, Boost/Bomb instant)": "gZMefFLwggtaiaaaJraaksaaamaaaE",
-"Orbit Euphoria (Buddy System Grav, Boost/Bomb instant) (official version)": "gZMefFLxggtaiaaaJraaksaaamaaaE",
-"Buddy System 1 (TM1 Version) 9bob9 (Official FWO)": "gZMefEzeggtaiaaaJraaksaaamaaYE",
-"The World's Hardest Map (Official FWO V2)": "gZMefEuMggtaiaaaJraaksaaamaaYE",
-"Super Buddy (Official FWO v2)": "gZMefEDDggtaiaaaJraaksaaaE",
-"Daily Spike Fall 1.0.1 Final (Official FWO)": "gZMefEtsggtaiaaaJraaksaaamaaaE",
-"Jump! - Van Halen (5 Jump) (Official FWO)": "gZMefEuFggtaiaaaJraaksaaamaaapfE",
-"Wacky Races!": "gZMefEtWggtuiaaaJyaraaksaaamabWE",
-"Zoom (Gravity Race)": "gZMefhTeggtuiaaaJyaraaksaaamnqqE",
-"Ski Cross": "gZMefEuxggtuiaaaJyaraaksaaamaaaE",
-"Team Race (Official FWO)": "gZMefEtYggtuiaaaJyaraaksaaamaaaE",
-"I'm Back (1v1 Race)!": "gZMefGJqggtaiaaaJraaksaaamaaaE",
-"GET DOWN (gravity)": "gZMefECbggtuiaaaJyaraaksaaamabWE",
-"Insane Gravity Challenge (Official FWO)": "gZMefEtqggtaiaaaJraaksaaamaaaE",
-"Up And Down (Official FWO)": "gZMefEuuggtaiaaaJraaksaaamaaaE",
-"Epic Mode (TM1 Version) 9bob9 (Official FWO)": "gZMefFIeggtaiaaaJraaksaaamaaYE",
-"Gravity Race 4 (Official FWO)": "gZMefECaggtuiaaaJyaraaksaaamaaaE",
-"Dragon'sCove[BuddySystem] (Official FWO)": "gZMefExbggtaiaaaJraaksaaamaaaE",
-"New Gravity Buddy (Official FWO)": "gZMefEvvggtaiaaaJraaksaaamaaaE",
-"Octopus [Gravity Buddy] (Official FWO)": "gZMefExNggtaiaaaJraaksaaamaaYE",
-"Buddy System 6 (Official FWO)": "gZMefExaggtaiaaaJraaksaaamabWE",
-"Gravity Buddy System [FIXED]": "gZMefiCBggtaiaaaJraaksaaamaaaE",
-"Solo Grav Bottle": "gZMefrwuggtaiaaaJraaksaaamaaaE",
-"Mars Climb": "gZMefGdsggtuiaaaJyaraaksaaamabWE",
-"Mars Climb Part II": "gZMefGdtggtuiaaaJyaraaksaaamabWE",
-"Mars Climb 2": "gZMefGduggtuiaaaJyaraaksaaamabWE",
-"Gravity Challenge": "gZMefrrxggtaiaaaJraaksaaamaaaE",
-"Buddy (Official FWO)": "gZMefEziggtaiaaaJraakmaaaE",
-"Mars Climb 4": "gZMefGdvggtuiaaaJyaraaksaaamaaaE",
-"You Need Two (Official FWO)": "gZMefEwlggtaiaaaJraaksaaamaaYE",
-"Buddy System 3 Final Version (Official FWO)": "gZMefEwYggtaiaaaJraaksaaamacUE",
-"Mars Climb Part 3": "gZMefGdwggtuiaaaJyaraaksaaamaaYE",
-"Buddy system 9 (TM1 Version) 9bob9 (Official FWO)": "gZMefEwNggtaiaaaJraaksaaamaaaE",
-"Buddy system 5 w/ permagates": "gZMefqFZggtaiaaaJraaksaaaE",
-"Metroid [Gravity Buddy] (Official FWO)": "gZMefGltggtaiaaaJraaksaaamaaaE",
-"Buddy System 8 (TM1 Version) 9bob9": "gZMefrKTggtaiaaaJraaksaaaE",
-"The Worlds Hardest Map 2 (Official FWO)": "gZMefExHggtaiaaaJraaksaaamaaaE",
-"Climb (Official FWO)": "gZMefEwhggtaiaaaJraaksaaamaaaE",
-"Test climb": "gZMefnwLggtaiaaaJraaksaaamaaaE",
-"Climb": "gZMefrgiggtaiaaaJraaksaaamaaaE",
-"Skill Test (Official FWO v2)": "gZMefGgPggtaiaaaJraaksaaamaaaE",
-"Ups and Downs [FINAL] (Official FWO)": "gZMefEwjggtaiaaaJraaksaaamaaaE",
-"Worlds Hardest Map 3 (Official FWO)": "gZMefGjNggtaiaaaJraaksaaamaaaE",
-"Buddy System 2 (TM1version) 9bob9 (Official FWO V2)": "gZMefEwUggtaiaaaJraaksaaamabWE",
-"Rerun [Gravity Buddy] (Official FWO)": "gZMefEzaggtaiaaaJraaksaaamaaaE",
-"V8 [Gravity Buddy] (Official FWO)": "gZMefExOggtaiaaaJraaksaaamaaaE",
-"20480 [Gravity Buddy] (Official FWO)": "gZMefGgEggtuiaaaJyaraaksaaamaaaE",
-"Join The Group (Official FWO)": "gZMefGgTggtaiaaaJraaksaaamaaaE",
-"Buddy System 7 (TM1 Version) 9bob9": "gZMefrKSggtaiaaaJraaksaaamabWE",
-"Ball-E Wood Tower of Tear Her (Official FWO)": "gZMefExpggtaiaaaJraaksaaamaaYE",
-"Twin Towers (Official FWO v2)": "gZMefEEDggtaiaaaJraaksaaamaaYE",
-"Tower Power (Official FWO)": "gZMefGlmggtuiaaaJyaraaksaaamaaaE",
-"Tower 1-4 (Official FWO)": "gZMefExuggtaiaaaJraaksaaamaaaE",
-"Mars Climb but hard": "gZMefGdyggtuiaaaJyaraaksaaamaaaE",
-"Mars Climb 3": "gZMefGdzggtuiaaaJyaraaksaaamaaaE",
-"Mars Climb?": "gZMefGdAggtuiaaaJyaraaksaaamaaaE",
-"Fall (Official FWO)": "gZMefEyKggtaiaaaJraaksaaamaaYE",
-"Birthday Tower of Doom (Official FWO)": "gZMefEyaggtaiaaaJraaksaaamaaaE",
-"Birthday Tower 1-5 (Official FWO)": "gZMefGdBggtuiaaaJyaraaksaaamaaaE",
-"Towered": "gZMefExEggtaiaaaJraaksaaamaaaE",
-"Tower w/ A BUDDY SHORTCUT!!": "gZMefEymggtaiaaaJraaksaaamaaaE",
-"Tower of Doom 0-0 (Official FWO)": "gZMefEyoggtaiaaaJraaksaaamaaaE",
-"Easy, Medium, or Hard? 3in1Tower (Official FWO)": "gZMefEyVggtaiaaaJraaksaaamaaaE",
-"Birthday Tower 2018 (Official FWO)": "gZMefGdIggtdoiaaaJyaraaksaaamaaaunqqdjbE",
-"UGH (Official FWO)": "gZMefEyYggtaiaaaJraaksaaamaaaE",
-"Spike Ball Hall 1.0.5 (Official FWO)": "gZMefEyZggtaiaaaJraaksaaaE",
-"Unlimited Jumps Buddy (5 jump version) (Official FWO)": "gZMefGPhggtaiaaaJraaksaaamaaapfE",
-"Gravity 2 players (Official FWO v1)": "gZMefEzcggtaiaaaJraaksaaaE",
-"A Step Back": "gZMefEzJggtaiaaaJraaksaaamaaaE",
+    <script>
+    const presets = {
+  "The Impossible (Portal Edition) 1.0.2": "gZMefGzCggtaiaaaJraaksaaamaaaE",
+  "Gem's Buddy System (v1) Official (FWO)": "gZMefGzDggtaiaaaJraaksaaamabWE",
+  "Uptown Funk (2 Jumps) (Instant Bombs)": "gZMefGzEggtaiaaaJraaksaaamaaaE",
+  "A Castle on a Cloud 1.0.8": "gZMefGzFggtaiaaaJraaksaaamaaaE",
+  "Buddy Pipe System Version 1.0.1": "gZMefGzIggtaiaaaJraaksaaamaaaE",
+  "Quick Race (1v1)": "gZMefGzKggtaiaaaJraaksaaamaaaE",
+  "A-Maze-Ing (Official)": "gZMefGzLggtaiaaaJraaksaaamaaaE",
+  "Mini Test (Official FWO)": "gZMefGzMggtaiaaaJraaksaaamaaaE",
+  "The Challenge of Secrets (Official FWO)": "gZMefGzNggtaiaaaJraaksaaamaaaE",
+  "Cancer[buddy system] (Official)": "gZMefGAnggtaiaaaJraaksaaamaaaE",
+  "AUSSIE Teambuilding 1 v1.3 (Official FWO)": "gZMefEsnggtaiaaaJraaksaaaE",
+  "Buddy Well Test (Official FWO)": "gZMefFKMggtaiaaaJraaksaaamaaaE",
+  "PacMan with Gravity (Easier) (Official FWO)": "gZMefEsjggtaiaaaJraaksaaamaaaE",
+  "Buddy System 11 (TM1 Version) 9bob9": "gZMefErxggtaiaaaJraaksaaamaaaE",
+  "Trust Fall 2! (Official FWO)": "gZMefGRbggtaiaaaJraaksaaamaaaE",
+  "Buddy System 4 (TM1 version) 9bob9": "gZMefrJJggtaiaaaJraaksaaamaaaunqqjbE",
+  "Trust Fall 3: The Return of Trust Fall (Official)": "gZMefErCggtaiaaaJraaksaaamaaaE",
+  "Trust Fall (3 Person Buddy)": "gZMefErvggtaiaaaJraaksaaamaaaE",
+  "Jasmine 2023": "gZMefDVOggtaiaaaJraaksaaamaaaE",
+  "Jasmine 2023 (Solo)": "gZMefDVQggtaiaaaJraaksaaamaaaE",
+  "Hall of Ball (Official FWO)": "gZMefEsqggtaiaaaJraaksaaamaaaE",
+  "Tower Race Down 1.0.3 (Official FWO)": "gZMefEssggtaiaaaJraaksaaamaaaE",
+  "Oh Man, Oh Boy (Official FWO)": "gZMefEtgggtaiaaaJraaksaaamaaapfE",
+  "Buddy Race (Official FWO v2)": "gZMefEAkggtaiaaaJraaksaaamaaaE",
+  "Buddy System Complete with perma portals": "gZMefvAutaiaaaJyaraaksaaamacUE",
+  "Gravity Buddy Guy V.2.6.0 (Official FWO v2)": "gZMefEviggtaiaaaJraaksaaaE",
+  "Buddy (Official FWO)": "gZMefEtkggtaiaaaJraaksaaamaaaE",
+  "Super Smash Buddy (testing delete)": "gZMefGkhggtaiaaaJraaksaaamabWE",
+  "2 Person Buddy' (Official FWO)": "gZMefEtbggtaiaaaJraaksaaamaaaE",
+  "Tower Race Down 3 (Official FWO)": "gZMefEsSggtaiaaaJraaksaaamaaaE",
+  "Tower Race Down 2": "gZMefGjKggtaiaaaJraaksaaamaaaE",
+  "The Impossible Map (Official FWO)": "gZMefEtfggtaiaaaJraaksaaamaaauaaajTE",
+  "Celestial Tether (Buddy System Grav, Boost/Bomb instant)": "gZMefFLwggtaiaaaJraaksaaamaaaE",
+  "Orbit Euphoria (Buddy System Grav, Boost/Bomb instant) (official version)": "gZMefFLxggtaiaaaJraaksaaamaaaE",
+  "Buddy System 1 (TM1 Version) 9bob9 (Official FWO)": "gZMefEzeggtaiaaaJraaksaaamaaYE",
+  "The World's Hardest Map (Official FWO V2)": "gZMefEuMggtaiaaaJraaksaaamaaYE",
+  "Super Buddy (Official FWO v2)": "gZMefEDDggtaiaaaJraaksaaaE",
+  "Daily Spike Fall 1.0.1 Final (Official FWO)": "gZMefEtsggtaiaaaJraaksaaamaaaE",
+  "Jump! - Van Halen (5 Jump) (Official FWO)": "gZMefEuFggtaiaaaJraaksaaamaaapfE",
+  "Wacky Races!": "gZMefEtWggtuiaaaJyaraaksaaamabWE",
+  "Zoom (Gravity Race)": "gZMefhTeggtuiaaaJyaraaksaaamnqqE",
+  "Ski Cross": "gZMefEuxggtuiaaaJyaraaksaaamaaaE",
+  "Team Race (Official FWO)": "gZMefEtYggtuiaaaJyaraaksaaamaaaE",
+  "I'm Back (1v1 Race)!": "gZMefGJqggtaiaaaJraaksaaamaaaE",
+  "GET DOWN (gravity)": "gZMefECbggtuiaaaJyaraaksaaamabWE",
+  "Insane Gravity Challenge (Official FWO)": "gZMefEtqggtaiaaaJraaksaaamaaaE",
+  "Up And Down (Official FWO)": "gZMefEuuggtaiaaaJraaksaaamaaaE",
+  "Epic Mode (TM1 Version) 9bob9 (Official FWO)": "gZMefFIeggtaiaaaJraaksaaamaaYE",
+  "Gravity Race 4 (Official FWO)": "gZMefECaggtuiaaaJyaraaksaaamaaaE",
+  "Dragon'sCove[BuddySystem] (Official FWO)": "gZMefExbggtaiaaaJraaksaaamaaaE",
+  "New Gravity Buddy (Official FWO)": "gZMefEvvggtaiaaaJraaksaaamaaaE",
+  "Octopus [Gravity Buddy] (Official FWO)": "gZMefExNggtaiaaaJraaksaaamaaYE",
+  "Buddy System 6 (Official FWO)": "gZMefExaggtaiaaaJraaksaaamabWE",
+  "Gravity Buddy System [FIXED]": "gZMefiCBggtaiaaaJraaksaaamaaaE",
+  "Solo Grav Bottle": "gZMefrwuggtaiaaaJraaksaaamaaaE",
+  "Mars Climb": "gZMefGdsggtuiaaaJyaraaksaaamabWE",
+  "Mars Climb Part II": "gZMefGdtggtuiaaaJyaraaksaaamabWE",
+  "Mars Climb 2": "gZMefGduggtuiaaaJyaraaksaaamabWE",
+  "Gravity Challenge": "gZMefrrxggtaiaaaJraaksaaamaaaE",
+  "Buddy (Official FWO)": "gZMefEziggtaiaaaJraakmaaaE",
+  "Mars Climb 4": "gZMefGdvggtuiaaaJyaraaksaaamaaaE",
+  "You Need Two (Official FWO)": "gZMefEwlggtaiaaaJraaksaaamaaYE",
+  "Buddy System 3 Final Version (Official FWO)": "gZMefEwYggtaiaaaJraaksaaamacUE",
+  "Mars Climb Part 3": "gZMefGdwggtuiaaaJyaraaksaaamaaYE",
+  "Buddy system 9 (TM1 Version) 9bob9 (Official FWO)": "gZMefEwNggtaiaaaJraaksaaamaaaE",
+  "Buddy system 5 w/ permagates": "gZMefqFZggtaiaaaJraaksaaaE",
+  "Metroid [Gravity Buddy] (Official FWO)": "gZMefGltggtaiaaaJraaksaaamaaaE",
+  "Buddy System 8 (TM1 Version) 9bob9": "gZMefrKTggtaiaaaJraaksaaaE",
+  "The Worlds Hardest Map 2 (Official FWO)": "gZMefExHggtaiaaaJraaksaaamaaaE",
+  "Climb (Official FWO)": "gZMefEwhggtaiaaaJraaksaaamaaaE",
+  "Test climb": "gZMefnwLggtaiaaaJraaksaaamaaaE",
+  "Climb": "gZMefrgiggtaiaaaJraaksaaamaaaE",
+  "Skill Test (Official FWO v2)": "gZMefGgPggtaiaaaJraaksaaamaaaE",
+  "Ups and Downs [FINAL] (Official FWO)": "gZMefEwjggtaiaaaJraaksaaamaaaE",
+  "Worlds Hardest Map 3 (Official FWO)": "gZMefGjNggtaiaaaJraaksaaamaaaE",
+  "Buddy System 2 (TM1version) 9bob9 (Official FWO V2)": "gZMefEwUggtaiaaaJraaksaaamabWE",
+  "Rerun [Gravity Buddy] (Official FWO)": "gZMefEzaggtaiaaaJraaksaaamaaaE",
+  "V8 [Gravity Buddy] (Official FWO)": "gZMefExOggtaiaaaJraaksaaamaaaE",
+  "20480 [Gravity Buddy] (Official FWO)": "gZMefGgEggtuiaaaJyaraaksaaamaaaE",
+  "Join The Group (Official FWO)": "gZMefGgTggtaiaaaJraaksaaamaaaE",
+  "Buddy System 7 (TM1 Version) 9bob9": "gZMefrKSggtaiaaaJraaksaaamabWE",
+  "Ball-E Wood Tower of Tear Her (Official FWO)": "gZMefExpggtaiaaaJraaksaaamaaYE",
+  "Twin Towers (Official FWO v2)": "gZMefEEDggtaiaaaJraaksaaamaaYE",
+  "Tower Power (Official FWO)": "gZMefGlmggtuiaaaJyaraaksaaamaaaE",
+  "Tower 1-4 (Official FWO)": "gZMefExuggtaiaaaJraaksaaamaaaE",
+  "Mars Climb but hard": "gZMefGdyggtuiaaaJyaraaksaaamaaaE",
+  "Mars Climb 3": "gZMefGdzggtuiaaaJyaraaksaaamaaaE",
+  "Mars Climb?": "gZMefGdAggtuiaaaJyaraaksaaamaaaE",
+  "Fall (Official FWO)": "gZMefEyKggtaiaaaJraaksaaamaaYE",
+  "Birthday Tower of Doom (Official FWO)": "gZMefEyaggtaiaaaJraaksaaamaaaE",
+  "Birthday Tower 1-5 (Official FWO)": "gZMefGdBggtuiaaaJyaraaksaaamaaaE",
+  "Towered": "gZMefExEggtaiaaaJraaksaaamaaaE",
+  "Tower w/ A BUDDY SHORTCUT!!": "gZMefEymggtaiaaaJraaksaaamaaaE",
+  "Tower of Doom 0-0 (Official FWO)": "gZMefEyoggtaiaaaJraaksaaamaaaE",
+  "Easy, Medium, or Hard? 3in1Tower (Official FWO)": "gZMefEyVggtaiaaaJraaksaaamaaaE",
+  "Birthday Tower 2018 (Official FWO)": "gZMefGdIggtdoiaaaJyaraaksaaamaaaunqqdjbE",
+  "UGH (Official FWO)": "gZMefEyYggtaiaaaJraaksaaamaaaE",
+  "Spike Ball Hall 1.0.5 (Official FWO)": "gZMefEyZggtaiaaaJraaksaaaE",
+  "Unlimited Jumps Buddy (5 jump version) (Official FWO)": "gZMefGPhggtaiaaaJraaksaaamaaapfE",
+  "Gravity 2 players (Official FWO v1)": "gZMefEzcggtaiaaaJraaksaaaE",
+  "A Step Back": "gZMefEzJggtaiaaaJraaksaaamaaaE",
 
-"Trust(Multiplayer) (Official FWO)": "gZMefGJtggtaiaaaJraaksaaamaaYE",
-"(Map)Test 2": "gZMefEzhggtaiaaaJraaksaaamaaYE",
-"10 Levels 1 Map": "gZMefEHVggtaiaaaJraaksaaamaaaE",
-"Ball Runner": "gZMefEAPggtuiaaaJyaraaksaaamabWE",
-"Tunnel racer": "gZMefnubggtuiaaaJyaraaksaaamaaaE",
-"How good are you?": "gZMefGdCggtuiaaaJyaraaksaaaE",
-"Challenging Run (Bombs instant, Boost Instant) (Official FWO)": "gZMefEAyggtaiaaaJraaksaaamaaaE",
-"Hop To Top": "gZMefEztggtaiaaaJyaraaksaaamaaaE",
-"20 Seconds (Official FWO)": "gZMefEAYggtaiaaaJraaksaaamaaaE",
-"Slanted House": "gZMdfVkggtuiaaaJyaraaksaaamaaaE",
-"You're Pushing My Buttons (Official FWO)": "gZMefEAAggtaiaaaJraaksaaamaaaE",
-"Randomly Generated Mapwe (Official FWO)": "gZMefEAXggtaiaaaJraaksaaamaaaE",
-"Jump": "gZMefEzCggtaiaaaJraaksaaamaaaE",
-"Tweak Course": "gZMefEzDggtuiaaaJyaraaksaaamaaaE",
-"Rather Easy (Official FWO)": "gZMefGkjggtaiaaaJraaksaaamaaaE",
-"Ball From Space": "gZMefGRaggtuiaaaJyaraaksaaamaaabE",
-"Protal 2: 2 Many Puzzles(Rate at the end) (Needs 3+) (Official FWO v1)": "gZMefEAFggtaiaaaJraakE",
-"The Challenge (Official FWO)": "gZMefEAJggtaiaaaJraaksaaamaaaE",
-"Alliance testing (Official FWO)": "gZMefFIfggtaiaaaJraaksaaaE",
-"t0W3r": "gZMefEALggtaiaaaJraaksaaamaaaE",
-"Don't touch the spikes": "gZMefEAQggtaiaaaJraaksaaamaaaE",
-"Long Jumps (Official FWO)": "gZMefEATggtaiaaaJraaksaaamaaaE",
-"Fall Down Final (Instant Boosts) (Official FWO)": "gZMefFKLggtaiaaaJraaksaaamaaaE",
-"Fall Down Final (instant boosts) (Official FWO)": "gZMefFEoggtaiaaaJraaksaaamaaaE",
-"Tower Shower": "gZMefGdDggtuiaaaJyaraaksaaamaaaE",
-"Tower of the TagPro Dragon (Official FWO v1)": "gZMefGdEggtuiaaaJyaraaksaaamaaaE",
-"What you say about my first map!?!?!?! (aka Revenge) (Official FWO)": "gZMefEDxggtaiaaaJraaksaaamaaaE",
-"Portal Timer Race (1 Cap) (Instant Boosts) (Official FWO)": "gZMefEBXggtaiaaaJraaksaaamaaaE",
-"Carey Am Pro Race (5 Jumps) (Official FWO)": "gZMefEDyggtaiaaaJraaksaaamaaapfE",
-"Tower of Doom 1-3 (Official FWO)": "gZMefGtBggtuiaaaJyaraaksaaamaaaE",
-"ACTH Agonist": "gZMefrcFggtaiaaaJraaksaaamaaaE",
-"Gauntlet (Official FWO)": "gZMefEBUggtaiaaaJraaksaaamaaYE",
-"b u d d y s y s t e m 1 (Official FWO v3)": "gZMefEDqggtaiaaaJraaksaaamabWE",
-"AUSSIE Teambuilding 2 v1.5 (Official FWO)": "gZMefERkggtaiaaaJBraaksaaauaaajTE",
-"AUSSIE Teambuilding 3 v1.1 (non buddy jump version) (Official FWO)": "gZMefFIyggtaiaaaJraaksaaamabWE",
-"AUSSIE Teambuilding 4 v1.5 (Official FWO)": "gZMefEDrggtaiaaaJraaksaaamabWE",
-"Buddy Union .55 BONUS STUFF (Official FWO)": "gZMefEDjggtaiaaaJraaksaaamaaYE",
-"Buddy Union 3.3 Deluxe (Official FWO)": "gZMefEKxggtaiaaaJraaksaaaE",
-"Survivor Tower": "gZMefHeBggtaiaaaJBraaksaaamaaaE",
-"Carabdis Masochism FINAL v1.11 (Official FWO)": "gZMefEKqggtaiaaaJraaksaaamaaaE",
-"Carabdis Masochism FINAL v1.11 (solo version) (Official FWO)": "gZMefEDQggtaiaaaJraaksaaamaaaE",
-"Hexaforce 6+ Person Gravity Puzzle (Official FWO)": "gZMefFIwggtaiaaaJraaksaaamabWE",
-"Potato Sack Race (2v2) (Official FWO)": "gZMefEEmggtaiaaaJraaksaaamaaaE",
-"Mars Climb Part |||": "gZMefGdGggtuiaaaJyaraaksaaamaaaE",
-"Mars Climb 1": "gZMefGdHggtuiaaaJyaraaksaaamaaaE",
-"Tower 1-2 [FINAL]": "gZMefEEGggtaiaaaJraaksaaamaaaE",
-"Tower 1-2 (Official FWO)": "gZMefEEIggtaiaaaJraaksaaamaaaE",
-"GREATEST GRAVITY BUDDY SYSTEM": "gZMefFLaggtaiaaaJraaksaaamaaaE",
-"ULTIMATE GRAVITY BUDDY SYSTEM (HARD)": "gZMefGiHggtaiaaaJraaksaaamaaaE",
-"The Temple Maze (Official FWO)": "gZMefGQZggtaiaaaJraaksaaamaaaE",
-"Colosseum": "gZMefFOBtaiaaaJyaraaksaaamalCE",
-"Astral Synergy (Buddy System Grav, Boost/Bomb instant) (Official Version)": "gZMefFWSggtaiaaaJraaksaaamaaaE",
-"Map of Sisyphus": "gZMefFXZggtaiaaaJraaksaaamaaaE",
-"Boldy System (Official FWO)": "gZMefFYfggtaiaaaJraaksaaamaaYE",
-"Kinda ez (Official FWO)": "gZMefFZjggtaiaaaJraaksaaamaaaE",
+  "Trust(Multiplayer) (Official FWO)": "gZMefGJtggtaiaaaJraaksaaamaaYE",
+  "(Map)Test 2": "gZMefEzhggtaiaaaJraaksaaamaaYE",
+  "10 Levels 1 Map": "gZMefEHVggtaiaaaJraaksaaamaaaE",
+  "Ball Runner": "gZMefEAPggtuiaaaJyaraaksaaamabWE",
+  "Tunnel racer": "gZMefnubggtuiaaaJyaraaksaaamaaaE",
+  "How good are you?": "gZMefGdCggtuiaaaJyaraaksaaaE",
+  "Challenging Run (Bombs instant, Boost Instant) (Official FWO)": "gZMefEAyggtaiaaaJraaksaaamaaaE",
+  "Hop To Top": "gZMefEztggtaiaaaJyaraaksaaamaaaE",
+  "20 Seconds (Official FWO)": "gZMefEAYggtaiaaaJraaksaaamaaaE",
+  "Slanted House": "gZMdfVkggtuiaaaJyaraaksaaamaaaE",
+  "You're Pushing My Buttons (Official FWO)": "gZMefEAAggtaiaaaJraaksaaamaaaE",
+  "Randomly Generated Mapwe (Official FWO)": "gZMefEAXggtaiaaaJraaksaaamaaaE",
+  "Jump": "gZMefEzCggtaiaaaJraaksaaamaaaE",
+  "Tweak Course": "gZMefEzDggtuiaaaJyaraaksaaamaaaE",
+  "Rather Easy (Official FWO)": "gZMefGkjggtaiaaaJraaksaaamaaaE",
+  "Ball From Space": "gZMefGRaggtuiaaaJyaraaksaaamaaabE",
+  "Protal 2: 2 Many Puzzles(Rate at the end) (Needs 3+) (Official FWO v1)": "gZMefEAFggtaiaaaJraakE",
+  "The Challenge (Official FWO)": "gZMefEAJggtaiaaaJraaksaaamaaaE",
+  "Alliance testing (Official FWO)": "gZMefFIfggtaiaaaJraaksaaaE",
+  "t0W3r": "gZMefEALggtaiaaaJraaksaaamaaaE",
+  "Don't touch the spikes": "gZMefEAQggtaiaaaJraaksaaamaaaE",
+  "Long Jumps (Official FWO)": "gZMefEATggtaiaaaJraaksaaamaaaE",
+  "Fall Down Final (Instant Boosts) (Official FWO)": "gZMefFKLggtaiaaaJraaksaaamaaaE",
+  "Fall Down Final (instant boosts) (Official FWO)": "gZMefFEoggtaiaaaJraaksaaamaaaE",
+  "Tower Shower": "gZMefGdDggtuiaaaJyaraaksaaamaaaE",
+  "Tower of the TagPro Dragon (Official FWO v1)": "gZMefGdEggtuiaaaJyaraaksaaamaaaE",
+  "What you say about my first map!?!?!?! (aka Revenge) (Official FWO)": "gZMefEDxggtaiaaaJraaksaaamaaaE",
+  "Portal Timer Race (1 Cap) (Instant Boosts) (Official FWO)": "gZMefEBXggtaiaaaJraaksaaamaaaE",
+  "Carey Am Pro Race (5 Jumps) (Official FWO)": "gZMefEDyggtaiaaaJraaksaaamaaapfE",
+  "Tower of Doom 1-3 (Official FWO)": "gZMefGtBggtuiaaaJyaraaksaaamaaaE",
+  "ACTH Agonist": "gZMefrcFggtaiaaaJraaksaaamaaaE",
+  "Gauntlet (Official FWO)": "gZMefEBUggtaiaaaJraaksaaamaaYE",
+  "b u d d y s y s t e m 1 (Official FWO v3)": "gZMefEDqggtaiaaaJraaksaaamabWE",
+  "AUSSIE Teambuilding 2 v1.5 (Official FWO)": "gZMefERkggtaiaaaJBraaksaaauaaajTE",
+  "AUSSIE Teambuilding 3 v1.1 (non buddy jump version) (Official FWO)": "gZMefFIyggtaiaaaJraaksaaamabWE",
+  "AUSSIE Teambuilding 4 v1.5 (Official FWO)": "gZMefEDrggtaiaaaJraaksaaamabWE",
+  "Buddy Union .55 BONUS STUFF (Official FWO)": "gZMefEDjggtaiaaaJraaksaaamaaYE",
+  "Buddy Union 3.3 Deluxe (Official FWO)": "gZMefEKxggtaiaaaJraaksaaaE",
+  "Survivor Tower": "gZMefHeBggtaiaaaJBraaksaaamaaaE",
+  "Carabdis Masochism FINAL v1.11 (Official FWO)": "gZMefEKqggtaiaaaJraaksaaamaaaE",
+  "Carabdis Masochism FINAL v1.11 (solo version) (Official FWO)": "gZMefEDQggtaiaaaJraaksaaamaaaE",
+  "Hexaforce 6+ Person Gravity Puzzle (Official FWO)": "gZMefFIwggtaiaaaJraaksaaamabWE",
+  "Potato Sack Race (2v2) (Official FWO)": "gZMefEEmggtaiaaaJraaksaaamaaaE",
+  "Mars Climb Part |||": "gZMefGdGggtuiaaaJyaraaksaaamaaaE",
+  "Mars Climb 1": "gZMefGdHggtuiaaaJyaraaksaaamaaaE",
+  "Tower 1-2 [FINAL]": "gZMefEEGggtaiaaaJraaksaaamaaaE",
+  "Tower 1-2 (Official FWO)": "gZMefEEIggtaiaaaJraaksaaamaaaE",
+  "GREATEST GRAVITY BUDDY SYSTEM": "gZMefFLaggtaiaaaJraaksaaamaaaE",
+  "ULTIMATE GRAVITY BUDDY SYSTEM (HARD)": "gZMefGiHggtaiaaaJraaksaaamaaaE",
+  "The Temple Maze (Official FWO)": "gZMefGQZggtaiaaaJraaksaaamaaaE",
+  "Colosseum": "gZMefFOBtaiaaaJyaraaksaaamalCE",
+  "Astral Synergy (Buddy System Grav, Boost/Bomb instant) (Official Version)": "gZMefFWSggtaiaaaJraaksaaamaaaE",
+  "Map of Sisyphus": "gZMefFXZggtaiaaaJraaksaaamaaaE",
+  "Boldy System (Official FWO)": "gZMefFYfggtaiaaaJraaksaaamaaYE",
+  "Kinda ez (Official FWO)": "gZMefFZjggtaiaaaJraaksaaamaaaE",
 
-"Team Trials 1 (Official FWO)": "gZMefFZoggtaiaaaJybraaksaaaE",
-"Choose Your Type [Instant boost would be good]": "gZMefFZpggtaiaaaJraaksaaamaaaE",
-"help me": "gZMefFWAggtaiaaaJyaraaksaaamaaaE",
-"8+ Group system": "gZMefFSEtaiaaaJyaraaksaaamabWE",
-"Timed Gravity Race": "gZMefFZyggtdiaaaJyaraaksaaamaaaE",
+  "Team Trials 1 (Official FWO)": "gZMefFZoggtaiaaaJybraaksaaaE",
+  "Choose Your Type [Instant boost would be good]": "gZMefFZpggtaiaaaJraaksaaamaaaE",
+  "help me": "gZMefFWAggtaiaaaJyaraaksaaamaaaE",
+  "8+ Group system": "gZMefFSEtaiaaaJyaraaksaaamabWE",
+  "Timed Gravity Race": "gZMefFZyggtdiaaaJyaraaksaaamaaaE",
 
-"Solo Grav Track (Official FWO)": "gZMefGaOggtaiaaaJyaraaksaaamaaaE",
-"PopCulture Buddy System v5": "gZMefGaPtaiaaaJyaraaksaaamabWE",
-"Buddy Trio Test": "gZMefGaStaiaaaJyaraaksaaaE",
-"Ultimate Buddy System (Official FWO)": "gZMefGaUtaiaaaJyaraaksaaamaaYE",
-"Ball-E's INSANE 15 minute buddy challenge": "gZMefGVrtaiaaaJyaraaksaaamaaaE",
-"BartJr's Gravity Challenge (Official FWO)": "gZMefGRcggtaiaaaJyaraaksaaamaaaE",
-"Light Em Up Again (Inspired": "gZMefGllggtaiaaaJyaraaksaaamaaapfE",
-"Gravity Fall": "gZMefGbdggtaiaaaJyaraaksaaamaaapfE",
-"Gravity Fall (Insane)": "gZMefGbeggtaiaaaJyaraaksaaamaaapfE",
-"Skill Fall": "gZMefGbfggtaiaaaJyaraaksaaamaaaE",
-"Dragonsaine V.3 Hard Mode (Official FWO)": "gZMefGdqggtaiaaaJyaraaksaaamaaaE",
-"Dragonsaine V.2 (Official FWO)": "gZMefGdoggtaiaaaJyaraaksaaamaaaE",
-"Gravity Challenge (85% Complete)": "gZMefrrZggtaiaaaJyaraaksaaamaaaE",
-"Jump!": "gZMefGhlggtaiaaaJraaksaaamaaajbE",
-"JUMP!": "gZMefGdLggtaiaaaJraaksaaamaaaE",
-"Jumper": "gZMefGdNggtaiaaaJyaraaksaaamaaaE",
-"My AFK buddy": "gZMefGgsggtaiaaaJyaraaksaaamaakE",
-"gravity trainer": "gZMefGefggtaiaaaJraaksaaamaaajbE",
-"Competitive gravity": "gZMefGemggtaiaaaJraaksaaaE",
-"Small Buddy 1.1 skip 2": "gZMefGeoggtaiaaaJyaraaksaaamaaaE",
-"Survivor Snipe Skills": "gZMefDYqggtaiaaaJyaraaksaaamaaapfE",
-"Grav Well Course": "gZMefgOwtaiaaaJyaraaksaaamaaaE",
-"Maze Challenge": "gZMefkOftaiaaaJyaraaksaaamabWunqqE",
-"crosky's Ludicrous Challenge": "gZMefGhataiaaaJyaraaksaaamaaaE",
-"Marsball Gravity Race": "gZMefhTTggtaiaaaJyaraaksaaamabWE",
-"MiniChallenge": "gZMefnbHtaiaaaJyaraak",
-"Ultimate Challenge (With Halfway Shortcut)": "gZMefGRhtaiaaaJyaraaksaaamaaaunqq",
-"Ball-E's absolutely INSANE challenge": "gZMefGhiggtaiaaaJyaraaksaaamaaaE",
-"Infinity Boost [Challenge] V1": "gZMefGhjtaiaaaJyaraaksaaamaaaE",
-"A random Danny map (Official FWO)": "gZMefGhNggtaiaaaJraaksaaamaaYE",
-"Boldy System 2": "gZMefGiCggtaiaaaJyaraaksaaamabWE",
-"Boldy System 3": "gZMefGivggtaiaaaJyaraaksaaamabWE",
-"ULTIMATE GRAVITY BUDDY SYSTEM": "gZMefGiGggtaiaaaJraaksaaamaaaE",
-"PacMan - POWER PELLET EDITION": "gZMefGtDggtaiaaaJraaksaaamaaaE",
-"The Impossible (Portal Edition) 1.0.2 [Reversed]": "gZMefGtJggtaiaaaJraaksaaamaaaE",
-"Uptown Funk (2 Jumps) (Instant Bombs) [Reversed]": "gZMefGykggtaiaaaJraaksaaamaaaE",
-"A Castle on a Cloud 1.0.8 [Reversed]": "gZMefGvSggtaiaaaJraaksaaamaaaE",
-"A-Maze-Ing (Official) [Reversed]": "gZMefGxeggtaiaaaJraaksaaamaaaE",
-"The Challenge of Secrets (Official FWO) [Reversed]": "gZMefGxsggtaiaaaJraaksaaamaaaE",
-"Jump! [reversed]": "gZMefGyHggtaiaaaJraaksaaamaaajbE",
-"2 Person Buddy' v2 (Official FWO)": "gZMefGyYggtaiaaaJraaksaaamaaaE",
-"2 Person Buddy' (Official FWO) [Reversed]": "gZMefGznggtaiaaaJraaksaaamaaaE",
-"2 Person Buddy' (Official FWO) [Verticalized]": "gZMefGzAggtaiaaaJraaksaaamaaaE",
-"Mars Climb 11 (blue team required)": "gZMefGzVggtuiaaaJyaraaksaaamaaaE",
-"Quick Race (1v1) [Reversed]": "gZMefGAlggtaiaaaJraaksaaamaaaE",
-"Mini Test (Official FWO) [Reversed]": "gZMefGAuggtaiaaaJraaksaaamaaaE",
-"Daily Spike Fall 1.0.1 Final (Official FWO) [Reversed]": "gZMefGGaggtaiaaaJraaksaaamaaaE",
-"Buddy System 11 (TM1 Version) [Reversed]": "gZMefGBVggtaiaaaJyaraaksaaamaaaE",
-"Mars Buddy Climb": "gZMefGCKggtuiaaaJyaraaksaaamaaaE",
-"Buddy system 9 (TM1 Version) 9bob9 (Official FWO) [Reversed]": "gZMefGFZggtaiaaaJraaksaaamaaaE",
-"Trust Fall 3: The Return of Trust Fall [Reversed]": "gZMefGERggtaiaaaJraaksaaamaaaE",
-"Cube Goldberg": "gZMefGLRggtaiaaaJyaraakmaaEunqqYE",
-"Celestial Tether [Reversed] (Buddy System Grav, Boost/Bomb instant)": "gZMefGMuggtaiaaaJraaksaaamaaaE",
-"Jasmine": "gZMefGqaggtaiaaaJraaksaaamaaaE",
-"Jasmine (Solo)": "gZMefGqcggtaiaaaJraaksaaamaaaE",
-"LONGGGGG": "gZMefGKMggtaiaaaJraaksaaamaaaE",
-"Climbing race": "gZMefGMyggtaiaaaJraaksaaamaaaE",
-"RACE TOWER": "gZMefGMAggtaiaaaJaueuraaksaaamaaaE",
-"stairs": "gZMefGMBggtuiaaaJyaraaksaaamaaabE",
-"The Climb - Miley Cyrus (Infinite Jumps) (Official FWO)": "gZMefGOJggtaiaaaJyaraaksaaamaaapaE",
-"Skill Climbing (Infinite Jumps) (Official FWO)": "gZMefGOLggtuiaaaJyaraaksaaamaaaunqqpaE",
-"Hopscotch (Official FWO)": "gZMefGPRggtaiaaaJyaraaksaaamaaapaE",
-"FlappyBird [UnlimitedJumps] (Official FWO)": "gZMefGOPggtaiaaaJyaraaksaaamaaapaE",
+  "Solo Grav Track (Official FWO)": "gZMefGaOggtaiaaaJyaraaksaaamaaaE",
+  "PopCulture Buddy System v5": "gZMefGaPtaiaaaJyaraaksaaamabWE",
+  "Buddy Trio Test": "gZMefGaStaiaaaJyaraaksaaaE",
+  "Ultimate Buddy System (Official FWO)": "gZMefGaUtaiaaaJyaraaksaaamaaYE",
+  "Ball-E's INSANE 15 minute buddy challenge": "gZMefGVrtaiaaaJyaraaksaaamaaaE",
+  "BartJr's Gravity Challenge (Official FWO)": "gZMefGRcggtaiaaaJyaraaksaaamaaaE",
+  "Light Em Up Again (Inspired": "gZMefGllggtaiaaaJyaraaksaaamaaapfE",
+  "Gravity Fall": "gZMefGbdggtaiaaaJyaraaksaaamaaapfE",
+  "Gravity Fall (Insane)": "gZMefGbeggtaiaaaJyaraaksaaamaaapfE",
+  "Skill Fall": "gZMefGbfggtaiaaaJyaraaksaaamaaaE",
+  "Dragonsaine V.3 Hard Mode (Official FWO)": "gZMefGdqggtaiaaaJyaraaksaaamaaaE",
+  "Dragonsaine V.2 (Official FWO)": "gZMefGdoggtaiaaaJyaraaksaaamaaaE",
+  "Gravity Challenge (85% Complete)": "gZMefrrZggtaiaaaJyaraaksaaamaaaE",
+  "Jump!": "gZMefGhlggtaiaaaJraaksaaamaaajbE",
+  "JUMP!": "gZMefGdLggtaiaaaJraaksaaamaaaE",
+  "Jumper": "gZMefGdNggtaiaaaJyaraaksaaamaaaE",
+  "My AFK buddy": "gZMefGgsggtaiaaaJyaraaksaaamaakE",
+  "gravity trainer": "gZMefGefggtaiaaaJraaksaaamaaajbE",
+  "Competitive gravity": "gZMefGemggtaiaaaJraaksaaaE",
+  "Small Buddy 1.1 skip 2": "gZMefGeoggtaiaaaJyaraaksaaamaaaE",
+  "Survivor Snipe Skills": "gZMefDYqggtaiaaaJyaraaksaaamaaapfE",
+  "Grav Well Course": "gZMefgOwtaiaaaJyaraaksaaamaaaE",
+  "Maze Challenge": "gZMefkOftaiaaaJyaraaksaaamabWunqqE",
+  "crosky's Ludicrous Challenge": "gZMefGhataiaaaJyaraaksaaamaaaE",
+  "Marsball Gravity Race": "gZMefhTTggtaiaaaJyaraaksaaamabWE",
+  "MiniChallenge": "gZMefnbHtaiaaaJyaraak",
+  "Ultimate Challenge (With Halfway Shortcut)": "gZMefGRhtaiaaaJyaraaksaaamaaaunqq",
+  "Ball-E's absolutely INSANE challenge": "gZMefGhiggtaiaaaJyaraaksaaamaaaE",
+  "Infinity Boost [Challenge] V1": "gZMefGhjtaiaaaJyaraaksaaamaaaE",
+  "A random Danny map (Official FWO)": "gZMefGhNggtaiaaaJraaksaaamaaYE",
+  "Boldy System 2": "gZMefGiCggtaiaaaJyaraaksaaamabWE",
+  "Boldy System 3": "gZMefGivggtaiaaaJyaraaksaaamabWE",
+  "ULTIMATE GRAVITY BUDDY SYSTEM": "gZMefGiGggtaiaaaJraaksaaamaaaE",
+  "PacMan - POWER PELLET EDITION": "gZMefGtDggtaiaaaJraaksaaamaaaE",
+  "The Impossible (Portal Edition) 1.0.2 [Reversed]": "gZMefGtJggtaiaaaJraaksaaamaaaE",
+  "Uptown Funk (2 Jumps) (Instant Bombs) [Reversed]": "gZMefGykggtaiaaaJraaksaaamaaaE",
+  "A Castle on a Cloud 1.0.8 [Reversed]": "gZMefGvSggtaiaaaJraaksaaamaaaE",
+  "A-Maze-Ing (Official) [Reversed]": "gZMefGxeggtaiaaaJraaksaaamaaaE",
+  "The Challenge of Secrets (Official FWO) [Reversed]": "gZMefGxsggtaiaaaJraaksaaamaaaE",
+  "Jump! [reversed]": "gZMefGyHggtaiaaaJraaksaaamaaajbE",
+  "2 Person Buddy' v2 (Official FWO)": "gZMefGyYggtaiaaaJraaksaaamaaaE",
+  "2 Person Buddy' (Official FWO) [Reversed]": "gZMefGznggtaiaaaJraaksaaamaaaE",
+  "2 Person Buddy' (Official FWO) [Verticalized]": "gZMefGzAggtaiaaaJraaksaaamaaaE",
+  "Mars Climb 11 (blue team required)": "gZMefGzVggtuiaaaJyaraaksaaamaaaE",
+  "Quick Race (1v1) [Reversed]": "gZMefGAlggtaiaaaJraaksaaamaaaE",
+  "Mini Test (Official FWO) [Reversed]": "gZMefGAuggtaiaaaJraaksaaamaaaE",
+  "Daily Spike Fall 1.0.1 Final (Official FWO) [Reversed]": "gZMefGGaggtaiaaaJraaksaaamaaaE",
+  "Buddy System 11 (TM1 Version) [Reversed]": "gZMefGBVggtaiaaaJyaraaksaaamaaaE",
+  "Mars Buddy Climb": "gZMefGCKggtuiaaaJyaraaksaaamaaaE",
+  "Buddy system 9 (TM1 Version) 9bob9 (Official FWO) [Reversed]": "gZMefGFZggtaiaaaJraaksaaamaaaE",
+  "Trust Fall 3: The Return of Trust Fall [Reversed]": "gZMefGERggtaiaaaJraaksaaamaaaE",
+  "Cube Goldberg": "gZMefGLRggtaiaaaJyaraakmaaEunqqYE",
+  "Celestial Tether [Reversed] (Buddy System Grav, Boost/Bomb instant)": "gZMefGMuggtaiaaaJraaksaaamaaaE",
+  "Jasmine": "gZMefGqaggtaiaaaJraaksaaamaaaE",
+  "Jasmine (Solo)": "gZMefGqcggtaiaaaJraaksaaamaaaE",
+  "LONGGGGG": "gZMefGKMggtaiaaaJraaksaaamaaaE",
+  "Climbing race": "gZMefGMyggtaiaaaJraaksaaamaaaE",
+  "RACE TOWER": "gZMefGMAggtaiaaaJaueuraaksaaamaaaE",
+  "stairs": "gZMefGMBggtuiaaaJyaraaksaaamaaabE",
+  "The Climb - Miley Cyrus (Infinite Jumps) (Official FWO)": "gZMefGOJggtaiaaaJyaraaksaaamaaapaE",
+  "Skill Climbing (Infinite Jumps) (Official FWO)": "gZMefGOLggtuiaaaJyaraaksaaamaaaunqqpaE",
+  "Hopscotch (Official FWO)": "gZMefGPRggtaiaaaJyaraaksaaamaaapaE",
+  "FlappyBird [UnlimitedJumps] (Official FWO)": "gZMefGOPggtaiaaaJyaraaksaaamaaapaE",
 
-"DeathRun Flappy Bird Version (Official FWO)": "gZMefGOSggtaiaaaJyaraaksaaamaaapaE",
-"Spike System": "gZMefGOTggtaiaaaJyaraaksaaamaaapaE",
-"Flappy Cap": "gZMefGOUggtaiaaaJyaraaksaaamaaaE",
-"Flappy Bird (Official FWO)": "gZMefGOVggtaiaaaJyaraaksaaamaaapaE",
-"CD9 (Infinite Jumps)(Official FWO)": "gZMefGPSggtaiaaaJyaraaksaaamaaapaE",
-"JDC (Infinite Jumps) (Official FWO)": "gZMefGOXggtaiaaaJyaraaksaaamaaapaE",
-"Light Em Up Again (Inspired": "gZMefGPaggtaiaaaJyaraaksaaamaaapaE",
-"The Map Destroyer(Infinite Jumps) (Official FWO)": "gZMefGPbggtaiaaaJyaraaksaaamaaaunqqpaE",
-"Jump! - Van Halen (Infinite Jump Race)": "gZMefGPdggtaiaaaJyaraaksaaamaaapaE",
-"Bruh!": "gZMefGPfggtaiaaaJyaraaksaaamaaaE",
-"Flight Path Race (Official FWO)": "gZMefGPgggtaiaaaJyaraaksaaamaaapaE",
-"Unlimited Jumps Buddy (Official FWO)": "gZMefGPiggtaiaaaJraaksaaamaaapaE",
-"Gravity Fall (unlimited jumps)": "gZMefGPnggtaiaaaJyaraaksaaamaaapaE",
-"Gravity Fall (Insane) (Unlimited jumps)": "gZMefGPpggtaiaaaJyaraaksaaamaaapaE",
-"Compact Disc (Official FWO)": "gZMefGQMggtaiaaaJyaraaksaaamaaapaE",
-"Gravity Challenge [Reversed] (Official FWO)": "gZMefHcqggtaiaaaJraaksaaamaaaE",
-"Hopscotch (Official FWO) [Reversed]": "gZMefGSLggtaiaaaJyaraaksaaamaaapaE",
-"Spike System [Reversed]": "gZMefGSMggtaiaaaJyaraaksaaamaaapaE",
-"Gravity Fall (Insane) (Unlimited jumps) [Reversed]": "gZMefGSNggtaiaaaJyaraaksaaamaaapaE",
-"Gravity Fall (unlimited jumps) [Reversed]": "gZMefGSOggtaiaaaJyaraaksaaamaaapaE",
-"Super Weird Map": "gZMefGUdggtaiaaaJyaraaksaaamaaaE",
-"Single person map Final (instant boosts and bombs)": "gZMefGUeggtaiaaaJyaraaksaaamaaaE",
-"Barbed Wire (Official FWO)": "gZMefGUfggtaiaaaJyaraaksaaamaaaE",
-"Jasmine (Hard Version)": "gZMefGVeggtaiaaaJraaksaaamaaaE",
-"RACE 1v1 new": "gZMefrMOtaiaaaJraaksaaamaaa",
-"Race you? 1v1 Easy v2": "gZMefrBKtaiaaaJraaksaaaunqq",
-"RACE (1 cap collected counts as 1 lap)": "gZMefGWwtkoiaaaJyaraaksaaa",
-"RACE": "gZMefGWxtaiaaaJyaraaksaaa",
-"Memory Lane": "gZMefGWDtaiaaaJyaraaksaaamaaa",
-"The Caverns Below": "gZMefGWJggtaiaaaJyaraaksaaamaaaE",
-"On Edge (Official FWO)": "gZMefGWSggtaiaaaJyaraaksaaamaaaE",
-"edge master": "gZMeflaaggtaiaaaJyaraakmaaaE",
-"(FIC) Spike & Spike": "gZMefDuttaiaaaJyaraaksaaamaaa",
-"Shadow Snipes": "gZMefFpgtaiaaaJyaraaksaaamaaa",
-"RollCareful": "gZMefGXitaiaaaJyaraak",
-"Be there or be square": "gZMefGXjggtaiaaaJyaraakE",
-"Be there or be square [Reversed]": "gZMefGXkggtaiaaaJyaraakE",
-"Tiki Tunnel of Terror": "gZMefDXgtaiaaaJyaraaksaaEmaaa",
-"hjnkm, (Official FWO)": "gZMefGXlggtaiaaaJyaraaksaaamaaYE",
-"RACE": "gZMefGXotaiaaaJyaraak",
-"30 Second Challenge - Spikes": "gZMefvdStaiaaaJyaraak",
-"spikefield": "gZMefGZrtaiaaaJyaraak",
-"spike map": "gZMefGZttaiaaaJyaraaksaaa",
-"Spikey Speedrun": "gZMefHaKtaiaaaJyaraaksaaamaaE",
-"Bomb Tower Bounce": "gZMefGweggtaiaaaJyaraaksaaamaaaE",
-"Doorways Season 4": "gZMefCfKtaiaaaJyaraak",
-"Doorways Season 9": "gZMefCiCtaiaaaJyaraak",
-"Vertical Doom": "gZMefGZvggtuiaaaJyaraaksaaamaakE",
-"Climb Guys Deluxe": "gZMefGZwggtuiaaaJyaraaksaaamaakE",
-"Climb Guys": "gZMefGZxggtuiaaaJyaraaksaaamaakE",
-"Shadow Snipes with bomb": "gZMefHcbtaiaaaJyaraaksaaamaaa",
-"Ferguson (Bombs: 1 sec, Boost: Instant)": "gZMefHbRggtaiaaaJyaraaksaaamaakE",
-"Compact Disc without cheeze (Official FWO)": "gZMefHcfggtaiaaaJyaraaksaaamaaapaE",
-"Cube Goldberg (red team version)": "gZMefHcRggtaiaaaJyaraakmaaEunqqYE",
-"Hopscotch (Official FWO) [Reversed] (no cheeze)": "gZMefHdvggtaiaaaJyaraaksaaamaaapaE",
-"Jump (back and forth version)": "gZMefHcVggtaiaaaJraaksaaamaaaE",
-"Gravity Race 4 (1 jump version)": "gZMefHcWggtaiaaaJyaraaksaaamaaapbE",
-"Bambox": "gZMefHdgggtaiaaaJraaksaaamaaaE",
-"Jump [1 jump]": "gZMefHcYggtaiaaaJraaksaaamaaapbE",
-"Hopscotch (Official FWO) [Inverted]": "gZMefHdyggtaiaaaJyaraaksaaamaaapaE",
-"Hopscotch (Official FWO) [Reversed] [Inverted]": "gZMefHdzggtaiaaaJyaraaksaaamaaapaE",
-"Juiced Up (JJ Grav, Boost/Bomb instant) (official version)": "gZMefHexggtaiaaaJraaksaaamaaauaaaSPuTbE",
-"SpawnPro Gravity System": "gZMefHdHggtaiaaaJraaasaaamaaauaaaE",
-"Single Player Map (Instant bombs, Boosts) (Official FWO)": "gZMefHdKggtaiaaaJyaraaksaaamaaaE",
-"The Impossible": "gZMefHeyggtaiaaaJraaksaaamaaaE",
-"Trial Of Deer": "gZMefHdVggtaiaaaJyaraaksaaamaaaYE",
-"Trial Of Deer [Reversed]": "gZMefHekggtaiaaaJyaraaksaaamaaaYE",
-"Ball Pit": "gZMefHeoggtaiaaaJNEraaamaaEE",
-"Spike Maze (60 Sec)": "gZMefvmstaiaaaJyaraak",
-"Zoom (Gravity Race) [Instant Bomb]": "gZMefHeJggtuiaaaJyaraaksaaamaaaE",
-"Trust Fall 3: The Return of Trust Fall [AnyGate]": "gZMefHeIggtaiaaaJraaksaaamaaaE",
-};
-const dataUrl = "https://worldrecords.bambitp.workers.dev";
+  "DeathRun Flappy Bird Version (Official FWO)": "gZMefGOSggtaiaaaJyaraaksaaamaaapaE",
+  "Spike System": "gZMefGOTggtaiaaaJyaraaksaaamaaapaE",
+  "Flappy Cap": "gZMefGOUggtaiaaaJyaraaksaaamaaaE",
+  "Flappy Bird (Official FWO)": "gZMefGOVggtaiaaaJyaraaksaaamaaapaE",
+  "CD9 (Infinite Jumps)(Official FWO)": "gZMefGPSggtaiaaaJyaraaksaaamaaapaE",
+  "JDC (Infinite Jumps) (Official FWO)": "gZMefGOXggtaiaaaJyaraaksaaamaaapaE",
+  "Light Em Up Again (Inspired": "gZMefGPaggtaiaaaJyaraaksaaamaaapaE",
+  "The Map Destroyer(Infinite Jumps) (Official FWO)": "gZMefGPbggtaiaaaJyaraaksaaamaaaunqqpaE",
+  "Jump! - Van Halen (Infinite Jump Race)": "gZMefGPdggtaiaaaJyaraaksaaamaaapaE",
+  "Bruh!": "gZMefGPfggtaiaaaJyaraaksaaamaaaE",
+  "Flight Path Race (Official FWO)": "gZMefGPgggtaiaaaJyaraaksaaamaaapaE",
+  "Unlimited Jumps Buddy (Official FWO)": "gZMefGPiggtaiaaaJraaksaaamaaapaE",
+  "Gravity Fall (unlimited jumps)": "gZMefGPnggtaiaaaJyaraaksaaamaaapaE",
+  "Gravity Fall (Insane) (Unlimited jumps)": "gZMefGPpggtaiaaaJyaraaksaaamaaapaE",
+  "Compact Disc (Official FWO)": "gZMefGQMggtaiaaaJyaraaksaaamaaapaE",
+  "Gravity Challenge [Reversed] (Official FWO)": "gZMefHcqggtaiaaaJraaksaaamaaaE",
+  "Hopscotch (Official FWO) [Reversed]": "gZMefGSLggtaiaaaJyaraaksaaamaaapaE",
+  "Spike System [Reversed]": "gZMefGSMggtaiaaaJyaraaksaaamaaapaE",
+  "Gravity Fall (Insane) (Unlimited jumps) [Reversed]": "gZMefGSNggtaiaaaJyaraaksaaamaaapaE",
+  "Gravity Fall (unlimited jumps) [Reversed]": "gZMefGSOggtaiaaaJyaraaksaaamaaapaE",
+  "Super Weird Map": "gZMefGUdggtaiaaaJyaraaksaaamaaaE",
+  "Single person map Final (instant boosts and bombs)": "gZMefGUeggtaiaaaJyaraaksaaamaaaE",
+  "Barbed Wire (Official FWO)": "gZMefGUfggtaiaaaJyaraaksaaamaaaE",
+  "Jasmine (Hard Version)": "gZMefGVeggtaiaaaJraaksaaamaaaE",
+  "RACE 1v1 new": "gZMefrMOtaiaaaJraaksaaamaaa",
+  "Race you? 1v1 Easy v2": "gZMefrBKtaiaaaJraaksaaaunqq",
+  "RACE (1 cap collected counts as 1 lap)": "gZMefGWwtkoiaaaJyaraaksaaa",
+  "RACE": "gZMefGWxtaiaaaJyaraaksaaa",
+  "Memory Lane": "gZMefGWDtaiaaaJyaraaksaaamaaa",
+  "The Caverns Below": "gZMefGWJggtaiaaaJyaraaksaaamaaaE",
+  "On Edge (Official FWO)": "gZMefGWSggtaiaaaJyaraaksaaamaaaE",
+  "edge master": "gZMeflaaggtaiaaaJyaraakmaaaE",
+  "(FIC) Spike & Spike": "gZMefDuttaiaaaJyaraaksaaamaaa",
+  "Shadow Snipes": "gZMefFpgtaiaaaJyaraaksaaamaaa",
+  "RollCareful": "gZMefGXitaiaaaJyaraak",
+  "Be there or be square": "gZMefGXjggtaiaaaJyaraakE",
+  "Be there or be square [Reversed]": "gZMefGXkggtaiaaaJyaraakE",
+  "Tiki Tunnel of Terror": "gZMefDXgtaiaaaJyaraaksaaEmaaa",
+  "hjnkm, (Official FWO)": "gZMefGXlggtaiaaaJyaraaksaaamaaYE",
+  "RACE": "gZMefGXotaiaaaJyaraak",
+  "30 Second Challenge - Spikes": "gZMefvdStaiaaaJyaraak",
+  "spikefield": "gZMefGZrtaiaaaJyaraak",
+  "spike map": "gZMefGZttaiaaaJyaraaksaaa",
+  "Spikey Speedrun": "gZMefHaKtaiaaaJyaraaksaaamaaE",
+  "Bomb Tower Bounce": "gZMefGweggtaiaaaJyaraaksaaamaaaE",
+  "Doorways Season 4": "gZMefCfKtaiaaaJyaraak",
+  "Doorways Season 9": "gZMefCiCtaiaaaJyaraak",
+  "Vertical Doom": "gZMefGZvggtuiaaaJyaraaksaaamaakE",
+  "Climb Guys Deluxe": "gZMefGZwggtuiaaaJyaraaksaaamaakE",
+  "Climb Guys": "gZMefGZxggtuiaaaJyaraaksaaamaakE",
+  "Shadow Snipes with bomb": "gZMefHcbtaiaaaJyaraaksaaamaaa",
+  "Ferguson (Bombs: 1 sec, Boost: Instant)": "gZMefHbRggtaiaaaJyaraaksaaamaakE",
+  "Compact Disc without cheeze (Official FWO)": "gZMefHcfggtaiaaaJyaraaksaaamaaapaE",
+  "Cube Goldberg (red team version)": "gZMefHcRggtaiaaaJyaraakmaaEunqqYE",
+  "Hopscotch (Official FWO) [Reversed] (no cheeze)": "gZMefHdvggtaiaaaJyaraaksaaamaaapaE",
+  "Jump (back and forth version)": "gZMefHcVggtaiaaaJraaksaaamaaaE",
+  "Gravity Race 4 (1 jump version)": "gZMefHcWggtaiaaaJyaraaksaaamaaapbE",
+  "Bambox": "gZMefHdgggtaiaaaJraaksaaamaaaE",
+  "Jump [1 jump]": "gZMefHcYggtaiaaaJraaksaaamaaapbE",
+  "Hopscotch (Official FWO) [Inverted]": "gZMefHdyggtaiaaaJyaraaksaaamaaapaE",
+  "Hopscotch (Official FWO) [Reversed] [Inverted]": "gZMefHdzggtaiaaaJyaraaksaaamaaapaE",
+  "Juiced Up (JJ Grav, Boost/Bomb instant) (official version)": "gZMefHexggtaiaaaJraaksaaamaaauaaaSPuTbE",
+  "SpawnPro Gravity System": "gZMefHdHggtaiaaaJraaasaaamaaauaaaE",
+  "Single Player Map (Instant bombs, Boosts) (Official FWO)": "gZMefHdKggtaiaaaJyaraaksaaamaaaE",
+  "The Impossible": "gZMefHeyggtaiaaaJraaksaaamaaaE",
+  "Trial Of Deer": "gZMefHdVggtaiaaaJyaraaksaaamaaaYE",
+  "Trial Of Deer [Reversed]": "gZMefHekggtaiaaaJyaraaksaaamaaaYE",
+  "Ball Pit": "gZMefHeoggtaiaaaJNEraaamaaEE",
+  "Spike Maze (60 Sec)": "gZMefvmstaiaaaJyaraak",
+  "Zoom (Gravity Race) [Instant Bomb]": "gZMefHeJggtuiaaaJyaraaksaaamaaaE",
+  "Trust Fall 3: The Return of Trust Fall [AnyGate]": "gZMefHeIggtaiaaaJraaksaaamaaaE",
+  };
+  const dataUrl = "https://worldrecords.bambitp.workers.dev";
 
-// Allowed names for players without a playerID.
-const allowedNonPlayerIdNames = [";;", "grav", "::", "leopard", "buddy system"];
+  // Allowed names for players without a playerID.
+  const allowedNonPlayerIdNames = [";;", "grav", "::", "leopard", "buddy system"];
 
-// Leaderboard helper functions (combine Some Ball entries)
-function getLeaderboardPlayerKey(player) {
-  if (/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
-    return "Some Balls";
-  }
-  return player.user_id ? player.user_id : player.name;
-}
-
-function getLeaderboardPlayerDisplayName(player) {
-  if (/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
-    return "Some Balls";
-  }
-  return player.name;
-}
-
-// Maps page helper functions (do not combine Some Ball entries)
-function getMapsPlayerKey(player) {
-  return player.user_id ? player.user_id : player.name;
-}
-
-function getMapsPlayerDisplayName(player) {
-  return player.name;
-}
-
-// Format milliseconds into a readable time format.
-function formatTime(ms) {
-  const hours = Math.floor(ms / 3600000);
-  const minutes = Math.floor((ms % 3600000) / 60000);
-  const seconds = Math.floor((ms % 60000) / 1000);
-  const milliseconds = ms % 1000;
-
-  if (hours > 0) {
-    const minutesStr = minutes.toString().padStart(2, '0');
-    const secondsStr = seconds.toString().padStart(2, '0');
-    const millisStr = milliseconds.toString().padStart(3, '0');
-    return `${hours}:${minutesStr}:${secondsStr}.${millisStr}`;
-  } else if (minutes > 0) {
-    const secondsStr = seconds.toString().padStart(2, '0');
-    const millisStr = milliseconds.toString().padStart(3, '0');
-    return `${minutes}:${secondsStr}.${millisStr}`;
-  } else {
-    const millisStr = milliseconds.toString().padStart(3, '0');
-    return `${seconds}.${millisStr}`;
-  }
-}
-
-// Format timestamp as relative time.
-function formatRelativeTime(timestamp) {
-  const now = Date.now();
-  const diff = now - new Date(timestamp).getTime();
-  const days = Math.floor(diff / (24 * 3600000));
-
-  if (days < 1) {
-    const hours = Math.floor(diff / 3600000);
-    if (hours > 0) {
-      return `${hours} hours ago`;
-    } else {
-      const minutes = Math.floor(diff / 60000);
-      return minutes > 0 ? `${minutes} minutes ago` : "just now";
+  // Leaderboard helper functions (combine Some Ball entries)
+  function getLeaderboardPlayerKey(player) {
+    if (/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
+      return "Some Balls";
     }
-  } else if (days < 7) {
-    const hours = Math.floor((diff % (24 * 3600000)) / 3600000);
-    return `${days} days ${hours} hours ago`;
-  } else if (days < 30) {
-    const weeks = Math.floor(days / 7);
-    const remDays = days % 7;
-    return `${weeks} week${weeks !== 1 ? "s" : ""} ${remDays} day${remDays !== 1 ? "s" : ""} ago`;
-  } else if (days < 365) {
-    const months = Math.floor(days / 30);
-    const remDays = days % 30;
-    return `${months} month${months !== 1 ? "s" : ""} ${remDays} day${remDays !== 1 ? "s" : ""} ago`;
-  } else {
-    const years = Math.floor(days / 365);
-    const remDays = days % 365;
-    const months = Math.floor(remDays / 30);
-    return `${years} year${years !== 1 ? "s" : ""} ${months} month${months !== 1 ? "s" : ""} ago`;
+    return player.user_id ? player.user_id : player.name;
   }
-}
 
-// Navigation toggle.
-const mapsLink = document.getElementById('mapsLink');
-const leaderboardLink = document.getElementById('leaderboardLink');
+  function getLeaderboardPlayerDisplayName(player) {
+    if (/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
+      return "Some Balls";
+    }
+    return player.name;
+  }
 
-mapsLink.addEventListener('click', function() {
-  document.getElementById('mapsRecordsContainer').style.display = "flex";
-  document.getElementById('leaderboardPage').style.display = "none";
-  mapsLink.classList.add('active');
-  leaderboardLink.classList.remove('active');
-});
-leaderboardLink.addEventListener('click', function() {
-  document.getElementById('mapsRecordsContainer').style.display = "none";
-  document.getElementById('leaderboardPage').style.display = "block";
-  leaderboardLink.classList.add('active');
-  mapsLink.classList.remove('active');
-});
+  // Maps page helper functions (do not combine Some Ball entries)
+  function getMapsPlayerKey(player) {
+    return player.user_id ? player.user_id : player.name;
+  }
 
-fetch(dataUrl)
-  .then(response => response.json())
-  .then(data => {
-    let bestRecords = {};
-    let gamesCompletedLeaderboard = {};
-    let worldRecordsLeaderboard = {};
-    let soloWorldRecordsLeaderboard = {};
-    let cappingWorldRecordsLeaderboard = {};
+  function getMapsPlayerDisplayName(player) {
+    return player.name;
+  }
 
-    // Group all records by map name.
-    let recordsByMap = {};
+  // Format milliseconds into a readable time format.
+  function formatTime(ms) {
+    const hours = Math.floor(ms / 3600000);
+    const minutes = Math.floor((ms % 3600000) / 60000);
+    const seconds = Math.floor((ms % 60000) / 1000);
+    const milliseconds = ms % 1000;
 
-    // Process each record.
-    data.forEach(record => {
-      if (record.time_to_first_cap !== null) {
-        // Update games completed leaderboard (each player counted once per game).
-        const seenForGame = new Set();
-        record.players.forEach(player => {
-          let key = getLeaderboardPlayerKey(player);
-          let displayName = getLeaderboardPlayerDisplayName(player);
-          let hasPlayerId = (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name));
-          if (!seenForGame.has(key)) {
-            if (!gamesCompletedLeaderboard[key]) {
-              gamesCompletedLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
-            }
-            gamesCompletedLeaderboard[key].score += 1;
-            seenForGame.add(key);
-          }
-        });
+    if (hours > 0) {
+      const minutesStr = minutes.toString().padStart(2, '0');
+      const secondsStr = seconds.toString().padStart(2, '0');
+      const millisStr = milliseconds.toString().padStart(3, '0');
+      return `${hours}:${minutesStr}:${secondsStr}.${millisStr}`;
+    } else if (minutes > 0) {
+      const secondsStr = seconds.toString().padStart(2, '0');
+      const millisStr = milliseconds.toString().padStart(3, '0');
+      return `${minutes}:${secondsStr}.${millisStr}`;
+    } else {
+      const millisStr = milliseconds.toString().padStart(3, '0');
+      return `${seconds}.${millisStr}`;
+    }
+  }
 
-        // Update best record per map.
-        if (!bestRecords[record.map_name] || record.time_to_first_cap < bestRecords[record.map_name].time_to_first_cap) {
-          bestRecords[record.map_name] = record;
-        }
+  // Format timestamp as relative time.
+  function formatRelativeTime(timestamp) {
+    const now = Date.now();
+    const diff = now - new Date(timestamp).getTime();
+    const days = Math.floor(diff / (24 * 3600000));
 
-        // Group records for each map.
-        if (!recordsByMap[record.map_name]) {
-          recordsByMap[record.map_name] = [];
-        }
-        recordsByMap[record.map_name].push(record);
+    if (days < 1) {
+      const hours = Math.floor(diff / 3600000);
+      if (hours > 0) {
+        return `${hours} hours ago`;
+      } else {
+        const minutes = Math.floor(diff / 60000);
+        return minutes > 0 ? `${minutes} minutes ago` : "just now";
       }
-    });
+    } else if (days < 7) {
+      const hours = Math.floor((diff % (24 * 3600000)) / 3600000);
+      return `${days} days ${hours} hours ago`;
+    } else if (days < 30) {
+      const weeks = Math.floor(days / 7);
+      const remDays = days % 7;
+      return `${weeks} week${weeks !== 1 ? "s" : ""} ${remDays} day${remDays !== 1 ? "s" : ""} ago`;
+    } else if (days < 365) {
+      const months = Math.floor(days / 30);
+      const remDays = days % 30;
+      return `${months} month${months !== 1 ? "s" : ""} ${remDays} day${remDays !== 1 ? "s" : ""} ago`;
+    } else {
+      const years = Math.floor(days / 365);
+      const remDays = days % 365;
+      const months = Math.floor(remDays / 30);
+      return `${years} year${years !== 1 ? "s" : ""} ${months} month${months !== 1 ? "s" : ""} ago`;
+    }
+  }
 
-    // Now update leaderboards using only the best records per map.
-    Object.values(bestRecords).forEach(record => {
-      // Update overall world records leaderboard.
-      const seenForRecord = new Set();
-      record.players.forEach(player => {
-        let key = getLeaderboardPlayerKey(player);
-        let displayName = getLeaderboardPlayerDisplayName(player);
-        let hasPlayerId = (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name));
-        if (!seenForRecord.has(key)) {
-          if (!worldRecordsLeaderboard[key]) {
-            worldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
+  // Navigation toggle.
+  const mapsLink = document.getElementById('mapsLink');
+  const leaderboardLink = document.getElementById('leaderboardLink');
+
+  mapsLink.addEventListener('click', function() {
+    document.getElementById('mapsRecordsContainer').style.display = "flex";
+    document.getElementById('leaderboardPage').style.display = "none";
+    mapsLink.classList.add('active');
+    leaderboardLink.classList.remove('active');
+  });
+  leaderboardLink.addEventListener('click', function() {
+    document.getElementById('mapsRecordsContainer').style.display = "none";
+    document.getElementById('leaderboardPage').style.display = "block";
+    leaderboardLink.classList.add('active');
+    mapsLink.classList.remove('active');
+  });
+
+  fetch(dataUrl)
+    .then(response => response.json())
+    .then(data => {
+      let bestRecords = {};
+      let gamesCompletedLeaderboard = {};
+      let worldRecordsLeaderboard = {};
+      let soloWorldRecordsLeaderboard = {};
+      let cappingWorldRecordsLeaderboard = {};
+
+      // Group all records by map name.
+      let recordsByMap = {};
+
+      // Process each record.
+      data.forEach(record => {
+        if (record.record_time !== null) {
+          // Update games completed leaderboard (each player counted once per game).
+          const seenForGame = new Set();
+          record.players.forEach(player => {
+            let key = getLeaderboardPlayerKey(player);
+            let displayName = getLeaderboardPlayerDisplayName(player);
+            let hasPlayerId = (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name));
+            if (!seenForGame.has(key)) {
+              if (!gamesCompletedLeaderboard[key]) {
+                gamesCompletedLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
+              }
+              gamesCompletedLeaderboard[key].score += 1;
+              seenForGame.add(key);
+            }
+          });
+
+          // Update best record per map.
+          if (!bestRecords[record.map_name] || record.record_time < bestRecords[record.map_name].record_time) {
+            bestRecords[record.map_name] = record;
           }
-          worldRecordsLeaderboard[key].score += 1;
-          seenForRecord.add(key);
+
+          // Group records for each map.
+          if (!recordsByMap[record.map_name]) {
+            recordsByMap[record.map_name] = [];
+          }
+          recordsByMap[record.map_name].push(record);
         }
       });
 
-      // Update solo records leaderboard if the best record is a solo run.
-      if (record.is_solo) {
-        const seenForSolo = new Set();
+      // Now update leaderboards using only the best records per map.
+      Object.values(bestRecords).forEach(record => {
+        // Update overall world records leaderboard.
+        const seenForRecord = new Set();
         record.players.forEach(player => {
           let key = getLeaderboardPlayerKey(player);
           let displayName = getLeaderboardPlayerDisplayName(player);
           let hasPlayerId = (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name));
-          if (!seenForSolo.has(key)) {
-            if (!soloWorldRecordsLeaderboard[key]) {
-              soloWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
+          if (!seenForRecord.has(key)) {
+            if (!worldRecordsLeaderboard[key]) {
+              worldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
             }
-            soloWorldRecordsLeaderboard[key].score += 1;
-            seenForSolo.add(key);
+            worldRecordsLeaderboard[key].score += 1;
+            seenForRecord.add(key);
           }
         });
-      }
 
-      // Update capping records leaderboard if the best record has a capping player.
-      if (record.capping_player) {
-        const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
-        let key = getLeaderboardPlayerKey(dummyPlayer);
-        let displayName = getLeaderboardPlayerDisplayName(dummyPlayer);
-        let hasPlayerId = (dummyPlayer.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(dummyPlayer.name));
-        if (!cappingWorldRecordsLeaderboard[key]) {
-          cappingWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
+        // Update solo records leaderboard if the best record is a solo run.
+        if (record.is_solo) {
+          const seenForSolo = new Set();
+          record.players.forEach(player => {
+            let key = getLeaderboardPlayerKey(player);
+            let displayName = getLeaderboardPlayerDisplayName(player);
+            let hasPlayerId = (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name));
+            if (!seenForSolo.has(key)) {
+              if (!soloWorldRecordsLeaderboard[key]) {
+                soloWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
+              }
+              soloWorldRecordsLeaderboard[key].score += 1;
+              seenForSolo.add(key);
+            }
+          });
         }
-        cappingWorldRecordsLeaderboard[key].score += 1;
-      }
-    });
 
-    // Sort each map's records by time ascending.
-    for (let map in recordsByMap) {
-      recordsByMap[map].sort((a, b) => a.time_to_first_cap - b.time_to_first_cap);
-    }
-
-    // Prepare records array for the Maps table (one record per map from bestRecords).
-    let recordsArray = Object.values(bestRecords);
-    const mapsTableBody = document.getElementById('mapsTableBody');
-
-    // Function to render the Maps table.
-    function renderMapsTable(records) {
-      mapsTableBody.innerHTML = "";
-      records.forEach(record => {
-        const tr = document.createElement('tr');
-        tr.className = "map-row";
-
-        // Map Name cell with clickable details toggle.
-        const mapNameCell = document.createElement('td');
-        mapNameCell.className = "map-name";
-        mapNameCell.textContent = record.map_name;
-
-        // Create the hidden detail section.
-        const detailDiv = document.createElement('div');
-        detailDiv.className = "detail";
-        detailDiv.style.display = "none";
-
-        // Create the left side container for date, replay, players, preset info, etc.
-        const leftDetailDiv = document.createElement('div');
-        leftDetailDiv.style.border = "1px solid #ccc";
-        leftDetailDiv.style.padding = "10px";
-        leftDetailDiv.style.borderRadius = "5px";
-
-        // Date information.
-        const dateDiv = document.createElement('div');
-        const date = new Date(record.timestamp).toLocaleDateString();
-        dateDiv.textContent = "Date: " + date;
-        leftDetailDiv.appendChild(dateDiv);
-
-        // Replay hyperlink using uuid.
-        const replayLink = document.createElement('a');
-        replayLink.href = `https://tagpro.koalabeast.com/replays?uuid=${record.uuid}`;
-        replayLink.textContent = "Watch Replay";
-        replayLink.target = "_blank";
-        leftDetailDiv.appendChild(replayLink);
-
-        // Deduplicate players for the detail section.
-        const playersDiv = document.createElement('div');
-        playersDiv.textContent = "Players: ";
-        const uniquePlayers = [];
-        const seenPlayers = new Set();
-        record.players.forEach(player => {
-          let key = getMapsPlayerKey(player);
-          if (!seenPlayers.has(key)) {
-            seenPlayers.add(key);
-            uniquePlayers.push(player);
-          }
-        });
-        uniquePlayers.forEach((player, index) => {
-          if (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
-            const playerLink = document.createElement('a');
-            playerLink.href = `https://tagpro.koalabeast.com/profile/${player.user_id}`;
-            playerLink.textContent = getMapsPlayerDisplayName(player);
-            playersDiv.appendChild(playerLink);
-          } else {
-            const span = document.createElement('span');
-            span.textContent = getMapsPlayerDisplayName(player);
-            playersDiv.appendChild(span);
-          }
-          if (index < uniquePlayers.length - 1) {
-            playersDiv.appendChild(document.createTextNode(", "));
-          }
-        });
-        leftDetailDiv.appendChild(playersDiv);
-
-        // Preset and Map ID information.
-        const infoDiv = document.createElement('div');
-        const presetValue = presets[record.map_name] || "N/A";
-        infoDiv.textContent = "Preset: " + presetValue + " | Map ID: " + record.map_id;
-        leftDetailDiv.appendChild(infoDiv);
-
-        // Copy preset button.
-        const copyButton = document.createElement('button');
-        copyButton.textContent = "Copy Preset";
-        copyButton.classList.add("copy-button");
-        copyButton.addEventListener('click', (event) => {
-          event.stopPropagation();
-          if (presetValue !== "N/A") {
-            navigator.clipboard.writeText(presetValue)
-              .then(() => {
-                copyButton.textContent = "Copied!";
-                copyButton.classList.add("copied");
-                setTimeout(() => {
-                  copyButton.textContent = "Copy Preset";
-                  copyButton.classList.remove("copied");
-                }, 2000);
-              })
-              .catch(err => console.error("Error copying preset:", err));
-          }
-        });
-        leftDetailDiv.appendChild(copyButton);
-
-        // Create the right side medal panel (outside of the left detail box).
-        const medalPanelDiv = document.createElement('div');
-        medalPanelDiv.style.display = "flex";
-        medalPanelDiv.style.flexDirection = "column";
-        medalPanelDiv.style.justifyContent = "flex-start";
-        medalPanelDiv.style.marginLeft = "20px"; // adds space between the left box and medals
-
-        // Prepare the top 3 records for this map.
-        const mapRecords = recordsByMap[record.map_name] || [];
-        const top3Records = mapRecords.slice(0, 3);
-
-        // Define labels and colors for the medals.
-        const medalLabels = ["1st", "2nd", "3rd"];
-        const medalColors = ["#FFD700", "#C0C0C0", "#CD7F32"]; // gold, silver, bronze
-
-        top3Records.forEach((rec, index) => {
-          // Create a link element that directs to the replay.
-          const replayLinkMedal = document.createElement('a');
-          replayLinkMedal.href = `https://tagpro.koalabeast.com/replays?uuid=${rec.uuid}`;
-          replayLinkMedal.target = "_blank";
-          replayLinkMedal.style.textDecoration = "none"; // remove default underline
-
-          // Create a container for the medal row.
-          const medalRow = document.createElement('div');
-          medalRow.style.display = "flex";
-          medalRow.style.alignItems = "center";
-          medalRow.style.border = "1px solid " + medalColors[index];
-          medalRow.style.padding = "5px";
-          medalRow.style.borderRadius = "5px";
-          medalRow.style.marginBottom = "5px";
-
-          // Create the medal label.
-          const medalLabelSpan = document.createElement('span');
-          medalLabelSpan.style.fontWeight = "bold";
-          medalLabelSpan.style.marginRight = "8px";
-          medalLabelSpan.style.color = medalColors[index];
-          medalLabelSpan.textContent = medalLabels[index];
-
-          // Create the time span with a colored background.
-          const timeSpan = document.createElement('span');
-          timeSpan.textContent = formatTime(rec.time_to_first_cap);
-          timeSpan.style.color = medalColors[index];
-          timeSpan.style.padding = "2px 5px";
-          timeSpan.style.borderRadius = "5px";
-
-          medalRow.appendChild(medalLabelSpan);
-          medalRow.appendChild(timeSpan);
-
-          replayLinkMedal.appendChild(medalRow);
-          medalPanelDiv.appendChild(replayLinkMedal);
-        });
-
-        // Create a wrapper that holds the left details and the medal panel side by side.
-        const detailWrapper = document.createElement('div');
-        detailWrapper.style.display = "flex";
-        detailWrapper.style.alignItems = "flex-start";
-
-        // Append the left detail box and the medal panel to the wrapper.
-        detailWrapper.appendChild(leftDetailDiv);
-        detailWrapper.appendChild(medalPanelDiv);
-
-        // Finally, add the combined wrapper to the hidden detail section.
-        detailDiv.appendChild(detailWrapper);
-
-        // Toggle detail section on clicking the map name.
-        mapNameCell.addEventListener('click', function() {
-          detailDiv.style.display = detailDiv.style.display === "none" ? "block" : "none";
-        });
-        mapNameCell.appendChild(detailDiv);
-        tr.appendChild(mapNameCell);
-
-        // Time To First Cap cell.
-        const timeCell = document.createElement('td');
-        timeCell.textContent = formatTime(record.time_to_first_cap);
-        tr.appendChild(timeCell);
-
-        // Set (Relative Time) cell.
-        const relativeTimeCell = document.createElement('td');
-        relativeTimeCell.textContent = formatRelativeTime(record.timestamp);
-        tr.appendChild(relativeTimeCell);
-
-        // Capping Player cell with profile link if available.
-        const capCell = document.createElement('td');
+        // Update capping records leaderboard if the best record has a capping player.
         if (record.capping_player) {
           const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
-          if (dummyPlayer.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(dummyPlayer.name)) {
-            const capLink = document.createElement('a');
-            capLink.href = `https://tagpro.koalabeast.com/profile/${dummyPlayer.user_id}`;
-            capLink.textContent = getMapsPlayerDisplayName(dummyPlayer);
-            capCell.appendChild(capLink);
-          } else {
-            capCell.textContent = getMapsPlayerDisplayName(dummyPlayer);
+          let key = getLeaderboardPlayerKey(dummyPlayer);
+          let displayName = getLeaderboardPlayerDisplayName(dummyPlayer);
+          let hasPlayerId = (dummyPlayer.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(dummyPlayer.name));
+          if (!cappingWorldRecordsLeaderboard[key]) {
+            cappingWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId: hasPlayerId };
           }
-        } else {
-          capCell.textContent = "DNF";
+          cappingWorldRecordsLeaderboard[key].score += 1;
         }
-        tr.appendChild(capCell);
-
-        mapsTableBody.appendChild(tr);
       });
-    }
 
-    // Sorting functionality.
-    let currentSort = {
-      property: "timestamp",
-      direction: "desc"
-    };
-
-    function sortRecords(property, type) {
-      if (currentSort.property === property) {
-        currentSort.direction = (currentSort.direction === "asc" ? "desc" : "asc");
-      } else {
-        currentSort.property = property;
-        currentSort.direction = "asc";
+      // Sort each map's records by time ascending.
+      for (let map in recordsByMap) {
+        recordsByMap[map].sort((a, b) => a.record_time - b.record_time);
       }
-      recordsArray.sort((a, b) => {
-        let aVal = a[property];
-        let bVal = b[property];
-        if (property === "capping_player") {
-          aVal = aVal || "DNF";
-          bVal = bVal || "DNF";
-        }
-        if (type === "numeric") {
-          if (property === "timestamp") {
-            const aTime = new Date(aVal).getTime();
-            const bTime = new Date(bVal).getTime();
-            return currentSort.direction === "asc" ? aTime - bTime : bTime - aTime;
+
+      // Prepare records array for the Maps table (one record per map from bestRecords).
+      let recordsArray = Object.values(bestRecords);
+      const mapsTableBody = document.getElementById('mapsTableBody');
+
+      // Function to render the Maps table.
+      function renderMapsTable(records) {
+        mapsTableBody.innerHTML = "";
+        records.forEach(record => {
+          const tr = document.createElement('tr');
+          tr.className = "map-row";
+
+          // Map Name cell with clickable details toggle.
+          const mapNameCell = document.createElement('td');
+          mapNameCell.className = "map-name";
+          mapNameCell.textContent = record.map_name;
+
+          // Create the hidden detail section.
+          const detailDiv = document.createElement('div');
+          detailDiv.className = "detail";
+          detailDiv.style.display = "none";
+
+          // Create the left side container for date, replay, players, preset info, etc.
+          const leftDetailDiv = document.createElement('div');
+          leftDetailDiv.style.border = "1px solid #ccc";
+          leftDetailDiv.style.padding = "10px";
+          leftDetailDiv.style.borderRadius = "5px";
+
+          // Date information.
+          const dateDiv = document.createElement('div');
+          const date = new Date(record.timestamp).toLocaleDateString();
+          dateDiv.textContent = "Date: " + date;
+          leftDetailDiv.appendChild(dateDiv);
+
+          // Replay hyperlink using uuid.
+          const replayLink = document.createElement('a');
+          replayLink.href = `https://tagpro.koalabeast.com/replays?uuid=${record.uuid}`;
+          replayLink.textContent = "Watch Replay";
+          replayLink.target = "_blank";
+          leftDetailDiv.appendChild(replayLink);
+
+          // Deduplicate players for the detail section.
+          const playersDiv = document.createElement('div');
+          playersDiv.textContent = "Players: ";
+          const uniquePlayers = [];
+          const seenPlayers = new Set();
+          record.players.forEach(player => {
+            let key = getMapsPlayerKey(player);
+            if (!seenPlayers.has(key)) {
+              seenPlayers.add(key);
+              uniquePlayers.push(player);
+            }
+          });
+          uniquePlayers.forEach((player, index) => {
+            if (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
+              const playerLink = document.createElement('a');
+              playerLink.href = `https://tagpro.koalabeast.com/profile/${player.user_id}`;
+              playerLink.textContent = getMapsPlayerDisplayName(player);
+              playersDiv.appendChild(playerLink);
+            } else {
+              const span = document.createElement('span');
+              span.textContent = getMapsPlayerDisplayName(player);
+              playersDiv.appendChild(span);
+            }
+            if (index < uniquePlayers.length - 1) {
+              playersDiv.appendChild(document.createTextNode(", "));
+            }
+          });
+          leftDetailDiv.appendChild(playersDiv);
+
+          // Preset and Map ID information.
+          const infoDiv = document.createElement('div');
+          const presetValue = presets[record.map_name] || "N/A";
+          infoDiv.textContent = "Preset: " + presetValue + " | Map ID: " + record.map_id;
+          leftDetailDiv.appendChild(infoDiv);
+
+          // Copy preset button.
+          const copyButton = document.createElement('button');
+          copyButton.textContent = "Copy Preset";
+          copyButton.classList.add("copy-button");
+          copyButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            if (presetValue !== "N/A") {
+              navigator.clipboard.writeText(presetValue)
+                .then(() => {
+                  copyButton.textContent = "Copied!";
+                  copyButton.classList.add("copied");
+                  setTimeout(() => {
+                    copyButton.textContent = "Copy Preset";
+                    copyButton.classList.remove("copied");
+                  }, 2000);
+                })
+                .catch(err => console.error("Error copying preset:", err));
+            }
+          });
+          leftDetailDiv.appendChild(copyButton);
+
+          // Create the right side medal panel (outside of the left detail box).
+          const medalPanelDiv = document.createElement('div');
+          medalPanelDiv.style.display = "flex";
+          medalPanelDiv.style.flexDirection = "column";
+          medalPanelDiv.style.justifyContent = "flex-start";
+          medalPanelDiv.style.marginLeft = "20px"; // adds space between the left box and medals
+
+          // Prepare the top 3 records for this map.
+          const mapRecords = recordsByMap[record.map_name] || [];
+          const top3Records = mapRecords.slice(0, 3);
+
+          // Define labels and colors for the medals.
+          const medalLabels = ["1st", "2nd", "3rd"];
+          const medalColors = ["#FFD700", "#C0C0C0", "#CD7F32"]; // gold, silver, bronze
+
+          top3Records.forEach((rec, index) => {
+            // Create a link element that directs to the replay.
+            const replayLinkMedal = document.createElement('a');
+            replayLinkMedal.href = `https://tagpro.koalabeast.com/replays?uuid=${rec.uuid}`;
+            replayLinkMedal.target = "_blank";
+            replayLinkMedal.style.textDecoration = "none"; // remove default underline
+
+            // Create a container for the medal row.
+            const medalRow = document.createElement('div');
+            medalRow.style.display = "flex";
+            medalRow.style.alignItems = "center";
+            medalRow.style.border = "1px solid " + medalColors[index];
+            medalRow.style.padding = "5px";
+            medalRow.style.borderRadius = "5px";
+            medalRow.style.marginBottom = "5px";
+
+            // Create the medal label.
+            const medalLabelSpan = document.createElement('span');
+            medalLabelSpan.style.fontWeight = "bold";
+            medalLabelSpan.style.marginRight = "8px";
+            medalLabelSpan.style.color = medalColors[index];
+            medalLabelSpan.textContent = medalLabels[index];
+
+            // Create the time span with a colored background.
+            const timeSpan = document.createElement('span');
+            timeSpan.textContent = formatTime(rec.record_time);
+            timeSpan.style.color = medalColors[index];
+            timeSpan.style.padding = "2px 5px";
+            timeSpan.style.borderRadius = "5px";
+
+            medalRow.appendChild(medalLabelSpan);
+            medalRow.appendChild(timeSpan);
+
+            replayLinkMedal.appendChild(medalRow);
+            medalPanelDiv.appendChild(replayLinkMedal);
+          });
+
+          // Create a wrapper that holds the left details and the medal panel side by side.
+          const detailWrapper = document.createElement('div');
+          detailWrapper.style.display = "flex";
+          detailWrapper.style.alignItems = "flex-start";
+
+          // Append the left detail box and the medal panel to the wrapper.
+          detailWrapper.appendChild(leftDetailDiv);
+          detailWrapper.appendChild(medalPanelDiv);
+
+          // Finally, add the combined wrapper to the hidden detail section.
+          detailDiv.appendChild(detailWrapper);
+
+          // Toggle detail section on clicking the map name.
+          mapNameCell.addEventListener('click', function() {
+            detailDiv.style.display = detailDiv.style.display === "none" ? "block" : "none";
+          });
+          mapNameCell.appendChild(detailDiv);
+          tr.appendChild(mapNameCell);
+
+          // Record Time call.
+          const timeCell = document.createElement('td');
+          timeCell.textContent = formatTime(record.record_time);
+          tr.appendChild(timeCell);
+
+          // Set (Relative Time) cell.
+          const relativeTimeCell = document.createElement('td');
+          relativeTimeCell.textContent = formatRelativeTime(record.timestamp);
+          tr.appendChild(relativeTimeCell);
+
+          // Capping Player cell with profile link if available.
+          const capCell = document.createElement('td');
+          if (record.capping_player) {
+            const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
+            if (dummyPlayer.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(dummyPlayer.name)) {
+              const capLink = document.createElement('a');
+              capLink.href = `https://tagpro.koalabeast.com/profile/${dummyPlayer.user_id}`;
+              capLink.textContent = getMapsPlayerDisplayName(dummyPlayer);
+              capCell.appendChild(capLink);
+            } else {
+              capCell.textContent = getMapsPlayerDisplayName(dummyPlayer);
+            }
           } else {
-            return currentSort.direction === "asc" ? aVal - bVal : bVal - aVal;
+            capCell.textContent = "DNF";
           }
+          tr.appendChild(capCell);
+
+          mapsTableBody.appendChild(tr);
+        });
+      }
+
+      // Sorting functionality.
+      let currentSort = {
+        property: "timestamp",
+        direction: "desc"
+      };
+
+      function sortRecords(property, type) {
+        if (currentSort.property === property) {
+          currentSort.direction = (currentSort.direction === "asc" ? "desc" : "asc");
         } else {
-          aVal = aVal ? aVal.toLowerCase() : "";
-          bVal = bVal ? bVal.toLowerCase() : "";
-          if (aVal < bVal) return currentSort.direction === "asc" ? -1 : 1;
-          if (aVal > bVal) return currentSort.direction === "asc" ? 1 : -1;
-          return 0;
+          currentSort.property = property;
+          currentSort.direction = "asc";
+        }
+        recordsArray.sort((a, b) => {
+          let aVal = a[property];
+          let bVal = b[property];
+          if (property === "capping_player") {
+            aVal = aVal || "DNF";
+            bVal = bVal || "DNF";
+          }
+          if (type === "numeric") {
+            if (property === "timestamp") {
+              const aTime = new Date(aVal).getTime();
+              const bTime = new Date(bVal).getTime();
+              return currentSort.direction === "asc" ? aTime - bTime : bTime - aTime;
+            } else {
+              return currentSort.direction === "asc" ? aVal - bVal : bVal - aVal;
+            }
+          } else {
+            aVal = aVal ? aVal.toLowerCase() : "";
+            bVal = bVal ? bVal.toLowerCase() : "";
+            if (aVal < bVal) return currentSort.direction === "asc" ? -1 : 1;
+            if (aVal > bVal) return currentSort.direction === "asc" ? 1 : -1;
+            return 0;
+          }
+        });
+        renderMapsTable(recordsArray);
+      }
+
+      // Attach click listeners to header cells.
+      const thElements = document.querySelectorAll("#mapsTable thead th");
+      thElements.forEach(th => {
+        const sortProperty = th.getAttribute("data-sort");
+        const sortType = th.getAttribute("data-type");
+        if (sortProperty && sortType) {
+          th.style.cursor = "pointer";
+          th.addEventListener("click", () => {
+            sortRecords(sortProperty, sortType);
+          });
         }
       });
+
+      // Initial rendering: sort by timestamp descending.
+      recordsArray.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
       renderMapsTable(recordsArray);
-    }
 
-    // Attach click listeners to header cells.
-    const thElements = document.querySelectorAll("#mapsTable thead th");
-    thElements.forEach(th => {
-      const sortProperty = th.getAttribute("data-sort");
-      const sortType = th.getAttribute("data-type");
-      if (sortProperty && sortType) {
-        th.style.cursor = "pointer";
-        th.addEventListener("click", () => {
-          sortRecords(sortProperty, sortType);
-        });
-      }
-    });
-
-    // Initial rendering: sort by timestamp descending.
-    recordsArray.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-    renderMapsTable(recordsArray);
-
-    // Render leaderboards.
-    function renderLeaderboards() {
-      const leaderboardContainer = document.getElementById('leaderboardContainer');
-      leaderboardContainer.innerHTML = "";
-      
-      function shouldShow(player) {
-        return true;
-      }
-      
-      function createSection(title, leaderboardObj) {
-        const sectionDiv = document.createElement('div');
-        sectionDiv.className = "leaderboard-section";
-        const table = document.createElement('table');
-        table.className = "leaderboard-table";
-        const titleRow = document.createElement('tr');
-        const titleCell = document.createElement('th');
-        titleCell.textContent = title;
-        titleCell.colSpan = 2;
-        titleCell.className = "leaderboard-title";
-        titleRow.appendChild(titleCell);
-        table.appendChild(titleRow);
-        const headerRow = document.createElement('tr');
-        const nameHeader = document.createElement('th');
-        nameHeader.textContent = "Name";
-        const scoreHeader = document.createElement('th');
-        scoreHeader.textContent = "Score";
-        headerRow.appendChild(nameHeader);
-        headerRow.appendChild(scoreHeader);
-        table.appendChild(headerRow);
-        let playersArray = Object.values(leaderboardObj)
-          .filter(player => shouldShow(player))
-          .sort((a, b) => b.score - a.score);
-        playersArray.forEach(player => {
-          const row = document.createElement('tr');
-          const nameCell = document.createElement('td');
-          nameCell.textContent = player.name;
-          const scoreCell = document.createElement('td');
-          scoreCell.textContent = player.score;
-          row.appendChild(nameCell);
-          row.appendChild(scoreCell);
-          table.appendChild(row);
-        });
-        sectionDiv.appendChild(table);
-        leaderboardContainer.appendChild(sectionDiv);
+      // Render leaderboards.
+      function renderLeaderboards() {
+        const leaderboardContainer = document.getElementById('leaderboardContainer');
+        leaderboardContainer.innerHTML = "";
+        
+        function shouldShow(player) {
+          return true;
+        }
+        
+        function createSection(title, leaderboardObj) {
+          const sectionDiv = document.createElement('div');
+          sectionDiv.className = "leaderboard-section";
+          const table = document.createElement('table');
+          table.className = "leaderboard-table";
+          const titleRow = document.createElement('tr');
+          const titleCell = document.createElement('th');
+          titleCell.textContent = title;
+          titleCell.colSpan = 2;
+          titleCell.className = "leaderboard-title";
+          titleRow.appendChild(titleCell);
+          table.appendChild(titleRow);
+          const headerRow = document.createElement('tr');
+          const nameHeader = document.createElement('th');
+          nameHeader.textContent = "Name";
+          const scoreHeader = document.createElement('th');
+          scoreHeader.textContent = "Score";
+          headerRow.appendChild(nameHeader);
+          headerRow.appendChild(scoreHeader);
+          table.appendChild(headerRow);
+          let playersArray = Object.values(leaderboardObj)
+            .filter(player => shouldShow(player))
+            .sort((a, b) => b.score - a.score);
+          playersArray.forEach(player => {
+            const row = document.createElement('tr');
+            const nameCell = document.createElement('td');
+            nameCell.textContent = player.name;
+            const scoreCell = document.createElement('td');
+            scoreCell.textContent = player.score;
+            row.appendChild(nameCell);
+            row.appendChild(scoreCell);
+            table.appendChild(row);
+          });
+          sectionDiv.appendChild(table);
+          leaderboardContainer.appendChild(sectionDiv);
+        }
+        
+        createSection("Overall World Records", worldRecordsLeaderboard);
+        createSection("Solo Records", soloWorldRecordsLeaderboard);
+        createSection("Capping Records", cappingWorldRecordsLeaderboard);
+        createSection("Games Completed", gamesCompletedLeaderboard);
       }
       
-      createSection("Overall World Records", worldRecordsLeaderboard);
-      createSection("Solo Records", soloWorldRecordsLeaderboard);
-      createSection("Capping Records", cappingWorldRecordsLeaderboard);
-      createSection("Games Completed", gamesCompletedLeaderboard);
-    }
-    
-    renderLeaderboards();
-  })
-  .catch(error => console.error("Error fetching data:", error));
+      renderLeaderboards();
+    })
+    .catch(error => console.error("Error fetching data:", error));
 
-  </script>
+    </script>
 
-</body>
-</html>
+  </body>
+  </html>
