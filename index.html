@@ -33,7 +33,6 @@
         </tbody>
       </table>
     </div>
-    <!-- The "10 Most Recent World Records" section has been removed -->
   </div>
 
   <!-- Leaderboard page -->
@@ -345,9 +344,6 @@
   };
     const dataUrl = "https://worldrecords.bambitp.workers.dev";
 
-    // Allowed names for players without a playerID.
-    const allowedNonPlayerIdNames = [";;", "grav", "::", "leopard", "buddy system"];
-
     // Leaderboard helper functions (combine Some Ball entries)
     function getLeaderboardPlayerKey(player) {
       if (/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
@@ -623,8 +619,6 @@
               quoteDiv.textContent = `"${record.capping_player_quote}"`;
               leftDetailDiv.appendChild(quoteDiv);
             }
-            // --- End Added ---
-
             // Copy preset button.
             const copyButton = document.createElement('button');
             copyButton.textContent = "Copy Preset";
