@@ -127,3 +127,17 @@ th {
   font-size: 24px;
   font-weight: bold;
 }
+
+.copy-button.copied {
+    color: green;
+  }
+
+  .copy-button,
+  .open-button {
+    cursor: pointer;
+    background-color: #9898c0;
+  }
+
+.arrow {
+  color: #1e90ff;
+}

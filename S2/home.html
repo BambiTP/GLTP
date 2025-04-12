@@ -10,11 +10,12 @@
   <div class="top-bar">
     <div class="nav">
       <a id="homeLink">Home</a>
-      <a id="rostersLink" class="active">Rosters</a>
+      <a id="standingsLink" class="active">Standings</a>
       <a id="linksLink">Info Links</a>
       <a id="week1Link">Week 1</a>
       <a id="week2Link">Week 2</a>
       <a id="week3Link">Week 3</a>
+      <a id="rostersLink">Rosters</a>
       <a id="season1Link">Season 1</a>
     </div>
   </div>
@@ -27,7 +28,7 @@
     <div id="season1Content">Loading links...</div>
   </div>
 
-   <div id="rostersPage" class="page-container active">
+   <div id="rostersPage" class="page-container">
     <div id="rosterContent">Loading rosters...</div>
   </div>
 
@@ -47,6 +48,10 @@
     <div id="week3Content">Loading week 3...</div>
   </div>
 
+  <div id="standingsPage" class="page-container active">
+    <div id="standingsContent">Loading standings...</div>
+  </div>
+
   <script>
     const navItems = {
       homeLink: 'homePage',
@@ -55,7 +60,8 @@
       week1Link: 'week1Page',
       week2Link: 'week2Page',
       week3Link: 'week3Page',
-      season1Link: 'season1Page'
+      season1Link: 'season1Page',
+      standingsLink: 'standingsPage'
     };
 
     Object.keys(navItems).forEach(linkId => {
@@ -66,7 +72,7 @@
           return;
         }
         if (navItems[linkId] === 'season1Page') {
-          window.location.href = '/GLTP/GLTPS1/GLTPS1.html';
+          window.location.href = '/GLTP/S1/home.html';
           return;
         }
         // Hide all pages
@@ -129,6 +135,88 @@ fetch('S2W1.html')
     document.getElementById('linksContent').innerHTML = "Failed to load roster.";
     console.error("Error loading links file:", err);
   });
+  function enableToggleListeners() {
+  document.querySelectorAll('.toggle-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const targetId = header.getAttribute('data-toggle-target');
+      const target = document.getElementById(targetId);
+      const arrow = header.querySelector('.arrow');
+
+      if (target) {
+        const isHidden = target.style.display === 'none' || getComputedStyle(target).display === 'none';
+        target.style.display = isHidden ? 'block' : 'none';
+
+        if (arrow) {
+          arrow.textContent = isHidden ? '▼' : '▶';
+        }
+      }
+    });
+  });
+}
+
+  fetch('standings.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('standingsContent').innerHTML = html;
+      enableToggleListeners(); // <-- important: run *after* content loads
+    })
+    .catch(err => {
+      document.getElementById('standingsContent').innerHTML = "Failed to load standings.";
+      console.error("Error loading standings file:", err);
+    });
+
+    function copyMapID(button) {
+    const span = button.parentElement.querySelector('.map-id');
+    const mapId = span.textContent;
+    if (mapId && mapId !== "N/A") {
+      navigator.clipboard.writeText(mapId)
+        .then(() => {
+          button.textContent = "✅";
+          button.classList.add("copied");
+          setTimeout(() => {
+            button.textContent = "Copy Preset";
+            button.classList.remove("copied");
+          }, 1500);
+        })
+        .catch(err => console.error("Error copying map :", err));
+    }
+  }
+
+  function openMap(button) {
+    const span = button.parentElement.querySelector('.map-id');
+    const mapId = span.textContent;
+    if (mapId && mapId !== "N/A") {
+        const form = document.createElement("form");
+        form.method = "POST";
+        form.action = "https://tagpro.koalabeast.com/groups/create";
+        form.target = "_blank"; // Opens in a new tab
+
+        // Input fields for the form data
+        const nameInput = document.createElement("input");
+        nameInput.type = "hidden";
+        nameInput.name = "name";
+        nameInput.value = "GLTP IS THE BEST";
+
+        const privateInput = document.createElement("input");
+        privateInput.type = "hidden";
+        privateInput.name = "private";
+        privateInput.value = "on";
+
+        const presetInput = document.createElement("input");
+        presetInput.type = "hidden";
+        presetInput.name = "preset";
+        presetInput.value = mapId;
+
+        // Append inputs to form
+        form.appendChild(nameInput);
+        form.appendChild(privateInput);
+        form.appendChild(presetInput);
+
+        document.body.appendChild(form);
+        form.submit(); // Submit the form
+        document.body.removeChild(form); // Clean up
+    }
+  }
   </script>
 </body>
 </html>
