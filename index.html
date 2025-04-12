@@ -644,6 +644,17 @@
               }
             });
             leftDetailDiv.appendChild(copyButton);
+            // Launch tagpro group button.
+            const launchButton = document.createElement('button');
+            launchButton.textContent = "Launch Group";
+            launchButton.classList.add("copy-button");
+            launchButton.addEventListener('click', (event) => {
+              event.stopPropagation();
+              if (presetValue !== "N/A") {
+                launchTagproGroup(presetValue);
+              }
+            });
+            leftDetailDiv.appendChild(launchButton);
 
             // Create the right side medal panel (outside of the left detail box).
             const medalPanelDiv = document.createElement('div');
@@ -854,6 +865,38 @@
           createSection("Capping Records", cappingWorldRecordsLeaderboard);
           createSection("Games Completed", gamesCompletedLeaderboard);
         }
+
+        function launchTagproGroup(preset) {
+          const form = document.createElement("form");
+          form.method = "POST";
+          form.action = "https://tagpro.koalabeast.com/groups/create";
+          form.target = "_blank"; // Opens in a new tab
+
+          // Input fields for the form data
+          const nameInput = document.createElement("input");
+          nameInput.type = "hidden";
+          nameInput.name = "name";
+          nameInput.value = "GLTP IS THE BEST";
+
+          const privateInput = document.createElement("input");
+          privateInput.type = "hidden";
+          privateInput.name = "private";
+          privateInput.value = "on";
+
+          const presetInput = document.createElement("input");
+          presetInput.type = "hidden";
+          presetInput.name = "preset";
+          presetInput.value = preset;
+
+          // Append inputs to form
+          form.appendChild(nameInput);
+          form.appendChild(privateInput);
+          form.appendChild(presetInput);
+
+          document.body.appendChild(form);
+          form.submit(); // Submit the form
+          document.body.removeChild(form); // Clean up
+      }
 
         renderLeaderboards();
       })
