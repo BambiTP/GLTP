@@ -3,51 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>GLTP</title>
-  <style>
-    h1 {
-      left: 0 !important;
-    }
-    body {
-      margin: 0 !important;
-      font-family: sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-    }
-
-    .top-bar {
-      background-color: #1f1f1f;
-      padding: 10px 20px;
-      color: #e0e0e0;
-      display: flex;
-    }
-
-    .nav a {
-      color: #e0e0e0;
-      margin-right: 20px;
-      text-decoration: none;
-      cursor: pointer;
-      padding: 8px 12px;
-      border-radius: 4px;
-    }
-
-    .nav a:hover {
-      background-color: #333;
-    }
-
-    .nav a.active {
-      background-color: #1e90ff;
-      font-weight: bold;
-    }
-
-    .page-container {
-      display: none;
-      padding: 20px;
-    }
-
-    .page-container.active {
-      display: block;
-    }
-  </style>
+  <link rel="stylesheet" href="gltp.css">
 </head>
 <body>
 
@@ -106,11 +62,11 @@
       document.getElementById(linkId).addEventListener('click', () => {
         // Handle the special case
         if (navItems[linkId] === 'homePage') {
-          window.location.href = 'https://bambitp.github.io/GLTP/';
+          window.location.href = '/GLTP/';
           return;
         }
         if (navItems[linkId] === 'season1Page') {
-          window.location.href = 'https://bambitp.github.io/GLTP/GLTPS1/GLTPS1.html';
+          window.location.href = '/GLTP/GLTPS1/GLTPS1.html';
           return;
         }
         // Hide all pages

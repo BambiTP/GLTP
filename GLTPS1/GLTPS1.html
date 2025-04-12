@@ -3,44 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>GLTP</title>
-  <style>
-    h1 {
-      left: 0 !important;
-    }
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background-color: #f0f0f0;
-    }
-
-    .top-bar {
-      background-color: #222;
-      padding: 10px 20px;
-      display: flex;
-    }
-
-    .nav a {
-      color: white;
-      margin-right: 20px;
-      text-decoration: none;
-      cursor: pointer;
-      padding: 8px 12px;
-      border-radius: 4px;
-    }
-
-    .nav a.active {
-      background-color: #2a7dd2;
-    }
-
-    .page-container {
-      display: none;
-      padding: 20px;
-    }
-
-    .page-container.active {
-      display: block;
-    }
-  </style>
+  <link rel="stylesheet" href="/GLTP/GLTPS2/gltp.css">
 </head>
 <body>
 
@@ -92,7 +55,7 @@
     Object.keys(navItems).forEach(linkId => {
       document.getElementById(linkId).addEventListener('click', () => {
         if (navItems[linkId] === 'homePage') {
-          window.location.href = 'https://bambitp.github.io/GLTP/';
+          window.location.href = '/GLTP';
           return;
         }
         // Hide all pages
