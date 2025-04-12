@@ -12,6 +12,7 @@
     <div class="nav">
       <a id="mapsLink" class="active">Maps</a>
       <a id="leaderboardLink">Leaderboard</a>
+      <a id="gltpLink">GLTP</a>
     </div>
   </div>
 
@@ -426,6 +427,7 @@
     // Navigation toggle.
     const mapsLink = document.getElementById('mapsLink');
     const leaderboardLink = document.getElementById('leaderboardLink');
+    const gltpLink = document.getElementById('gltpLink');
 
     mapsLink.addEventListener('click', function() {
       document.getElementById('mapsRecordsContainer').style.display = "flex";
@@ -438,6 +440,9 @@
       document.getElementById('leaderboardPage').style.display = "block";
       leaderboardLink.classList.add('active');
       mapsLink.classList.remove('active');
+    });
+    gltpLink.addEventListener('click', function() {
+      window.location.href = 'GLTPS2/GLTPS2.html';
     });
 
     fetch(dataUrl)
@@ -802,11 +807,11 @@
         function renderLeaderboards() {
           const leaderboardContainer = document.getElementById('leaderboardContainer');
           leaderboardContainer.innerHTML = "";
-          
+
           function shouldShow(player) {
             return true;
           }
-          
+
           function createSection(title, leaderboardObj) {
             const sectionDiv = document.createElement('div');
             sectionDiv.className = "leaderboard-section";
@@ -843,13 +848,13 @@
             sectionDiv.appendChild(table);
             leaderboardContainer.appendChild(sectionDiv);
           }
-          
+
           createSection("Overall World Records", worldRecordsLeaderboard);
           createSection("Solo Records", soloWorldRecordsLeaderboard);
           createSection("Capping Records", cappingWorldRecordsLeaderboard);
           createSection("Games Completed", gamesCompletedLeaderboard);
         }
-        
+
         renderLeaderboards();
       })
       .catch(error => console.error("Error fetching data:", error));
