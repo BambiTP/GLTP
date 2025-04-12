@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GLTP</title>
+  <style>
+    h1 {
+      left: 0 !important;
+    }
+    body {
+      margin: 0 !important;
+      font-family: sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    .top-bar {
+      background-color: #1f1f1f;
+      padding: 10px 20px;
+      color: #e0e0e0;
+      display: flex;
+    }
+
+    .nav a {
+      color: #e0e0e0;
+      margin-right: 20px;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+
+    .nav a:hover {
+      background-color: #333;
+    }
+
+    .nav a.active {
+      background-color: #1e90ff;
+      font-weight: bold;
+    }
+
+    .page-container {
+      display: none;
+      padding: 20px;
+    }
+
+    .page-container.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="nav">
+      <a id="homeLink">Home</a>
+      <a id="rostersLink" class="active">Rosters</a>
+      <a id="linksLink">Info Links</a>
+      <a id="week1Link">Week 1</a>
+      <a id="week2Link">Week 2</a>
+      <a id="week3Link">Week 3</a>
+      <a id="season1Link">Season 1</a>
+    </div>
+  </div>
+
+  <div id="homePage" class="page-container">
+    <div id="homeContent">Loading links...</div>
+  </div>
+
+  <div id="season1Page" class="page-container">
+    <div id="season1Content">Loading links...</div>
+  </div>
+
+   <div id="rostersPage" class="page-container active">
+    <div id="rosterContent">Loading rosters...</div>
+  </div>
+
+  <div id="linksPage" class="page-container">
+    <div id="linksContent">Loading links...</div>
+  </div>
+
+  <div id="week1Page" class="page-container">
+    <div id="week1Content">Loading week 1...</div>
+  </div>
+
+  <div id="week2Page" class="page-container">
+    <div id="week2Content">Loading week 2...</div>
+  </div>
+
+  <div id="week3Page" class="page-container">
+    <div id="week3Content">Loading week 3...</div>
+  </div>
+
+  <script>
+    const navItems = {
+      homeLink: 'homePage',
+      rostersLink: 'rostersPage',
+      linksLink: 'linksPage',
+      week1Link: 'week1Page',
+      week2Link: 'week2Page',
+      week3Link: 'week3Page',
+      season1Link: 'season1Page'
+    };
+
+    Object.keys(navItems).forEach(linkId => {
+      document.getElementById(linkId).addEventListener('click', () => {
+        // Handle the special case
+        if (navItems[linkId] === 'homePage') {
+          window.location.href = 'https://bambitp.github.io/GLTP/';
+          return;
+        }
+        if (navItems[linkId] === 'season1Page') {
+          window.location.href = 'https://bambitp.github.io/GLTP/GLTPS1/GLTPS1.html';
+          return;
+        }
+        // Hide all pages
+        Object.values(navItems).forEach(pageId => {
+          document.getElementById(pageId).classList.remove('active');
+        });
+
+        // Remove active from all links
+        Object.keys(navItems).forEach(id => {
+          document.getElementById(id).classList.remove('active');
+        });
+
+        // Show selected page
+        document.getElementById(navItems[linkId]).classList.add('active');
+        document.getElementById(linkId).classList.add('active');
+      });
+    });
+fetch('gltpRosters.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('rosterContent').innerHTML = html;
+  })
+  .catch(err => {
+    document.getElementById('rosterContent').innerHTML = "Failed to load roster.";
+    console.error("Error loading week1 file:", err);
+  });
+fetch('S2W1.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('week1Content').innerHTML = html;
+  })
+  .catch(err => {
+    document.getElementById('week1Content').innerHTML = "Failed to load roster.";
+    console.error("Error loading week1 file:", err);
+  });
+    fetch('S2W2.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('week2Content').innerHTML = html;
+  })
+  .catch(err => {
+    document.getElementById('week2Content').innerHTML = "Failed to load roster.";
+    console.error("Error loading week2 file:", err);
+  });
+    fetch('S2W3.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('week3Content').innerHTML = html;
+  })
+  .catch(err => {
+    document.getElementById('week3Content').innerHTML = "Failed to load roster.";
+    console.error("Error loading week3 file:", err);
+  });
+    fetch('gltp_links.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('linksContent').innerHTML = html;
+  })
+  .catch(err => {
+    document.getElementById('linksContent').innerHTML = "Failed to load roster.";
+    console.error("Error loading links file:", err);
+  });
+  </script>
+</body>
+</html>
