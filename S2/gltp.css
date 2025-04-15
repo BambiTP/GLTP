@@ -23,6 +23,7 @@ body {
 
 .nav {
   display: flex;
+  align-items: center; /* ensures vertical centering */
   gap: 20px;
 }
 
@@ -140,4 +141,67 @@ th {
 
 .arrow {
   color: #1e90ff;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropbtn {
+  cursor: pointer;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  min-width: 140px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.rulescontainer {
+  background-color: #3e5c7e;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  gap: 20px;
+}
+
+
+.rulepair h4 {
+  margin: 0;
+}
+
+.rulepair ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc !important;
+  text-align: left !important;
+}
+
+.rulepair li {
+  display: list-item !important;
+  margin-bottom: 6px
 }
