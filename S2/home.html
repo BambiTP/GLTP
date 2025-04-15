@@ -11,17 +11,27 @@
     <div class="nav">
       <a id="homeLink">Home</a>
       <a id="standingsLink" class="active">Standings</a>
-      <a id="linksLink">Info Links</a>
+      <a id="ofmLink">OFM</a>
       <a id="week1Link">Week 1</a>
       <a id="week2Link">Week 2</a>
       <a id="week3Link">Week 3</a>
       <a id="rostersLink">Rosters</a>
-      <a id="season1Link">Season 1</a>
+      <a id="linksLink">Info & Links</a>
+      <div class="dropdown">
+        <a class="dropbtn" onclick="toggleDropdown()">Past Seasons ▾</a>
+        <div class="dropdown-content" id="dropdownContent">
+          <a id="season1Link">Season 1</a>
+        </div>
+      </div>
     </div>
   </div>
 
   <div id="homePage" class="page-container">
     <div id="homeContent">Loading links...</div>
+  </div>
+
+  <div id="ofmPage" class="page-container">
+    <div id="ofmContent">Loading ofm...</div>
   </div>
 
   <div id="season1Page" class="page-container">
@@ -53,43 +63,37 @@
   </div>
 
   <script>
-    const navItems = {
-      homeLink: 'homePage',
-      rostersLink: 'rostersPage',
-      linksLink: 'linksPage',
-      week1Link: 'week1Page',
-      week2Link: 'week2Page',
-      week3Link: 'week3Page',
-      season1Link: 'season1Page',
-      standingsLink: 'standingsPage'
-    };
+  const navItems = {
+    home: { linkId: 'homeLink', pageId: 'homePage' },
+    standings: { linkId: 'standingsLink', pageId: 'standingsPage' },
+    ofm: { linkId: 'ofmLink', pageId: 'ofmPage' },
+    info: { linkId: 'linksLink', pageId: 'linksPage' },
+    week1: { linkId: 'week1Link', pageId: 'week1Page' },
+    week2: { linkId: 'week2Link', pageId: 'week2Page' },
+    week3: { linkId: 'week3Link', pageId: 'week3Page' },
+    rosters: { linkId: 'rostersLink', pageId: 'rostersPage' },
+    season1: { linkId: 'season1Link', pageId: 'season1Page' }, // special case
+  };
 
-    Object.keys(navItems).forEach(linkId => {
-      document.getElementById(linkId).addEventListener('click', () => {
-        // Handle the special case
-        if (navItems[linkId] === 'homePage') {
-          window.location.href = '/GLTP/';
-          return;
-        }
-        if (navItems[linkId] === 'season1Page') {
-          window.location.href = '/GLTP/S1/home.html';
-          return;
-        }
-        // Hide all pages
-        Object.values(navItems).forEach(pageId => {
-          document.getElementById(pageId).classList.remove('active');
-        });
+  Object.entries(navItems).forEach(([key, { linkId, pageId }]) => {
+    document.getElementById(linkId).addEventListener('click', () => {
+      // Handle special redirect cases
+      if (key === 'home') {
+        window.location.href = '/GLTP/';
+        return;
+      }
+      if (key === 'season1') {
+        window.location.href = '/GLTP/S1/home.html';
+        return;
+      }
 
-        // Remove active from all links
-        Object.keys(navItems).forEach(id => {
-          document.getElementById(id).classList.remove('active');
-        });
+      // Update the hash
+      window.location.hash = key;
 
-        // Show selected page
-        document.getElementById(navItems[linkId]).classList.add('active');
-        document.getElementById(linkId).classList.add('active');
-      });
+      // Show the correct page
+      showPage(pageId, linkId);
     });
+  });
 fetch('gltpRosters.html')
   .then(res => res.text())
   .then(html => {
@@ -134,6 +138,15 @@ fetch('S2W1.html')
   .catch(err => {
     document.getElementById('linksContent').innerHTML = "Failed to load roster.";
     console.error("Error loading links file:", err);
+  });
+  fetch('ofm.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('ofmContent').innerHTML = html;
+  })
+  .catch(err => {
+    document.getElementById('ofmContent').innerHTML = "Failed to load ofm.";
+    console.error("Error loading ofm file:", err);
   });
   function enableToggleListeners() {
   document.querySelectorAll('.toggle-header').forEach(header => {
@@ -217,6 +230,55 @@ fetch('S2W1.html')
         document.body.removeChild(form); // Clean up
     }
   }
+  function toggleDropdown() {
+    document.getElementById("dropdownContent").classList.toggle("show");
+  }
+
+  // Optional: Close dropdown when clicking outside
+  window.addEventListener("click", function (e) {
+    if (!e.target.matches('.dropbtn')) {
+      const dropdown = document.getElementById("dropdownContent");
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      }
+    }
+  });
+  window.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash.slice(1); // e.g. "week1"
+    if (navItems[hash]) {
+      const { pageId, linkId } = navItems[hash];
+      showPage(pageId, linkId);
+    } else {
+      // Default to standings
+      const { pageId, linkId } = navItems['standings'];
+      showPage(pageId, linkId);
+    }
+  });
+  function showPage(pageId, linkId) {
+    // Hide all pages
+    Object.values(navItems).forEach(({ pageId }) => {
+      const page = document.getElementById(pageId);
+      if (page) {
+        page.classList.remove('active');
+      }
+    });
+
+    // Remove active class from all links
+    Object.values(navItems).forEach(({ linkId }) => {
+      const link = document.getElementById(linkId);
+      if (link) {
+        link.classList.remove('active');
+      }
+    });
+
+    // Show the selected page and link
+    const page = document.getElementById(pageId);
+    const link = document.getElementById(linkId);
+
+    if (page) page.classList.add('active');
+    if (link) link.classList.add('active');
+  }
+
   </script>
 </body>
 </html>
