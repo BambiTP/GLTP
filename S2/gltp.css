@@ -205,3 +205,10 @@ th {
   display: list-item !important;
   margin-bottom: 6px
 }
+
+.red-icon {
+      color: red;
+}
+.green-icon {
+  color: green;
+}
