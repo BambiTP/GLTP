@@ -5,6 +5,9 @@
   <title>GLTP</title>
   <link rel="stylesheet" href="gltp.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script>
+    window.BUILD_VERSION = "{{BUILD_VERSION}}";
+  </script>
 </head>
 <body>
 
@@ -95,60 +98,27 @@
       showPage(pageId, linkId);
     });
   });
-fetch('gltpRosters.html')
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById('rosterContent').innerHTML = html;
-  })
-  .catch(err => {
-    document.getElementById('rosterContent').innerHTML = "Failed to load roster.";
-    console.error("Error loading week1 file:", err);
-  });
-fetch('S2W1.html')
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById('week1Content').innerHTML = html;
-  })
-  .catch(err => {
-    document.getElementById('week1Content').innerHTML = "Failed to load roster.";
-    console.error("Error loading week1 file:", err);
-  });
-    fetch('S2W2.html')
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById('week2Content').innerHTML = html;
-  })
-  .catch(err => {
-    document.getElementById('week2Content').innerHTML = "Failed to load roster.";
-    console.error("Error loading week2 file:", err);
-  });
-    fetch('S2W3.html')
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById('week3Content').innerHTML = html;
-  })
-  .catch(err => {
-    document.getElementById('week3Content').innerHTML = "Failed to load roster.";
-    console.error("Error loading week3 file:", err);
-  });
-    fetch('gltp_links.html')
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById('linksContent').innerHTML = html;
-  })
-  .catch(err => {
-    document.getElementById('linksContent').innerHTML = "Failed to load roster.";
-    console.error("Error loading links file:", err);
-  });
-  fetch('ofm.html')
-  .then(res => res.text())
-  .then(html => {
-    document.getElementById('ofmContent').innerHTML = html;
-  })
-  .catch(err => {
-    document.getElementById('ofmContent').innerHTML = "Failed to load ofm.";
-    console.error("Error loading ofm file:", err);
-  });
+
+  function loadPageContent(filename, elementId) {
+  fetch(`${filename}?v=${window.BUILD_VERSION}`)
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById(elementId).innerHTML = html;
+      if (filename === 'standings.html') enableToggleListeners();
+    })
+    .catch(err => {
+      document.getElementById(elementId).innerHTML = `Failed to load ${filename}.`;
+      console.error(`Error loading ${filename}:`, err);
+    });
+}
+
+loadPageContent('gltpRosters.html', 'rosterContent');
+loadPageContent('S2W1.html', 'week1Content');
+loadPageContent('S2W2.html', 'week2Content');
+loadPageContent('S2W3.html', 'week3Content');
+loadPageContent('gltp_links.html', 'linksContent');
+loadPageContent('ofm.html', 'ofmContent');
+
   function enableToggleListeners() {
   document.querySelectorAll('.toggle-header').forEach(header => {
     header.addEventListener('click', () => {
@@ -168,16 +138,7 @@ fetch('S2W1.html')
   });
 }
 
-  fetch('standings.html')
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById('standingsContent').innerHTML = html;
-      enableToggleListeners(); // <-- important: run *after* content loads
-    })
-    .catch(err => {
-      document.getElementById('standingsContent').innerHTML = "Failed to load standings.";
-      console.error("Error loading standings file:", err);
-    });
+  loadPageContent('standings.html', 'standingsContent');
 
     function copyMapID(button) {
     const span = button.parentElement.querySelector('.map-id');
@@ -195,6 +156,7 @@ fetch('S2W1.html')
         .catch(err => console.error("Error copying map :", err));
     }
   }
+
 
   function openMap(button) {
     const span = button.parentElement.querySelector('.map-id');
@@ -271,6 +233,7 @@ fetch('S2W1.html')
         link.classList.remove('active');
       }
     });
+
 
     // Show the selected page and link
     const page = document.getElementById(pageId);
