@@ -6,8 +6,9 @@
   <link rel="stylesheet" href="gltp.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script>
-    window.BUILD_VERSION = "{{BUILD_VERSION}}";
+    window.BUILD_VERSION = "{{BUILD_VERSION}}"; // Replace this with real build version in your deploy process
   </script>
+  <script defer src="season2script.js"></script>
 </head>
 <body>
 
@@ -31,7 +32,7 @@
   </div>
 
   <div id="homePage" class="page-container">
-    <div id="homeContent">Loading links...</div>
+    <div id="homeContent">Loading home...</div>
   </div>
 
   <div id="ofmPage" class="page-container">
@@ -39,10 +40,10 @@
   </div>
 
   <div id="season1Page" class="page-container">
-    <div id="season1Content">Loading links...</div>
+    <div id="season1Content">Loading season 1...</div>
   </div>
 
-   <div id="rostersPage" class="page-container">
+  <div id="rostersPage" class="page-container">
     <div id="rosterContent">Loading rosters...</div>
   </div>
 
@@ -66,183 +67,5 @@
     <div id="standingsContent">Loading standings...</div>
   </div>
 
-  <script>
-  const navItems = {
-    home: { linkId: 'homeLink', pageId: 'homePage' },
-    standings: { linkId: 'standingsLink', pageId: 'standingsPage' },
-    ofm: { linkId: 'ofmLink', pageId: 'ofmPage' },
-    info: { linkId: 'linksLink', pageId: 'linksPage' },
-    week1: { linkId: 'week1Link', pageId: 'week1Page' },
-    week2: { linkId: 'week2Link', pageId: 'week2Page' },
-    week3: { linkId: 'week3Link', pageId: 'week3Page' },
-    rosters: { linkId: 'rostersLink', pageId: 'rostersPage' },
-    season1: { linkId: 'season1Link', pageId: 'season1Page' }, // special case
-  };
-
-  Object.entries(navItems).forEach(([key, { linkId, pageId }]) => {
-    document.getElementById(linkId).addEventListener('click', () => {
-      // Handle special redirect cases
-      if (key === 'home') {
-        window.location.href = '/GLTP/';
-        return;
-      }
-      if (key === 'season1') {
-        window.location.href = '/GLTP/S1/home.html';
-        return;
-      }
-
-      // Update the hash
-      window.location.hash = key;
-
-      // Show the correct page
-      showPage(pageId, linkId);
-    });
-  });
-
-  function loadPageContent(filename, elementId) {
-  fetch(`${filename}?v=${window.BUILD_VERSION}`)
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById(elementId).innerHTML = html;
-      if (filename === 'standings.html') enableToggleListeners();
-    })
-    .catch(err => {
-      document.getElementById(elementId).innerHTML = `Failed to load ${filename}.`;
-      console.error(`Error loading ${filename}:`, err);
-    });
-}
-
-loadPageContent('gltpRosters.html', 'rosterContent');
-loadPageContent('S2W1.html', 'week1Content');
-loadPageContent('S2W2.html', 'week2Content');
-loadPageContent('S2W3.html', 'week3Content');
-loadPageContent('gltp_links.html', 'linksContent');
-loadPageContent('ofm.html', 'ofmContent');
-
-  function enableToggleListeners() {
-  document.querySelectorAll('.toggle-header').forEach(header => {
-    header.addEventListener('click', () => {
-      const targetId = header.getAttribute('data-toggle-target');
-      const target = document.getElementById(targetId);
-      const arrow = header.querySelector('.arrow');
-
-      if (target) {
-        const isHidden = target.style.display === 'none' || getComputedStyle(target).display === 'none';
-        target.style.display = isHidden ? 'block' : 'none';
-
-        if (arrow) {
-          arrow.textContent = isHidden ? '▼' : '▶';
-        }
-      }
-    });
-  });
-}
-
-  loadPageContent('standings.html', 'standingsContent');
-
-    function copyMapID(button) {
-    const span = button.parentElement.querySelector('.map-id');
-    const mapId = span.textContent;
-    if (mapId && mapId !== "N/A") {
-      navigator.clipboard.writeText(mapId)
-        .then(() => {
-          button.textContent = "✅";
-          button.classList.add("copied");
-          setTimeout(() => {
-            button.textContent = "Copy Preset";
-            button.classList.remove("copied");
-          }, 1500);
-        })
-        .catch(err => console.error("Error copying map :", err));
-    }
-  }
-
-
-  function openMap(button) {
-    const span = button.parentElement.querySelector('.map-id');
-    const mapId = span.textContent;
-    if (mapId && mapId !== "N/A") {
-        const form = document.createElement("form");
-        form.method = "POST";
-        form.action = "https://tagpro.koalabeast.com/groups/create";
-        form.target = "_blank"; // Opens in a new tab
-
-        // Input fields for the form data
-        const nameInput = document.createElement("input");
-        nameInput.type = "hidden";
-        nameInput.name = "name";
-        nameInput.value = "GLTP IS THE BEST";
-
-        const privateInput = document.createElement("input");
-        privateInput.type = "hidden";
-        privateInput.name = "private";
-        privateInput.value = "on";
-
-        const presetInput = document.createElement("input");
-        presetInput.type = "hidden";
-        presetInput.name = "preset";
-        presetInput.value = mapId;
-
-        // Append inputs to form
-        form.appendChild(nameInput);
-        form.appendChild(privateInput);
-        form.appendChild(presetInput);
-
-        document.body.appendChild(form);
-        form.submit(); // Submit the form
-        document.body.removeChild(form); // Clean up
-    }
-  }
-  function toggleDropdown() {
-    document.getElementById("dropdownContent").classList.toggle("show");
-  }
-
-  // Optional: Close dropdown when clicking outside
-  window.addEventListener("click", function (e) {
-    if (!e.target.matches('.dropbtn')) {
-      const dropdown = document.getElementById("dropdownContent");
-      if (dropdown.classList.contains('show')) {
-        dropdown.classList.remove('show');
-      }
-    }
-  });
-  window.addEventListener('DOMContentLoaded', () => {
-    const hash = window.location.hash.slice(1); // e.g. "week1"
-    if (navItems[hash]) {
-      const { pageId, linkId } = navItems[hash];
-      showPage(pageId, linkId);
-    } else {
-      // Default to standings
-      const { pageId, linkId } = navItems['standings'];
-      showPage(pageId, linkId);
-    }
-  });
-  function showPage(pageId, linkId) {
-    // Hide all pages
-    Object.values(navItems).forEach(({ pageId }) => {
-      const page = document.getElementById(pageId);
-      if (page) {
-        page.classList.remove('active');
-      }
-    });
-
-    // Remove active class from all links
-    Object.values(navItems).forEach(({ linkId }) => {
-      const link = document.getElementById(linkId);
-      if (link) {
-        link.classList.remove('active');
-      }
-    });
-
-
-    // Show the selected page and link
-    const page = document.getElementById(pageId);
-    const link = document.getElementById(linkId);
-
-    if (page) page.classList.add('active');
-    if (link) link.classList.add('active');
-  }
-
-  </script>
 </body>
 </html>
