@@ -90,10 +90,10 @@
       "difficulty": "Easy",
       "speedruns": [
         {
-          "time": "40.861",
+          "time": "40.736",
           "players": ["Some Ball 64"],
           "team": "Fall Bondlers",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=cbad6bac-3a41-4811-b24a-3eb50cc0453f",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=f53ac64d-9931-4b1c-9bc9-24e7b7031a76",
           "includeOnSpeedrun": "yes"
         },
         {
@@ -122,6 +122,7 @@
           "players": ["BigBird"],
           "team": "Momentum Mori",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=31e07696-fbf1-4a1d-bd1b-00b1aada0fbf",
+          "youtube": "https://youtu.be/EnbEMm3torc",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -206,6 +207,7 @@
       "players": ["BigBird"],
       "team": "Momentum Mori",
       "replay": "https://tagpro.koalabeast.com/replays?uuid=e4d2e772-9e72-40e9-ad0a-eb93ecfd04ba",
+      "youtube": "https://youtu.be/SRIazEFRogw",
       "includeOnSpeedrun": "yes"
       }
     ]
