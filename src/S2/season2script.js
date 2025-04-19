@@ -268,13 +268,18 @@ function renderWeekContent(containerId, weekData) {
 
       validRuns.forEach((run, index) => {
         const points = getPointsForRank(index + 1);
+        const replayLinks = `
+        <a href="${run.replay}" target="_blank">Link</a>
+        ${run.youtube ? `<br><a href="${run.youtube}" target="_blank">YouTube</a>` : ''}
+      `;
+      
         html += `
           <tr>
             <td>${index + 1}</td>
             <td>${run.time}</td>
             <td>${Array.isArray(run.players) ? run.players.join('<br>') : run.players}</td>
             <td>${run.team}</td>
-            <td><a href="${run.replay}" target="_blank">Link</a></td>
+            <td>${replayLinks}</td>
             <td>${points}</td>
           </tr>
         `;
@@ -444,7 +449,7 @@ function teamSpeedrunRank(teamName, map) {
 // Helper function to get medal emoji based on rank
 function getMedalForRank(rank) {
   const medals = ['🥇', '🥈', '🥉'];
-  return rank <= 3 ? medals[rank - 1] : rank;
+  return rank <= 3 ? medals[rank - 1] : '<i class="fas fa-times red-icon" aria-label="Not top 3"></i>';
 }
 
 // Helper function to get points based on rank
