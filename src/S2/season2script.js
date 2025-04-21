@@ -3,6 +3,7 @@ const navItems = {
   home: { linkId: 'homeLink', pageId: 'homePage' },
   standings: { linkId: 'standingsLink', pageId: 'standingsPage' },
   ofm: { linkId: 'ofmLink', pageId: 'ofmPage' },
+  bounties: { linkId: 'bountiesLink', pageId: 'bountiesPage' },
   links: { linkId: 'linksLink', pageId: 'linksPage' },
   week1: { linkId: 'week1Link', pageId: 'week1Page' },
   week2: { linkId: 'week2Link', pageId: 'week2Page' },
@@ -72,6 +73,7 @@ function fetchSeasonData() {
 
       // Load static content
       loadStaticContent('ofmContent', 'ofm.html');
+      loadStaticContent('bountiesContent', 'bounties.html');
       loadStaticContent('linksContent', 'gltp_links.html');
 
       // Handle week content - check if data exists first
@@ -201,9 +203,9 @@ function renderWeekContent(containerId, weekData) {
   html += `
   <table style="width: 100%; table-layout: fixed;">
     <colgroup>
-      <col style="width: 15%;">
-      <col style="width: 23%;">
-      <col style="width: 27%;">
+      <col style="width: 13%;">
+      <col style="width: 24%;">
+      <col style="width: 28%;">
       <col style="width: 15%;">
       <col style="width: 5%;">
       <col style="width: 9%;">
@@ -250,7 +252,7 @@ function renderWeekContent(containerId, weekData) {
     html += `
     <table>
       <tr>
-        <th colspan="6">${map.mapName}</th>
+        <th class="centered" colspan="6">${map.mapName}</th>
       </tr>
       <tr>
         <th>Rank</th>
@@ -272,7 +274,7 @@ function renderWeekContent(containerId, weekData) {
         <a href="${run.replay}" target="_blank">Link</a>
         ${run.youtube ? `<br><a href="${run.youtube}" target="_blank">YouTube</a>` : ''}
       `;
-      
+
         html += `
           <tr>
             <td>${index + 1}</td>
