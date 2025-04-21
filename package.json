@@ -2,7 +2,10 @@
   "name": "gh-pages-cache-busting",
   "version": "1.0.0",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "serve": "live-server docs --port=8080 --entry-file=index.html --mount=/GLTP:./docs --open=/GLTP --watch=src"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
 }
