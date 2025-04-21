@@ -235,6 +235,72 @@
     }
   ],
   "week2": [
+    {
+      "mapName": "Stonky Tonk Tonk",
+      "author": "TheLegend27",
+      "link": "https://fortunatemaps.herokuapp.com/map/89834",
+      "recommendedBalls": "1+",
+      "preset": "gZMefHlEggtaiaaaJyaraaksaaamaaEYE",
+      "speedrunPreset": "gZMefHlEggtaiaaaJyaraaksaaamaaEYEG",
+      "settings": "Bomb Respawn: 3 Sec\nBoost Respawn: Instant",
+      "points": 1,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Easy",
+        "speedruns": []
+    },
+    {
+      "mapName": "You Need Two (Official FWO)",
+      "author": "Danny",
+      "link": "https://fortunatemaps.herokuapp.com/map/82275",
+      "recommendedBalls": "2+",
+      "preset": "gZMefEwlggtaiaaaJraaksaaamaaYE",
+      "speedrunPreset": "gZMefEwlggtaiaaaJyaraaksaaamaaYYEG",
+      "settings": "Bomb Respawn: 5 Sec\nBoost Respawn: Instant",
+      "points": 1,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Easy",
+      "speedruns": []
+    },
+    {
+      "mapName": "Skybound tower",
+      "author": "DAD.",
+      "link": "https://fortunatemaps.herokuapp.com/map/89636",
+      "recommendedBalls": "1+",
+      "preset": "gZMefHhOggtaiaaaJraaksaaamaaauaaajbE",
+      "speedrunPreset": "gZMefHhOggtaiaaaJyaraaksaaamaaauaaaYjbEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant\nno RB or JJ",
+      "points": 2,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Mars Buddy Climb by SB Army SB",
+      "author": "SB Army SB'",
+      "link": "https://fortunatemaps.herokuapp.com/map/89764",
+      "recommendedBalls": "2+",
+      "preset": "gZMefHkmggtuiaaaJyaraaksaaamaaaE",
+      "speedrunPreset": "gZMefHkmggtuiaaaJyaraaksaaamaaaYEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 3,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": []
+    },
+    {
+      "mapName": "Barbed Wire (Official FWO)",
+      "author": "Bow & FWO",
+      "link": "https://fortunatemaps.herokuapp.com/map/88925",
+      "recommendedBalls": "1+",
+      "preset": "gZMefGUfggtaiaaaJyaraaksaaamaaaE",
+      "speedrunPreset": "gZMefGUfggtaiaaaJyaraaksaaamaaaYEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 4,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Very Hard",
+      "speedruns": []
+    }
   ],
   "teams": [
     {

@@ -118,6 +118,8 @@ th, td {
 td {
   text-align: center;
   color: #e0e0e0;
+  word-break: break-word;
+  white-space: normal;
 }
 th {
   background-color: #e3e3e3;
@@ -220,4 +222,23 @@ th {
 
 .white-header {
   color: #e0e0e0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.status {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.unclaimed {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.claimed {
+    background-color: #d4edda;
+    color: #155724;
 }
