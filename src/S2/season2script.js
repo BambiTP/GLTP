@@ -118,6 +118,7 @@ function calculateAllTeamPoints(data) {
     team["Week2\nPoints"] = 0;
     team["Week3\nPoints"] = 0;
     team["Total\nPoints"] = 0;
+    team.bounties = 0;
   });
 
   // Calculate points for each week
@@ -133,9 +134,13 @@ function calculateAllTeamPoints(data) {
     calculateWeekPoints(data.teams, data.week3, 3);
   }
 
+  if (data.bounties && data.bounties.length > 0) {
+    calculateBountyPoints(data.teams, data.bounties);
+  }
+
   // Calculate total points
   data.teams.forEach(team => {
-    team["Total\nPoints"] = team["Completion\nPoints"] + team["Speedrun\nPoints"];
+    team["Total\nPoints"] = team["Completion\nPoints"] + team["Speedrun\nPoints"] + team.bounties;
   });
 }
 
@@ -161,6 +166,23 @@ function calculateWeekPoints(teams, weekData, weekNumber) {
     team[`Week${weekNumber}\nPoints`] = weekCompletionPoints + weekSpeedrunPoints;
   });
 }
+
+// Calculate points for a specific week
+function calculateBountyPoints(teams, bountyData) {
+  teams.forEach(team => {
+    let bountyCompletionPoints = 0;
+
+    bountyData.forEach(map => {
+      // Calculate completion points
+      const completionPoints = calculateCompletionPoints(team.name, map);
+      bountyCompletionPoints += completionPoints;
+    });
+
+    // Update team data
+    team.bounties += bountyCompletionPoints;
+  });
+}
+
 
 // Calculate completion points for a team on a specific map
 function calculateCompletionPoints(teamName, map) {
@@ -327,6 +349,7 @@ function renderStandings(containerId, teamsData) {
         <th>Week1 Points</th>
         <th>Week2 Points</th>
         <th>Week3 Points</th>
+        <th>Bounties</th>
       </tr>
     </thead>
     <tbody>`;
@@ -343,6 +366,7 @@ function renderStandings(containerId, teamsData) {
         <td>${team["Week1\nPoints"]}</td>
         <td>${team["Week2\nPoints"]}</td>
         <td>${team["Week3\nPoints"]}</td>
+        <td>${team.bounties}</td>
       </tr>
     `;
   });
