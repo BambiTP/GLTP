@@ -390,7 +390,17 @@
       "points": 2,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
-      "speedruns": []
+      "speedruns": [
+        {
+          "time": "1:09.541",
+          "players": [
+            "DAD."
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=757ccde8-7df2-4510-b425-1bea418a918f",
+          "includeOnSpeedrun": "yes"
+        }
+      ]
     },
     {
       "mapName": "Mars Buddy Climb by SB Army SB",
