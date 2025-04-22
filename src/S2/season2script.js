@@ -52,7 +52,9 @@ function showPage(pageId, linkId) {
 }
 
 async function loadStaticContent(elementId, htmlPath) {
-  const response = await fetch(htmlPath);
+  const version = window.BUILD_VERSION || Date.now(); // fallback to current timestamp
+  const cacheBustedPath = `${htmlPath}?v=${version}`;
+  const response = await fetch(cacheBustedPath);
   const html = await response.text();
   document.getElementById(elementId).innerHTML = html;
 }
