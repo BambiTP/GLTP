@@ -14,35 +14,50 @@
       "speedruns": [
         {
           "time": "2:30.775",
-          "players": ["Some Ball 64"],
+          "players": [
+            "Some Ball 64"
+          ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=e3cd344d-382b-4fcc-81cc-0f1496682edf",
           "includeOnSpeedrun": "yes"
         },
         {
           "time": "3:04.991",
-          "players": ["DAD.", "Beach"],
+          "players": [
+            "DAD.",
+            "Beach"
+          ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=ea2f9ea6-70c6-422b-a6be-62d0828ee12d",
           "includeOnSpeedrun": "no"
         },
         {
           "time": "999:59:999",
-          "players": ["Burt", "HappyCracker", "PoonLuvr69", "L1GMa"],
+          "players": [
+            "Burt",
+            "HappyCracker",
+            "PoonLuvr69",
+            "L1GMa"
+          ],
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=4eefd6cf-e513-476d-ac57-ee47edc00a15",
           "includeOnSpeedrun": "no"
         },
         {
           "time": "2:26.043",
-          "players": ["DAD."],
+          "players": [
+            "DAD."
+          ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=e6696a8d-4c58-49e5-ac2e-01042a021186",
           "includeOnSpeedrun": "no"
         },
         {
           "time": "2:20.969",
-          "players": ["DAD.", "Madoka"],
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=6746875e-23d1-4142-ba5c-5e6ef593d1b9",
           "includeOnSpeedrun": "yes"
@@ -63,28 +78,45 @@
       "speedruns": [
         {
           "time": "1:53.986",
-          "players": ["Some Ball 64", "Billy", "Ball Of Fame"],
+          "players": [
+            "Some Ball 64",
+            "Billy",
+            "Ball Of Fame"
+          ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=a9dac72b-3c48-423f-9e86-6e7b848640d7",
           "includeOnSpeedrun": "yes"
         },
         {
           "time": "1:52.347",
-          "players": ["DAD.", "Madoka", "Beach", "MarcusYallow"],
+          "players": [
+            "DAD.",
+            "Madoka",
+            "Beach",
+            "MarcusYallow"
+          ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=c202a904-8757-43ee-b07b-93dfa03eb054",
           "includeOnSpeedrun": "yes"
         },
         {
           "time": "4:16.263",
-          "players": ["Valerian", "MRCOW"],
+          "players": [
+            "Valerian",
+            "MRCOW"
+          ],
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=40379b05-73b1-4a5a-b422-fab6864dadb9",
           "includeOnSpeedrun": "yes"
         },
         {
           "time": "37:46.712",
-          "players": ["Burt", "HappyCracker", "PoonLuvr69", "L1GMa"],
+          "players": [
+            "Burt",
+            "HappyCracker",
+            "PoonLuvr69",
+            "L1GMa"
+          ],
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=a1209f9a-5c41-417b-aac0-47379500674d",
           "includeOnSpeedrun": "no"
@@ -105,35 +137,48 @@
       "speedruns": [
         {
           "time": "40.736",
-          "players": ["Some Ball 64"],
+          "players": [
+            "Some Ball 64"
+          ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=f53ac64d-9931-4b1c-9bc9-24e7b7031a76",
           "includeOnSpeedrun": "yes"
         },
         {
           "time": "40.762",
-          "players": ["MarcusYallow"],
+          "players": [
+            "MarcusYallow"
+          ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=80e2b911-b7a0-4fd7-ae6e-4a35fd768a95",
           "includeOnSpeedrun": "yes"
         },
         {
           "time": "51.509",
-          "players": ["EvTheSmev"],
+          "players": [
+            "EvTheSmev"
+          ],
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=a969bd6e-390b-40cd-81c9-9bebf79baad2",
           "includeOnSpeedrun": "yes"
         },
         {
           "time": "19:30.565",
-          "players": ["Burt", "HappyCracker", "PoonLuvr69", "L1GMa"],
+          "players": [
+            "Burt",
+            "HappyCracker",
+            "PoonLuvr69",
+            "L1GMa"
+          ],
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=8bf20d32-1b96-430b-8e33-98254e4dcac5",
           "includeOnSpeedrun": "no"
         },
         {
           "time": "30.886",
-          "players": ["BigBird"],
+          "players": [
+            "BigBird"
+          ],
           "team": "Momentum Mori",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=31e07696-fbf1-4a1d-bd1b-00b1aada0fbf",
           "youtube": "https://youtu.be/EnbEMm3torc",
@@ -155,7 +200,11 @@
       "speedruns": [
         {
           "time": "1:37.955",
-          "players": ["DAD.", "Madoka", "MarcusYallow"],
+          "players": [
+            "DAD.",
+            "Madoka",
+            "MarcusYallow"
+          ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=7efa5c49-980e-44b8-95bb-d1d80a01b29b",
           "includeOnSpeedrun": "yes"
@@ -176,21 +225,34 @@
       "speedruns": [
         {
           "time": "7:41.259",
-          "players": ["Some Ball 64", "Billy", "Ball Of Fame", "perl"],
+          "players": [
+            "Some Ball 64",
+            "Billy",
+            "Ball Of Fame",
+            "perl"
+          ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=3f0fb6ad-a786-467c-ac3d-6db919eb88f2",
           "includeOnSpeedrun": "yes"
         },
         {
           "time": "33:41.859",
-          "players": ["DAD.", "Beach", "MarcusYallow"],
+          "players": [
+            "DAD.",
+            "Beach",
+            "MarcusYallow"
+          ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=8905e92f-9409-47ab-bd7c-9fd92cc601ec",
           "includeOnSpeedrun": "no"
         },
         {
           "time": "5:10.460",
-          "players": ["DAD.", "Madoka", "MarcusYallow"],
+          "players": [
+            "DAD.",
+            "Madoka",
+            "MarcusYallow"
+          ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=1d78bd47-8885-4eb2-9a96-b91f74825488",
           "includeOnSpeedrun": "yes"
@@ -210,35 +272,50 @@
       "difficulty": "Medium",
       "speedruns": [
         {
-        "time": "31:56.917",
-        "players": ["DAD.", "Beach", "MarcusYallow"],
-        "team": "FWO",
-        "replay": "https://tagpro.koalabeast.com/replays?uuid=da4132a7-79b3-411f-808f-10567279e870",
-        "includeOnSpeedrun": "no"
-      },
-      {
-      "time": "5:39.990",
-      "players": ["BigBird"],
-      "team": "Momentum Mori",
-      "replay": "https://tagpro.koalabeast.com/replays?uuid=e4d2e772-9e72-40e9-ad0a-eb93ecfd04ba",
-      "youtube": "https://youtu.be/SRIazEFRogw",
-      "includeOnSpeedrun": "yes"
-      },
-      {
-      "time": "11:33.392",
-      "players": ["DAD.", "Madoka"],
-      "team": "FWO",
-      "replay": "https://tagpro.koalabeast.com/replays?uuid=82653bd8-9b47-420a-b06a-383269462672",
-      "includeOnSpeedrun": "yes"
-      },
-      {
-      "time": "10:25.984",
-      "players": ["Ball of Fame", "Some Ball 64", "LogisticMap", "Billy", "hmmmm"],
-      "team": "Fall Bondlers",
-      "replay": "https://tagpro.koalabeast.com/replays?uuid=ae8cbbcf-3ef5-487a-a820-ec7009176256",
-      "includeOnSpeedrun": "yes"
-      }
-    ]
+          "time": "31:56.917",
+          "players": [
+            "DAD.",
+            "Beach",
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=da4132a7-79b3-411f-808f-10567279e870",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "5:39.990",
+          "players": [
+            "BigBird"
+          ],
+          "team": "Momentum Mori",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=e4d2e772-9e72-40e9-ad0a-eb93ecfd04ba",
+          "youtube": "https://youtu.be/SRIazEFRogw",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "11:33.392",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=82653bd8-9b47-420a-b06a-383269462672",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "10:25.984",
+          "players": [
+            "Ball of Fame",
+            "Some Ball 64",
+            "LogisticMap",
+            "Billy",
+            "hmmmm"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=ae8cbbcf-3ef5-487a-a820-ec7009176256",
+          "includeOnSpeedrun": "yes"
+        }
+      ]
     }
   ],
   "week2": [
@@ -253,7 +330,18 @@
       "points": 1,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Easy",
-        "speedruns": []
+      "speedruns": [
+        {
+          "time": "2:14.791",
+          "players": [
+            "DAD.",
+            "Beach"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=37ce7e67-f0c3-4d8a-9048-a101c9b8e000",
+          "includeOnSpeedrun": "yes"
+        }
+      ]
     },
     {
       "mapName": "You Need Two (Official FWO)",
@@ -268,19 +356,27 @@
       "difficulty": "Easy",
       "speedruns": [
         {
-        "time": "2:21.476",
-        "players": ["DAD.", "Beach"],
-        "team": "FWO",
-        "replay": "https://tagpro.koalabeast.com/replays?uuid=9723da25-f958-4de7-baf9-24a4730c8335",
-        "includeOnSpeedrun": "yes"
-      },
-      {
-      "time": "3:22.135",
-      "players": ["Some Ball 64", "LogisticMap", "Billy", "hmmmm"],
-      "team": "Fall Bondlers",
-      "replay": "https://tagpro.koalabeast.com/replays?uuid=57675530-eb24-4b4a-b3f3-6d166f4b67c0",
-      "includeOnSpeedrun": "yes"
-      }
+          "time": "2:21.476",
+          "players": [
+            "DAD.",
+            "Beach"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=9723da25-f958-4de7-baf9-24a4730c8335",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "3:22.135",
+          "players": [
+            "Some Ball 64",
+            "LogisticMap",
+            "Billy",
+            "hmmmm"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=57675530-eb24-4b4a-b3f3-6d166f4b67c0",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
@@ -294,8 +390,7 @@
       "points": 2,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
-      "speedruns": [
-      ]
+      "speedruns": []
     },
     {
       "mapName": "Mars Buddy Climb by SB Army SB",
@@ -310,19 +405,26 @@
       "difficulty": "Medium",
       "speedruns": [
         {
-        "time": "3:57.940",
-        "players": ["DAD.", "Madoka"],
-        "team": "FWO",
-        "replay": "https://tagpro.koalabeast.com/replays?uuid=d93acda5-1fcc-491e-b51f-2a349659e168",
-        "includeOnSpeedrun": "yes"
-      },
-      {
-      "time": "6:02.402",
-      "players": ["Some Ball 64", "timo_tay", "Ball of Fame"],
-      "team": "Fall Bondlers",
-      "replay": "https://tagpro.koalabeast.com/replays?uuid=97ee41c3-7195-4fa9-add7-29e4f2cf4de8",
-      "includeOnSpeedrun": "yes"
-      }
+          "time": "3:57.940",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=d93acda5-1fcc-491e-b51f-2a349659e168",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "6:02.402",
+          "players": [
+            "Some Ball 64",
+            "timo_tay",
+            "Ball of Fame"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=97ee41c3-7195-4fa9-add7-29e4f2cf4de8",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
@@ -339,6 +441,32 @@
       "speedruns": []
     }
   ],
+  "bounties": [
+    {
+      "mapName": "Harry Botter and the Shaft of Dangers",
+      "author": "Madoka & FWO",
+      "link": "https://fortunatemaps.herokuapp.com/map/90026",
+      "recommendedBalls": "3+",
+      "preset": "gZMefHpoggtaiaaaJyaraaksaaaYEG",
+      "speedrunPreset": "gZMefHpoggtaiaaaJyaraaksaaaYEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 2,
+      "difficulty": "Hard",
+      "speedruns": [
+        {
+          "time": "999:99.999",
+          "players": [
+            "DAD.",
+            "Beach",
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=8346e763-8f66-456c-b9eb-813ce3ab9fdd",
+          "includeOnSpeedrun": "yes"
+        }
+      ]
+    }
+  ],
   "teams": [
     {
       "name": "FWO",
@@ -348,9 +476,16 @@
       "Week1\nPoints": 2,
       "Week2\nPoints": 0,
       "Week3\nPoints": 0,
+      "Bounties": 0,
       "roster": [
-        "DAD", "Madoka", "Carrrrrl", "DrCristinaYang", "TeaForYou&Me",
-        "MarcusYallow", "Beach", "the buttons"
+        "DAD",
+        "Madoka",
+        "Carrrrrl",
+        "DrCristinaYang",
+        "TeaForYou&Me",
+        "MarcusYallow",
+        "Beach",
+        "the buttons"
       ]
     },
     {
@@ -361,9 +496,17 @@
       "Week1\nPoints": 15,
       "Week2\nPoints": 0,
       "Week3\nPoints": 0,
+      "Bounties": 0,
       "roster": [
-        "SB ARMY SB", "Bashella", "LogisticMap", "timo_tay", "Billy",
-        "perl", "Bambi", "Ball Of Fame", "hmmmm"
+        "SB ARMY SB",
+        "Bashella",
+        "LogisticMap",
+        "timo_tay",
+        "Billy",
+        "perl",
+        "Bambi",
+        "Ball Of Fame",
+        "hmmmm"
       ]
     },
     {
@@ -374,8 +517,12 @@
       "Week1\nPoints": 0,
       "Week2\nPoints": 0,
       "Week3\nPoints": 0,
+      "Bounties": 0,
       "roster": [
-        "elfitzo", "Bobbay", "itag", "Vexation"
+        "elfitzo",
+        "Bobbay",
+        "itag",
+        "Vexation"
       ]
     },
     {
@@ -386,9 +533,15 @@
       "Week1\nPoints": 4,
       "Week2\nPoints": 0,
       "Week3\nPoints": 0,
+      "Bounties": 0,
       "roster": [
-        "burt", "Honky", "Troglodyte", "HappyCracker",
-        "L1GMa", "PoonLuvr69", "+1"
+        "burt",
+        "Honky",
+        "Troglodyte",
+        "HappyCracker",
+        "L1GMa",
+        "PoonLuvr69",
+        "+1"
       ]
     },
     {
@@ -399,9 +552,14 @@
       "Week1\nPoints": 0,
       "Week2\nPoints": 0,
       "Week3\nPoints": 0,
+      "Bounties": 0,
       "roster": [
-        "MRCOW", "EpicBlob", "EvTheSmev", "bleast",
-        "Valerian", "Tinderfella"
+        "MRCOW",
+        "EpicBlob",
+        "EvTheSmev",
+        "bleast",
+        "Valerian",
+        "Tinderfella"
       ]
     },
     {
@@ -412,6 +570,7 @@
       "Week1\nPoints": 0,
       "Week2\nPoints": 0,
       "Week3\nPoints": 0,
+      "Bounties": 0,
       "roster": [
         "BigBird"
       ]
