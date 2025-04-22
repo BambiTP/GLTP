@@ -286,7 +286,15 @@
       "points": 3,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
-      "speedruns": []
+      "speedruns": [
+        {
+        "time": "3:57.940",
+        "players": ["DAD.", "Madoka"],
+        "team": "FWO",
+        "replay": "https://tagpro.koalabeast.com/replays?uuid=d93acda5-1fcc-491e-b51f-2a349659e168",
+        "includeOnSpeedrun": "yes"
+      },
+      ]
     },
     {
       "mapName": "Barbed Wire (Official FWO)",
