@@ -340,6 +340,15 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=37ce7e67-f0c3-4d8a-9048-a101c9b8e000",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:10.131",
+          "players": [
+            "Burt"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=5e1311b1-f48f-4398-a922-04caa378ff61",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -376,6 +385,18 @@
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=57675530-eb24-4b4a-b3f3-6d166f4b67c0",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "999:59:999",
+          "players": [
+            "Burt",
+            "Troglodyte",
+            "PoonLuvr69"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=4dc9c8cd-4418-40ce-a51d-6f5d3eb193e6",
+          "replayTwo": "https://tagpro.koalabeast.com/replays?uuid=67e7f807-de97-4d1e-bd65-40609f17a518",
+          "includeOnSpeedrun": "no"
         }
       ]
     },
@@ -399,6 +420,18 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=757ccde8-7df2-4510-b425-1bea418a918f",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "14:20.880",
+          "players": [
+            "Burt",
+            "Troglodyte",
+            "PoonLuvr69",
+            "sir cumalot"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=1ae66399-cc95-4832-841f-b80076ee8a05",
+          "includeOnSpeedrun": "no"
         }
       ]
     },
