@@ -3,6 +3,7 @@ const navItems = {
   home: { linkId: 'homeLink', pageId: 'homePage' },
   standings: { linkId: 'standingsLink', pageId: 'standingsPage' },
   ofm: { linkId: 'ofmLink', pageId: 'ofmPage' },
+  bounties: { linkId: 'bountiesLink', pageId: 'bountiesPage' },
   links: { linkId: 'linksLink', pageId: 'linksPage' },
   week1: { linkId: 'week1Link', pageId: 'week1Page' },
   week2: { linkId: 'week2Link', pageId: 'week2Page' },
@@ -51,7 +52,9 @@ function showPage(pageId, linkId) {
 }
 
 async function loadStaticContent(elementId, htmlPath) {
-  const response = await fetch(htmlPath);
+  const version = window.BUILD_VERSION || Date.now(); // fallback to current timestamp
+  const cacheBustedPath = `${htmlPath}?v=${version}`;
+  const response = await fetch(cacheBustedPath);
   const html = await response.text();
   document.getElementById(elementId).innerHTML = html;
 }
@@ -72,6 +75,7 @@ function fetchSeasonData() {
 
       // Load static content
       loadStaticContent('ofmContent', 'ofm.html');
+      loadStaticContent('bountiesContent', 'bounties.html');
       loadStaticContent('linksContent', 'gltp_links.html');
 
       // Handle week content - check if data exists first
@@ -116,6 +120,7 @@ function calculateAllTeamPoints(data) {
     team["Week2\nPoints"] = 0;
     team["Week3\nPoints"] = 0;
     team["Total\nPoints"] = 0;
+    team.bounties = 0;
   });
 
   // Calculate points for each week
@@ -131,9 +136,13 @@ function calculateAllTeamPoints(data) {
     calculateWeekPoints(data.teams, data.week3, 3);
   }
 
+  if (data.bounties && data.bounties.length > 0) {
+    calculateBountyPoints(data.teams, data.bounties);
+  }
+
   // Calculate total points
   data.teams.forEach(team => {
-    team["Total\nPoints"] = team["Completion\nPoints"] + team["Speedrun\nPoints"];
+    team["Total\nPoints"] = team["Completion\nPoints"] + team["Speedrun\nPoints"] + team.bounties;
   });
 }
 
@@ -159,6 +168,23 @@ function calculateWeekPoints(teams, weekData, weekNumber) {
     team[`Week${weekNumber}\nPoints`] = weekCompletionPoints + weekSpeedrunPoints;
   });
 }
+
+// Calculate points for a specific week
+function calculateBountyPoints(teams, bountyData) {
+  teams.forEach(team => {
+    let bountyCompletionPoints = 0;
+
+    bountyData.forEach(map => {
+      // Calculate completion points
+      const completionPoints = calculateCompletionPoints(team.name, map);
+      bountyCompletionPoints += completionPoints;
+    });
+
+    // Update team data
+    team.bounties += bountyCompletionPoints;
+  });
+}
+
 
 // Calculate completion points for a team on a specific map
 function calculateCompletionPoints(teamName, map) {
@@ -201,9 +227,9 @@ function renderWeekContent(containerId, weekData) {
   html += `
   <table style="width: 100%; table-layout: fixed;">
     <colgroup>
-      <col style="width: 15%;">
-      <col style="width: 23%;">
-      <col style="width: 27%;">
+      <col style="width: 13%;">
+      <col style="width: 24%;">
+      <col style="width: 28%;">
       <col style="width: 15%;">
       <col style="width: 5%;">
       <col style="width: 9%;">
@@ -250,7 +276,7 @@ function renderWeekContent(containerId, weekData) {
     html += `
     <table>
       <tr>
-        <th colspan="6">${map.mapName}</th>
+        <th class="centered" colspan="6">${map.mapName}</th>
       </tr>
       <tr>
         <th>Rank</th>
@@ -272,7 +298,7 @@ function renderWeekContent(containerId, weekData) {
         <a href="${run.replay}" target="_blank">Link</a>
         ${run.youtube ? `<br><a href="${run.youtube}" target="_blank">YouTube</a>` : ''}
       `;
-      
+
         html += `
           <tr>
             <td>${index + 1}</td>
@@ -325,6 +351,7 @@ function renderStandings(containerId, teamsData) {
         <th>Week1 Points</th>
         <th>Week2 Points</th>
         <th>Week3 Points</th>
+        <th>Bounties</th>
       </tr>
     </thead>
     <tbody>`;
@@ -341,6 +368,7 @@ function renderStandings(containerId, teamsData) {
         <td>${team["Week1\nPoints"]}</td>
         <td>${team["Week2\nPoints"]}</td>
         <td>${team["Week3\nPoints"]}</td>
+        <td>${team.bounties}</td>
       </tr>
     `;
   });
