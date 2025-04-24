@@ -349,6 +349,15 @@
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=5e1311b1-f48f-4398-a922-04caa378ff61",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "54.831",
+          "players": [
+            "Some Ball 64"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=354804ac-ea13-469b-a293-f357ec726c12",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -479,9 +488,23 @@
       "speedrunPreset": "gZMefGUfggtaiaaaJyaraaasaaamaaaYEG",
       "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
       "points": 4,
-      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "fastestPoints": "1st = 1 points",
       "difficulty": "Very Hard",
-      "speedruns": []
+      "speedruns": [
+        {
+          "time": "62:38.951",
+          "players": [
+            "DAD.",
+            "Madoka",
+            "Beach",
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=7a6cbe8a-7590-48f7-9dcf-8587b85b1ec4",
+          "replayTwo": "https://tagpro.koalabeast.com/replays?uuid=6eacd2a2-d62e-41ce-bbd0-5919b57dff1d",
+          "includeOnSpeedrun": "no"
+        }
+      ]
     }
   ],
   "bounties": [
