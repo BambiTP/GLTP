@@ -7,9 +7,10 @@ import {
 } from './shared.js';
 
 export class MapsTable {
-    constructor(presets, recordsByMap) {
+    constructor(presets, recordsByMap, mapMetadata) {
         this.presets = presets;
         this.recordsByMap = recordsByMap;
+        this.mapMetadata = mapMetadata;
         this.currentSort = {
             property: "timestamp",
             direction: "desc"
@@ -41,19 +42,34 @@ export class MapsTable {
         }
 
         this.recordsArray.sort((a, b) => {
-            let aVal = a[property];
-            let bVal = b[property];
+            let aVal, bVal;
+            
+            // Handle metadata fields
+            if (property === "difficulty" || property === "balls_req") {
+                const aMetadata = this.mapMetadata[a.map_name] || {};
+                const bMetadata = this.mapMetadata[b.map_name] || {};
+                aVal = aMetadata[property] || "N/A";
+                bVal = bMetadata[property] || "N/A";
+            } else {
+                aVal = a[property];
+                bVal = b[property];
+            }
+
             if (property === "capping_player") {
                 aVal = aVal || "DNF";
                 bVal = bVal || "DNF";
             }
+
             if (type === "numeric") {
                 if (property === "timestamp") {
                     const aTime = new Date(aVal).getTime();
                     const bTime = new Date(bVal).getTime();
                     return this.currentSort.direction === "asc" ? aTime - bTime : bTime - aTime;
                 } else {
-                    return this.currentSort.direction === "asc" ? aVal - bVal : bVal - aVal;
+                    // Convert to numbers for numeric sorting, handling "N/A" cases
+                    const aNum = aVal === "N/A" ? -1 : parseFloat(aVal);
+                    const bNum = bVal === "N/A" ? -1 : parseFloat(bVal);
+                    return this.currentSort.direction === "asc" ? aNum - bNum : bNum - aNum;
                 }
             } else {
                 aVal = aVal ? aVal.toLowerCase() : "";
@@ -254,6 +270,17 @@ export class MapsTable {
             capCell.textContent = "DNF";
         }
         tr.appendChild(capCell);
+
+        // Add difficulty cell
+        const difficultyCell = document.createElement('td');
+        const metadata = this.mapMetadata[record.map_name] || {};
+        difficultyCell.textContent = metadata.difficulty || "N/A";
+        tr.appendChild(difficultyCell);
+
+        // Add balls required cell
+        const ballsReqCell = document.createElement('td');
+        ballsReqCell.textContent = metadata.balls_req || "N/A";
+        tr.appendChild(ballsReqCell);
 
         this.mapsTableBody.appendChild(tr);
     }

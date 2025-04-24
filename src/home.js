@@ -5,6 +5,8 @@ import { Leaderboard, processLeaderboardData } from './leaderboard.js';
 // Load presets
 const presets = await fetch(`./presets.json`)
     .then(response => response.json());
+const mapMetadata = await fetch(`./map_metadata.json`)
+    .then(response => response.json());
 
 // Setup navigation
 setupNavigation();
@@ -24,7 +26,7 @@ fetch(dataUrl)
     } = processLeaderboardData(data);
 
     // Initialize and render maps table
-    const mapsTable = new MapsTable(presets, recordsByMap);
+    const mapsTable = new MapsTable(presets, recordsByMap, mapMetadata);
     const recordsArray = Object.values(bestRecords);
     recordsArray.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
     mapsTable.render(recordsArray);
