@@ -179,3 +179,65 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* New styles for detail sections */
+.detail-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.left-detail {
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 200px;
+  background-color: #1e1e1e;
+}
+
+.medal-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.medal-link {
+  text-decoration: none;
+}
+
+.medal-row {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  margin-bottom: 5px;
+  background-color: #1e1e1e;
+}
+
+.medal-label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.medal-time {
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.capping-player-quote {
+  font-style: italic;
+  margin-top: 5px;
+  color: #888;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .detail-wrapper {
+    flex-direction: column;
+  }
+  
+  .medal-panel {
+    margin-top: 10px;
+  }
+}
