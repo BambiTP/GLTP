@@ -1,0 +1,260 @@
+import {
+    formatTime,
+    formatRelativeTime,
+    getMapsPlayerKey,
+    getMapsPlayerDisplayName,
+    launchTagproGroup
+} from './shared.js';
+
+export class MapsTable {
+    constructor(presets, recordsByMap) {
+        this.presets = presets;
+        this.recordsByMap = recordsByMap;
+        this.currentSort = {
+            property: "timestamp",
+            direction: "desc"
+        };
+        this.mapsTableBody = document.getElementById('mapsTableBody');
+        this.setupSorting();
+    }
+
+    setupSorting() {
+        const thElements = document.querySelectorAll("#mapsTable thead th");
+        thElements.forEach(th => {
+            const sortProperty = th.getAttribute("data-sort");
+            const sortType = th.getAttribute("data-type");
+            if (sortProperty && sortType) {
+                th.style.cursor = "pointer";
+                th.addEventListener("click", () => {
+                    this.sortRecords(sortProperty, sortType);
+                });
+            }
+        });
+    }
+
+    sortRecords(property, type) {
+        if (this.currentSort.property === property) {
+            this.currentSort.direction = (this.currentSort.direction === "asc" ? "desc" : "asc");
+        } else {
+            this.currentSort.property = property;
+            this.currentSort.direction = "asc";
+        }
+
+        this.recordsArray.sort((a, b) => {
+            let aVal = a[property];
+            let bVal = b[property];
+            if (property === "capping_player") {
+                aVal = aVal || "DNF";
+                bVal = bVal || "DNF";
+            }
+            if (type === "numeric") {
+                if (property === "timestamp") {
+                    const aTime = new Date(aVal).getTime();
+                    const bTime = new Date(bVal).getTime();
+                    return this.currentSort.direction === "asc" ? aTime - bTime : bTime - aTime;
+                } else {
+                    return this.currentSort.direction === "asc" ? aVal - bVal : bVal - aVal;
+                }
+            } else {
+                aVal = aVal ? aVal.toLowerCase() : "";
+                bVal = bVal ? bVal.toLowerCase() : "";
+                if (aVal < bVal) return this.currentSort.direction === "asc" ? -1 : 1;
+                if (aVal > bVal) return this.currentSort.direction === "asc" ? 1 : -1;
+                return 0;
+            }
+        });
+        this.render(this.recordsArray);
+    }
+
+    render(records) {
+        this.recordsArray = records;
+        this.mapsTableBody.innerHTML = "";
+        records.forEach(record => this.renderRow(record));
+    }
+
+    renderRow(record) {
+        const tr = document.createElement('tr');
+        tr.className = "map-row";
+
+        // Map Name cell with clickable details toggle
+        const mapNameCell = document.createElement('td');
+        mapNameCell.className = "map-name";
+        mapNameCell.textContent = record.map_name;
+
+        // Create detail section
+        const detailDiv = document.createElement('div');
+        detailDiv.className = "detail";
+        detailDiv.style.display = "none";
+
+        // Create left detail section
+        const leftDetailDiv = document.createElement('div');
+        leftDetailDiv.className = "left-detail";
+
+        // Add date information
+        const dateDiv = document.createElement('div');
+        dateDiv.textContent = "Date: " + new Date(record.timestamp).toLocaleDateString();
+        leftDetailDiv.appendChild(dateDiv);
+
+        // Add replay link
+        const replayLink = document.createElement('a');
+        replayLink.href = `https://tagpro.koalabeast.com/replays?uuid=${record.uuid}`;
+        replayLink.textContent = "Watch Replay";
+        replayLink.target = "_blank";
+        leftDetailDiv.appendChild(replayLink);
+
+        // Add players list
+        const playersDiv = document.createElement('div');
+        playersDiv.textContent = "Players: ";
+        const uniquePlayers = [];
+        const seenPlayers = new Set();
+        record.players.forEach(player => {
+            let key = getMapsPlayerKey(player);
+            if (!seenPlayers.has(key)) {
+                seenPlayers.add(key);
+                uniquePlayers.push(player);
+            }
+        });
+        uniquePlayers.forEach((player, index) => {
+            if (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
+                const playerLink = document.createElement('a');
+                playerLink.href = `https://tagpro.koalabeast.com/profile/${player.user_id}`;
+                playerLink.textContent = getMapsPlayerDisplayName(player);
+                playersDiv.appendChild(playerLink);
+            } else {
+                const span = document.createElement('span');
+                span.textContent = getMapsPlayerDisplayName(player);
+                playersDiv.appendChild(span);
+            }
+            if (index < uniquePlayers.length - 1) {
+                playersDiv.appendChild(document.createTextNode(", "));
+            }
+        });
+        leftDetailDiv.appendChild(playersDiv);
+
+        // Add preset and map ID info
+        const infoDiv = document.createElement('div');
+        const presetValue = this.presets[record.map_name] || "N/A";
+        infoDiv.textContent = "Preset: " + presetValue + " | Map ID: " + record.map_id;
+        leftDetailDiv.appendChild(infoDiv);
+
+        // Add capping player quote if exists
+        if (record.capping_player_quote) {
+            const quoteDiv = document.createElement('div');
+            quoteDiv.className = "capping-player-quote";
+            quoteDiv.textContent = `"${record.capping_player_quote}"`;
+            leftDetailDiv.appendChild(quoteDiv);
+        }
+
+        // Add copy preset button
+        const copyButton = document.createElement('button');
+        copyButton.textContent = "Copy Preset";
+        copyButton.classList.add("copy-button");
+        copyButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            if (presetValue !== "N/A") {
+                navigator.clipboard.writeText(presetValue)
+                    .then(() => {
+                        copyButton.textContent = "Copied!";
+                        copyButton.classList.add("copied");
+                        setTimeout(() => {
+                            copyButton.textContent = "Copy Preset";
+                            copyButton.classList.remove("copied");
+                        }, 2000);
+                    })
+                    .catch(err => console.error("Error copying preset:", err));
+            }
+        });
+        leftDetailDiv.appendChild(copyButton);
+
+        // Add launch group button
+        const launchButton = document.createElement('button');
+        launchButton.textContent = "Launch Group";
+        launchButton.classList.add("copy-button");
+        launchButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            if (presetValue !== "N/A") {
+                launchTagproGroup(presetValue);
+            }
+        });
+        leftDetailDiv.appendChild(launchButton);
+
+        // Create medal panel
+        const medalPanelDiv = document.createElement('div');
+        medalPanelDiv.className = "medal-panel";
+
+        // Add top 3 records
+        const mapRecords = this.recordsByMap[record.map_name] || [];
+        const top3Records = mapRecords.slice(0, 3);
+        const medalLabels = ["1st", "2nd", "3rd"];
+        const medalColors = ["#FFD700", "#C0C0C0", "#CD7F32"]; // gold, silver, bronze
+
+        top3Records.forEach((rec, index) => {
+            const replayLinkMedal = document.createElement('a');
+            replayLinkMedal.href = `https://tagpro.koalabeast.com/replays?uuid=${rec.uuid}`;
+            replayLinkMedal.target = "_blank";
+            replayLinkMedal.className = "medal-link";
+
+            const medalRow = document.createElement('div');
+            medalRow.className = "medal-row";
+            medalRow.style.borderColor = medalColors[index];
+
+            const medalLabelSpan = document.createElement('span');
+            medalLabelSpan.className = "medal-label";
+            medalLabelSpan.style.color = medalColors[index];
+            medalLabelSpan.textContent = medalLabels[index];
+
+            const timeSpan = document.createElement('span');
+            timeSpan.textContent = formatTime(rec.record_time);
+            timeSpan.className = "medal-time";
+            timeSpan.style.color = medalColors[index];
+
+            medalRow.appendChild(medalLabelSpan);
+            medalRow.appendChild(timeSpan);
+            replayLinkMedal.appendChild(medalRow);
+            medalPanelDiv.appendChild(replayLinkMedal);
+        });
+
+        // Create detail wrapper
+        const detailWrapper = document.createElement('div');
+        detailWrapper.className = "detail-wrapper";
+        detailWrapper.appendChild(leftDetailDiv);
+        detailWrapper.appendChild(medalPanelDiv);
+        detailDiv.appendChild(detailWrapper);
+
+        // Add click handler for map name
+        mapNameCell.addEventListener('click', function () {
+            detailDiv.style.display = detailDiv.style.display === "none" ? "block" : "none";
+        });
+        mapNameCell.appendChild(detailDiv);
+        tr.appendChild(mapNameCell);
+
+        // Add time cell
+        const timeCell = document.createElement('td');
+        timeCell.textContent = formatTime(record.record_time);
+        tr.appendChild(timeCell);
+
+        // Add relative time cell
+        const relativeTimeCell = document.createElement('td');
+        relativeTimeCell.textContent = formatRelativeTime(record.timestamp);
+        tr.appendChild(relativeTimeCell);
+
+        // Add capping player cell
+        const capCell = document.createElement('td');
+        if (record.capping_player) {
+            const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
+            if (dummyPlayer.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(dummyPlayer.name)) {
+                const capLink = document.createElement('a');
+                capLink.href = `https://tagpro.koalabeast.com/profile/${dummyPlayer.user_id}`;
+                capLink.textContent = getMapsPlayerDisplayName(dummyPlayer);
+                capCell.appendChild(capLink);
+            } else {
+                capCell.textContent = getMapsPlayerDisplayName(dummyPlayer);
+            }
+        } else {
+            capCell.textContent = "DNF";
+        }
+        tr.appendChild(capCell);
+
+        this.mapsTableBody.appendChild(tr);
+    }
+}
