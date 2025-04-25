@@ -382,6 +382,15 @@
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=579252c8-70a6-41b6-8f81-8dd7cfbcbf1e",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:06.463",
+          "players": [
+            "EvTheSmev"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=a6c2effb-fb60-44f6-81c4-addc8a82b6da",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
