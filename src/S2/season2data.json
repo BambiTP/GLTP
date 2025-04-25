@@ -217,6 +217,16 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=7efa5c49-980e-44b8-95bb-d1d80a01b29b",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:37.829",
+          "players": [
+            "BigBird"
+          ],
+          "team": "Momentum Mori",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=55f749df-1855-44b6-9163-255782dd8bcf",
+          "youtube": "https://youtu.be/f5q7Zln-plA",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
