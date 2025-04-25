@@ -256,6 +256,18 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=1d78bd47-8885-4eb2-9a96-b91f74825488",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "31:47.184",
+          "players": [
+            "Valerian",
+            "MRCOW",
+            "EvTheSmev",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=5d2737bf-ba2b-4703-a235-34db1209b26b",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -358,6 +370,18 @@
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=354804ac-ea13-469b-a293-f357ec726c12",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "4:11.789",
+          "players": [
+            "Valerian",
+            "MRCOW",
+            "EvTheSmev",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=579252c8-70a6-41b6-8f81-8dd7cfbcbf1e",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -406,6 +430,18 @@
           "replay": "https://tagpro.koalabeast.com/replays?uuid=4dc9c8cd-4418-40ce-a51d-6f5d3eb193e6",
           "replayTwo": "https://tagpro.koalabeast.com/replays?uuid=67e7f807-de97-4d1e-bd65-40609f17a518",
           "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "24:30.261",
+          "players": [
+            "Valerian",
+            "MRCOW",
+            "EvTheSmev",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=51faecf6-d645-465f-bfbe-e20694713801",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -441,6 +477,18 @@
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=1ae66399-cc95-4832-841f-b80076ee8a05",
           "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "3:55.980",
+          "players": [
+            "Valerian",
+            "MRCOW",
+            "EvTheSmev",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=711acba2-1619-4f7c-85b0-1f6d2bf9a85d",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -475,6 +523,18 @@
           ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=97ee41c3-7195-4fa9-add7-29e4f2cf4de8",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "12:48.128",
+          "players": [
+            "Valerian",
+            "MRCOW",
+            "EvTheSmev",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=c97a2683-590b-4061-abf2-34856bb7e27c",
           "includeOnSpeedrun": "yes"
         }
       ]
