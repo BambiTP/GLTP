@@ -227,6 +227,16 @@
           "replay": "https://tagpro.koalabeast.com/replays?uuid=55f749df-1855-44b6-9163-255782dd8bcf",
           "youtube": "https://youtu.be/f5q7Zln-plA",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:29.913",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=d64daf90-74b5-485c-9311-f40630265170",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -563,6 +573,16 @@
           ],
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=c97a2683-590b-4061-abf2-34856bb7e27c",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "2:23.987",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=42949c7d-6730-483c-bf65-b8d45912e45b",
           "includeOnSpeedrun": "yes"
         }
       ]
