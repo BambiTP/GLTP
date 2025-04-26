@@ -571,7 +571,7 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=d93acda5-1fcc-491e-b51f-2a349659e168",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "6:02.402",
@@ -640,6 +640,17 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=f547606c-350b-4301-bf66-e5e4de3f0657",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "12:58.826",
+          "players": [
+            "DAD.",
+            "Madoka",
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=6943566b-5fad-4259-8381-2e582b6a04ad",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -763,7 +774,8 @@
         "bleast",
         "Valerian",
         "Tinderfella",
-        "TeaForYou&Me"
+        "TeaForYou&Me",
+        "o o l e r"
       ]
     },
     {
