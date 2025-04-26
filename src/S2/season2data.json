@@ -355,6 +355,16 @@
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=ae8cbbcf-3ef5-487a-a820-ec7009176256",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "4:55.874",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=085e0b4f-2924-495c-8549-4e98cd40e9a8",
+          "includeOnSpeedrun": "yes"
         }
       ]
     }
