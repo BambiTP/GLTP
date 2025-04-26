@@ -430,6 +430,17 @@
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=a6c2effb-fb60-44f6-81c4-addc8a82b6da",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "0:46.457",
+          "players": [
+            "DAD.",
+            "Madoka",
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=963cf693-296c-4378-8113-b379907a768c",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
