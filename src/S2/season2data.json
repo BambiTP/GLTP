@@ -582,7 +582,7 @@
           ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=97ee41c3-7195-4fa9-add7-29e4f2cf4de8",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "12:48.128",
@@ -604,6 +604,17 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=42949c7d-6730-483c-bf65-b8d45912e45b",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "3:55.805",
+          "players": [
+            "Some Ball 64",
+            "LogisticMap",
+            "Bambi"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=a6768492-574d-4393-b5fc-8645efac2b15",
           "includeOnSpeedrun": "yes"
         }
       ]
