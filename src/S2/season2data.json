@@ -558,7 +558,7 @@
       "recommendedBalls": "2+",
       "preset": "gZMefHkmggtuiaaaJyaraaksaaamaaaE",
       "speedrunPreset": "gZMefHkmggtuiaaaJyaraaasaaamaaaYEG",
-      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant\nMars Ball Settings",
       "points": 3,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
@@ -678,6 +678,78 @@
       ]
     }
   ],
+  "week3": [
+    {
+      "mapName": "Ball From Space",
+      "author": "9bob9",
+      "link": "https://fortunatemaps.herokuapp.com/map/88764",
+      "recommendedBalls": "1+",
+      "preset": "gZMefGRaggtuiaaaJyaraaksaaamaaabE",
+      "speedrunPreset": "gZMefGRaggtuiaaaJyaraaksaaamaaabEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant\nMars Ball Settings\n3 laps",
+      "points": 1,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Easy",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "PacMan with Gravity (Easier) (Official FWO)",
+      "author": "ImNoSomeBall",
+      "link": "https://fortunatemaps.herokuapp.com/map/82065",
+      "recommendedBalls": "1+",
+      "preset": "gZMefEsjggtaiaaaJraaksaaamaaaE",
+      "speedrunPreset": "gZMefEsjggtaiaaaJraaksaaamaaaEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 2,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Easy",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Detonation Dash",
+      "author": "DAD.",
+      "link": "https://fortunatemaps.herokuapp.com/map/89550",
+      "recommendedBalls": "1+",
+      "preset": "gZMefHggggtaiaaaJraaksaaauaaajTE",
+      "speedrunPreset": "gZMefHggggtaiaaaJraaksaaauaaajTEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant\nInstant RBs",
+      "points": 2,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Gravity Challenge (85% Complete)",
+      "author": "QX",
+      "link": "https://fortunatemaps.herokuapp.com/map/46903",
+      "recommendedBalls": "1+",
+      "preset": "gZMefrrZggtaiaaaJyaraaksaaamaaaE",
+      "speedrunPreset": "gZMefrrZggtaiaaaJyaraaksaaamaaaEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 3,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Gravity Buddy System [FIXED]",
+      "author": "bowtie and DYD",
+      "link": "https://fortunatemaps.herokuapp.com/map/23115",
+      "recommendedBalls": "2+",
+      "preset": "gZMefiCBggtaiaaaJraaksaaamaaaE",
+      "speedrunPreset": "gZMefiCBggtaiaaaJraaksaaamaaaEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 4,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Hard",
+      "speedruns": [
+      ]
+    }
+  ],
   "bounties": [
     {
       "mapName": "Harry Botter and the Shaft of Dangers",
@@ -701,6 +773,19 @@
           "replay": "https://tagpro.koalabeast.com/replays?uuid=8346e763-8f66-456c-b9eb-813ce3ab9fdd",
           "includeOnSpeedrun": "yes"
         }
+      ]
+    },
+    {
+      "mapName": "GLTP Bounty Season 2",
+      "author": "Danny & FWO",
+      "link": "https://fortunatemaps.herokuapp.com/map/90195",
+      "recommendedBalls": "?",
+      "preset": "gZMefHsBggtaiaaaJyaraaasaaaYEG",
+      "speedrunPreset": "gZMefHsBggtaiaaaJyaraaasaaaYEG",
+      "settings": "Bomb Respawn: n/a\nBoost Respawn: Instant",
+      "points": 3,
+      "difficulty": "Very Hard",
+      "speedruns": [
       ]
     }
   ],
