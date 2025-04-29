@@ -365,6 +365,17 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=085e0b4f-2924-495c-8549-4e98cd40e9a8",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "55:01.260",
+          "players": [
+            "TeaForYou&Me",
+            "MRCOW",
+            "Valerian"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=436c5017-e5e1-458e-af8b-2aafcc267a32",
+          "includeOnSpeedrun": "yes"
         }
       ]
     }
@@ -766,6 +777,17 @@
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=b45eb48c-e9e7-4501-98a0-ea0894a59542",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "8:48.2338",
+          "players": [
+            "TeaForYou&Me",
+            "MRCOW",
+            "Valerian"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=d404f2a2-59ff-4b5a-b2b6-cecfd0dd235d",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -829,6 +851,17 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Hard",
       "speedruns": [
+        {
+          "time": "55:21.608",
+          "players": [
+            "TeaForYou&Me",
+            "MRCOW",
+            "Valerian"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=eb8e942a-0d8c-4a3e-a3b4-85959ae080ad",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     }
   ],
