@@ -705,6 +705,15 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Easy",
       "speedruns": [
+        {
+          "time": "1:53.627",
+          "players": [
+            "DAD."
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=20f1a88b-3117-4386-b601-6a84ec2523cc",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
@@ -733,6 +742,24 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
       "speedruns": [
+        {
+          "time": "33:32.646",
+          "players": [
+            "LogisticMap"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=e7533b9a-516c-409a-bc99-f98dab366221",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "45:14.934",
+          "players": [
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=88eaf125-5a4a-4b9e-a438-7ced188b358b",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
