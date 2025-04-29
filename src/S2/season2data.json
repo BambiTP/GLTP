@@ -749,6 +749,16 @@
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=f0258f3a-8bab-4e65-bc82-944655a5e634",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "18:14.989",
+          "players": [
+            "MRCOW",
+            "Valerian"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=dcad9101-ae84-4f71-9501-23d6ba12dd92",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
