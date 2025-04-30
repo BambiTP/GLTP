@@ -16,6 +16,7 @@
       <a id="mapsLink" class="active">Maps</a>
       <a id="leaderboardLink">Leaderboard</a>
       <a id="gltpLink">GLTP</a>
+      <a id="checkReplayTime">Check Replay</a>
     </div>
   </div>
 
@@ -132,6 +133,8 @@
     const mapsLink = document.getElementById('mapsLink');
     const leaderboardLink = document.getElementById('leaderboardLink');
     const gltpLink = document.getElementById('gltpLink');
+    const checkReplayTime = document.getElementById('checkReplayTime');
+
 
     mapsLink.addEventListener('click', function() {
       document.getElementById('mapsRecordsContainer').style.display = "flex";
@@ -147,6 +150,9 @@
     });
     gltpLink.addEventListener('click', function() {
       window.location.href = 'S2/home.html';
+    });
+    checkReplayTime.addEventListener('click', function() {
+      window.location.href = 'replay_time_check.html';
     });
 
     fetch(dataUrl)
