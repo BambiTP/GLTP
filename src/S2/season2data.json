@@ -713,6 +713,24 @@
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=de00dc32-6030-463f-b206-6ea630788d8f",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:37.159",
+          "players": [
+            "DAD."
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=18d833b7-dc65-4e66-b647-8effb64638ea",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "2:01.514",
+          "players": [
+            "timo_tay"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=07207adc-59d0-4b53-9522-0bf4c7798d87",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -798,6 +816,15 @@
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=d404f2a2-59ff-4b5a-b2b6-cecfd0dd235d",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:24.679",
+          "players": [
+            "LogisticMap"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=309214e6-cb9c-480c-9bd2-016d0120a161",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -870,6 +897,31 @@
           ],
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=eb8e942a-0d8c-4a3e-a3b4-85959ae080ad",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "10:53.713",
+          "players": [
+            "Some Ball 64",
+            "perl",
+            "timo_tay",
+            "sb2",
+            "sb5"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=30a58ef1-8ac3-41a0-bc3f-291a3b1a544c",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "10:17.718",
+          "players": [
+            "Some Ball 64",
+            "perl",
+            "timo_tay",
+            "sb2"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=31c4e841-2d11-484c-b3b7-766320aec620",
           "includeOnSpeedrun": "yes"
         }
       ]
