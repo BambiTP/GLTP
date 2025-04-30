@@ -824,6 +824,15 @@
           ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=309214e6-cb9c-480c-9bd2-016d0120a161",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "1:20.980",
+          "players": [
+            "LogisticMap"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=7566f09c-a085-4261-8046-41920e358607",
           "includeOnSpeedrun": "yes"
         }
       ]
