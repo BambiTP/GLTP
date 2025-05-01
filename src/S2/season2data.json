@@ -237,6 +237,15 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=d64daf90-74b5-485c-9311-f40630265170",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "22:41.088",
+          "players": [
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=5f84f0a7-3350-410b-b5ec-7755d0afdaf7",
+          "includeOnSpeedrun": "no"
         }
       ]
     },
