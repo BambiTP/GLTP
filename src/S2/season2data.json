@@ -731,6 +731,15 @@
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=07207adc-59d0-4b53-9522-0bf4c7798d87",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:35.316",
+          "players": [
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=59f29269-5f58-47dc-bd88-0de8022fbd36",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
