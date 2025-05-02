@@ -61,6 +61,15 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=6746875e-23d1-4142-ba5c-5e6ef593d1b9",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "2:44.009",
+          "players": [
+            "EvTheSmev"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=abc7590a-3461-4c7d-8378-75467284eb15",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -208,6 +217,35 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=7efa5c49-980e-44b8-95bb-d1d80a01b29b",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:37.829",
+          "players": [
+            "BigBird"
+          ],
+          "team": "Momentum Mori",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=55f749df-1855-44b6-9163-255782dd8bcf",
+          "youtube": "https://youtu.be/f5q7Zln-plA",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:29.913",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=d64daf90-74b5-485c-9311-f40630265170",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "22:41.088",
+          "players": [
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=5f84f0a7-3350-410b-b5ec-7755d0afdaf7",
+          "includeOnSpeedrun": "no"
         }
       ]
     },
@@ -255,6 +293,18 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=1d78bd47-8885-4eb2-9a96-b91f74825488",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "31:47.184",
+          "players": [
+            "Valerian",
+            "MRCOW",
+            "EvTheSmev",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=5d2737bf-ba2b-4703-a235-34db1209b26b",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -314,6 +364,27 @@
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=ae8cbbcf-3ef5-487a-a820-ec7009176256",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "4:55.874",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=085e0b4f-2924-495c-8549-4e98cd40e9a8",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "55:01.260",
+          "players": [
+            "TeaForYou&Me",
+            "MRCOW",
+            "Valerian"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=436c5017-e5e1-458e-af8b-2aafcc267a32",
+          "includeOnSpeedrun": "yes"
         }
       ]
     }
@@ -357,6 +428,38 @@
           ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=354804ac-ea13-469b-a293-f357ec726c12",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "4:11.789",
+          "players": [
+            "Valerian",
+            "MRCOW",
+            "EvTheSmev",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=579252c8-70a6-41b6-8f81-8dd7cfbcbf1e",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:06.463",
+          "players": [
+            "EvTheSmev"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=a6c2effb-fb60-44f6-81c4-addc8a82b6da",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "0:46.457",
+          "players": [
+            "DAD.",
+            "Madoka",
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=963cf693-296c-4378-8113-b379907a768c",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -406,6 +509,18 @@
           "replay": "https://tagpro.koalabeast.com/replays?uuid=4dc9c8cd-4418-40ce-a51d-6f5d3eb193e6",
           "replayTwo": "https://tagpro.koalabeast.com/replays?uuid=67e7f807-de97-4d1e-bd65-40609f17a518",
           "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "24:30.261",
+          "players": [
+            "Valerian",
+            "MRCOW",
+            "EvTheSmev",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=51faecf6-d645-465f-bfbe-e20694713801",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -441,6 +556,18 @@
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=1ae66399-cc95-4832-841f-b80076ee8a05",
           "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "3:55.980",
+          "players": [
+            "Valerian",
+            "MRCOW",
+            "EvTheSmev",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=711acba2-1619-4f7c-85b0-1f6d2bf9a85d",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -451,7 +578,7 @@
       "recommendedBalls": "2+",
       "preset": "gZMefHkmggtuiaaaJyaraaksaaamaaaE",
       "speedrunPreset": "gZMefHkmggtuiaaaJyaraaasaaamaaaYEG",
-      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant\nMars Ball Settings",
       "points": 3,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
@@ -464,7 +591,7 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=d93acda5-1fcc-491e-b51f-2a349659e168",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "6:02.402",
@@ -475,6 +602,50 @@
           ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=97ee41c3-7195-4fa9-add7-29e4f2cf4de8",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "12:48.128",
+          "players": [
+            "Valerian",
+            "MRCOW",
+            "EvTheSmev",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=c97a2683-590b-4061-abf2-34856bb7e27c",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "2:23.987",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=42949c7d-6730-483c-bf65-b8d45912e45b",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "3:55.805",
+          "players": [
+            "Some Ball 64",
+            "LogisticMap",
+            "Bambi"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=a6768492-574d-4393-b5fc-8645efac2b15",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "3:00.238",
+          "players": [
+            "Some Ball 64",
+            "LogisticMap",
+            "Bambi"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=d9423238-13f3-44f3-9835-21b520ad2a8b",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -511,6 +682,300 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=f547606c-350b-4301-bf66-e5e4de3f0657",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "12:58.826",
+          "players": [
+            "DAD.",
+            "Madoka",
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=6943566b-5fad-4259-8381-2e582b6a04ad",
+          "includeOnSpeedrun": "yes"
+        }
+      ]
+    }
+  ],
+  "week3": [
+    {
+      "mapName": "Ball From Space",
+      "author": "9bob9",
+      "link": "https://fortunatemaps.herokuapp.com/map/88764",
+      "recommendedBalls": "1+",
+      "preset": "gZMefGRaggtuiaaaJyaraaksaaamaaabE",
+      "speedrunPreset": "gZMefGRaggtuiaaaJyaraaksaaamaaabEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant\nMars Ball Settings\n3 laps",
+      "points": 1,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Easy",
+      "speedruns": [
+        {
+          "time": "3:00.122",
+          "players": [
+            "Burt",
+            "Troglodyte",
+            "PoonLuvr69",
+            "HappyCracker"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=de00dc32-6030-463f-b206-6ea630788d8f",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:37.159",
+          "players": [
+            "DAD."
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=18d833b7-dc65-4e66-b647-8effb64638ea",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "2:01.514",
+          "players": [
+            "timo_tay"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=07207adc-59d0-4b53-9522-0bf4c7798d87",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:35.316",
+          "players": [
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=59f29269-5f58-47dc-bd88-0de8022fbd36",
+          "includeOnSpeedrun": "yes"
+        }
+      ]
+    },
+    {
+      "mapName": "PacMan with Gravity (Easier) (Official FWO)",
+      "author": "ImNoSomeBall",
+      "link": "https://fortunatemaps.herokuapp.com/map/82065",
+      "recommendedBalls": "1+",
+      "preset": "gZMefEsjggtaiaaaJraaksaaamaaaE",
+      "speedrunPreset": "gZMefEsjggtaiaaaJraaksaaamaaaEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 2,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Easy",
+      "speedruns": [
+        {
+          "time": "1:53.627",
+          "players": [
+            "DAD."
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=20f1a88b-3117-4386-b601-6a84ec2523cc",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "32:50.634",
+          "players": [
+            "Burt",
+            "Troglodyte",
+            "PoonLuvr69",
+            "HappyCracker",
+            "sir cumalot"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=f0258f3a-8bab-4e65-bc82-944655a5e634",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "18:14.989",
+          "players": [
+            "MRCOW",
+            "Valerian"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=dcad9101-ae84-4f71-9501-23d6ba12dd92",
+          "includeOnSpeedrun": "yes"
+        }
+      ]
+    },
+    {
+      "mapName": "Detonation Dash",
+      "author": "DAD.",
+      "link": "https://fortunatemaps.herokuapp.com/map/89550",
+      "recommendedBalls": "1+",
+      "preset": "gZMefHggggtaiaaaJraaksaaauaaajTE",
+      "speedrunPreset": "gZMefHggggtaiaaaJraaksaaauaaajTEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant\nInstant RBs",
+      "points": 2,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+        {
+          "time": "19:30.478",
+          "players": [
+            "Burt",
+            "Troglodyte",
+            "PoonLuvr69",
+            "HappyCracker",
+            "L1GMa",
+            "sir cumalot"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=b45eb48c-e9e7-4501-98a0-ea0894a59542",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "8:48.2338",
+          "players": [
+            "TeaForYou&Me",
+            "MRCOW",
+            "Valerian"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=d404f2a2-59ff-4b5a-b2b6-cecfd0dd235d",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "1:24.679",
+          "players": [
+            "LogisticMap"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=309214e6-cb9c-480c-9bd2-016d0120a161",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "1:20.980",
+          "players": [
+            "LogisticMap"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=7566f09c-a085-4261-8046-41920e358607",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:18.109",
+          "players": [
+            "DAD."
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=001abfea-b376-4a8b-affa-5596ce319eb6",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:14.907",
+          "players": [
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=89b276e3-12cb-4dc4-b83b-908e042fae06",
+          "includeOnSpeedrun": "yes"
+        }
+      ]
+    },
+    {
+      "mapName": "Gravity Challenge (85% Complete)",
+      "author": "QX",
+      "link": "https://fortunatemaps.herokuapp.com/map/46903",
+      "recommendedBalls": "1+",
+      "preset": "gZMefrrZggtaiaaaJyaraaksaaamaaaE",
+      "speedrunPreset": "gZMefrrZggtaiaaaJyaraaksaaamaaaEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 3,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+        {
+          "time": "33:32.646",
+          "players": [
+            "LogisticMap"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=e7533b9a-516c-409a-bc99-f98dab366221",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "45:14.934",
+          "players": [
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=88eaf125-5a4a-4b9e-a438-7ced188b358b",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "999:99:999",
+          "players": [
+            "Burt",
+            "Troglodyte",
+            "PoonLuvr69",
+            "HappyCracker",
+            "L1GMa",
+            "sir cumalot"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=881c23ae-a641-491c-8fb0-edb7857a7df1",
+          "replayTwo": "https://tagpro.koalabeast.com/replays?uuid=f1551ecb-d836-4698-9aa3-2eca8db3d359",
+          "skipsused": "1",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "32:49.688",
+          "players": [
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=ab5f10bd-49b0-48be-8457-71163485f93d",
+          "includeOnSpeedrun": "yes"
+        }
+      ]
+    },
+    {
+      "mapName": "Gravity Buddy System [FIXED]",
+      "author": "bowtie and DYD",
+      "link": "https://fortunatemaps.herokuapp.com/map/23115",
+      "recommendedBalls": "2+",
+      "preset": "gZMefiCBggtaiaaaJraaksaaamaaaE",
+      "speedrunPreset": "gZMefiCBggtaiaaaJraaksaaamaaaEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 4,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Hard",
+      "speedruns": [
+        {
+          "time": "55:21.608",
+          "players": [
+            "TeaForYou&Me",
+            "MRCOW",
+            "Valerian"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=eb8e942a-0d8c-4a3e-a3b4-85959ae080ad",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "10:53.713",
+          "players": [
+            "Some Ball 64",
+            "perl",
+            "timo_tay",
+            "sb2",
+            "sb5"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=30a58ef1-8ac3-41a0-bc3f-291a3b1a544c",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "10:17.718",
+          "players": [
+            "Some Ball 64",
+            "perl",
+            "timo_tay",
+            "sb2"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=31c4e841-2d11-484c-b3b7-766320aec620",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -539,6 +1004,19 @@
           "replay": "https://tagpro.koalabeast.com/replays?uuid=8346e763-8f66-456c-b9eb-813ce3ab9fdd",
           "includeOnSpeedrun": "yes"
         }
+      ]
+    },
+    {
+      "mapName": "GLTP Bounty Season 2",
+      "author": "Danny & FWO",
+      "link": "https://fortunatemaps.herokuapp.com/map/90195",
+      "recommendedBalls": "?",
+      "preset": "gZMefHsBggtaiaaaJyaraaasaaaYEG",
+      "speedrunPreset": "gZMefHsBggtaiaaaJyaraaasaaaYEG",
+      "settings": "Bomb Respawn: n/a\nBoost Respawn: Instant",
+      "points": 3,
+      "difficulty": "Very Hard",
+      "speedruns": [
       ]
     }
   ],
@@ -634,7 +1112,8 @@
         "bleast",
         "Valerian",
         "Tinderfella",
-        "TeaForYou&Me"
+        "TeaForYou&Me",
+        "o o l e r"
       ]
     },
     {
