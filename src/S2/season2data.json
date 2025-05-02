@@ -927,6 +927,17 @@
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=ab5f10bd-49b0-48be-8457-71163485f93d",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "15:58.735",
+          "players": [
+            "DAD.",
+            "Beach",
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=76f8c55e-7688-4009-ab9b-958150fe0e2b",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
