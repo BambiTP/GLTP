@@ -101,6 +101,10 @@ export function setupNavigation() {
   gltpLink.addEventListener('click', function() {
     window.location.href = 'S2/home.html';
   });
+
+  replayLink.addEventListener('click', function() {
+    window.location.href = 'replay_time_check.html';
+  });
 }
 
 // TagPro group launch function
