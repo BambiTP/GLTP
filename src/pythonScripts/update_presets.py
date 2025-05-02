@@ -1,3 +1,5 @@
+# This script is used to update the map_metadata.json (used with the presets.json) file with the latest 
+# map difficulty and balls required data from the Google Sheet.
 import requests
 import json
 import io
