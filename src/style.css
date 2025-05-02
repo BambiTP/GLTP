@@ -69,6 +69,17 @@ body {
   border-radius: 4px;
 }
 
+#mapsTable {
+  table-layout: fixed;
+}
+
+#mapsTable td.map-name {
+  max-width: 600px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 #mapsRecordsContainer table th,
 #mapsRecordsContainer table td {
   font-size: 0.8rem;
@@ -104,6 +115,9 @@ body {
   margin-top: 5px;
   max-width: 400px;
 }
+
+
+
 
 /* Leaderboard page styles */
 #leaderboardPage {
@@ -154,15 +168,6 @@ body {
 /* Checkbox styling */
 input[type="checkbox"] {
   margin-right: 8px;
-}
-
-#mapsTable thead th:nth-child(2) {
-  text-indent: -210px;
-}
-
-#mapsTable td:nth-child(2) {
-  text-indent: -200px;
-  font-weight: bold;
 }
 
 .copy-button {
