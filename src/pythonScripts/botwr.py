@@ -37,7 +37,7 @@ def get_details(replay):
         effective_map_id = map_id
         allow_blue_caps = False
 
-    first_timer_ts = [r for r in replay if r[1] == 'time'][0][2]["time"]
+    first_timer_ts = [r for r in replay if r[1] == 'time' and r[2]["state"] == 1][0][0]
 
     players = {
         p["id"]: {"name": p["displayName"], "user_id": p["userId"], "is_red": p["team"] == 1}
@@ -80,9 +80,12 @@ def get_details(replay):
     }
 
 def format_ms(milliseconds):
-    minutes = milliseconds // 60000
-    seconds = (milliseconds % 60000) / 1000
-    return f"{minutes}:{seconds:06.3f}"
+    try:
+        minutes = milliseconds // 60000
+        seconds = (milliseconds % 60000) / 1000
+        return f"{minutes}:{seconds:06.3f}"
+    except:
+        return milliseconds
 
 
 def get_maps():
@@ -180,6 +183,58 @@ def make_map_json(output_file="presets.json"):
         json.dump(output, f, indent=4)
     print(f"Saved {len(output)} map presets to {output_file}")
 
+def remap_ids(replay_data, id_offset):
+    # Remap IDs in the metadata
+    for packet in replay_data:
+        if packet[1] == "recorder-metadata":
+            for player in packet[2]["players"]:
+                player["id"] += id_offset
+
+    for packet in replay_data:
+        data = packet[2]
+
+        if packet[1] == "p":  # player position
+            for obj in data:
+                obj["id"] += id_offset
+
+        elif packet[1] == "e":  # generic events
+            for event in data:
+                if "id" in event:
+                    event["id"] += id_offset
+                if "from" in event:
+                    event["from"] += id_offset
+                if "to" in event:
+                    event["to"] += id_offset
+
+        elif packet[1] == "m":  # maybe messages
+            if isinstance(data, dict):
+                if "id" in data:
+                    data["id"] += id_offset
+
+        elif packet[1] == "replayPlayerMessage":
+            if "for" in data:
+                data["for"] += id_offset
+            if "id" in data:
+                data["id"] += id_offset
+
+        # Add more cases as needed, depending on what packet types you encounter
+
+    return replay_data
+
+
+
+def combine_replays(uuid1, uuid2, output_file):
+    data1 = get_replay_data(uuid1)
+    data2 = get_replay_data(uuid2)
+
+    id_offset = 4  # large enough to avoid collision
+    data2 = remap_ids(data2, id_offset)
+
+    combined = sorted(data1 + data2, key=lambda x: x[0])  # sort by timestamp
+    with open(output_file, "w") as f:
+        for entry in combined:
+            f.write(json.dumps(entry) + "\n")
+
 
 def main():
     parser = argparse.ArgumentParser(description="Replay Analysis Tool")
@@ -196,6 +251,11 @@ def main():
     # Subcommand: populate json
     populate_parser = subparsers.add_parser("presets", help="Update presets file from spreadsheet")
 
+    # Subcommand: combine
+    combine_parser = subparsers.add_parser("combine", help="Parse full replay details")
+    combine_parser.add_argument("uuid", help="Replay UUID")
+    combine_parser.add_argument("uuid2", help="Replay UUID2")
+
     args = parser.parse_args()
 
     if args.command == "parse":
@@ -211,6 +271,10 @@ def main():
     elif args.command == "presets":
         make_map_json()
         print("json updated")
+        
+    elif args.command == "combine":
+        combine_replays(args.uuid, args.uuid2, "combined_replay.ndjson")
+        print("replay combined updated")
 
 if __name__ == "__main__":
     main()
