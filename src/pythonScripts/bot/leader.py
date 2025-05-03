@@ -28,7 +28,7 @@ event_logger = setup_logger("events_logger", "events.txt")
 ws_logger = setup_logger("ws_logger", "ws.txt")
 
 
-discord_link = "discord.gg/q2n9Gks5"
+discord_link = "discord.gg/Y3MZYdxV"
 
 
 def time_since(timestamp):
@@ -108,7 +108,7 @@ PERIODIC_MESSAGES = [
     "I have a question guys, how many sides does a ball have?",
     "Some people mistakenly think I'm a bot, but in reality I'm just a dedicated group manager",
     "Current Gravity Map ELOs (based on previous 180 days)\n- Goated Muted SB: 1463\n- Dad: 1389\n- Unity: 1240\n- Madoka: 1235",
-    "INFO quota exceeded, ignoring INFO requests for next 48 hours",
+    "Quota for INFO command exceeded, ignoring INFO requests for next 48 hours",
 ]
 
 
@@ -266,7 +266,7 @@ class TagproBot:
     room_name = "Gravity and Fun Mini Games"
     default_map_settings = {"category": None, "difficulty": (1.0, 3.5), "minfun": 3.0}
     default_lobby_settings = {"region": "US East"}
-    moderator_names = ["FWO", "DAD.", "TeaForYou&Me", "Some Ball 64", "MRCOW", "Billy"]
+    moderator_names = ["FWO", "DAD.", "TeaForYou&Me", "Some Ball 64", "MRCOW", "Billy", "hmmmm"]
     restricted_names = ["Fap", "Ptuh"]
     region_map = {"east": "US East", "central": "US Central", "west": "US West", "eu": "Europe", "oce": "Oceanic"}
 
@@ -441,7 +441,6 @@ class TagproBot:
 
             if event_details.get("auth") and sender in self.restricted_names:
                 if msg.strip().startswith("LAUNCHNEW"):
-                    #self.adapter.send_chat_msg("Not authorized")
                     return
 
             if msg.strip() == "HELP":
@@ -558,8 +557,7 @@ class TagproBot:
         self.load_preset(random.choice([m["preset"] for m in maps]))
 
     def load_preset(self, preset):
-        maptest_mode_suffix = ""#"G"
-        self.adapter.send_ws_message(["groupPresetApply", preset + maptest_mode_suffix])
+        self.adapter.send_ws_message(["groupPresetApply", preset])
         self.current_preset = preset
         event_logger.info(f"Set preset: {preset}")
 
@@ -589,101 +587,7 @@ class TagproBot:
             i += 1
 
 
-"""
-Lobby state spec:
-- current preset queue
-- loaded preset
-- active game preset (error if loaded and active game preset differ?)
--
-- player locations (team / status)
-- timestamp of game launch
-- has notified of current MAP
-"""
-
-
-# v1.3
-# DONE: enforce group is listed publically, playing private games
-# DONE: INFO command
-# DONE: automatically create the group if not found.
-# DONE: use aggregate fun rating
-# DONE: LAUNCHNEW <preset> <map ID override>
-# DONE: don't pull new map if no users
-# DONE: log game (replay) uuid
-# DONE: empty preset crashing bot bug fix
-# DONE: add wr to MAP command, post-process world records in separate thread
-# DONE: Save all replays, setup pipeline to resolve world records
-# DONE: add 1 second delay between preset load and launch to avoid partial preset update bug
-# DONE: say map name when game is launched (MAP works, but on-launch MAP isn't automatic);
-# DONE: bug fix - when dad joined, bot launched previous map (2 person) from 20 minutes ago, rather than getting new map
-# DONE: MODERATE
-# DONE: preset info in MAP command
-# DONE: INFO <query>
-# DONE: Allow multiple-caps-to-win maps (e.g. races)
-# DONE: bugfix: map difficulty sometimes not shown mid-game
-# DONE: wr quotes (last message sent by wr cap)
-# DONE: REGION command for poor sad bambi :(
-
-# v1.4
-# DONE: Pseudo Map ID
-# DONE: Mars ball fix (why no mars buddy climb record?)
-#       - Note: this requires the map to be changed. For mars ball cap, set score to 3.
-#               For mars ball map with flag cap, ensure mars ball caps for blue only.
-# DONE: incorporate allow blue caps column
-
-# TODO: ADDREPLAY
-# TODO: Map selection stability: Ensure a launched map is the map which is run, don't choose a new map
-# TODO: Map knowledge stability: Fix the bot thinking a different map is launched than the actual active map
-
-# TODO: Incorporate Max Balls Rec
-
-# TODO: @property which defines current lobby / game / world state. Derive EVERYTHING from this state
-# TODO: "QUEUE": list maps in queue, "QUEUE <preset> (optional map ID override)", "QUEUE <map name>"
-# TODO: REPLAY (enqueue same map)
-# TODO: LAUNCHMAP <map name> or <map id>
-# TODO: move afks to "waiting"
-
-# v1.5
-# TODO: if new WR occurs, announce
-# TODO: WR: "Gates unlocked" stat
-# TODO for maps that have no checkpoints, make speedruns count from spawn to cap so you don't have to relaunch and wait a bunch of times
-
-
-# v1.6
-# TODO: notify "preparing next map: (map details)", delay waiting for launch, inform users of the default case and voting options
-# TODO: lobby voting options:
-#       - SKIP: vote to load random different map
-#       - LAUNCH: vote to run current map
-#       - REPLAY: with VOTING to run the previous map again
-# TODO: in game voting: ABORT
-
-##
-
-# v1.X
-# TODO: KB Interrupt -> leave group immediately
-# TODO: MAP statistics: Completion Rate: <% w/ cap>, Median Time: <median of last 9 plays>
-# TODO: weigh periodic messages for frequency
-# TODO: weigh by fun rating, recency of loading with exponential decay
-# TODO: recency_score 1 if never played, 0.1 if more than 24 hours ago, 0 if within last 24 hours
-# TODO: handle broken group (check for url /find with no /game appearing)
-# TODO: checkpoints (create a new map variant based on current game state)
-# TODO: settings based on WR (e.g. besttime: [0, 60] by default)
-
 if __name__ == '__main__':
     adapter = DriverAdapter()
     bot = TagproBot(adapter)
     bot.run()
-
-
-# MAPS:
-# TODO: test gravity shift https://fortunatemaps.herokuapp.com/map/90083  gZMefHqsggtciaakJyaE
-#
-# TODO: Battle royale
-# TODO: Test Pocket Grav Pal #006: 89843 or 89248
-
-# TODO: Finish https://fortunatemaps.herokuapp.com/map/89248
-# TODO: Finish 89374
-# TODO: Finish Escort
-# TODO: map with all the worst mechs (
-#       1) start of first portal of "You Need Two" (the 45 degree roll)
-# TODO: map based on picking up pups
-# TODO: map idea: red vs blue, you need to complete all portals to win, and you can block the other teams progress using your portals
