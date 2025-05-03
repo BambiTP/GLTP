@@ -730,7 +730,7 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=18d833b7-dc65-4e66-b647-8effb64638ea",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "2:01.514",
@@ -748,6 +748,15 @@
           ],
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=59f29269-5f58-47dc-bd88-0de8022fbd36",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:37.159",
+          "players": [
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=79d7d4f0-2f20-4b90-9b57-3d035a5b8d3a",
           "includeOnSpeedrun": "yes"
         }
       ]
