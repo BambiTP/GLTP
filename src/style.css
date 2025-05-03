@@ -69,6 +69,17 @@ body {
   border-radius: 4px;
 }
 
+#mapsTable {
+  table-layout: fixed;
+}
+
+#mapsTable td.map-name {
+  max-width: 600px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 #mapsRecordsContainer table th,
 #mapsRecordsContainer table td {
   font-size: 0.8rem;
@@ -156,15 +167,6 @@ input[type="checkbox"] {
   margin-right: 8px;
 }
 
-#mapsTable thead th:nth-child(2) {
-  text-indent: -210px;
-}
-
-#mapsTable td:nth-child(2) {
-  text-indent: -200px;
-  font-weight: bold;
-}
-
 .copy-button {
   top: 3px;
   position: relative;
@@ -178,4 +180,103 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* New styles for detail sections */
+.detail-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.left-detail {
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 200px;
+  background-color: #1e1e1e;
+}
+
+.medal-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.medal-link {
+  text-decoration: none;
+}
+
+.medal-row {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  margin-bottom: 5px;
+  background-color: #1e1e1e;
+}
+
+.medal-label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.medal-time {
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.capping-player-quote {
+  font-style: italic;
+  margin-top: 5px;
+  color: #888;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .detail-wrapper {
+    flex-direction: column;
+  }
+  
+  .medal-panel {
+    margin-top: 10px;
+  }
+}
+
+.search-container {
+    margin-bottom: 15px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.search-input:focus {
+    border-color: #666;
+}
+
+.search-clear {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0 8px;
+    line-height: 1;
+}
+
+.search-clear:hover {
+    color: #999;
 }
