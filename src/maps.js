@@ -17,6 +17,8 @@ export class MapsTable {
         };
         this.mapsTableBody = document.getElementById('mapsTableBody');
         this.setupSorting();
+        this.setupSearch();
+        this.allRecords = []; // Store the full, unfiltered list
     }
 
     setupSorting() {
@@ -31,6 +33,49 @@ export class MapsTable {
                 });
             }
         });
+    }
+
+    setupSearch() {
+        const searchInput = document.getElementById('mapSearch');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            if (searchTerm === '') {
+                this.render(this.allRecords); // Reset to full list
+            } else {
+                this.filterRecords(searchTerm);
+            }
+        });
+
+        // Add clear button functionality
+        const clearButton = document.createElement('button');
+        clearButton.textContent = '×';
+        clearButton.className = 'search-clear';
+        clearButton.style.display = 'none';
+        
+        const searchContainer = searchInput.parentElement;
+        searchContainer.style.position = 'relative';
+        searchContainer.appendChild(clearButton);
+
+        clearButton.addEventListener('click', () => {
+            searchInput.value = '';
+            this.render(this.allRecords);
+            clearButton.style.display = 'none';
+            searchInput.focus();
+        });
+
+        searchInput.addEventListener('input', () => {
+            clearButton.style.display = searchInput.value ? 'block' : 'none';
+        });
+    }
+
+    filterRecords(searchTerm) {
+        const filteredRecords = this.allRecords.filter(record =>
+            record.map_name.toLowerCase().includes(searchTerm) ||
+            (record.capping_player && record.capping_player.toLowerCase().includes(searchTerm))
+        );
+        this.recordsArray = filteredRecords;
+        this.mapsTableBody.innerHTML = "";
+        filteredRecords.forEach(record => this.renderRow(record));
     }
 
     sortRecords(property, type) {
@@ -83,6 +128,7 @@ export class MapsTable {
     }
 
     render(records) {
+        this.allRecords = records; // Always keep the full list up to date
         this.recordsArray = records;
         this.mapsTableBody.innerHTML = "";
         records.forEach(record => this.renderRow(record));
