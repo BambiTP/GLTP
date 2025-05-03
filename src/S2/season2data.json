@@ -935,7 +935,7 @@
           ],
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=ab5f10bd-49b0-48be-8457-71163485f93d",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "15:58.735",
@@ -957,6 +957,15 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=928c5290-2dbe-4e85-8bf2-253aaf977f1e",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "15:37.982",
+          "players": [
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=c139fc3e-d9f7-4780-936f-0d9bafe1d216",
           "includeOnSpeedrun": "yes"
         }
       ]
