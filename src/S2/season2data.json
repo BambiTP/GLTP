@@ -705,7 +705,7 @@
       "link": "https://fortunatemaps.herokuapp.com/map/88764",
       "recommendedBalls": "1+",
       "preset": "gZMefGRaggtuiaaaJyaraaksaaamaaabE",
-      "speedrunPreset": "gZMefGRaggtuiaaaJyaraaksaaamaaabEG",
+      "speedrunPreset": "gZMefGRaggtuiaaaJyaraaasaaamaaabEG",
       "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant\nMars Ball Settings\n3 laps",
       "points": 1,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
@@ -758,7 +758,7 @@
       "link": "https://fortunatemaps.herokuapp.com/map/82065",
       "recommendedBalls": "1+",
       "preset": "gZMefEsjggtaiaaaJraaksaaamaaaE",
-      "speedrunPreset": "gZMefEsjggtaiaaaJraaksaaamaaaEG",
+      "speedrunPreset": "gZMefEsjggtaiaaaJraaasaaamaaaEG",
       "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
       "points": 2,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
@@ -804,7 +804,7 @@
       "link": "https://fortunatemaps.herokuapp.com/map/89550",
       "recommendedBalls": "1+",
       "preset": "gZMefHggggtaiaaaJraaksaaauaaajTE",
-      "speedrunPreset": "gZMefHggggtaiaaaJraaksaaauaaajTEG",
+      "speedrunPreset": "gZMefHggggtaiaaaJraaasaaauaaajTEG",
       "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant\nInstant RBs",
       "points": 2,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
@@ -879,7 +879,7 @@
       "link": "https://fortunatemaps.herokuapp.com/map/46903",
       "recommendedBalls": "1+",
       "preset": "gZMefrrZggtaiaaaJyaraaksaaamaaaE",
-      "speedrunPreset": "gZMefrrZggtaiaaaJyaraaksaaamaaaEG",
+      "speedrunPreset": "gZMefrrZggtaiaaaJyaraaasaaamaaaEG",
       "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
       "points": 3,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
@@ -937,6 +937,17 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=76f8c55e-7688-4009-ab9b-958150fe0e2b",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "8:42.822",
+          "players": [
+            "DAD.",
+            "Madoka",
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=928c5290-2dbe-4e85-8bf2-253aaf977f1e",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -947,7 +958,7 @@
       "link": "https://fortunatemaps.herokuapp.com/map/23115",
       "recommendedBalls": "2+",
       "preset": "gZMefiCBggtaiaaaJraaksaaamaaaE",
-      "speedrunPreset": "gZMefiCBggtaiaaaJraaksaaamaaaEG",
+      "speedrunPreset": "gZMefiCBggtaiaaaJraaasaaamaaaEG",
       "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
       "points": 4,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
@@ -987,6 +998,17 @@
           ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=31c4e841-2d11-484c-b3b7-766320aec620",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "5:01.064",
+          "players": [
+            "DAD.",
+            "Madoka",
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=b500760b-77ca-4b02-ba57-7e58be7df776e",
           "includeOnSpeedrun": "yes"
         }
       ]
