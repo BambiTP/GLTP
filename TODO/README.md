@@ -31,6 +31,8 @@ This document tracks tasks and ideas for the project
 - [ ] Add "speedun mode" that converts group preset to use map testing mode
 - [ ] Automated pup collector count from replay
 - [ ] Convert spreadsheet to website
+- [ ] Parse this for map names (or run it thru the grav map classifer) https://github.com/steppin/some_bot_brain
+- [ ] Replay parser shows duplicate player names on every refresh
 
 ---
 
