@@ -577,6 +577,15 @@
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=443e5194-8457-4443-82bb-dab3f9ba5b02",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "3:07.942",
+          "players": [
+            "timo_tay"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=2134e61b-1f96-43f7-b2dc-3c00c341f1a3",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -821,6 +830,15 @@
           ],
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=dcad9101-ae84-4f71-9501-23d6ba12dd92",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "10:52.854",
+          "players": [
+            "timo_tay"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=671432bd-f787-4a42-b1f7-5d42327d3e9d",
           "includeOnSpeedrun": "yes"
         }
       ]
