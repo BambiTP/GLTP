@@ -8,6 +8,9 @@ This document tracks tasks and ideas for the project
 ## 🚧 In Progress
 
 - [ ] Valerian Website changes
+- [ ] Click on a **player name** to view their world records
+- [ ] Show a player's **fastest time on each map** (even if not a WR)
+- [ ] Better maps classification/categories in spreadsheet
 
 ---
 
@@ -17,18 +20,17 @@ This document tracks tasks and ideas for the project
 - [ ] Combine two replays into one, automated
 - [ ] Automate GLTP speedrun uploads
 - [ ] Python script to calculate OFM hold time from replay
-- [ ] Click on a **player name** to view their world records
-- [ ] Show a player's **fastest time on each map** (even if not a WR)
 - [ ] Click on a **map name** to instantly launch a group with that map selected
 - [ ] Display **total number of completions** per map
 - [ ] Separate Classic / Grav maps on leaderboard
 - [ ] Implement map voting (with account system or signup to ensure one vote per person) difficulty and fun ratings
 - [ ] Move bot workflow to cloud
 - [ ] Launch minigames from bot
-- [ ] Better maps classification/categories in spreadsheet
 - [ ] Document Atomic Mechs
 - [ ] Documentation
 - [ ] Add "speedun mode" that converts group preset to use map testing mode
+- [ ] Automated pup collector count from replay
+- [ ] Convert spreadsheet to website
 
 ---
 
