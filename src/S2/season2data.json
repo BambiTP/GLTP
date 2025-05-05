@@ -840,6 +840,15 @@
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=671432bd-f787-4a42-b1f7-5d42327d3e9d",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "3:49.552",
+          "players": [
+            "EvTheSmev"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=b00d3165-e6e1-4791-8e0b-36d28a39f039",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
