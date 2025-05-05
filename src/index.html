@@ -24,8 +24,11 @@
   <div id="mapsRecordsContainer">
     <!-- Left: Maps Table -->
     <div id="mapsTableContainer" class="table-container">
-      <div class="search-container">
-        <input type="text" id="mapSearch" placeholder="Search maps..." class="search-input">
+      <div class="search-row">
+        <div class="search-container">
+          <input type="text" id="mapSearch" placeholder="Search maps..." class="search-input">
+        </div>
+        <button id="uploadWrButton" class="upload-button">Upload New WR Replay</button>
       </div>
       <table class="table" id="mapsTable">
         <colgroup>
@@ -56,6 +59,20 @@
   <!-- Leaderboard page -->
   <div id="leaderboardPage" style="display: none;">
     <div id="leaderboardContainer"></div>
+  </div>
+
+  <!-- Modal for WR Upload -->
+  <div id="uploadModal" class="modal">
+    <div class="modal-content">
+      <h2>Upload World Record Replay</h2>
+      <div class="modal-form">
+        <input type="url" id="replayUrlInput" placeholder="Enter replay URL..." class="url-input">
+        <div class="modal-buttons">
+          <button id="submitReplayUrl" class="submit-button">Submit</button>
+          <button id="cancelUpload" class="cancel-button">Cancel</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script type="module" src="home.js"></script>
