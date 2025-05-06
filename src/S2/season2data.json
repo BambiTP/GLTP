@@ -754,7 +754,7 @@
           "includeOnSpeedrun": "yes"
         },
         {
-          "time": "1:24.679",
+          "time": "999:99.999",
           "players": [
             "LogisticMap"
           ],
@@ -762,6 +762,17 @@
           "replay": "https://tagpro.koalabeast.com/replays?uuid=e4ef8a3c-63f7-47f5-8fbf-3102deb70cd1",
           "replay2": "https://tagpro.koalabeast.com/replays?uuid=bb55e619-6a77-4215-8838-25173223c187",
           "replay3": "https://tagpro.koalabeast.com/replays?uuid=6e5e9b6a-92f5-43b7-a4ce-0e5abba0bce0",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "999:99.999",
+          "players": [
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/game?replay=aBhfGGk7Bl422ik0YGfopbnSs181sTfx",
+          "replay": "https://tagpro.koalabeast.com/game?replay=aBl_zSYirXGVWvKuYGfopbnSs181sTfx",
+          "replay": "https://tagpro.koalabeast.com/game?replay=aBmUM7qnpwKZGXixYGfopbnSs181sTfx",
           "includeOnSpeedrun": "no"
         }
       ]
