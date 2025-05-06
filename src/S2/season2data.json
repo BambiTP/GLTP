@@ -246,6 +246,15 @@
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=5f84f0a7-3350-410b-b5ec-7755d0afdaf7",
           "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "5:55.283",
+          "players": [
+            "Fall Bondlers"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=5f0b9918-604e-4b10-8b0a-c7a4ff870317",
+          "includeOnSpeedrun": "no"
         }
       ]
     },
