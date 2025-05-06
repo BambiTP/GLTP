@@ -1040,6 +1040,17 @@
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=c139fc3e-d9f7-4780-936f-0d9bafe1d216",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "11:07.594",
+          "players": [
+            "LogisticMap",
+            "Some Ball 64",
+            "perl"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=058d2d24-f37b-42a5-933c-90f59c9f46f3",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
