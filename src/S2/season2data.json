@@ -594,6 +594,16 @@
           ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=2134e61b-1f96-43f7-b2dc-3c00c341f1a3",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "3:01.918",
+          "players": [
+            "Some Ball 64",
+            "perl"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=3aece0bf-6118-44cd-90d8-08b0ae597b42",
           "includeOnSpeedrun": "yes"
         }
       ]
