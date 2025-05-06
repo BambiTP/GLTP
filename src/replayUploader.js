@@ -100,59 +100,78 @@ export class ReplayUploader {
         try {
             console.log('Attempting to fetch URL:', url);
             
-            // First try direct fetch
-            let response;
-            try {
-                response = await fetch(url, {
-                    method: 'GET',
-                    mode: 'cors',
-                    headers: {
-                        'Accept': 'text/html',
-                        'Origin': window.location.origin
-                    },
-                    credentials: 'omit'
-                });
-            } catch (fetchError) {
-                console.log('Direct fetch failed, trying with proxy...');
-                // If direct fetch fails, try using a CORS proxy
-                const proxyUrl = `https://cors-anywhere.herokuapp.com/${url}`;
-                response = await fetch(proxyUrl, {
-                    method: 'GET',
-                    headers: {
-                        'Accept': 'text/html',
-                        'Origin': window.location.origin
+            // Extract the replay ID from the URL
+            const urlObj = new URL(url);
+            const replayId = urlObj.searchParams.get('replay');
+            console.log('Extracted replay ID:', replayId);
+            
+            if (!replayId) {
+                throw new Error('Could not extract replay ID from URL');
+            }
+
+            // First, fetch the replay data to get the game ID
+            const replayUrl = `https://tagpro.koalabeast.com/replays/${replayId}`;
+            console.log('Fetching replay data from:', replayUrl);
+            
+            const response = await fetch(replayUrl);
+            if (!response.ok) {
+                throw new Error(`Failed to fetch replay data: ${response.status} ${response.statusText}`);
+            }
+
+            const replayData = await response.json();
+            console.log('Received replay data:', replayData);
+
+            const gameId = replayData.gameId;
+            if (!gameId) {
+                throw new Error('Could not find game ID in replay data');
+            }
+
+            console.log('Found game ID:', gameId);
+
+            // Connect using Socket.IO
+            return new Promise((resolve, reject) => {
+                console.log('Connecting to Socket.IO with game ID:', gameId);
+                const socket = io('https://tagpro.koalabeast.com', {
+                    path: '/socket.io',
+                    transports: ['websocket'],
+                    query: {
+                        gameId: gameId
                     }
                 });
-            }
 
-            console.log('Fetch response status:', response.status);
-            
-            if (!response.ok) {
-                throw new Error(`Failed to fetch replay page: ${response.status} ${response.statusText}`);
-            }
+                socket.on('connect', () => {
+                    console.log('Socket.IO connected');
+                    // Join the game room
+                    socket.emit('joinGame', { gameId: gameId });
+                });
 
-            const html = await response.text();
-            console.log('Received HTML length:', html.length);
-            
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            const replayLink = doc.getElementById('replayLink');
+                // Listen for game info
+                socket.on('gameInfo', (data) => {
+                    console.log('Received gameInfo:', data);
+                    if (data.uuid) {
+                        console.log('Found UUID:', data.uuid);
+                        socket.disconnect();
+                        resolve(data.uuid);
+                    }
+                });
 
-            if (!replayLink) {
-                throw new Error('Could not find replay link on page');
-            }
+                // Listen for any other relevant events
+                socket.on('gameData', (data) => {
+                    console.log('Received gameData:', data);
+                });
 
-            const href = replayLink.getAttribute('href');
-            console.log('Found replay link href:', href);
-            
-            const uuid = href.split('uuid=')[1];
-            
-            if (!uuid) {
-                throw new Error('Could not extract UUID from replay link');
-            }
+                socket.on('connect_error', (error) => {
+                    console.error('Socket.IO connection error:', error);
+                    socket.disconnect();
+                    reject(new Error('Socket.IO connection failed'));
+                });
 
-            console.log('Successfully extracted UUID:', uuid);
-            return uuid;
+                // Set a timeout in case we don't get a response
+                setTimeout(() => {
+                    socket.disconnect();
+                    reject(new Error('Socket.IO timeout - no response received'));
+                }, 10000);
+            });
         } catch (error) {
             console.error('Detailed error in extractUuid:', error);
             throw new Error(`Error processing replay: ${error.message}`);
