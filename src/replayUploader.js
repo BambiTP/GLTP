@@ -115,7 +115,9 @@ class ReplayUploader {
 
     async loadReplayResults() {
         try {
-            const response = await fetch('/html/replay_results.html');
+            // Use a path that will work both locally and on GitHub Pages
+            const basePath = window.location.hostname === 'localhost' ? '' : '/GLTP';
+            const response = await fetch(`${basePath}/html/replay_results.html`);
             const html = await response.text();
             return html;
         } catch (error) {

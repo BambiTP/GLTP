@@ -6,6 +6,8 @@ const SRC_DIR = 'src';
 const OUT_DIR = 'docs';
 const assetMap = {};
 const buildVersion = Date.now().toString(); // Generate build version up front
+const isGitHubPages = process.env.GITHUB_PAGES === 'true'; // You can set this in your build process
+const BASE_PATH = isGitHubPages ? '/GLTP' : '';
 
 console.log('Starting build process...');
 
@@ -79,8 +81,9 @@ const replaceRefsInFile = (filePath, content) => {
       hashedFileName
     );
 
-    // For JavaScript files, also handle import statements
+    // For JavaScript files, also handle import statements and fetch paths
     if (filePath.endsWith('.js')) {
+      // Handle import statements
       updatedContent = updatedContent.replace(
         new RegExp(`from ['"]${orig.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}['"]`, 'g'),
         `from '${hashed}'`
@@ -88,6 +91,12 @@ const replaceRefsInFile = (filePath, content) => {
       updatedContent = updatedContent.replace(
         new RegExp(`from ['"]${origFileName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}['"]`, 'g'),
         `from '${hashedFileName}'`
+      );
+
+      // Handle fetch paths for HTML files
+      updatedContent = updatedContent.replace(
+        /fetch\(['"]\/(html|css)\/([^'"]+)['"]\)/g,
+        `fetch('${BASE_PATH}/$1/$2')`
       );
     }
   }
