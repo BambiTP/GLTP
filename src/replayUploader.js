@@ -1,4 +1,7 @@
-export class ReplayUploader {
+import { parseReplayFromURL, updateUI } from './replayParser.js';
+
+// creates the UI for the upload WR replay button, and 
+class ReplayUploader {
     constructor() {
         this.modal = document.getElementById('uploadModal');
         this.uploadButton = document.getElementById('uploadWrButton');
@@ -7,6 +10,7 @@ export class ReplayUploader {
         this.urlInput = document.getElementById('replayUrlInput');
         this.errorMessage = null;
         this.isSubmitting = false;
+        this.resultsContainer = null;
 
         this.setupEventListeners();
     }
@@ -73,6 +77,7 @@ export class ReplayUploader {
         }
     }
 
+    // Disable the submit button and the input field when submitting
     setSubmitting(isSubmitting) {
         this.isSubmitting = isSubmitting;
         this.submitButton.disabled = isSubmitting;
@@ -88,93 +93,42 @@ export class ReplayUploader {
         }
     }
 
+    // Validate the URL has the correct prefix
     validateUrl(url) {
         const validPrefix = 'https://tagpro.koalabeast.com/game?replay';
         if (!url.startsWith(validPrefix)) {
             throw new Error('URLs should start with https://tagpro.koalabeast.com/game?replay...');
+            // URL looks like this: https://tagpro.koalabeast.com/game?replay=aBqgmEYJ6LRbiauGZTv8/iW0XY1d3tCp 
         }
         return true;
     }
 
-    async extractUuid(url) {
+    async loadReplayResults() {
         try {
-            console.log('Attempting to fetch URL:', url);
-            
-            // Extract the replay ID from the URL
-            const urlObj = new URL(url);
-            const replayId = urlObj.searchParams.get('replay');
-            console.log('Extracted replay ID:', replayId);
-            
-            if (!replayId) {
-                throw new Error('Could not extract replay ID from URL');
-            }
-
-            // First, fetch the replay data to get the game ID
-            const replayUrl = `https://tagpro.koalabeast.com/replays/${replayId}`;
-            console.log('Fetching replay data from:', replayUrl);
-            
-            const response = await fetch(replayUrl);
-            if (!response.ok) {
-                throw new Error(`Failed to fetch replay data: ${response.status} ${response.statusText}`);
-            }
-
-            const replayData = await response.json();
-            console.log('Received replay data:', replayData);
-
-            const gameId = replayData.gameId;
-            if (!gameId) {
-                throw new Error('Could not find game ID in replay data');
-            }
-
-            console.log('Found game ID:', gameId);
-
-            // Connect using Socket.IO
-            return new Promise((resolve, reject) => {
-                console.log('Connecting to Socket.IO with game ID:', gameId);
-                const socket = io('https://tagpro.koalabeast.com', {
-                    path: '/socket.io',
-                    transports: ['websocket'],
-                    query: {
-                        gameId: gameId
-                    }
-                });
-
-                socket.on('connect', () => {
-                    console.log('Socket.IO connected');
-                    // Join the game room
-                    socket.emit('joinGame', { gameId: gameId });
-                });
-
-                // Listen for game info
-                socket.on('gameInfo', (data) => {
-                    console.log('Received gameInfo:', data);
-                    if (data.uuid) {
-                        console.log('Found UUID:', data.uuid);
-                        socket.disconnect();
-                        resolve(data.uuid);
-                    }
-                });
-
-                // Listen for any other relevant events
-                socket.on('gameData', (data) => {
-                    console.log('Received gameData:', data);
-                });
-
-                socket.on('connect_error', (error) => {
-                    console.error('Socket.IO connection error:', error);
-                    socket.disconnect();
-                    reject(new Error('Socket.IO connection failed'));
-                });
-
-                // Set a timeout in case we don't get a response
-                setTimeout(() => {
-                    socket.disconnect();
-                    reject(new Error('Socket.IO timeout - no response received'));
-                }, 10000);
-            });
+            const response = await fetch('/html/replay_results.html');
+            const html = await response.text();
+            return html;
         } catch (error) {
-            console.error('Detailed error in extractUuid:', error);
-            throw new Error(`Error processing replay: ${error.message}`);
+            console.error('Error loading replay results component:', error);
+            return null;
+        }
+    }
+
+    async displayReplayResults(parsedData) {
+        // Load and insert the replay results HTML if not already present
+        if (!this.resultsContainer) {
+            const replayResults = await this.loadReplayResults();
+            if (replayResults) {
+                // Insert after the upload modal
+                this.modal.insertAdjacentHTML('afterend', replayResults);
+                this.resultsContainer = document.getElementById('results');
+            }
+        }
+
+        // Show the results container and update UI with parsed data
+        if (this.resultsContainer) {
+            this.resultsContainer.style.display = 'block';
+            updateUI(parsedData);
         }
     }
 
@@ -187,10 +141,15 @@ export class ReplayUploader {
         try {
             this.setSubmitting(true);
             this.validateUrl(url);
-            const uuid = await this.extractUuid(url);
+            
+            // First get the parsed data
+            const parsedData = await parseReplayFromURL(url);
+            console.log('Parsed data:', parsedData);
+            
+            // Then display the results with the parsed data
+            await this.displayReplayResults(parsedData);
             
             // TODO: Send the UUID to your backend
-            console.log('Extracted UUID:', uuid);
             
             // Show success message
             this.showError('Replay submitted successfully!');
@@ -203,3 +162,5 @@ export class ReplayUploader {
         }
     }
 } 
+
+export { ReplayUploader };

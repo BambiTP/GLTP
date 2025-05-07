@@ -23,6 +23,7 @@ const processDir = (srcPath, outPath) => {
     if (entry.isDirectory()) {
       processDir(srcFile, outFile);
     } else {
+      console.log(`Found file: ${srcFile}`);
       const ext = path.extname(entry.name);
       if (ext === '.js' || ext === '.css') {
         console.log(`Processing ${ext} file: ${srcFile}`);
