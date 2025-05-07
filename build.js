@@ -61,6 +61,12 @@ const replaceRefsInFile = (filePath, content) => {
   // Inject inline build version if it's an HTML file
   if (filePath.endsWith('.html')) {
     updatedContent = updatedContent.replace(/{{BUILD_VERSION}}/g, buildVersion);
+    
+    // Handle CSS links in HTML files
+    updatedContent = updatedContent.replace(
+      /href=['"]\/(css)\/([^'"]+)['"]/g,
+      `href="${BASE_PATH}/$1/$2"`
+    );
   }
 
   for (const [orig, hashed] of Object.entries(assetMap)) {
