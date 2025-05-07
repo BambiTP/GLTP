@@ -242,58 +242,7 @@ function getDetails(replay, maps) {
     };
 }
 
-function updateUI(data) {
-    // Display the results container
-    document.getElementById('replayContent').style.display = 'block';
-    document.getElementById('loadingMessage').style.display = 'none';
 
-    // Update record time (highlighted)
-    document.getElementById('recordTime').querySelector('span').textContent = data.record_time || "Not available";
-
-    // Update map information
-    document.getElementById('mapName').textContent = data.map_name || "Unknown";
-    document.getElementById('mapAuthor').textContent = data.map_author || "Unknown";
-    document.getElementById('mapId').textContent = data.effective_map_id || "Unknown";
-    document.getElementById('capsToWin').textContent = data.caps_to_win === Infinity ? "Special" : data.caps_to_win;
-    document.getElementById('allowBlueCaps').textContent = data.allow_blue_caps ? "Yes" : "No";
-
-    // Update replay details
-    document.getElementById('uuid').textContent = data.uuid || "Unknown";
-    document.getElementById('timestamp').textContent = new Date(data.timestamp).toLocaleString() || "Unknown";
-    document.getElementById('cappingPlayer').textContent = data.capping_player || "Unknown";
-    document.getElementById('soloStatus').textContent = data.is_solo ? "Yes" : "No";
-    document.getElementById('playerQuote').textContent = data.capping_player_quote || "None";
-
-    // Update players table
-    const tableBody = document.getElementById('playerTableBody');
-    tableBody.innerHTML = '';
-
-    data.players.forEach(player => {
-        const row = document.createElement('tr');
-        if (player.name === data.capping_player) {
-            row.classList.add('capping-player');
-        }
-
-        const nameCell = document.createElement('td');
-        nameCell.textContent = player.name;
-
-        const teamCell = document.createElement('td');
-        teamCell.textContent = player.is_red ? 'Red' : 'Blue';
-        teamCell.classList.add(player.is_red ? 'team-red' : 'team-blue');
-
-        const userIdCell = document.createElement('td');
-        userIdCell.textContent = player.user_id || '-';
-
-        row.appendChild(nameCell);
-        row.appendChild(teamCell);
-        row.appendChild(userIdCell);
-
-        tableBody.appendChild(row);
-    });
-
-    // Update JSON view
-    document.getElementById('jsonOutput').textContent = JSON.stringify(data, null, 2);
-}
 
 function showError(message) {
     document.getElementById('loadingMessage').style.display = 'none';
@@ -303,44 +252,19 @@ function showError(message) {
     errorElement.style.display = 'block';
 }
 
-async function parseReplay() {
-    const input = document.getElementById("uuidInput").value.trim();
-    const resultsContainer = document.getElementById("results");
-
-    if (!input) {
-        alert("Please enter a UUID or replay URL");
-        return;
-    }
-
-    // Reset and show the results container
-    document.getElementById('loadingMessage').style.display = 'block';
-    document.getElementById('replayContent').style.display = 'none';
-    document.getElementById('errorMessage').style.display = 'none';
-    resultsContainer.style.display = 'block';
-
-    try {
-        const uuid = extractUUID(input) || input;
-        const replay = await fetchReplay(uuid);
-        const maps = await fetchMaps();
-        const details = getDetails(replay, maps);
-        updateUI(details);
-    } catch (error) {
-        showError(error.message);
-        console.error(error);
-    }
-}
-
-// modules for parsing replays from the formatted JSON URL https://tagpro.koalabeast.com/replays/gameFile?key=aBqgmEYJ6LRbiauGZTv8/iW0XY1d3tCp
-
 
 // Convert the URL to one that can be used to generate a replay file
 function convertURL(url) {
     // URL looks like this: https://tagpro.koalabeast.com/game?replay=aBqgmEYJ6LRbiauGZTv8/iW0XY1d3tCp 
     // We need to conver the URL to https://tagpro.koalabeast.com/replays/gameFile?key=Z9/286ZugYquoKwYZ_ayjg7lzK42ipHD
-    const gameId = url.split('replay=')[1];
-    const convertedUrl = `https://tagpro.koalabeast.com/replays/gameFile?key=${gameId}`;
-    console.log('Converted URL:', convertedUrl);
-    return convertedUrl;
+    if (url.includes('replay=')) {
+        const id = url.split('replay=')[1];
+        const convertedUrl = `https://tagpro.koalabeast.com/replays/gameFile?key=${id}`;
+        console.log('Converted URL:', convertedUrl);
+        return convertedUrl;
+    } else {
+        throw new Error("Invalid URL");
+    }
 }
 
 // takes a URL and returns a replay JSON
@@ -421,14 +345,28 @@ function formatReplayData(data) {
     return lines;
 }
 
-async function parseReplayFromURL(url) {
+async function parseReplayFromReplayLink(url) {
     const data = await getReplayData(url);
-    console.log('Replay data size:', data.length);
     const lines = formatReplayData(data);
     const maps = await fetchMaps();
     const details = getDetails(lines, maps);
     return details;
 }
 
-export { parseReplayFromURL, updateUI };
+
+async function parseReplayFromUUID(uuidLink) {
+    const input = uuidLink;
+    try {
+        const uuid = extractUUID(input) || input;
+        const replay = await fetchReplay(uuid);
+        const maps = await fetchMaps();
+        const details = getDetails(replay, maps);
+        return details;
+    } catch (error) {
+        showError(error.message);
+        console.error(error);
+    }
+}
+
+export { parseReplayFromUUID, parseReplayFromReplayLink};
 

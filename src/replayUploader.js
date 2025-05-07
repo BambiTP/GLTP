@@ -1,4 +1,4 @@
-import { parseReplayFromURL, updateUI } from './replayParser.js';
+import { parseReplayFromReplayLink, parseReplayFromUUID} from './replayParser.js';
 
 // creates the UI for the upload WR replay button, and 
 class ReplayUploader {
@@ -105,12 +105,23 @@ class ReplayUploader {
 
     // Validate the URL has the correct prefix
     validateUrl(url) {
-        const validPrefix = 'https://tagpro.koalabeast.com/game?replay';
-        if (!url.startsWith(validPrefix)) {
-            throw new Error('URLs should start with https://tagpro.koalabeast.com/game?replay...');
+        const validPrefix = 'https://tagpro.koalabeast.com/';
+        if (url.startsWith(validPrefix)) {
+            if (url.includes('replay=')) {
+                return 'replay';
+            }
+            if (url.includes('uuid=')) {
+                return 'uuid';
+            }
             // URL looks like this: https://tagpro.koalabeast.com/game?replay=aBqgmEYJ6LRbiauGZTv8/iW0XY1d3tCp 
         }
-        return true;
+        
+        // validate if input matches a UUID format
+        const uuidRegex = /[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}/i;
+        if (uuidRegex.test(url)) {
+            return 'uuid';
+        }
+        throw new Error('URLs should include either replay=/uuid= or be a valid UUID. Go to the replay page and copy the URL from the replay you want to validate');
     }
 
     async loadReplayResults() {
@@ -126,6 +137,59 @@ class ReplayUploader {
         }
     }
 
+    updateUI(data) {
+        // Display the results container
+        document.getElementById('replayContent').style.display = 'block';
+        document.getElementById('loadingMessage').style.display = 'none';
+
+        // Update record time (highlighted)
+        document.getElementById('recordTime').querySelector('span').textContent = data.record_time || "Not available";
+
+        // Update map information
+        document.getElementById('mapName').textContent = data.map_name || "Unknown";
+        document.getElementById('mapAuthor').textContent = data.map_author || "Unknown";
+        document.getElementById('mapId').textContent = data.effective_map_id || "Unknown";
+        document.getElementById('capsToWin').textContent = data.caps_to_win === Infinity ? "Special" : data.caps_to_win;
+        document.getElementById('allowBlueCaps').textContent = data.allow_blue_caps ? "Yes" : "No";
+
+        // Update replay details
+        document.getElementById('uuid').textContent = data.uuid || "Unknown";
+        document.getElementById('timestamp').textContent = new Date(data.timestamp).toLocaleString() || "Unknown";
+        document.getElementById('cappingPlayer').textContent = data.capping_player || "Unknown";
+        document.getElementById('soloStatus').textContent = data.is_solo ? "Yes" : "No";
+        document.getElementById('playerQuote').textContent = data.capping_player_quote || "None";
+
+        // Update players table
+        const tableBody = document.getElementById('playerTableBody');
+        tableBody.innerHTML = '';
+
+        data.players.forEach(player => {
+            const row = document.createElement('tr');
+            if (player.name === data.capping_player) {
+                row.classList.add('capping-player');
+            }
+
+            const nameCell = document.createElement('td');
+            nameCell.textContent = player.name;
+
+            const teamCell = document.createElement('td');
+            teamCell.textContent = player.is_red ? 'Red' : 'Blue';
+            teamCell.classList.add(player.is_red ? 'team-red' : 'team-blue');
+
+            const userIdCell = document.createElement('td');
+            userIdCell.textContent = player.user_id || '-';
+
+            row.appendChild(nameCell);
+            row.appendChild(teamCell);
+            row.appendChild(userIdCell);
+
+            tableBody.appendChild(row);
+        });
+
+        // Update JSON view
+        document.getElementById('jsonOutput').textContent = JSON.stringify(data, null, 2);
+    }
+
     async displayReplayResults(parsedData) {
         // Load and insert the replay results HTML if not already present
         if (!this.resultsContainer) {
@@ -135,17 +199,50 @@ class ReplayUploader {
                 const modalForm = this.modal.querySelector('.modal-form');
                 modalForm.insertAdjacentHTML('afterend', replayResults);
                 this.resultsContainer = document.getElementById('results');
+                
+                // Initialize tab functionality after inserting the HTML
+                this.initializeTabs();
             }
         }
 
         // Show the results container and update UI with parsed data
         if (this.resultsContainer) {
             this.resultsContainer.style.display = 'block';
-            updateUI(parsedData);
+            this.updateUI(parsedData);
         }
         
         // Reset submitting state after displaying results
         this.setSubmitting(false);
+    }
+
+    // Add this new method to handle tab functionality
+    initializeTabs() {
+        const tabButtons = this.resultsContainer.querySelectorAll('.tab-btn');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and content
+                this.resultsContainer.querySelectorAll('.tab-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.resultsContainer.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                const tabId = button.getAttribute('data-tab');
+                this.resultsContainer.querySelector(`#${tabId}-view`).classList.add('active');
+            });
+        });
+    }
+
+    validateInput(input) {
+        if (!input) {
+            throw new Error('Please enter a URL');
+        }
+        if (!input)
+        return true;
     }
 
     async handleSubmit() {
@@ -156,16 +253,18 @@ class ReplayUploader {
 
         try {
             this.setSubmitting(true);
-            this.validateUrl(url);
-            
-            // First get the parsed data
-            const parsedData = await parseReplayFromURL(url);
-            console.log('Parsed data:', parsedData);
-            
-            // Then display the results with the parsed data
-            await this.displayReplayResults(parsedData);
-            
-            // TODO: Send the UUID to your backend
+            const type = this.validateUrl(url);
+            if (type === 'replay') {
+                // First get the parsed data
+                const parsedData = await parseReplayFromReplayLink(url);
+                console.log('Parsed data:', parsedData);
+                
+                // Then display the results with the parsed data
+                await this.displayReplayResults(parsedData);
+            } else if (type === 'uuid') {
+                const parsedData = await parseReplayFromUUID(url);
+                await this.displayReplayResults(parsedData);
+            }
             
             // Show success message in the results area instead of the modal
             if (this.resultsContainer) {
