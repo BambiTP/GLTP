@@ -19,7 +19,7 @@
           ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=e3cd344d-382b-4fcc-81cc-0f1496682edf",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "3:04.991",
@@ -60,7 +60,7 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=6746875e-23d1-4142-ba5c-5e6ef593d1b9",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "2:44.009",
@@ -69,6 +69,27 @@
           ],
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=abc7590a-3461-4c7d-8378-75467284eb15",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:01.395",
+          "players": [
+            "DAD.",
+            "Madoka",
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=a4be10fe-6dc9-47ca-88b6-0aa90e969ec7",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:50.009",
+          "players": [
+            "Some Ball 64",
+            "perl"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=e3cd344d-382b-4fcc-81cc-0f1496682edf",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -246,6 +267,15 @@
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=5f84f0a7-3350-410b-b5ec-7755d0afdaf7",
           "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "5:55.283",
+          "players": [
+            "Some Ball 64"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=5f0b9918-604e-4b10-8b0a-c7a4ff870317",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -585,6 +615,16 @@
           ],
           "team": "Fall Bondlers",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=2134e61b-1f96-43f7-b2dc-3c00c341f1a3",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "3:01.918",
+          "players": [
+            "Some Ball 64",
+            "perl"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=3aece0bf-6118-44cd-90d8-08b0ae597b42",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -712,6 +752,28 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=6943566b-5fad-4259-8381-2e582b6a04ad",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "999:99.999",
+          "players": [
+            "LogisticMap"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=e4ef8a3c-63f7-47f5-8fbf-3102deb70cd1",
+          "replay2": "https://tagpro.koalabeast.com/replays?uuid=bb55e619-6a77-4215-8838-25173223c187",
+          "replay3": "https://tagpro.koalabeast.com/replays?uuid=6e5e9b6a-92f5-43b7-a4ce-0e5abba0bce0",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "999:99.999",
+          "players": [
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/game?replay=aBhfGGk7Bl422ik0YGfopbnSs181sTfx",
+          "replay": "https://tagpro.koalabeast.com/game?replay=aBl_zSYirXGVWvKuYGfopbnSs181sTfx",
+          "replay": "https://tagpro.koalabeast.com/game?replay=aBmUM7qnpwKZGXixYGfopbnSs181sTfx",
+          "includeOnSpeedrun": "no"
         }
       ]
     }
@@ -1020,6 +1082,17 @@
           ],
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=c139fc3e-d9f7-4780-936f-0d9bafe1d216",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "11:07.594",
+          "players": [
+            "LogisticMap",
+            "Some Ball 64",
+            "perl"
+          ],
+          "team": "Fall Bondlers",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=058d2d24-f37b-42a5-933c-90f59c9f46f3",
           "includeOnSpeedrun": "yes"
         }
       ]
