@@ -62,9 +62,9 @@ const replaceRefsInFile = (filePath, content) => {
   if (filePath.endsWith('.html')) {
     updatedContent = updatedContent.replace(/{{BUILD_VERSION}}/g, buildVersion);
     
-    // Handle CSS links in HTML files
+    // Handle CSS links in HTML files - match both with and without leading slash
     updatedContent = updatedContent.replace(
-      /href=['"]\/(css)\/([^'"]+)['"]/g,
+      /href=['"](?:\/)?(css)\/([^'"]+)['"]/g,
       `href="${BASE_PATH}/$1/$2"`
     );
   }
@@ -99,9 +99,9 @@ const replaceRefsInFile = (filePath, content) => {
         `from '${hashedFileName}'`
       );
 
-      // Handle fetch paths for HTML files
+      // Handle fetch paths for HTML files - match both with and without leading slash
       updatedContent = updatedContent.replace(
-        /fetch\(['"]\/(html|css)\/([^'"]+)['"]\)/g,
+        /fetch\(['"](?:\/)?(html|css)\/([^'"]+)['"]\)/g,
         `fetch('${BASE_PATH}/$1/$2')`
       );
     }
