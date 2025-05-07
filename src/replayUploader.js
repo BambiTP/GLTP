@@ -53,6 +53,11 @@ class ReplayUploader {
         this.urlInput.focus();
         this.clearError();
         this.setSubmitting(false);
+        
+        // Keep results hidden when showing modal
+        if (this.resultsContainer) {
+            this.resultsContainer.style.display = 'none';
+        }
     }
 
     hideModal() {
@@ -60,6 +65,11 @@ class ReplayUploader {
         this.urlInput.value = '';
         this.clearError();
         this.setSubmitting(false);
+        
+        // Hide results when closing modal
+        if (this.resultsContainer) {
+            this.resultsContainer.style.display = 'none';
+        }
     }
 
     showError(message) {
@@ -119,8 +129,9 @@ class ReplayUploader {
         if (!this.resultsContainer) {
             const replayResults = await this.loadReplayResults();
             if (replayResults) {
-                // Insert after the upload modal
-                this.modal.insertAdjacentHTML('afterend', replayResults);
+                // Insert after the form, but keep the form visible
+                const modalForm = this.modal.querySelector('.modal-form');
+                modalForm.insertAdjacentHTML('afterend', replayResults);
                 this.resultsContainer = document.getElementById('results');
             }
         }
@@ -130,6 +141,9 @@ class ReplayUploader {
             this.resultsContainer.style.display = 'block';
             updateUI(parsedData);
         }
+        
+        // Reset submitting state after displaying results
+        this.setSubmitting(false);
     }
 
     async handleSubmit() {
@@ -151,11 +165,18 @@ class ReplayUploader {
             
             // TODO: Send the UUID to your backend
             
-            // Show success message
-            this.showError('Replay submitted successfully!');
-            setTimeout(() => {
-                this.hideModal();
-            }, 1500);
+            // Show success message in the results area instead of the modal
+            if (this.resultsContainer) {
+                const successMessage = document.createElement('div');
+                successMessage.className = 'success-message';
+                successMessage.textContent = 'Replay submitted successfully!';
+                this.resultsContainer.insertBefore(successMessage, this.resultsContainer.firstChild);
+                
+                // Remove success message after a delay
+                setTimeout(() => {
+                    successMessage.remove();
+                }, 3000);
+            }
         } catch (error) {
             this.showError(error.message);
             this.setSubmitting(false);
