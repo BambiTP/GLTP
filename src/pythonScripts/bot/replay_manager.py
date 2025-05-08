@@ -110,7 +110,15 @@ def get_wr_entry(map_id, replay_stats_path="replay_stats.json"):
             time.sleep(0.1)
             continue
         break
-    map_entries = [entry for entry in data.values() if entry["map_id"] == map_id and entry["record_time"]]
+
+    if isinstance(data, dict):
+        data_iter = data.values()
+    elif isinstance(data, list):
+        data_iter = data
+    else:
+        raise TypeError("Unexpected data format in replay_stats.json")
+
+    map_entries = [entry for entry in data_iter if entry["map_id"] == map_id and entry["record_time"]]
     if not map_entries:
         return None
     return min(
