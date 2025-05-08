@@ -60,6 +60,20 @@ body {
   overflow-x: auto;
 }
 
+button {
+  padding: 10px 16px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 4px;
+}
+
+button:hover {
+  background-color: #0078d7;
+}
 /* Table styles for Maps and Recent Records */
 .table-container table {
   width: 100%;
@@ -170,7 +184,7 @@ input[type="checkbox"] {
 .copy-button {
   top: 3px;
   position: relative;
-  font-size: 8px;
+  font-size: 10px;
 }
 
 /* Additional styling enhancements */
@@ -244,39 +258,42 @@ a:hover {
   }
 }
 
-.search-container {
+.search-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
-    padding: 0 10px;
-    position: relative;
+    width: 100%;
 }
 
 .search-input {
     padding: 8px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;  /* Dark theme border */
     border-radius: 4px;
     font-size: 14px;
     outline: none;
     transition: border-color 0.2s;
+    background-color: #2a2a2a;  /* Dark theme background */
+    color: #e0e0e0;  /* Dark theme text */
+    width: 300px;  /* Or whatever width you prefer */
 }
 
 .search-input:focus {
-    border-color: #666;
+    border-color: #1e90ff;  /* Match your theme color */
 }
 
-.search-clear {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
+.upload-button {
+    margin-left: auto;
+    padding: 10px 16px;
+    background-color: #1e90ff;
+    color: white;
     border: none;
-    color: #666;
-    font-size: 18px;
+    border-radius: 4px;
     cursor: pointer;
-    padding: 0 8px;
-    line-height: 1;
+    font-weight: bold;
 }
 
-.search-clear:hover {
-    color: #999;
+.upload-button:hover {
+    background-color: #0078d7;
 }
+

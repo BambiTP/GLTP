@@ -5,6 +5,7 @@ import {
     getMapsPlayerDisplayName,
     launchTagproGroup
 } from './shared.js';
+import { ReplayUploader } from './replayUploader.js';
 
 export class MapsTable {
     constructor(presets, recordsByMap, mapMetadata) {
@@ -18,6 +19,7 @@ export class MapsTable {
         this.mapsTableBody = document.getElementById('mapsTableBody');
         this.setupSorting();
         this.setupSearch();
+        this.replayUploader = new ReplayUploader();
         this.allRecords = []; // Store the full, unfiltered list
     }
 
@@ -65,6 +67,53 @@ export class MapsTable {
 
         searchInput.addEventListener('input', () => {
             clearButton.style.display = searchInput.value ? 'block' : 'none';
+        });
+    }
+
+    setupUploadModal() {
+        const modal = document.getElementById('uploadModal');
+        const uploadButton = document.getElementById('uploadWrButton');
+        const cancelButton = document.getElementById('cancelUpload');
+        const submitButton = document.getElementById('submitReplayUrl');
+        const urlInput = document.getElementById('replayUrlInput');
+
+        // Show modal
+        uploadButton.addEventListener('click', () => {
+            modal.style.display = 'block';
+            urlInput.focus();
+        });
+
+        // Hide modal
+        const hideModal = () => {
+            modal.style.display = 'none';
+            urlInput.value = '';
+        };
+
+        // Cancel button
+        cancelButton.addEventListener('click', hideModal);
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                hideModal();
+            }
+        });
+
+        // Handle form submission
+        submitButton.addEventListener('click', () => {
+            const url = urlInput.value.trim();
+            if (url) {
+                // TODO: Handle the URL submission
+                console.log('Submitting URL:', url);
+                hideModal();
+            }
+        });
+
+        // Handle Enter key in input
+        urlInput.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                submitButton.click();
+            }
         });
     }
 

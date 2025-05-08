@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maps & Leaderboard</title>
   <link rel="stylesheet" href="/GLTP/style.css">
+  <link rel="stylesheet" href="/GLTP/css/replay.css">
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
   <script>
     window.BUILD_VERSION = "{{BUILD_VERSION}}";
   </script>
@@ -16,7 +19,6 @@
       <a id="mapsLink" class="active">Maps</a>
       <a id="leaderboardLink">Leaderboard</a>
       <a id="gltpLink">GLTP</a>
-      <a id="replayLink">Check Replay</a>
     </div>
   </div>
 
@@ -24,8 +26,9 @@
   <div id="mapsRecordsContainer">
     <!-- Left: Maps Table -->
     <div id="mapsTableContainer" class="table-container">
-      <div class="search-container">
+      <div class="search-row">
         <input type="text" id="mapSearch" placeholder="Search maps..." class="search-input">
+        <button id="uploadWrButton" class="upload-button">Check Replay Data</button>
       </div>
       <table class="table" id="mapsTable">
         <colgroup>
@@ -56,6 +59,20 @@
   <!-- Leaderboard page -->
   <div id="leaderboardPage" style="display: none;">
     <div id="leaderboardContainer"></div>
+  </div>
+
+  <!-- Modal for Replay Validation -->
+  <div id="uploadModal" class="modal">
+    <div class="modal-content">
+      <h2>Check Replay Data</h2>
+      <div class="modal-form">
+        <input type="url" id="replayUrlInput" placeholder="Enter replay URL, UUID URL, or Raw UUID..." class="url-input">
+        <div class="modal-buttons">
+          <button id="submitReplayUrl" class="submit-button">Submit</button>
+          <button id="cancelUpload" class="cancel-button">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script type="module" src="home.js"></script>

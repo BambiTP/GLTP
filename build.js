@@ -6,6 +6,8 @@ const SRC_DIR = 'src';
 const OUT_DIR = 'docs';
 const assetMap = {};
 const buildVersion = Date.now().toString(); // Generate build version up front
+const isGitHubPages = process.env.GITHUB_PAGES === 'true'; // You can set this in your build process
+const BASE_PATH = isGitHubPages ? '/GLTP' : '';
 
 console.log('Starting build process...');
 
@@ -23,6 +25,7 @@ const processDir = (srcPath, outPath) => {
     if (entry.isDirectory()) {
       processDir(srcFile, outFile);
     } else {
+      console.log(`Found file: ${srcFile}`);
       const ext = path.extname(entry.name);
       if (ext === '.js' || ext === '.css') {
         console.log(`Processing ${ext} file: ${srcFile}`);
@@ -58,6 +61,12 @@ const replaceRefsInFile = (filePath, content) => {
   // Inject inline build version if it's an HTML file
   if (filePath.endsWith('.html')) {
     updatedContent = updatedContent.replace(/{{BUILD_VERSION}}/g, buildVersion);
+    
+    // Handle CSS links in HTML files - match both with and without leading slash
+    updatedContent = updatedContent.replace(
+      /href=['"](?:\/)?(css)\/([^'"]+)['"]/g,
+      `href="${BASE_PATH}/$1/$2"`
+    );
   }
 
   for (const [orig, hashed] of Object.entries(assetMap)) {
@@ -78,8 +87,9 @@ const replaceRefsInFile = (filePath, content) => {
       hashedFileName
     );
 
-    // For JavaScript files, also handle import statements
+    // For JavaScript files, also handle import statements and fetch paths
     if (filePath.endsWith('.js')) {
+      // Handle import statements
       updatedContent = updatedContent.replace(
         new RegExp(`from ['"]${orig.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}['"]`, 'g'),
         `from '${hashed}'`
@@ -87,6 +97,12 @@ const replaceRefsInFile = (filePath, content) => {
       updatedContent = updatedContent.replace(
         new RegExp(`from ['"]${origFileName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}['"]`, 'g'),
         `from '${hashedFileName}'`
+      );
+
+      // Handle fetch paths for HTML files - match both with and without leading slash
+      updatedContent = updatedContent.replace(
+        /fetch\(['"](?:\/)?(html|css)\/([^'"]+)['"]\)/g,
+        `fetch('${BASE_PATH}/$1/$2')`
       );
     }
   }
