@@ -41,7 +41,7 @@
         ],
         "grav_or_classic": "Grav"
     },
-    "Buddy Pipe System Version 1.0.1": {
+    "Buddy Pipe System Version 1.0.1 (Official)": {
         "difficulty": "5.9",
         "balls_req": "2",
         "preset": "gZMefGzIggtaiaaaJraaksaaamaaaE",
@@ -172,7 +172,7 @@
         ],
         "grav_or_classic": "Grav"
     },
-    "Trust Fall (3 Person Buddy)": {
+    "Trust Fall (3 Person Buddy) (Official)": {
         "difficulty": "3.3",
         "balls_req": "3",
         "preset": "gZMefErvggtaiaaaJraaksaaamaaaE",
@@ -306,7 +306,7 @@
         ],
         "grav_or_classic": "Grav"
     },
-    "Tower Race Down 2": {
+    "Tower Race Down 2 (Official FWO)": {
         "difficulty": "7.1",
         "balls_req": "2",
         "preset": "gZMefGjKggtaiaaaJraaksaaamaaaE",
@@ -764,7 +764,7 @@
         ],
         "grav_or_classic": "Grav"
     },
-    "Buddy System 2 (TM1version) 9bob9 (Official FWO V2)": {
+    "Buddy System 2 (TM1version) 9bob9 (Official FWO V3)": {
         "difficulty": "2.5",
         "balls_req": "2",
         "preset": "gZMefEwUggtaiaaaJraaksaaamabWE",
@@ -2990,7 +2990,7 @@
         ],
         "grav_or_classic": "Grav"
     },
-    "Hopscotch (Official FWO) [Reversed] (no cheeze)": {
+    "Hopscotch (Official FWO) [Reversed] (no cheeze) by Carey Price": {
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefHdvggtaiaaaJyaraaksaaamaaapaE",
@@ -3807,7 +3807,7 @@
     "PP": {
         "difficulty": "TBD",
         "balls_req": "1",
-        "preset": "gZMefHsBggtaiaaaJyaraaasaaaYEG",
+        "preset": "gZMefHvGggtaiaaaJyaraaaYEG",
         "categories": [
             "Solo",
             "OneShot",
