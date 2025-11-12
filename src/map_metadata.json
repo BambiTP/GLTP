@@ -266,7 +266,7 @@
         "grav_or_classic": "Grav"
     },
     "Buddy (Official FWO)": {
-        "difficulty": "4.5",
+        "difficulty": "5.0",
         "balls_req": "3",
         "preset": "gZMefEziggtaiaaaJraakmaaaE",
         "categories": [
@@ -535,10 +535,10 @@
         ],
         "grav_or_classic": "Grav"
     },
-    "Buddy System 6 (Official FWO)": {
-        "difficulty": "3.7",
+    "FlappyBirdBuddyGrav": {
+        "difficulty": "4.1",
         "balls_req": "3",
-        "preset": "gZMefExaggtaiaaaJraaksaaamabWE",
+        "preset": "gZMefIDqggtaiaaaJraaksaaamaaaE",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -816,7 +816,7 @@
         "grav_or_classic": "Grav"
     },
     "Buddy System 7 (TM1 Version) 9bob9": {
-        "difficulty": "2.6",
+        "difficulty": "3.5",
         "balls_req": "4",
         "preset": "gZMefrKSggtaiaaaJraaksaaamabWE",
         "categories": [
@@ -1588,7 +1588,7 @@
     "Colosseum": {
         "difficulty": "5.1",
         "balls_req": "1",
-        "preset": "gZMefFOBtaiaaaJyaraaksaaamalCE",
+        "preset": "gZMefFOBtaiaaaJyaraaksaaamalCYEG",
         "categories": [
             "Spike Maze",
             "OneShot"
@@ -1713,7 +1713,7 @@
         "grav_or_classic": "Grav"
     },
     "Solo Grav Track (Official FWO)": {
-        "difficulty": "4.0",
+        "difficulty": "4.3",
         "balls_req": "1",
         "preset": "gZMefGaOggtaiaaaJyaraaksaaamaaaE",
         "categories": [
@@ -1725,7 +1725,7 @@
     "PopCulture Buddy System v5": {
         "difficulty": "4.2",
         "balls_req": "4",
-        "preset": "gZMefGaPtaiaaaJyaraaksaaamabWE",
+        "preset": "gZMefHLHtaiaaaJyaraaksaaamabWE",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1778,7 +1778,7 @@
         "preset": "gZMefGllggtaiaaaJyaraaksaaamaaapfE",
         "categories": [
             "Solo",
-            "Checkpoint",
+            "AnyGate",
             "5 jump"
         ],
         "grav_or_classic": "Grav"
@@ -1892,7 +1892,7 @@
         "grav_or_classic": "Grav"
     },
     "Toothy": {
-        "difficulty": "TBD",
+        "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefdSHggtuiaaaJyaraaksaaamaaaunqqE",
         "categories": [
@@ -2033,7 +2033,7 @@
         "grav_or_classic": "Grav"
     },
     "Boldy System 2": {
-        "difficulty": "4.1",
+        "difficulty": "5.1",
         "balls_req": "2",
         "preset": "gZMefGiCggtaiaaaJyaraaksaaamabWE",
         "categories": [
@@ -2346,7 +2346,7 @@
     "The Climb - Miley Cyrus (Infinite Jumps) (Official FWO)": {
         "difficulty": "5.0",
         "balls_req": "1",
-        "preset": "gZMefGOJggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGOJggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2357,7 +2357,7 @@
     "Skill Climbing (Infinite Jumps) (Official FWO)": {
         "difficulty": "3.8",
         "balls_req": "1",
-        "preset": "gZMefGOLggtuiaaaJyaraaksaaamaaaunqqpaE",
+        "preset": "gZMefGOLggtuiaaaJyaraaksaaamaaaunqqpZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2369,7 +2369,7 @@
     "Hopscotch (Official FWO)": {
         "difficulty": "2.7",
         "balls_req": "1",
-        "preset": "gZMefGPRggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGPRggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2380,7 +2380,7 @@
     "FlappyBird [UnlimitedJumps] (Official FWO)": {
         "difficulty": "2.2",
         "balls_req": "1",
-        "preset": "gZMefGOPggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGOPggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "OneShot",
@@ -2399,7 +2399,7 @@
     "DeathRun Flappy Bird Version (Official FWO)": {
         "difficulty": "3.3",
         "balls_req": "1",
-        "preset": "gZMefGOSggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGOSggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2410,7 +2410,7 @@
     "Spike System": {
         "difficulty": "4.4",
         "balls_req": "1",
-        "preset": "gZMefGOTggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGOTggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2421,7 +2421,7 @@
     "Flappy Cap": {
         "difficulty": "1.3",
         "balls_req": "1",
-        "preset": "gZMefGOUggtaiaaaJyaraaksaaamaaaE",
+        "preset": "gZMefGOUggtaiaaaJyaraaksaaamaaZE",
         "categories": [
             "Solo",
             "OneShot",
@@ -2430,9 +2430,9 @@
         "grav_or_classic": "Grav"
     },
     "Flappy Bird (Official FWO)": {
-        "difficulty": "2.7",
+        "difficulty": "2.9",
         "balls_req": "1",
-        "preset": "gZMefGOVggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGOVggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "OneShot",
@@ -2444,7 +2444,7 @@
     "CD9 (Infinite Jumps)(Official FWO)": {
         "difficulty": "2.3",
         "balls_req": "1",
-        "preset": "gZMefGPSggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGPSggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2455,7 +2455,7 @@
     "JDC (Infinite Jumps) (Official FWO)": {
         "difficulty": "2.5",
         "balls_req": "1",
-        "preset": "gZMefGOXggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGOXggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2466,7 +2466,7 @@
     "Light Em Up Again (Inspired by Carey Price)": {
         "difficulty": "3.5",
         "balls_req": "1",
-        "preset": "gZMefGPaggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGPaggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "AnyGate",
@@ -2477,7 +2477,7 @@
     "The Map Destroyer(Infinite Jumps) (Official FWO)": {
         "difficulty": "3.2",
         "balls_req": "1",
-        "preset": "gZMefGPbggtaiaaaJyaraaksaaamaaaunqqpaE",
+        "preset": "gZMefGPbggtaiaaaJyaraaksaaamaaaunqqpZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2488,7 +2488,7 @@
     "Jump! - Van Halen (Infinite Jump Race)": {
         "difficulty": "2.9",
         "balls_req": "1",
-        "preset": "gZMefGPdggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGPdggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2509,7 +2509,7 @@
     "Flight Path Race (Official FWO)": {
         "difficulty": "2.8",
         "balls_req": "1",
-        "preset": "gZMefGPgggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGPgggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2521,7 +2521,7 @@
     "Unlimited Jumps Buddy (Official FWO)": {
         "difficulty": "3.5",
         "balls_req": "1",
-        "preset": "gZMefGPiggtaiaaaJraaksaaamaaapaE",
+        "preset": "gZMefGPiggtaiaaaJraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2532,7 +2532,7 @@
     "Gravity Fall (unlimited jumps)": {
         "difficulty": "1.5",
         "balls_req": "1",
-        "preset": "gZMefGPnggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGPnggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Fall",
@@ -2543,7 +2543,7 @@
     "Gravity Fall (Insane) (Unlimited jumps)": {
         "difficulty": "2.3",
         "balls_req": "1",
-        "preset": "gZMefGPpggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGPpggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Fall",
@@ -2554,7 +2554,7 @@
     "Compact Disc (Official FWO)": {
         "difficulty": "3.6",
         "balls_req": "1",
-        "preset": "gZMefGQMggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGQMggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2576,7 +2576,7 @@
     "Hopscotch (Official FWO) [Reversed]": {
         "difficulty": "1.5",
         "balls_req": "1",
-        "preset": "gZMefGSLggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGSLggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2589,7 +2589,7 @@
     "Spike System [Reversed]": {
         "difficulty": "5.2",
         "balls_req": "1",
-        "preset": "gZMefGSMggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGSMggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2601,7 +2601,7 @@
     "Gravity Fall (Insane) (Unlimited jumps) [Reversed]": {
         "difficulty": "2.3",
         "balls_req": "1",
-        "preset": "gZMefGSNggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGSNggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Fall",
@@ -2613,7 +2613,7 @@
     "Gravity Fall (unlimited jumps) [Reversed]": {
         "difficulty": "1.5",
         "balls_req": "1",
-        "preset": "gZMefGSOggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefGSOggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Fall",
@@ -2972,7 +2972,7 @@
     "Compact Disc without cheeze (Official FWO)": {
         "difficulty": "6.8",
         "balls_req": "1",
-        "preset": "gZMefHcfggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefHcfggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -2993,7 +2993,7 @@
     "Hopscotch (Official FWO) [Reversed] (no cheeze) by Carey Price": {
         "difficulty": "2.5",
         "balls_req": "1",
-        "preset": "gZMefHdvggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefHdvggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3047,7 +3047,7 @@
     "Hopscotch (Official FWO) [Inverted]": {
         "difficulty": "2.5",
         "balls_req": "1",
-        "preset": "gZMefHdyggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefHdyggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3059,7 +3059,7 @@
     "Hopscotch (Official FWO) [Reversed] [Inverted]": {
         "difficulty": "2.5",
         "balls_req": "1",
-        "preset": "gZMefHdzggtaiaaaJyaraaksaaamaaapaE",
+        "preset": "gZMefHdzggtaiaaaJyaraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3070,7 +3070,7 @@
         "grav_or_classic": "Grav"
     },
     "Juiced Up (JJ Grav, Boost/Bomb instant) (official version)": {
-        "difficulty": "6.1",
+        "difficulty": "6.5",
         "balls_req": "3",
         "preset": "gZMefHexggtaiaaaJraaksaaamaaauaaaSPuTbE",
         "categories": [
@@ -3192,7 +3192,7 @@
     "Oh Man, Oh Boy [unlimited]": {
         "difficulty": "5.4",
         "balls_req": "1",
-        "preset": "gZMefHfjggtaiaaaJraaksaaamaaapaE",
+        "preset": "gZMefHfjggtaiaaaJraaksaaamaaapZE",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3203,7 +3203,7 @@
     "4 Ways Race [Unlimited]": {
         "difficulty": "4.4",
         "balls_req": "2",
-        "preset": "gZMefHfpggtaiaaaJraaksaaamaaapaE",
+        "preset": "gZMefHfpggtaiaaaJraaksaaamaaapZE",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3348,12 +3348,12 @@
         "grav_or_classic": "Classic"
     },
     "Flappy Ball": {
-        "difficulty": "5.5",
+        "difficulty": "2.5",
         "balls_req": "1",
-        "preset": "gZMefHjrggtaiaaaJyaraaksaaamaaauaaaTbpaE",
+        "preset": "gZMefIAlggtaiaaaJyaraaksaaamaaapZE ",
         "categories": [
             "Solo",
-            "Checkpoint",
+            "OneShot",
             "Unlimited Jumps",
             "Flappy Bird"
         ],
@@ -3479,7 +3479,7 @@
         "grav_or_classic": "Grav"
     },
     "House of Hell": {
-        "difficulty": "5.1",
+        "difficulty": "5.6",
         "balls_req": "1",
         "preset": "gZMefHktggtaiaaaJraaksaaamaaaE",
         "categories": [
@@ -3491,7 +3491,7 @@
     "Keep jumping and nobody explodes": {
         "difficulty": "TBD",
         "balls_req": "2",
-        "preset": "gZMefHkVggtaiaaaJyaraakpaE",
+        "preset": "gZMefHkVggtaiaaaJyaraakpZE",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3547,7 +3547,7 @@
     "Walls Are Unnecessary": {
         "difficulty": "TBD",
         "balls_req": "1",
-        "preset": "gZMefHkFtaiaaaJyaraak",
+        "preset": "gZMefIEwtaiaaaJyaraak",
         "categories": [
             "Solo",
             "OneShot",
@@ -3825,11 +3825,494 @@
         ],
         "grav_or_classic": "Grav"
     },
-    "bombing race": {
-        "difficulty": "",
-        "balls_req": "",
-        "preset": "",
-        "categories": [],
-        "grav_or_classic": ""
+    "Fat Bambox": {
+        "difficulty": "2.9",
+        "balls_req": "1",
+        "preset": "gZMefHzBggtacbiaaaJyaaseEraaksaakmaaaE",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Fat"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Pocket Grav Pal 008": {
+        "difficulty": "TBD",
+        "balls_req": "2",
+        "preset": "gZMefHBtggtaiaaaJraaksaaamaaaE",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Pocket"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "stairmaster": {
+        "difficulty": "TBD",
+        "balls_req": "3",
+        "preset": "gZMefHAvggtaiaaaJraakE",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Pocket"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Detonation Dash 3": {
+        "difficulty": "4.3",
+        "balls_req": "1",
+        "preset": "gZMefHDHggtaiaaaJraaksaaauaaajTE",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Rolling Bomb"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Pocket Grav Pal 009": {
+        "difficulty": "TBD",
+        "balls_req": "2",
+        "preset": "gZMefHIgggtaiaaaJraakmaaaE",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Pocket"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "33 Jumps": {
+        "difficulty": "3.5",
+        "balls_req": "1",
+        "preset": "gZMefHHvggtaiaaaJraaksaaaE",
+        "categories": [
+            "Solo",
+            "AnyGate",
+            "VS Race"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Dying Bird": {
+        "difficulty": "4.2",
+        "balls_req": "1",
+        "preset": "gZMefHFLggtaiaaaJyaraakYE",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Detonation Dash 4": {
+        "difficulty": "3.7",
+        "balls_req": "1",
+        "preset": "gZMefHFiggtaiaaaJraaksaaauaaajTE",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Rolling Bomb"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Dead Bird": {
+        "difficulty": "4.0",
+        "balls_req": "1",
+        "preset": "gZMefHFxggtaiaaaJyaraakYE",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Lava System": {
+        "difficulty": "2.6",
+        "balls_req": "2",
+        "preset": "gZMefHFYggtaiaaaJyaraakHtE",
+        "categories": [
+            "Buddy",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Chillest Map Ever": {
+        "difficulty": "1.5",
+        "balls_req": "1",
+        "preset": "gZMefHGoggtacdiaaaJraakmaapkE",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "ToD Jump 3x (AWFUL) (DONT TRY) (HELL)": {
+        "difficulty": "3.6",
+        "balls_req": "1",
+        "preset": "gZMefHHkggtaiaaaJyaraakYE",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "The Temple Maze [Reversed] (Official FWO)": {
+        "difficulty": "3.4",
+        "balls_req": "1",
+        "preset": "gZMefHGHggtaiaaaJraaksaaamaaaE",
+        "categories": [
+            "Solo",
+            "OneShot",
+            "Reversed"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Evil Scary Vampire Castle": {
+        "difficulty": "4.9",
+        "balls_req": "1",
+        "preset": "gZMefHJZggtaiaaaJyaraaksaaamaaaYE",
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "wow": {
+        "difficulty": "2.0",
+        "balls_req": "1",
+        "preset": "gZMefHLoggtaiaaaJyaraakmaaaE",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "SB Space Force Rocket Challenge": {
+        "difficulty": "2.3",
+        "balls_req": "1",
+        "preset": "gZMefHMoggtaiaaaJyaelraakmaakYE",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Triple Jump Challenge": {
+        "difficulty": "3.0",
+        "balls_req": "1",
+        "preset": "gZMefHNTggtaiaaaJyaraakYEG",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "RB puzzle": {
+        "difficulty": "1.7",
+        "balls_req": "1",
+        "preset": "gZMefHIRtaiaaaJyaraaaYjTG",
+        "categories": [
+            "Solo",
+            "OneShot",
+            "puzzle"
+        ],
+        "grav_or_classic": "Classic"
+    },
+    "Fat Trial of Deer": {
+        "difficulty": "2.4",
+        "balls_req": "1",
+        "preset": "gZMefHQrggtaiaaaJyaasesraaksaaamaaaYE",
+        "categories": [
+            "Solo",
+            "OneShot",
+            "Fat"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Ice Climbers Without Ice": {
+        "difficulty": "3.0",
+        "balls_req": "1",
+        "preset": "gZMefHRCggtaiaaaJyaraaksaaamaaaE",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Climb"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "NoJump Course": {
+        "difficulty": "3.3",
+        "balls_req": "1",
+        "preset": "gZMefGdMggtaiaaaJyaraaksaaamaaapaE",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "0 jump"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Skatepark": {
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefeSoggtaiaaaJyaraaksaaamaaapaE",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "0 jump"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "iCarly": {
+        "difficulty": "3.9",
+        "balls_req": "1",
+        "preset": "gZMefHZNggtaiaaaJyaraaksaaaHtYEG",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Boldy System 2.1": {
+        "difficulty": "4.6",
+        "balls_req": "2",
+        "preset": "gZMefIdEggtaiaaaJyaraaksaaamabWE",
+        "categories": [
+            "Buddy",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Taradell [1 Jump]": {
+        "difficulty": "3.6",
+        "balls_req": "1",
+        "preset": "gZMefIegggtacbiaaaJyaraaksaakmaauYpbE",
+        "categories": [
+            "Solo",
+            "OneShot",
+            "1 jump"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Ion Cannon": {
+        "difficulty": "3.7",
+        "balls_req": "1",
+        "preset": "gZMefIfdggtaiaaaJyaraaksaaamaaaY",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Jumps restricted by speed"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Bombi": {
+        "difficulty": "3.5",
+        "balls_req": "1",
+        "preset": "gZMefIeBggtaiaaaJyaraaksaaamaaaYE",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Sisyphus's Mountain": {
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefHYWggtaiaaaJyaraakYE",
+        "categories": [
+            "Solo",
+            "OneShot",
+            "Mars Push"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Taradell [1 Jump] (BOUNTY MAP)": {
+        "difficulty": "4.5",
+        "balls_req": "1",
+        "preset": "gZMefIfxggtacbiaaaJyasaakmaakYpbE",
+        "categories": [
+            "Solo",
+            "OneShot",
+            "1 jump",
+            "bounty"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Oh Man, Oh Boy (Official FWO) - 4 Jump Edition": {
+        "difficulty": "7.9",
+        "balls_req": "1",
+        "preset": "gZMefIgsggtaiaaaJraaksaaamaaapeE",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "5 Jump"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Triple Jump Double Bomb": {
+        "difficulty": "4.4",
+        "balls_req": "1",
+        "preset": "gZMefIlnggtaiaaaJyaraaasaaamaaaHpYE",
+        "categories": [
+            "Solo",
+            "OneShot",
+            "triple jump"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Rhapsody": {
+        "difficulty": "4.8",
+        "balls_req": "2",
+        "preset": "gZMefIkWggtaiaaaJyaraaksaaamaaaHpYE",
+        "categories": [
+            "Buddy",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Gravitron": {
+        "difficulty": "5.3",
+        "balls_req": "1",
+        "preset": "gZMefIkIggtaiaaaJraaasaaamaaaHpE",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Tower"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Pathfinder": {
+        "difficulty": "2.0",
+        "balls_req": "1",
+        "preset": "gZMefIjmggtaiaaaJraaasaaamaaaE",
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Jumpn't": {
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefIhQggtaiaaaJyaraaasaaamaaaYpaEG",
+        "categories": [
+            "Solo",
+            "OneShot",
+            "0 jump"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Space Walk": {
+        "difficulty": "2.9",
+        "balls_req": "1",
+        "preset": "gZMefIhPggtaiaaaJyaraaksaaamaaaYE",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Light Em Up (Official FWO)": {
+        "difficulty": "3.2",
+        "balls_req": "1",
+        "preset": "gZMefIoHggtaiaaaJyaraaksaaamaaapZE",
+        "categories": [
+            "Solo",
+            "AnyGate",
+            "Unlimited Jumps"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Eeffoc": {
+        "difficulty": "4.8",
+        "balls_req": "1",
+        "preset": "gZMefIpuggtaiaaaJyaraakmaaaHppfE",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "5 jumps"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "New 3 Map": {
+        "difficulty": "3.0",
+        "balls_req": "1",
+        "preset": "gZMefIuwggtkcbiaaaJyaraaksaaamaakuafOHpYTpfEG",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Bambox (hard edition)": {
+        "difficulty": "4.0",
+        "balls_req": "1",
+        "preset": "gZMefIybggtaiaaaJraaksaaamaaaE",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Weakest Link": {
+        "difficulty": "3.7",
+        "balls_req": "3",
+        "preset": "gZMefIANggtaiaaaJraaksaaamaaEE",
+        "categories": [
+            "Buddy",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Detonation Dash 5": {
+        "difficulty": "5.1",
+        "balls_req": "1",
+        "preset": "gZMefICkggtaiaaaJraaksaaauaaajTE",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Rolling Bomb"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Marble Run Race": {
+        "difficulty": "1.9",
+        "balls_req": "1",
+        "preset": "gZMefIDdggtioiaaaJyaraaksaaamaaaYpaEG",
+        "categories": [
+            "Individual",
+            "Race",
+            "3 lap",
+            "0 jump"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Buddy System 4 [Patched] 9bob9": {
+        "difficulty": "2.2",
+        "balls_req": "2",
+        "preset": "gZMefIEmggtaiaaaJraaksaaamaaaunqqjbE",
+        "categories": [
+            "Buddy",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Discovery of Magic": {
+        "difficulty": "x",
+        "balls_req": "1",
+        "preset": "gZMefIEdggtacbiaaaJyaraaasaaamaaauaaaSPuYTbE",
+        "categories": [
+            "Solo",
+            "OneShot",
+            "JJ boost",
+            "mapsgiving"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "Knife's Edge": {
+        "difficulty": "x",
+        "balls_req": "1",
+        "preset": "gZMefIEVggtacbiaaayaraaasaaamaaaE",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "mapsgiving"
+        ],
+        "grav_or_classic": "Grav"
     }
 }
