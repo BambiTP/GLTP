@@ -25,6 +25,26 @@
     </div>
   </div>
 
+  <!-- Info banner for Speed Records -->
+  <div id="speedBanner" class="info-banner">
+    <div class="banner-content-speed">
+      <span class="banner-icon-speed">⏱️</span>
+      <span class="banner-text-speed">
+        <strong>Speed Records:</strong> The fastest time to complete each map.
+      </span>
+    </div>
+  </div>
+
+  <!-- Info banner for Jump Records -->
+  <div id="jumpBanner" class="info-banner" style="display: none;">
+    <div class="banner-content-jump">
+      <span class="banner-icon-jump">🦘</span>
+      <span class="banner-text-jump">
+        <strong>Jump Records:</strong> The fewest number of jumps to complete each map.
+      </span>
+    </div>
+  </div>
+
   <!-- Container for side-by-side layout -->
   <div id="mapsRecordsContainer">
     <!-- Left: Maps Table -->
@@ -91,9 +111,10 @@
       </div>
     </div>
 
-      <table class="table" id="jumpMapsTable">
+      <table class="table" id="jumpsTable">
         <colgroup>
           <col style="width: 400px"> <!-- Map Name -->
+          <col>
           <col>
           <col>
           <col>
@@ -103,7 +124,8 @@
         <thead>
           <tr>
             <th data-sort="map_name" data-type="string">Map Name</th>
-            <th data-sort="total_jumps" data-type="numeric">Jump Record</th>
+            <th data-sort="total_jumps" data-type="numeric"># Jumps</th>
+            <th data-sort="record_time" data-type="numeric">Time</th>
             <th data-sort="timestamp" data-type="numeric">Set</th>
             <th data-sort="capping_player" data-type="string">Capping Player</th>
             <th data-sort="difficulty" data-type="string">Difficulty</th>
@@ -117,9 +139,13 @@
     </div>
   </div>
 
-
   <!-- Leaderboard page -->
   <div id="leaderboardPage" style="display: none;">
+    <div class="leaderboard-tabs">
+      <button id="speedLeaderboardTab" class="active">Speed Leaderboard</button>
+      <button id="jumpLeaderboardTab">Jump Leaderboard</button>
+      <button id="overallLeaderboardTab">Overall Records</button>
+    </div>
     <div id="leaderboardContainer"></div>
   </div>
 

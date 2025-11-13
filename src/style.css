@@ -397,7 +397,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 20px auto;
+  margin: 0 auto 20px auto;
   max-width: 1200px;
   padding: 0 20px;
 }
@@ -759,4 +759,66 @@ button.upload-button:hover {
 
 .preview-modal .modal-content * {
   box-sizing: border-box !important;
+}
+
+/* info banners */
+.info-banner {
+  background-color: #202a36;
+  color: #fff;
+  padding: 10px 20px;
+  border-left: 5px solid #1e90ff;
+  margin-bottom: 1px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center; /* Center everything horizontally */
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Shared inner layout */
+.banner-content-speed,
+.banner-content-jump {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Even spacing between icon and text */
+}
+
+/* Icon styling */
+.banner-icon-speed,
+.banner-icon-jump {
+  font-size: 18px;
+}
+
+/* Text styling */
+.banner-text-speed strong,
+.banner-text-jump strong {
+  color: #1e90ff;
+  margin-right: 4px;
+}
+
+#jumpBanner {
+  border-left-color: #2ecc71; /* green accent */
+}
+
+.leaderboard-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.leaderboard-tabs button {
+  padding: 8px 16px;
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.leaderboard-tabs button.active {
+  background-color: #1e90ff;
+  color: white;
+  font-weight: bold;
 }

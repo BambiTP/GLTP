@@ -144,6 +144,7 @@ class ReplayUploader {
 
         // Update record time (highlighted)
         document.getElementById('recordTime').querySelector('span').textContent = data.record_time || "Not available";
+        document.getElementById('recordJumps').querySelector('span').textContent = data.total_jumps || "Not available";
 
         // Update map information
         document.getElementById('mapName').textContent = data.map_name || "Unknown";

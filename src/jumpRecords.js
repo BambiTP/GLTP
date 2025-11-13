@@ -17,11 +17,11 @@ export class JumpsTable {
             direction: "desc"
         };
         this.mapsTableBody = document.getElementById('jumpTableBody');
-        this.setupSorting();
-        //this.setupSearch();
-        this.setupFilters();
         this.replayUploader = new ReplayUploader();
         this.allRecords = []; // Store the full, unfiltered list
+        this.setupSorting();
+        this.setupSearch();
+        this.setupFilters();
     }
 
     setupFilters() {
@@ -206,25 +206,17 @@ export class JumpsTable {
     }
 
     render(records) {
-        // Filter: only include gravity maps
         const gravityRecords = records.filter(record => {
             const metadata = this.mapMetadata[record.map_name] || {};
             return (metadata.grav_or_classic || "").toLowerCase() === "grav";
         });
 
-        // Sort: most recent total_jumps record first
-        gravityRecords.sort((a, b) => {
-            // prioritize newer timestamp
-            return new Date(b.timestamp) - new Date(a.timestamp);
-        });
-
-        // Store and render
+        // Don't sort here! Let sortRecords handle it
         this.allRecords = gravityRecords;
         this.recordsArray = gravityRecords;
         this.mapsTableBody.innerHTML = "";
         gravityRecords.forEach(record => this.renderRow(record));
     }
-
 
     renderRow(record) {
         const tr = document.createElement('tr');
@@ -422,9 +414,14 @@ export class JumpsTable {
         mapNameCell.appendChild(detailDiv);
         tr.appendChild(mapNameCell);
 
-        // Add time cell
+        // Add jumps cell
+        const jumpsCell = document.createElement('td');
+        jumpsCell.textContent = record.total_jumps;
+        tr.appendChild(jumpsCell);
+
+         // Add time cell
         const timeCell = document.createElement('td');
-        timeCell.textContent = record.total_jumps;
+        timeCell.textContent = formatTime(record.record_time);
         tr.appendChild(timeCell);
 
         // Add relative time cell

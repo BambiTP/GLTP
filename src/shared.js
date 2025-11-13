@@ -85,38 +85,40 @@ export function setupNavigation() {
   const leaderboardLink = document.getElementById('leaderboardLink');
   const gltpLink = document.getElementById('gltpLink');
 
-  speedRecordsLink.addEventListener('click', function() {
-    document.getElementById('mapsRecordsContainer').style.display = "flex";
-    document.getElementById('jumpsRecordsContainer').style.display = "none";
-    document.getElementById('leaderboardPage').style.display = "none";
-    speedRecordsLink.classList.add('active');
-    jumpRecordsLink.classList.remove('active');
-    leaderboardLink.classList.remove('active');
-  });
+  const speedBanner = document.getElementById("speedBanner");
+  const jumpBanner = document.getElementById("jumpBanner");
 
-  jumpRecordsLink.addEventListener('click', function() {
-    document.getElementById('jumpsRecordsContainer').style.display = "flex";
-    document.getElementById('mapsRecordsContainer').style.display = "none";
-    document.getElementById('leaderboardPage').style.display = "none";
-    jumpRecordsLink.classList.add('active');
-    speedRecordsLink.classList.remove('active');
-    leaderboardLink.classList.remove('active');
-  });
+  // Default page
+  let activePage = "mapsRecordsContainer";
 
-  leaderboardLink.addEventListener('click', function() {
-    document.getElementById('mapsRecordsContainer').style.display = "none";
-    document.getElementById('jumpsRecordsContainer').style.display = "none";
-    document.getElementById('leaderboardPage').style.display = "block";
-    leaderboardLink.classList.add('active');
-    jumpRecordsLink.classList.add('remove');
-    speedRecordsLink.classList.remove('active');
-  });
+  function showPage(page) {
+    document.getElementById("mapsRecordsContainer").style.display = page === "mapsRecordsContainer" ? "flex" : "none";
+    document.getElementById("jumpsRecordsContainer").style.display = page === "jumpRecordsContainer" ? "flex" : "none";
+    document.getElementById("leaderboardPage").style.display = page === "leaderboardPage" ? "block" : "none";
 
-  gltpLink.addEventListener('click', function() {
-    window.location.href = 'S2/home.html';
-  });
+    // Toggle nav link active states
+    speedRecordsLink.classList.toggle("active", page === "mapsRecordsContainer");
+    jumpRecordsLink.classList.toggle("active", page === "jumpRecordsContainer");
+    leaderboardLink.classList.toggle("active", page === "leaderboardPage");
 
+    // Toggle info banners
+    speedBanner.style.display = page === "mapsRecordsContainer" ? "block" : "none";
+    jumpBanner.style.display = page === "jumpRecordsContainer" ? "block" : "none";
+
+    // Update state
+    activePage = page;
+  }
+
+  // Event listeners
+  speedRecordsLink.addEventListener("click", () => showPage("mapsRecordsContainer"));
+  jumpRecordsLink.addEventListener("click", () => showPage("jumpRecordsContainer"));
+  leaderboardLink.addEventListener("click", () => showPage("leaderboardPage"));
+  gltpLink.addEventListener("click", () => (window.location.href = "S2/home.html"));
+
+  // Initialize to default
+  showPage(activePage);
 }
+
 
 // TagPro group launch function
 export function launchTagproGroup(preset) {
