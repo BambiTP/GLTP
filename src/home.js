@@ -1,5 +1,6 @@
 import { dataUrl, setupNavigation } from './shared.js';
 import { MapsTable } from './maps.js';
+import { JumpsTable } from './jumpRecords.js';
 import { Leaderboard, processLeaderboardData } from './leaderboard.js';
 
 // Load presets
@@ -30,6 +31,11 @@ fetch(dataUrl)
     const recordsArray = Object.values(bestRecords);
     recordsArray.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
     mapsTable.render(recordsArray);
+
+    // Initialize and render maps table
+    const jumpsTable = new JumpsTable(presets, recordsByMap, mapMetadata);
+    recordsArray.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+    jumpsTable.render(recordsArray);
 
     // Initialize and render leaderboards
     const leaderboard = new Leaderboard();

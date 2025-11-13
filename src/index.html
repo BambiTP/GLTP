@@ -18,7 +18,8 @@
   <!-- Top bar for navigation -->
   <div class="top-bar">
     <div class="nav">
-      <a id="mapsLink" class="active">Maps</a>
+      <a id="speedRecordsLink" class="active">Speed Records</a>
+      <a id="jumpRecordsLink">Jump Records</a>
       <a id="leaderboardLink">Leaderboard</a>
       <a id="gltpLink">GLTP</a>
     </div>
@@ -56,7 +57,7 @@
         <thead>
           <tr>
             <th data-sort="map_name" data-type="string">Map Name</th>
-            <th data-sort="record_time" data-type="numeric">Record Time</th>
+            <th data-sort="record_time" data-type="numeric">Time Record</th>
             <th data-sort="timestamp" data-type="numeric">Set</th>
             <th data-sort="capping_player" data-type="string">Capping Player</th>
             <th data-sort="difficulty" data-type="string">Difficulty</th>
@@ -69,6 +70,53 @@
       </table>
     </div>
   </div>
+
+  <!-- Container for side-by-side layout -->
+  <div id="jumpsRecordsContainer">
+    <!-- Left: Maps Table -->
+    <div id="jumpsTableContainer" class="table-container">
+    <div class="search-row">
+      <div class="search-left">
+        <input type="text" id="jumpmapSearch" placeholder="Search maps..." class="search-input">
+        <button id="jump-search-clear" class="search-clear" style="display: none;">×</button>
+        <select id="jumpGravityFilter" class="filter-select">
+          <option value="">All Types</option>
+          <option value="grav">Gravity</option>
+          <option value="classic">Classic</option>
+        </select>
+        <!-- You can add more elements here -->
+      </div>
+      <div class="search-right">
+        <button id="jumpuploadWrButton" class="upload-button">Check Replay Data</button>
+      </div>
+    </div>
+
+      <table class="table" id="jumpMapsTable">
+        <colgroup>
+          <col style="width: 400px"> <!-- Map Name -->
+          <col>
+          <col>
+          <col>
+          <col>
+          <col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th data-sort="map_name" data-type="string">Map Name</th>
+            <th data-sort="total_jumps" data-type="numeric">Jump Record</th>
+            <th data-sort="timestamp" data-type="numeric">Set</th>
+            <th data-sort="capping_player" data-type="string">Capping Player</th>
+            <th data-sort="difficulty" data-type="string">Difficulty</th>
+            <th data-sort="balls_req" data-type="numeric">Balls Required</th>
+          </tr>
+        </thead>
+        <tbody id="jumpTableBody">
+          <!-- Data rows will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
 
   <!-- Leaderboard page -->
   <div id="leaderboardPage" style="display: none;">

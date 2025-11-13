@@ -80,22 +80,36 @@ export function formatRelativeTime(timestamp) {
 
 // Navigation functions
 export function setupNavigation() {
-  const mapsLink = document.getElementById('mapsLink');
+  const speedRecordsLink = document.getElementById('speedRecordsLink');
+  const jumpRecordsLink = document.getElementById('jumpRecordsLink');
   const leaderboardLink = document.getElementById('leaderboardLink');
   const gltpLink = document.getElementById('gltpLink');
 
-  mapsLink.addEventListener('click', function() {
+  speedRecordsLink.addEventListener('click', function() {
     document.getElementById('mapsRecordsContainer').style.display = "flex";
+    document.getElementById('jumpsRecordsContainer').style.display = "none";
     document.getElementById('leaderboardPage').style.display = "none";
-    mapsLink.classList.add('active');
+    speedRecordsLink.classList.add('active');
+    jumpRecordsLink.classList.remove('active');
+    leaderboardLink.classList.remove('active');
+  });
+
+  jumpRecordsLink.addEventListener('click', function() {
+    document.getElementById('jumpsRecordsContainer').style.display = "flex";
+    document.getElementById('mapsRecordsContainer').style.display = "none";
+    document.getElementById('leaderboardPage').style.display = "none";
+    jumpRecordsLink.classList.add('active');
+    speedRecordsLink.classList.remove('active');
     leaderboardLink.classList.remove('active');
   });
 
   leaderboardLink.addEventListener('click', function() {
     document.getElementById('mapsRecordsContainer').style.display = "none";
+    document.getElementById('jumpsRecordsContainer').style.display = "none";
     document.getElementById('leaderboardPage').style.display = "block";
     leaderboardLink.classList.add('active');
-    mapsLink.classList.remove('active');
+    jumpRecordsLink.classList.add('remove');
+    speedRecordsLink.classList.remove('active');
   });
 
   gltpLink.addEventListener('click', function() {

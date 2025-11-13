@@ -7,7 +7,7 @@ import {
 } from './shared.js';
 import { ReplayUploader } from './replayUploader.js';
 
-export class MapsTable {
+export class JumpsTable {
     constructor(presets, recordsByMap, mapMetadata) {
         this.presets = presets;
         this.recordsByMap = recordsByMap;
@@ -16,9 +16,9 @@ export class MapsTable {
             property: "timestamp",
             direction: "desc"
         };
-        this.mapsTableBody = document.getElementById('mapsTableBody');
+        this.mapsTableBody = document.getElementById('jumpTableBody');
         this.setupSorting();
-        this.setupSearch();
+        //this.setupSearch();
         this.setupFilters();
         this.replayUploader = new ReplayUploader();
         this.allRecords = []; // Store the full, unfiltered list
@@ -26,14 +26,14 @@ export class MapsTable {
 
     setupFilters() {
         // Ensure this is linked to the correct filter
-        this.gravityFilter = document.getElementById('gravityFilter');
+        this.gravityFilter = document.getElementById('jumpGravityFilter');
         // Listen for filter changes
         this.gravityFilter.addEventListener('change', () => this.applyFilters());
     }
 
     applyFilters() {
-        const grav_or_classic = document.getElementById('gravityFilter').value.toLowerCase();
-        const searchTerm = document.getElementById('mapSearch').value.toLowerCase().trim();
+        const grav_or_classic = document.getElementById('jumpGravityFilter').value.toLowerCase();
+        const searchTerm = document.getElementById('jumpmapSearch').value.toLowerCase().trim();
 
         const filtered = this.allRecords.filter(record => {
             const metadata = this.mapMetadata[record.map_name] || {};
@@ -54,7 +54,7 @@ export class MapsTable {
     }
 
     setupSorting() {
-        const thElements = document.querySelectorAll("#mapsTable thead th");
+        const thElements = document.querySelectorAll("#jumpsTable thead th");
         thElements.forEach(th => {
             const sortProperty = th.getAttribute("data-sort");
             const sortType = th.getAttribute("data-type");
@@ -68,7 +68,7 @@ export class MapsTable {
     }
 
     setupSearch() {
-        const searchInput = document.getElementById('mapSearch');
+        const searchInput = document.getElementById('jumpmapSearch');
         searchInput.addEventListener('input', (e) => {
             const searchTerm = e.target.value.toLowerCase().trim();
             if (searchTerm === '') {
@@ -79,7 +79,7 @@ export class MapsTable {
         });
 
         // Add clear button functionality
-        const clearButton = document.getElementById('search-clear');
+        const clearButton = document.getElementById('jump-search-clear');
 
         const searchContainer = searchInput.parentElement;
         searchContainer.style.position = 'relative';
@@ -206,13 +206,25 @@ export class MapsTable {
     }
 
     render(records) {
-        this.allRecords = records; // Always keep the full list up to date
-        this.recordsArray = records;
+        // Filter: only include gravity maps
+        const gravityRecords = records.filter(record => {
+            const metadata = this.mapMetadata[record.map_name] || {};
+            return (metadata.grav_or_classic || "").toLowerCase() === "grav";
+        });
+
+        // Sort: most recent total_jumps record first
+        gravityRecords.sort((a, b) => {
+            // prioritize newer timestamp
+            return new Date(b.timestamp) - new Date(a.timestamp);
+        });
+
+        // Store and render
+        this.allRecords = gravityRecords;
+        this.recordsArray = gravityRecords;
         this.mapsTableBody.innerHTML = "";
-        records.forEach((record, index) => {
-            this.renderRow(record);
-        }, this);
+        gravityRecords.forEach(record => this.renderRow(record));
     }
+
 
     renderRow(record) {
         const tr = document.createElement('tr');
@@ -356,7 +368,7 @@ export class MapsTable {
             medalLabelSpan.textContent = medalLabels[index];
 
             const timeSpan = document.createElement('span');
-            timeSpan.textContent = formatTime(rec.record_time);
+            timeSpan.textContent = rec.total_jumps;
             timeSpan.className = "medal-time";
             timeSpan.style.color = medalColors[index];
 
@@ -412,7 +424,7 @@ export class MapsTable {
 
         // Add time cell
         const timeCell = document.createElement('td');
-        timeCell.textContent = formatTime(record.record_time);
+        timeCell.textContent = record.total_jumps;
         tr.appendChild(timeCell);
 
         // Add relative time cell
