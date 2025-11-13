@@ -114,14 +114,15 @@ export function processLeaderboardData(data) {
         }
       });
 
-      if (!bestRecords[record.map_name] || record.record_time < bestRecords[record.map_name].record_time) {
-        bestRecords[record.map_name] = record;
+      const key = `${record.map_name}::${record.map_author}`;
+      if (!bestRecords[key] || record.record_time < bestRecords[key].record_time) {
+        bestRecords[key] = record;
       }
 
-      if (!recordsByMap[record.map_name]) {
-        recordsByMap[record.map_name] = [];
+      if (!recordsByMap[key]) {
+        recordsByMap[key] = [];
       }
-      recordsByMap[record.map_name].push(record);
+      recordsByMap[key].push(record);
     }
   });
 
@@ -193,15 +194,15 @@ export function processJumpLeaderboardData(data) {
   data.forEach(record => {
     if (record.total_jumps !== null) {
       // Track best jump record per map (fewest jumps)
-      if (!bestJumpRecords[record.map_name] ||
-          record.total_jumps < bestJumpRecords[record.map_name].total_jumps) {
-        bestJumpRecords[record.map_name] = record;
+      const key = `${record.map_name}::${record.map_author}`;
+      if (!bestJumpRecords[key] || record.total_jumps < bestJumpRecords[key].total_jumps) {
+        bestJumpRecords[key] = record;
       }
 
-      if (!jumpRecordsByMap[record.map_name]) {
-        jumpRecordsByMap[record.map_name] = [];
+      if (!jumpRecordsByMap[key]) {
+        jumpRecordsByMap[key] = [];
       }
-      jumpRecordsByMap[record.map_name].push(record);
+      jumpRecordsByMap[key].push(record);
     }
   });
 

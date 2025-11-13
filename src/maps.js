@@ -43,6 +43,7 @@ export class MapsTable {
 
             const matchesSearch =
                 record.map_name.toLowerCase().includes(searchTerm) ||
+                (record.map_author && record.map_author.toLowerCase().includes(searchTerm)) ||
                 (record.capping_player && record.capping_player.toLowerCase().includes(searchTerm));
 
             return matchesType && matchesSearch;
@@ -335,7 +336,8 @@ export class MapsTable {
         medalPanelDiv.className = "medal-panel";
 
         // Add top 3 records
-        const mapRecords = this.recordsByMap[record.map_name] || [];
+        const key = `${record.map_name}::${record.map_author}`;
+        const mapRecords = this.recordsByMap[key] || [];
         const top3Records = mapRecords.slice(0, 3);
         const medalLabels = ["1st", "2nd", "3rd"];
         const medalColors = ["#FFD700", "#C0C0C0", "#CD7F32"]; // gold, silver, bronze
@@ -410,6 +412,11 @@ export class MapsTable {
         mapNameCell.appendChild(detailDiv);
         tr.appendChild(mapNameCell);
 
+        // Author cell
+        const authorCell = document.createElement('td');
+        authorCell.textContent = record.map_author || "Anon";
+        tr.appendChild(authorCell);
+
         // Add time cell
         const timeCell = document.createElement('td');
         timeCell.textContent = formatTime(record.record_time);
@@ -441,11 +448,13 @@ export class MapsTable {
         const difficultyCell = document.createElement('td');
         const metadata = this.mapMetadata[record.map_name] || {};
         difficultyCell.textContent = metadata.difficulty || "N/A";
+        difficultyCell.className = "difficulty-col";
         tr.appendChild(difficultyCell);
 
         // Add balls required cell
         const ballsReqCell = document.createElement('td');
         ballsReqCell.textContent = metadata.balls_req || "N/A";
+        ballsReqCell.className = "balls-col";
         tr.appendChild(ballsReqCell);
 
         this.mapsTableBody.appendChild(tr);

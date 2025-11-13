@@ -165,6 +165,17 @@ button:hover {
 
 #mapsTable {
   table-layout: fixed;
+  width: 100%;
+}
+
+#mapsTable th.difficulty-col,
+#mapsTable td.difficulty-col {
+  width: 10%;
+}
+
+#mapsTable th.balls-col,
+#mapsTable td.balls-col {
+  width: 10%;
 }
 
 #mapsTable td.map-name {
