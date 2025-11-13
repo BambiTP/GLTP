@@ -102,7 +102,7 @@ export class JumpsTable {
 
     setupUploadModal() {
         const modal = document.getElementById('uploadModal');
-        const uploadButton = document.getElementById('uploadWrButton');
+        const uploadButton = document.getElementById('jumpUploadWrButton');
         const cancelButton = document.getElementById('cancelUpload');
         const submitButton = document.getElementById('submitReplayUrl');
         const urlInput = document.getElementById('replayUrlInput');

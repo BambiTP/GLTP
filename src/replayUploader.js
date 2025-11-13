@@ -4,7 +4,10 @@ import { parseReplayFromReplayLink, parseReplayFromUUID} from './replayParser.js
 class ReplayUploader {
     constructor() {
         this.modal = document.getElementById('uploadModal');
-        this.uploadButton = document.getElementById('uploadWrButton');
+        this.uploadButtons = [
+            document.getElementById('uploadWrButton'),
+            document.getElementById('jumpUploadWrButton')
+        ].filter(Boolean); // ignore nulls
         this.cancelButton = document.getElementById('cancelUpload');
         this.submitButton = document.getElementById('submitReplayUrl');
         this.urlInput = document.getElementById('replayUrlInput');
@@ -16,9 +19,9 @@ class ReplayUploader {
     }
 
     setupEventListeners() {
-        // Show modal
-        this.uploadButton.addEventListener('click', () => {
-            this.showModal();
+        // Show modal from either button
+            this.uploadButtons.forEach(btn => {
+            btn.addEventListener('click', () => this.showModal());
         });
 
         // Cancel button
@@ -95,10 +98,10 @@ class ReplayUploader {
         this.urlInput.disabled = isSubmitting;
         
         if (isSubmitting) {
-            this.submitButton.textContent = 'Submitting...';
+            this.submitButton.textContent = 'Checking...';
             this.submitButton.classList.add('submitting');
         } else {
-            this.submitButton.textContent = 'Submit';
+            this.submitButton.textContent = 'Check';
             this.submitButton.classList.remove('submitting');
         }
     }
@@ -271,7 +274,7 @@ class ReplayUploader {
             if (this.resultsContainer) {
                 const successMessage = document.createElement('div');
                 successMessage.className = 'success-message';
-                successMessage.textContent = 'Replay submitted successfully!';
+                successMessage.textContent = "Replay checked successfully! If it's a new WR make sure to upload to the discord";
                 this.resultsContainer.insertBefore(successMessage, this.resultsContainer.firstChild);
                 
                 // Remove success message after a delay
