@@ -17,11 +17,17 @@
 
   <!-- Top bar for navigation -->
   <div class="top-bar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Site Logo" class="site-logo">
+      </a>
+    </div>
     <div class="nav">
       <a id="speedRecordsLink" class="active">Speed Records</a>
       <a id="jumpRecordsLink">Jump Records</a>
       <a id="leaderboardLink">Leaderboard</a>
       <a id="gltpLink">GLTP</a>
+      <a id="profileLink" href="player.html">Player Profile</a>
     </div>
   </div>
 
@@ -46,99 +52,103 @@
   </div>
 
   <!-- Container for side-by-side layout -->
-  <div id="mapsRecordsContainer">
-    <!-- Left: Maps Table -->
-    <div id="mapsTableContainer" class="table-container">
-    <div class="search-row">
-      <div class="search-left">
-        <input type="text" id="mapSearch" placeholder="Search maps..." class="search-input">
-        <button id="search-clear" class="search-clear" style="display: none;">×</button>
-        <select id="gravityFilter" class="filter-select">
-          <option value="">All Types</option>
-          <option value="grav">Gravity</option>
-          <option value="classic">Classic</option>
-          <option value="unbeaten">Unbeaten Maps</option>
-        </select>
-        <!-- You can add more elements here -->
-      </div>
-      <div class="search-right">
-        <button id="uploadWrButton" class="upload-button">Check Replay Data</button>
-      </div>
-    </div>
+  <div id="mapsRecordsContainer" class="records-container">
+    <div id="mapsTableContainer" class="table-wrapper">
+      <!-- Left: Maps Table -->
+      <div class="table-container">
+        <div class="search-row">
+          <div class="search-left">
+            <input type="text" id="mapSearch" placeholder="Search maps..." class="search-input">
+            <button id="search-clear" class="search-clear" style="display: none;">×</button>
+            <select id="gravityFilter" class="filter-select">
+              <option value="">All Types</option>
+              <option value="grav">Gravity</option>
+              <option value="classic">Classic</option>
+              <option value="unbeaten">Unbeaten Maps</option>
+            </select>
+            <!-- You can add more elements here -->
+          </div>
+          <div class="search-right">
+            <button id="uploadWrButton" class="upload-button">Check Replay Data</button>
+          </div>
+        </div>
 
-      <table class="table" id="mapsTable">
-        <colgroup>
-          <col style="width: 400px"> <!-- Map Name -->
-          <col>
-          <col>
-          <col>
-          <col>
-          <col>
-          <col>
-        </colgroup>
-        <thead>
-          <tr>
-            <th data-sort="map_name" data-type="string">Map Name</th>
-            <th data-sort="map_author" data-type="string">Map Author</th>
-            <th data-sort="record_time" data-type="numeric">Time Record</th>
-            <th data-sort="timestamp" data-type="numeric">Set</th>
-            <th data-sort="capping_player" data-type="string">Capping Player</th>
-            <th data-sort="difficulty" data-type="string">Difficulty</th>
-            <th data-sort="balls_req" data-type="numeric">Balls Required</th>
-          </tr>
-        </thead>
-        <tbody id="mapsTableBody">
-          <!-- Data rows will be inserted here -->
-        </tbody>
-      </table>
+          <table class="table" id="mapsTable">
+            <colgroup>
+              <col style="width: 400px"> <!-- Map Name -->
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th data-sort="map_name" data-type="string">Map Name</th>
+                <th data-sort="map_author" data-type="string">Map Author</th>
+                <th data-sort="record_time" data-type="numeric">Time Record</th>
+                <th data-sort="timestamp" data-type="numeric">Set</th>
+                <th data-sort="capping_player" data-type="string">Capping Player</th>
+                <th data-sort="difficulty" data-type="string">Difficulty</th>
+                <th data-sort="balls_req" data-type="numeric">Balls Required</th>
+              </tr>
+            </thead>
+            <tbody id="mapsTableBody">
+              <!-- Data rows will be inserted here -->
+            </tbody>
+          </table>
+      </div>
     </div>
   </div>
 
   <!-- Container for side-by-side layout -->
-  <div id="jumpsRecordsContainer">
+  <div id="jumpsRecordsContainer" class="records-container">
     <!-- Left: Maps Table -->
-    <div id="jumpsTableContainer" class="table-container">
-    <div class="search-row">
-      <div class="search-left">
-        <input type="text" id="jumpmapSearch" placeholder="Search maps..." class="search-input">
-        <button id="jump-search-clear" class="search-clear" style="display: none;">×</button>
-        <select id="jumpGravityFilter" class="filter-select">
-          <option value="grav">Gravity</option>
-        </select>
-        <!-- You can add more elements here -->
-      </div>
-      <div class="search-right">
-        <button id="jumpUploadWrButton" class="upload-button">Check Replay Data</button>
-      </div>
-    </div>
+    <div id="jumpsTableContainer" class="table-wrapper">
+      <div class="table-container">
+        <div class="search-row">
+          <div class="search-left">
+            <input type="text" id="jumpmapSearch" placeholder="Search maps..." class="search-input">
+            <button id="jump-search-clear" class="search-clear" style="display: none;">×</button>
+            <select id="jumpGravityFilter" class="filter-select">
+              <option value="grav">Gravity</option>
+            </select>
+            <!-- You can add more elements here -->
+          </div>
+          <div class="search-right">
+            <button id="jumpUploadWrButton" class="upload-button">Check Replay Data</button>
+          </div>
+        </div>
 
-      <table class="table" id="jumpsTable">
-        <colgroup>
-          <col style="width: 400px"> <!-- Map Name -->
-          <col>
-          <col>
-          <col>
-          <col>
-          <col>
-          <col>
-          <col>
-        </colgroup>
-        <thead>
-          <tr>
-            <th data-sort="map_name" data-type="string">Map Name</th>
-            <th data-sort="map_author" data-type="string">Map Author</th>
-            <th data-sort="total_jumps" data-type="numeric"># Jumps</th>
-            <th data-sort="record_time" data-type="numeric">Time</th>
-            <th data-sort="timestamp" data-type="numeric">Set</th>
-            <th data-sort="capping_player" data-type="string">Capping Player</th>
-            <th data-sort="difficulty" data-type="string">Difficulty</th>
-            <th data-sort="balls_req" data-type="numeric">Balls Required</th>
-          </tr>
-        </thead>
-        <tbody id="jumpTableBody">
-          <!-- Data rows will be inserted here -->
-        </tbody>
-      </table>
+        <table class="table" id="jumpsTable">
+          <colgroup>
+            <col style="width: 400px"> <!-- Map Name -->
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+          </colgroup>
+          <thead>
+            <tr>
+              <th data-sort="map_name" data-type="string">Map Name</th>
+              <th data-sort="map_author" data-type="string">Map Author</th>
+              <th data-sort="total_jumps" data-type="numeric"># Jumps</th>
+              <th data-sort="record_time" data-type="numeric">Time</th>
+              <th data-sort="timestamp" data-type="numeric">Set</th>
+              <th data-sort="capping_player" data-type="string">Capping Player</th>
+              <th data-sort="difficulty" data-type="string">Difficulty</th>
+              <th data-sort="balls_req" data-type="numeric">Balls Required</th>
+            </tr>
+          </thead>
+          <tbody id="jumpTableBody">
+            <!-- Data rows will be inserted here -->
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 

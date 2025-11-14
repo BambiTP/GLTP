@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Profile</title>
+  <!-- Reuse your existing styles -->
+  <link rel="stylesheet" href="/GLTP/style.css">
+  <link rel="stylesheet" href="/GLTP/css/replay.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+</head>
+<body>
+
+  <!-- Top bar for navigation (same as index.html) -->
+  <div class="top-bar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Site Logo" class="site-logo">
+      </a>
+    </div>
+    <div class="nav">
+      <a href="index.html" id="speedRecordsLink">Speed Records</a>
+      <a href="jumps.html" id="jumpRecordsLink">Jump Records</a>
+      <a href="leaderboard.html" id="leaderboardLink">Leaderboard</a>
+      <a href="gltp.html" id="gltpLink">GLTP</a>
+      <a href="player.html" id="profileLink" class="active">Player Profile</a>
+    </div>
+  </div>
+
+  <!-- Banner for Player Profile -->
+  <div id="playerBanner" class="info-banner">
+    <div class="banner-content-speed">
+      <span class="banner-icon-speed">👤</span>
+      <span class="banner-text-speed">
+        <strong>Player Profile:</strong> Search for a player and view their records.
+      </span>
+    </div>
+  </div>
+  
+
+<!-- Player Profile Page -->
+<div id="playerRecordsContainer">
+  <!-- Search Section -->
+  <div class="search-row">
+    <div class="search-left">
+      <input id="playerSearchInput" type="text" placeholder="Enter username or profile ID" class="search-input">
+      <button id="playerSearchClear" class="search-clear" style="display:none;">×</button>
+    </div>
+    <div class="search-right">
+      <button id="playerSearchButton" class="upload-button">Search</button>
+    </div>
+  </div>
+
+  <!-- Player Summary -->
+  <div id="playerSummary" class="table-container" style="display:none;"></div>
+
+  <!-- Runs Table -->
+    <div id="playerRunsContainer" class="records-container" style="display:none;">
+        <div class="table-wrapper">
+            <div class="table-container">
+                <h2 id="runsHeader" class="profileHeader">Speedruns</h2>
+                <table id="playerRunsTable" class="table">
+                    <thead>
+                        <tr>
+                        <th>Map</th>
+                        <th>Time</th>
+                        <th>Date</th>
+                        <th>Replay</th>
+                        </tr>
+                    </thead>
+                    <tbody id="playerRunsBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+  <!-- Completion Tracker -->
+    <div id="completionContainer" class="records-container" style="display:none;">
+        <div class="table-wrapper">
+            <div class="table-container">
+                <h2 id="completionHeader" class="profileHeader">Completion Tracker</h2>
+                <table id="completionTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>Map</th>
+                            <th>Completed</th>
+                            <th>Attempts</th>
+                            <th>Fastest Time</th>
+                            <th>Lowest Jumps</th>
+                            <th>Difficulty</th>
+                            <th>Balls Required</th>
+                        </tr>
+                    </thead>
+                    <tbody id="completionBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+  <!-- JS for player profile -->
+  <script type="module" src="player.js"></script>
+</body>
+</html>

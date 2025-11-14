@@ -14,11 +14,23 @@ body {
   padding: 10px 20px;
   color: #e0e0e0;
   display: flex;
-  justify-content: center !important;
+  justify-content: center !important; /* everything starts at the left */
+  padding: 0.5rem 1rem;
   align-items: center !important;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.logo {
+  position: absolute;
+  left: 1rem;                /* pin logo to far left */
+}
+
+.site-logo {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 /* Update banner */
@@ -108,38 +120,6 @@ body {
   font-weight: bold;
 }
 
-/* Container for side-by-side layout */
-#mapsRecordsContainer {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Left side (Maps Table) */
-#mapsTableContainer {
-  flex: 2;
-  overflow-x: auto;
-}
-
-/* Container for side-by-side layout */
-#jumpsRecordsContainer {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Left side (Maps Table) */
-#jumpsTableContainer {
-  flex: 2;
-  overflow-x: auto;
-}
-
 button {
   padding: 10px 16px;
   background-color: #1e90ff;
@@ -153,155 +133,6 @@ button {
 
 button:hover {
   background-color: #0078d7;
-}
-/* Table styles for Maps and Recent Records */
-.table-container table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #1f1f1f;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-}
-
-#mapsTable {
-  table-layout: fixed;
-  width: 100%;
-}
-
-#mapsTable th.difficulty-col,
-#mapsTable td.difficulty-col {
-  width: 10%;
-}
-
-#mapsTable th.balls-col,
-#mapsTable td.balls-col {
-  width: 10%;
-}
-
-#mapsTable td.map-name {
-  max-width: 600px;
-  white-space: normal;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-#mapsRecordsContainer table th,
-#mapsRecordsContainer table td {
-  font-size: 0.8rem;
-  padding: 4px 6px;
-  line-height: 1.1;
-  height: 20px;
-  border-bottom: 1px solid #444;
-  text-align: left;
-}
-
-#mapsRecordsContainer table th {
-  background-color: #2b2b2b;
-  font-weight: bold;
-}
-
-#mapsRecordsContainer table tr:hover {
-  background-color: #2a2a2a;
-}
-
-/* Hidden detail section for map row */
-.map-name {
-  cursor: pointer;
-  color: #1e90ff;
-  font-weight: bold;
-}
-
-#jumpsTable {
-  table-layout: fixed;
-}
-
-#jumpsTable td.map-name {
-  max-width: 600px;
-  white-space: normal;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-#jumpsRecordsContainer table th,
-#jumpsRecordsContainer table td {
-  font-size: 0.8rem;
-  padding: 4px 6px;
-  line-height: 1.1;
-  height: 20px;
-  border-bottom: 1px solid #444;
-  text-align: left;
-}
-
-#jumpsRecordsContainer table th {
-  background-color: #2b2b2b;
-  font-weight: bold;
-}
-
-#jumpsRecordsContainer table tr:hover {
-  background-color: #2a2a2a;
-}
-
-/* Hidden detail section for map row */
-.map-name {
-  cursor: pointer;
-  color: #1e90ff;
-  font-weight: bold;
-}
-
-.detail {
-  display: inline-block;
-  background-color: #1e1e1e;
-  border: 1px solid #333;
-  border-radius: 4px;
-  padding: 5px;
-  margin-top: 5px;
-  max-width: 400px;
-}
-
-/* Leaderboard page styles */
-#leaderboardPage {
-  display: none;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-#leaderboardContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.leaderboard-section {
-  flex: 1;
-  min-width: 250px;
-}
-
-.leaderboard-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #1f1f1f;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-}
-
-#leaderboardPage table th,
-#leaderboardPage table td {
-  font-size: 0.7rem;
-  padding: 3px 4px;
-  line-height: 1.1;
-  height: 20px;
-  border-bottom: 1px solid #444;
-  text-align: left;
-}
-
-#leaderboardPage table th {
-  background-color: #2b2b2b;
-  font-weight: bold;
-}
-
-#leaderboardPage table tr:hover {
-  background-color: #2a2a2a;
 }
 
 /* Checkbox styling */
@@ -322,57 +153,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-/* New styles for detail sections */
-.detail-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.left-detail {
-  border: 1px solid #333;
-  padding: 10px;
-  border-radius: 5px;
-  min-width: 200px;
-  background-color: #1e1e1e;
-}
-
-.medal-panel {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.medal-link {
-  text-decoration: none;
-}
-
-.medal-row {
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid;
-  margin-bottom: 5px;
-  background-color: #1e1e1e;
-}
-
-.medal-label {
-  font-weight: bold;
-  margin-right: 8px;
-}
-
-.medal-time {
-  padding: 2px 5px;
-  border-radius: 5px;
-}
-
-.capping-player-quote {
-  font-style: italic;
-  margin-top: 5px;
-  color: #888;
 }
 
 /* Responsive design */
@@ -606,25 +386,6 @@ button.upload-button:hover {
   opacity: 1;
 }
 
-/* Style table headings to match the new style */
-#mapsTable th {
-  background-color: #2b2b2b;
-  padding: 10px 12px;
-  font-weight: 500;
-  color: #e0e0e0;
-  text-align: left;
-  border-bottom: 1px solid #333;
-}
-
-#jumpsTable th {
-  background-color: #2b2b2b;
-  padding: 10px 12px;
-  font-weight: 500;
-  color: #e0e0e0;
-  text-align: left;
-  border-bottom: 1px solid #333;
-}
-
 /* Fix responsive behavior */
 @media (max-width: 768px) {
   .search-row {
@@ -833,3 +594,263 @@ button.upload-button:hover {
   color: white;
   font-weight: bold;
 }
+
+/* Shared layout container for all record pages */
+.records-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.table-wrapper {
+  flex: 2;
+  overflow-x: auto;
+}
+
+.table-container {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+/* Shared table styles */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  border-radius: 4px;
+  table-layout: fixed;
+}
+
+/* Shared cell styles */
+.table-container table th,
+.table-container table td {
+  font-size: 0.8rem;
+  padding: 4px 6px;
+  line-height: 1.1;
+  height: 20px;
+  border-bottom: 1px solid #444;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Shared header styles */
+.table-container table th {
+  background-color: #2b2b2b;
+  font-weight: bold;
+}
+
+/* Hover effect */
+.table-container table tr:hover {
+  background-color: #2a2a2a;
+}
+
+/* Optional: column widths for maps table */
+#mapsTable th.difficulty-col,
+#mapsTable td.difficulty-col,
+#mapsTable th.balls-col,
+#mapsTable td.balls-col {
+  width: 10%;
+}
+
+#mapsTable td.map-name,
+#jumpsTable td.map-name {
+  max-width: 600px;
+}
+
+#playerRunsContainer,
+#completionContainer {
+  padding: 0;
+}
+
+/* Hidden detail section for map row */
+.map-name {
+  cursor: pointer;
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+.detail {
+  display: inline-block;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 5px;
+  max-width: 400px;
+}
+
+/* Leaderboard page styles */
+#leaderboardPage {
+  display: none;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#leaderboardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.leaderboard-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+#leaderboardPage table th,
+#leaderboardPage table td {
+  font-size: 0.7rem;
+  padding: 3px 4px;
+  line-height: 1.1;
+  height: 20px;
+  border-bottom: 1px solid #444;
+  text-align: left;
+}
+
+#leaderboardPage table th {
+  background-color: #2b2b2b;
+  font-weight: bold;
+}
+
+#leaderboardPage table tr:hover {
+  background-color: #2a2a2a;
+}
+
+/* New styles for detail sections */
+.detail-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.left-detail {
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 200px;
+  background-color: #1e1e1e;
+}
+
+.medal-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.medal-link {
+  text-decoration: none;
+}
+
+.medal-row {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  margin-bottom: 5px;
+  background-color: #1e1e1e;
+}
+
+.medal-label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.medal-time {
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.capping-player-quote {
+  font-style: italic;
+  margin-top: 5px;
+  color: #888;
+}
+
+#playerSummary {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#playerSummary h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #e0e0e0;
+}
+
+#playerSummary p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+#playerSummary a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+#playerSummary a:hover {
+  text-decoration: underline;
+}
+
+.player-summary-box {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px 24px;
+  max-width: 600px;
+  margin: 0 auto 0px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.player-summary-box h2 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+  color: #e0e0e0;
+}
+
+.player-summary-box a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.player-summary-box a:hover {
+  text-decoration: underline;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.summary-grid span {
+  font-weight: bold;
+  color: #aaa;
+}
+
+.table-container h2 {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+}
+
