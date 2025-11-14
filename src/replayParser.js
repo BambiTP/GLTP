@@ -198,7 +198,7 @@ function getDetails(replay, maps) {
         const capsRaw = matchedMap.caps_to_win;
         capsToWin = capsRaw === "pups" ? Infinity : parseInt(capsRaw || "1", 10);
     }
-
+    let total_jumps = 0;
     // Look for the timestamp when the correct s-captures value is reached (equal to capsToWin)
     for (const [ts, type, data] of replay) {
         if (type !== 'p') continue;
@@ -214,6 +214,23 @@ function getDetails(replay, maps) {
             recordTime = ts - firstTimerTs;
             cappingUserName = cappingPlayer.name;
             cappingUserId = cappingPlayer.user_id;
+
+            if (recordTime !== null && cappingUserName) {
+                const capTimestamp = firstTimerTs + recordTime; // recordTime is already in ms
+
+                total_jumps = replay.reduce((count, r) => {
+                    const [ts, type, data] = r;
+                    if (
+                    ts <= capTimestamp &&
+                    type === "replayPlayerMessage" &&
+                    data?.type === "sound" &&
+                    data?.data?.s === "jump"
+                    ) {
+                    return count + 1;
+                    }
+                    return count;
+                }, 0);
+            }
 
             // Capture player chat (if any)
             const playerChats = replay.filter(r => r[1] === 'chat' && r[2].from === playerData.id);
@@ -238,7 +255,8 @@ function getDetails(replay, maps) {
         capping_player_quote: cappingPlayerQuote,
         caps_to_win: capsToWin,
         allow_blue_caps: matchedMap ? matchedMap.allow_blue_caps : false,
-        effective_map_id: mapId
+        effective_map_id: mapId,
+        total_jumps: total_jumps
     };
 }
 

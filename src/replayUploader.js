@@ -1,5 +1,22 @@
 import { parseReplayFromReplayLink, parseReplayFromUUID} from './replayParser.js';
 
+function calculateTotalJumps(replay, capTime) {
+    if (!Array.isArray(replay)) return 0;
+
+    return replay.reduce((count, r) => {
+        const [timestamp, type, data] = r;
+        if (
+        type === "replayPlayerMessage" &&
+        data?.type === "sound" &&
+        data?.data?.s === "jump" &&
+        timestamp <= capTime
+        ) {
+        return count + 1;
+        }
+        return count;
+    }, 0);
+}
+
 // creates the UI for the upload WR replay button, and 
 class ReplayUploader {
     constructor() {
