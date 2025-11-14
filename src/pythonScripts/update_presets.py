@@ -26,6 +26,7 @@ def get_map_metadata():
 
     # Fetch the data
     response = requests.get(url, params=params)
+    response.encoding = "utf-8"  # ensure correct decoding
     csv_file = io.StringIO(response.text, newline="")
 
     # Read the CSV
@@ -34,21 +35,28 @@ def get_map_metadata():
     # Process the data
     map_metadata = {}
     for row in reader:
-        map_name = row["Map / Player"]
-        # Clean the map name (remove " by Author" part)
-        map_name = map_name.rsplit(" by ", 1)[0] if " by " in map_name else map_name
+        map_full = row["Map / Player"]
+        if map_full == "":
+            break
+
+        if " by " in map_full:
+            map_name, map_author = map_full.rsplit(" by ", 1)
+        else:
+            map_name, map_author = map_full, None
 
         map_metadata[map_name] = {
+            "author": map_author,
             "difficulty": row["Final Rating"],
             "balls_req": row["Min\nBalls \nRec"],
             "preset": row["Group Preset"],
+            "map_id": row["Map ID"],
             "categories": split_categories(row["Category"]),
             "grav_or_classic": row["Grav or\nClassic"]
         }
 
     # Save to a JSON file
-    with open("map_metadata.json", "w") as f:
-        json.dump(map_metadata, f, indent=4)
+    with open("map_metadata.json", "w", encoding="utf-8") as f:
+        json.dump(map_metadata, f, ensure_ascii=False, indent=4)
 
     print(f"Saved metadata for {len(map_metadata)} maps to map_metadata.json")
 

@@ -97,6 +97,7 @@ def get_maps():
             'gid': '1775606307',
         }
     )
+    response.encoding = "utf-8"  # ensure correct decoding
     csv_file = io.StringIO(response.text, newline="")
     map_data = [
         {
@@ -179,8 +180,8 @@ def make_map_json(output_file="presets.json"):
         clean_map_name(m["name"]): m["preset"]
         for m in maps
     }
-    with open(output_file, "w") as f:
-        json.dump(output, f, indent=4)
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=4)
     print(f"Saved {len(output)} map presets to {output_file}")
 
 def remap_ids(replay_data, id_offset):

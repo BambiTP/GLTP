@@ -35,23 +35,51 @@ export class MapsTable {
         const grav_or_classic = document.getElementById('gravityFilter').value.toLowerCase();
         const searchTerm = document.getElementById('mapSearch').value.toLowerCase().trim();
 
-        const filtered = this.allRecords.filter(record => {
-            const metadata = this.mapMetadata[record.map_name] || {};
+        if (grav_or_classic === 'unbeaten') {
+            // Build a set of beaten composite keys from records
+            const beaten = new Set(
+            this.allRecords.map(r => `${r.map_name.trim()}::${r.map_author.trim()}`)
+            );
 
-            const mapType = (metadata.grav_or_classic || "").toLowerCase();
-            const matchesType = grav_or_classic === '' || mapType === grav_or_classic;
+            // Convert metadata object into array
+            const allMaps = Object.entries(this.mapMetadata).map(([name, meta]) => ({
+            name,
+            ...meta
+            }));
 
+            // Filter unbeaten maps
+            const unbeaten = allMaps.filter(m => {
+            const key = `${m.name.trim()}::${(m.author || '').trim()}`;
+            const mapType = (m.grav_or_classic || "").toLowerCase();
+            const matchesType = grav_or_classic === 'unbeaten' || mapType === grav_or_classic;
             const matchesSearch =
+                m.name.toLowerCase().includes(searchTerm) ||
+                (m.author && m.author.toLowerCase().includes(searchTerm));
+
+            return !beaten.has(key) && matchesType && matchesSearch;
+            });
+
+            // Render unbeaten maps with placeholders
+            this.recordsArray = unbeaten;
+            this.mapsTableBody.innerHTML = "";
+            unbeaten.forEach(record => this.renderUnbeatenRow(record));
+        } else {
+            // Existing beaten maps filter
+            const filtered = this.allRecords.filter(record => {
+                const metadata = this.mapMetadata[record.map_name] || {};
+                const mapType = (metadata.grav_or_classic || "").toLowerCase();
+                const matchesType = grav_or_classic === '' || mapType === grav_or_classic;
+
+                const matchesSearch =
                 record.map_name.toLowerCase().includes(searchTerm) ||
                 (record.map_author && record.map_author.toLowerCase().includes(searchTerm)) ||
                 (record.capping_player && record.capping_player.toLowerCase().includes(searchTerm));
-
-            return matchesType && matchesSearch;
-        });
-
-        this.recordsArray = filtered;
-        this.mapsTableBody.innerHTML = "";
-        filtered.forEach(record => this.renderRow(record));
+                return matchesType && matchesSearch;
+            });
+            this.recordsArray = filtered;
+            this.mapsTableBody.innerHTML = "";
+            filtered.forEach(record => this.renderRow(record));
+        }
     }
 
     setupSorting() {
@@ -454,6 +482,146 @@ export class MapsTable {
         // Add balls required cell
         const ballsReqCell = document.createElement('td');
         ballsReqCell.textContent = metadata.balls_req || "N/A";
+        ballsReqCell.className = "balls-col";
+        tr.appendChild(ballsReqCell);
+
+        this.mapsTableBody.appendChild(tr);
+    }
+
+    renderUnbeatenRow(map) {
+        const tr = document.createElement('tr');
+        tr.className = "map-row unbeaten";
+
+        // Map Name cell with expandable detail
+        const mapNameCell = document.createElement('td');
+        mapNameCell.className = "map-name";
+        mapNameCell.textContent = map.name;
+
+        const detailDiv = document.createElement('div');
+        detailDiv.className = "detail";
+        detailDiv.style.display = "none";
+
+        const leftDetailDiv = document.createElement('div');
+        leftDetailDiv.className = "left-detail";
+
+        // Preset + Map ID info
+        const presetValue = this.presets[map.name] || map.preset || "N/A";
+        const infoDiv = document.createElement('div');
+        infoDiv.textContent = "Preset: " + presetValue + " | Map ID: " + (map.map_id || "—");
+        leftDetailDiv.appendChild(infoDiv);
+
+        // Copy Preset button
+        const copyButton = document.createElement('button');
+        copyButton.textContent = "Copy Preset";
+        copyButton.classList.add("copy-button");
+        copyButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            if (presetValue !== "N/A") {
+            navigator.clipboard.writeText(presetValue)
+                .then(() => {
+                copyButton.textContent = "Copied!";
+                copyButton.classList.add("copied");
+                setTimeout(() => {
+                    copyButton.textContent = "Copy Preset";
+                    copyButton.classList.remove("copied");
+                }, 2000);
+                })
+                .catch(err => console.error("Error copying preset:", err));
+            }
+        });
+        leftDetailDiv.appendChild(copyButton);
+
+        // Launch Group button
+        const launchButton = document.createElement('button');
+        launchButton.textContent = "Launch Group";
+        launchButton.classList.add("copy-button");
+        launchButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            if (presetValue !== "N/A") {
+            launchTagproGroup(presetValue);
+            }
+        });
+        leftDetailDiv.appendChild(launchButton);
+
+        // Map preview placeholder
+        if (map.map_id) {
+            const mapPreview = document.createElement('div');
+            mapPreview.className = 'map-preview';
+            mapPreview.innerHTML = '<div class="loading-spinner">Click to load preview</div>';
+            leftDetailDiv.appendChild(mapPreview);
+        }
+
+        // Wrap detail
+        const detailWrapper = document.createElement('div');
+        detailWrapper.className = "detail-wrapper";
+        detailWrapper.appendChild(leftDetailDiv);
+        detailDiv.appendChild(detailWrapper);
+
+        // Toggle detail on click
+        const mapsTableInstance = this;
+        mapNameCell.addEventListener('click', function () {
+            const isExpanding = detailDiv.style.display === "none";
+            detailDiv.style.display = isExpanding ? "block" : "none";
+
+            if (isExpanding && map.map_id) {
+            const mapPreview = leftDetailDiv.querySelector('.map-preview');
+            if (mapPreview && mapPreview.querySelector('.loading-spinner')) {
+                mapPreview.innerHTML = '<div class="loading-spinner">Loading...</div>';
+
+                const img = document.createElement('img');
+                const imageUrl = `https://fortunatemaps.herokuapp.com/preview/${map.map_id}`;
+                img.src = imageUrl;
+                img.alt = `Preview of ${map.name}`;
+                img.style.cursor = 'pointer';
+
+                img.onload = function() {
+                mapPreview.innerHTML = '';
+                mapPreview.appendChild(img);
+                };
+
+                img.onerror = function() {
+                mapPreview.innerHTML = '<div class="error">Preview failed</div>';
+                };
+
+                img.onclick = function() {
+                mapsTableInstance.showLargePreview(map.name, imageUrl);
+                };
+            }
+            }
+        });
+
+        mapNameCell.appendChild(detailDiv);
+        tr.appendChild(mapNameCell);
+
+        // Author cell
+        const authorCell = document.createElement('td');
+        authorCell.textContent = map.author || "Anon";
+        tr.appendChild(authorCell);
+
+        // Time cell (no WR yet)
+        const timeCell = document.createElement('td');
+        timeCell.textContent = "No WR yet";
+        tr.appendChild(timeCell);
+
+        // Relative time cell
+        const relativeTimeCell = document.createElement('td');
+        relativeTimeCell.textContent = "—";
+        tr.appendChild(relativeTimeCell);
+
+        // Capping player cell
+        const capCell = document.createElement('td');
+        capCell.textContent = "—";
+        tr.appendChild(capCell);
+
+        // Difficulty cell
+        const difficultyCell = document.createElement('td');
+        difficultyCell.textContent = map.difficulty || "N/A";
+        difficultyCell.className = "difficulty-col";
+        tr.appendChild(difficultyCell);
+
+        // Balls required cell
+        const ballsReqCell = document.createElement('td');
+        ballsReqCell.textContent = map.balls_req || "N/A";
         ballsReqCell.className = "balls-col";
         tr.appendChild(ballsReqCell);
 

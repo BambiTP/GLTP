@@ -1,8 +1,10 @@
 {
     "The Impossible (Portal Edition) 1.0.2": {
+        "author": "Jean Valjean",
         "difficulty": "2.0",
         "balls_req": "1",
         "preset": "gZMefGzCggtaiaaaJraaksaaamaaaE",
+        "map_id": "87856",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -10,9 +12,11 @@
         "grav_or_classic": "Grav"
     },
     "Gem's Buddy System (v1) Official (FWO)": {
+        "author": "Gem",
         "difficulty": "7.7",
         "balls_req": "4",
         "preset": "gZMefGzDggtaiaaaJraaksaaamabWE",
+        "map_id": "87857",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -20,9 +24,11 @@
         "grav_or_classic": "Grav"
     },
     "Uptown Funk (2 Jumps) (Instant Bombs)": {
+        "author": "Carey Price",
         "difficulty": "4.5",
         "balls_req": "1",
         "preset": "gZMefGzEggtaiaaaJraaksaaamaaaE",
+        "map_id": "87858",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -31,9 +37,11 @@
         "grav_or_classic": "Grav"
     },
     "A Castle on a Cloud 1.0.8": {
+        "author": "Jean Valjean",
         "difficulty": "2.3",
         "balls_req": "2",
         "preset": "gZMefGzFggtaiaaaJraaksaaamaaaE",
+        "map_id": "87859",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -42,9 +50,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy Pipe System Version 1.0.1 (Official)": {
+        "author": "Jean Valjean",
         "difficulty": "5.9",
         "balls_req": "2",
         "preset": "gZMefGzIggtaiaaaJraaksaaamaaaE",
+        "map_id": "87862",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -52,9 +62,11 @@
         "grav_or_classic": "Grav"
     },
     "Quick Race (1v1)": {
+        "author": "Carey Price",
         "difficulty": "3.7",
         "balls_req": "1",
         "preset": "gZMefGzKggtaiaaaJraaksaaamaaaE",
+        "map_id": "87864",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -63,9 +75,11 @@
         "grav_or_classic": "Grav"
     },
     "A-Maze-Ing (Official)": {
+        "author": "Carey Price",
         "difficulty": "3.9",
         "balls_req": "1",
         "preset": "gZMefGzLggtaiaaaJraaksaaamaaaE",
+        "map_id": "87865",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -73,9 +87,11 @@
         "grav_or_classic": "Grav"
     },
     "Mini Test (Official FWO)": {
+        "author": "Danny & FWO",
         "difficulty": "4.9",
         "balls_req": "1",
         "preset": "gZMefGzMggtaiaaaJraaksaaamaaaE",
+        "map_id": "87866",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -83,9 +99,11 @@
         "grav_or_classic": "Grav"
     },
     "The Challenge of Secrets (Official FWO)": {
+        "author": "Danny & FWO",
         "difficulty": "2.8",
         "balls_req": "1",
         "preset": "gZMefGzNggtaiaaaJraaksaaamaaaE",
+        "map_id": "87867",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -93,9 +111,11 @@
         "grav_or_classic": "Grav"
     },
     "Cancer[buddy system] (Official)": {
+        "author": "potat!!",
         "difficulty": "3.7",
         "balls_req": "2",
         "preset": "gZMefGAnggtaiaaaJraaksaaamaaaE",
+        "map_id": "87893",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -103,9 +123,11 @@
         "grav_or_classic": "Grav"
     },
     "AUSSIE Teambuilding 1 v1.3 (Official FWO)": {
+        "author": "leddy",
         "difficulty": "2.5",
         "balls_req": "3",
         "preset": "gZMefEsnggtaiaaaJraaksaaaE",
+        "map_id": "82069",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -113,9 +135,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy Well Test (Official FWO)": {
+        "author": "bad",
         "difficulty": "8.0",
         "balls_req": "3",
         "preset": "gZMefFKMggtaiaaaJraaksaaamaaaE",
+        "map_id": "85734",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -123,9 +147,11 @@
         "grav_or_classic": "Grav"
     },
     "PacMan with Gravity (Easier) (Official FWO)": {
+        "author": "ImNoSomeBall",
         "difficulty": "2.3",
         "balls_req": "1",
         "preset": "gZMefEsjggtaiaaaJraaksaaamaaaE",
+        "map_id": "82065",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -133,9 +159,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy System 11 (TM1 Version) 9bob9": {
+        "author": "Team 1",
         "difficulty": "3.6",
         "balls_req": "2",
         "preset": "gZMefErxggtaiaaaJraaksaaamaaaE",
+        "map_id": "82027",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -143,9 +171,11 @@
         "grav_or_classic": "Grav"
     },
     "Trust Fall 2! (Official FWO)": {
+        "author": "Carey Price",
         "difficulty": "3.4",
         "balls_req": "1",
         "preset": "gZMefGRbggtaiaaaJraaksaaamaaaE",
+        "map_id": "88765",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -153,9 +183,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy System 4 (TM1 version) 9bob9": {
+        "author": "Team 1",
         "difficulty": "2.2",
         "balls_req": "2",
         "preset": "gZMefrJJggtaiaaaJraaksaaamaaaunqqjbE",
+        "map_id": "47823",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -163,9 +195,11 @@
         "grav_or_classic": "Grav"
     },
     "Trust Fall 3: The Return of Trust Fall (Official)": {
+        "author": "Carey Price",
         "difficulty": "4.1",
         "balls_req": "1",
         "preset": "gZMefErCggtaiaaaJraaksaaamaaaE",
+        "map_id": "82032",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -173,9 +207,11 @@
         "grav_or_classic": "Grav"
     },
     "Trust Fall (3 Person Buddy) (Official)": {
+        "author": "Carey Price",
         "difficulty": "3.3",
         "balls_req": "3",
         "preset": "gZMefErvggtaiaaaJraaksaaamaaaE",
+        "map_id": "82025",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -183,9 +219,11 @@
         "grav_or_classic": "Grav"
     },
     "Jasmine 2023": {
+        "author": "Bumballbee & Inspire",
         "difficulty": "8.5",
         "balls_req": "2",
         "preset": "gZMefDVOggtaiaaaJraaksaaamaaaE",
+        "map_id": "80900",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -193,9 +231,11 @@
         "grav_or_classic": "Grav"
     },
     "Jasmine 2023 (Solo)": {
+        "author": "Bumballbee & Inspire",
         "difficulty": "8.2",
         "balls_req": "1",
         "preset": "gZMefDVQggtaiaaaJraaksaaamaaaE",
+        "map_id": "80902",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -203,9 +243,11 @@
         "grav_or_classic": "Grav"
     },
     "Hall of Ball (Official FWO)": {
+        "author": "Jean Valjean & FWO",
         "difficulty": "4.8",
         "balls_req": "1",
         "preset": "gZMefEsqggtaiaaaJraaksaaamaaaE",
+        "map_id": "82072",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -213,9 +255,11 @@
         "grav_or_classic": "Grav"
     },
     "Tower Race Down 1.0.3 (Official FWO)": {
+        "author": "Jean Valjean & FWO",
         "difficulty": "6.4",
         "balls_req": "1",
         "preset": "gZMefEssggtaiaaaJraaksaaamaaaE",
+        "map_id": "82074",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -224,9 +268,11 @@
         "grav_or_classic": "Grav"
     },
     "Oh Man, Oh Boy (Official FWO)": {
+        "author": "Carey Price & FWO",
         "difficulty": "7.8",
         "balls_req": "1",
         "preset": "gZMefEtgggtaiaaaJraaksaaamaaapfE",
+        "map_id": "82114",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -235,9 +281,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy Race (Official FWO v2)": {
+        "author": "HeinousAnus & FWO",
         "difficulty": "1.9",
         "balls_req": "1",
         "preset": "gZMefEAkggtaiaaaJraaksaaamaaaE",
+        "map_id": "82482",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -246,9 +294,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy System Complete with perma portals": {
+        "author": "Delphinus:",
         "difficulty": "2.7",
         "balls_req": "4",
         "preset": "gZMefvAutaiaaaJyaraaksaaamacUE",
+        "map_id": "58156",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -256,9 +306,11 @@
         "grav_or_classic": "Classic"
     },
     "Gravity Buddy Guy V.2.6.0 (Official FWO v2)": {
+        "author": "Carey Price & FWO",
         "difficulty": "9.1",
         "balls_req": "6",
         "preset": "gZMefEviggtaiaaaJraaksaaaE",
+        "map_id": "82220",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -266,9 +318,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy (Official FWO)": {
+        "author": "SatonaBanana & ez buddy & FWO",
         "difficulty": "5.0",
         "balls_req": "3",
         "preset": "gZMefEziggtaiaaaJraakmaaaE",
+        "map_id": "82428",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -276,9 +330,11 @@
         "grav_or_classic": "Grav"
     },
     "Super Smash Buddy (testing delete)": {
+        "author": "Danny",
         "difficulty": "TBD",
         "balls_req": "5",
         "preset": "gZMefGkhggtaiaaaJraaksaaamabWE",
+        "map_id": "87055",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -286,9 +342,11 @@
         "grav_or_classic": "Grav"
     },
     "2 Person Buddy' (Official FWO)": {
+        "author": "Splittin' & FWO",
         "difficulty": "1.2",
         "balls_req": "2",
         "preset": "gZMefEtbggtaiaaaJraaksaaamaaaE",
+        "map_id": "82109",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -296,9 +354,11 @@
         "grav_or_classic": "Grav"
     },
     "Tower Race Down 3 (Official FWO)": {
+        "author": "Jean Valjean & FWO",
         "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefEsSggtaiaaaJraaksaaamaaaE",
+        "map_id": "82100",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -307,9 +367,11 @@
         "grav_or_classic": "Grav"
     },
     "Tower Race Down 2 (Official FWO)": {
+        "author": "Jean Valjean",
         "difficulty": "7.1",
         "balls_req": "2",
         "preset": "gZMefGjKggtaiaaaJraaksaaamaaaE",
+        "map_id": "87032",
         "categories": [
             "Buddy System",
             "Oneshot",
@@ -319,9 +381,11 @@
         "grav_or_classic": "Grav"
     },
     "The Impossible Map (Official FWO)": {
+        "author": "Danny & FWO",
         "difficulty": "7.2",
         "balls_req": "1",
         "preset": "gZMefEtfggtaiaaaJraaksaaamaaauaaajTE",
+        "map_id": "82113",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -329,9 +393,11 @@
         "grav_or_classic": "Grav"
     },
     "Celestial Tether (Buddy System Grav, Boost/Bomb instant)": {
+        "author": "DAD.",
         "difficulty": "6.5",
         "balls_req": "2",
         "preset": "gZMefFLwggtaiaaaJraaksaaamaaaE",
+        "map_id": "85770",
         "categories": [
             "Buddy",
             "AnyGate",
@@ -340,9 +406,11 @@
         "grav_or_classic": "Grav"
     },
     "Orbit Euphoria (Buddy System Grav, Boost/Bomb instant) (official version)": {
+        "author": "DAD & Inspire",
         "difficulty": "8.0",
         "balls_req": "3",
         "preset": "gZMefFLxggtaiaaaJraaksaaamaaaE",
+        "map_id": "85771",
         "categories": [
             "Buddy",
             "AnyGate"
@@ -350,9 +418,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy System 1 (TM1 Version) 9bob9 (Official FWO)": {
+        "author": "Team 1 & FWO",
         "difficulty": "2.9",
         "balls_req": "3",
         "preset": "gZMefEzeggtaiaaaJraaksaaamaaYE",
+        "map_id": "82424",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -360,9 +430,11 @@
         "grav_or_classic": "Grav"
     },
     "The World's Hardest Map (Official FWO V2)": {
+        "author": "Danny & FWO",
         "difficulty": "5.8",
         "balls_req": "1",
         "preset": "gZMefEuMggtaiaaaJraaksaaamaaYE",
+        "map_id": "82198",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -370,9 +442,11 @@
         "grav_or_classic": "Grav"
     },
     "Super Buddy (Official FWO v2)": {
+        "author": "Danny & FWO",
         "difficulty": "5.2",
         "balls_req": "1",
         "preset": "gZMefEDDggtaiaaaJraaksaaaE",
+        "map_id": "82657",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -380,9 +454,11 @@
         "grav_or_classic": "Grav"
     },
     "Daily Spike Fall 1.0.1 Final (Official FWO)": {
+        "author": "Jean Valjean & FWO",
         "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefEtsggtaiaaaJraaksaaamaaaE",
+        "map_id": "82126",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -390,9 +466,11 @@
         "grav_or_classic": "Grav"
     },
     "Jump! - Van Halen (5 Jump) (Official FWO)": {
+        "author": "Carey Price & FWO",
         "difficulty": "6.9",
         "balls_req": "2",
         "preset": "gZMefHfqggtaiaaaJraaksaaamaaapfE",
+        "map_id": "89508",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -401,9 +479,11 @@
         "grav_or_classic": "Grav"
     },
     "Wacky Races!": {
+        "author": "Carey Price",
         "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefEtWggtuiaaaJyaraaksaaamabWE",
+        "map_id": "82156",
         "categories": [
             "Individual",
             "Race",
@@ -412,9 +492,11 @@
         "grav_or_classic": "Grav"
     },
     "Zoom (Gravity Race)": {
+        "author": "9bob9",
         "difficulty": "1.0",
         "balls_req": "1",
         "preset": "gZMefhTeggtuiaaaJyaraaksaaamnqqE",
+        "map_id": "21272",
         "categories": [
             "Individual",
             "Race",
@@ -423,9 +505,11 @@
         "grav_or_classic": "Grav"
     },
     "Ski Cross": {
+        "author": "Jungle Spice & Pingu",
         "difficulty": "1.0",
         "balls_req": "1",
         "preset": "gZMefEuxggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "82183",
         "categories": [
             "Individual",
             "Race",
@@ -434,16 +518,20 @@
         "grav_or_classic": "Grav"
     },
     "Team Race (Official FWO)": {
+        "author": "9bob9 & FWO",
         "difficulty": "TBD",
         "balls_req": "?",
         "preset": "",
+        "map_id": "82158",
         "categories": [],
         "grav_or_classic": "Grav"
     },
     "I'm Back (1v1 Race)!": {
+        "author": "Carey Price",
         "difficulty": "4.9",
         "balls_req": "1",
         "preset": "gZMefGJqggtaiaaaJraaksaaamaaaE",
+        "map_id": "88364",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -452,9 +540,11 @@
         "grav_or_classic": "Grav"
     },
     "GET DOWN (gravity)": {
+        "author": "Jak_app",
         "difficulty": "1.2",
         "balls_req": "1",
         "preset": "gZMefECbggtuiaaaJyaraaksaaamabWE",
+        "map_id": "82577",
         "categories": [
             "Individual",
             "Race",
@@ -463,9 +553,11 @@
         "grav_or_classic": "Grav"
     },
     "Insane Gravity Challenge (Official FWO)": {
+        "author": "MattofMally & FWO",
         "difficulty": "3.0",
         "balls_req": "1",
         "preset": "gZMefEtqggtaiaaaJraaksaaamaaaE",
+        "map_id": "82124",
         "categories": [
             "Solo",
             "Tower",
@@ -474,9 +566,11 @@
         "grav_or_classic": "Grav"
     },
     "Up And Down (Official FWO)": {
+        "author": "Ball-E & FWO",
         "difficulty": "1.4",
         "balls_req": "1",
         "preset": "gZMefEuuggtaiaaaJraaksaaamaaaE",
+        "map_id": "82180",
         "categories": [
             "Solo",
             "Tower",
@@ -485,9 +579,11 @@
         "grav_or_classic": "Grav"
     },
     "Epic Mode (TM1 Version) 9bob9 (Official FWO)": {
+        "author": "Team1 & FWO & 9bob9",
         "difficulty": "8.9",
         "balls_req": "2",
         "preset": "gZMefFIeggtaiaaaJraaksaaamaaYE",
+        "map_id": "85596",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -495,9 +591,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity Race 4 (Official FWO)": {
+        "author": "SportManiac",
         "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefECaggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "82576",
         "categories": [
             "Individual",
             "Race",
@@ -506,9 +604,11 @@
         "grav_or_classic": "Grav"
     },
     "Dragon'sCove[BuddySystem] (Official FWO)": {
+        "author": "DragonBeast & FWO",
         "difficulty": "7.6",
         "balls_req": "3",
         "preset": "gZMefExbggtaiaaaJraaksaaamaaaE",
+        "map_id": "82317",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -516,9 +616,11 @@
         "grav_or_classic": "Grav"
     },
     "New Gravity Buddy (Official FWO)": {
+        "author": "Canvas & FWO",
         "difficulty": "3.3",
         "balls_req": "2",
         "preset": "gZMefHfsggtaiaaaJraaksaaamaaaE",
+        "map_id": "89510",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -526,9 +628,11 @@
         "grav_or_classic": "Grav"
     },
     "Octopus [Gravity Buddy] (Official FWO)": {
+        "author": "Canvas & FWO",
         "difficulty": "3.7",
         "balls_req": "3",
         "preset": "gZMefExNggtaiaaaJraaksaaamaaYE",
+        "map_id": "82355",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -536,9 +640,11 @@
         "grav_or_classic": "Grav"
     },
     "FlappyBirdBuddyGrav": {
+        "author": "DragonBeast",
         "difficulty": "4.1",
         "balls_req": "3",
         "preset": "gZMefIDqggtaiaaaJraaksaaamaaaE",
+        "map_id": "93460",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -546,9 +652,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity Buddy System [FIXED]": {
+        "author": "bowtie and DYD",
         "difficulty": "3.0",
         "balls_req": "2",
         "preset": "gZMefiCBggtaiaaaJraaksaaamaaaE",
+        "map_id": "23115",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -556,9 +664,11 @@
         "grav_or_classic": "Grav"
     },
     "Solo Grav Bottle": {
+        "author": "Gloopus",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefrwuggtaiaaaJraaksaaamaaaE",
+        "map_id": "47132",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -566,9 +676,11 @@
         "grav_or_classic": "Grav"
     },
     "Mars Climb": {
+        "author": "Ball-E",
         "difficulty": "3.1",
         "balls_req": "1",
         "preset": "gZMefGdsggtuiaaaJyaraaksaaamabWE",
+        "map_id": "86702",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -577,9 +689,11 @@
         "grav_or_classic": "Grav"
     },
     "Mars Climb Part II": {
+        "author": "Ball-E",
         "difficulty": "2.9",
         "balls_req": "1",
         "preset": "gZMefGdtggtuiaaaJyaraaksaaamabWE",
+        "map_id": "86703",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -588,9 +702,11 @@
         "grav_or_classic": "Grav"
     },
     "Mars Climb 2": {
+        "author": "9bob9",
         "difficulty": "3.2",
         "balls_req": "1",
         "preset": "gZMefGduggtuiaaaJyaraaksaaamabWE",
+        "map_id": "86704",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -599,9 +715,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity Challenge": {
+        "author": "QX and Fronj",
         "difficulty": "3.8",
         "balls_req": "1",
         "preset": "gZMefrrxggtaiaaaJraaksaaamaaaE",
+        "map_id": "46875",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -609,9 +727,11 @@
         "grav_or_classic": "Grav"
     },
     "Mars Climb 4": {
+        "author": "DragonBeast",
         "difficulty": "6.1",
         "balls_req": "1",
         "preset": "gZMefGdvggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "86705",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -620,9 +740,11 @@
         "grav_or_classic": "Grav"
     },
     "You Need Two (Official FWO)": {
+        "author": "Danny",
         "difficulty": "2.2",
         "balls_req": "2",
         "preset": "gZMefEwlggtaiaaaJraaksaaamaaYE",
+        "map_id": "82275",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -630,9 +752,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy System 3 Final Version (Official FWO)": {
+        "author": "9bob9 & FWO",
         "difficulty": "2.4",
         "balls_req": "2",
         "preset": "gZMefEwYggtaiaaaJraaksaaamacUE",
+        "map_id": "82314",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -640,9 +764,11 @@
         "grav_or_classic": "Grav"
     },
     "Mars Climb Part 3": {
+        "author": "Ball-E",
         "difficulty": "3.5",
         "balls_req": "1",
         "preset": "gZMefGdwggtuiaaaJyaraaksaaamaaYE",
+        "map_id": "86706",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -651,9 +777,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy system 9 (TM1 Version) 9bob9 (Official FWO)": {
+        "author": "Team 1 & FWO",
         "difficulty": "3.7",
         "balls_req": "3",
         "preset": "gZMefEwNggtaiaaaJraaksaaamaaaE",
+        "map_id": "82303",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -661,9 +789,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy system 5 w/ permagates": {
+        "author": "ez gravity",
         "difficulty": "3.4",
         "balls_req": "3",
         "preset": "gZMefqFZggtaiaaaJraaksaaaE",
+        "map_id": "44927",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -671,9 +801,11 @@
         "grav_or_classic": "Grav"
     },
     "Metroid [Gravity Buddy] (Official FWO)": {
+        "author": "Canvas",
         "difficulty": "5.4",
         "balls_req": "3",
         "preset": "gZMefGltggtaiaaaJraaksaaamaaaE",
+        "map_id": "87119",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -681,9 +813,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy System 8 (TM1 Version) 9bob9": {
+        "author": "Team 1",
         "difficulty": "3.1",
         "balls_req": "3",
         "preset": "gZMefrKTggtaiaaaJraaksaaaE",
+        "map_id": "47885",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -691,9 +825,11 @@
         "grav_or_classic": "Grav"
     },
     "The Worlds Hardest Map 2 (Official FWO)": {
+        "author": "Danny & FWO",
         "difficulty": "6.3",
         "balls_req": "1",
         "preset": "gZMefExHggtaiaaaJraaksaaamaaaE",
+        "map_id": "82349",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -701,9 +837,11 @@
         "grav_or_classic": "Grav"
     },
     "Climb (Official FWO)": {
+        "author": "Lucky 24 & FWO",
         "difficulty": "1.4",
         "balls_req": "1",
         "preset": "gZMefEwhggtaiaaaJraaksaaamaaaE",
+        "map_id": "82271",
         "categories": [
             "Solo",
             "Tower",
@@ -712,9 +850,11 @@
         "grav_or_classic": "Grav"
     },
     "Test climb": {
+        "author": "Tagnoob.",
         "difficulty": "2.0",
         "balls_req": "1",
         "preset": "gZMefnwLggtaiaaaJraaksaaamaaaE",
+        "map_id": "36333",
         "categories": [
             "Solo",
             "Tower",
@@ -723,9 +863,11 @@
         "grav_or_classic": "Grav"
     },
     "Climb": {
+        "author": "QX",
         "difficulty": "1.3",
         "balls_req": "1",
         "preset": "gZMefrgiggtaiaaaJraaksaaamaaaE",
+        "map_id": "46288",
         "categories": [
             "Solo",
             "OneShot",
@@ -735,9 +877,11 @@
         "grav_or_classic": "Grav"
     },
     "Skill Test (Official FWO v2)": {
+        "author": "9bob9 & FWO",
         "difficulty": "4.7",
         "balls_req": "1",
         "preset": "gZMefGgPggtaiaaaJraaksaaamaaaE",
+        "map_id": "86881",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -745,9 +889,11 @@
         "grav_or_classic": "Grav"
     },
     "Ups and Downs [FINAL] (Official FWO)": {
+        "author": "Zow",
         "difficulty": "5.8",
         "balls_req": "1",
         "preset": "gZMefEwjggtaiaaaJraaksaaamaaaE",
+        "map_id": "82273",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -755,9 +901,11 @@
         "grav_or_classic": "Grav"
     },
     "Worlds Hardest Map 3 (Official FWO)": {
+        "author": "Danny & FWO",
         "difficulty": "7.4",
         "balls_req": "1",
         "preset": "gZMefGjNggtaiaaaJraaksaaamaaaE",
+        "map_id": "87035",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -765,9 +913,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy System 2 (TM1version) 9bob9 (Official FWO V3)": {
+        "author": "Team 1",
         "difficulty": "2.5",
         "balls_req": "2",
         "preset": "gZMefEwUggtaiaaaJraaksaaamabWE",
+        "map_id": "82310",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -775,9 +925,11 @@
         "grav_or_classic": "Grav"
     },
     "Rerun [Gravity Buddy] (Official FWO)": {
+        "author": "Canvas & FWO",
         "difficulty": "3.8",
         "balls_req": "2",
         "preset": "gZMefEzaggtaiaaaJraaksaaamaaaE",
+        "map_id": "82420",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -785,9 +937,11 @@
         "grav_or_classic": "Grav"
     },
     "V8 [Gravity Buddy] (Official FWO)": {
+        "author": "Canvas & FWO",
         "difficulty": "5.0",
         "balls_req": "3",
         "preset": "gZMefExOggtaiaaaJraaksaaamaaaE",
+        "map_id": "82356",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -795,9 +949,11 @@
         "grav_or_classic": "Grav"
     },
     "20480 [Gravity Buddy] (Official FWO)": {
+        "author": "Canvas & FWO",
         "difficulty": "4.0",
         "balls_req": "2",
         "preset": "gZMefGgEggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "86870",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -806,9 +962,11 @@
         "grav_or_classic": "Grav"
     },
     "Join The Group (Official FWO)": {
+        "author": "DragonBeast & FWO",
         "difficulty": "8.4",
         "balls_req": "4",
         "preset": "gZMefGgTggtaiaaaJraaksaaamaaaE",
+        "map_id": "86885",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -816,9 +974,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy System 7 (TM1 Version) 9bob9": {
+        "author": "Team 1",
         "difficulty": "3.5",
         "balls_req": "4",
         "preset": "gZMefrKSggtaiaaaJraaksaaamabWE",
+        "map_id": "47884",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -826,9 +986,11 @@
         "grav_or_classic": "Grav"
     },
     "Ball-E Wood Tower of Tear Her (Official FWO)": {
+        "author": "Ball-E",
         "difficulty": "2.4",
         "balls_req": "1",
         "preset": "gZMefExpggtaiaaaJraaksaaamaaYE",
+        "map_id": "82331",
         "categories": [
             "Solo",
             "Tower",
@@ -837,9 +999,11 @@
         "grav_or_classic": "Grav"
     },
     "Twin Towers (Official FWO v2)": {
+        "author": "Ball-E ",
         "difficulty": "2.1",
         "balls_req": "1",
         "preset": "gZMefEEDggtaiaaaJraaksaaamaaYE",
+        "map_id": "82709",
         "categories": [
             "Solo",
             "Tower",
@@ -849,9 +1013,11 @@
         "grav_or_classic": "Grav"
     },
     "Tower Power (Official FWO)": {
+        "author": "Ball-E & FWO",
         "difficulty": "2.4",
         "balls_req": "1",
         "preset": "gZMefGlmggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "87112",
         "categories": [
             "Solo",
             "Tower",
@@ -861,9 +1027,11 @@
         "grav_or_classic": "Grav"
     },
     "Tower 1-4 (Official FWO)": {
+        "author": "Luckyspammer",
         "difficulty": "3.4",
         "balls_req": "1",
         "preset": "gZMefExuggtaiaaaJraaksaaamaaaE",
+        "map_id": "82336",
         "categories": [
             "Solo",
             "Tower",
@@ -873,9 +1041,11 @@
         "grav_or_classic": "Grav"
     },
     "Mars Climb but hard": {
+        "author": "Ball-E",
         "difficulty": "3.1",
         "balls_req": "1",
         "preset": "gZMefGdyggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "86708",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -884,9 +1054,11 @@
         "grav_or_classic": "Grav"
     },
     "Mars Climb 3": {
+        "author": "DragonBeast",
         "difficulty": "3.8",
         "balls_req": "1",
         "preset": "gZMefGdzggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "86709",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -895,9 +1067,11 @@
         "grav_or_classic": "Grav"
     },
     "Mars Climb?": {
+        "author": "DragonBeast",
         "difficulty": "3.5",
         "balls_req": "1",
         "preset": "gZMefGdAggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "86710",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -906,9 +1080,11 @@
         "grav_or_classic": "Grav"
     },
     "Fall (Official FWO)": {
+        "author": "Anonymous & FWO",
         "difficulty": "5.2",
         "balls_req": "1",
         "preset": "gZMefEyKggtaiaaaJraaksaaamaaYE",
+        "map_id": "82404",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -916,9 +1092,11 @@
         "grav_or_classic": "Grav"
     },
     "Birthday Tower of Doom (Official FWO)": {
+        "author": "LuckySpammer & FWO",
         "difficulty": "2.0",
         "balls_req": "1",
         "preset": "gZMefEyaggtaiaaaJraaksaaamaaaE",
+        "map_id": "82368",
         "categories": [
             "Solo",
             "Tower",
@@ -928,9 +1106,11 @@
         "grav_or_classic": "Grav"
     },
     "Birthday Tower 1-5 (Official FWO)": {
+        "author": "DragonBeast",
         "difficulty": "4.2",
         "balls_req": "1",
         "preset": "gZMefGdBggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "86711",
         "categories": [
             "Solo",
             "Tower",
@@ -940,9 +1120,11 @@
         "grav_or_classic": "Grav"
     },
     "Towered": {
+        "author": "Tyrcae",
         "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefExEggtaiaaaJraaksaaamaaaE",
+        "map_id": "82346",
         "categories": [
             "Solo",
             "Tower",
@@ -951,9 +1133,11 @@
         "grav_or_classic": "Grav"
     },
     "Tower w/ A BUDDY SHORTCUT!!": {
+        "author": "Ibrahimovic",
         "difficulty": "1.3",
         "balls_req": "1",
         "preset": "gZMefEymggtaiaaaJraaksaaamaaaE",
+        "map_id": "82380",
         "categories": [
             "Solo",
             "Tower",
@@ -963,9 +1147,11 @@
         "grav_or_classic": "Grav"
     },
     "Tower of Doom 0-0 (Official FWO)": {
+        "author": "LaBeefmyman96",
         "difficulty": "3.5",
         "balls_req": "1",
         "preset": "gZMefEyoggtaiaaaJraaksaaamaaaE",
+        "map_id": "82382",
         "categories": [
             "Solo",
             "Tower",
@@ -975,9 +1161,11 @@
         "grav_or_classic": "Grav"
     },
     "Easy, Medium, or Hard? 3in1Tower (Official FWO)": {
+        "author": "ILoveMonkeyD & FWO",
         "difficulty": "4.0",
         "balls_req": "1",
         "preset": "gZMefEyVggtaiaaaJraaksaaamaaaE",
+        "map_id": "82415",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -985,9 +1173,11 @@
         "grav_or_classic": "Grav"
     },
     "Birthday Tower 2018 (Official FWO)": {
+        "author": "Electro",
         "difficulty": "1.3",
         "balls_req": "1",
         "preset": "gZMefGdIggtdoiaaaJyaraaksaaamaaaunqqdjbE",
+        "map_id": "86718",
         "categories": [
             "Solo",
             "Tower",
@@ -998,9 +1188,11 @@
         "grav_or_classic": "Grav"
     },
     "UGH (Official FWO)": {
+        "author": "HeinousAnus",
         "difficulty": "4.7",
         "balls_req": "1",
         "preset": "gZMefEyYggtaiaaaJraaksaaamaaaE",
+        "map_id": "82418",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1008,9 +1200,11 @@
         "grav_or_classic": "Grav"
     },
     "Spike Ball Hall 1.0.5 (Official FWO)": {
+        "author": "Jean Valjean",
         "difficulty": "2.6",
         "balls_req": "2",
         "preset": "gZMefEyZggtaiaaaJraaksaaaE",
+        "map_id": "82419",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1018,9 +1212,11 @@
         "grav_or_classic": "Grav"
     },
     "Unlimited Jumps Buddy (5 jump version) (Official FWO)": {
+        "author": "Carey Price & FWO",
         "difficulty": "5.1",
         "balls_req": "1",
         "preset": "gZMefGPhggtaiaaaJraaksaaamaaapfE",
+        "map_id": "88667",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1029,9 +1225,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity 2 players (Official FWO v1)": {
+        "author": "Harry potter and Ginny Weasly",
         "difficulty": "2.6",
         "balls_req": "2",
         "preset": "gZMefEzcggtaiaaaJraaksaaaE",
+        "map_id": "82422",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1039,9 +1237,11 @@
         "grav_or_classic": "Grav"
     },
     "A Step Back": {
+        "author": "Jean Valjean",
         "difficulty": "1.2",
         "balls_req": "1",
         "preset": "gZMefEzJggtaiaaaJraaksaaamaaaE",
+        "map_id": "82455",
         "categories": [
             "Solo",
             "OneShot"
@@ -1049,9 +1249,11 @@
         "grav_or_classic": "Grav"
     },
     "Hope This Is Possible (testing)": {
+        "author": "Danny",
         "difficulty": "TBD",
         "balls_req": "4? 5? 6?",
         "preset": "",
+        "map_id": "82425",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1059,9 +1261,11 @@
         "grav_or_classic": "Grav"
     },
     "Trust(Multiplayer) (Official FWO)": {
+        "author": "Danny",
         "difficulty": "6.0",
         "balls_req": "3",
         "preset": "gZMefGJtggtaiaaaJraaksaaamaaYE",
+        "map_id": "88367",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1069,9 +1273,11 @@
         "grav_or_classic": "Grav"
     },
     "(Map)Test 2": {
+        "author": "Danny",
         "difficulty": "3.3",
         "balls_req": "1",
         "preset": "gZMefEzhggtaiaaaJraaksaaamaaYE",
+        "map_id": "82427",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1079,9 +1285,11 @@
         "grav_or_classic": "Grav"
     },
     "10 Levels 1 Map": {
+        "author": "9bob9",
         "difficulty": "3.8",
         "balls_req": "2",
         "preset": "gZMefEHVggtaiaaaJraaksaaamaaaE",
+        "map_id": "82883",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1089,9 +1297,11 @@
         "grav_or_classic": "Grav"
     },
     "Ball Runner": {
+        "author": "9bob9",
         "difficulty": "1.6",
         "balls_req": "1",
         "preset": "gZMefEAPggtuiaaaJyaraaksaaamabWE",
+        "map_id": "82513",
         "categories": [
             "Individual",
             "Race",
@@ -1100,9 +1310,11 @@
         "grav_or_classic": "Grav"
     },
     "Tunnel racer": {
+        "author": "9bob9",
         "difficulty": "2.2",
         "balls_req": "1",
         "preset": "gZMefnubggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "36193",
         "categories": [
             "Individual",
             "Race",
@@ -1111,9 +1323,11 @@
         "grav_or_classic": "Grav"
     },
     "How good are you?": {
+        "author": "9bob9",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefGdCggtuiaaaJyaraaksaaaE",
+        "map_id": "86712",
         "categories": [
             "Solo",
             "Fall",
@@ -1122,28 +1336,23 @@
         "grav_or_classic": "Grav"
     },
     "Challenging Run (Bombs instant, Boost Instant) (Official FWO)": {
+        "author": "9bob9",
         "difficulty": "4.8",
         "balls_req": "1",
         "preset": "gZMefEAyggtaiaaaJraaksaaamaaaE",
+        "map_id": "82496",
         "categories": [
             "Buddy",
             "Checkpoint"
         ],
         "grav_or_classic": "Grav"
     },
-    "Hop To Top": {
-        "difficulty": "1.5",
-        "balls_req": "1",
-        "preset": "gZMefEztggtaiaaaJyaraaksaaamaaaE",
-        "categories": [
-            "NF"
-        ],
-        "grav_or_classic": "Grav"
-    },
     "20 Seconds (Official FWO)": {
+        "author": "9bob9",
         "difficulty": "3.2",
         "balls_req": "1",
         "preset": "gZMefEAYggtaiaaaJraaksaaamaaaE",
+        "map_id": "82522",
         "categories": [
             "Solo",
             "OneShot",
@@ -1152,9 +1361,11 @@
         "grav_or_classic": "Grav"
     },
     "Slanted House": {
+        "author": "9bob9",
         "difficulty": "1.3",
         "balls_req": "1",
         "preset": "gZMdfVkggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "2454",
         "categories": [
             "Individual",
             "Race",
@@ -1163,9 +1374,11 @@
         "grav_or_classic": "Grav"
     },
     "You're Pushing My Buttons (Official FWO)": {
+        "author": "Carey Price",
         "difficulty": "4.0",
         "balls_req": "1",
         "preset": "gZMefEAAggtaiaaaJraaksaaamaaaE",
+        "map_id": "82498",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1173,9 +1386,11 @@
         "grav_or_classic": "Grav"
     },
     "Randomly Generated Mapwe (Official FWO)": {
+        "author": "ImNoSomeBallawe",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefEAXggtaiaaaJraaksaaamaaaE",
+        "map_id": "82521",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1183,9 +1398,11 @@
         "grav_or_classic": "Grav"
     },
     "Jump": {
+        "author": "Tagnoob.",
         "difficulty": "1.3",
         "balls_req": "1",
         "preset": "gZMefEzCggtaiaaaJraaksaaamaaaE",
+        "map_id": "82448",
         "categories": [
             "Solo",
             "OneShot"
@@ -1193,9 +1410,11 @@
         "grav_or_classic": "Grav"
     },
     "Tweak Course": {
+        "author": "Tagnoob.",
         "difficulty": "1.3",
         "balls_req": "1",
         "preset": "gZMefEzDggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "82449",
         "categories": [
             "Individual",
             "Race",
@@ -1204,9 +1423,11 @@
         "grav_or_classic": "Grav"
     },
     "Rather Easy (Official FWO)": {
+        "author": "Harry Potter and Ginny Weasly",
         "difficulty": "3.2",
         "balls_req": "4",
         "preset": "gZMefGkjggtaiaaaJraaksaaamaaaE",
+        "map_id": "87057",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -1215,9 +1436,11 @@
         "grav_or_classic": "Grav"
     },
     "Ball From Space": {
+        "author": "9bob9",
         "difficulty": "1.3",
         "balls_req": "1",
         "preset": "gZMefGRaggtuiaaaJyaraaksaaamaaabE",
+        "map_id": "88764",
         "categories": [
             "Individual",
             "Race",
@@ -1226,9 +1449,11 @@
         "grav_or_classic": "Grav"
     },
     "Protal 2: 2 Many Puzzles(Rate at the end) (Needs 3+) (Official FWO v1)": {
+        "author": "Danny",
         "difficulty": "6.1",
         "balls_req": "4",
         "preset": "gZMefEAFggtaiaaaJraakE",
+        "map_id": "82503",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1236,9 +1461,11 @@
         "grav_or_classic": "Grav"
     },
     "The Challenge (Official FWO)": {
+        "author": "Danny",
         "difficulty": "3.7",
         "balls_req": "1",
         "preset": "gZMefEAJggtaiaaaJraaksaaamaaaE",
+        "map_id": "82507",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1246,9 +1473,11 @@
         "grav_or_classic": "Grav"
     },
     "Alliance testing (Official FWO)": {
+        "author": "Danny & FWO",
         "difficulty": "5.4",
         "balls_req": "3",
         "preset": "gZMefFIfggtaiaaaJraaksaaaE",
+        "map_id": "85597",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1256,9 +1485,11 @@
         "grav_or_classic": "Grav"
     },
     "t0W3r": {
+        "author": "SatonaBanana",
         "difficulty": "2.1",
         "balls_req": "1",
         "preset": "gZMefEALggtaiaaaJraaksaaamaaaE",
+        "map_id": "82509",
         "categories": [
             "Solo",
             "Tower",
@@ -1267,9 +1498,11 @@
         "grav_or_classic": "Grav"
     },
     "Don't touch the spikes": {
+        "author": "Tagnoob.",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefEAQggtaiaaaJraaksaaamaaaE",
+        "map_id": "82514",
         "categories": [
             "Solo",
             "Fall",
@@ -1278,9 +1511,11 @@
         "grav_or_classic": "Grav"
     },
     "Long Jumps (Official FWO)": {
+        "author": "Danny & FWO",
         "difficulty": "2.9",
         "balls_req": "1",
         "preset": "gZMefEATggtaiaaaJraaksaaamaaaE",
+        "map_id": "82517",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1288,9 +1523,11 @@
         "grav_or_classic": "Grav"
     },
     "Fall Down Final (Instant Boosts) (Official FWO)": {
+        "author": "Carey Price",
         "difficulty": "3.3",
         "balls_req": "2",
         "preset": "gZMefFKLggtaiaaaJraaksaaamaaaE",
+        "map_id": "85733",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1298,9 +1535,11 @@
         "grav_or_classic": "Grav"
     },
     "Fall Down Final (instant boosts) (Official FWO)": {
+        "author": "Carey Price & FWO",
         "difficulty": "4.8",
         "balls_req": "5",
         "preset": "gZMefFEoggtaiaaaJraaksaaamaaaE",
+        "map_id": "85398",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1308,9 +1547,11 @@
         "grav_or_classic": "Grav"
     },
     "Tower Shower": {
+        "author": "Ball-E",
         "difficulty": "1.6",
         "balls_req": "1",
         "preset": "gZMefGdDggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "86713",
         "categories": [
             "Solo",
             "Tower",
@@ -1320,9 +1561,11 @@
         "grav_or_classic": "Grav"
     },
     "Tower of the TagPro Dragon (Official FWO v1)": {
+        "author": "DragonBeast, Bowlarity",
         "difficulty": "1.5",
         "balls_req": "1",
         "preset": "gZMefGdEggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "86714",
         "categories": [
             "Solo",
             "Tower",
@@ -1332,9 +1575,11 @@
         "grav_or_classic": "Grav"
     },
     "What you say about my first map!?!?!?! (aka Revenge) (Official FWO)": {
+        "author": "MLX2JUKE & FWO",
         "difficulty": "3.7",
         "balls_req": "1",
         "preset": "gZMefEDxggtaiaaaJraaksaaamaaaE",
+        "map_id": "82651",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1343,9 +1588,11 @@
         "grav_or_classic": "Grav"
     },
     "Portal Timer Race (1 Cap) (Instant Boosts) (Official FWO)": {
+        "author": "Carey Price",
         "difficulty": "3.6",
         "balls_req": "1",
         "preset": "gZMefEBXggtaiaaaJraaksaaamaaaE",
+        "map_id": "82573",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1354,9 +1601,11 @@
         "grav_or_classic": "Grav"
     },
     "Carey Am Pro Race (5 Jumps) (Official FWO)": {
+        "author": "Carey Price & FWO",
         "difficulty": "4.7",
         "balls_req": "1",
         "preset": "gZMefEDyggtaiaaaJraaksaaamaaapfE",
+        "map_id": "82652",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1365,9 +1614,11 @@
         "grav_or_classic": "Grav"
     },
     "Tower of Doom 1-3 (Official FWO)": {
+        "author": "Ez Buddy & Poeticalto & FWO",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefGtBggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "87543",
         "categories": [
             "Solo",
             "Tower",
@@ -1377,9 +1628,11 @@
         "grav_or_classic": "Grav"
     },
     "ACTH Agonist": {
+        "author": "Fronj",
         "difficulty": "3.4",
         "balls_req": "1",
         "preset": "gZMefrcFggtaiaaaJraaksaaamaaaE",
+        "map_id": "46103",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1387,9 +1640,11 @@
         "grav_or_classic": "Grav"
     },
     "Gauntlet (Official FWO)": {
+        "author": "Fronj",
         "difficulty": "3.3",
         "balls_req": "1",
         "preset": "gZMefEBUggtaiaaaJraaksaaamaaYE",
+        "map_id": "82570",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1397,9 +1652,11 @@
         "grav_or_classic": "Grav"
     },
     "b u d d y s y s t e m 1 (Official FWO v3)": {
+        "author": "drankles",
         "difficulty": "3.2",
         "balls_req": "3",
         "preset": "gZMefEDqggtaiaaaJraaksaaamabWE",
+        "map_id": "82644",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1407,9 +1664,11 @@
         "grav_or_classic": "Grav"
     },
     "AUSSIE Teambuilding 2 v1.5 (Official FWO)": {
+        "author": "leddy & FWO",
         "difficulty": "3.4",
         "balls_req": "3",
         "preset": "gZMefERkggtaiaaaJBraaksaaauaaajTE",
+        "map_id": "83366",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1417,9 +1676,11 @@
         "grav_or_classic": "Grav"
     },
     "AUSSIE Teambuilding 3 v1.1 (non buddy jump version) (Official FWO)": {
+        "author": "leddy & FWO",
         "difficulty": "3.2",
         "balls_req": "3",
         "preset": "gZMefFIyggtaiaaaJraaksaaamabWE",
+        "map_id": "85616",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1427,9 +1688,11 @@
         "grav_or_classic": "Grav"
     },
     "AUSSIE Teambuilding 4 v1.5 (Official FWO)": {
+        "author": "leddy & FWO",
         "difficulty": "4.1",
         "balls_req": "4",
         "preset": "gZMefEDrggtaiaaaJraaksaaamabWE",
+        "map_id": "82645",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1437,9 +1700,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy Union .55 BONUS STUFF (Official FWO)": {
+        "author": "Danny & FWO",
         "difficulty": "4.7",
         "balls_req": "3",
         "preset": "gZMefEDjggtaiaaaJraaksaaamaaYE",
+        "map_id": "82637",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1447,9 +1712,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy Union 3.3 Deluxe (Official FWO)": {
+        "author": "Danny & FWO",
         "difficulty": "8.3",
         "balls_req": "4",
         "preset": "gZMefEKxggtaiaaaJraaksaaaE",
+        "map_id": "83015",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1457,9 +1724,11 @@
         "grav_or_classic": "Grav"
     },
     "Survivor Tower": {
+        "author": "Jeff Poost",
         "difficulty": "2.6",
         "balls_req": "1",
         "preset": "gZMefHeBggtaiaaaJBraaksaaamaaaE",
+        "map_id": "89467",
         "categories": [
             "Solo",
             "Tower",
@@ -1468,9 +1737,11 @@
         "grav_or_classic": "Grav"
     },
     "Carabdis Masochism FINAL v1.11 (Official FWO)": {
+        "author": "Carabdis & FWO",
         "difficulty": "8.1",
         "balls_req": "2",
         "preset": "gZMefEKqggtaiaaaJraaksaaamaaaE",
+        "map_id": "83008",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1478,9 +1749,11 @@
         "grav_or_classic": "Grav"
     },
     "Carabdis Masochism FINAL v1.11 (solo version) (Official FWO)": {
+        "author": "Carabdis & FWO",
         "difficulty": "7.7",
         "balls_req": "1",
         "preset": "gZMefEDQggtaiaaaJraaksaaamaaaE",
+        "map_id": "82670",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1488,9 +1761,11 @@
         "grav_or_classic": "Grav"
     },
     "Hexaforce 6+ Person Gravity Puzzle (Official FWO)": {
+        "author": "Only Smellz & FWO",
         "difficulty": "2.2",
         "balls_req": "2",
         "preset": "gZMefHfoggtaiaaaJraaksaaamabWE",
+        "map_id": "89506",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1498,9 +1773,11 @@
         "grav_or_classic": "Grav"
     },
     "Potato Sack Race (2v2) (Official FWO)": {
+        "author": "Carey Price",
         "difficulty": "3.3",
         "balls_req": "1",
         "preset": "gZMefEEmggtaiaaaJraaksaaamaaaE",
+        "map_id": "82692",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1509,9 +1786,11 @@
         "grav_or_classic": "Grav"
     },
     "Mars Climb Part |||": {
+        "author": "Ball-E & FWO",
         "difficulty": "3.3",
         "balls_req": "2",
         "preset": "gZMefGdGggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "86716",
         "categories": [
             "Buddy",
             "Mars Climb",
@@ -1521,9 +1800,11 @@
         "grav_or_classic": "Grav"
     },
     "Mars Climb 1": {
+        "author": "9bob9 ",
         "difficulty": "4.1",
         "balls_req": "1",
         "preset": "gZMefGdHggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "86717",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -1532,9 +1813,11 @@
         "grav_or_classic": "Grav"
     },
     "Tower 1-2 [FINAL]": {
+        "author": "LS",
         "difficulty": "1.9",
         "balls_req": "1",
         "preset": "gZMefEEGggtaiaaaJraaksaaamaaaE",
+        "map_id": "82712",
         "categories": [
             "Solo",
             "Tower",
@@ -1544,9 +1827,11 @@
         "grav_or_classic": "Grav"
     },
     "Tower 1-2 (Official FWO)": {
+        "author": "FWO",
         "difficulty": "2.2",
         "balls_req": "1",
         "preset": "gZMefEEIggtaiaaaJraaksaaamaaaE",
+        "map_id": "82714",
         "categories": [
             "Solo",
             "Tower",
@@ -1556,9 +1841,11 @@
         "grav_or_classic": "Grav"
     },
     "GREATEST GRAVITY BUDDY SYSTEM": {
+        "author": "Anonymous",
         "difficulty": "1.6",
         "balls_req": "1",
         "preset": "gZMefFLaggtaiaaaJraaksaaamaaaE",
+        "map_id": "85748",
         "categories": [
             "Solo",
             "OneShot"
@@ -1566,9 +1853,11 @@
         "grav_or_classic": "Grav"
     },
     "ULTIMATE GRAVITY BUDDY SYSTEM (HARD)": {
+        "author": "Anonymous",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefGiHggtaiaaaJraaksaaamaaaE",
+        "map_id": "86977",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1576,9 +1865,11 @@
         "grav_or_classic": "Grav"
     },
     "The Temple Maze (Official FWO)": {
+        "author": "Anonymous",
         "difficulty": "1.6",
         "balls_req": "1",
         "preset": "gZMefGQZggtaiaaaJraaksaaamaaaE",
+        "map_id": "88763",
         "categories": [
             "Solo",
             "OneShot"
@@ -1586,9 +1877,11 @@
         "grav_or_classic": "Grav"
     },
     "Colosseum": {
+        "author": "NOPE",
         "difficulty": "5.1",
         "balls_req": "1",
         "preset": "gZMefFOBtaiaaaJyaraaksaaamalCYEG",
+        "map_id": "85931",
         "categories": [
             "Spike Maze",
             "OneShot"
@@ -1596,9 +1889,11 @@
         "grav_or_classic": "Classic"
     },
     "Astral Synergy (Buddy System Grav, Boost/Bomb instant) (Official Version)": {
+        "author": "DAD.",
         "difficulty": "7.1",
         "balls_req": "4",
         "preset": "gZMefFWSggtaiaaaJraaksaaamaaaE",
+        "map_id": "86364",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -1607,9 +1902,11 @@
         "grav_or_classic": "Grav"
     },
     "Map of Sisyphus": {
+        "author": "SB ARMY SB",
         "difficulty": "3.1",
         "balls_req": "1",
         "preset": "gZMefFXZggtaiaaaJraaksaaamaaaE",
+        "map_id": "86423",
         "categories": [
             "Solo",
             "OneShot"
@@ -1617,9 +1914,11 @@
         "grav_or_classic": "Grav"
     },
     "Boldy System (Official FWO)": {
+        "author": "McHatty & Myself & FWO",
         "difficulty": "2.7",
         "balls_req": "2",
         "preset": "gZMefFYfggtaiaaaJraaksaaamaaYE",
+        "map_id": "86429",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1627,9 +1926,11 @@
         "grav_or_classic": "Grav"
     },
     "Kinda ez (Official FWO)": {
+        "author": "Gloopus & FWO",
         "difficulty": "4.9",
         "balls_req": "1",
         "preset": "gZMefFZjggtaiaaaJraaksaaamaaaE",
+        "map_id": "86485",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1637,9 +1938,11 @@
         "grav_or_classic": "Grav"
     },
     "4 Ways Race": {
+        "author": "Carey Price",
         "difficulty": "TBD",
         "balls_req": "2",
         "preset": "",
+        "map_id": "86488",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -1648,9 +1951,11 @@
         "grav_or_classic": "Grav"
     },
     "Team Trials 1 (Official FWO)": {
+        "author": "Sir Reginald & FWO",
         "difficulty": "4.0",
         "balls_req": "3",
         "preset": "gZMefFZoggtaiaaaJybraaksaaaE",
+        "map_id": "86490",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1658,9 +1963,11 @@
         "grav_or_classic": "Grav"
     },
     "Choose Your Type [Instant boost would be good]": {
+        "author": "9bob9",
         "difficulty": "1.9",
         "balls_req": "1",
         "preset": "gZMefFZpggtaiaaaJraaksaaamaaaE",
+        "map_id": "86491",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1668,9 +1975,11 @@
         "grav_or_classic": "Grav"
     },
     "help me": {
+        "author": "NOPE!",
         "difficulty": "2.1",
         "balls_req": "1",
         "preset": "gZMefFWAggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "86346",
         "categories": [
             "Solo",
             "Tower",
@@ -1679,9 +1988,11 @@
         "grav_or_classic": "Grav"
     },
     "8+ Group system": {
+        "author": "9bob9",
         "difficulty": "3.2",
         "balls_req": "2",
         "preset": "gZMefFSEtaiaaaJyaraaksaaamabWE",
+        "map_id": "86142",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1690,9 +2001,11 @@
         "grav_or_classic": "Classic"
     },
     "Timed Gravity Race": {
+        "author": "Dude",
         "difficulty": "1.9",
         "balls_req": "1",
         "preset": "gZMefFZyggtdiaaaJyaraaksaaamaaaE",
+        "map_id": "86500",
         "categories": [
             "Solo",
             "OneShot",
@@ -1702,9 +2015,11 @@
         "grav_or_classic": "Grav"
     },
     "Short Circuit": {
+        "author": "BallSaget, Bumballbee, ASAP, Gryff",
         "difficulty": "6.8",
         "balls_req": "2",
         "preset": "",
+        "map_id": "89339",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -1713,9 +2028,11 @@
         "grav_or_classic": "Grav"
     },
     "Solo Grav Track (Official FWO)": {
+        "author": "Gloopus & FWO",
         "difficulty": "4.3",
         "balls_req": "1",
         "preset": "gZMefGaOggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "86568",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1723,9 +2040,11 @@
         "grav_or_classic": "Grav"
     },
     "PopCulture Buddy System v5": {
+        "author": "NotA4YearOld",
         "difficulty": "4.2",
         "balls_req": "4",
         "preset": "gZMefHLHtaiaaaJyaraaksaaamabWE",
+        "map_id": "91189",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1733,9 +2052,11 @@
         "grav_or_classic": "Classic"
     },
     "Buddy Trio Test": {
+        "author": "Anonymous",
         "difficulty": "4.5",
         "balls_req": "3",
         "preset": "gZMefGaStaiaaaJyaraaksaaaE",
+        "map_id": "86572",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1743,9 +2064,11 @@
         "grav_or_classic": "Classic"
     },
     "Ultimate Buddy System (Official FWO)": {
+        "author": "bowtie",
         "difficulty": "TBD",
         "balls_req": "2",
         "preset": "gZMefGaUtaiaaaJyaraaksaaamaaYE",
+        "map_id": "86574",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1753,9 +2076,11 @@
         "grav_or_classic": "Classic"
     },
     "Ball-E's INSANE 15 minute buddy challenge": {
+        "author": "Ball-E",
         "difficulty": "TBD",
         "balls_req": "2",
         "preset": "",
+        "map_id": "88989",
         "categories": [
             "Buddy",
             "OneShot"
@@ -1763,9 +2088,11 @@
         "grav_or_classic": "Classic"
     },
     "BartJr's Gravity Challenge (Official FWO)": {
+        "author": "BartimaeusJr & FWO",
         "difficulty": "3.1",
         "balls_req": "1",
         "preset": "gZMefGRcggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "88766",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1773,9 +2100,11 @@
         "grav_or_classic": "Grav"
     },
     "Light Em Up Again (Inspired by Carey Price) (5 jump version) (Official FWO)": {
+        "author": "ImNoSomeBall & FWO",
         "difficulty": "5.8",
         "balls_req": "1",
         "preset": "gZMefGllggtaiaaaJyaraaksaaamaaapfE",
+        "map_id": "87111",
         "categories": [
             "Solo",
             "AnyGate",
@@ -1784,9 +2113,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity Fall": {
+        "author": "Carey Price",
         "difficulty": "1.3",
         "balls_req": "1",
         "preset": "gZMefGbdggtaiaaaJyaraaksaaamaaapfE",
+        "map_id": "86583",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1796,9 +2127,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity Fall (Insane)": {
+        "author": "Carey Price",
         "difficulty": "2.0",
         "balls_req": "1",
         "preset": "gZMefGbeggtaiaaaJyaraaksaaamaaapfE",
+        "map_id": "86584",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1808,9 +2141,11 @@
         "grav_or_classic": "Grav"
     },
     "Skill Fall": {
+        "author": "9bob9",
         "difficulty": "0.8",
         "balls_req": "1",
         "preset": "gZMefGbfggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "86585",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1819,9 +2154,11 @@
         "grav_or_classic": "Grav"
     },
     "Dragonsaine V.3 Hard Mode (Official FWO)": {
+        "author": "DragonBeast & FWO",
         "difficulty": "9.3",
         "balls_req": "2",
         "preset": "gZMefGdqggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "86700",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1830,9 +2167,11 @@
         "grav_or_classic": "Grav"
     },
     "Dragonsaine V.2 (Official FWO)": {
+        "author": "DragonBeast & FWO",
         "difficulty": "7.7",
         "balls_req": "2",
         "preset": "gZMefGdoggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "86698",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1840,9 +2179,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity Challenge (85% Complete)": {
+        "author": "QX",
         "difficulty": "3.4",
         "balls_req": "1",
         "preset": "gZMefrrZggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "46903",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1850,9 +2191,11 @@
         "grav_or_classic": "Grav"
     },
     "Jump!": {
+        "author": "Brosty",
         "difficulty": "0.8",
         "balls_req": "1",
         "preset": "gZMefGhlggtaiaaaJraaksaaamaaajbE",
+        "map_id": "86903",
         "categories": [
             "Solo",
             "OneShot"
@@ -1860,9 +2203,11 @@
         "grav_or_classic": "Grav"
     },
     "JUMP!": {
+        "author": "THB",
         "difficulty": "1.8",
         "balls_req": "1",
         "preset": "gZMefGdLggtaiaaaJraaksaaamaaaE",
+        "map_id": "86721",
         "categories": [
             "Solo",
             "OneShot",
@@ -1871,9 +2216,11 @@
         "grav_or_classic": "Grav"
     },
     "Jumper": {
+        "author": "Shark4",
         "difficulty": "2.1",
         "balls_req": "1",
         "preset": "gZMefGdNggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "86723",
         "categories": [
             "Solo",
             "OneShot",
@@ -1882,9 +2229,11 @@
         "grav_or_classic": "Grav"
     },
     "My AFK buddy": {
+        "author": "Ball-E",
         "difficulty": "3.3",
         "balls_req": "1",
         "preset": "gZMefGgsggtaiaaaJyaraaksaaamaakE",
+        "map_id": "86858",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1892,9 +2241,11 @@
         "grav_or_classic": "Grav"
     },
     "Toothy": {
+        "author": "Mr. Hat",
         "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefdSHggtuiaaaJyaraaksaaamaaaunqqE",
+        "map_id": "10433",
         "categories": [
             "Individual",
             "Race",
@@ -1903,9 +2254,11 @@
         "grav_or_classic": "Grav"
     },
     "Competitive gravity": {
+        "author": "Harry Potter and Ginny Weasly",
         "difficulty": "2.2",
         "balls_req": "1",
         "preset": "gZMefGemggtaiaaaJraaksaaaE",
+        "map_id": "86748",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1915,9 +2268,11 @@
         "grav_or_classic": "Grav"
     },
     "Small Buddy 1.1 skip 2": {
+        "author": "cheat right",
         "difficulty": "3.6",
         "balls_req": "2",
         "preset": "gZMefGeoggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "86750",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1925,9 +2280,11 @@
         "grav_or_classic": "Grav"
     },
     "Survivor Snipe Skills": {
+        "author": "Jeff Poost",
         "difficulty": "3.6",
         "balls_req": "1",
         "preset": "gZMefDYqggtaiaaaJyaraaksaaamaaapfE",
+        "map_id": "81032",
         "categories": [
             "Solo",
             "OneShot",
@@ -1937,9 +2294,11 @@
         "grav_or_classic": "Grav"
     },
     "Grav Well Course": {
+        "author": "Misdomer",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefgOwtaiaaaJyaraaksaaamaaaE",
+        "map_id": "18326",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1948,9 +2307,11 @@
         "grav_or_classic": "Classic"
     },
     "Maze Challenge": {
+        "author": "T0m",
         "difficulty": "4.1",
         "balls_req": "2",
         "preset": "gZMefkOftaiaaaJyaraaksaaamabWunqqE",
+        "map_id": "29125",
         "categories": [
             "Buddy",
             "AnyGate"
@@ -1958,9 +2319,11 @@
         "grav_or_classic": "Classic"
     },
     "crosky's Ludicrous Challenge": {
+        "author": "crosky",
         "difficulty": "2.3",
         "balls_req": "1",
         "preset": "gZMefGhataiaaaJyaraaksaaamaaaE",
+        "map_id": "86892",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1969,9 +2332,11 @@
         "grav_or_classic": "Classic"
     },
     "Marsball Gravity Race": {
+        "author": "9bob9",
         "difficulty": "2.3",
         "balls_req": "3",
         "preset": "gZMefhTTggtaiaaaJyaraaksaaamabWE",
+        "map_id": "21313",
         "categories": [
             "Buddy",
             "OneShot",
@@ -1981,9 +2346,11 @@
         "grav_or_classic": "Grav"
     },
     "MiniChallenge": {
+        "author": "Ball-E",
         "difficulty": "2.5",
         "balls_req": "3",
         "preset": "gZMefnbHtaiaaaJyaraak",
+        "map_id": "35237",
         "categories": [
             "Buddy",
             "OneShot"
@@ -1991,9 +2358,11 @@
         "grav_or_classic": "Classic"
     },
     "Ultimate Challenge (With Halfway Shortcut)": {
+        "author": "Butter Churn",
         "difficulty": "2.0",
         "balls_req": "1",
         "preset": "gZMefGRhtaiaaaJyaraaksaaamaaaunqq",
+        "map_id": "88771",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2002,9 +2371,11 @@
         "grav_or_classic": "Classic"
     },
     "Ball-E's absolutely INSANE challenge": {
+        "author": "Ball-E Bomberman",
         "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefGhiggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "86900",
         "categories": [
             "Solo",
             "OneShot"
@@ -2012,9 +2383,11 @@
         "grav_or_classic": "Grav"
     },
     "Infinity Boost [Challenge] V1": {
+        "author": "DragonBeast",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefGhjtaiaaaJyaraaksaaamaaaE",
+        "map_id": "86901",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2023,9 +2396,11 @@
         "grav_or_classic": "Classic"
     },
     "A random Danny map (Official FWO)": {
+        "author": "Danny & FWO",
         "difficulty": "3.7",
         "balls_req": "3",
         "preset": "gZMefGhNggtaiaaaJraaksaaamaaYE",
+        "map_id": "86931",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2033,9 +2408,11 @@
         "grav_or_classic": "Grav"
     },
     "Boldy System 2": {
+        "author": "Kooler & McHatty",
         "difficulty": "5.1",
         "balls_req": "2",
         "preset": "gZMefGiCggtaiaaaJyaraaksaaamabWE",
+        "map_id": "86972",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2043,9 +2420,11 @@
         "grav_or_classic": "Grav"
     },
     "Boldy System 3": {
+        "author": "McHatty",
         "difficulty": "2.7",
         "balls_req": "2",
         "preset": "gZMefGivggtaiaaaJyaraaksaaamabWE",
+        "map_id": "86965",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2053,9 +2432,11 @@
         "grav_or_classic": "Grav"
     },
     "ULTIMATE GRAVITY BUDDY SYSTEM": {
+        "author": "SB ARMEE SB",
         "difficulty": "2.1",
         "balls_req": "1",
         "preset": "gZMefGiGggtaiaaaJraaksaaamaaaE",
+        "map_id": "86976",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2063,9 +2444,11 @@
         "grav_or_classic": "Grav"
     },
     "PacMan - POWER PELLET EDITION": {
+        "author": "ImNoSomeBall & SB Army SB",
         "difficulty": "3.8",
         "balls_req": "1",
         "preset": "gZMefGtDggtaiaaaJraaksaaamaaaE",
+        "map_id": "87545",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2073,9 +2456,11 @@
         "grav_or_classic": "Grav"
     },
     "The Impossible (Portal Edition) 1.0.2 [Reversed]": {
+        "author": "Jean Valjean & FWO",
         "difficulty": "2.0",
         "balls_req": "1",
         "preset": "gZMefGtJggtaiaaaJraaksaaamaaaE",
+        "map_id": "87551",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2084,9 +2469,11 @@
         "grav_or_classic": "Grav"
     },
     "Uptown Funk (2 Jumps) (Instant Bombs) [Reversed]": {
+        "author": "Carey Price & FWO",
         "difficulty": "5.8",
         "balls_req": "1",
         "preset": "gZMefGykggtaiaaaJraaksaaamaaaE",
+        "map_id": "87786",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2095,9 +2482,11 @@
         "grav_or_classic": "Grav"
     },
     "A Castle on a Cloud 1.0.8 [Reversed]": {
+        "author": "Jean Valjean & FWO",
         "difficulty": "3.3",
         "balls_req": "1",
         "preset": "gZMefGvSggtaiaaaJraaksaaamaaaE",
+        "map_id": "87664",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2106,9 +2495,11 @@
         "grav_or_classic": "Grav"
     },
     "A-Maze-Ing (Official) [Reversed]": {
+        "author": "Carey Price & FWO",
         "difficulty": "5.4",
         "balls_req": "1",
         "preset": "gZMefGxeggtaiaaaJraaksaaamaaaE",
+        "map_id": "87728",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2117,9 +2508,11 @@
         "grav_or_classic": "Grav"
     },
     "The Challenge of Secrets (Official FWO) [Reversed]": {
+        "author": "Danny & FWO",
         "difficulty": "5.0",
         "balls_req": "1",
         "preset": "gZMefGxsggtaiaaaJraaksaaamaaaE",
+        "map_id": "87742",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2128,9 +2521,11 @@
         "grav_or_classic": "Grav"
     },
     "Jump! [reversed]": {
+        "author": "Brosty",
         "difficulty": "0.8",
         "balls_req": "1",
         "preset": "gZMefGyHggtaiaaaJraaksaaamaaajbE",
+        "map_id": "87809",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2139,9 +2534,11 @@
         "grav_or_classic": "Grav"
     },
     "2 Person Buddy' v2 (Official FWO)": {
+        "author": "Splittin'",
         "difficulty": "1.7",
         "balls_req": "2",
         "preset": "gZMefGyYggtaiaaaJraaksaaamaaaE",
+        "map_id": "87826",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2149,9 +2546,11 @@
         "grav_or_classic": "Grav"
     },
     "2 Person Buddy' (Official FWO) [Reversed]": {
+        "author": "Splittin' & FWO",
         "difficulty": "1.2",
         "balls_req": "2",
         "preset": "gZMefGznggtaiaaaJraaksaaamaaaE",
+        "map_id": "87841",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -2160,9 +2559,11 @@
         "grav_or_classic": "Grav"
     },
     "2 Person Buddy' (Official FWO) [Verticalized]": {
+        "author": "Splittin' & FWO",
         "difficulty": "3.6",
         "balls_req": "2",
         "preset": "gZMefGzAggtaiaaaJraaksaaamaaaE",
+        "map_id": "87854",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -2171,9 +2572,11 @@
         "grav_or_classic": "Grav"
     },
     "Mars Climb 11 (blue team required)": {
+        "author": "9bob9",
         "difficulty": "6.0",
         "balls_req": "2",
         "preset": "gZMefGzVggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "87875",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -2183,9 +2586,11 @@
         "grav_or_classic": "Grav"
     },
     "Quick Race (1v1) [Reversed]": {
+        "author": "Carey Price & FWO",
         "difficulty": "8.3",
         "balls_req": "1",
         "preset": "gZMefGAlggtaiaaaJraaksaaamaaaE",
+        "map_id": "87891",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2195,9 +2600,11 @@
         "grav_or_classic": "Grav"
     },
     "Mini Test (Official FWO) [Reversed]": {
+        "author": "Danny & FWO",
         "difficulty": "4.5",
         "balls_req": "1",
         "preset": "gZMefGAuggtaiaaaJraaksaaamaaaE",
+        "map_id": "87900",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2206,9 +2613,11 @@
         "grav_or_classic": "Grav"
     },
     "Daily Spike Fall 1.0.1 Final (Official FWO) [Reversed]": {
+        "author": "Jean Valjean & FWO",
         "difficulty": "2.8",
         "balls_req": "1",
         "preset": "gZMefGGaggtaiaaaJraaksaaamaaaE",
+        "map_id": "88192",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2217,9 +2626,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy System 11 (TM1 Version) [Reversed]": {
+        "author": "9bob9 & Team 1 & FWO",
         "difficulty": "5.0",
         "balls_req": "2",
         "preset": "gZMefGBVggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "87979",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -2228,9 +2639,11 @@
         "grav_or_classic": "Grav"
     },
     "Mars Buddy Climb": {
+        "author": "SB Army SB",
         "difficulty": "3.3",
         "balls_req": "2",
         "preset": "gZMefHkmggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "89764",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -2239,9 +2652,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy system 9 (TM1 Version) 9bob9 (Official FWO) [Reversed]": {
+        "author": "Team 1 & FWO",
         "difficulty": "7.0",
         "balls_req": "3",
         "preset": "gZMefGFZggtaiaaaJraaksaaamaaaE",
+        "map_id": "88191",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -2250,9 +2665,11 @@
         "grav_or_classic": "Grav"
     },
     "Trust Fall 3: The Return of Trust Fall [Reversed]": {
+        "author": "Carey Price",
         "difficulty": "8.2",
         "balls_req": "2",
         "preset": "gZMefGERggtaiaaaJraaksaaamaaaE",
+        "map_id": "88131",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -2261,9 +2678,11 @@
         "grav_or_classic": "Grav"
     },
     "Cube Goldberg": {
+        "author": "Pingu",
         "difficulty": "1.3",
         "balls_req": "2",
         "preset": "gZMefGLRggtaiaaaJyaraakmaaEunqqYE",
+        "map_id": "88495",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2271,9 +2690,11 @@
         "grav_or_classic": "Grav"
     },
     "Celestial Tether [Reversed] (Buddy System Grav, Boost/Bomb instant)": {
+        "author": "DAD.",
         "difficulty": "9.3",
         "balls_req": "2",
         "preset": "gZMefGMuggtaiaaaJraaksaaamaaaE",
+        "map_id": "88524",
         "categories": [
             "Buddy",
             "AnyGate",
@@ -2282,9 +2703,11 @@
         "grav_or_classic": "Grav"
     },
     "Jasmine": {
+        "author": "Bumballbee",
         "difficulty": "7.4",
         "balls_req": "2",
         "preset": "gZMefGqaggtaiaaaJraaksaaamaaaE",
+        "map_id": "87360",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2292,9 +2715,11 @@
         "grav_or_classic": "Grav"
     },
     "Jasmine (Solo)": {
+        "author": "Bumballbee",
         "difficulty": "7.2",
         "balls_req": "1",
         "preset": "gZMefGqcggtaiaaaJraaksaaamaaaE",
+        "map_id": "87362",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2302,9 +2727,11 @@
         "grav_or_classic": "Grav"
     },
     "LONGGGGG": {
+        "author": "SB Army SB",
         "difficulty": "1.3",
         "balls_req": "1",
         "preset": "gZMefGKMggtaiaaaJraaksaaamaaaE",
+        "map_id": "88438",
         "categories": [
             "Solo",
             "OneShot"
@@ -2312,9 +2739,11 @@
         "grav_or_classic": "Grav"
     },
     "Climbing race": {
+        "author": "Tyrcae",
         "difficulty": "0.4",
         "balls_req": "1",
         "preset": "gZMefGMyggtaiaaaJraaksaaamaaaE",
+        "map_id": "88528",
         "categories": [
             "Solo",
             "OneShot"
@@ -2322,9 +2751,11 @@
         "grav_or_classic": "Grav"
     },
     "RACE TOWER": {
+        "author": "Ibrahimovic",
         "difficulty": "1.6",
         "balls_req": "1",
         "preset": "gZMefGMAggtaiaaaJaueuraaksaaamaaaE",
+        "map_id": "88530",
         "categories": [
             "Solo",
             "OneShot",
@@ -2333,9 +2764,11 @@
         "grav_or_classic": "Grav"
     },
     "stairs": {
+        "author": "someone!",
         "difficulty": "1.3",
         "balls_req": "1",
         "preset": "gZMefGMBggtuiaaaJyaraaksaaamaaabE",
+        "map_id": "88531",
         "categories": [
             "Individual",
             "Race",
@@ -2344,9 +2777,11 @@
         "grav_or_classic": "Grav"
     },
     "The Climb - Miley Cyrus (Infinite Jumps) (Official FWO)": {
+        "author": "jdkman13",
         "difficulty": "5.0",
         "balls_req": "1",
         "preset": "gZMefGOJggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88643",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2355,9 +2790,11 @@
         "grav_or_classic": "Grav"
     },
     "Skill Climbing (Infinite Jumps) (Official FWO)": {
+        "author": "9bob9 & FWO",
         "difficulty": "3.8",
         "balls_req": "1",
         "preset": "gZMefGOLggtuiaaaJyaraaksaaamaaaunqqpZE",
+        "map_id": "88645",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2367,9 +2804,11 @@
         "grav_or_classic": "Grav"
     },
     "Hopscotch (Official FWO)": {
+        "author": "Carey Price",
         "difficulty": "2.7",
         "balls_req": "1",
         "preset": "gZMefGPRggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88703",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2378,9 +2817,11 @@
         "grav_or_classic": "Grav"
     },
     "FlappyBird [UnlimitedJumps] (Official FWO)": {
+        "author": "DragonBeast",
         "difficulty": "2.2",
         "balls_req": "1",
         "preset": "gZMefGOPggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88649",
         "categories": [
             "Solo",
             "OneShot",
@@ -2390,16 +2831,20 @@
         "grav_or_classic": "Grav"
     },
     "Narrow Lanes": {
+        "author": "Jean Valjean",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "",
+        "map_id": "88650",
         "categories": [],
         "grav_or_classic": "Grav"
     },
     "DeathRun Flappy Bird Version (Official FWO)": {
+        "author": "Fast-Ball",
         "difficulty": "3.3",
         "balls_req": "1",
         "preset": "gZMefGOSggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88652",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2408,9 +2853,11 @@
         "grav_or_classic": "Grav"
     },
     "Spike System": {
+        "author": "FranticGamer",
         "difficulty": "4.4",
         "balls_req": "1",
         "preset": "gZMefGOTggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88653",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2419,9 +2866,11 @@
         "grav_or_classic": "Grav"
     },
     "Flappy Cap": {
+        "author": "iTagPro",
         "difficulty": "1.3",
         "balls_req": "1",
         "preset": "gZMefGOUggtaiaaaJyaraaksaaamaaZE",
+        "map_id": "88654",
         "categories": [
             "Solo",
             "OneShot",
@@ -2430,9 +2879,11 @@
         "grav_or_classic": "Grav"
     },
     "Flappy Bird (Official FWO)": {
+        "author": "jdkman13 & FWO",
         "difficulty": "2.9",
         "balls_req": "1",
         "preset": "gZMefGOVggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88655",
         "categories": [
             "Solo",
             "OneShot",
@@ -2442,9 +2893,11 @@
         "grav_or_classic": "Grav"
     },
     "CD9 (Infinite Jumps)(Official FWO)": {
+        "author": "jdkman13",
         "difficulty": "2.3",
         "balls_req": "1",
         "preset": "gZMefGPSggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88704",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2453,9 +2906,11 @@
         "grav_or_classic": "Grav"
     },
     "JDC (Infinite Jumps) (Official FWO)": {
+        "author": "Alpha & FWO",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefGOXggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88657",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2464,9 +2919,11 @@
         "grav_or_classic": "Grav"
     },
     "Light Em Up Again (Inspired by Carey Price)": {
+        "author": "ImNoSomeBall",
         "difficulty": "3.5",
         "balls_req": "1",
         "preset": "gZMefGPaggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88660",
         "categories": [
             "Solo",
             "AnyGate",
@@ -2475,9 +2932,11 @@
         "grav_or_classic": "Grav"
     },
     "The Map Destroyer(Infinite Jumps) (Official FWO)": {
+        "author": "jdkman13",
         "difficulty": "3.2",
         "balls_req": "1",
         "preset": "gZMefGPbggtaiaaaJyaraaksaaamaaaunqqpZE",
+        "map_id": "88661",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2486,9 +2945,11 @@
         "grav_or_classic": "Grav"
     },
     "Jump! - Van Halen (Infinite Jump Race)": {
+        "author": "jdkman13",
         "difficulty": "2.9",
         "balls_req": "1",
         "preset": "gZMefGPdggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88663",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2497,9 +2958,11 @@
         "grav_or_classic": "Grav"
     },
     "Bruh!": {
+        "author": "FranticGamer",
         "difficulty": "1.8",
         "balls_req": "1",
         "preset": "gZMefGPfggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "88665",
         "categories": [
             "Solo",
             "OneShot"
@@ -2507,9 +2970,11 @@
         "grav_or_classic": "Grav"
     },
     "Flight Path Race (Official FWO)": {
+        "author": "Carey Price",
         "difficulty": "2.8",
         "balls_req": "1",
         "preset": "gZMefGPgggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88666",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2519,9 +2984,11 @@
         "grav_or_classic": "Grav"
     },
     "Unlimited Jumps Buddy (Official FWO)": {
+        "author": "Carey Price & FWO",
         "difficulty": "3.5",
         "balls_req": "1",
         "preset": "gZMefGPiggtaiaaaJraaksaaamaaapZE",
+        "map_id": "88668",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2530,9 +2997,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity Fall (unlimited jumps)": {
+        "author": "Carey Price",
         "difficulty": "1.5",
         "balls_req": "1",
         "preset": "gZMefGPnggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88673",
         "categories": [
             "Solo",
             "Fall",
@@ -2541,9 +3010,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity Fall (Insane) (Unlimited jumps)": {
+        "author": "Carey Price",
         "difficulty": "2.3",
         "balls_req": "1",
         "preset": "gZMefGPpggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88675",
         "categories": [
             "Solo",
             "Fall",
@@ -2552,9 +3023,11 @@
         "grav_or_classic": "Grav"
     },
     "Compact Disc (Official FWO)": {
+        "author": "CD",
         "difficulty": "3.6",
         "balls_req": "1",
         "preset": "gZMefGQMggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88750",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2563,9 +3036,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity Challenge [Reversed] (Official FWO)": {
+        "author": "QX and Fronj",
         "difficulty": "8.0",
         "balls_req": "2",
         "preset": "gZMefHcqggtaiaaaJraaksaaamaaaE",
+        "map_id": "89352",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2574,9 +3049,11 @@
         "grav_or_classic": "Grav"
     },
     "Hopscotch (Official FWO) [Reversed]": {
+        "author": "Carey Price",
         "difficulty": "1.5",
         "balls_req": "1",
         "preset": "gZMefGSLggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88853",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2587,9 +3064,11 @@
         "grav_or_classic": "Grav"
     },
     "Spike System [Reversed]": {
+        "author": "FranticGamer & FWO",
         "difficulty": "5.2",
         "balls_req": "1",
         "preset": "gZMefGSMggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88854",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2599,9 +3078,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity Fall (Insane) (Unlimited jumps) [Reversed]": {
+        "author": "Carey Price & FWO",
         "difficulty": "2.3",
         "balls_req": "1",
         "preset": "gZMefGSNggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88855",
         "categories": [
             "Solo",
             "Fall",
@@ -2611,9 +3092,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity Fall (unlimited jumps) [Reversed]": {
+        "author": "Carey Price",
         "difficulty": "1.5",
         "balls_req": "1",
         "preset": "gZMefGSOggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "88856",
         "categories": [
             "Solo",
             "Fall",
@@ -2623,9 +3106,11 @@
         "grav_or_classic": "Grav"
     },
     "Super Weird Map": {
+        "author": "Bunny",
         "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefGUdggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "88923",
         "categories": [
             "Solo",
             "OneShot",
@@ -2634,9 +3119,11 @@
         "grav_or_classic": "Grav"
     },
     "Single person map Final (instant boosts and bombs)": {
+        "author": "Bunny",
         "difficulty": "1.6",
         "balls_req": "1",
         "preset": "gZMefGUeggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "88924",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2644,9 +3131,11 @@
         "grav_or_classic": "Grav"
     },
     "Barbed Wire (Official FWO)": {
+        "author": "Bow & FWO",
         "difficulty": "6.7",
         "balls_req": "1",
         "preset": "gZMefGUfggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "88925",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2654,9 +3143,11 @@
         "grav_or_classic": "Grav"
     },
     "Jasmine (Hard Version)": {
+        "author": "Bumballbee & Inspire",
         "difficulty": "8.7",
         "balls_req": "2",
         "preset": "gZMefGVeggtaiaaaJraaksaaamaaaE",
+        "map_id": "88976",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2664,9 +3155,11 @@
         "grav_or_classic": "Grav"
     },
     "RACE 1v1 new": {
+        "author": "Harry Potter and Ginny Weasly",
         "difficulty": "2.7",
         "balls_req": "1",
         "preset": "gZMefrMOtaiaaaJraaksaaamaaa",
+        "map_id": "47984",
         "categories": [
             "Solo",
             "OneShot",
@@ -2676,9 +3169,11 @@
         "grav_or_classic": "Classic"
     },
     "Race you? 1v1 Easy v2": {
+        "author": "Harry Potter and Ginny Weasly",
         "difficulty": "1.8",
         "balls_req": "1",
         "preset": "gZMefrBKtaiaaaJraaksaaaunqq",
+        "map_id": "47408",
         "categories": [
             "Solo",
             "OneShot",
@@ -2688,9 +3183,11 @@
         "grav_or_classic": "Classic"
     },
     "RACE (1 cap collected counts as 1 lap)": {
+        "author": "Harry Potter and Ginny Weasly",
         "difficulty": "1.6",
         "balls_req": "1",
         "preset": "gZMefGWwtkoiaaaJyaraaksaaa",
+        "map_id": "89046",
         "categories": [
             "Individual",
             "Race",
@@ -2699,9 +3196,11 @@
         "grav_or_classic": "Classic"
     },
     "RACE": {
+        "author": "Ginny Weasly",
         "difficulty": "TBD",
         "balls_req": "3",
         "preset": "gZMefGXotaiaaaJyaraak",
+        "map_id": "89090",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -2710,9 +3209,11 @@
         "grav_or_classic": "Classic"
     },
     "Memory Lane": {
+        "author": "Jeff Poost",
         "difficulty": "1.0",
         "balls_req": "1",
         "preset": "gZMefGWDtaiaaaJyaraaksaaamaaa",
+        "map_id": "89053",
         "categories": [
             "Solo",
             "OneShot",
@@ -2722,9 +3223,11 @@
         "grav_or_classic": "Classic"
     },
     "The Caverns Below": {
+        "author": "Snack",
         "difficulty": "3.7",
         "balls_req": "1",
         "preset": "gZMefGWJggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "89059",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2732,9 +3235,11 @@
         "grav_or_classic": "Grav"
     },
     "On Edge (Official FWO)": {
+        "author": "plsplsplslol & FWO",
         "difficulty": "3.5",
         "balls_req": "1",
         "preset": "gZMefGWSggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "89068",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2742,9 +3247,11 @@
         "grav_or_classic": "Grav"
     },
     "edge master": {
+        "author": "blal-e",
         "difficulty": "6.3",
         "balls_req": "1",
         "preset": "gZMeflaaggtaiaaaJyaraakmaaaE",
+        "map_id": "29744",
         "categories": [
             "Solo",
             "OneShot"
@@ -2752,9 +3259,11 @@
         "grav_or_classic": "Grav"
     },
     "(FIC) Spike & Spike": {
+        "author": "Jeff Poost",
         "difficulty": "3.3",
         "balls_req": "1",
         "preset": "gZMefDuttaiaaaJyaraaksaaamaaa",
+        "map_id": "79475",
         "categories": [
             "Solo",
             "OneShot",
@@ -2764,9 +3273,11 @@
         "grav_or_classic": "Classic"
     },
     "Shadow Snipes": {
+        "author": "Jeff Poost",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefFpgtaiaaaJyaraaksaaamaaa",
+        "map_id": "84610",
         "categories": [
             "Solo",
             "OneShot",
@@ -2776,9 +3287,11 @@
         "grav_or_classic": "Classic"
     },
     "RollCareful": {
+        "author": "GinnyWeasly",
         "difficulty": "3.6",
         "balls_req": "1",
         "preset": "gZMefGXitaiaaaJyaraak",
+        "map_id": "89084",
         "categories": [
             "Solo",
             "OneShot",
@@ -2788,9 +3301,11 @@
         "grav_or_classic": "Classic"
     },
     "Be there or be square": {
+        "author": "The race",
         "difficulty": "0.3",
         "balls_req": "1",
         "preset": "gZMefGXjggtaiaaaJyaraakE",
+        "map_id": "89085",
         "categories": [
             "Solo",
             "OneShot"
@@ -2798,9 +3313,11 @@
         "grav_or_classic": "Grav"
     },
     "Be there or be square [Reversed]": {
+        "author": "The race & FWO",
         "difficulty": "1.0",
         "balls_req": "1",
         "preset": "gZMefGXkggtaiaaaJyaraakE",
+        "map_id": "89086",
         "categories": [
             "Solo",
             "OneShot",
@@ -2809,9 +3326,11 @@
         "grav_or_classic": "Grav"
     },
     "Tiki Tunnel of Terror": {
+        "author": "Jeff Poost",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefDXgtaiaaaJyaraaksaaEmaaa",
+        "map_id": "80970",
         "categories": [
             "Solo",
             "OneShot",
@@ -2821,9 +3340,11 @@
         "grav_or_classic": "Classic"
     },
     "hjnkm, (Official FWO)": {
+        "author": "inkmp & FWO",
         "difficulty": "4.5",
         "balls_req": "3",
         "preset": "gZMefGXlggtaiaaaJyaraaksaaamaaYE",
+        "map_id": "89087",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2831,9 +3352,11 @@
         "grav_or_classic": "Grav"
     },
     "30 Second Challenge - Spikes": {
+        "author": "BigBird",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefvdStaiaaaJyaraak",
+        "map_id": "56984",
         "categories": [
             "Solo",
             "OneShot",
@@ -2844,9 +3367,11 @@
         "grav_or_classic": "Classic"
     },
     "spikefield": {
+        "author": "sass",
         "difficulty": "3.3",
         "balls_req": "1",
         "preset": "gZMefGZrtaiaaaJyaraak",
+        "map_id": "89197",
         "categories": [
             "Solo",
             "OneShot",
@@ -2856,9 +3381,11 @@
         "grav_or_classic": "Classic"
     },
     "spike map": {
+        "author": "M?",
         "difficulty": "1.3",
         "balls_req": "1",
         "preset": "gZMefGZttaiaaaJyaraaksaaa",
+        "map_id": "89199",
         "categories": [
             "Solo",
             "OneShot",
@@ -2867,9 +3394,11 @@
         "grav_or_classic": "Classic"
     },
     "Spikey Speedrun": {
+        "author": "Jeff Poost",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefHaKtaiaaaJyaraaksaaamaaE",
+        "map_id": "89268",
         "categories": [
             "Solo",
             "OneShot",
@@ -2878,9 +3407,11 @@
         "grav_or_classic": "Classic"
     },
     "Bomb Tower Bounce": {
+        "author": "LD",
         "difficulty": "2.1",
         "balls_req": "1",
         "preset": "gZMefGweggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "87676",
         "categories": [
             "Solo",
             "OneShot"
@@ -2888,9 +3419,11 @@
         "grav_or_classic": "Grav"
     },
     "Doorways Season 4": {
+        "author": "Thanos Ball",
         "difficulty": "1.5",
         "balls_req": "1",
         "preset": "gZMefCfKtaiaaaJyaraak",
+        "map_id": "76008",
         "categories": [
             "Solo",
             "OneShot",
@@ -2900,9 +3433,11 @@
         "grav_or_classic": "Classic"
     },
     "Doorways Season 9": {
+        "author": "Thanos Ball",
         "difficulty": "1.5",
         "balls_req": "1",
         "preset": "gZMefCiCtaiaaaJyaraak",
+        "map_id": "76156",
         "categories": [
             "Solo",
             "OneShot",
@@ -2912,9 +3447,11 @@
         "grav_or_classic": "Classic"
     },
     "Vertical Doom": {
+        "author": "Thanos Ball",
         "difficulty": "2.0",
         "balls_req": "1",
         "preset": "gZMefGZvggtuiaaaJyaraaksaaamaakE",
+        "map_id": "89201",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -2924,9 +3461,11 @@
         "grav_or_classic": "Grav"
     },
     "Climb Guys Deluxe": {
+        "author": "Thanos Ball",
         "difficulty": "3.0",
         "balls_req": "1",
         "preset": "gZMefGZwggtuiaaaJyaraaksaaamaakE",
+        "map_id": "89202",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -2936,9 +3475,11 @@
         "grav_or_classic": "Grav"
     },
     "Climb Guys": {
+        "author": "Thanos Ball",
         "difficulty": "1.6",
         "balls_req": "1",
         "preset": "gZMefGZxggtuiaaaJyaraaksaaamaakE",
+        "map_id": "89203",
         "categories": [
             "Solo",
             "Mars Climb",
@@ -2948,9 +3489,11 @@
         "grav_or_classic": "Grav"
     },
     "Shadow Snipes with bomb": {
+        "author": "Jeff Poost",
         "difficulty": "4.3",
         "balls_req": "1",
         "preset": "gZMefHcbtaiaaaJyaraaksaaamaaa",
+        "map_id": "89337",
         "categories": [
             "Solo",
             "OneShot",
@@ -2960,9 +3503,11 @@
         "grav_or_classic": "Classic"
     },
     "Ferguson (Bombs: 1 sec, Boost: Instant)": {
+        "author": "UNITY",
         "difficulty": "TBD",
         "balls_req": "3",
         "preset": "gZMefHjzggtaiaaaJyaraaksaaamaakE",
+        "map_id": "89725",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2970,9 +3515,11 @@
         "grav_or_classic": "Grav"
     },
     "Compact Disc without cheeze (Official FWO)": {
+        "author": "CD & FWO",
         "difficulty": "6.8",
         "balls_req": "1",
         "preset": "gZMefHcfggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "89341",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -2981,9 +3528,11 @@
         "grav_or_classic": "Grav"
     },
     "Cube Goldberg (red team version)": {
+        "author": "Pingu",
         "difficulty": "1.7",
         "balls_req": "2",
         "preset": "gZMefHcRggtaiaaaJyaraakmaaEunqqYE",
+        "map_id": "89379",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2991,9 +3540,11 @@
         "grav_or_classic": "Grav"
     },
     "Hopscotch (Official FWO) [Reversed] (no cheeze) by Carey Price": {
+        "author": "Carey Price",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefHdvggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "89409",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3003,9 +3554,11 @@
         "grav_or_classic": "Grav"
     },
     "Jump (back and forth version)": {
+        "author": "Tagnoob.",
         "difficulty": "1.4",
         "balls_req": "1",
         "preset": "gZMefHcVggtaiaaaJraaksaaamaaaE",
+        "map_id": "89383",
         "categories": [
             "Solo",
             "OneShot"
@@ -3013,9 +3566,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravity Race 4 (1 jump version)": {
+        "author": "SportManiac & FWO",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefHcWggtaiaaaJyaraaksaaamaaapbE",
+        "map_id": "89384",
         "categories": [
             "Solo",
             "OneShot",
@@ -3024,9 +3579,11 @@
         "grav_or_classic": "Grav"
     },
     "Bambox": {
+        "author": "Bambi",
         "difficulty": "3.1",
         "balls_req": "1",
         "preset": "gZMefHdgggtaiaaaJraaksaaamaaaE",
+        "map_id": "89394",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3034,9 +3591,11 @@
         "grav_or_classic": "Grav"
     },
     "Jump [1 jump]": {
+        "author": "Tagnoob.",
         "difficulty": "1.5",
         "balls_req": "1",
         "preset": "gZMefHcYggtaiaaaJraaksaaamaaapbE",
+        "map_id": "89386",
         "categories": [
             "Solo",
             "OneShot",
@@ -3045,9 +3604,11 @@
         "grav_or_classic": "Grav"
     },
     "Hopscotch (Official FWO) [Inverted]": {
+        "author": "Carey Price",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefHdyggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "89412",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3057,9 +3618,11 @@
         "grav_or_classic": "Grav"
     },
     "Hopscotch (Official FWO) [Reversed] [Inverted]": {
+        "author": "Carey Price",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefHdzggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "89413",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3070,9 +3633,11 @@
         "grav_or_classic": "Grav"
     },
     "Juiced Up (JJ Grav, Boost/Bomb instant) (official version)": {
+        "author": "DAD.",
         "difficulty": "6.5",
         "balls_req": "3",
         "preset": "gZMefHexggtaiaaaJraaksaaamaaauaaaSPuTbE",
+        "map_id": "89463",
         "categories": [
             "Buddy",
             "AnyGate",
@@ -3081,9 +3646,11 @@
         "grav_or_classic": "Grav"
     },
     "SpawnPro Gravity System": {
+        "author": "DAD.",
         "difficulty": "2.0",
         "balls_req": "1",
         "preset": "gZMefHdHggtaiaaaJraaasaaamaaauaaaE",
+        "map_id": "89421",
         "categories": [
             "Solo",
             "AnyGate",
@@ -3092,9 +3659,11 @@
         "grav_or_classic": "Grav"
     },
     "Single Player Map (Instant bombs, Boosts) (Official FWO)": {
+        "author": "9bob9 & FWO",
         "difficulty": "3.7",
         "balls_req": "1",
         "preset": "gZMefHdKggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "89424",
         "categories": [
             "Individual",
             "Race",
@@ -3103,9 +3672,11 @@
         "grav_or_classic": "Grav"
     },
     "The Impossible": {
+        "author": "Jean Valjean",
         "difficulty": "3.2",
         "balls_req": "1",
         "preset": "gZMefHeyggtaiaaaJraaksaaamaaaE",
+        "map_id": "89464",
         "categories": [
             "Solo",
             "OneShot"
@@ -3113,9 +3684,11 @@
         "grav_or_classic": "Grav"
     },
     "Trial Of Deer": {
+        "author": "Bambi",
         "difficulty": "3.0",
         "balls_req": "1",
         "preset": "gZMefHdVggtaiaaaJyaraaksaaamaaaYE",
+        "map_id": "89435",
         "categories": [
             "Solo",
             "OneShot"
@@ -3123,9 +3696,11 @@
         "grav_or_classic": "Grav"
     },
     "Trial Of Deer [Reversed]": {
+        "author": "Bambi",
         "difficulty": "3.2",
         "balls_req": "1",
         "preset": "gZMefHekggtaiaaaJyaraaksaaamaaaYE",
+        "map_id": "89450",
         "categories": [
             "Solo",
             "OneShot",
@@ -3134,9 +3709,11 @@
         "grav_or_classic": "Grav"
     },
     "Ball Pit": {
+        "author": "SB Army SB",
         "difficulty": "1.6",
         "balls_req": "2",
         "preset": "gZMefHeoggtaiaaaJNEraaamaaEE",
+        "map_id": "89454",
         "categories": [
             "Buddy",
             "SoloPossible",
@@ -3146,9 +3723,11 @@
         "grav_or_classic": "Grav"
     },
     "Spike Maze (60 Sec)": {
+        "author": "Nice Person",
         "difficulty": "2.0",
         "balls_req": "1",
         "preset": "gZMefHhhtaiaaaJyaraak",
+        "map_id": "89603",
         "categories": [
             "Solo",
             "OneShot",
@@ -3158,9 +3737,11 @@
         "grav_or_classic": "Classic"
     },
     "Zoom (Gravity Race) [Instant Bomb]": {
+        "author": "9bob9",
         "difficulty": "1.0",
         "balls_req": "1",
         "preset": "gZMefHeJggtuiaaaJyaraaksaaamaaaE",
+        "map_id": "89475",
         "categories": [
             "Individual",
             "Race",
@@ -3169,9 +3750,11 @@
         "grav_or_classic": "Grav"
     },
     "Trust Fall 3: The Return of Trust Fall [AnyGate]": {
+        "author": "Carey Price",
         "difficulty": "4.1",
         "balls_req": "1",
         "preset": "gZMefHeIggtaiaaaJraaksaaamaaaE",
+        "map_id": "89474",
         "categories": [
             "Solo",
             "AnyGate"
@@ -3179,9 +3762,11 @@
         "grav_or_classic": "Grav"
     },
     "Aussie team action 3.0 [3 jump]": {
+        "author": "Ez Buddy & Curveballed & FWO",
         "difficulty": "3.5",
         "balls_req": "3",
         "preset": "gZMefHeYggtaiaaaJyaraaksaaaYpdE",
+        "map_id": "89490",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3190,9 +3775,11 @@
         "grav_or_classic": "Grav"
     },
     "Oh Man, Oh Boy [unlimited]": {
+        "author": "Carey Price & FWO",
         "difficulty": "5.4",
         "balls_req": "1",
         "preset": "gZMefHfjggtaiaaaJraaksaaamaaapZE",
+        "map_id": "89501",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3201,9 +3788,11 @@
         "grav_or_classic": "Grav"
     },
     "4 Ways Race [Unlimited]": {
+        "author": "Carey Price & FWO",
         "difficulty": "4.4",
         "balls_req": "2",
         "preset": "gZMefHfpggtaiaaaJraaksaaamaaapZE",
+        "map_id": "89507",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3212,9 +3801,11 @@
         "grav_or_classic": "Grav"
     },
     "Detonation Dash": {
+        "author": "DAD.",
         "difficulty": "2.7",
         "balls_req": "1",
         "preset": "gZMefHggggtaiaaaJraaksaaauaaajTE",
+        "map_id": "89550",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3223,9 +3814,11 @@
         "grav_or_classic": "Grav"
     },
     "The Tox Tower": {
+        "author": "ASAP",
         "difficulty": "2.3",
         "balls_req": "1",
         "preset": "gZMefDlJtaiaaaJraakmaaa",
+        "map_id": "79023",
         "categories": [
             "Individual",
             "Race",
@@ -3235,9 +3828,11 @@
         "grav_or_classic": "Classic"
     },
     "Detonation Dash 2": {
+        "author": "DAD.",
         "difficulty": "3.1",
         "balls_req": "1",
         "preset": "gZMefHgiggtaiaaaJraaksaaauaaajTE",
+        "map_id": "89552",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3246,9 +3841,11 @@
         "grav_or_classic": "Grav"
     },
     "!!!OBSTACLE COURSE!!!": {
+        "author": "Orion",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefHgLtaiaaaJraaksaaa",
+        "map_id": "89581",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3256,9 +3853,11 @@
         "grav_or_classic": "Classic"
     },
     "Obstacle Race V2": {
+        "author": "DeathBomb",
         "difficulty": "1.8",
         "balls_req": "1",
         "preset": "gZMefHgOtaiaaaJraak",
+        "map_id": "89584",
         "categories": [
             "Solo",
             "OneShot",
@@ -3268,9 +3867,11 @@
         "grav_or_classic": "Classic"
     },
     "Aussie Team Action V2 Complete [3 jump]": {
+        "author": "Curveballed & FWO",
         "difficulty": "TBD",
         "balls_req": "3",
         "preset": "gZMefHgPggtaiaaaJyaraaksaaamabWYpdE",
+        "map_id": "89585",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3279,9 +3880,11 @@
         "grav_or_classic": "Grav"
     },
     "Skybound Tower": {
+        "author": "DAD.",
         "difficulty": "3.3",
         "balls_req": "1",
         "preset": "gZMefHhOggtaiaaaJraaksaaamaaauaaajbE",
+        "map_id": "89636",
         "categories": [
             "Solo",
             "Tower",
@@ -3290,9 +3893,11 @@
         "grav_or_classic": "Grav"
     },
     "Bomby Bird [Gravity]": {
+        "author": "DAD.",
         "difficulty": "3.7",
         "balls_req": "1",
         "preset": "gZMefHigggtaiaaaJraakmaaaE",
+        "map_id": "89654",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3301,9 +3906,11 @@
         "grav_or_classic": "Grav"
     },
     "Pirates of the Caribballan: The Legend of Juke Sparrowkeys [1st Half]": {
+        "author": "Ball(mate)-E, PIZZAsp(arrrr)tan, and Privateer Pingu",
         "difficulty": "1.8",
         "balls_req": "1",
         "preset": "gZMefHiiggtaiaaaJBraaksaaEmabsuacUE",
+        "map_id": "89656",
         "categories": [
             "Solo",
             "Tower",
@@ -3313,9 +3920,11 @@
         "grav_or_classic": "Grav"
     },
     "Pirates of the Caribballan: The Legend of Juke Sparrowkeys [Ship Half]": {
+        "author": "Ball(mate)-E, PIZZAsp(arrrr)tan, and Privateer Pingu",
         "difficulty": "1.5",
         "balls_req": "1",
         "preset": "gZMefHinggtaiaaaJBraaksaaEmabsuacUE",
+        "map_id": "89661",
         "categories": [
             "Solo",
             "Tower",
@@ -3325,9 +3934,11 @@
         "grav_or_classic": "Grav"
     },
     "Pirates of the Caribballan: The Legend of Juke Sparrowkeys [Bridge Half]": {
+        "author": "Ball(mate)-E, PIZZAsp(arrrr)tan, and Privateer Pingu",
         "difficulty": "1.6",
         "balls_req": "1",
         "preset": "gZMefHjtggtkiaaaJByaraaksaaEmabsuacUE",
+        "map_id": "89719",
         "categories": [
             "Solo",
             "Tower",
@@ -3337,9 +3948,11 @@
         "grav_or_classic": "Grav"
     },
     "wet bust will make you mad": {
+        "author": "wet bust",
         "difficulty": "3.6",
         "balls_req": "1",
         "preset": "gZMefCGjtaiaaaJyaraak",
+        "map_id": "77385",
         "categories": [
             "Solo",
             "OneShot",
@@ -3348,9 +3961,11 @@
         "grav_or_classic": "Classic"
     },
     "Flappy Ball": {
+        "author": "Jeff Poost",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefIAlggtaiaaaJyaraaksaaamaaapZE ",
+        "map_id": "93299",
         "categories": [
             "Solo",
             "OneShot",
@@ -3360,9 +3975,11 @@
         "grav_or_classic": "Grav"
     },
     "You Need Two [hard version]": {
+        "author": "Danny & FWO",
         "difficulty": "3.8",
         "balls_req": "2",
         "preset": "gZMefHjKggtaiaaaJraaksaaamaaYE",
+        "map_id": "89736",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -3370,9 +3987,11 @@
         "grav_or_classic": "Grav"
     },
     "Aftershock (RB Grav, Boost/Bomb instant) (Official Version)": {
+        "author": "DAD.",
         "difficulty": "5.6",
         "balls_req": "3",
         "preset": "gZMefHjvggtaiaaaJraaksaaamaaauaaajTE",
+        "map_id": "89721",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3381,9 +4000,11 @@
         "grav_or_classic": "Grav"
     },
     "Pocket Grav Pal": {
+        "author": "SB Army SB",
         "difficulty": "2.7",
         "balls_req": "2",
         "preset": "gZMefHjTggtaiaaaJraaksaaamaaaE",
+        "map_id": "89745",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3392,9 +4013,11 @@
         "grav_or_classic": "Grav"
     },
     "A Jog": {
+        "author": "Mary Price",
         "difficulty": "3.9",
         "balls_req": "1",
         "preset": "gZMefHjUggtaiaaaJraakE",
+        "map_id": "89746",
         "categories": [
             "Solo",
             "OneShot"
@@ -3402,9 +4025,11 @@
         "grav_or_classic": "Grav"
     },
     "This is a Bad Time": {
+        "author": "TimeWaster",
         "difficulty": "3.2",
         "balls_req": "1",
         "preset": "gZMefHjXtaiaaaJyaraaksaaa",
+        "map_id": "89749",
         "categories": [
             "Solo",
             "OneShot",
@@ -3413,9 +4038,11 @@
         "grav_or_classic": "Classic"
     },
     "Mt Everest": {
+        "author": "Mr. Hat & FWO",
         "difficulty": "5.0",
         "balls_req": "1",
         "preset": "gZMefHjYggtaiaaaJraaksaaamaaauaaajbE",
+        "map_id": "89750",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3423,9 +4050,11 @@
         "grav_or_classic": "Grav"
     },
     "Endurance": {
+        "author": "Disc",
         "difficulty": "4.9",
         "balls_req": "1",
         "preset": "gZMefHkaggtaiaaaJyaraaksaaamaaEunqqE",
+        "map_id": "89752",
         "categories": [
             "Solo",
             "AnyGate"
@@ -3433,9 +4062,11 @@
         "grav_or_classic": "Grav"
     },
     "Zag": {
+        "author": "Ball-E",
         "difficulty": "2.9",
         "balls_req": "1",
         "preset": "gZMefHkcggtuiaaaJyaraakE",
+        "map_id": "89754",
         "categories": [
             "Solo",
             "OneShot",
@@ -3444,9 +4075,11 @@
         "grav_or_classic": "Grav"
     },
     "Difficulty Easiest": {
+        "author": "Ball-E",
         "difficulty": "3.5",
         "balls_req": "1",
         "preset": "gZMefnehggtaiaaaJraaksaaamaaaunqqE",
+        "map_id": "35367",
         "categories": [
             "Solo",
             "OneShot",
@@ -3455,9 +4088,11 @@
         "grav_or_classic": "Grav"
     },
     "2v2 Rock n' Roll": {
+        "author": "DragonBeast",
         "difficulty": "2.0",
         "balls_req": "2",
         "preset": "gZMefHldtaiaaaJyaraak",
+        "map_id": "89807",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3468,9 +4103,11 @@
         "grav_or_classic": "Classic"
     },
     "Pocket Grav Pal #002": {
+        "author": "SB Army SB",
         "difficulty": "2.1",
         "balls_req": "2",
         "preset": "gZMefHkkggtaiaaaJraakmaaaE",
+        "map_id": "89762",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3479,9 +4116,11 @@
         "grav_or_classic": "Grav"
     },
     "House of Hell": {
+        "author": "is0lation",
         "difficulty": "5.6",
         "balls_req": "1",
         "preset": "gZMefHktggtaiaaaJraaksaaamaaaE",
+        "map_id": "89771",
         "categories": [
             "Solo",
             "OneShot"
@@ -3489,9 +4128,11 @@
         "grav_or_classic": "Grav"
     },
     "Keep jumping and nobody explodes": {
+        "author": "Ball-E",
         "difficulty": "TBD",
         "balls_req": "2",
         "preset": "gZMefHkVggtaiaaaJyaraakpZE",
+        "map_id": "89799",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3501,9 +4142,11 @@
         "grav_or_classic": "Grav"
     },
     "Mini Games": {
+        "author": "Cheetosrule, Eashy, okthen",
         "difficulty": "4.1",
         "balls_req": "1",
         "preset": "gZMefHlVtaiaaaJyaraaksaaamaaa",
+        "map_id": "89851",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3512,9 +4155,11 @@
         "grav_or_classic": "Classic"
     },
     "hardddd": {
+        "author": "M?",
         "difficulty": "2.7",
         "balls_req": "1",
         "preset": "gZMefznctaiaaaJyaraakmarq",
+        "map_id": "68278",
         "categories": [
             "Solo",
             "OneShot",
@@ -3523,9 +4168,11 @@
         "grav_or_classic": "Classic"
     },
     "NOPE's Gravity Fall": {
+        "author": "NOPE!",
         "difficulty": "3.6",
         "balls_req": "1",
         "preset": "gZMefHkyggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "89776",
         "categories": [
             "Solo",
             "Fall",
@@ -3534,9 +4181,11 @@
         "grav_or_classic": "Grav"
     },
     "dangerous": {
+        "author": "M?",
         "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefHkztaiaaaJyaraak",
+        "map_id": "89777",
         "categories": [
             "Solo",
             "OneShot",
@@ -3545,9 +4194,11 @@
         "grav_or_classic": "Classic"
     },
     "Walls Are Unnecessary": {
+        "author": "Some Idiot 1",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefIEwtaiaaaJyaraak",
+        "map_id": "93518",
         "categories": [
             "Solo",
             "OneShot",
@@ -3556,9 +4207,11 @@
         "grav_or_classic": "Classic"
     },
     "20by20 test": {
+        "author": "Retegrade",
         "difficulty": "3.6",
         "balls_req": "1",
         "preset": "gZMefHkNggtaiaaaJyaraakmaaaE",
+        "map_id": "89791",
         "categories": [
             "Solo",
             "OneShot"
@@ -3566,9 +4219,11 @@
         "grav_or_classic": "Grav"
     },
     "20by30 test": {
+        "author": "Retegrade",
         "difficulty": "3.4",
         "balls_req": "1",
         "preset": "gZMefHkOggtaiaaaJyaraakmaaaunqqE",
+        "map_id": "89792",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3576,9 +4231,11 @@
         "grav_or_classic": "Grav"
     },
     "129 in 60": {
+        "author": "Jungle Spice",
         "difficulty": "2.1",
         "balls_req": "1",
         "preset": "gZMefHkQggtaiaaaJraaksaaamaaaunqqE",
+        "map_id": "89794",
         "categories": [
             "Solo",
             "OneShot",
@@ -3587,9 +4244,11 @@
         "grav_or_classic": "Grav"
     },
     "Practiboost 1: 45s and 90s": {
+        "author": "Chalksy",
         "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefHkStaiaaaJyaraaksaaa",
+        "map_id": "89796",
         "categories": [
             "Solo",
             "OneShot",
@@ -3598,9 +4257,11 @@
         "grav_or_classic": "Classic"
     },
     "Lej's Ball Handling [Gravity]": {
+        "author": "Lej/xkcd",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefHkXggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "89801",
         "categories": [
             "Solo",
             "OneShot"
@@ -3608,9 +4269,11 @@
         "grav_or_classic": "Grav"
     },
     "Pocket Grav Pal #004": {
+        "author": "SB Army SB",
         "difficulty": "TBD",
         "balls_req": "3",
         "preset": "gZMefHlcggtuiaaaJyaraakmaaaE",
+        "map_id": "89806",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3620,9 +4283,11 @@
         "grav_or_classic": "Grav"
     },
     "Boost Practice": {
+        "author": "AtomicStorm",
         "difficulty": "1.6",
         "balls_req": "1",
         "preset": "gZMefHlwtaiaaaJyaraaksaaa",
+        "map_id": "89826",
         "categories": [
             "Solo",
             "OneShot",
@@ -3631,9 +4296,11 @@
         "grav_or_classic": "Classic"
     },
     "Hedge Maze": {
+        "author": "Jeff Poost",
         "difficulty": "1.8",
         "balls_req": "1",
         "preset": "gZMefESutaiaaaJyaraakuaaajT",
+        "map_id": "83428",
         "categories": [
             "Solo",
             "OneShot",
@@ -3643,9 +4310,11 @@
         "grav_or_classic": "Classic"
     },
     "2 Lap Gold Rush": {
+        "author": "JungleSpice",
         "difficulty": "1.5",
         "balls_req": "1",
         "preset": "gZMdfKWggtaiaaaJyaraakE",
+        "map_id": "1920",
         "categories": [
             "Solo",
             "OneShot",
@@ -3654,9 +4323,11 @@
         "grav_or_classic": "Grav"
     },
     "Stonky Tonk Tonk": {
+        "author": "TheLegend27",
         "difficulty": "2.7",
         "balls_req": "1",
         "preset": "gZMefHlEggtaiaaaJyaraaksaaamaaEYE",
+        "map_id": "89834",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3664,9 +4335,11 @@
         "grav_or_classic": "Grav"
     },
     "Pocket Grav Pal #003": {
+        "author": "SB Army SB",
         "difficulty": "TBD",
         "balls_req": "2",
         "preset": "gZMefHlJggtaiaaaJraakE",
+        "map_id": "89839",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3675,9 +4348,11 @@
         "grav_or_classic": "Grav"
     },
     "Pocket Grav Pal #005": {
+        "author": "SB Army SB",
         "difficulty": "TBD",
         "balls_req": "2",
         "preset": "gZMefHmgggtaiaaaJraakE",
+        "map_id": "89862",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3686,9 +4361,11 @@
         "grav_or_classic": "Grav"
     },
     "easy map": {
+        "author": "Bunnies",
         "difficulty": "1.8",
         "balls_req": "1",
         "preset": "gZMefHmtggtaiaaaJraaksaaaE",
+        "map_id": "89875",
         "categories": [
             "Solo",
             "OneShot",
@@ -3697,9 +4374,11 @@
         "grav_or_classic": "Grav"
     },
     "Pixel perfect spike maze": {
+        "author": "Anonymous",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefHmHtaiaaaJyaraaksaaa",
+        "map_id": "89889",
         "categories": [
             "Solo",
             "OneShot",
@@ -3708,9 +4387,11 @@
         "grav_or_classic": "Classic"
     },
     "Slolem Maze": {
+        "author": "coral",
         "difficulty": "1.8",
         "balls_req": "1",
         "preset": "gZMefHmAtaiaaaJyaraak",
+        "map_id": "89882",
         "categories": [
             "Solo",
             "OneShot",
@@ -3720,9 +4401,11 @@
         "grav_or_classic": "Classic"
     },
     "Classic Maze": {
+        "author": "Anonymous",
         "difficulty": "0.3",
         "balls_req": "1",
         "preset": "gZMefHmBtaiaaaJyaraak",
+        "map_id": "89883",
         "categories": [
             "Solo",
             "OneShot",
@@ -3731,9 +4414,11 @@
         "grav_or_classic": "Classic"
     },
     "Pocket Grav Pal #007": {
+        "author": "SB Army SB",
         "difficulty": "TBD",
         "balls_req": "2",
         "preset": "gZMefHnLggtaiaaaJaEraaksaaaEG",
+        "map_id": "89945",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3742,9 +4427,11 @@
         "grav_or_classic": "Grav"
     },
     "AUSSIE Teambuilding 3 v1.1 [GLTP]": {
+        "author": "leddy & FWO",
         "difficulty": "3.2",
         "balls_req": "3",
         "preset": "gZMefHotggtaiaaaJraaksaaamabWE",
+        "map_id": "89979",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -3752,9 +4439,11 @@
         "grav_or_classic": "Grav"
     },
     "Time Trial Map V1": {
+        "author": "Berlin Ball",
         "difficulty": "3.1",
         "balls_req": "1",
         "preset": "gZMefHoQtaiaaaJyaraaksaaamaaa",
+        "map_id": "90002",
         "categories": [
             "Solo",
             "OneShot",
@@ -3763,9 +4452,11 @@
         "grav_or_classic": "Classic"
     },
     "Harry Botter and the Shaft of Dangers": {
+        "author": "Madoka & FWO",
         "difficulty": "6.9",
         "balls_req": "3",
         "preset": "gZMefHpoggtaiaaaJyaraaksaaaYEG",
+        "map_id": "90026",
         "categories": [
             "Buddy",
             "OneShot"
@@ -3773,9 +4464,11 @@
         "grav_or_classic": "Grav"
     },
     "Pocket Grav Pal #006": {
+        "author": "SB Army SB",
         "difficulty": "TBD",
         "balls_req": "2",
         "preset": "gZMefHlNggtaiaaaJraakmaaaE",
+        "map_id": "89843",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3784,9 +4477,11 @@
         "grav_or_classic": "Grav"
     },
     "Solo Grav Bottle [Patched]": {
+        "author": "Gloopus",
         "difficulty": "2.5",
         "balls_req": "1",
         "preset": "gZMefHsoggtaiaaaJraaksaaamaaaE",
+        "map_id": "90182",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3795,9 +4490,11 @@
         "grav_or_classic": "Grav"
     },
     "GLTP Bounty Season 2": {
+        "author": "Danny & FWO",
         "difficulty": "TBD",
         "balls_req": "5",
         "preset": "gZMefHsBggtaiaaaJyaraaasaaaYEG",
+        "map_id": "90195",
         "categories": [
             "Buddy",
             "OneShot"
@@ -3805,9 +4502,11 @@
         "grav_or_classic": "Grav"
     },
     "PP": {
+        "author": "SB Army SB",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefHvGggtaiaaaJyaraaaYEG",
+        "map_id": "90356",
         "categories": [
             "Solo",
             "OneShot",
@@ -3815,10 +4514,12 @@
         ],
         "grav_or_classic": "Grav"
     },
-    "The Triad \u00e2\u009a\u009c": {
+    "The Triad ⚜": {
+        "author": "3",
         "difficulty": "7.5",
         "balls_req": "1",
         "preset": "gZMefHxEggtaiaaaJyaraaasaaamaaaYEG",
+        "map_id": "90458",
         "categories": [
             "Solo",
             "AnyGate"
@@ -3826,9 +4527,11 @@
         "grav_or_classic": "Grav"
     },
     "Fat Bambox": {
+        "author": "Fat Bambi",
         "difficulty": "2.9",
         "balls_req": "1",
         "preset": "gZMefHzBggtacbiaaaJyaaseEraaksaakmaaaE",
+        "map_id": "90559",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3836,10 +4539,12 @@
         ],
         "grav_or_classic": "Grav"
     },
-    "Pocket Grav Pal 008": {
+    "Pocket Grav Pal #008": {
+        "author": "SB Army SB",
         "difficulty": "TBD",
         "balls_req": "2",
         "preset": "gZMefHBtggtaiaaaJraaksaaamaaaE",
+        "map_id": "90655",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3848,9 +4553,11 @@
         "grav_or_classic": "Grav"
     },
     "stairmaster": {
+        "author": "MRCOW",
         "difficulty": "TBD",
         "balls_req": "3",
         "preset": "gZMefHAvggtaiaaaJraakE",
+        "map_id": "90605",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3859,9 +4566,11 @@
         "grav_or_classic": "Grav"
     },
     "Detonation Dash 3": {
+        "author": "DAD.",
         "difficulty": "4.3",
         "balls_req": "1",
         "preset": "gZMefHDHggtaiaaaJraaksaaauaaajTE",
+        "map_id": "90773",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3869,10 +4578,12 @@
         ],
         "grav_or_classic": "Grav"
     },
-    "Pocket Grav Pal 009": {
+    "Pocket Grav Pal #009": {
+        "author": "SB Army SB",
         "difficulty": "TBD",
         "balls_req": "2",
         "preset": "gZMefHIgggtaiaaaJraakmaaaE",
+        "map_id": "91006",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3881,9 +4592,11 @@
         "grav_or_classic": "Grav"
     },
     "33 Jumps": {
+        "author": "3",
         "difficulty": "3.5",
         "balls_req": "1",
         "preset": "gZMefHHvggtaiaaaJraaksaaaE",
+        "map_id": "90969",
         "categories": [
             "Solo",
             "AnyGate",
@@ -3892,9 +4605,11 @@
         "grav_or_classic": "Grav"
     },
     "Dying Bird": {
+        "author": "3",
         "difficulty": "4.2",
         "balls_req": "1",
         "preset": "gZMefHFLggtaiaaaJyaraakYE",
+        "map_id": "90881",
         "categories": [
             "Solo",
             "OneShot"
@@ -3902,9 +4617,11 @@
         "grav_or_classic": "Grav"
     },
     "Detonation Dash 4": {
+        "author": "DAD.",
         "difficulty": "3.7",
         "balls_req": "1",
         "preset": "gZMefHFiggtaiaaaJraaksaaauaaajTE",
+        "map_id": "90852",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3913,9 +4630,11 @@
         "grav_or_classic": "Grav"
     },
     "Dead Bird": {
+        "author": "3",
         "difficulty": "4.0",
         "balls_req": "1",
         "preset": "gZMefHFxggtaiaaaJyaraakYE",
+        "map_id": "90867",
         "categories": [
             "Solo",
             "OneShot"
@@ -3923,9 +4642,11 @@
         "grav_or_classic": "Grav"
     },
     "Lava System": {
+        "author": "SB Army SB",
         "difficulty": "2.6",
         "balls_req": "2",
         "preset": "gZMefHFYggtaiaaaJyaraakHtE",
+        "map_id": "90894",
         "categories": [
             "Buddy",
             "OneShot"
@@ -3933,9 +4654,11 @@
         "grav_or_classic": "Grav"
     },
     "Chillest Map Ever": {
+        "author": "3",
         "difficulty": "1.5",
         "balls_req": "1",
         "preset": "gZMefHGoggtacdiaaaJraakmaapkE",
+        "map_id": "90910",
         "categories": [
             "Solo",
             "OneShot"
@@ -3943,9 +4666,11 @@
         "grav_or_classic": "Grav"
     },
     "ToD Jump 3x (AWFUL) (DONT TRY) (HELL)": {
+        "author": "Bambi (&3)",
         "difficulty": "3.6",
         "balls_req": "1",
         "preset": "gZMefHHkggtaiaaaJyaraakYE",
+        "map_id": "90958",
         "categories": [
             "Solo",
             "OneShot"
@@ -3953,9 +4678,11 @@
         "grav_or_classic": "Grav"
     },
     "The Temple Maze [Reversed] (Official FWO)": {
+        "author": "Anonymous",
         "difficulty": "3.4",
         "balls_req": "1",
         "preset": "gZMefHGHggtaiaaaJraaksaaamaaaE",
+        "map_id": "90929",
         "categories": [
             "Solo",
             "OneShot",
@@ -3964,9 +4691,11 @@
         "grav_or_classic": "Grav"
     },
     "Evil Scary Vampire Castle": {
+        "author": "3",
         "difficulty": "4.9",
         "balls_req": "1",
         "preset": "gZMefHJZggtaiaaaJyaraaksaaamaaaYE",
+        "map_id": "91103",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3974,9 +4703,11 @@
         "grav_or_classic": "Grav"
     },
     "wow": {
+        "author": "3",
         "difficulty": "2.0",
         "balls_req": "1",
         "preset": "gZMefHLoggtaiaaaJyaraakmaaaE",
+        "map_id": "91170",
         "categories": [
             "Solo",
             "OneShot"
@@ -3984,9 +4715,11 @@
         "grav_or_classic": "Grav"
     },
     "SB Space Force Rocket Challenge": {
+        "author": "SB Army SB",
         "difficulty": "2.3",
         "balls_req": "1",
         "preset": "gZMefHMoggtaiaaaJyaelraakmaakYE",
+        "map_id": "91222",
         "categories": [
             "Solo",
             "OneShot"
@@ -3994,9 +4727,11 @@
         "grav_or_classic": "Grav"
     },
     "Triple Jump Challenge": {
+        "author": "SB Army SB",
         "difficulty": "3.0",
         "balls_req": "1",
         "preset": "gZMefHNTggtaiaaaJyaraakYEG",
+        "map_id": "91305",
         "categories": [
             "Solo",
             "OneShot"
@@ -4004,9 +4739,11 @@
         "grav_or_classic": "Grav"
     },
     "RB puzzle": {
+        "author": "Ball-E",
         "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefHIRtaiaaaJyaraaaYjTG",
+        "map_id": "91043",
         "categories": [
             "Solo",
             "OneShot",
@@ -4015,9 +4752,11 @@
         "grav_or_classic": "Classic"
     },
     "Fat Trial of Deer": {
+        "author": "Fat Bambi",
         "difficulty": "2.4",
         "balls_req": "1",
         "preset": "gZMefHQrggtaiaaaJyaasesraaksaaamaaaYE",
+        "map_id": "91433",
         "categories": [
             "Solo",
             "OneShot",
@@ -4026,9 +4765,11 @@
         "grav_or_classic": "Grav"
     },
     "Ice Climbers Without Ice": {
+        "author": "DAD.",
         "difficulty": "3.0",
         "balls_req": "1",
         "preset": "gZMefHRCggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "91496",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4037,9 +4778,11 @@
         "grav_or_classic": "Grav"
     },
     "NoJump Course": {
+        "author": "Ball-E",
         "difficulty": "3.3",
         "balls_req": "1",
         "preset": "gZMefGdMggtaiaaaJyaraaksaaamaaapaE",
+        "map_id": "86722",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4048,9 +4791,11 @@
         "grav_or_classic": "Grav"
     },
     "Skatepark": {
+        "author": "Dr. Juke",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefeSoggtaiaaaJyaraaksaaamaaapaE",
+        "map_id": "13118",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4059,9 +4804,11 @@
         "grav_or_classic": "Grav"
     },
     "iCarly": {
+        "author": "3",
         "difficulty": "3.9",
         "balls_req": "1",
         "preset": "gZMefHZNggtaiaaaJyaraaksaaaHtYEG",
+        "map_id": "91923",
         "categories": [
             "Solo",
             "OneShot"
@@ -4069,9 +4816,11 @@
         "grav_or_classic": "Grav"
     },
     "Boldy System 2.1": {
+        "author": "Kooler & McHatty",
         "difficulty": "4.6",
         "balls_req": "2",
         "preset": "gZMefIdEggtaiaaaJyaraaksaaamabWE",
+        "map_id": "92122",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -4079,9 +4828,11 @@
         "grav_or_classic": "Grav"
     },
     "Taradell [1 Jump]": {
+        "author": "Ball-E",
         "difficulty": "3.6",
         "balls_req": "1",
         "preset": "gZMefIegggtacbiaaaJyaraaksaakmaauYpbE",
+        "map_id": "92150",
         "categories": [
             "Solo",
             "OneShot",
@@ -4090,9 +4841,11 @@
         "grav_or_classic": "Grav"
     },
     "Ion Cannon": {
+        "author": "Snack",
         "difficulty": "3.7",
         "balls_req": "1",
         "preset": "gZMefIfdggtaiaaaJyaraaksaaamaaaY",
+        "map_id": "92199",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4101,19 +4854,23 @@
         "grav_or_classic": "Grav"
     },
     "Bombi": {
+        "author": "Bambi",
         "difficulty": "3.5",
         "balls_req": "1",
         "preset": "gZMefIeBggtaiaaaJyaraaksaaamaaaYE",
+        "map_id": "92171",
         "categories": [
             "Solo",
             "OneShot"
         ],
         "grav_or_classic": "Grav"
     },
-    "Sisyphus's Mountain": {
-        "difficulty": "TBD",
+    "Sisyphus's Mountain (Official)": {
+        "author": "Thanos Ball",
+        "difficulty": "3.0",
         "balls_req": "1",
         "preset": "gZMefHYWggtaiaaaJyaraakYE",
+        "map_id": "93569",
         "categories": [
             "Solo",
             "OneShot",
@@ -4122,9 +4879,11 @@
         "grav_or_classic": "Grav"
     },
     "Taradell [1 Jump] (BOUNTY MAP)": {
+        "author": "Ball-E",
         "difficulty": "4.5",
         "balls_req": "1",
         "preset": "gZMefIfxggtacbiaaaJyasaakmaakYpbE",
+        "map_id": "92219",
         "categories": [
             "Solo",
             "OneShot",
@@ -4134,9 +4893,11 @@
         "grav_or_classic": "Grav"
     },
     "Oh Man, Oh Boy (Official FWO) - 4 Jump Edition": {
+        "author": "Carey Price & FWO",
         "difficulty": "7.9",
         "balls_req": "1",
         "preset": "gZMefIgsggtaiaaaJraaksaaamaaapeE",
+        "map_id": "92266",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4145,9 +4906,11 @@
         "grav_or_classic": "Grav"
     },
     "Triple Jump Double Bomb": {
+        "author": "3",
         "difficulty": "4.4",
         "balls_req": "1",
         "preset": "gZMefIlnggtaiaaaJyaraaasaaamaaaHpYE",
+        "map_id": "92521",
         "categories": [
             "Solo",
             "OneShot",
@@ -4156,9 +4919,11 @@
         "grav_or_classic": "Grav"
     },
     "Rhapsody": {
+        "author": "3",
         "difficulty": "4.8",
         "balls_req": "2",
         "preset": "gZMefIkWggtaiaaaJyaraaksaaamaaaHpYE",
+        "map_id": "92504",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -4166,9 +4931,11 @@
         "grav_or_classic": "Grav"
     },
     "Gravitron": {
+        "author": "Tumblewood, flaccid trip, Ball-E, Snack, meowza, Bambi, 3, DAD, MarcusYallow",
         "difficulty": "5.3",
         "balls_req": "1",
         "preset": "gZMefIkIggtaiaaaJraaasaaamaaaHpE",
+        "map_id": "92490",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4177,9 +4944,11 @@
         "grav_or_classic": "Grav"
     },
     "Pathfinder": {
+        "author": "Snack",
         "difficulty": "2.0",
         "balls_req": "1",
         "preset": "gZMefIjmggtaiaaaJraaasaaamaaaE",
+        "map_id": "92416",
         "categories": [
             "Solo",
             "Checkpoint"
@@ -4187,9 +4956,11 @@
         "grav_or_classic": "Grav"
     },
     "Jumpn't": {
+        "author": "snack",
         "difficulty": "TBD",
         "balls_req": "1",
         "preset": "gZMefIhQggtaiaaaJyaraaasaaamaaaYpaEG",
+        "map_id": "92342",
         "categories": [
             "Solo",
             "OneShot",
@@ -4198,9 +4969,11 @@
         "grav_or_classic": "Grav"
     },
     "Space Walk": {
+        "author": "Bambi",
         "difficulty": "2.9",
         "balls_req": "1",
         "preset": "gZMefIhPggtaiaaaJyaraaksaaamaaaYE",
+        "map_id": "92341",
         "categories": [
             "Solo",
             "OneShot"
@@ -4208,9 +4981,11 @@
         "grav_or_classic": "Grav"
     },
     "Light Em Up (Official FWO)": {
+        "author": "Carey Price",
         "difficulty": "3.2",
         "balls_req": "1",
         "preset": "gZMefIoHggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "92697",
         "categories": [
             "Solo",
             "AnyGate",
@@ -4219,9 +4994,11 @@
         "grav_or_classic": "Grav"
     },
     "Eeffoc": {
+        "author": "3",
         "difficulty": "4.8",
         "balls_req": "1",
         "preset": "gZMefIpuggtaiaaaJyaraakmaaaHppfE",
+        "map_id": "92736",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4230,9 +5007,11 @@
         "grav_or_classic": "Grav"
     },
     "New 3 Map": {
+        "author": "3",
         "difficulty": "3.0",
         "balls_req": "1",
         "preset": "gZMefIuwggtkcbiaaaJyaraaksaaamaakuafOHpYTpfEG",
+        "map_id": "92998",
         "categories": [
             "Solo",
             "OneShot"
@@ -4240,9 +5019,11 @@
         "grav_or_classic": "Grav"
     },
     "Bambox (hard edition)": {
+        "author": "Bambi",
         "difficulty": "4.0",
         "balls_req": "1",
         "preset": "gZMefIybggtaiaaaJraaksaaamaaaE",
+        "map_id": "93185",
         "categories": [
             "Solo",
             "OneShot"
@@ -4250,9 +5031,11 @@
         "grav_or_classic": "Grav"
     },
     "Weakest Link": {
+        "author": "SB Army SB",
         "difficulty": "3.7",
         "balls_req": "3",
         "preset": "gZMefIANggtaiaaaJraaksaaamaaEE",
+        "map_id": "93327",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -4260,9 +5043,11 @@
         "grav_or_classic": "Grav"
     },
     "Detonation Dash 5": {
+        "author": "DAD.",
         "difficulty": "5.1",
         "balls_req": "1",
         "preset": "gZMefICkggtaiaaaJraaksaaauaaajTE",
+        "map_id": "93402",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4271,9 +5056,11 @@
         "grav_or_classic": "Grav"
     },
     "Marble Run Race": {
+        "author": "Dr. Juke",
         "difficulty": "1.9",
         "balls_req": "1",
         "preset": "gZMefIDdggtioiaaaJyaraaksaaamaaaYpaEG",
+        "map_id": "93447",
         "categories": [
             "Individual",
             "Race",
@@ -4283,9 +5070,11 @@
         "grav_or_classic": "Grav"
     },
     "Buddy System 4 [Patched] 9bob9": {
+        "author": "Team 1",
         "difficulty": "2.2",
         "balls_req": "2",
         "preset": "gZMefIEmggtaiaaaJraaksaaamaaaunqqjbE",
+        "map_id": "93508",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -4293,9 +5082,11 @@
         "grav_or_classic": "Grav"
     },
     "Discovery of Magic": {
+        "author": "Snack",
         "difficulty": "x",
         "balls_req": "1",
         "preset": "gZMefIEdggtacbiaaaJyaraaasaaamaaauaaaSPuYTbE",
+        "map_id": "93499",
         "categories": [
             "Solo",
             "OneShot",
@@ -4305,9 +5096,11 @@
         "grav_or_classic": "Grav"
     },
     "Knife's Edge": {
+        "author": "Snack",
         "difficulty": "x",
         "balls_req": "1",
         "preset": "gZMefIEVggtacbiaaayaraaasaaamaaaE",
+        "map_id": "93543",
         "categories": [
             "Solo",
             "Checkpoint",
