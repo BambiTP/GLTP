@@ -183,28 +183,6 @@ a:hover {
   color: white;
 }
 
-/* Fix search and filter row layout */
-.search-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0 auto 20px auto;
-  max-width: 1200px;
-  padding: 0 20px;
-}
-
-/* Enhance search input */
-.search-input {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
-  border: 1px solid #333;
-  border-radius: 4px;
-  padding: 8px 12px;
-  font-size: 14px;
-  height: 30px !important;
-  flex: 1;
-}
-
 /* Improve select dropdown styling */
 .filter-select {
   background-color: #1e1e1e;
@@ -386,6 +364,28 @@ button.upload-button:hover {
   opacity: 1;
 }
 
+/* Fix search and filter row layout */
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto 20px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Enhance search input */
+.search-input {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  height: 30px !important;
+  flex: 1;
+}
+
 /* Fix responsive behavior */
 @media (max-width: 768px) {
   .search-row {
@@ -419,16 +419,38 @@ button.upload-button:hover {
   gap: 8px; /* optional spacing */
 }
 
-.search-left {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
+/* Scope styles to this search bar only */
+.player-search {
+  margin-top: 5px;
 }
 
-.search-right {
-  margin-left: auto;
+.player-search .search-row {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  gap: 12px;                 /* space between input and button */
+  margin: 0 auto 20px auto;
+  max-width: 600px;          /* narrower so it doesn't stretch full width */
+  padding: 0 20px;
 }
+
+.player-search .search-input {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  height: 30px !important;
+  flex: 0 0 250px;           /* fixed width instead of flex:1 */
+}
+
+.player-search .upload-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 
 /* Map preview styling */
 .map-preview {
@@ -825,16 +847,17 @@ button.upload-button:hover {
   color: #e0e0e0;
 }
 
+/* Player summary links */
 .player-summary-box a {
   color: #1e90ff;
   text-decoration: none;
   font-weight: bold;
 }
-
 .player-summary-box a:hover {
   text-decoration: underline;
 }
 
+/* Summary grid layout */
 .summary-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -843,14 +866,144 @@ button.upload-button:hover {
   font-size: 0.9rem;
   color: #ccc;
 }
-
 .summary-grid span {
   font-weight: bold;
   color: #aaa;
 }
 
+/* Table header */
 .table-container h2 {
   margin: 0 0 8px 0;
   font-size: 1rem;
 }
+
+/* Completion table rows */
+.completion-row {
+  cursor: pointer;
+}
+.completion-row:hover {
+  background-color: #333;
+}
+
+/* Expanded details box */
+.completion-details .details-box {
+  background-color: #222;
+  color: #ddd;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Grid layout for expanded content */
+.details-grid {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+.details-left {
+  flex: 0 0 300px; /* smaller preview column */
+}
+.details-right {
+  flex: 1;
+}
+
+/* Map preview styling (scoped to player page) */
+.map-preview-player {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  text-align: right;
+}
+.map-preview-player img {
+  max-width: 280px !important;
+  border-radius: 6px;
+  border: 1px solid #333;
+  display: inline-block;
+}
+
+/* Meta info below preview */
+.map-meta-player {
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.copy-preset,
+.copy-mapid {
+  margin-left: 8px;
+  padding: 4px 10px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.copy-preset:hover,
+.copy-mapid:hover {
+  background-color: #666;
+}
+
+/* Run list */
+.run-list p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+.run-block {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #444;
+}
+
+.details-box.details-flex {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: #222;
+  color: #ddd;
+  border-radius: 6px;
+}
+
+.map-preview-player {
+  flex: 0 0 280px;
+  text-align: center;
+}
+.map-preview-player img {
+  max-width: 100%;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+.map-meta-player {
+  flex: 1;
+  font-size: 14px;
+}
+
+.map-meta-player p {
+  margin: 6px 0;
+}
+
+.copy-preset,
+.copy-mapid {
+  margin-left: 8px;
+  padding: 4px 10px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.copy-preset:hover,
+.copy-mapid:hover {
+  background-color: #666;
+}
+
+.run-list p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.loading-spinner {
+  color: #aaa;
+}
+.error {
+  color: #f66;
+}
+
 

@@ -290,27 +290,24 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
 
   const beatenMapStats = {};
 
-  // Collect best time and lowest jumps per map
   records.forEach(r => {
     const key = makeKey(r.map_name, r.map_author);
-
-    // ✅ Deduplicate: only one entry per map, but update stats if better
     if (!beatenMapStats[key]) {
       beatenMapStats[key] = {
         attempts: 1,
         bestTime: r.record_time,
-        minJumps: r.total_jumps
+        minJumps: r.total_jumps,
+        runs: [r]
       };
     } else {
-      // Increment attempts (still counts multiple runs, but map completion is unique)
       beatenMapStats[key].attempts += 1;
-
       if (r.record_time < beatenMapStats[key].bestTime) {
         beatenMapStats[key].bestTime = r.record_time;
       }
       if (r.total_jumps < beatenMapStats[key].minJumps) {
         beatenMapStats[key].minJumps = r.total_jumps;
       }
+      beatenMapStats[key].runs.push(r);
     }
   });
 
@@ -336,7 +333,10 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
     const key = makeKey(m.name, m.author);
     const stats = beatenMapStats[key];
     const attempts = stats ? stats.attempts : 0;
+
+    // Main row
     const tr = document.createElement("tr");
+    tr.classList.add("completion-row");
     tr.innerHTML = `
       <td>${m.name}</td>
       <td>${attempts > 0 ? "✅" : "❌"}</td>
@@ -344,9 +344,112 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
       <td>${stats ? formatTime(stats.bestTime) : "-"}</td>
       <td>${stats ? stats.minJumps : "-"}</td>
       <td>${m.difficulty ?? "-"}</td>
-      <td>${m.balls_req ?? "-"}</td>
+      <td>${m.balls_required ?? "-"}</td>
     `;
+
+    // Details row
+    const detailsTr = document.createElement("tr");
+    detailsTr.classList.add("completion-details");
+    detailsTr.style.display = "none";
+
+    const preset = m.preset ?? "No preset available";
+    const mapLink = m.map_id ? `/GLTP/map.html?map_id=${m.map_id}` : null;
+
+detailsTr.innerHTML = `
+  <td colspan="7">
+    <div class="details-box details-flex">
+      <div class="map-preview-player">
+        <div class="loading-spinner">Click row to load preview...</div>
+      </div>
+      <div class="map-meta-player">
+        <p><strong>Preset:</strong> <code>${preset}</code>
+          <button class="copy-preset">Copy</button>
+        </p>
+        ${
+          m.map_id
+            ? `<p><strong>Map ID:</strong> <code>${m.map_id}</code>
+                 <a href="/GLTP/map.html?map_id=${m.map_id}" target="_blank">View Map</a>
+                 <button class="copy-mapid" data-id="${m.map_id}">Copy</button>
+               </p>`
+            : ""
+        }
+        <div class="run-list">
+          ${
+            stats
+              ? stats.runs
+                  .map(
+                    run => `
+              <p>
+                ${new Date(run.timestamp).toLocaleDateString()} — 
+                ${formatTime(run.record_time)} — 
+                ${run.total_jumps} jumps
+                ${run.uuid ? `— <a href="https://tagpro.koalabeast.com/replays?uuid=${run.uuid}" target="_blank">Replay</a>` : ""}
+              </p>
+            `
+                  )
+                  .join("")
+              : "<p>No runs yet.</p>"
+          }
+        </div>
+      </div>
+    </div>
+  </td>
+`;
+
+    // Toggle details on click
+    tr.addEventListener("click", () => {
+      const isExpanding = detailsTr.style.display === "none";
+      detailsTr.style.display = isExpanding ? "table-row" : "none";
+
+      if (isExpanding && m.map_id) {
+        const mapPreview = detailsTr.querySelector(".map-preview-player");
+        if (mapPreview && mapPreview.querySelector(".loading-spinner")) {
+          mapPreview.innerHTML = '<div class="loading-spinner">Loading...</div>';
+
+          const img = document.createElement("img");
+          const imageUrl = `https://fortunatemaps.herokuapp.com/preview/${m.map_id}`;
+          img.src = imageUrl;
+          img.alt = `Preview of ${m.name}`;
+          img.style.cursor = "pointer";
+
+          img.onload = function () {
+            mapPreview.innerHTML = "";
+            mapPreview.appendChild(img);
+          };
+
+          img.onerror = function () {
+            mapPreview.innerHTML = '<div class="error">Preview failed</div>';
+          };
+
+          img.onclick = function () {
+            if (typeof showLargePreview === "function") {
+              showLargePreview(m.name, imageUrl);
+            }
+          };
+        }
+      }
+    });
+
+    // Copy preset
+    detailsTr.querySelector(".copy-preset").addEventListener("click", () => {
+      navigator.clipboard.writeText(preset).then(() => {
+        alert("Preset copied to clipboard!");
+      });
+    });
+
+    // Copy map ID
+    const copyMapIdBtn = detailsTr.querySelector(".copy-mapid");
+    if (copyMapIdBtn) {
+      copyMapIdBtn.addEventListener("click", () => {
+        const id = copyMapIdBtn.getAttribute("data-id");
+        navigator.clipboard.writeText(id).then(() => {
+          alert("Map ID copied to clipboard!");
+        });
+      });
+    }
+
     tbody.appendChild(tr);
+    tbody.appendChild(detailsTr);
   });
 
   document.getElementById("completionContainer").style.display = "block";
@@ -372,6 +475,7 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
     };
   });
 }
+
 
 function formatTime(ms) {
   const sec = Math.floor(ms / 1000);
