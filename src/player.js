@@ -5,6 +5,13 @@ let mapMetadata = {};
 let completionSortKey = null;
 let completionSortAsc = true;
 
+const mergedProfiles = {
+  "group1": {
+    user_ids: ["5c59418b6c57cf3971151579", "52bb02613330151206000004"],
+    names: ["FWO", "DAD.", "::"]
+  }
+};
+
 
 async function loadData() {
   const res = await fetch("https://worldrecords.bambitp.workers.dev");
@@ -59,48 +66,156 @@ function searchPlayer(query) {
   return out;
 }
 
+function findMergeGroup(query) {
+  const qNorm = normalize(query);
+  for (const group of Object.values(mergedProfiles)) {
+    const idMatch = (group.user_ids || []).some(id => normalize(id) === qNorm);
+    const nameMatch = (group.names || []).some(n => normalize(n) === qNorm);
+    if (idMatch || nameMatch) return group;
+  }
+  return null;
+}
+
+
 function summarizePlayer(records, query) {
-  const timestamps = records.map(r => r.timestamp).sort();
+  if (!records || !records.length) return null;
+
+  const qNorm = normalize(query);
+  const group = findMergeGroup(query);
+
+  const groupIds = new Set(group?.user_ids || []);
+  const groupNamesNorm = new Set((group?.names || []).map(n => normalize(n)));
+
+  // Filter records: match if ANY player in the team matches the group IDs or group names (normalized)
+  const relevantRecords = records.filter(r => {
+    if (!r.players || r.players.length === 0) return false;
+
+    if (group) {
+      const idHit = r.players.some(p => p.user_id && groupIds.has(p.user_id));
+      const nameHit = r.players.some(p => p.name && groupNamesNorm.has(normalize(p.name)));
+      return idHit || nameHit;
+    }
+
+    // Fallback: match by the query itself (id or name)
+    return r.players.some(
+      p => normalize(p.user_id) === qNorm || normalize(p.name) === qNorm
+    );
+  });
+
+  if (!relevantRecords.length) return null;
+
+  // Aggregate stats from relevantRecords
+  const timestamps = relevantRecords.map(r => r.timestamp).sort();
   const first = new Date(timestamps[0]).toLocaleDateString();
   const last = new Date(timestamps[timestamps.length - 1]).toLocaleDateString();
-  const maps = new Set(records.map(r => makeKey(r.map_name, r.map_author)));
+  const maps = new Set(relevantRecords.map(r => makeKey(r.map_name, r.map_author)));
 
-  // Prefer showing the queried name if capping_player is null or different
-  const displayName =
-    normalize(records[0].capping_player || "") === normalize(query)
-      ? records[0].capping_player
-      : query;
+    // Names: strictly from mergedProfiles group (do NOT add names from records)
+    // Names: if merged, use aliases; if not merged, leave empty so enhanceSummaryName can fill in
+    const names = group ? [...group.names] : [];
 
-  // Try to find a user_id from any matching spot
-  let displayId = records[0].capping_player_user_id || null;
-  if (!displayId) {
-    for (const r of records) {
-      for (const p of r.players) {
-        if (normalize(p.name) === normalize(query) && p.user_id) {
-          displayId = p.user_id;
-          break;
+
+  // IDs: include configured group IDs plus any encountered IDs for matched players
+  const encounteredIds = new Set();
+  for (const r of relevantRecords) {
+    for (const p of r.players) {
+      if (!p.user_id) continue;
+      if (group) {
+        // Only collect IDs that belong to the group
+        if (groupIds.has(p.user_id)) encounteredIds.add(p.user_id);
+      } else {
+        // Fallback mode: collect IDs that match the query
+        if (normalize(p.user_id) === qNorm || normalize(p.name) === qNorm) {
+          encounteredIds.add(p.user_id);
         }
       }
-      if (displayId) break;
     }
   }
+  const user_ids = Array.from(new Set([...(group?.user_ids || []), ...encounteredIds]));
 
   return {
-    name: displayName,
-    user_id: displayId,
+    name: names.join(" / "),
+    names,
+    user_ids,
     first,
     last,
     totalMaps: maps.size,
-    totalRuns: records.length
+    totalRuns: relevantRecords.length
   };
 }
 
-function renderSummary(summary) {
+
+
+
+
+async function enhanceSummaryName(summary) {
+  if (!summary) return null;
+
+  // Fetch canonical names for the group's user_ids
+  const canonical = [];
+  if (summary.user_ids && summary.user_ids.length > 0) {
+    for (const id of summary.user_ids) {
+      if (!id) continue;
+      try {
+        const tagproName = await fetchTagProName(id);
+        if (tagproName) canonical.push(tagproName);
+      } catch (err) {
+        console.warn("Could not fetch TagPro name for", id, err);
+      }
+    }
+  }
+
+  // If merged group: combine canonical names with aliases
+  if (summary.names && summary.names.length > 0) {
+    const canonSet = new Set(canonical.map(n => normalize(n)));
+    const aliasTail = summary.names.filter(n => !canonSet.has(normalize(n)));
+    const merged = [...canonical, ...aliasTail];
+    summary.names = merged;
+    summary.name = merged.join(" / ");
+  } else if (canonical.length > 0) {
+    // Not merged: just show canonical TagPro names
+    summary.names = canonical;
+    summary.name = canonical.join(" / ");
+  }
+
+  return summary;
+}
+
+
+
+
+async function renderSummary(summary) {
   const div = document.getElementById("playerSummary");
+
+  if (!summary) {
+    div.innerHTML = "<p>No summary available.</p>";
+    div.style.display = "block";
+    return;
+  }
+
+  const displayName = summary.names && summary.names.length
+    ? summary.names.join(" / ")
+    : summary.name || "";
+
   div.innerHTML = `
     <div class="player-summary-box">
-      <h2>${summary.name}</h2>
-      ${summary.user_id ? `<p><a href="https://tagpro.koalabeast.com/profile/${summary.user_id}" target="_blank">View Profile</a></p>` : ""}
+      <h2>${displayName}</h2>
+      ${
+        summary.user_ids && summary.user_ids.length > 0
+          ? summary.user_ids
+              .filter(id => id)
+              .map(
+                id => `
+          <p class="player-id">User ID: ${id}</p>
+          <p>
+            <a href="/GLTP/player.html?user_id=${id}">Local Profile</a> |
+            <a href="https://tagpro.koalabeast.com/profile/${id}" target="_blank">TagPro Profile</a>
+          </p>
+        `
+              )
+              .join("")
+          : ""
+      }
       <div class="summary-grid">
         <div><span>First game:</span> ${summary.first}</div>
         <div><span>Most recent:</span> ${summary.last}</div>
@@ -111,6 +226,44 @@ function renderSummary(summary) {
   `;
   div.style.display = "block";
 }
+
+
+
+async function fetchTagProName(user_id) {
+  const url = `https://tagpro.koalabeast.com/profile/${user_id}`;
+  const proxies = [
+    'https://corsproxy.io/?',
+    'https://cors-anywhere.herokuapp.com/',
+    'https://api.allorigins.win/raw?url='
+  ];
+
+  let response;
+  for (const proxy of proxies) {
+    try {
+      response = await fetch(proxy + url);
+      if (response.ok) break;
+    } catch (err) {
+      console.log(`Proxy ${proxy} failed:`, err);
+    }
+  }
+
+  if (!response || !response.ok) {
+    throw new Error("Failed to fetch profile HTML");
+  }
+
+  const html = await response.text();
+
+  // Parse the HTML
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, "text/html");
+
+  // Try reserved name span first, then normal name span
+  const reserved = doc.querySelector("span.reserved");
+  const normal = doc.querySelector("span.name");
+
+  return reserved?.textContent.trim() || normal?.textContent.trim() || null;
+}
+
 
 
 function renderRuns(records) {
@@ -140,6 +293,8 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
   // Collect best time and lowest jumps per map
   records.forEach(r => {
     const key = makeKey(r.map_name, r.map_author);
+
+    // ✅ Deduplicate: only one entry per map, but update stats if better
     if (!beatenMapStats[key]) {
       beatenMapStats[key] = {
         attempts: 1,
@@ -147,7 +302,9 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
         minJumps: r.total_jumps
       };
     } else {
+      // Increment attempts (still counts multiple runs, but map completion is unique)
       beatenMapStats[key].attempts += 1;
+
       if (r.record_time < beatenMapStats[key].bestTime) {
         beatenMapStats[key].bestTime = r.record_time;
       }
@@ -162,7 +319,7 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
     ...meta
   }));
 
-    if (sortKey) {
+  if (sortKey) {
     allMaps.sort((a, b) => {
       const keyA = getSortValue(a, sortKey, beatenMapStats);
       const keyB = getSortValue(b, sortKey, beatenMapStats);
@@ -171,7 +328,6 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
       return 0;
     });
   }
-
 
   const tbody = document.getElementById("completionBody");
   tbody.innerHTML = "";
@@ -188,7 +344,7 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
       <td>${stats ? formatTime(stats.bestTime) : "-"}</td>
       <td>${stats ? stats.minJumps : "-"}</td>
       <td>${m.difficulty ?? "-"}</td>
-      <td>${m.balls_required ?? "-"}</td>
+      <td>${m.balls_req ?? "-"}</td>
     `;
     tbody.appendChild(tr);
   });
@@ -200,7 +356,7 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
   document.querySelectorAll("#completionTable th").forEach(th => {
     th.style.cursor = "pointer";
     th.onclick = () => {
-        const keyMap = {
+      const keyMap = {
         0: "name",
         1: "completed",
         2: "attempts",
@@ -208,16 +364,14 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
         4: "minJumps",
         5: "difficulty",
         6: "balls"
-        };
-        const colIndex = th.cellIndex;
-        const key = keyMap[colIndex];
-        const asc = completionSortKey === key ? !completionSortAsc : true;
-        // ✅ records is in scope here because we’re inside renderCompletion
-        renderCompletion(records, key, asc);
+      };
+      const colIndex = th.cellIndex;
+      const key = keyMap[colIndex];
+      const asc = completionSortKey === key ? !completionSortAsc : true;
+      renderCompletion(records, key, asc);
     };
-    });
+  });
 }
-
 
 function formatTime(ms) {
   const sec = Math.floor(ms / 1000);
@@ -235,10 +389,30 @@ function getSortValue(map, key, statsMap) {
     case "bestTime": return stat?.bestTime ?? Infinity;
     case "minJumps": return stat?.minJumps ?? Infinity;
     case "difficulty": return map.difficulty ?? 0;
-    case "balls": return map.balls_required ?? 0;
+    case "balls": return map.balls_req ?? 0;
     default: return 0;
   }
 }
+
+function searchMergedGroup(group) {
+  const seen = new Set();
+  const out = [];
+
+  for (const records of Object.values(recordsByMap)) {
+    for (const r of records) {
+      // Match if any player in r.players belongs to the group
+      const idHit = r.players.some(p => group.user_ids.includes(p.user_id));
+      const nameHit = r.players.some(p => group.names.includes(p.name));
+      if ((idHit || nameHit) && !seen.has(r.uuid)) {
+        seen.add(r.uuid);
+        out.push(r);
+      }
+    }
+  }
+
+  return out;
+}
+
 
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -251,20 +425,41 @@ document.addEventListener("DOMContentLoaded", async () => {
     const q = query.trim();
     if (!q) return;
 
-    const records = searchPlayer(q);
-    if (!records.length) {
-      alert("No records found for that player.");
-      return;
+    const group = findMergeGroup(q);
+    let records;
+
+    if (group) {
+        records = searchMergedGroup(group);
+    } else {
+        records = searchPlayer(q);
     }
 
-    const summary = summarizePlayer(records, q);
-    renderSummary(summary);
-    //renderRuns(records);
-    renderCompletion(records);
-  }
+    if (!records.length) {
+        alert("No records found for that player.");
+        return;
+    }
+
+    let summary = summarizePlayer(records, q);
+    if (!summary) {
+        alert("Could not summarize player.");
+        return;
+    }
+
+    summary = await enhanceSummaryName(summary);
+    await renderSummary(summary);
+    renderCompletion(records); // ✅ now includes all merged records
+    }
+
 
   searchBtn.addEventListener("click", () => run(input.value));
   input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") run(input.value);
   });
+
+   // Auto-load if user_id is in URL
+  const params = new URLSearchParams(window.location.search);
+  const userId = params.get("user_id");
+  if (userId) {
+    run(userId);
+  }
 });

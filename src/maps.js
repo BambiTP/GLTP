@@ -288,8 +288,9 @@ export class MapsTable {
         uniquePlayers.forEach((player, index) => {
             if (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
                 const playerLink = document.createElement('a');
-                playerLink.href = `https://tagpro.koalabeast.com/profile/${player.user_id}`;
+                playerLink.href = `/GLTP/player.html?user_id=${player.user_id}`;
                 playerLink.textContent = getMapsPlayerDisplayName(player);
+                playerLink.classList.add("player-link"); // optional styling
                 playersDiv.appendChild(playerLink);
             } else {
                 const span = document.createElement('span');
@@ -461,7 +462,7 @@ export class MapsTable {
             const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
             if (dummyPlayer.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(dummyPlayer.name)) {
                 const capLink = document.createElement('a');
-                capLink.href = `https://tagpro.koalabeast.com/profile/${dummyPlayer.user_id}`;
+                capLink.href = `/GLTP/player.html?user_id=${dummyPlayer.user_id}`;
                 capLink.textContent = getMapsPlayerDisplayName(dummyPlayer);
                 capCell.appendChild(capLink);
             } else {
