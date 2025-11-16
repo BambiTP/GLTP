@@ -31,7 +31,7 @@ fetch(dataUrl)
       jumpCappingLeaderboard,
       bestJumpRecords,
       jumpRecordsByMap
-    } = processJumpLeaderboardData(data);
+    } = processJumpLeaderboardData(data, mapMetadata);
 
     // Speed Records table
     const mapsTable = new MapsTable(presets, recordsByMap, mapMetadata);

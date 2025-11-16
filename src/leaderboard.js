@@ -114,7 +114,7 @@ export function processLeaderboardData(data) {
         }
       });
 
-      const key = `${record.map_name}::${record.map_author}`;
+      const key = record.map_id;
       if (!bestRecords[key] || record.record_time < bestRecords[key].record_time) {
         bestRecords[key] = record;
       }
@@ -184,7 +184,8 @@ export function processLeaderboardData(data) {
 }
 
 // -------------------- Jump Records Processor --------------------
-export function processJumpLeaderboardData(data) {
+export function processJumpLeaderboardData(data, mapMetadata) {
+  //TOdo does this include classic maps?
   let jumpWorldRecordsLeaderboard = {};
   let jumpSoloLeaderboard = {};
   let jumpCappingLeaderboard = {};
@@ -192,9 +193,13 @@ export function processJumpLeaderboardData(data) {
   let jumpRecordsByMap = {};
 
   data.forEach(record => {
+    const meta = mapMetadata[record.map_id];
+    if (!meta) return;
+
+    if (meta.grav_or_classic === "Classic") return;
     if (record.total_jumps !== null) {
       // Track best jump record per map (fewest jumps)
-      const key = `${record.map_name}::${record.map_author}`;
+      const key = record.map_id;
       if (!bestJumpRecords[key] || record.total_jumps < bestJumpRecords[key].total_jumps) {
         bestJumpRecords[key] = record;
       }

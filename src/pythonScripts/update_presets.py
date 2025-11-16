@@ -44,7 +44,8 @@ def get_map_metadata():
         else:
             map_name, map_author = map_full, None
 
-        map_metadata[map_name] = {
+        map_metadata[row["Map ID"]] = {
+            "map_name": map_name,
             "author": map_author,
             "difficulty": row["Final Rating"],
             "balls_req": row["Min\nBalls \nRec"],

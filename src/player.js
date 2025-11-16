@@ -1,5 +1,7 @@
 import { processLeaderboardData } from "./leaderboard.js";
 
+//TODO verify names by user ID and not only by name for white names
+
 let recordsByMap = {};
 let mapMetadata = {};
 let completionSortKey = null;
@@ -16,7 +18,7 @@ const mergedProfiles = {
 async function loadData() {
   const res = await fetch("https://worldrecords.bambitp.workers.dev");
   const raw = await res.json();
-  const { recordsByMap: rbm } = processLeaderboardData(raw);
+  const { recordsByMap: rbm } = processLeaderboardData(raw); //TODO the "keys are all lowercase. time to change to ID?"
   recordsByMap = rbm;
 
   const metadataRes = await fetch("./map_metadata.json");
@@ -25,10 +27,6 @@ async function loadData() {
 
 function normalize(s) {
   return (s || "").trim().toLowerCase();
-}
-
-function makeKey(name, author) {
-  return `${normalize(name)}::${normalize(author)}`;
 }
 
 // Exact match by player name OR exact ID
@@ -76,6 +74,38 @@ function findMergeGroup(query) {
   return null;
 }
 
+function countTopRecords(playerNames, playerIds, statKey, topN = 3) {
+  let count = 0;
+
+  for (const [key, records] of Object.entries(recordsByMap)) {
+    const meta = mapMetadata[key];
+    if (!meta) continue;
+
+    // Skip classic maps for jump stats
+    if (statKey === "total_jumps" && meta.grav_or_classic === "Classic") {
+      continue;
+    }
+
+    const sorted = [...records]
+      .sort((a, b) => a[statKey] - b[statKey])
+      .slice(0, topN);
+
+    if (
+      sorted.some(r =>
+        r.players.some(
+          p =>
+            (playerNames && playerNames.includes(p.name)) ||
+            (playerIds && playerIds.includes(p.user_id))
+        )
+      )
+    ) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
 
 function summarizePlayer(records, query) {
   if (!records || !records.length) return null;
@@ -108,7 +138,7 @@ function summarizePlayer(records, query) {
   const timestamps = relevantRecords.map(r => r.timestamp).sort();
   const first = new Date(timestamps[0]).toLocaleDateString();
   const last = new Date(timestamps[timestamps.length - 1]).toLocaleDateString();
-  const maps = new Set(relevantRecords.map(r => makeKey(r.map_name, r.map_author)));
+  const maps = new Set(relevantRecords.map(r => r.map_id));
 
     // Names: strictly from mergedProfiles group (do NOT add names from records)
     // Names: if merged, use aliases; if not merged, leave empty so enhanceSummaryName can fill in
@@ -133,6 +163,13 @@ function summarizePlayer(records, query) {
   }
   const user_ids = Array.from(new Set([...(group?.user_ids || []), ...encounteredIds]));
 
+// Count top 3 records across all aliases
+const top3Time = countTopRecords(names, user_ids, "record_time", 3);
+const top3Jumps = countTopRecords(names, user_ids, "total_jumps", 3);
+
+const top1Time = countTopRecords(names, user_ids, "record_time", 1);
+const top1Jumps = countTopRecords(names, user_ids, "total_jumps", 1);
+
   return {
     name: names.join(" / "),
     names,
@@ -140,13 +177,13 @@ function summarizePlayer(records, query) {
     first,
     last,
     totalMaps: maps.size,
-    totalRuns: relevantRecords.length
+    totalRuns: relevantRecords.length,
+    top3Time,
+    top3Jumps,
+    top1Time,
+    top1Jumps
   };
 }
-
-
-
-
 
 async function enhanceSummaryName(summary) {
   if (!summary) return null;
@@ -180,9 +217,6 @@ async function enhanceSummaryName(summary) {
 
   return summary;
 }
-
-
-
 
 async function renderSummary(summary) {
   const div = document.getElementById("playerSummary");
@@ -221,7 +255,11 @@ async function renderSummary(summary) {
         <div><span>Most recent:</span> ${summary.last}</div>
         <div><span>Maps completed:</span> ${summary.totalMaps}</div>
         <div><span>Total games:</span> ${summary.totalRuns}</div>
-      </div>
+        <div><span>Top 1 (Fastest Time):</span> <span class="badge gold">🏆 ${summary.top1Time}</span></div>
+        <div><span>Top 1 (Lowest Jumps):</span> <span class="badge gold">🏆 ${summary.top1Jumps}</span></div>
+        <div><span>Top 3 (Fastest Time):</span> <span class="badge bronze">🥉 ${summary.top3Time}</span></div>
+        <div><span>Top 3 (Lowest Jumps):</span> <span class="badge bronze">🥉 ${summary.top3Jumps}</span></div>
+    </div>
     </div>
   `;
   div.style.display = "block";
@@ -284,14 +322,13 @@ function renderRuns(records) {
   document.getElementById("runsHeader").style.display = "block";
 }
 
-function renderCompletion(records, sortKey = null, sortAsc = true) {
+function renderCompletion(records, summary=null, sortKey = null, sortAsc = true) {
   completionSortKey = sortKey;
   completionSortAsc = sortAsc;
 
   const beatenMapStats = {};
-
   records.forEach(r => {
-    const key = makeKey(r.map_name, r.map_author);
+    const key = r.map_id;
     if (!beatenMapStats[key]) {
       beatenMapStats[key] = {
         attempts: 1,
@@ -311,8 +348,9 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
     }
   });
 
-  const allMaps = Object.entries(mapMetadata).map(([name, meta]) => ({
-    name,
+  
+  const allMaps = Object.entries(mapMetadata).map(([mapId, meta]) => ({
+    mapId,
     ...meta
   }));
 
@@ -330,22 +368,86 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
   tbody.innerHTML = "";
 
   allMaps.forEach(m => {
-    const key = makeKey(m.name, m.author);
+    const key = m.map_id;
     const stats = beatenMapStats[key];
     const attempts = stats ? stats.attempts : 0;
+
+    // Safe helper
+    function getBestRun(runs, statKey) {
+    if (!Array.isArray(runs) || runs.length === 0) return null;
+    return runs.reduce((best, r) => (r[statKey] < best[statKey] ? r : best));
+    }
+
+    const allRuns = Array.isArray(recordsByMap[key]) ? recordsByMap[key] : [];
+const bestTimeRun = getBestRun(allRuns, "record_time");
+const bestJumpRun = getBestRun(allRuns, "total_jumps");
+
+// Check if current player (summary context) is in those runs
+const holdsTime = bestTimeRun && bestTimeRun.players.some(p =>
+  summary.user_ids.includes(p.user_id) || summary.names.includes(p.name)
+);
+const holdsJumps = bestJumpRun && bestJumpRun.players.some(p =>
+  summary.user_ids.includes(p.user_id) || summary.names.includes(p.name)
+);
+
+
+    function getTopRuns(runs, statKey, topN) {
+  if (!Array.isArray(runs) || runs.length === 0) return [];
+  return [...runs].sort((a, b) => a[statKey] - b[statKey]).slice(0, topN);
+}
+
+const top1TimeRun = getTopRuns(allRuns, "record_time", 1)[0];
+const top1JumpRun = getTopRuns(allRuns, "total_jumps", 1)[0];
+const top3TimeRuns = getTopRuns(allRuns, "record_time", 3);
+const top3JumpRuns = getTopRuns(allRuns, "total_jumps", 3);
+
+const holdsTop1Time = top1TimeRun && top1TimeRun.players.some(p =>
+  summary.user_ids.includes(p.user_id) || summary.names.includes(p.name)
+);
+const holdsTop1Jumps = top1JumpRun && top1JumpRun.players.some(p =>
+  summary.user_ids.includes(p.user_id) || summary.names.includes(p.name)
+);
+
+const holdsTop3Time = top3TimeRuns.some(r =>
+  r.players.some(p => summary.user_ids.includes(p.user_id) || summary.names.includes(p.name))
+);
+const holdsTop3Jumps = top3JumpRuns.some(r =>
+  r.players.some(p => summary.user_ids.includes(p.user_id) || summary.names.includes(p.name))
+);
 
     // Main row
     const tr = document.createElement("tr");
     tr.classList.add("completion-row");
+    // detect classic maps
+    const isClassic = m.grav_or_classic === "Classic";
+
+    // decide what to show in the jump cell
+    let jumpDisplay;
+    if (isClassic) {
+    jumpDisplay = "N/A"; // no jumps for classic maps
+    } else {
+    jumpDisplay = stats ? stats.minJumps : "-";
+    }
+
     tr.innerHTML = `
-      <td>${m.name}</td>
-      <td>${attempts > 0 ? "✅" : "❌"}</td>
-      <td>${attempts}</td>
-      <td>${stats ? formatTime(stats.bestTime) : "-"}</td>
-      <td>${stats ? stats.minJumps : "-"}</td>
-      <td>${m.difficulty ?? "-"}</td>
-      <td>${m.balls_required ?? "-"}</td>
+    <td>${m.map_name}</td>
+    <td>${attempts > 0 ? "✅" : "❌"}</td>
+    <td>${attempts}</td>
+    <td>
+        ${stats ? formatTime(stats.bestTime) : "-"}
+        ${holdsTop1Time ? '<span class="badge gold">🏆</span>' : ""}
+        ${!holdsTop1Time && holdsTop3Time ? '<span class="badge bronze">🥉</span>' : ""}
+    </td>
+    <td>
+        ${jumpDisplay}
+        ${!isClassic && holdsTop1Jumps ? '<span class="badge gold">🏆</span>' : ""}
+        ${!isClassic && !holdsTop1Jumps && holdsTop3Jumps ? '<span class="badge bronze">🥉</span>' : ""}
+    </td>
+    <td>${m.difficulty ?? "-"}</td>
+    <td>${m.balls_req ?? "-"}</td>
     `;
+
+
 
     // Details row
     const detailsTr = document.createElement("tr");
@@ -355,46 +457,51 @@ function renderCompletion(records, sortKey = null, sortAsc = true) {
     const preset = m.preset ?? "No preset available";
     const mapLink = m.map_id ? `/GLTP/map.html?map_id=${m.map_id}` : null;
 
-detailsTr.innerHTML = `
-  <td colspan="7">
-    <div class="details-box details-flex">
-      <div class="map-preview-player">
-        <div class="loading-spinner">Click row to load preview...</div>
-      </div>
-      <div class="map-meta-player">
-        <p><strong>Preset:</strong> <code>${preset}</code>
-          <button class="copy-preset">Copy</button>
-        </p>
-        ${
-          m.map_id
-            ? `<p><strong>Map ID:</strong> <code>${m.map_id}</code>
-                 <a href="/GLTP/map.html?map_id=${m.map_id}" target="_blank">View Map</a>
-                 <button class="copy-mapid" data-id="${m.map_id}">Copy</button>
-               </p>`
-            : ""
-        }
-        <div class="run-list">
-          ${
-            stats
-              ? stats.runs
-                  .map(
-                    run => `
-              <p>
-                ${new Date(run.timestamp).toLocaleDateString()} — 
-                ${formatTime(run.record_time)} — 
-                ${run.total_jumps} jumps
-                ${run.uuid ? `— <a href="https://tagpro.koalabeast.com/replays?uuid=${run.uuid}" target="_blank">Replay</a>` : ""}
-              </p>
-            `
-                  )
-                  .join("")
-              : "<p>No runs yet.</p>"
-          }
+    detailsTr.innerHTML = `
+    <td colspan="7">
+        <div class="details-box details-flex">
+        <div class="map-preview-player">
+            <div class="loading-spinner">Click row to load preview...</div>
         </div>
-      </div>
-    </div>
-  </td>
-`;
+        <div class="map-meta-player">
+            <p><strong>Preset:</strong> <code>${preset}</code>
+            <button class="copy-preset">Copy</button>
+            </p>
+            ${
+            m.map_id
+                ? `<p><strong>Map ID:</strong> <code>${m.map_id}</code>
+                    <button class="copy-mapid" data-id="${m.map_id}">Copy</button>
+                </p>
+                <p><a href="https://fortunatemaps.herokuapp.com/map/${m.map_id}" target="_blank" class="view-map-link">🔗 View Map on Fortunate</a></p>`
+                : ""
+            }
+            <br><p><strong>Map Type:</strong> ${m.grav_or_classic ?? "Unknown"}</p>
+            <p><strong>Map Categories:</strong> ${(m.categories && m.categories.length) ? m.categories.join(", ") : "None"}</p>
+            <div class="run-list">
+            <h4>Run History</h4>
+            ${
+                stats
+                ? stats.runs
+                    .map(
+                        run => `
+                <p>
+                    ${new Date(run.timestamp).toLocaleDateString()} — 
+                    ${formatTime(run.record_time)} — 
+                    ${run.total_jumps} jumps
+                    ${run.uuid ? `— <a href="https://tagpro.koalabeast.com/replays?uuid=${run.uuid}" target="_blank">Replay</a>` : ""}
+                </p>
+                `
+                    )
+                    .join("")
+                : "<p>No runs yet.</p>"
+            }
+            </div>
+        </div>
+        </div>
+    </td>
+    `;
+
+
 
     // Toggle details on click
     tr.addEventListener("click", () => {
@@ -471,7 +578,7 @@ detailsTr.innerHTML = `
       const colIndex = th.cellIndex;
       const key = keyMap[colIndex];
       const asc = completionSortKey === key ? !completionSortAsc : true;
-      renderCompletion(records, key, asc);
+      renderCompletion(records, summary, key, asc);
     };
   });
 }
@@ -485,7 +592,7 @@ function formatTime(ms) {
 }
 
 function getSortValue(map, key, statsMap) {
-  const stat = statsMap[makeKey(map.name, map.author)];
+  const stat = statsMap[map.map_id];
   switch (key) {
     case "name": return map.name.toLowerCase();
     case "completed": return stat ? 1 : 0;
@@ -551,7 +658,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     summary = await enhanceSummaryName(summary);
     await renderSummary(summary);
-    renderCompletion(records); // ✅ now includes all merged records
+    renderCompletion(records, summary); // ✅ now includes all merged records
     }
 
 

@@ -38,18 +38,18 @@ export class MapsTable {
         if (grav_or_classic === 'unbeaten') {
             // Build a set of beaten composite keys from records
             const beaten = new Set(
-            this.allRecords.map(r => `${r.map_name.trim()}::${r.map_author.trim()}`)
+            this.allRecords.map(r => r.map_id)
             );
 
             // Convert metadata object into array
-            const allMaps = Object.entries(this.mapMetadata).map(([name, meta]) => ({
-            name,
+            const allMaps = Object.entries(this.mapMetadata).map(([mapId, meta]) => ({
+            mapId,
             ...meta
             }));
 
             // Filter unbeaten maps
             const unbeaten = allMaps.filter(m => {
-            const key = `${m.name.trim()}::${(m.author || '').trim()}`;
+            const key = m.map_id;
             const mapType = (m.grav_or_classic || "").toLowerCase();
             const matchesType = grav_or_classic === 'unbeaten' || mapType === grav_or_classic;
             const matchesSearch =
@@ -66,7 +66,7 @@ export class MapsTable {
         } else {
             // Existing beaten maps filter
             const filtered = this.allRecords.filter(record => {
-                const metadata = this.mapMetadata[record.map_name] || {};
+                const metadata = this.mapMetadata[record.map_id] || {};
                 const mapType = (metadata.grav_or_classic || "").toLowerCase();
                 const matchesType = grav_or_classic === '' || mapType === grav_or_classic;
 
@@ -198,8 +198,8 @@ export class MapsTable {
 
             // Handle metadata fields
             if (property === "difficulty" || property === "balls_req") {
-                const aMetadata = this.mapMetadata[a.map_name] || {};
-                const bMetadata = this.mapMetadata[b.map_name] || {};
+                const aMetadata = this.mapMetadata[a.map_id] || {};
+                const bMetadata = this.mapMetadata[b.map_id] || {};
                 aVal = aMetadata[property] || "N/A";
                 bVal = bMetadata[property] || "N/A";
             } else {
@@ -365,7 +365,7 @@ export class MapsTable {
         medalPanelDiv.className = "medal-panel";
 
         // Add top 3 records
-        const key = `${record.map_name}::${record.map_author}`;
+        const key = record.map_id;
         const mapRecords = this.recordsByMap[key] || [];
         const top3Records = mapRecords.slice(0, 3);
         const medalLabels = ["1st", "2nd", "3rd"];
@@ -475,7 +475,7 @@ export class MapsTable {
 
         // Add difficulty cell
         const difficultyCell = document.createElement('td');
-        const metadata = this.mapMetadata[record.map_name] || {};
+        const metadata = this.mapMetadata[record.map_id] || {};
         difficultyCell.textContent = metadata.difficulty || "N/A";
         difficultyCell.className = "difficulty-col";
         tr.appendChild(difficultyCell);

@@ -36,7 +36,7 @@ export class JumpsTable {
         const searchTerm = document.getElementById('jumpmapSearch').value.toLowerCase().trim();
 
         const filtered = this.allRecords.filter(record => {
-            const metadata = this.mapMetadata[record.map_name] || {};
+            const metadata = this.mapMetadata[record.map_id] || {};
 
             const mapType = (metadata.grav_or_classic || "").toLowerCase();
             const matchesType = grav_or_classic === '' || mapType === grav_or_classic;
@@ -170,8 +170,8 @@ export class JumpsTable {
 
             // Handle metadata fields
             if (property === "difficulty" || property === "balls_req") {
-                const aMetadata = this.mapMetadata[a.map_name] || {};
-                const bMetadata = this.mapMetadata[b.map_name] || {};
+                const aMetadata = this.mapMetadata[a.map_id] || {};
+                const bMetadata = this.mapMetadata[b.map_id] || {};
                 aVal = aMetadata[property] || "N/A";
                 bVal = bMetadata[property] || "N/A";
             } else {
@@ -208,7 +208,7 @@ export class JumpsTable {
 
     render(records) {
         const gravityRecords = records.filter(record => {
-            const metadata = this.mapMetadata[record.map_name] || {};
+            const metadata = this.mapMetadata[record.map_id] || {};
             return (metadata.grav_or_classic || "").toLowerCase() === "grav";
         });
 
@@ -340,7 +340,7 @@ export class JumpsTable {
         medalPanelDiv.className = "medal-panel";
 
         // Add top 3 records
-        const key = `${record.map_name}::${record.map_author}`;
+        const key = record.map_id;
         const mapRecords = this.recordsByMap[key] || [];
         const top3Records = mapRecords.slice(0, 3);
         const medalLabels = ["1st", "2nd", "3rd"];

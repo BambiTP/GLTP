@@ -940,17 +940,6 @@ button.upload-button:hover {
   background-color: #666;
 }
 
-/* Run list */
-.run-list p {
-  margin: 6px 0;
-  font-size: 14px;
-}
-.run-block {
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #444;
-}
-
 .details-box.details-flex {
   display: flex;
   gap: 20px;
@@ -994,6 +983,36 @@ button.upload-button:hover {
   background-color: #666;
 }
 
+.view-map-link {
+  display: inline-block;
+  margin-top: 6px;
+  color: #1e90ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.view-map-link:hover {
+  text-decoration: underline;
+}
+
+/* Run list */
+.run-block {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #444;
+}
+
+.run-list {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+.run-list h4 {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  color: #ccc;
+}
 .run-list p {
   margin: 6px 0;
   font-size: 14px;
@@ -1006,4 +1025,46 @@ button.upload-button:hover {
   color: #f66;
 }
 
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-left: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
 
+.badge.bronze {
+  background: linear-gradient(135deg, #cd7f32, #e6a96c);
+  color: #fff;
+}
+
+.badge.gold {
+  background: linear-gradient(135deg, #ffd700, #ffb700);
+  color: #222;
+}
+
+.player-summary-box h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.summary-grid span {
+  font-weight: bold;
+  color: #aaa;
+}
