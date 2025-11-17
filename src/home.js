@@ -47,32 +47,33 @@ fetch(dataUrl)
 
     // Overall leaderboard merge
     const overallLeaderboard = {};
+
     [worldRecordsLeaderboard, jumpWorldRecordsLeaderboard].forEach(lb => {
-      Object.values(lb).forEach(player => {
-        if (!overallLeaderboard[player.name]) {
-          overallLeaderboard[player.name] = { name: player.name, score: 0 };
+      Object.entries(lb).forEach(([key, player]) => {
+        if (!overallLeaderboard[key]) {
+          overallLeaderboard[key] = { name: player.name, score: 0, user_id: player.user_id };
         }
-        overallLeaderboard[player.name].score += player.score;
+        overallLeaderboard[key].score += player.score;
       });
     });
 
     const overallSoloLeaderboard = {};
     [soloWorldRecordsLeaderboard, jumpSoloLeaderboard].forEach(lb => {
-      Object.values(lb).forEach(player => {
-        if (!overallSoloLeaderboard[player.name]) {
-          overallSoloLeaderboard[player.name] = { name: player.name, score: 0 };
+      Object.entries(lb).forEach(([key, player]) => {
+        if (!overallSoloLeaderboard[key]) {
+          overallSoloLeaderboard[key] = { name: player.name, score: 0, user_id: player.user_id };
         }
-        overallSoloLeaderboard[player.name].score += player.score;
+        overallSoloLeaderboard[key].score += player.score;
       });
     });
 
     const overallCappingLeaderboard = {};
     [cappingWorldRecordsLeaderboard, jumpCappingLeaderboard].forEach(lb => {
-      Object.values(lb).forEach(player => {
-        if (!overallCappingLeaderboard[player.name]) {
-          overallCappingLeaderboard[player.name] = { name: player.name, score: 0 };
+      Object.entries(lb).forEach(([key, player]) => {
+        if (!overallCappingLeaderboard[key]) {
+          overallCappingLeaderboard[key] = { name: player.name, score: 0, user_id: player.user_id };
         }
-        overallCappingLeaderboard[player.name].score += player.score;
+        overallCappingLeaderboard[key].score += player.score;
       });
     });
 

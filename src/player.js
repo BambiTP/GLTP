@@ -1,4 +1,5 @@
 import { processLeaderboardData } from "./leaderboard.js";
+import { dataUrl, setupNavigation } from './shared.js';
 
 //TODO verify names by user ID and not only by name for white names
 
@@ -13,6 +14,9 @@ const mergedProfiles = {
     names: ["FWO", "DAD.", "::"]
   }
 };
+
+// Setup navigation
+setupNavigation();
 
 
 async function loadData() {
@@ -77,17 +81,26 @@ function findMergeGroup(query) {
 function countTopRecords(playerNames, playerIds, statKey, topN = 3) {
   let count = 0;
 
-  for (const [key, records] of Object.entries(recordsByMap)) {
-    const meta = mapMetadata[key];
+  for (const [mapId, records] of Object.entries(recordsByMap)) {
+    const meta = mapMetadata[mapId];
     if (!meta) continue;
 
-    // Skip classic maps for jump stats
-    if (statKey === "total_jumps" && meta.grav_or_classic === "Classic") {
+    if (
+      statKey === "total_jumps" &&
+      (meta.grav_or_classic === "Classic" || (meta.categories || []).includes("0 jump"))
+    ) {
       continue;
     }
 
     const sorted = [...records]
-      .sort((a, b) => a[statKey] - b[statKey])
+      .sort((a, b) => {
+        if (statKey === "total_jumps") {
+          const jumpDiff = a.total_jumps - b.total_jumps;
+          if (jumpDiff !== 0) return jumpDiff;
+          return a.record_time - b.record_time;
+        }
+        return a[statKey] - b[statKey];
+      })
       .slice(0, topN);
 
     if (
@@ -105,7 +118,6 @@ function countTopRecords(playerNames, playerIds, statKey, topN = 3) {
 
   return count;
 }
-
 
 function summarizePlayer(records, query) {
   if (!records || !records.length) return null;
@@ -230,7 +242,7 @@ async function renderSummary(summary) {
   const displayName = summary.names && summary.names.length
     ? summary.names.join(" / ")
     : summary.name || "";
-
+//TODO get rid of innerHTML
   div.innerHTML = `
     <div class="player-summary-box">
       <h2>${displayName}</h2>
@@ -379,52 +391,53 @@ function renderCompletion(records, summary=null, sortKey = null, sortAsc = true)
     }
 
     const allRuns = Array.isArray(recordsByMap[key]) ? recordsByMap[key] : [];
-const bestTimeRun = getBestRun(allRuns, "record_time");
-const bestJumpRun = getBestRun(allRuns, "total_jumps");
+    const bestTimeRun = getBestRun(allRuns, "record_time");
+    const bestJumpRun = getBestRun(allRuns, "total_jumps");
 
-// Check if current player (summary context) is in those runs
-const holdsTime = bestTimeRun && bestTimeRun.players.some(p =>
-  summary.user_ids.includes(p.user_id) || summary.names.includes(p.name)
-);
-const holdsJumps = bestJumpRun && bestJumpRun.players.some(p =>
-  summary.user_ids.includes(p.user_id) || summary.names.includes(p.name)
-);
+    // Check if current player (summary context) is in those runs
+    const holdsTime = bestTimeRun && bestTimeRun.players.some(p =>
+    summary.user_ids.includes(p.user_id) || summary.names.includes(p.name)
+    );
+    const holdsJumps = bestJumpRun && bestJumpRun.players.some(p =>
+    summary.user_ids.includes(p.user_id) || summary.names.includes(p.name)
+    );
 
 
     function getTopRuns(runs, statKey, topN) {
-  if (!Array.isArray(runs) || runs.length === 0) return [];
-  return [...runs].sort((a, b) => a[statKey] - b[statKey]).slice(0, topN);
-}
+        if (!Array.isArray(runs) || runs.length === 0) return [];
+        return [...runs].sort((a, b) => a[statKey] - b[statKey]).slice(0, topN);
+    }
 
-const top1TimeRun = getTopRuns(allRuns, "record_time", 1)[0];
-const top1JumpRun = getTopRuns(allRuns, "total_jumps", 1)[0];
-const top3TimeRuns = getTopRuns(allRuns, "record_time", 3);
-const top3JumpRuns = getTopRuns(allRuns, "total_jumps", 3);
+    const top1TimeRun = getTopRuns(allRuns, "record_time", 1)[0];
+    const top1JumpRun = getTopRuns(allRuns, "total_jumps", 1)[0];
+    const top3TimeRuns = getTopRuns(allRuns, "record_time", 3);
+    const top3JumpRuns = getTopRuns(allRuns, "total_jumps", 3);
 
-const holdsTop1Time = top1TimeRun && top1TimeRun.players.some(p =>
-  summary.user_ids.includes(p.user_id) || summary.names.includes(p.name)
-);
-const holdsTop1Jumps = top1JumpRun && top1JumpRun.players.some(p =>
-  summary.user_ids.includes(p.user_id) || summary.names.includes(p.name)
-);
+    const holdsTop1Time = top1TimeRun && top1TimeRun.players.some(p =>
+    summary.user_ids.includes(p.user_id) || summary.names.includes(p.name)
+    );
+    const holdsTop1Jumps = top1JumpRun && top1JumpRun.players.some(p =>
+    summary.user_ids.includes(p.user_id) || summary.names.includes(p.name)
+    );
 
-const holdsTop3Time = top3TimeRuns.some(r =>
-  r.players.some(p => summary.user_ids.includes(p.user_id) || summary.names.includes(p.name))
-);
-const holdsTop3Jumps = top3JumpRuns.some(r =>
-  r.players.some(p => summary.user_ids.includes(p.user_id) || summary.names.includes(p.name))
-);
+    const holdsTop3Time = top3TimeRuns.some(r =>
+    r.players.some(p => summary.user_ids.includes(p.user_id) || summary.names.includes(p.name))
+    );
+    const holdsTop3Jumps = top3JumpRuns.some(r =>
+    r.players.some(p => summary.user_ids.includes(p.user_id) || summary.names.includes(p.name))
+    );
 
     // Main row
     const tr = document.createElement("tr");
     tr.classList.add("completion-row");
     // detect classic maps
     const isClassic = m.grav_or_classic === "Classic";
+    const isZeroJumpCategory = (m.categories || []).includes("0 jump");
 
-    // decide what to show in the jump cell
+    // Decide what to show in jump cell
     let jumpDisplay;
-    if (isClassic) {
-    jumpDisplay = "N/A"; // no jumps for classic maps
+    if (isClassic || isZeroJumpCategory) {
+    jumpDisplay = "N/A";
     } else {
     jumpDisplay = stats ? stats.minJumps : "-";
     }
@@ -440,8 +453,8 @@ const holdsTop3Jumps = top3JumpRuns.some(r =>
     </td>
     <td>
         ${jumpDisplay}
-        ${!isClassic && holdsTop1Jumps ? '<span class="badge gold">🏆</span>' : ""}
-        ${!isClassic && !holdsTop1Jumps && holdsTop3Jumps ? '<span class="badge bronze">🥉</span>' : ""}
+        ${!(isClassic || isZeroJumpCategory) && holdsTop1Jumps ? '<span class="badge gold">🏆</span>' : ""}
+        ${!(isClassic || isZeroJumpCategory) && !holdsTop1Jumps && holdsTop3Jumps ? '<span class="badge bronze">🥉</span>' : ""}
     </td>
     <td>${m.difficulty ?? "-"}</td>
     <td>${m.balls_req ?? "-"}</td>

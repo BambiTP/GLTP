@@ -286,7 +286,7 @@ export class MapsTable {
             }
         });
         uniquePlayers.forEach((player, index) => {
-            if (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
+            if (player.user_id) {
                 const playerLink = document.createElement('a');
                 playerLink.href = `/GLTP/player.html?user_id=${player.user_id}`;
                 playerLink.textContent = getMapsPlayerDisplayName(player);
@@ -460,7 +460,7 @@ export class MapsTable {
         const capCell = document.createElement('td');
         if (record.capping_player) {
             const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
-            if (dummyPlayer.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(dummyPlayer.name)) {
+            if (dummyPlayer.user_id) {
                 const capLink = document.createElement('a');
                 capLink.href = `/GLTP/player.html?user_id=${dummyPlayer.user_id}`;
                 capLink.textContent = getMapsPlayerDisplayName(dummyPlayer);

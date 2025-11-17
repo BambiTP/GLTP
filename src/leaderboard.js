@@ -77,12 +77,37 @@ export class Leaderboard {
     table.appendChild(headerRow);
 
     // Sort and add rows
-    let playersArray = Object.values(leaderboardObj).sort((a, b) => b.score - a.score);
-    playersArray.forEach(player => {
-      const row = document.createElement("tr");
-      row.innerHTML = `<td>${player.name}</td><td>${player.score}</td>`;
-      table.appendChild(row);
-    });
+  let playersArray = Object.values(leaderboardObj).sort((a, b) => b.score - a.score);
+
+  playersArray.forEach(player => {
+    const row = document.createElement("tr");
+
+    // Create the first <td>
+    const nameCell = document.createElement("td");
+
+    if (player.user_id) {
+      // Create link element
+      const playerLink = document.createElement("a");
+      playerLink.href = `/GLTP/player.html?user_id=${player.user_id}`;
+      playerLink.textContent = player.name;
+      playerLink.classList.add("player-link");
+      nameCell.appendChild(playerLink);
+    } else {
+      // No user ID → plain text
+      nameCell.textContent = player.name;
+    }
+
+    // Score cell
+    const scoreCell = document.createElement("td");
+    scoreCell.textContent = player.score;
+
+    // Add to row
+    row.appendChild(nameCell);
+    row.appendChild(scoreCell);
+
+    table.appendChild(row);
+  });
+
 
     sectionDiv.appendChild(table);
     this.leaderboardContainer.appendChild(sectionDiv);
@@ -104,10 +129,9 @@ export function processLeaderboardData(data) {
       record.players.forEach(player => {
         let key = getLeaderboardPlayerKey(player);
         let displayName = getLeaderboardPlayerDisplayName(player);
-        let hasPlayerId = player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name);
         if (!seenForGame.has(key)) {
           if (!gamesCompletedLeaderboard[key]) {
-            gamesCompletedLeaderboard[key] = { name: displayName, score: 0, hasPlayerId };
+            gamesCompletedLeaderboard[key] = { name: displayName, score: 0, user_id: player.user_id };
           }
           gamesCompletedLeaderboard[key].score += 1;
           seenForGame.add(key);
@@ -131,10 +155,9 @@ export function processLeaderboardData(data) {
     record.players.forEach(player => {
       let key = getLeaderboardPlayerKey(player);
       let displayName = getLeaderboardPlayerDisplayName(player);
-      let hasPlayerId = player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name);
       if (!seenForRecord.has(key)) {
         if (!worldRecordsLeaderboard[key]) {
-          worldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId };
+          worldRecordsLeaderboard[key] = { name: displayName, score: 0, user_id: player.user_id };
         }
         worldRecordsLeaderboard[key].score += 1;
         seenForRecord.add(key);
@@ -146,10 +169,9 @@ export function processLeaderboardData(data) {
       record.players.forEach(player => {
         let key = getLeaderboardPlayerKey(player);
         let displayName = getLeaderboardPlayerDisplayName(player);
-        let hasPlayerId = player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name);
         if (!seenForSolo.has(key)) {
           if (!soloWorldRecordsLeaderboard[key]) {
-            soloWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId };
+            soloWorldRecordsLeaderboard[key] = { name: displayName, score: 0, user_id: player.user_id };
           }
           soloWorldRecordsLeaderboard[key].score += 1;
           seenForSolo.add(key);
@@ -161,9 +183,8 @@ export function processLeaderboardData(data) {
       const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
       let key = getLeaderboardPlayerKey(dummyPlayer);
       let displayName = getLeaderboardPlayerDisplayName(dummyPlayer);
-      let hasPlayerId = dummyPlayer.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(dummyPlayer.name);
       if (!cappingWorldRecordsLeaderboard[key]) {
-        cappingWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId };
+        cappingWorldRecordsLeaderboard[key] = { name: displayName, score: 0, user_id: dummyPlayer.user_id };
       }
       cappingWorldRecordsLeaderboard[key].score += 1;
     }
@@ -195,15 +216,29 @@ export function processJumpLeaderboardData(data, mapMetadata) {
   data.forEach(record => {
     const meta = mapMetadata[record.map_id];
     if (!meta) return;
+    // detect classic maps
+    const isClassic = meta.grav_or_classic === "Classic";
+    const isZeroJumpCategory = (meta.categories || []).includes("0 jump");
 
-    if (meta.grav_or_classic === "Classic") return;
+
+    if ((isClassic || isZeroJumpCategory)) return;
     if (record.total_jumps !== null) {
       // Track best jump record per map (fewest jumps)
       const key = record.map_id;
-      if (!bestJumpRecords[key] || record.total_jumps < bestJumpRecords[key].total_jumps) {
-        bestJumpRecords[key] = record;
-      }
+      const current = bestJumpRecords[key];
 
+      if (!current) {
+        bestJumpRecords[key] = record;
+      } else {
+        const betterJumps = record.total_jumps < current.total_jumps;
+        const tieBetterTime =
+          record.total_jumps === current.total_jumps &&
+          record.record_time < current.record_time;
+
+        if (betterJumps || tieBetterTime) {
+          bestJumpRecords[key] = record;
+        }
+      }
       if (!jumpRecordsByMap[key]) {
         jumpRecordsByMap[key] = [];
       }
@@ -218,10 +253,9 @@ export function processJumpLeaderboardData(data, mapMetadata) {
     record.players.forEach(player => {
       let key = getLeaderboardPlayerKey(player);
       let displayName = getLeaderboardPlayerDisplayName(player);
-      let hasPlayerId = player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name);
       if (!seenForRecord.has(key)) {
         if (!jumpWorldRecordsLeaderboard[key]) {
-          jumpWorldRecordsLeaderboard[key] = { name: displayName, score: 0, hasPlayerId };
+          jumpWorldRecordsLeaderboard[key] = { name: displayName, score: 0, user_id: player.user_id };
         }
         jumpWorldRecordsLeaderboard[key].score += 1;
         seenForRecord.add(key);
@@ -234,10 +268,9 @@ export function processJumpLeaderboardData(data, mapMetadata) {
       record.players.forEach(player => {
         let key = getLeaderboardPlayerKey(player);
         let displayName = getLeaderboardPlayerDisplayName(player);
-        let hasPlayerId = player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name);
         if (!seenForSolo.has(key)) {
           if (!jumpSoloLeaderboard[key]) {
-            jumpSoloLeaderboard[key] = { name: displayName, score: 0, hasPlayerId };
+            jumpSoloLeaderboard[key] = { name: displayName, score: 0, user_id: player.user_id };
           }
           jumpSoloLeaderboard[key].score += 1;
           seenForSolo.add(key);
@@ -250,16 +283,20 @@ export function processJumpLeaderboardData(data, mapMetadata) {
       const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
       let key = getLeaderboardPlayerKey(dummyPlayer);
       let displayName = getLeaderboardPlayerDisplayName(dummyPlayer);
-      let hasPlayerId = dummyPlayer.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(dummyPlayer.name);
       if (!jumpCappingLeaderboard[key]) {
-        jumpCappingLeaderboard[key] = { name: displayName, score: 0, hasPlayerId };
+        jumpCappingLeaderboard[key] = { name: displayName, score: 0, user_id: dummyPlayer.user_id };
       }
       jumpCappingLeaderboard[key].score += 1;
     }
   });
 
   for (let map in jumpRecordsByMap) {
-    jumpRecordsByMap[map].sort((a, b) => a.total_jumps - b.total_jumps);
+    jumpRecordsByMap[map].sort((a, b) => {
+      if (a.total_jumps !== b.total_jumps) {
+        return a.total_jumps - b.total_jumps; // primary sort: jumps
+      }
+      return a.record_time - b.record_time;   // secondary sort: time
+    });
   }
 
   return {

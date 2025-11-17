@@ -262,9 +262,9 @@ export class JumpsTable {
             }
         });
         uniquePlayers.forEach((player, index) => {
-            if (player.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(player.name)) {
+            if (player.user_id) {
                 const playerLink = document.createElement('a');
-                playerLink.href = `https://tagpro.koalabeast.com/profile/${player.user_id}`;
+                playerLink.href = `/GLTP/player.html?user_id=${player.user_id}`;
                 playerLink.textContent = getMapsPlayerDisplayName(player);
                 playersDiv.appendChild(playerLink);
             } else {
@@ -440,9 +440,9 @@ export class JumpsTable {
         const capCell = document.createElement('td');
         if (record.capping_player) {
             const dummyPlayer = { name: record.capping_player, user_id: record.capping_player_user_id };
-            if (dummyPlayer.user_id && !/^Some Ball(?:\s*\d+)?$/i.test(dummyPlayer.name)) {
+            if (dummyPlayer.user_id) {
                 const capLink = document.createElement('a');
-                capLink.href = `https://tagpro.koalabeast.com/profile/${dummyPlayer.user_id}`;
+                capLink.href = `/GLTP/player.html?user_id=${dummyPlayer.user_id}`;
                 capLink.textContent = getMapsPlayerDisplayName(dummyPlayer);
                 capCell.appendChild(capLink);
             } else {
