@@ -1,13 +1,12 @@
+// home.js
 import { dataUrl, setupNavigation } from './shared.js';
-import { MapsTable } from './maps.js';
-import { JumpsTable } from './jumpRecords.js';
+import { initMapsTable } from './maps.js';
+import { initJumpsTable } from './jumpRecords.js';
 import { Leaderboard, processLeaderboardData, processJumpLeaderboardData } from './leaderboard.js';
 
-// Load presets
-const presets = await fetch(`./presets.json`)
-    .then(response => response.json());
-const mapMetadata = await fetch(`./map_metadata.json`)
-    .then(response => response.json());
+// Load presets + metadata
+const presets = await fetch(`./presets.json`).then(r => r.json());
+const mapMetadata = await fetch(`./map_metadata.json`).then(r => r.json());
 
 // Setup navigation
 setupNavigation();
@@ -33,21 +32,14 @@ fetch(dataUrl)
       jumpRecordsByMap
     } = processJumpLeaderboardData(data, mapMetadata);
 
-    // Speed Records table
-    const mapsTable = new MapsTable(presets, recordsByMap, mapMetadata);
-    const recordsArray = Object.values(bestRecords);
-    recordsArray.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-    mapsTable.render(recordsArray);
+    // ✅ Speed Records table
+    initMapsTable(presets, recordsByMap, mapMetadata, bestRecords);
 
-    // Jump Records table
-    const jumpsTable = new JumpsTable(presets, jumpRecordsByMap, mapMetadata);
-    const jumpRecordsArray = Object.values(bestJumpRecords);
-    jumpRecordsArray.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-    jumpsTable.render(jumpRecordsArray);
+    // ✅ Jump Records table
+    initJumpsTable(presets, jumpRecordsByMap, mapMetadata, bestJumpRecords);
 
-    // Overall leaderboard merge
+    // Merge overall leaderboards
     const overallLeaderboard = {};
-
     [worldRecordsLeaderboard, jumpWorldRecordsLeaderboard].forEach(lb => {
       Object.entries(lb).forEach(([key, player]) => {
         if (!overallLeaderboard[key]) {

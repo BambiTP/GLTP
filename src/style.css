@@ -11,20 +11,19 @@ body {
 /* Top bar for navigation */
 .top-bar {
   background-color: #1f1f1f;
-  padding: 10px 20px;
   color: #e0e0e0;
   display: flex;
-  justify-content: center !important; /* everything starts at the left */
-  padding: 0.5rem 1rem;
+  justify-content: center !important;
   align-items: center !important;
   position: sticky;
   top: 0;
   z-index: 100;
+  padding: 0.5rem 1rem;
 }
 
 .logo {
   position: absolute;
-  left: 1rem;                /* pin logo to far left */
+  left: 1rem;
 }
 
 .site-logo {
@@ -90,16 +89,16 @@ body {
     flex-direction: column;
     gap: 8px;
   }
-  
   .update-text {
     font-size: 13px;
     text-align: center;
   }
 }
 
+/* Navigation */
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .nav a {
@@ -117,9 +116,11 @@ body {
 
 .nav a.active {
   background-color: #1e90ff;
-  font-weight: bold;
+  font-weight: 500;
+  color: white;
 }
 
+/* Buttons */
 button {
   padding: 10px 16px;
   background-color: #1e90ff;
@@ -135,128 +136,6 @@ button:hover {
   background-color: #0078d7;
 }
 
-/* Checkbox styling */
-input[type="checkbox"] {
-  margin-right: 8px;
-}
-
-.copy-button {
-  top: 3px;
-  position: relative;
-  font-size: 10px;
-}
-
-/* Additional styling enhancements */
-a {
-  color: #1e90ff;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .detail-wrapper {
-    flex-direction: column;
-  }
-
-  .medal-panel {
-    margin-top: 10px;
-  }
-}
-
-/* CSS-only improvements for the filter UI */
-
-
-.nav {
-  display: flex;
-  gap: 30px;
-}
-
-/* Make active nav item have a more solid appearance */
-.nav a.active {
-  background-color: #1e90ff;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-weight: 500;
-  color: white;
-}
-
-/* Improve select dropdown styling */
-.filter-select {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
-  border: 1px solid #333;
-  border-radius: 4px;
-  padding: 8px 10px;
-  font-size: 14px;
-  height: 48px !important;
-  min-width: 120px;
-  cursor: pointer;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23999' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  padding-right: 32px;
-}
-
-/* Fix Choices.js styling */
-.choices {
-  margin-bottom: 0;
-}
-
-.choices__inner {
-  background-color: #1e1e1e;
-  border: 1px solid #333;
-  border-radius: 4px;
-  padding: 5px 8px;
-  min-height: 38px;
-}
-
-/* Fix the choices list dropdown style */
-.choices__list--dropdown {
-  background-color: #1e1e1e;
-  border: 1px solid #333;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.choices__list--dropdown .choices__item--selectable {
-  color: #e0e0e0;
-  padding: 8px 12px;
-}
-
-.choices__list--dropdown .choices__item--selectable.is-highlighted {
-  background-color: #2a2a2a;
-}
-
-/* Improve tag styling */
-.choices__list--multiple .choices__item {
-  background-color: #026fc2;
-  border: none;
-  border-radius: 16px;
-  padding: 4px 12px;
-  font-size: 13px;
-  color: white;
-  margin-right: 6px;
-  margin-bottom: 3px;
-}
-
-/* Fix input area */
-.choices__input {
-  background-color: transparent;
-  color: #e0e0e0;
-  font-size: 14px;
-}
-
-/* Fix placeholder styling */
-.choices__placeholder {
-  opacity: 0.7;
-  color: #999;
-}
-
-/* Button styling */
 button.upload-button {
   background-color: #1e90ff;
   color: white;
@@ -276,7 +155,148 @@ button.upload-button:hover {
   background-color: #0074d9;
 }
 
-/* Clean up the categories container */
+/* Checkbox styling */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.copy-button {
+  top: 3px;
+  position: relative;
+  font-size: 10px;
+}
+
+/* Links */
+a {
+  color: #1e90ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .detail-wrapper {
+    flex-direction: column;
+  }
+  .medal-panel {
+    margin-top: 10px;
+  }
+  .search-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .search-input {
+    flex: 1 1 100%;
+  }
+  .filter-select {
+    flex: 1 1 auto;
+  }
+  .choices {
+    flex: 1 1 100%;
+  }
+  button.upload-button {
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+}
+
+/* Filter select */
+.filter-select {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 14px;
+  height: 48px !important;
+  min-width: 120px;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23999' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+}
+
+/* Choices.js styling */
+.choices {
+  margin-bottom: 0;
+}
+
+.choices__inner {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 5px 8px;
+  min-height: 38px;
+}
+
+.choices__list--dropdown {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.choices__list--dropdown .choices__item--selectable {
+  color: #e0e0e0;
+  padding: 8px 12px;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: #2a2a2a;
+}
+
+.choices__list--multiple .choices__item {
+  background-color: #026fc2;
+  border: none;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 13px;
+  color: white;
+  margin-right: 6px;
+  margin-bottom: 3px;
+}
+
+.choices__list--multiple .choices__item.is-highlighted {
+  background-color: #026fc2;
+  opacity: 0.9;
+}
+
+.choices__input {
+  background-color: transparent;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.choices__placeholder {
+  opacity: 0.7;
+  color: #999;
+}
+
+.choices__button {
+  border-left: none;
+  padding-left: 4px;
+  opacity: 0.7;
+}
+
+.choices__button:hover {
+  opacity: 1;
+}
+
+.is-open .choices__inner {
+  border-radius: 4px 4px 0 0;
+  border-color: #444;
+}
+
+.choices[data-type*="select-multiple"] .choices__inner {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/* Category chooser */
 .category-chooser {
   background-color: #1f1f1f;
   border: 1px solid #333;
@@ -294,7 +314,6 @@ button.upload-button:hover {
   overflow-y: auto;
 }
 
-/* Fix the tag container */
 .category-tags {
   display: flex;
   flex-wrap: wrap;
@@ -305,43 +324,12 @@ button.upload-button:hover {
   margin-top: 8px;
 }
 
-/* In case "Select categories" shows as a placeholder */
-.choices[data-type*="select-multiple"] .choices__inner {
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-/* Specifically style the category button appearance */
-.choices__list--multiple .choices__item.is-highlighted {
-  background-color: #026fc2;
-  opacity: 0.9;
-}
-
-/* Fix the close button on tags */
-.choices__button {
-  border-left: none;
-  padding-left: 4px;
-  opacity: 0.7;
-}
-
-.choices__button:hover {
-  opacity: 1;
-}
-
-/* When choices dropdown is open */
-.is-open .choices__inner {
-  border-radius: 4px 4px 0 0;
-  border-color: #444;
-}
-
-/* For the specific category filter area - make it match the row style */
 #categorySelector {
-  background-color: #fff; /* Will be overridden by Choices.js */
+  background-color: #fff;
   border-radius: 4px;
   max-width: 600px;
 }
 
-/* Fix the active category pill styles */
 .category-pill {
   background-color: #026fc2;
   color: white;
@@ -364,17 +352,28 @@ button.upload-button:hover {
   opacity: 1;
 }
 
-/* Fix search and filter row layout */
+.category-pill .close-icon {
+  margin-left: 6px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.category-pill .close-icon:hover {
+  opacity: 1;
+}
+
+/* Search row */
 .search-row {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
   margin: 0 auto 20px auto;
   max-width: 1200px;
   padding: 0 20px;
 }
 
-/* Enhance search input */
 .search-input {
   background-color: #1e1e1e;
   color: #e0e0e0;
@@ -386,51 +385,18 @@ button.upload-button:hover {
   flex: 1;
 }
 
-/* Fix responsive behavior */
-@media (max-width: 768px) {
-  .search-row {
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .search-input {
-    flex: 1 1 100%;
-  }
-
-  .filter-select {
-    flex: 1 1 auto;
-  }
-
-  .choices {
-    flex: 1 1 100%;
-  }
-
-  button.upload-button {
-    flex: 0 0 auto;
-    margin-left: auto;
-  }
-}
-
-.search-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; /* optional for responsiveness */
-  gap: 8px; /* optional spacing */
-}
-
-/* Scope styles to this search bar only */
+/* Player search */
 .player-search {
   margin-top: 5px;
 }
 
 .player-search .search-row {
   display: flex;
-  justify-content: center;   /* center horizontally */
-  align-items: center;       /* center vertically */
-  gap: 12px;                 /* space between input and button */
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   margin: 0 auto 20px auto;
-  max-width: 600px;          /* narrower so it doesn't stretch full width */
+  max-width: 600px;
   padding: 0 20px;
 }
 
@@ -442,7 +408,7 @@ button.upload-button:hover {
   padding: 8px 12px;
   font-size: 14px;
   height: 30px !important;
-  flex: 0 0 250px;           /* fixed width instead of flex:1 */
+  flex: 0 0 250px;
 }
 
 .player-search .upload-button {
@@ -451,8 +417,7 @@ button.upload-button:hover {
   cursor: pointer;
 }
 
-
-/* Map preview styling */
+/* Map preview */
 .map-preview {
   margin-top: 10px;
 }
@@ -471,7 +436,6 @@ button.upload-button:hover {
   transform: scale(1.02);
 }
 
-/* Responsive map preview */
 @media (max-width: 768px) {
   .map-preview img {
     max-width: 150px;
@@ -479,7 +443,7 @@ button.upload-button:hover {
   }
 }
 
-/* Large preview modal styles - High priority overrides */
+/* Preview modal */
 .preview-modal {
   position: fixed !important;
   top: 0 !important;
@@ -546,7 +510,6 @@ button.upload-button:hover {
   z-index: 10000 !important;
 }
 
-/* Additional overrides for production CSS conflicts */
 .preview-modal * {
   box-sizing: border-box !important;
 }
@@ -555,7 +518,7 @@ button.upload-button:hover {
   box-sizing: border-box !important;
 }
 
-/* info banners */
+/* Info banners */
 .info-banner {
   background-color: #202a36;
   color: #fff;
@@ -564,28 +527,25 @@ button.upload-button:hover {
   margin-bottom: 1px;
   border-radius: 6px;
   display: flex;
-  justify-content: center; /* Center everything horizontally */
+  justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 14px;
 }
 
-/* Shared inner layout */
 .banner-content-speed,
 .banner-content-jump {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* Even spacing between icon and text */
+  gap: 10px;
 }
 
-/* Icon styling */
 .banner-icon-speed,
 .banner-icon-jump {
   font-size: 18px;
 }
 
-/* Text styling */
 .banner-text-speed strong,
 .banner-text-jump strong {
   color: #1e90ff;
@@ -593,9 +553,10 @@ button.upload-button:hover {
 }
 
 #jumpBanner {
-  border-left-color: #2ecc71; /* green accent */
+  border-left-color: #2ecc71;
 }
 
+/* Leaderboard tabs */
 .leaderboard-tabs {
   display: flex;
   gap: 10px;
@@ -617,7 +578,7 @@ button.upload-button:hover {
   font-weight: bold;
 }
 
-/* Shared layout container for all record pages */
+/* Records container */
 .records-container {
   display: flex;
   gap: 20px;
@@ -637,7 +598,6 @@ button.upload-button:hover {
   padding-top: 10px;
 }
 
-/* Shared table styles */
 .table-container table {
   width: 100%;
   border-collapse: collapse;
@@ -647,7 +607,6 @@ button.upload-button:hover {
   table-layout: fixed;
 }
 
-/* Shared cell styles */
 .table-container table th,
 .table-container table td {
   font-size: 0.8rem;
@@ -661,18 +620,16 @@ button.upload-button:hover {
   white-space: normal;
 }
 
-/* Shared header styles */
 .table-container table th {
   background-color: #2b2b2b;
   font-weight: bold;
 }
 
-/* Hover effect */
 .table-container table tr:hover {
   background-color: #2a2a2a;
 }
 
-/* Optional: column widths for maps table */
+/* Maps table column widths */
 #mapsTable th.difficulty-col,
 #mapsTable td.difficulty-col,
 #mapsTable th.balls-col,
@@ -690,7 +647,6 @@ button.upload-button:hover {
   padding: 0;
 }
 
-/* Hidden detail section for map row */
 .map-name {
   cursor: pointer;
   color: #1e90ff;
@@ -707,7 +663,7 @@ button.upload-button:hover {
   max-width: 400px;
 }
 
-/* Leaderboard page styles */
+/* Leaderboard page */
 #leaderboardPage {
   display: none;
   padding: 20px;
@@ -753,7 +709,7 @@ button.upload-button:hover {
   background-color: #2a2a2a;
 }
 
-/* New styles for detail sections */
+/* Detail wrapper */
 .detail-wrapper {
   display: flex;
   align-items: flex-start;
@@ -804,6 +760,7 @@ button.upload-button:hover {
   color: #888;
 }
 
+/* Player summary */
 #playerSummary {
   text-align: center;
   padding: 10px 0;
@@ -843,29 +800,35 @@ button.upload-button:hover {
 
 .player-summary-box h2 {
   font-size: 1.4rem;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  letter-spacing: 1px;
   color: #e0e0e0;
 }
 
-/* Player summary links */
 .player-summary-box a {
   color: #1e90ff;
   text-decoration: none;
   font-weight: bold;
 }
+
 .player-summary-box a:hover {
   text-decoration: underline;
 }
 
-/* Summary grid layout */
+/* Summary grid */
 .summary-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px 20px;
+  gap: 12px 20px;
   margin-top: 12px;
-  font-size: 0.9rem;
-  color: #ccc;
+  font-size: 0.95rem;
+  color: #ddd;
 }
+
 .summary-grid span {
   font-weight: bold;
   color: #aaa;
@@ -877,15 +840,15 @@ button.upload-button:hover {
   font-size: 1rem;
 }
 
-/* Completion table rows */
+/* Completion rows */
 .completion-row {
   cursor: pointer;
 }
+
 .completion-row:hover {
   background-color: #333;
 }
 
-/* Expanded details box */
 .completion-details .details-box {
   background-color: #222;
   color: #ddd;
@@ -893,15 +856,17 @@ button.upload-button:hover {
   border-radius: 6px;
 }
 
-/* Grid layout for expanded content */
+/* Expanded details grid */
 .details-grid {
   display: flex;
   gap: 20px;
   padding: 10px;
 }
+
 .details-left {
-  flex: 0 0 300px; /* smaller preview column */
+  flex: 0 0 300px;
 }
+
 .details-right {
   flex: 1;
 }
@@ -911,55 +876,20 @@ button.upload-button:hover {
   margin-top: 10px;
   margin-bottom: 12px;
   text-align: right;
+  flex: 0 0 280px;
 }
+
 .map-preview-player img {
   max-width: 280px !important;
   border-radius: 6px;
   border: 1px solid #333;
   display: inline-block;
+  max-width: 100%;
 }
 
 /* Meta info below preview */
 .map-meta-player {
   margin-bottom: 12px;
-}
-
-/* Buttons */
-.copy-preset,
-.copy-mapid {
-  margin-left: 8px;
-  padding: 4px 10px;
-  background-color: #444;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.copy-preset:hover,
-.copy-mapid:hover {
-  background-color: #666;
-}
-
-.details-box.details-flex {
-  display: flex;
-  gap: 20px;
-  padding: 10px;
-  background-color: #222;
-  color: #ddd;
-  border-radius: 6px;
-}
-
-.map-preview-player {
-  flex: 0 0 280px;
-  text-align: center;
-}
-.map-preview-player img {
-  max-width: 100%;
-  border-radius: 6px;
-  border: 1px solid #333;
-}
-
-.map-meta-player {
   flex: 1;
   font-size: 14px;
 }
@@ -968,6 +898,7 @@ button.upload-button:hover {
   margin: 6px 0;
 }
 
+/* Copy buttons */
 .copy-preset,
 .copy-mapid {
   margin-left: 8px;
@@ -978,11 +909,13 @@ button.upload-button:hover {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .copy-preset:hover,
 .copy-mapid:hover {
   background-color: #666;
 }
 
+/* View map link */
 .view-map-link {
   display: inline-block;
   margin-top: 6px;
@@ -990,6 +923,7 @@ button.upload-button:hover {
   font-weight: bold;
   text-decoration: none;
 }
+
 .view-map-link:hover {
   text-decoration: underline;
 }
@@ -1008,23 +942,28 @@ button.upload-button:hover {
   border-radius: 6px;
   margin-top: 12px;
 }
+
 .run-list h4 {
   margin: 0 0 8px 0;
   font-size: 15px;
   color: #ccc;
 }
+
 .run-list p {
   margin: 6px 0;
   font-size: 14px;
 }
 
+/* Status indicators */
 .loading-spinner {
   color: #aaa;
 }
+
 .error {
   color: #f66;
 }
 
+/* Badges */
 .badge {
   display: inline-block;
   padding: 4px 10px;
@@ -1045,30 +984,17 @@ button.upload-button:hover {
   color: #222;
 }
 
-.player-summary-box h2 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  background: linear-gradient(90deg, #ff512f, #dd2476);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 900;
-  letter-spacing: 1px;
-}
-
-.summary-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px 20px;
-  margin-top: 12px;
-  font-size: 0.95rem;
+/* Details flex box */
+.details-box.details-flex {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: #222;
   color: #ddd;
+  border-radius: 6px;
 }
 
-.summary-grid span {
-  font-weight: bold;
-  color: #aaa;
-}
-
+/* Player link */
 .player-link {
   color: #d0e2ff;
   text-decoration: none;
@@ -1079,7 +1005,3 @@ button.upload-button:hover {
 .player-link:hover {
   border-bottom: 1px solid #d0e2ff;
 }
-
-
-
-
