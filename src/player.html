@@ -20,11 +20,11 @@
       </a>
     </div>
     <div class="nav">
-      <a href="index.html" id="speedRecordsLink">Speed Records</a>
-      <a href="jumps.html" id="jumpRecordsLink">Jump Records</a>
-      <a href="leaderboard.html" id="leaderboardLink">Leaderboard</a>
-      <a href="gltp.html" id="gltpLink">GLTP</a>
-      <a href="player.html" id="profileLink" class="active">Player Profile</a>
+        <a id="speedRecordsLink" href="/GLTP/#speed">Speed Records</a>
+        <a id="jumpRecordsLink" href="/GLTP/#jump">Jump Records</a>
+        <a id="leaderboardLink" href="/GLTP/#leaderboard">Leaderboard</a>
+        <a id="gltpLink" href="S2/home.html">GLTP</a>
+        <a id="profileLink" href="player.html" class="active">Player Profile</a>
     </div>
   </div>
 
@@ -72,6 +72,19 @@
                     <tbody id="playerRunsBody"></tbody>
                 </table>
             </div>
+        </div>
+    </div>
+
+    <div class="search-row">
+        <div class="search-left">
+            <input type="text" id="completionSearch" placeholder="Search maps..." class="search-input">
+            <button id="completion-search-clear" class="search-clear" style="display:none;">×</button>
+            <select id="completionFilter" class="filter-select">
+            <option value="">All Types</option>
+            <option value="grav">Gravity</option>
+            <option value="classic">Classic</option>
+            <option value="unbeaten">Unbeaten Maps</option>
+            </select>
         </div>
     </div>
 

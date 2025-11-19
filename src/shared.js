@@ -88,8 +88,12 @@ export function setupNavigation() {
   const speedBanner = document.getElementById("speedBanner");
   const jumpBanner = document.getElementById("jumpBanner");
 
-  // Default page
-  let activePage = "mapsRecordsContainer";
+   // Decide default via hash
+  const hash = window.location.hash;
+  let activePage =
+    hash === "#jump" ? "jumpRecordsContainer" :
+    hash === "#leaderboard" ? "leaderboardPage" :
+    "mapsRecordsContainer";
 
   function showPage(page) {
     document.getElementById("mapsRecordsContainer").style.display = page === "mapsRecordsContainer" ? "flex" : "none";
@@ -115,8 +119,18 @@ export function setupNavigation() {
   leaderboardLink.addEventListener("click", () => showPage("leaderboardPage"));
   gltpLink.addEventListener("click", () => (window.location.href = "S2/home.html"));
 
-  // Initialize to default
+  // Initialize the chosen tab
   showPage(activePage);
+
+ // Optional: respond to hash changes (e.g., user bookmarks)
+  window.addEventListener("hashchange", () => {
+    const h = window.location.hash;
+    const page =
+      h === "#jump" ? "jumpRecordsContainer" :
+      h === "#leaderboard" ? "leaderboardPage" :
+      "mapsRecordsContainer";
+    showPage(page);
+  });
 }
 
 

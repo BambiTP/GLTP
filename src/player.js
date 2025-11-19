@@ -15,8 +15,6 @@ const mergedProfiles = {
   }
 };
 
-// Setup navigation
-setupNavigation();
 
 
 async function loadData() {
@@ -27,6 +25,7 @@ async function loadData() {
 
   const metadataRes = await fetch("./map_metadata.json");
   mapMetadata = await metadataRes.json();
+  return Object.keys(mapMetadata).length;
 }
 
 function normalize(s) {
@@ -265,7 +264,7 @@ async function renderSummary(summary) {
       <div class="summary-grid">
         <div><span>First game:</span> ${summary.first}</div>
         <div><span>Most recent:</span> ${summary.last}</div>
-        <div><span>Maps completed:</span> ${summary.totalMaps}</div>
+        <div><span>Unique Maps completed:</span> ${summary.totalMaps}</div>
         <div><span>Total games:</span> ${summary.totalRuns}</div>
         <div><span>Top 1 (Fastest Time):</span> <span class="badge gold">🏆 ${summary.top1Time}</span></div>
         <div><span>Top 1 (Lowest Jumps):</span> <span class="badge gold">🏆 ${summary.top1Jumps}</span></div>
@@ -277,6 +276,65 @@ async function renderSummary(summary) {
   div.style.display = "block";
 }
 
+function setupCompletionFilters(records, summary) {
+  const filterSelect = document.getElementById("completionFilter");
+  const searchInput = document.getElementById("completionSearch");
+  const clearBtn = document.getElementById("completion-search-clear");
+
+  function applyCompletionFilters() {
+    const filterVal = filterSelect.value.toLowerCase();
+    const searchTerm = searchInput.value.toLowerCase().trim();
+
+    // Convert metadata object into array
+    const allMaps = Object.entries(mapMetadata).map(([mapId, meta]) => ({
+      mapId,
+      ...meta
+    }));
+
+    // Build set of beaten maps
+    const beaten = new Set(records.map(r => r.map_id));
+
+    let filteredMaps = allMaps.filter(m => {
+      const mapType = (m.grav_or_classic || "").toLowerCase();
+
+    // Filter by type
+    let matchesType = true;
+    if (filterVal === "grav") matchesType = mapType === "grav";
+    else if (filterVal === "classic") matchesType = mapType === "classic";
+    else if (filterVal === "unbeaten") {
+        const stats = records.filter(r => r.map_id === m.map_id);
+        // If no stats for this map, or attempts = 0, it's unbeaten
+        matchesType = stats.length === 0;
+    }
+
+
+      // Filter by search term
+      const matchesSearch =
+        m.map_name.toLowerCase().includes(searchTerm) ||
+        (m.author && m.author.toLowerCase().includes(searchTerm));
+
+      return matchesType && matchesSearch;
+    });
+
+    // Re-render completion tracker with filtered maps
+    renderCompletion(records, summary, null, true, filteredMaps);
+  }
+
+  // Event listeners
+  filterSelect.addEventListener("change", applyCompletionFilters);
+  searchInput.addEventListener("input", () => {
+    clearBtn.style.display = searchInput.value ? "inline-block" : "none";
+    applyCompletionFilters();
+  });
+  clearBtn.addEventListener("click", () => {
+    searchInput.value = "";
+    clearBtn.style.display = "none";
+    applyCompletionFilters();
+  });
+
+  // Initial render
+  applyCompletionFilters();
+}
 
 
 async function fetchTagProName(user_id) {
@@ -334,7 +392,8 @@ function renderRuns(records) {
   document.getElementById("runsHeader").style.display = "block";
 }
 
-function renderCompletion(records, summary=null, sortKey = null, sortAsc = true) {
+function renderCompletion(records, summary=null, sortKey=null, sortAsc=true, mapsOverride=null) {
+
   completionSortKey = sortKey;
   completionSortAsc = sortAsc;
 
@@ -360,14 +419,13 @@ function renderCompletion(records, summary=null, sortKey = null, sortAsc = true)
     }
   });
 
-  
-  const allMaps = Object.entries(mapMetadata).map(([mapId, meta]) => ({
+  let mapsToRender = mapsOverride || Object.entries(mapMetadata).map(([mapId, meta]) => ({
     mapId,
     ...meta
   }));
-
+  
   if (sortKey) {
-    allMaps.sort((a, b) => {
+    mapsToRender.sort((a, b) => {
       const keyA = getSortValue(a, sortKey, beatenMapStats);
       const keyB = getSortValue(b, sortKey, beatenMapStats);
       if (keyA < keyB) return sortAsc ? -1 : 1;
@@ -379,7 +437,7 @@ function renderCompletion(records, summary=null, sortKey = null, sortAsc = true)
   const tbody = document.getElementById("completionBody");
   tbody.innerHTML = "";
 
-  allMaps.forEach(m => {
+  mapsToRender.forEach(m => {
     const key = m.map_id;
     const stats = beatenMapStats[key];
     const attempts = stats ? stats.attempts : 0;
@@ -529,7 +587,7 @@ function renderCompletion(records, summary=null, sortKey = null, sortAsc = true)
           const img = document.createElement("img");
           const imageUrl = `https://fortunatemaps.herokuapp.com/preview/${m.map_id}`;
           img.src = imageUrl;
-          img.alt = `Preview of ${m.name}`;
+          img.alt = `Preview of ${m.map_name}`;
           img.style.cursor = "pointer";
 
           img.onload = function () {
@@ -543,7 +601,7 @@ function renderCompletion(records, summary=null, sortKey = null, sortAsc = true)
 
           img.onclick = function () {
             if (typeof showLargePreview === "function") {
-              showLargePreview(m.name, imageUrl);
+              showLargePreview(m.map_name, imageUrl);
             }
           };
         }
@@ -591,7 +649,7 @@ function renderCompletion(records, summary=null, sortKey = null, sortAsc = true)
       const colIndex = th.cellIndex;
       const key = keyMap[colIndex];
       const asc = completionSortKey === key ? !completionSortAsc : true;
-      renderCompletion(records, summary, key, asc);
+      renderCompletion(records, summary, key, asc, mapsToRender);
     };
   });
 }
@@ -607,7 +665,7 @@ function formatTime(ms) {
 function getSortValue(map, key, statsMap) {
   const stat = statsMap[map.map_id];
   switch (key) {
-    case "name": return map.name.toLowerCase();
+    case "name": return map.map_name.toLowerCase();
     case "completed": return stat ? 1 : 0;
     case "attempts": return stat?.attempts ?? 0;
     case "bestTime": return stat?.bestTime ?? Infinity;
@@ -640,7 +698,7 @@ function searchMergedGroup(group) {
 
 
 document.addEventListener("DOMContentLoaded", async () => {
-  await loadData();
+  const totalMapsCount = await loadData();
 
   const input = document.getElementById("playerSearchInput");
   const searchBtn = document.getElementById("playerSearchButton");
@@ -663,7 +721,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         return;
     }
 
-    let summary = summarizePlayer(records, q);
+    let summary = summarizePlayer(records, q, totalMapsCount);
     if (!summary) {
         alert("Could not summarize player.");
         return;
@@ -672,6 +730,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     summary = await enhanceSummaryName(summary);
     await renderSummary(summary);
     renderCompletion(records, summary); // ✅ now includes all merged records
+    setupCompletionFilters(records, summary);
+
     }
 
 

@@ -4385,7 +4385,7 @@
     "89750": {
         "map_name": "Mt Everest",
         "author": "Mr. Hat & FWO",
-        "difficulty": "5.0",
+        "difficulty": "6.0",
         "balls_req": "1",
         "preset": "gZMefHjYggtaiaaaJraaksaaamaaauaaajbE",
         "map_id": "89750",
@@ -5549,6 +5549,175 @@
             "Solo",
             "Checkpoint",
             "mapsgiving"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93596": {
+        "map_name": "Hurdle Challenge",
+        "author": "SB Army SB",
+        "difficulty": "1.5",
+        "balls_req": "1",
+        "preset": "gZMefIFWggtaiaaaJyaraakpZE",
+        "map_id": "93596",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Unlimited Jumps"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93598": {
+        "map_name": "Buddy Union 4 HARDER: You want more?",
+        "author": "Danny",
+        "difficulty": "TBD",
+        "balls_req": "3",
+        "preset": "gZMefIFYggtaiaaaJyaraaksaaamabWEF",
+        "map_id": "93598",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Juggling"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93599": {
+        "map_name": "Juggles And Careys",
+        "author": "Danny and Carey Price",
+        "difficulty": "TBD",
+        "balls_req": "3?",
+        "preset": "gZMefIFZggtaiaaaJyaraaksaaamabWEF",
+        "map_id": "93599",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Juggling"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93601": {
+        "map_name": "Team Building (Official FWO)",
+        "author": "HeinousAnus",
+        "difficulty": "TBD",
+        "balls_req": "3",
+        "preset": "gZMefIGbggtaiaaaJyaraaksaaamaaaEF",
+        "map_id": "93601",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Juggling"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93602": {
+        "map_name": "Aussie Team Action V2 Complete [Juggles]",
+        "author": "Curveballed",
+        "difficulty": "TBD",
+        "balls_req": "3",
+        "preset": "gZMefIGcggtaiaaaJyaraaksaaamabWYEF",
+        "map_id": "93602",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Juggling"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93603": {
+        "map_name": "Aussie team action 3.0 [Juggles]",
+        "author": "Ez Buddy & Curveballed & FWO",
+        "difficulty": "TBD",
+        "balls_req": "3",
+        "preset": "gZMefIGdggtaiaaaJyaraaksaaaYEF",
+        "map_id": "93603",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Juggling"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93611": {
+        "map_name": "Team Trauma 2 v1.0 (Official)",
+        "author": "Sir Reginald",
+        "difficulty": "TBD",
+        "balls_req": "4",
+        "preset": "gZMefIGlggtaiaaaJyaraaksaaaYEF",
+        "map_id": "93611",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Juggling"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93612": {
+        "map_name": "team building V1 (Official)",
+        "author": "Curveballed",
+        "difficulty": "TBD",
+        "balls_req": "2",
+        "preset": "gZMefIGmggtaiaaaJyaraaksaaaYEF",
+        "map_id": "93612",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Juggling"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93613": {
+        "map_name": "Aussie Team Action V4.5 (Official)",
+        "author": "Curveballed",
+        "difficulty": "TBD",
+        "balls_req": "3",
+        "preset": "gZMefIGnggtaiaaaJyaraaksaaaYEF",
+        "map_id": "93613",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Juggling"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "60119": {
+        "map_name": "Juggle Compendium",
+        "author": "Ball-E",
+        "difficulty": "TBD",
+        "balls_req": "2",
+        "preset": "gZMefwmhggtaiaaaJyaraakYEF",
+        "map_id": "60119",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Juggling"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93639": {
+        "map_name": "Juggle Distance",
+        "author": "Ball-E",
+        "difficulty": "TBD",
+        "balls_req": "2",
+        "preset": "gZMefIGNggtaiaaaJyaraakYEF",
+        "map_id": "93639",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Juggling"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93638": {
+        "map_name": "Bound by Gravity",
+        "author": "DAD.",
+        "difficulty": "TBD",
+        "balls_req": "2",
+        "preset": "gZMefIGMggtaiaaaJyaraaksaaamaaaYpbEF",
+        "map_id": "93638",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Juggling",
+            "AnyGate"
         ],
         "grav_or_classic": "Grav"
     }

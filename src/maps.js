@@ -53,7 +53,7 @@ export class MapsTable {
             const mapType = (m.grav_or_classic || "").toLowerCase();
             const matchesType = grav_or_classic === 'unbeaten' || mapType === grav_or_classic;
             const matchesSearch =
-                m.name.toLowerCase().includes(searchTerm) ||
+                m.map_name.toLowerCase().includes(searchTerm) ||
                 (m.author && m.author.toLowerCase().includes(searchTerm));
 
             return !beaten.has(key) && matchesType && matchesSearch;
@@ -496,7 +496,7 @@ export class MapsTable {
         // Map Name cell with expandable detail
         const mapNameCell = document.createElement('td');
         mapNameCell.className = "map-name";
-        mapNameCell.textContent = map.name;
+        mapNameCell.textContent = map.map_name;
 
         const detailDiv = document.createElement('div');
         detailDiv.className = "detail";
@@ -506,7 +506,7 @@ export class MapsTable {
         leftDetailDiv.className = "left-detail";
 
         // Preset + Map ID info
-        const presetValue = this.presets[map.name] || map.preset || "N/A";
+        const presetValue = this.presets[map.map_name] || map.preset || "N/A";
         const infoDiv = document.createElement('div');
         infoDiv.textContent = "Preset: " + presetValue + " | Map ID: " + (map.map_id || "—");
         leftDetailDiv.appendChild(infoDiv);
@@ -572,7 +572,7 @@ export class MapsTable {
                 const img = document.createElement('img');
                 const imageUrl = `https://fortunatemaps.herokuapp.com/preview/${map.map_id}`;
                 img.src = imageUrl;
-                img.alt = `Preview of ${map.name}`;
+                img.alt = `Preview of ${map.map_name}`;
                 img.style.cursor = 'pointer';
 
                 img.onload = function() {
@@ -585,7 +585,7 @@ export class MapsTable {
                 };
 
                 img.onclick = function() {
-                mapsTableInstance.showLargePreview(map.name, imageUrl);
+                mapsTableInstance.showLargePreview(map.map_name, imageUrl);
                 };
             }
             }
