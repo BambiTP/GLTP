@@ -683,6 +683,7 @@ function searchMergedGroup(group) {
   for (const records of Object.values(recordsByMap)) {
     for (const r of records) {
       // Match if any player in r.players belongs to the group
+      //TODO white names still matching
       const idHit = r.players.some(p => group.user_ids.includes(p.user_id));
       const nameHit = r.players.some(p => group.names.includes(p.name));
       if ((idHit || nameHit) && !seen.has(r.uuid)) {

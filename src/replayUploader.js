@@ -229,6 +229,7 @@ class ReplayUploader {
         // Show the results container and update UI with parsed data
         if (this.resultsContainer) {
             this.resultsContainer.style.display = 'block';
+            this.modal.style.display = 'block';
             this.updateUI(parsedData);
         }
         
