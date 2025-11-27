@@ -23,6 +23,10 @@ const processDir = (srcPath, outPath) => {
     const outFile = path.join(outPath, entry.name);
 
     if (entry.isDirectory()) {
+      if (srcFile.includes('discordScripts')) {
+        console.log(`Skipping node_modules: ${srcFile}`);
+        continue;
+      }
       processDir(srcFile, outFile);
     } else {
       console.log(`Found file: ${srcFile}`);

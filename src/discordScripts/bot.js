@@ -1,7 +1,7 @@
 // bot.js
 import { Client, GatewayIntentBits } from "discord.js";
 import fetch from "node-fetch";
-import { parseReplayFromUUID, parseReplayFromReplayLink } from "./replayParser.js"; // adjust path
+import { parseReplayFromUUID, parseReplayFromReplayLink } from "./replayParserDiscord.js"; // adjust path
 
 // Replace with your bot token and Worker details
 const DISCORD_TOKEN = "";
