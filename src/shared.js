@@ -1,5 +1,5 @@
 // Constants
-export const dataUrl = "https://worldrecords.bambitp.workers.dev";
+export const dataUrl = "https://gltp.fwotagprodad.workers.dev/records";
 
 // Helper functions for player names
 export function getLeaderboardPlayerKey(player) {

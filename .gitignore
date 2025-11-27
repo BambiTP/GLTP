@@ -2,3 +2,5 @@
 /node_modules
 /package-lock.json
 /venv
+/src/discordScripts/node_modules
+/src/discordScripts/package-lock.json

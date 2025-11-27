@@ -18,7 +18,7 @@ const mergedProfiles = {
 
 
 async function loadData() {
-  const res = await fetch("https://worldrecords.bambitp.workers.dev");
+  const res = await fetch("https://gltp.fwotagprodad.workers.dev/records");
   const raw = await res.json();
   const { recordsByMap: rbm } = processLeaderboardData(raw); //TODO the "keys are all lowercase. time to change to ID?"
   recordsByMap = rbm;
