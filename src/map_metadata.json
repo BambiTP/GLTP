@@ -365,7 +365,8 @@
         "map_id": "87055",
         "categories": [
             "Buddy",
-            "Checkpoint"
+            "Checkpoint",
+            "Juggling"
         ],
         "grav_or_classic": "Grav"
     },
@@ -2016,7 +2017,7 @@
     "86977": {
         "map_name": "ULTIMATE GRAVITY BUDDY SYSTEM (HARD)",
         "author": "Anonymous",
-        "difficulty": "TBD",
+        "difficulty": "6.2",
         "balls_req": "1",
         "preset": "gZMefGiHggtaiaaaJraaksaaamaaaE",
         "map_id": "86977",
@@ -2029,7 +2030,7 @@
     "88763": {
         "map_name": "The Temple Maze (Official FWO)",
         "author": "Anonymous",
-        "difficulty": "1.6",
+        "difficulty": "1.9",
         "balls_req": "1",
         "preset": "gZMefGQZggtaiaaaJraaksaaamaaaE",
         "map_id": "88763",
@@ -2254,13 +2255,13 @@
         ],
         "grav_or_classic": "Classic"
     },
-    "88989": {
+    "93725": {
         "map_name": "Ball-E's INSANE 15 minute buddy challenge",
         "author": "Ball-E",
         "difficulty": "TBD",
         "balls_req": "2",
-        "preset": "",
-        "map_id": "88989",
+        "preset": "gZMefIIvtaiaaaJraak",
+        "map_id": "93725",
         "categories": [
             "Buddy",
             "OneShot"
@@ -2270,7 +2271,7 @@
     "88766": {
         "map_name": "BartJr's Gravity Challenge (Official FWO)",
         "author": "BartimaeusJr & FWO",
-        "difficulty": "3.1",
+        "difficulty": "3.6",
         "balls_req": "1",
         "preset": "gZMefGRcggtaiaaaJyaraaksaaamaaaE",
         "map_id": "88766",
@@ -2641,7 +2642,7 @@
     "86976": {
         "map_name": "ULTIMATE GRAVITY BUDDY SYSTEM",
         "author": "SB ARMEE SB",
-        "difficulty": "2.1",
+        "difficulty": "3.0",
         "balls_req": "1",
         "preset": "gZMefGiGggtaiaaaJraaksaaamaaaE",
         "map_id": "86976",
@@ -3522,7 +3523,7 @@
         "author": "blal-e",
         "difficulty": "6.3",
         "balls_req": "1",
-        "preset": "gZMeflaaggtaiaaaJyaraakmaaaE",
+        "preset": "gZMeflaaggtaiaaaJyaraakmaaaHpzE",
         "map_id": "29744",
         "categories": [
             "Solo",
@@ -5280,7 +5281,7 @@
         "author": "Thanos Ball",
         "difficulty": "3.0",
         "balls_req": "1",
-        "preset": "gZMefHYWggtaiaaaJyaraakYE",
+        "preset": "gZMefIFvggtaiaaaJyaraakYE",
         "map_id": "93569",
         "categories": [
             "Solo",
@@ -5432,7 +5433,7 @@
         "author": "3",
         "difficulty": "3.0",
         "balls_req": "1",
-        "preset": "gZMefIuwggtkcbiaaaJyaraaksaaamaakuafOHpYTpfEG",
+        "preset": "gZMefIuwggtaiaaaJyaraakHpYpfEG",
         "map_id": "92998",
         "categories": [
             "Solo",
@@ -5626,7 +5627,7 @@
         "map_name": "Aussie team action 3.0 [Juggles]",
         "author": "Ez Buddy & Curveballed & FWO",
         "difficulty": "TBD",
-        "balls_req": "3",
+        "balls_req": "5",
         "preset": "gZMefIGdggtaiaaaJyaraaksaaaYEF",
         "map_id": "93603",
         "categories": [
@@ -5717,6 +5718,111 @@
             "Buddy",
             "Checkpoint",
             "Juggling",
+            "AnyGate",
+            "mapsgiving"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "50263": {
+        "map_name": "Warping Melody",
+        "author": "BoldRolling Map Productions",
+        "difficulty": "TBD",
+        "balls_req": "x",
+        "preset": "gZMefsEFggtaiaaaJyaraakmaaaYE",
+        "map_id": "50263",
+        "categories": [
+            "Solo",
+            "OneShot",
+            "VsRace",
+            "Portal Maze",
+            ""
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93707": {
+        "map_name": "Longer Shorter Circuit",
+        "author": "BallSaget, Bumballbee, ASAP, Gryff (3) Upload Date 11/20/2025, 5:01:11 PM Authors Anonymous Tags None No Des",
+        "difficulty": "5.1",
+        "balls_req": "x",
+        "preset": "gZMefIIdggtaiaaaJyYraaksaaamaaaHpzE",
+        "map_id": "93707",
+        "categories": [
+            "Solo",
+            "OneShot",
+            "Remix"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93876": {
+        "map_name": "Painting Jumpers",
+        "author": "Ball-E",
+        "difficulty": "TBD",
+        "balls_req": "1 + afk",
+        "preset": "gZMefILqggtucbiaaaybraaasaaamaaauaaazfzYjTEFG",
+        "map_id": "93876",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Juggling",
+            "AFK",
+            "mapsgiving"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93845": {
+        "map_name": "The Box",
+        "author": "Thanos Ball",
+        "difficulty": "TBD",
+        "balls_req": "2",
+        "preset": "gZMefIKLggtacbiaaaJybmadSE",
+        "map_id": "93845",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Puzzle",
+            "mapsgiving"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93863": {
+        "map_name": "Cave System",
+        "author": "3",
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefILdggtacbiaaaJyaraaksaaamaaauaaaVnqqUadSHpzYTbnEF",
+        "map_id": "93863",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "mapsgiving"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93913": {
+        "map_name": "Ring of Fire",
+        "author": "rollingstone",
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefIMbggtuoyaraaasaaamaaaVadSHpYE",
+        "map_id": "93913",
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "mapsgiving"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93898": {
+        "map_name": "I'm Not Your Buddy, Pal",
+        "author": "BallSaget",
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefILMggtaiaaaJraaksaaamaaauaaaVabWTbEF",
+        "map_id": "93898",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "mapsgiving",
             "AnyGate"
         ],
         "grav_or_classic": "Grav"
