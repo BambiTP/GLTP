@@ -2260,7 +2260,7 @@
         "author": "Ball-E",
         "difficulty": "TBD",
         "balls_req": "2",
-        "preset": "gZMefIIvtaiaaaJraak",
+        "preset": "gZMefIIvtaiaaaJyaraakYG",
         "map_id": "93725",
         "categories": [
             "Buddy",
@@ -3621,7 +3621,7 @@
     "89087": {
         "map_name": "hjnkm, (Official FWO)",
         "author": "inkmp & FWO",
-        "difficulty": "4.5",
+        "difficulty": "5.7",
         "balls_req": "3",
         "preset": "gZMefGXlggtaiaaaJyaraaksaaamaaYE",
         "map_id": "89087",
@@ -5499,9 +5499,9 @@
     "93447": {
         "map_name": "Marble Run Race",
         "author": "Dr. Juke",
-        "difficulty": "1.9",
+        "difficulty": "2.6",
         "balls_req": "1",
-        "preset": "gZMefIDdggtioiaaaJyaraaksaaamaaaYpaEG",
+        "preset": "gZMefIDdggtuoiaaaJyaraaksaaamaaaYpaEG",
         "map_id": "93447",
         "categories": [
             "Individual",
@@ -5726,7 +5726,7 @@
     "50263": {
         "map_name": "Warping Melody",
         "author": "BoldRolling Map Productions",
-        "difficulty": "TBD",
+        "difficulty": "0.8",
         "balls_req": "x",
         "preset": "gZMefsEFggtaiaaaJyaraakmaaaYE",
         "map_id": "50263",
@@ -5824,6 +5824,19 @@
             "Checkpoint",
             "mapsgiving",
             "AnyGate"
+        ],
+        "grav_or_classic": "Grav"
+    },
+    "93942": {
+        "map_name": "Spade",
+        "author": "3",
+        "difficulty": "3.0",
+        "balls_req": "1",
+        "preset": "gZMefIMEggtaiaaaJyaraakVadSUadSHpzYE",
+        "map_id": "93942",
+        "categories": [
+            "Solo",
+            "Checkpoint"
         ],
         "grav_or_classic": "Grav"
     }
