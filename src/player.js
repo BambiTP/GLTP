@@ -12,6 +12,10 @@ const mergedProfiles = {
   "group1": {
     user_ids: ["5c59418b6c57cf3971151579", "52bb02613330151206000004"],
     names: ["FWO", "DAD.", "::"]
+  },
+  "group2": {
+    user_ids: ["67e6b28e0ee5ccae368a91c3"],
+    names: ["Some Ball 64", "SB ARMY SB"]
   }
 };
 
@@ -755,6 +759,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     summary = await enhanceSummaryName(summary);
     await renderSummary(summary);
+    await renderPlayerSeasons(summary.names);
     renderCompletion(records, summary); // ✅ now includes all merged records
     setupCompletionFilters(records, summary);
 
@@ -773,3 +778,52 @@ document.addEventListener("DOMContentLoaded", async () => {
     run(userId);
   }
 });
+
+async function renderPlayerSeasons(names) {
+  const container = document.getElementById("seasonContent");
+  container.innerHTML = "";
+
+  try {
+    const res = await fetch("./seasons.json");   // adjust path if needed
+    const data = await res.json();
+
+    // Normalize names for case-insensitive matching
+    const normalizedNames = names.map(n => n.toLowerCase());
+
+    data.seasons.forEach(season => {
+      season.teams.forEach(team => {
+        // Check if ANY of the player's names are in the roster
+        const match = team.roster.some(player =>
+          normalizedNames.includes(player.toLowerCase())
+        );
+
+        if (match) {
+          const card = document.createElement("div");
+          card.className = "season-card";
+          card.innerHTML = `
+            <img src="${season.icon}" alt="Season ${season.season} Icon" class="season-icon">
+            <span>Season ${season.season} — Team: ${team.name}</span>
+          `;
+          container.appendChild(card);
+        }
+      });
+    });
+
+    if (!container.innerHTML) {
+      container.innerHTML = "<p class='muted'>No GLTP seasons found for this player.</p>";
+    }
+  } catch (err) {
+    console.error("Failed to load seasons data", err);
+    container.innerHTML = "<p class='error'>Could not load GLTP seasons data.</p>";
+  }
+}
+
+// Toggle button
+document.getElementById("toggleSeasons").addEventListener("click", () => {
+  const content = document.getElementById("seasonContent");
+  const btn = document.getElementById("toggleSeasons");
+  const isHidden = content.style.display === "none";
+  content.style.display = isHidden ? "block" : "none";
+  btn.textContent = isHidden ? "Hide GLTP Seasons ▲" : "Show GLTP Seasons ▼";
+});
+

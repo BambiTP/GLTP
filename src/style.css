@@ -1005,3 +1005,55 @@ a:hover {
 .player-link:hover {
   border-bottom: 1px solid #d0e2ff;
 }
+
+.season-container {
+  margin-bottom: 1.5em;
+  text-align: center;
+  background: transparent;
+  padding: 0.5em 0;
+  font-size: 0.85em;
+  color: #ccc;                  /* light gray text for readability */
+}
+
+.season-header {
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #aaa;                  /* slightly lighter than divider */
+  margin-bottom: 0.5em;
+}
+
+.season-card {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.25em 0.75em;
+  opacity: 0.8;                  /* still faded, but visible */
+  color: #ddd;                   /* lighter text for dark bg */
+}
+
+.season-icon {
+  height: 1em;
+  margin-right: 6px;
+  opacity: 0.7;                  /* faded but visible */
+  filter: brightness(1.2);       /* boost icon visibility on black */
+}
+
+.toggle-btn {
+  background-color: rgba(30, 60, 120, 0.6); /* dark blue with transparency */
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #ddd;               /* light text for dark background */
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: rgba(30, 60, 120, 0.8); /* slightly less transparent on hover */
+  opacity: 1;                               /* brighten when hovered */
+}
+
+.toggle-btn:focus {
+  outline: none;
+}

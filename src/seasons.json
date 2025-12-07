@@ -1,0 +1,27 @@
+{
+  "seasons": [
+    {
+      "season": 1,
+      "icon": "icons/flag.svg",
+      "teams": [
+        { "name": "FWO", "roster": ["DAD.", "Madoka", "EvTheSmev", "MRCOW", "TeaForYou&Me", "Bambi", "LogisticMap", "Faith + 1"] },
+        { "name": "The Drop Bears", "roster": ["Diggs", "03z", "BOSS Jeremy", "BarelySane", "TeaForYou&Me", "Bambi", "LogisticMap", "Faith + 1"] },
+        { "name": "Flume (Deluxe Edition)", "roster": ["StevvieBaby", "Belacqua", "Kevali", "Flume", "TeaForYou&Me", "Bambi", "LogisticMap", "Faith + 1"] },
+        { "name": "Honkeys", "roster": ["burt", "Honky", "Troglodyte", "HappyCracker", "L1GMa", "PoonLuvr69"] },
+        { "name": "Grabbity", "roster": ["BallSaget", "HUUUUUUUUUUU", "`", "ASAP", "Alphachurro", "Victor Messi", "Barry Lakin", "Paprika"] }
+      ]
+    },
+    {
+      "season": 2,
+      "icon": "icons/boost.svg",
+      "teams": [
+        { "name": "FWO", "roster": ["DAD.", "Madoka", "Carrrrrl", "DrCristinaYang", "the buttons", "MarcusYallow", "Beach"] },
+        { "name": "Fall Bondlers", "roster": ["SB ARMY SB", "Bashella", "LogisticMap", "timo_tay", "Billy", "perl", "Bambi", "Ball Of Fame", "hmmmm"] },
+        { "name": "Teletubbies", "roster": ["elfitzo", "Bobbay", "itag", "Vexation"] },
+        { "name": "Honkeys", "roster": ["burt", "Honky", "Troglodyte", "HappyCracker", "L1GMa", "PoonLuvr69", "+1"] },
+        { "name": "West Coast", "roster": ["MRCOW", "EpicBlob", "EvTheSmev", "bleast", "Valerian", "Tinderfella", "TeaForYou&Me"] },
+        { "name": "Momentum Mori", "roster": ["BigBird"] }
+      ]
+    }
+  ]
+}
