@@ -38,7 +38,6 @@
     </div>
   </div>
   
-
 <!-- Player Profile Page -->
 <div id="playerRecordsContainer">
   <!-- Search Section -->
@@ -47,46 +46,61 @@
             <input id="playerSearchInput" type="text" placeholder="Enter username or profile ID" class="search-input">
             <button id="playerSearchClear" class="search-clear" style="display:none;">×</button>
             <button id="playerSearchButton" class="upload-button">Search</button>
+          </div>
         </div>
     </div>
-
-
 
   <!-- Player Summary -->
   <div id="playerSummary" class="table-container" style="display:none;"></div>
 
   <!-- Runs Table -->
-    <div id="playerRunsContainer" class="records-container" style="display:none;">
-        <div class="table-wrapper">
-            <div class="table-container">
-                <h2 id="runsHeader" class="profileHeader">Speedruns</h2>
-                <table id="playerRunsTable" class="table">
-                    <thead>
-                        <tr>
-                        <th>Map</th>
-                        <th>Time</th>
-                        <th>Date</th>
-                        <th>Replay</th>
-                        </tr>
-                    </thead>
-                    <tbody id="playerRunsBody"></tbody>
-                </table>
-            </div>
-        </div>
+  <div id="playerRunsContainer" class="records-container" style="display:none;">
+    <div class="table-wrapper">
+      <div class="table-container">
+        <h2 id="runsHeader" class="profileHeader">Speedruns</h2>
+        <table id="playerRunsTable" class="table">
+          <thead>
+            <tr>
+            <th>Map</th>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Replay</th>
+            </tr>
+          </thead>
+          <tbody id="playerRunsBody"></tbody>
+        </table>
+      </div>
     </div>
+  </div>
 
-    <div class="search-row">
-        <div class="search-left">
-            <input type="text" id="completionSearch" placeholder="Search maps..." class="search-input">
-            <button id="completion-search-clear" class="search-clear" style="display:none;">×</button>
-            <select id="completionFilter" class="filter-select">
-            <option value="">All Types</option>
-            <option value="grav">Gravity</option>
-            <option value="classic">Classic</option>
-            <option value="unbeaten">Unbeaten Maps</option>
-            </select>
-        </div>
+  <div class="search-row">
+    <div class="search-left">
+      <input type="text" id="completionSearch" placeholder="Search maps..." class="search-input">
+      <button id="completion-search-clear" class="search-clear" style="display:none;">×</button>
+      <!-- Existing Gravity/Classic filter -->
+      <select id="gravityFilter" class="filter-select">
+        <option value="">All Modes</option>
+        <option value="grav">Gravity</option>
+        <option value="classic">Classic</option>
+        <option value="unbeaten">Unbeaten Maps</option>
+      </select>
+      
+      <!-- Play Mode (mutually exclusive) -->
+      <select id="playModeFilter" class="filter-select">
+        <option value="">All Types</option>
+        <option value="Solo">Solo</option>
+        <option value="Buddy">Buddy</option>
+      </select>
+
+      <!-- Completion Style (mutually exclusive) -->
+      <select id="completionFilter" class="filter-select">
+        <option value="">All Styles</option>
+        <option value="Checkpoint">Checkpoint</option>
+        <option value="OneShot">OneShot</option>
+        <option value="AnyGate">AnyGate</option>
+      </select>
     </div>
+  </div>
 
   <!-- Completion Tracker -->
     <div id="completionContainer" class="records-container" style="display:none;">

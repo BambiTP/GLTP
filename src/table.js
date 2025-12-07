@@ -27,6 +27,9 @@ export class TableModule {
     this.searchId = opts.searchId;
     this.clearId = opts.clearId;
     this.filterId = opts.filterId;
+    this.playModeFilterId = opts.playModeFilterId;
+    this.completionFilterId = opts.completionFilterId;
+    this.extraCategoriesFilterId = opts.extraCategoriesFilterId;
     this.uploadButtonId = opts.uploadButtonId;
 
     this.recordsByMap = opts.recordsByMap || {};
@@ -42,7 +45,9 @@ export class TableModule {
 
     this.setupSorting();
     this.setupSearch();
-    if (this.filterId) this.setupFilters();
+    if (this.filterId || this.playModeFilterId || this.completionFilterId || this.extraCategoriesFilterId) {
+        this.setupFilters();
+    }
     if (this.uploadButtonId) this.setupUploadModal();
   }
 
@@ -88,9 +93,12 @@ export class TableModule {
   }
 
   setupFilters() {
-    const filterEl = document.getElementById(this.filterId);
-    if (!filterEl) return;
-    filterEl.addEventListener('change', () => this.applyFilters());
+    [this.filterId, this.playModeFilterId, this.completionFilterId, this.extraCategoriesFilterId]
+      .forEach(id => {
+        if (!id) return;
+        const el = document.getElementById(id);
+        if (el) el.addEventListener('change', () => this.applyFilters());
+      });
   }
 
   setupUploadModal() {
@@ -125,24 +133,32 @@ export class TableModule {
     const searchTerm = (document.getElementById(this.searchId)?.value || '').toLowerCase().trim();
 
     // Speed page supports "unbeaten" option; jump page has gravity-only filter
-    const filterVal = this.filterId ? (document.getElementById(this.filterId)?.value || '').toLowerCase() : '';
+    const gravityVal = this.filterId ? (document.getElementById(this.filterId)?.value || '').toLowerCase() : '';
+    const playModeVal = this.playModeFilterId ? document.getElementById(this.playModeFilterId)?.value : '';
+    const completionVal = this.completionFilterId ? document.getElementById(this.completionFilterId)?.value : '';
+    const extraVals = this.extraCategoriesFilterId
+      ? Array.from(document.getElementById(this.extraCategoriesFilterId)?.selectedOptions || []).map(o => o.value)
+      : [];
 
-    if (this.mode === 'speed' && filterVal === 'unbeaten') {
-      // Beaten set from existing records
+    // Handle unbeaten maps separately
+    if (this.mode === 'speed' && gravityVal === 'unbeaten') {
       const beaten = new Set(this.allRecords.map(r => r.map_id));
+      const allMaps = Object.entries(this.mapMetadata).map(([mapId, meta]) => ({ map_id: mapId, ...meta }));
 
-      // Convert metadata to array for maps catalog
-      const allMaps = Object.entries(this.mapMetadata).map(([mapId, meta]) => ({ mapId, ...meta }));
-
-      // Filter unbeaten maps
       const unbeaten = allMaps.filter(m => {
-        const key = m.map_id;
+        const categories = m.categories || [];
         const type = (m.grav_or_classic || '').toLowerCase();
-        const matchesType = true; // "unbeaten" ignores grav/classic subfilter (matches both)
+
+        const matchesGravity = true; // unbeaten ignores grav/classic
+        const matchesPlayMode = !playModeVal || categories.includes(playModeVal);
+        const matchesCompletion = !completionVal || categories.includes(completionVal);
+        const matchesExtra = extraVals.length === 0 || extraVals.some(val => categories.includes(val));
+
         const matchesSearch =
           (m.map_name || '').toLowerCase().includes(searchTerm) ||
           ((m.author || '').toLowerCase().includes(searchTerm));
-        return !beaten.has(key) && matchesType && matchesSearch;
+
+        return !beaten.has(m.map_id) && matchesGravity && matchesPlayMode && matchesCompletion && matchesExtra && matchesSearch;
       });
 
       this.recordsArray = unbeaten;
@@ -151,22 +167,23 @@ export class TableModule {
       return;
     }
 
-    // Normal filtered view on existing records
+    // Normal filtered view
     const filtered = this.allRecords.filter(record => {
-      const metadata = this.mapMetadata[record.map_id] || {};
-      const type = (metadata.grav_or_classic || '').toLowerCase();
+      const meta = this.mapMetadata[record.map_id] || {};
+      const categories = meta.categories || [];
+      const type = (meta.grav_or_classic || '').toLowerCase();
 
-      // Mode-specific type filters:
-      // - Speed: '', 'grav', 'classic'
-      // - Jump: '', 'grav' (jump table is grav-only by default in its render)
-      const matchesType = filterVal === '' || type === filterVal;
+      const matchesGravity = gravityVal === '' || type === gravityVal;
+      const matchesPlayMode = !playModeVal || categories.includes(playModeVal);
+      const matchesCompletion = !completionVal || categories.includes(completionVal);
+      const matchesExtra = extraVals.length === 0 || extraVals.some(val => categories.includes(val));
 
       const matchesSearch =
         (record.map_name || '').toLowerCase().includes(searchTerm) ||
         ((record.map_author || '').toLowerCase().includes(searchTerm)) ||
         ((record.capping_player || '').toLowerCase().includes(searchTerm));
 
-      return matchesType && matchesSearch;
+      return matchesGravity && matchesPlayMode && matchesCompletion && matchesExtra && matchesSearch;
     });
 
     this.recordsArray = filtered;

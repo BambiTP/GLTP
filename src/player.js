@@ -277,51 +277,59 @@ async function renderSummary(summary) {
 }
 
 function setupCompletionFilters(records, summary) {
-  const filterSelect = document.getElementById("completionFilter");
+  const gravitySelect = document.getElementById("gravityFilter");
+  const playModeSelect = document.getElementById("playModeFilter");
+  const completionSelect = document.getElementById("completionFilter");
   const searchInput = document.getElementById("completionSearch");
   const clearBtn = document.getElementById("completion-search-clear");
 
   function applyCompletionFilters() {
-    const filterVal = filterSelect.value.toLowerCase();
+    const gravityVal = gravitySelect.value.toLowerCase();
+    const playModeVal = playModeSelect.value;
+    const completionVal = completionSelect.value;
     const searchTerm = searchInput.value.toLowerCase().trim();
 
-    // Convert metadata object into array
+    // ✅ Define allMaps here
     const allMaps = Object.entries(mapMetadata).map(([mapId, meta]) => ({
-      mapId,
+      map_id: mapId,
       ...meta
     }));
 
-    // Build set of beaten maps
     const beaten = new Set(records.map(r => r.map_id));
 
-    let filteredMaps = allMaps.filter(m => {
+    const filteredMaps = allMaps.filter(m => {
       const mapType = (m.grav_or_classic || "").toLowerCase();
+      const categories = m.categories || [];
 
-    // Filter by type
-    let matchesType = true;
-    if (filterVal === "grav") matchesType = mapType === "grav";
-    else if (filterVal === "classic") matchesType = mapType === "classic";
-    else if (filterVal === "unbeaten") {
-        const stats = records.filter(r => r.map_id === m.map_id);
-        // If no stats for this map, or attempts = 0, it's unbeaten
-        matchesType = stats.length === 0;
-    }
+      // Gravity filter
+      let matchesGravity = true;
+      if (gravityVal === "grav") matchesGravity = mapType === "grav";
+      else if (gravityVal === "classic") matchesGravity = mapType === "classic";
+      else if (gravityVal === "unbeaten") {
+        matchesGravity = !beaten.has(m.map_id);
+      }
 
+      // Play Mode filter
+      const matchesPlayMode = !playModeVal || categories.includes(playModeVal);
 
-      // Filter by search term
+      // Completion Style filter
+      const matchesCompletion = !completionVal || categories.includes(completionVal);
+
+      // Search filter
       const matchesSearch =
-        m.map_name.toLowerCase().includes(searchTerm) ||
+        (m.map_name || "").toLowerCase().includes(searchTerm) ||
         (m.author && m.author.toLowerCase().includes(searchTerm));
 
-      return matchesType && matchesSearch;
+      return matchesGravity && matchesPlayMode && matchesCompletion && matchesSearch;
     });
 
-    // Re-render completion tracker with filtered maps
     renderCompletion(records, summary, null, true, filteredMaps);
   }
 
   // Event listeners
-  filterSelect.addEventListener("change", applyCompletionFilters);
+  [gravitySelect, playModeSelect, completionSelect].forEach(sel => {
+    sel.addEventListener("change", applyCompletionFilters);
+  });
   searchInput.addEventListener("input", () => {
     clearBtn.style.display = searchInput.value ? "inline-block" : "none";
     applyCompletionFilters();
@@ -335,6 +343,7 @@ function setupCompletionFilters(records, summary) {
   // Initial render
   applyCompletionFilters();
 }
+
 
 
 async function fetchTagProName(user_id) {
@@ -375,9 +384,25 @@ async function fetchTagProName(user_id) {
 
 
 function renderRuns(records) {
+  const gravityVal = document.getElementById("gravityFilter").value.toLowerCase();
+  const playModeVal = document.getElementById("playModeFilter").value;
+  const completionVal = document.getElementById("completionFilter").value;
+
+  const filtered = records.filter(r => {
+    const meta = mapMetadata[r.map_id] || {};
+    const categories = meta.categories || [];
+    const type = (meta.grav_or_classic || "").toLowerCase();
+
+    const matchesGravity = gravityVal === "" || type === gravityVal;
+    const matchesPlayMode = !playModeVal || categories.includes(playModeVal);
+    const matchesCompletion = !completionVal || categories.includes(completionVal);
+
+    return matchesGravity && matchesPlayMode && matchesCompletion;
+  });
+
   const tbody = document.getElementById("playerRunsBody");
   tbody.innerHTML = "";
-  records.forEach(r => {
+  filtered.forEach(r => {
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${r.map_name}</td>

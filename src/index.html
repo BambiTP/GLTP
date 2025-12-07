@@ -54,24 +54,41 @@
   <!-- Container for side-by-side layout -->
   <div id="mapsRecordsContainer" class="records-container">
     <div id="mapsTableContainer" class="table-wrapper">
-      <!-- Left: Maps Table -->
       <div class="table-container">
-        <div class="search-row">
-          <div class="search-left">
-            <input type="text" id="mapSearch" placeholder="Search maps..." class="search-input">
-            <button id="search-clear" class="search-clear" style="display: none;">×</button>
-            <select id="gravityFilter" class="filter-select">
-              <option value="">All Types</option>
-              <option value="grav">Gravity</option>
-              <option value="classic">Classic</option>
-              <option value="unbeaten">Unbeaten Maps</option>
-            </select>
-            <!-- You can add more elements here -->
-          </div>
-          <div class="search-right">
-            <button id="uploadWrButton" class="upload-button">Check Replay Data</button>
-          </div>
+      <!-- Left: Maps Table -->
+      <div class="search-row">
+        <div class="search-left">
+          <input type="text" id="mapSearch" placeholder="Search maps..." class="search-input">
+          <button id="search-clear" class="search-clear" style="display: none;">×</button>
+
+          <!-- Existing Gravity/Classic filter -->
+          <select id="gravityFilter" class="filter-select">
+            <option value="">All Modes</option>
+            <option value="grav">Gravity</option>
+            <option value="classic">Classic</option>
+            <option value="unbeaten">Unbeaten Maps</option>
+          </select>
+
+          <!-- Play Mode (mutually exclusive) -->
+          <select id="playModeFilter" class="filter-select">
+            <option value="">All Types</option>
+            <option value="Solo">Solo</option>
+            <option value="Buddy">Buddy</option>
+          </select>
+
+          <!-- Completion Style (mutually exclusive) -->
+          <select id="completionFilter" class="filter-select">
+            <option value="">All Styles</option>
+            <option value="Checkpoint">Checkpoint</option>
+            <option value="OneShot">OneShot</option>
+            <option value="AnyGate">AnyGate</option>
+          </select>
         </div>
+
+        <div class="search-right">
+          <button id="uploadWrButton" class="upload-button">Check Replay Data</button>
+        </div>
+      </div>
 
           <table class="table" id="mapsTable">
             <colgroup>
