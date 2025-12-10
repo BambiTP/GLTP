@@ -3,14 +3,16 @@ import time
 import logging
 import json
 import random
+import threading
+import re
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import JavascriptException
 
 from rapidfuzz import fuzz
 
-from replay_manager import write_replay_uuid, get_wr_entry
-from maps import inject_map_id_into_preset, get_maps
+from replay_manager import write_replay_uuid, get_wr_entry, refresh_wr_cache
+from maps import inject_map_id_into_preset, get_maps, get_map_id
 
 
 def setup_logger(name, filename):
@@ -28,7 +30,7 @@ event_logger = setup_logger("events_logger", "events.txt")
 ws_logger = setup_logger("ws_logger", "ws.txt")
 
 
-discord_link = "discord.gg/Y3MZYdxV"
+discord_link = "discord.gg/uhvCrc9man"
 
 
 def time_since(timestamp):
@@ -56,32 +58,38 @@ def default_float(s, default=None):
         return default
 
 
+PRESET_MAPPING = {"shift": "gZMefHyKggtdcbiaakJByaraaksaakTE", "absketball": "gZMefHgpggteiaaaJyfamemraaksaaamacUE"}
+
+ILLEGAL_MAPS = [91872, 89004]
+
 PERIODIC_MESSAGES = [
     # Promotion
-    f"Dont forget to join the GLTP Discord server! {discord_link}",
+    #*(["2025 Mapsgiving Gravity Map Making Competition has started. $250 prize pool. Sign up today!\nDetails: reddit.com/r/TagPro/comments/1olvkkb/"] * 20),
+    *([f"Dont forget to join the GLTP Discord server! {discord_link}"] * 10),
     "Psssst... Hey you... yeah you.\nThink about this: Out of everyone you know, whos most likely to enjoy trying out gravity maps?\nPlease message them a link to this group.",
     "TP pubs dead? This lobby is open 24/7, and often active late at night!",
     "Gravity League TagPro has flexible timing, your team can run the maps when it works best for you!",
-
 
     # docs
     "If you want a new map go back to group and Ill load a fresh one!",
     "This lobby is open 24/7, but the best time to join is 10PM Eastern.",
     f"The bot cycles through maps from this spreadsheet:\ndocs.google.com/spreadsheets/d/1OnuTCekHKCD91W39jXBG4uveTCCyMxf9Ofead43MMCU\nThere are currently {len(get_maps())} maps in rotation!",
-    "Map too hard? \"SETTINGS difficulty 1 3\"  Too easy? \"SETTINGS difficulty 4 7\"",
+    "Map too hard? \"SETTINGS difficulty 1 2.9\"  Too easy? \"SETTINGS difficulty 4 7\"",
     "Use \"SETTINGS category yourcategory\" to play specific map types!\nCategories include buddy, mars, non-grav, race, unlimited, tower, and more!",
     f"Please file bug reports and feature requests in the #bug-reports-and-suggestions room in {discord_link}",
     f"Made or found a new map you'd like to see in rotation? Share it with us in {discord_link}",
     f"World records are automatically updated for games which take place in this group.\nIf your record was in a different group, you can submit a link to #wr-submissions in {discord_link}\nor simply say \"MEMO <replay uuid here>\"",
     "You can see all the bots commands by saying \"HELP\"",
     "Hey guys, you should check out the world records webpage: bambitp.github.io/GLTP/",
+    "The first person falsely accused for cheating on a WR was 3, on July 28th, 2025.",
 
     # tip
+    "Tip: Don't like a users chat? Click their name to mute. Players waoting? Ask a mod to ban.\nGroup policy not to your liking? Poaching is 100% allowed, invite players in this group to a new one.",
     "Tip: **Hold up** for higher / floating jump, **Hold down** to short jump",
     "Tip: You can use the space bar to avoid AFK disconnecting",
     "Tip: Falling through a one-tile passage between a wall and a green gate?\n**Hold** up, slowly approach, and hug the wall while falling off.",
     "Tip: Need to jump fewer than 5 tiles? hold down before you **tap** jump",
-    "Tip: You can get MAXIMUM jumping height by with a quick double tap, holding up on the 2nd jump.",
+    "Tip: You can get MAXIMUM jumping height with a quick double tap, holding up on the 2nd jump.",
     "Tip: Gravity is quite hard at first, but after a few dozen games you'll be able to move like the pros.",
 
     # joke
@@ -93,13 +101,17 @@ PERIODIC_MESSAGES = [
     # lore
     "Lore: Grav once asked BartimaeusJr in a pub if he made BartJrs Gravity Challenge. BartimaeusJr denied it",
     "Lore: GLTPs roots lie with Dad and Madoka, the architects of its destiny, whose whispered ambitions shaped its foundation",
-    "Lore: On March 3rd 2025, SB Army SB **destroyed** the TP refresh record,\naccumulating over 6,000 refreshes in a game",
+    "Lore: On March third 2025, SB Army SB **destroyed** the TP refresh record,\naccumulating over 6,000 refreshes in a game",
     "Lore: FWO and Unity hold the current duo WR for most pops in one game with 20,000 pops",
     "Lore: FWO holds the current solo WR for most pops in one game with 12,000 pops",
     "Lore: There is a **rumor** that TeaForYou&Me used to be CoffeeForYou&Me",
     "Lore: The grav bot was originally created to manage an OFM lobby for 8v8 brownian-motion bots.",
     "Lore: Billy is the blue power ranger of tagpro",
     "Lore: Gravity, once was dead, with few active players, until TeaForYou&Me revived it as a game mode.",
+    "Lore: hmmmm has accused sup dawg sb of being a Russian spy, however he claims he's just a",
+    "Lore: MarcusYallow hates, fears, and respects Some Balls.",
+    "Lore: CA$H will not visit whole foods, for fear of seeing his lover scorned.",
+    "Lore: MRCOW is the founder of 'The Tagpro Times'",
 
     # troll
     "Please send TagproDad a Discord PM wishing them a good day!",
@@ -107,8 +119,10 @@ PERIODIC_MESSAGES = [
     "MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
     "I have a question guys, how many sides does a ball have?",
     "Some people mistakenly think I'm a bot, but in reality I'm just a dedicated group manager",
-    "Current Gravity Map ELOs (based on previous 180 days)\n- Goated Muted SB: 1463\n- Dad: 1389\n- Unity: 1240\n- Madoka: 1235",
+    "Current Gravity Map ELOs (based on previous 180 days)\n- Goated Muted SB: 1462\n- Dad: 1401\n- Unity: 1240\n- Madoka: 1229",
     "Quota for INFO command exceeded, ignoring INFO requests for next 48 hours",
+    "Lore: Did you know that <your name> is very unique? They've been playing for 10 years and work in IT!",
+    "knock knock",
 ]
 
 
@@ -260,14 +274,21 @@ class DriverAdapter:
         for line in text.split("\n"):
             self.send_ws_message(["chat", line])
 
+"""
+    restricted_names = ["Fap", "Ptuh", "JareksMom", "xXxMarvinxXx", "yungdaggadic", "Some Ball", "girth defect", "launchnewer"] + ([
+        f"Some Ball {i}" for i in range(2, 100) if i != 64
+    ])
+    restricted_names = [rn.lower() for rn in restricted_names]
+"""
 
 class TagproBot:
     URL = "https://tagpro.koalabeast.com/groups/"
-    room_name = "Gravity and Fun Mini Games"
-    default_map_settings = {"category": None, "difficulty": (1.0, 3.5), "minfun": 3.0}
+    room_name = "🪐 【𝗚𝗿𝗮𝘃𝗶𝘁𝘆】 🪐"
+    default_map_settings = {"category": None, "difficulty": (1.5, 5.0), "minfun": 3.0}
     default_lobby_settings = {"region": "US East"}
-    moderator_names = ["FWO", "DAD.", "TeaForYou&Me", "Some Ball 64", "MRCOW", "Billy", "hmmmm"]
-    restricted_names = ["Fap", "Ptuh"]
+    moderator_names = ["FWO", "DAD.", "TeaForYou&Me", "Some Ball 64", "MRCOW", "Billy", "hmmmm", "Alpha", "UNlTY", "3"]
+    launchnew_names = ["UNlTY","rollingstone","Some Ball 64","hmmmm","Billy","MRCOW","3","MarcusYallow","Alpha","Madoka","CA$H.","Shardik","FWO","::","Panoply","Donnybrook","TeaForYou&Me","Bambi","tragic","danp","TheWorst","timo_tay","PASSTHEFLAG","Light","josh61616","EpicBlob","TheGovernor","Some Wall 2","Thanos Ball","TOPPY","toppy","phreak","Gman","RAMMSTEIN","Jukester","LiddiLidd"]
+
     region_map = {"east": "US East", "central": "US Central", "west": "US West", "eu": "Europe", "oce": "Oceanic"}
 
     def __init__(self, adapter: DriverAdapter):
@@ -307,7 +328,7 @@ class TagproBot:
         if default_float(details['balls_req'], 100) > 1.0:
             msgs.append(f"YOU NEED {details['balls_req']} BALLS TO COMPLETE THIS MAP!")
 
-        wr = get_wr_entry(details['map_id'])
+        wr = get_wr_entry(details['map_id'], self.wr_records)
         if wr:
             msgs.append(
                 "WR: " + timedelta_str(dt.timedelta(seconds=wr['record_time'] / 1000)) +
@@ -369,7 +390,7 @@ class TagproBot:
                     if client_info is not None:
                         self.current_game_uuid = client_info["gameUuid"]
                         event_logger.info(f"Game UUID: {self.current_game_uuid}")
-                        write_replay_uuid(self.current_game_uuid)
+                        write_replay_uuid(self.current_game_uuid, True)
                         break
                     time.sleep(1)
                 else:
@@ -399,6 +420,18 @@ class TagproBot:
             event_logger.info(f"End of game: {self.current_game_preset}")
             self.game_is_active = False
             self.adapter.send_chat_msg("GG. Loading next map. Please return to lobby.")
+            if self.current_game_uuid:
+                # Spawn a background thread that waits 10s, then uploads
+                def delayed_upload(uuid):
+                    time.sleep(30)  # wait for replay to finalize
+                    write_replay_uuid(uuid)
+                    event_logger.info(f"Uploaded replay UUID after delay: {uuid}")
+
+                threading.Thread(
+                    target=delayed_upload,
+                    args=(self.current_game_uuid,),
+                    daemon=True
+                ).start()
         else:
             event_logger.info(f"Game Running: {self.current_game_preset}")
             self.ensure_in_group(self.room_name)
@@ -435,12 +468,21 @@ class TagproBot:
         event_logger.info("Chat: " + str(event_details))
         if event_details.get("from") is None and "has joined the group" in msg:
             time.sleep(1)
-            self.adapter.send_chat_msg("Welcome!\nDrag yourself into Red & click 'Join Game'")
+            # self.adapter.send_chat_msg("Welcome!\nDrag yourself into Red & click 'Join Game'")
+            self.adapter.send_chat_msg("Welcome! Drag yourself into Red & click 'Join Game'")
+            #self.adapter.send_chat_msg("2025 Mapsgiving Gravity Map Making Competition has started. $250 prize pool. Sign up today!\nDetails: reddit.com/r/TagPro/comments/1olvkkb/")
         elif "message" in event_details:
             sender = event_details["from"]
 
-            if event_details.get("auth") and sender in self.restricted_names:
-                if msg.strip().startswith("LAUNCHNEW"):
+            if not (event_details.get("auth") and sender in self.launchnew_names and sender in self.authed_members):
+                if True:  # not sender == "Some Ball 1":
+                    if msg.strip().startswith("LAUNCHNEW"):
+                        return
+
+            banned_patterns = [r"([oO0].*?[fF].*?[mM])"]
+            for bp in banned_patterns:
+                if (re.search(bp, msg.lower()) or msg.lower().strip() == "m") and "toppy" in (sender or "").lower():
+                    self.adapter.send_chat_msg("\n".join(["------------------"] * 9))
                     return
 
             if msg.strip() == "HELP":
@@ -448,16 +490,14 @@ class TagproBot:
                     "Commands: HELP, SETTINGS, MAP, INFO <query>, LAUNCHNEW <preset> (<map_id>), "
                     "REGION east/central/west/eu/oce"
                 )
-            elif msg.startswith("LAUNCHNEW POOP"):
-                if event_details["auth"] and sender in self.moderator_names and sender in self.authed_members:
-                    self.adapter.send_ws_message(["kick", self.authed_members[event_details["from"]]])
             elif msg.startswith("LAUNCHNEW"):
                 preset = None
                 if len(msg.split()) == 2:
                     preset = msg.split()[-1]
+                    preset = PRESET_MAPPING.get(preset, preset)
                 elif len(msg.split()) == 3 and default_float(msg.split()[2]):
                     preset = inject_map_id_into_preset(msg.split()[1], msg.split()[2])
-                if preset and preset.startswith("gZ"):
+                if preset and preset.startswith("gZ") and get_map_id(preset) not in ILLEGAL_MAPS:
                     self.adapter.send_chat_msg("Ending current game...")
                     time.sleep(2)
                     self.adapter.send_ws_message(["endGame"])
@@ -496,6 +536,12 @@ class TagproBot:
                     self.adapter.send_chat_msg("Updated region.")
                 else:
                     self.adapter.send_chat_msg("Invalid region selection")
+
+            elif msg.lower().startswith("whos there") or msg.lower().startswith("who's there") or msg.lower().startswith("who is there"):
+                self.adapter.send_chat_msg("banana")
+
+            elif msg.lower().startswith("banana who"):
+                self.adapter.send_chat_msg("knock knock")
 
     def handle_settings(self, msg):
         parts = msg.strip().split()
@@ -557,7 +603,8 @@ class TagproBot:
         self.load_preset(random.choice([m["preset"] for m in maps]))
 
     def load_preset(self, preset):
-        self.adapter.send_ws_message(["groupPresetApply", preset])
+        maptest_mode_suffix = ""#"G"
+        self.adapter.send_ws_message(["groupPresetApply", preset + maptest_mode_suffix])
         self.current_preset = preset
         event_logger.info(f"Set preset: {preset}")
 
@@ -569,6 +616,9 @@ class TagproBot:
 
             self.ensure_in_group(self.room_name)
             self.adapter.process_ws_events()
+
+            if i % 10800 == 0:  # every 3 hours (10800 seconds)
+                self.wr_records = refresh_wr_cache(force=True)
 
             if launched_new:
                 time.sleep(5)
@@ -587,7 +637,138 @@ class TagproBot:
             i += 1
 
 
+"""
+Lobby state spec:
+- current preset queue
+- loaded preset
+- active game preset (error if loaded and active game preset differ?)
+-
+- player locations (team / status)
+- timestamp of game launch
+- has notified of current MAP
+"""
+
+
+# v1.3
+# DONE: enforce group is listed publically, playing private games
+# DONE: INFO command
+# DONE: automatically create the group if not found.
+# DONE: use aggregate fun rating
+# DONE: LAUNCHNEW <preset> <map ID override>
+# DONE: don't pull new map if no users
+# DONE: log game (replay) uuid
+# DONE: empty preset crashing bot bug fix
+# DONE: add wr to MAP command, post-process world records in separate thread
+# DONE: Save all replays, setup pipeline to resolve world records
+# DONE: add 1 second delay between preset load and launch to avoid partial preset update bug
+# DONE: say map name when game is launched (MAP works, but on-launch MAP isn't automatic);
+# DONE: bug fix - when dad joined, bot launched previous map (2 person) from 20 minutes ago, rather than getting new map
+# DONE: MODERATE
+# DONE: preset info in MAP command
+# DONE: INFO <query>
+# DONE: Allow multiple-caps-to-win maps (e.g. races)
+# DONE: bugfix: map difficulty sometimes not shown mid-game
+# DONE: wr quotes (last message sent by wr cap)
+# DONE: REGION command for poor sad bambi :(
+
+# v1.4
+# DONE: Pseudo Map ID
+# DONE: Mars ball fix (why no mars buddy climb record?)
+#       - Note: this requires the map to be changed. For mars ball cap, set score to 3.
+#               For mars ball map with flag cap, ensure mars ball caps for blue only.
+# DONE: incorporate allow blue caps column
+
+# TODO: ADDREPLAY
+# TODO: Map selection stability: Ensure a launched map is the map which is run, don't choose a new map
+# TODO: Map knowledge stability: Fix the bot thinking a different map is launched than the actual active map
+
+# TODO: Incorporate Max Balls Rec
+
+# TODO: @property which defines current lobby / game / world state. Derive EVERYTHING from this state
+# TODO: "QUEUE": list maps in queue, "QUEUE <preset> (optional map ID override)", "QUEUE <map name>"
+# TODO: REPLAY (enqueue same map)
+# TODO: LAUNCHMAP <map name> or <map id>
+# TODO: move afks to "waiting"
+
+# v1.5
+# TODO: if new WR occurs, announce
+# TODO: WR: "Gates unlocked" stat
+# TODO for maps that have no checkpoints, make speedruns count from spawn to cap so you don't have to relaunch and wait a bunch of times
+
+
+# v1.6
+# TODO: notify "preparing next map: (map details)", delay waiting for launch, inform users of the default case and voting options
+# TODO: lobby voting options:
+#       - SKIP: vote to load random different map
+#       - LAUNCH: vote to run current map
+#       - REPLAY: with VOTING to run the previous map again
+# TODO: in game voting: ABORT
+
+##
+
+# v1.X
+# TODO: KB Interrupt -> leave group immediately
+# TODO: MAP statistics: Completion Rate: <% w/ cap>, Median Time: <median of last 9 plays>
+# TODO: weigh periodic messages for frequency
+# TODO: weigh by fun rating, recency of loading with exponential decay
+# TODO: recency_score 1 if never played, 0.1 if more than 24 hours ago, 0 if within last 24 hours
+# TODO: handle broken group (check for url /find with no /game appearing)
+# TODO: checkpoints (create a new map variant based on current game state)
+# TODO: settings based on WR (e.g. besttime: [0, 60] by default)
+
 if __name__ == '__main__':
     adapter = DriverAdapter()
     bot = TagproBot(adapter)
+    # Refresh WR cache once at startup
+    bot.wr_records = refresh_wr_cache(force=True)
     bot.run()
+
+# MAPS:
+
+# TODO: Finish Gravity Ctrl: https://fortunatemaps.herokuapp.com/map/93414
+
+# TODO: Finish Dingus King: 92726 (gZMefIoTggtuyaraaksaaamaaauaaaYjbE)
+# 1) remove bomb section and replace with something else
+# 2) grav wells?
+# 3) acid rain level
+
+# TODO: Finish CHOO CHOOO https://fortunatemaps.herokuapp.com/map/91686
+# TODO: Finish TFW Falling But No Jumps https://fortunatemaps.herokuapp.com/map/93576 (gZMefHKDggtaiaaayaanraakmaakE)
+
+# TODO: Finish Grav Plinko 90827 -- gZMefHEIggyapaE
+# TODO: Finish KOTH gZMefHUsggyaeuNEraaasaaumaaauaakjTE 91637
+# KOTH TEMPLATE: https://fortunatemaps.herokuapp.com/map/90674
+
+# TODO: Finish Escort https://fortunatemaps.herokuapp.com/map/93341 gZMefIpWggtkiaaayaraaamaauYE
+#       - incorporate https://fortunatemaps.herokuapp.com/map/87327
+
+# TODO: Finish big team buddy https://fortunatemaps.herokuapp.com/map/91428
+
+# TODO: Finish https://fortunatemaps.herokuapp.com/map/89248
+# TODO: Finish https://fortunatemaps.herokuapp.com/map/90988
+
+
+# TODO: map with all the worst mechs (
+#       1) start of first portal of "You Need Two" (the 45 degree roll)
+# TODO: map based on picking up pups and placing spikes
+# TODO: map idea: red vs blue, you need to complete all portals to win, and you can block the other teams progress using your portals
+
+"""
+Fun Ratings:
+gZMefHFiggtaiaaaJraaksaaauaaajTE: 6.5
+gZMefEyYggtaiaaaJraaksaaamaaaE: 7.5
+gZMefFKLggtaiaaaJraaksaaamaaaE: 2.9
+gZMefEyoggtaiaaaJraaksaaamaaaE: 2.5
+gZMefGdGggtuiaaaJyaraaksaaamaaaE: 3.0
+gZMefGOSggtaiaaaJyaraaksaaamaaapaE: 6.0
+gZMefHjrggtaiaaaJyaraaksaaamaaauaaaTbpaE: 6.5
+gZMefGtDggtaiaaaJraaksaaamaaaE (Death Run Flappy): 6.0
+Flappy Bird (Official FWO): 5.0
+NoJump Course: 6.0
+Skatepark: 3.0
+Triple Jump Challenge: 4.0
+"""
+
+"""
+SUBMIT: https://tagpro.koalabeast.com/replays?uuid=08e3e022-bdf6-4432-b55b-fd65d53b2a5c
+"""

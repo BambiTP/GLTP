@@ -21,6 +21,17 @@ def inject_map_id_into_preset(preset, map_id):
     return preset[:pos] + inj + preset[pos + 2 + old_len:]
 
 
+def get_map_id(p):
+    d = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    i = p.find("M")
+    if i < 0:
+        return None
+    n = 0
+    for c in p[i+3:i+2+d.find(p[i+1])]:
+        n=n*52+d.find(c)
+    return n
+
+
 def lru_cache_6hrs(func):
     cached = functools.lru_cache(maxsize=128)(lambda *args, _p, **kwargs: func(*args, **kwargs))
     return lambda *args, **kwargs: cached(*args, _p=int(time.time() // 21600), **kwargs)
