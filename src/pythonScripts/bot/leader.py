@@ -3,7 +3,6 @@ import time
 import logging
 import json
 import random
-import threading
 import re
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -390,7 +389,7 @@ class TagproBot:
                     if client_info is not None:
                         self.current_game_uuid = client_info["gameUuid"]
                         event_logger.info(f"Game UUID: {self.current_game_uuid}")
-                        write_replay_uuid(self.current_game_uuid, True)
+                        write_replay_uuid(self.current_game_uuid)
                         break
                     time.sleep(1)
                 else:
@@ -420,18 +419,6 @@ class TagproBot:
             event_logger.info(f"End of game: {self.current_game_preset}")
             self.game_is_active = False
             self.adapter.send_chat_msg("GG. Loading next map. Please return to lobby.")
-            if self.current_game_uuid:
-                # Spawn a background thread that waits 10s, then uploads
-                def delayed_upload(uuid):
-                    time.sleep(30)  # wait for replay to finalize
-                    write_replay_uuid(uuid)
-                    event_logger.info(f"Uploaded replay UUID after delay: {uuid}")
-
-                threading.Thread(
-                    target=delayed_upload,
-                    args=(self.current_game_uuid,),
-                    daemon=True
-                ).start()
         else:
             event_logger.info(f"Game Running: {self.current_game_preset}")
             self.ensure_in_group(self.room_name)

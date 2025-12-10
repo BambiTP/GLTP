@@ -8,7 +8,7 @@ from maps import get_maps
 import requests
 import logging
 
-PARSE_ENDPOINT = "https://gltp.fwotagprodad.workers.dev/parse"
+PARSE_ENDPOINT = "https://gltp.fwotagprodad.workers.dev/delayed-upload"
 RECORDS_URL = "https://gltp.fwotagprodad.workers.dev/records"
 ORIGIN = "grav bot"
 
@@ -51,13 +51,11 @@ def upload_replay_uuid(uuid: str) -> dict:
         logger.error(f"❌ Request exception for {uuid}: {e}")
         return {"ok": False, "status": "error", "error": str(e)}
 
-def write_replay_uuid(uuid, onlyLog=False):
-    if onlyLog:
-        with open("replay_uuids.txt", "a") as f:
-            f.write("\n" + uuid.strip())
-        f.close()
-    else:
-        upload_replay_uuid(uuid.strip())
+def write_replay_uuid(uuid):
+    with open("replay_uuids.txt", "a") as f:
+        f.write("\n" + uuid.strip())
+    f.close()
+    upload_replay_uuid(uuid.strip())
 
 def refresh_wr_cache(force=False):
     """Fetch WR data from Cloudflare and cache it."""

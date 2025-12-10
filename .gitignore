@@ -4,3 +4,4 @@
 /venv
 /src/discordScripts/node_modules
 /src/discordScripts/package-lock.json
+src/pythonScripts/bot/__pycache__/
