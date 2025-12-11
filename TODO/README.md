@@ -8,8 +8,8 @@ This document tracks tasks and ideas for the project
 ## 🚧 In Progress
 
 - [ ] Valerian Website changes
-- [ ] Click on a **player name** to view their world records
-- [ ] Show a player's **fastest time on each map** (even if not a WR)
+- [x] Click on a **player name** to view their world records
+- [x] Show a player's **fastest time on each map** (even if not a WR)
 - [ ] Better maps classification/categories in spreadsheet
 
 ---
@@ -20,9 +20,8 @@ This document tracks tasks and ideas for the project
 - [ ] Combine two replays into one, automated
 - [ ] Automate GLTP speedrun uploads
 - [ ] Python script to calculate OFM hold time from replay
-- [ ] Click on a **map name** to instantly launch a group with that map selected
 - [ ] Display **total number of completions** per map
-- [ ] Separate Classic / Grav maps on leaderboard
+- [x] Separate Classic / Grav maps on leaderboard
 - [ ] Implement map voting (with account system or signup to ensure one vote per person) difficulty and fun ratings
 - [ ] Move bot workflow to cloud
 - [ ] Launch minigames from bot
@@ -42,7 +41,7 @@ This document tracks tasks and ideas for the project
 - [ ] link to the grav bot group (same pain, group link changes)
 - [ ] GLTP Signups
 - [ ] Grav Versus tourneys/elos (shift, pinecone, ofm, etc)
-- [ ] Discord bot
+- [x] Discord bot
 - [ ] UserScript for zombies mode
 - [ ] Auto generated new maps
 - [ ] Button to spawn a new group with a new bot
@@ -54,7 +53,7 @@ This document tracks tasks and ideas for the project
 
 ## 🐛 Known Bugs
 
-- [ ] tagpro bug 2 games get created when launched from group
+- [x] tagpro bug 2 games get created when launched from group
 - [ ] clicking launch group from website logs user out
 
 ---
