@@ -1175,7 +1175,7 @@
         "grav_or_classic": "Grav",
         "caps_to_win": "3",
         "completion_type": "combined",
-        "allow_blue_caps": false
+        "allow_blue_caps": true
     },
     "86881": {
         "map_name": "Skill Test (Official FWO v2)",
