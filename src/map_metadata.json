@@ -10,7 +10,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87857": {
         "map_name": "Gem's Buddy System (v1) Official (FWO)",
@@ -23,7 +25,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87858": {
         "map_name": "Uptown Funk (2 Jumps) (Instant Bombs)",
@@ -37,7 +41,9 @@
             "Checkpoint",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87859": {
         "map_name": "A Castle on a Cloud 1.0.8",
@@ -51,7 +57,9 @@
             "Checkpoint",
             "SoloPossible"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87862": {
         "map_name": "Buddy Pipe System Version 1.0.1 (Official)",
@@ -64,7 +72,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87864": {
         "map_name": "Quick Race (1v1)",
@@ -78,7 +88,9 @@
             "Checkpoint",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87865": {
         "map_name": "A-Maze-Ing (Official)",
@@ -91,7 +103,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87866": {
         "map_name": "Mini Test (Official FWO)",
@@ -104,7 +118,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87867": {
         "map_name": "The Challenge of Secrets (Official FWO)",
@@ -117,7 +133,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87893": {
         "map_name": "Cancer[buddy system] (Official)",
@@ -130,7 +148,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82069": {
         "map_name": "AUSSIE Teambuilding 1 v1.3 (Official FWO)",
@@ -143,7 +163,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "85734": {
         "map_name": "Buddy Well Test (Official FWO)",
@@ -156,7 +178,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82065": {
         "map_name": "PacMan with Gravity (Easier) (Official FWO)",
@@ -169,7 +193,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82027": {
         "map_name": "Buddy System 11 (TM1 Version) 9bob9",
@@ -182,7 +208,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88765": {
         "map_name": "Trust Fall 2! (Official FWO)",
@@ -195,7 +223,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "47823": {
         "map_name": "Buddy System 4 (TM1 version) 9bob9",
@@ -208,7 +238,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82032": {
         "map_name": "Trust Fall 3: The Return of Trust Fall (Official)",
@@ -221,7 +253,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82025": {
         "map_name": "Trust Fall (3 Person Buddy) (Official)",
@@ -234,7 +268,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "80900": {
         "map_name": "Jasmine 2023",
@@ -247,7 +283,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "80902": {
         "map_name": "Jasmine 2023 (Solo)",
@@ -260,7 +298,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82072": {
         "map_name": "Hall of Ball (Official FWO)",
@@ -273,7 +313,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82074": {
         "map_name": "Tower Race Down 1.0.3 (Official FWO)",
@@ -287,7 +329,9 @@
             "Checkpoint",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82114": {
         "map_name": "Oh Man, Oh Boy (Official FWO)",
@@ -301,7 +345,9 @@
             "Checkpoint",
             "5 Jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82482": {
         "map_name": "Buddy Race (Official FWO v2)",
@@ -315,7 +361,9 @@
             "Checkpoint",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "58156": {
         "map_name": "Buddy System Complete with perma portals",
@@ -328,7 +376,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82220": {
         "map_name": "Gravity Buddy Guy V.2.6.0 (Official FWO v2)",
@@ -341,7 +391,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82118": {
         "map_name": "Buddy (Official FWO)",
@@ -354,7 +406,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87055": {
         "map_name": "Super Smash Buddy (testing delete)",
@@ -368,7 +422,9 @@
             "Checkpoint",
             "Juggling"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82109": {
         "map_name": "2 Person Buddy' (Official FWO)",
@@ -381,7 +437,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82100": {
         "map_name": "Tower Race Down 3 (Official FWO)",
@@ -395,7 +453,9 @@
             "Checkpoint",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87032": {
         "map_name": "Tower Race Down 2 (Official FWO)",
@@ -410,7 +470,9 @@
             "SoloPossible",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82113": {
         "map_name": "The Impossible Map (Official FWO)",
@@ -423,7 +485,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "85770": {
         "map_name": "Celestial Tether (Buddy System Grav, Boost/Bomb instant)",
@@ -437,7 +501,9 @@
             "AnyGate",
             "SoloPossible"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "85771": {
         "map_name": "Orbit Euphoria (Buddy System Grav, Boost/Bomb instant) (official version)",
@@ -450,7 +516,9 @@
             "Buddy",
             "AnyGate"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82424": {
         "map_name": "Buddy System 1 (TM1 Version) 9bob9 (Official FWO)",
@@ -463,7 +531,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82198": {
         "map_name": "The World's Hardest Map (Official FWO V2)",
@@ -476,7 +546,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82657": {
         "map_name": "Super Buddy (Official FWO v2)",
@@ -489,7 +561,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82126": {
         "map_name": "Daily Spike Fall 1.0.1 Final (Official FWO)",
@@ -502,7 +576,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89508": {
         "map_name": "Jump! - Van Halen (5 Jump) (Official FWO)",
@@ -516,7 +592,9 @@
             "Checkpoint",
             "5 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82156": {
         "map_name": "Wacky Races!",
@@ -530,7 +608,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "21272": {
         "map_name": "Zoom (Gravity Race)",
@@ -544,7 +624,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "82183": {
         "map_name": "Ski Cross",
@@ -558,7 +640,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "82158": {
         "map_name": "Team Race (Official FWO)",
@@ -568,7 +652,9 @@
         "preset": "",
         "map_id": "82158",
         "categories": [],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "88364": {
         "map_name": "I'm Back (1v1 Race)!",
@@ -582,7 +668,9 @@
             "Checkpoint",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82577": {
         "map_name": "GET DOWN (gravity)",
@@ -596,7 +684,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "82124": {
         "map_name": "Insane Gravity Challenge (Official FWO)",
@@ -610,7 +700,9 @@
             "Tower",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82180": {
         "map_name": "Up And Down (Official FWO)",
@@ -624,7 +716,9 @@
             "Tower",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "85596": {
         "map_name": "Epic Mode (TM1 Version) 9bob9 (Official FWO)",
@@ -637,7 +731,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82576": {
         "map_name": "Gravity Race 4 (Official FWO)",
@@ -651,7 +747,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "82317": {
         "map_name": "Dragon'sCove[BuddySystem] (Official FWO)",
@@ -664,7 +762,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89510": {
         "map_name": "New Gravity Buddy (Official FWO)",
@@ -677,7 +777,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82355": {
         "map_name": "Octopus [Gravity Buddy] (Official FWO)",
@@ -690,7 +792,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93460": {
         "map_name": "FlappyBirdBuddyGrav",
@@ -703,7 +807,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "23115": {
         "map_name": "Gravity Buddy System [FIXED]",
@@ -716,7 +822,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "47132": {
         "map_name": "Solo Grav Bottle",
@@ -729,7 +837,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86702": {
         "map_name": "Mars Climb",
@@ -743,7 +853,9 @@
             "Mars Climb",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86703": {
         "map_name": "Mars Climb Part II",
@@ -757,7 +869,9 @@
             "Mars Climb",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "combined"
     },
     "86704": {
         "map_name": "Mars Climb 2",
@@ -771,7 +885,9 @@
             "Mars Climb",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "46875": {
         "map_name": "Gravity Challenge",
@@ -784,7 +900,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82428": {
         "map_name": "Buddy (Official FWO)",
@@ -797,7 +915,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86705": {
         "map_name": "Mars Climb 4",
@@ -811,7 +931,9 @@
             "Mars Climb",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82275": {
         "map_name": "You Need Two (Official FWO)",
@@ -824,7 +946,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82314": {
         "map_name": "Buddy System 3 Final Version (Official FWO)",
@@ -837,7 +961,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86706": {
         "map_name": "Mars Climb Part 3",
@@ -851,7 +977,9 @@
             "Mars Climb",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82303": {
         "map_name": "Buddy system 9 (TM1 Version) 9bob9 (Official FWO)",
@@ -864,7 +992,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "44927": {
         "map_name": "Buddy system 5 w/ permagates",
@@ -877,7 +1007,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87119": {
         "map_name": "Metroid [Gravity Buddy] (Official FWO)",
@@ -890,7 +1022,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "47885": {
         "map_name": "Buddy System 8 (TM1 Version) 9bob9",
@@ -903,7 +1037,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82349": {
         "map_name": "The Worlds Hardest Map 2 (Official FWO)",
@@ -916,7 +1052,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82271": {
         "map_name": "Climb (Official FWO)",
@@ -930,7 +1068,9 @@
             "Tower",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "36333": {
         "map_name": "Test climb",
@@ -944,7 +1084,9 @@
             "Tower",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "46288": {
         "map_name": "Climb",
@@ -959,7 +1101,9 @@
             "VS Race",
             "(mars)"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "combined"
     },
     "86881": {
         "map_name": "Skill Test (Official FWO v2)",
@@ -972,7 +1116,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82273": {
         "map_name": "Ups and Downs [FINAL] (Official FWO)",
@@ -985,7 +1131,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87035": {
         "map_name": "Worlds Hardest Map 3 (Official FWO)",
@@ -998,7 +1146,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82310": {
         "map_name": "Buddy System 2 (TM1version) 9bob9 (Official FWO V3)",
@@ -1011,7 +1161,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82420": {
         "map_name": "Rerun [Gravity Buddy] (Official FWO)",
@@ -1024,7 +1176,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82356": {
         "map_name": "V8 [Gravity Buddy] (Official FWO)",
@@ -1037,7 +1191,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86870": {
         "map_name": "20480 [Gravity Buddy] (Official FWO)",
@@ -1051,7 +1207,9 @@
             "Checkpoint",
             "(mars)"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "-1",
+        "completion_type": "individual"
     },
     "86885": {
         "map_name": "Join The Group (Official FWO)",
@@ -1064,7 +1222,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "47884": {
         "map_name": "Buddy System 7 (TM1 Version) 9bob9",
@@ -1077,7 +1237,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82331": {
         "map_name": "Ball-E Wood Tower of Tear Her (Official FWO)",
@@ -1091,7 +1253,9 @@
             "Tower",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82709": {
         "map_name": "Twin Towers (Official FWO v2)",
@@ -1106,7 +1270,9 @@
             "OneShot",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87112": {
         "map_name": "Tower Power (Official FWO)",
@@ -1121,7 +1287,9 @@
             "OneShot",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "-1",
+        "completion_type": "individual"
     },
     "82336": {
         "map_name": "Tower 1-4 (Official FWO)",
@@ -1136,7 +1304,9 @@
             "OneShot",
             "bday"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86708": {
         "map_name": "Mars Climb but hard",
@@ -1150,7 +1320,9 @@
             "Mars Climb",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86709": {
         "map_name": "Mars Climb 3",
@@ -1164,7 +1336,9 @@
             "Mars Climb",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86710": {
         "map_name": "Mars Climb?",
@@ -1178,7 +1352,9 @@
             "Mars Climb",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82404": {
         "map_name": "Fall (Official FWO)",
@@ -1191,7 +1367,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82368": {
         "map_name": "Birthday Tower of Doom (Official FWO)",
@@ -1206,7 +1384,9 @@
             "OneShot",
             "bday"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86711": {
         "map_name": "Birthday Tower 1-5 (Official FWO)",
@@ -1221,7 +1401,9 @@
             "OneShot",
             "bday"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82346": {
         "map_name": "Towered",
@@ -1235,7 +1417,9 @@
             "Tower",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82380": {
         "map_name": "Tower w/ A BUDDY SHORTCUT!!",
@@ -1250,7 +1434,9 @@
             "OneShot",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82382": {
         "map_name": "Tower of Doom 0-0 (Official FWO)",
@@ -1265,7 +1451,9 @@
             "OneShot",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82415": {
         "map_name": "Easy, Medium, or Hard? 3in1Tower (Official FWO)",
@@ -1278,7 +1466,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86718": {
         "map_name": "Birthday Tower 2018 (Official FWO)",
@@ -1294,7 +1484,9 @@
             "bday",
             "pup collector"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82418": {
         "map_name": "UGH (Official FWO)",
@@ -1307,7 +1499,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82419": {
         "map_name": "Spike Ball Hall 1.0.5 (Official FWO)",
@@ -1320,7 +1514,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88667": {
         "map_name": "Unlimited Jumps Buddy (5 jump version) (Official FWO)",
@@ -1334,7 +1530,9 @@
             "Checkpoint",
             "5 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82422": {
         "map_name": "Gravity 2 players (Official FWO v1)",
@@ -1347,7 +1545,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82455": {
         "map_name": "A Step Back",
@@ -1360,7 +1560,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82425": {
         "map_name": "Hope This Is Possible (testing)",
@@ -1373,7 +1575,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88367": {
         "map_name": "Trust(Multiplayer) (Official FWO)",
@@ -1386,7 +1590,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82427": {
         "map_name": "(Map)Test 2",
@@ -1399,7 +1605,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82883": {
         "map_name": "10 Levels 1 Map",
@@ -1412,7 +1620,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82513": {
         "map_name": "Ball Runner",
@@ -1426,7 +1636,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "36193": {
         "map_name": "Tunnel racer",
@@ -1440,7 +1652,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "86712": {
         "map_name": "How good are you?",
@@ -1454,7 +1668,9 @@
             "Fall",
             "Mars Ball"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82496": {
         "map_name": "Challenging Run (Bombs instant, Boost Instant) (Official FWO)",
@@ -1464,10 +1680,12 @@
         "preset": "gZMefEAyggtaiaaaJraaksaaamaaaE",
         "map_id": "82496",
         "categories": [
-            "Buddy",
+            "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82522": {
         "map_name": "20 Seconds (Official FWO)",
@@ -1481,7 +1699,9 @@
             "OneShot",
             "Timer"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "2454": {
         "map_name": "Slanted House",
@@ -1495,7 +1715,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "82498": {
         "map_name": "You're Pushing My Buttons (Official FWO)",
@@ -1508,7 +1730,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82521": {
         "map_name": "Randomly Generated Mapwe (Official FWO)",
@@ -1521,7 +1745,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82448": {
         "map_name": "Jump",
@@ -1534,7 +1760,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82449": {
         "map_name": "Tweak Course",
@@ -1548,7 +1776,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "87057": {
         "map_name": "Rather Easy (Official FWO)",
@@ -1562,7 +1792,9 @@
             "Checkpoint",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88764": {
         "map_name": "Ball From Space",
@@ -1576,7 +1808,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "82503": {
         "map_name": "Protal 2: 2 Many Puzzles(Rate at the end) (Needs 3+) (Official FWO v1)",
@@ -1589,7 +1823,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82507": {
         "map_name": "The Challenge (Official FWO)",
@@ -1602,7 +1838,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "85597": {
         "map_name": "Alliance testing (Official FWO)",
@@ -1615,7 +1853,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82509": {
         "map_name": "t0W3r",
@@ -1629,7 +1869,9 @@
             "Tower",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82514": {
         "map_name": "Don't touch the spikes",
@@ -1643,7 +1885,9 @@
             "Fall",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82517": {
         "map_name": "Long Jumps (Official FWO)",
@@ -1656,7 +1900,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "85733": {
         "map_name": "Fall Down Final (Instant Boosts) (Official FWO)",
@@ -1669,7 +1915,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "85398": {
         "map_name": "Fall Down Final (instant boosts) (Official FWO)",
@@ -1682,7 +1930,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86713": {
         "map_name": "Tower Shower",
@@ -1697,7 +1947,9 @@
             "OneShot",
             "VS"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "-1",
+        "completion_type": "individual"
     },
     "86714": {
         "map_name": "Tower of the TagPro Dragon (Official FWO v1)",
@@ -1712,7 +1964,9 @@
             "OneShot",
             "bday"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82651": {
         "map_name": "What you say about my first map!?!?!?! (aka Revenge) (Official FWO)",
@@ -1726,7 +1980,9 @@
             "Checkpoint",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82573": {
         "map_name": "Portal Timer Race (1 Cap) (Instant Boosts) (Official FWO)",
@@ -1740,7 +1996,9 @@
             "Checkpoint",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82652": {
         "map_name": "Carey Am Pro Race (5 Jumps) (Official FWO)",
@@ -1754,7 +2012,9 @@
             "Checkpoint",
             "5 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87543": {
         "map_name": "Tower of Doom 1-3 (Official FWO)",
@@ -1769,7 +2029,9 @@
             "OneShot",
             "bday"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "46103": {
         "map_name": "ACTH Agonist",
@@ -1782,7 +2044,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82570": {
         "map_name": "Gauntlet (Official FWO)",
@@ -1795,7 +2059,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82644": {
         "map_name": "b u d d y s y s t e m 1 (Official FWO v3)",
@@ -1808,7 +2074,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "83366": {
         "map_name": "AUSSIE Teambuilding 2 v1.5 (Official FWO)",
@@ -1821,7 +2089,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "85616": {
         "map_name": "AUSSIE Teambuilding 3 v1.1 (non buddy jump version) (Official FWO)",
@@ -1834,7 +2104,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82645": {
         "map_name": "AUSSIE Teambuilding 4 v1.5 (Official FWO)",
@@ -1847,7 +2119,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82637": {
         "map_name": "Buddy Union .55 BONUS STUFF (Official FWO)",
@@ -1860,7 +2134,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "83015": {
         "map_name": "Buddy Union 3.3 Deluxe (Official FWO)",
@@ -1873,7 +2149,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89467": {
         "map_name": "Survivor Tower",
@@ -1887,7 +2165,9 @@
             "Tower",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "83008": {
         "map_name": "Carabdis Masochism FINAL v1.11 (Official FWO)",
@@ -1900,7 +2180,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82670": {
         "map_name": "Carabdis Masochism FINAL v1.11 (solo version) (Official FWO)",
@@ -1913,7 +2195,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89506": {
         "map_name": "Hexaforce 6+ Person Gravity Puzzle (Official FWO)",
@@ -1926,7 +2210,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82692": {
         "map_name": "Potato Sack Race (2v2) (Official FWO)",
@@ -1940,7 +2226,9 @@
             "Checkpoint",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86716": {
         "map_name": "Mars Climb Part |||",
@@ -1955,7 +2243,9 @@
             "OneShot",
             "SoloPossible"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "combined"
     },
     "86717": {
         "map_name": "Mars Climb 1",
@@ -1969,7 +2259,9 @@
             "Mars Climb",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82712": {
         "map_name": "Tower 1-2 [FINAL]",
@@ -1984,7 +2276,9 @@
             "OneShot",
             "bday"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "82714": {
         "map_name": "Tower 1-2 (Official FWO)",
@@ -1999,7 +2293,9 @@
             "OneShot",
             "bday"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "85748": {
         "map_name": "GREATEST GRAVITY BUDDY SYSTEM",
@@ -2012,7 +2308,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86977": {
         "map_name": "ULTIMATE GRAVITY BUDDY SYSTEM (HARD)",
@@ -2025,7 +2323,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88763": {
         "map_name": "The Temple Maze (Official FWO)",
@@ -2038,7 +2338,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "85931": {
         "map_name": "Colosseum",
@@ -2051,7 +2353,9 @@
             "Spike Maze",
             "OneShot"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86364": {
         "map_name": "Astral Synergy (Buddy System Grav, Boost/Bomb instant) (Official Version)",
@@ -2065,7 +2369,9 @@
             "Checkpoint",
             "Anygate"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86423": {
         "map_name": "Map of Sisyphus",
@@ -2078,7 +2384,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86429": {
         "map_name": "Boldy System (Official FWO)",
@@ -2091,7 +2399,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86485": {
         "map_name": "Kinda ez (Official FWO)",
@@ -2104,7 +2414,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86488": {
         "map_name": "4 Ways Race",
@@ -2118,7 +2430,9 @@
             "Checkpoint",
             "5 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86490": {
         "map_name": "Team Trials 1 (Official FWO)",
@@ -2131,7 +2445,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86491": {
         "map_name": "Choose Your Type [Instant boost would be good]",
@@ -2144,7 +2460,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86346": {
         "map_name": "help me",
@@ -2158,7 +2476,9 @@
             "Tower",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86142": {
         "map_name": "8+ Group system",
@@ -2172,7 +2492,9 @@
             "Checkpoint",
             "Anygate"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86500": {
         "map_name": "Timed Gravity Race",
@@ -2187,7 +2509,9 @@
             "Timer",
             "Potato"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89339": {
         "map_name": "Short Circuit",
@@ -2201,7 +2525,9 @@
             "Checkpoint",
             "Potato"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86568": {
         "map_name": "Solo Grav Track (Official FWO)",
@@ -2214,7 +2540,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "91189": {
         "map_name": "PopCulture Buddy System v5",
@@ -2227,7 +2555,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86572": {
         "map_name": "Buddy Trio Test",
@@ -2240,7 +2570,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86574": {
         "map_name": "Ultimate Buddy System (Official FWO)",
@@ -2253,7 +2585,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93725": {
         "map_name": "Ball-E's INSANE 15 minute buddy challenge",
@@ -2266,7 +2600,9 @@
             "Buddy",
             "OneShot"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88766": {
         "map_name": "BartJr's Gravity Challenge (Official FWO)",
@@ -2279,7 +2615,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87111": {
         "map_name": "Light Em Up Again (Inspired by Carey Price) (5 jump version) (Official FWO)",
@@ -2293,7 +2631,9 @@
             "AnyGate",
             "5 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86583": {
         "map_name": "Gravity Fall",
@@ -2308,7 +2648,9 @@
             "5 jump",
             "Fall"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86584": {
         "map_name": "Gravity Fall (Insane)",
@@ -2323,7 +2665,9 @@
             "5 jump",
             "Fall"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86585": {
         "map_name": "Skill Fall",
@@ -2337,7 +2681,9 @@
             "Checkpoint",
             "5 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86700": {
         "map_name": "Dragonsaine V.3 Hard Mode (Official FWO)",
@@ -2351,7 +2697,9 @@
             "Checkpoint",
             "Hard version"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86698": {
         "map_name": "Dragonsaine V.2 (Official FWO)",
@@ -2364,7 +2712,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "46903": {
         "map_name": "Gravity Challenge (85% Complete)",
@@ -2377,7 +2727,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86903": {
         "map_name": "Jump!",
@@ -2390,7 +2742,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86721": {
         "map_name": "JUMP!",
@@ -2404,7 +2758,9 @@
             "OneShot",
             "Tower"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86723": {
         "map_name": "Jumper",
@@ -2418,7 +2774,9 @@
             "OneShot",
             "Tower"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86858": {
         "map_name": "My AFK buddy",
@@ -2431,7 +2789,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "10433": {
         "map_name": "Toothy",
@@ -2445,7 +2805,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "86748": {
         "map_name": "Competitive gravity",
@@ -2460,7 +2822,9 @@
             "Split Paths",
             "Combat Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86750": {
         "map_name": "Small Buddy 1.1 skip 2",
@@ -2473,7 +2837,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "81032": {
         "map_name": "Survivor Snipe Skills",
@@ -2488,7 +2854,9 @@
             "VS Race",
             "5 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "18326": {
         "map_name": "Grav Well Course",
@@ -2502,7 +2870,9 @@
             "Checkpoint",
             "Grav Well Maze"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "29125": {
         "map_name": "Maze Challenge",
@@ -2515,7 +2885,9 @@
             "Buddy",
             "AnyGate"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86892": {
         "map_name": "crosky's Ludicrous Challenge",
@@ -2529,7 +2901,9 @@
             "Checkpoint",
             "BoostSnipe"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "21313": {
         "map_name": "Marsball Gravity Race",
@@ -2544,7 +2918,9 @@
             "Mars Ball",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "combined"
     },
     "35237": {
         "map_name": "MiniChallenge",
@@ -2557,7 +2933,9 @@
             "Buddy",
             "OneShot"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88771": {
         "map_name": "Ultimate Challenge (With Halfway Shortcut)",
@@ -2571,7 +2949,9 @@
             "Checkpoint",
             "BoostSnipe"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86900": {
         "map_name": "Ball-E's absolutely INSANE challenge",
@@ -2584,7 +2964,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86901": {
         "map_name": "Infinity Boost [Challenge] V1",
@@ -2598,7 +2980,9 @@
             "Checkpoint",
             "BoostSnipe"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86931": {
         "map_name": "A random Danny map (Official FWO)",
@@ -2611,7 +2995,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86972": {
         "map_name": "Boldy System 2",
@@ -2624,7 +3010,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86965": {
         "map_name": "Boldy System 3",
@@ -2637,7 +3025,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86976": {
         "map_name": "ULTIMATE GRAVITY BUDDY SYSTEM",
@@ -2650,7 +3040,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87545": {
         "map_name": "PacMan - POWER PELLET EDITION",
@@ -2663,7 +3055,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87551": {
         "map_name": "The Impossible (Portal Edition) 1.0.2 [Reversed]",
@@ -2677,7 +3071,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87786": {
         "map_name": "Uptown Funk (2 Jumps) (Instant Bombs) [Reversed]",
@@ -2691,7 +3087,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87664": {
         "map_name": "A Castle on a Cloud 1.0.8 [Reversed]",
@@ -2705,7 +3103,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87728": {
         "map_name": "A-Maze-Ing (Official) [Reversed]",
@@ -2719,7 +3119,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87742": {
         "map_name": "The Challenge of Secrets (Official FWO) [Reversed]",
@@ -2733,7 +3135,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87809": {
         "map_name": "Jump! [reversed]",
@@ -2747,7 +3151,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87826": {
         "map_name": "2 Person Buddy' v2 (Official FWO)",
@@ -2760,7 +3166,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87841": {
         "map_name": "2 Person Buddy' (Official FWO) [Reversed]",
@@ -2774,7 +3182,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87854": {
         "map_name": "2 Person Buddy' (Official FWO) [Verticalized]",
@@ -2788,7 +3198,9 @@
             "Checkpoint",
             "Verticalized"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87875": {
         "map_name": "Mars Climb 11 (blue team required)",
@@ -2803,7 +3215,9 @@
             "OneShot",
             "Blue Team Required"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87891": {
         "map_name": "Quick Race (1v1) [Reversed]",
@@ -2818,7 +3232,9 @@
             "VS Race",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87900": {
         "map_name": "Mini Test (Official FWO) [Reversed]",
@@ -2832,7 +3248,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88192": {
         "map_name": "Daily Spike Fall 1.0.1 Final (Official FWO) [Reversed]",
@@ -2846,7 +3264,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87979": {
         "map_name": "Buddy System 11 (TM1 Version) [Reversed]",
@@ -2860,7 +3280,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89764": {
         "map_name": "Mars Buddy Climb",
@@ -2874,7 +3296,9 @@
             "Checkpoint",
             "Mars Climb"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88191": {
         "map_name": "Buddy system 9 (TM1 Version) 9bob9 (Official FWO) [Reversed]",
@@ -2888,7 +3312,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88131": {
         "map_name": "Trust Fall 3: The Return of Trust Fall [Reversed]",
@@ -2902,7 +3328,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88495": {
         "map_name": "Cube Goldberg",
@@ -2915,7 +3343,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88524": {
         "map_name": "Celestial Tether [Reversed] (Buddy System Grav, Boost/Bomb instant)",
@@ -2929,7 +3359,9 @@
             "AnyGate",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87360": {
         "map_name": "Jasmine",
@@ -2942,7 +3374,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87362": {
         "map_name": "Jasmine (Solo)",
@@ -2955,7 +3389,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88438": {
         "map_name": "LONGGGGG",
@@ -2968,7 +3404,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88528": {
         "map_name": "Climbing race",
@@ -2981,7 +3419,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88530": {
         "map_name": "RACE TOWER",
@@ -2995,7 +3435,9 @@
             "OneShot",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88531": {
         "map_name": "stairs",
@@ -3009,7 +3451,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "88643": {
         "map_name": "The Climb - Miley Cyrus (Infinite Jumps) (Official FWO)",
@@ -3023,7 +3467,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88645": {
         "map_name": "Skill Climbing (Infinite Jumps) (Official FWO)",
@@ -3038,7 +3484,9 @@
             "Unlimited Jumps",
             "Mars Climb"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88703": {
         "map_name": "Hopscotch (Official FWO)",
@@ -3052,7 +3500,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88649": {
         "map_name": "FlappyBird [UnlimitedJumps] (Official FWO)",
@@ -3067,7 +3517,9 @@
             "Unlimited Jumps",
             "Flappy Bird"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88650": {
         "map_name": "Narrow Lanes",
@@ -3077,7 +3529,9 @@
         "preset": "",
         "map_id": "88650",
         "categories": [],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88652": {
         "map_name": "DeathRun Flappy Bird Version (Official FWO)",
@@ -3091,7 +3545,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88653": {
         "map_name": "Spike System",
@@ -3105,7 +3561,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88654": {
         "map_name": "Flappy Cap",
@@ -3119,7 +3577,9 @@
             "OneShot",
             "Flappy Bird"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88655": {
         "map_name": "Flappy Bird (Official FWO)",
@@ -3134,7 +3594,9 @@
             "Unlimited Jumps",
             "Flappy Bird"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88704": {
         "map_name": "CD9 (Infinite Jumps)(Official FWO)",
@@ -3148,7 +3610,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88657": {
         "map_name": "JDC (Infinite Jumps) (Official FWO)",
@@ -3162,7 +3626,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88660": {
         "map_name": "Light Em Up Again (Inspired by Carey Price)",
@@ -3176,7 +3642,9 @@
             "AnyGate",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88661": {
         "map_name": "The Map Destroyer(Infinite Jumps) (Official FWO)",
@@ -3190,7 +3658,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88663": {
         "map_name": "Jump! - Van Halen (Infinite Jump Race)",
@@ -3204,7 +3674,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88665": {
         "map_name": "Bruh!",
@@ -3217,7 +3689,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88666": {
         "map_name": "Flight Path Race (Official FWO)",
@@ -3232,7 +3706,9 @@
             "Unlimited Jumps",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88668": {
         "map_name": "Unlimited Jumps Buddy (Official FWO)",
@@ -3246,7 +3722,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88673": {
         "map_name": "Gravity Fall (unlimited jumps)",
@@ -3260,7 +3738,9 @@
             "Fall",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88675": {
         "map_name": "Gravity Fall (Insane) (Unlimited jumps)",
@@ -3274,7 +3754,9 @@
             "Fall",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88750": {
         "map_name": "Compact Disc (Official FWO)",
@@ -3288,7 +3770,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89352": {
         "map_name": "Gravity Challenge [Reversed] (Official FWO)",
@@ -3302,7 +3786,9 @@
             "Checkpoint",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88853": {
         "map_name": "Hopscotch (Official FWO) [Reversed]",
@@ -3318,7 +3804,9 @@
             "Reversed",
             "Cheeze"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88854": {
         "map_name": "Spike System [Reversed]",
@@ -3333,7 +3821,9 @@
             "Unlimited Jumps",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88855": {
         "map_name": "Gravity Fall (Insane) (Unlimited jumps) [Reversed]",
@@ -3348,7 +3838,9 @@
             "Unlimited Jumps",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88856": {
         "map_name": "Gravity Fall (unlimited jumps) [Reversed]",
@@ -3363,7 +3855,9 @@
             "Unlimited Jumps",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88923": {
         "map_name": "Super Weird Map",
@@ -3377,7 +3871,9 @@
             "OneShot",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88924": {
         "map_name": "Single person map Final (instant boosts and bombs)",
@@ -3390,7 +3886,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88925": {
         "map_name": "Barbed Wire (Official FWO)",
@@ -3403,7 +3901,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "88976": {
         "map_name": "Jasmine (Hard Version)",
@@ -3416,7 +3916,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "47984": {
         "map_name": "RACE 1v1 new",
@@ -3431,7 +3933,9 @@
             "Spike Maze",
             "VS Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "47408": {
         "map_name": "Race you? 1v1 Easy v2",
@@ -3446,7 +3950,9 @@
             "Spike Maze",
             "VS Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89046": {
         "map_name": "RACE (1 cap collected counts as 1 lap)",
@@ -3460,7 +3966,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "89047": {
         "map_name": "RACE",
@@ -3475,7 +3983,9 @@
             "Spike Maze",
             "VS Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89053": {
         "map_name": "Memory Lane",
@@ -3490,7 +4000,9 @@
             "Memory",
             "Puzzle"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89059": {
         "map_name": "The Caverns Below",
@@ -3503,7 +4015,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89068": {
         "map_name": "On Edge (Official FWO)",
@@ -3516,7 +4030,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "29744": {
         "map_name": "edge master",
@@ -3529,7 +4045,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "79475": {
         "map_name": "(FIC) Spike & Spike",
@@ -3544,7 +4062,9 @@
             "Spike Maze",
             "VS Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "84610": {
         "map_name": "Shadow Snipes",
@@ -3559,7 +4079,9 @@
             "BoostSnipe",
             "VS Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89084": {
         "map_name": "RollCareful",
@@ -3574,7 +4096,9 @@
             "Spike Maze",
             "VS Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89085": {
         "map_name": "Be there or be square",
@@ -3587,7 +4111,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89086": {
         "map_name": "Be there or be square [Reversed]",
@@ -3601,7 +4127,9 @@
             "OneShot",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "80970": {
         "map_name": "Tiki Tunnel of Terror",
@@ -3616,7 +4144,9 @@
             "Spike Maze",
             "VS Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89087": {
         "map_name": "hjnkm, (Official FWO)",
@@ -3629,7 +4159,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89090": {
         "map_name": "RACE",
@@ -3643,7 +4175,9 @@
             "Checkpoint",
             "Combat Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "56984": {
         "map_name": "30 Second Challenge - Spikes",
@@ -3659,7 +4193,9 @@
             "VS Race",
             "Timer"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89197": {
         "map_name": "spikefield",
@@ -3674,7 +4210,9 @@
             "Spike Maze",
             "VS Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89199": {
         "map_name": "spike map",
@@ -3688,7 +4226,9 @@
             "OneShot",
             "Spike Maze"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89268": {
         "map_name": "Spikey Speedrun",
@@ -3702,7 +4242,9 @@
             "OneShot",
             "Spike Maze"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "87676": {
         "map_name": "Bomb Tower Bounce",
@@ -3715,7 +4257,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "76008": {
         "map_name": "Doorways Season 4",
@@ -3730,7 +4274,9 @@
             "Memory",
             "Puzzle"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "76156": {
         "map_name": "Doorways Season 9",
@@ -3745,7 +4291,9 @@
             "Memory",
             "Puzzle"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89201": {
         "map_name": "Vertical Doom",
@@ -3760,7 +4308,9 @@
             "OneShot",
             "Tower"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89202": {
         "map_name": "Climb Guys Deluxe",
@@ -3775,7 +4325,9 @@
             "OneShot",
             "Tower"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89203": {
         "map_name": "Climb Guys",
@@ -3790,7 +4342,9 @@
             "OneShot",
             "Tower"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89337": {
         "map_name": "Shadow Snipes with bomb",
@@ -3805,7 +4359,9 @@
             "BoostSnipe",
             "VS Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89725": {
         "map_name": "Ferguson (Bombs: 1 sec, Boost: Instant)",
@@ -3818,7 +4374,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89341": {
         "map_name": "Compact Disc without cheeze (Official FWO)",
@@ -3832,7 +4390,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89379": {
         "map_name": "Cube Goldberg (red team version)",
@@ -3845,7 +4405,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89409": {
         "map_name": "Hopscotch (Official FWO) [Reversed] (no cheeze) by Carey Price",
@@ -3860,7 +4422,9 @@
             "Unlimited Jumps",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89383": {
         "map_name": "Jump (back and forth version)",
@@ -3873,7 +4437,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89384": {
         "map_name": "Gravity Race 4 (1 jump version)",
@@ -3887,7 +4453,9 @@
             "OneShot",
             "1 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89394": {
         "map_name": "Bambox",
@@ -3900,7 +4468,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89386": {
         "map_name": "Jump [1 jump]",
@@ -3914,7 +4484,9 @@
             "OneShot",
             "1 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89412": {
         "map_name": "Hopscotch (Official FWO) [Inverted]",
@@ -3929,7 +4501,9 @@
             "Unlimited Jumps",
             "Inverted"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89413": {
         "map_name": "Hopscotch (Official FWO) [Reversed] [Inverted]",
@@ -3945,7 +4519,9 @@
             "Reversed",
             "Inverted"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89463": {
         "map_name": "Juiced Up (JJ Grav, Boost/Bomb instant) (official version)",
@@ -3959,7 +4535,9 @@
             "AnyGate",
             "Juke Juice"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89421": {
         "map_name": "SpawnPro Gravity System",
@@ -3973,7 +4551,9 @@
             "AnyGate",
             "Spawn"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89424": {
         "map_name": "Single Player Map (Instant bombs, Boosts) (Official FWO)",
@@ -3987,7 +4567,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "combined"
     },
     "89464": {
         "map_name": "The Impossible",
@@ -4000,7 +4582,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89435": {
         "map_name": "Trial Of Deer",
@@ -4013,7 +4597,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89450": {
         "map_name": "Trial Of Deer [Reversed]",
@@ -4027,7 +4613,9 @@
             "OneShot",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89454": {
         "map_name": "Ball Pit",
@@ -4042,7 +4630,9 @@
             "OneShot",
             "Bomb Pit"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89603": {
         "map_name": "Spike Maze (60 Sec)",
@@ -4057,7 +4647,9 @@
             "Spike Maze",
             "VS Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89475": {
         "map_name": "Zoom (Gravity Race) [Instant Bomb]",
@@ -4071,7 +4663,9 @@
             "Race",
             "3 lap"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "89474": {
         "map_name": "Trust Fall 3: The Return of Trust Fall [AnyGate]",
@@ -4084,7 +4678,9 @@
             "Solo",
             "AnyGate"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89490": {
         "map_name": "Aussie team action 3.0 [3 jump]",
@@ -4098,7 +4694,9 @@
             "Checkpoint",
             "3 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89501": {
         "map_name": "Oh Man, Oh Boy [unlimited]",
@@ -4112,7 +4710,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89507": {
         "map_name": "4 Ways Race [Unlimited]",
@@ -4126,7 +4726,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89550": {
         "map_name": "Detonation Dash",
@@ -4140,7 +4742,9 @@
             "Checkpoint",
             "Rolling Bomb"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "79023": {
         "map_name": "The Tox Tower",
@@ -4155,7 +4759,9 @@
             "Puzzle",
             "Memory"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89552": {
         "map_name": "Detonation Dash 2",
@@ -4169,7 +4775,9 @@
             "Checkpoint",
             "Rolling Bomb"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89581": {
         "map_name": "!!!OBSTACLE COURSE!!!",
@@ -4182,7 +4790,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89584": {
         "map_name": "Obstacle Race V2",
@@ -4197,7 +4807,9 @@
             "Spike Maze",
             "VS Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89585": {
         "map_name": "Aussie Team Action V2 Complete [3 jump]",
@@ -4211,7 +4823,9 @@
             "Checkpoint",
             "3 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89636": {
         "map_name": "Skybound Tower",
@@ -4225,7 +4839,9 @@
             "Tower",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89654": {
         "map_name": "Bomby Bird [Gravity]",
@@ -4239,7 +4855,9 @@
             "Checkpoint",
             "Flappy Bird"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89656": {
         "map_name": "Pirates of the Caribballan: The Legend of Juke Sparrowkeys [1st Half]",
@@ -4254,7 +4872,9 @@
             "OneShot",
             "bday"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89661": {
         "map_name": "Pirates of the Caribballan: The Legend of Juke Sparrowkeys [Ship Half]",
@@ -4269,7 +4889,9 @@
             "OneShot",
             "bday"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89719": {
         "map_name": "Pirates of the Caribballan: The Legend of Juke Sparrowkeys [Bridge Half]",
@@ -4284,7 +4906,9 @@
             "OneShot",
             "bday"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "77385": {
         "map_name": "wet bust will make you mad",
@@ -4298,7 +4922,9 @@
             "OneShot",
             "Portal Puzzle"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89717": {
         "map_name": "Flappy Ball",
@@ -4313,7 +4939,9 @@
             "Unlimited Jumps",
             "Flappy Bird"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89736": {
         "map_name": "You Need Two [hard version]",
@@ -4326,7 +4954,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89721": {
         "map_name": "Aftershock (RB Grav, Boost/Bomb instant) (Official Version)",
@@ -4340,7 +4970,9 @@
             "Checkpoint",
             "Rolling Bomb"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89745": {
         "map_name": "Pocket Grav Pal",
@@ -4354,7 +4986,9 @@
             "Checkpoint",
             "Pocket"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89746": {
         "map_name": "A Jog",
@@ -4367,7 +5001,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89749": {
         "map_name": "This is a Bad Time",
@@ -4381,7 +5017,9 @@
             "OneShot",
             "Spike Maze"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "3",
+        "completion_type": "combined"
     },
     "89750": {
         "map_name": "Mt Everest",
@@ -4394,7 +5032,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89752": {
         "map_name": "Endurance",
@@ -4407,7 +5047,9 @@
             "Solo",
             "AnyGate"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89754": {
         "map_name": "Zag",
@@ -4421,7 +5063,9 @@
             "OneShot",
             "Mars Climb"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "35367": {
         "map_name": "Difficulty Easiest",
@@ -4435,7 +5079,9 @@
             "OneShot",
             "Tower"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89807": {
         "map_name": "2v2 Rock n' Roll",
@@ -4451,7 +5097,9 @@
             "VS Race",
             "SoloPossible"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "3",
+        "completion_type": "combined"
     },
     "89762": {
         "map_name": "Pocket Grav Pal #002",
@@ -4465,7 +5113,9 @@
             "Checkpoint",
             "Pocket"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89771": {
         "map_name": "House of Hell",
@@ -4478,7 +5128,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89799": {
         "map_name": "Keep jumping and nobody explodes",
@@ -4493,7 +5145,9 @@
             "Unlimited Jumps",
             "Flappy Bird"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89851": {
         "map_name": "Mini Games",
@@ -4507,7 +5161,9 @@
             "Checkpoint",
             "BoostSnipe"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "68278": {
         "map_name": "hardddd",
@@ -4521,7 +5177,9 @@
             "OneShot",
             "Spike Maze"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89776": {
         "map_name": "NOPE's Gravity Fall",
@@ -4535,7 +5193,9 @@
             "Fall",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89777": {
         "map_name": "dangerous",
@@ -4549,7 +5209,9 @@
             "OneShot",
             "Spike Maze"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93518": {
         "map_name": "Walls Are Unnecessary",
@@ -4563,7 +5225,9 @@
             "OneShot",
             "Pixel Perfect"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89791": {
         "map_name": "20by20 test",
@@ -4576,7 +5240,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89792": {
         "map_name": "20by30 test",
@@ -4589,7 +5255,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89794": {
         "map_name": "129 in 60",
@@ -4603,7 +5271,9 @@
             "OneShot",
             "Tower"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89796": {
         "map_name": "Practiboost 1: 45s and 90s",
@@ -4617,7 +5287,9 @@
             "OneShot",
             "BoostSnipe"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89801": {
         "map_name": "Lej's Ball Handling [Gravity]",
@@ -4630,7 +5302,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89806": {
         "map_name": "Pocket Grav Pal #004",
@@ -4645,7 +5319,9 @@
             "Pocket",
             "Mars Climb"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "combined"
     },
     "89826": {
         "map_name": "Boost Practice",
@@ -4659,7 +5335,9 @@
             "OneShot",
             "BoostSnipe"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "83428": {
         "map_name": "Hedge Maze",
@@ -4674,7 +5352,9 @@
             "Spike Maze",
             "Maze"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "1920": {
         "map_name": "2 Lap Gold Rush",
@@ -4688,7 +5368,9 @@
             "OneShot",
             "Tower"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89834": {
         "map_name": "Stonky Tonk Tonk",
@@ -4701,7 +5383,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89839": {
         "map_name": "Pocket Grav Pal #003",
@@ -4715,7 +5399,9 @@
             "Checkpoint",
             "Pocket"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89862": {
         "map_name": "Pocket Grav Pal #005",
@@ -4729,7 +5415,9 @@
             "Checkpoint",
             "Pocket"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89875": {
         "map_name": "easy map",
@@ -4743,7 +5431,9 @@
             "OneShot",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89889": {
         "map_name": "Pixel perfect spike maze",
@@ -4757,7 +5447,9 @@
             "OneShot",
             "Pixel Perfect"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89882": {
         "map_name": "Slolem Maze",
@@ -4772,7 +5464,9 @@
             "Spike Maze",
             "VS Race"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89883": {
         "map_name": "Classic Maze",
@@ -4786,7 +5480,9 @@
             "OneShot",
             "Maze"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89945": {
         "map_name": "Pocket Grav Pal #007",
@@ -4800,7 +5496,9 @@
             "Checkpoint",
             "Pocket"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89979": {
         "map_name": "AUSSIE Teambuilding 3 v1.1 [GLTP]",
@@ -4813,7 +5511,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90002": {
         "map_name": "Time Trial Map V1",
@@ -4827,7 +5527,9 @@
             "OneShot",
             "BoostSnipe"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90026": {
         "map_name": "Harry Botter and the Shaft of Dangers",
@@ -4840,7 +5542,9 @@
             "Buddy",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "89843": {
         "map_name": "Pocket Grav Pal #006",
@@ -4854,7 +5558,9 @@
             "Checkpoint",
             "Pocket"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90182": {
         "map_name": "Solo Grav Bottle [Patched]",
@@ -4868,7 +5574,9 @@
             "Checkpoint",
             "Patched"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90195": {
         "map_name": "GLTP Bounty Season 2",
@@ -4881,7 +5589,9 @@
             "Buddy",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90356": {
         "map_name": "PP",
@@ -4895,7 +5605,9 @@
             "OneShot",
             "Pixel Perfect"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90458": {
         "map_name": "The Triad ⚜",
@@ -4908,7 +5620,9 @@
             "Solo",
             "AnyGate"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90559": {
         "map_name": "Fat Bambox",
@@ -4922,7 +5636,9 @@
             "Checkpoint",
             "Fat"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90655": {
         "map_name": "Pocket Grav Pal #008",
@@ -4936,7 +5652,9 @@
             "Checkpoint",
             "Pocket"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90605": {
         "map_name": "stairmaster",
@@ -4950,7 +5668,9 @@
             "Checkpoint",
             "Pocket"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90773": {
         "map_name": "Detonation Dash 3",
@@ -4964,7 +5684,9 @@
             "Checkpoint",
             "Rolling Bomb"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "91006": {
         "map_name": "Pocket Grav Pal #009",
@@ -4978,7 +5700,9 @@
             "Checkpoint",
             "Pocket"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90969": {
         "map_name": "33 Jumps",
@@ -4992,7 +5716,9 @@
             "AnyGate",
             "VS Race"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90881": {
         "map_name": "Dying Bird",
@@ -5005,7 +5731,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90852": {
         "map_name": "Detonation Dash 4",
@@ -5019,7 +5747,9 @@
             "Checkpoint",
             "Rolling Bomb"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90867": {
         "map_name": "Dead Bird",
@@ -5032,7 +5762,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90894": {
         "map_name": "Lava System",
@@ -5045,7 +5777,9 @@
             "Buddy",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90910": {
         "map_name": "Chillest Map Ever",
@@ -5058,7 +5792,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90958": {
         "map_name": "ToD Jump 3x (AWFUL) (DONT TRY) (HELL)",
@@ -5071,7 +5807,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "90929": {
         "map_name": "The Temple Maze [Reversed] (Official FWO)",
@@ -5085,7 +5823,9 @@
             "OneShot",
             "Reversed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "91103": {
         "map_name": "Evil Scary Vampire Castle",
@@ -5098,7 +5838,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "91170": {
         "map_name": "wow",
@@ -5111,7 +5853,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "91222": {
         "map_name": "SB Space Force Rocket Challenge",
@@ -5124,7 +5868,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "91305": {
         "map_name": "Triple Jump Challenge",
@@ -5137,7 +5883,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "91043": {
         "map_name": "RB puzzle",
@@ -5151,7 +5899,9 @@
             "OneShot",
             "puzzle"
         ],
-        "grav_or_classic": "Classic"
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "91433": {
         "map_name": "Fat Trial of Deer",
@@ -5165,7 +5915,9 @@
             "OneShot",
             "Fat"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "91496": {
         "map_name": "Ice Climbers Without Ice",
@@ -5179,7 +5931,9 @@
             "Checkpoint",
             "Climb"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "86722": {
         "map_name": "NoJump Course",
@@ -5193,7 +5947,9 @@
             "Checkpoint",
             "0 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "13118": {
         "map_name": "Skatepark",
@@ -5207,7 +5963,9 @@
             "Checkpoint",
             "0 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "91923": {
         "map_name": "iCarly",
@@ -5220,7 +5978,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92122": {
         "map_name": "Boldy System 2.1",
@@ -5233,7 +5993,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92150": {
         "map_name": "Taradell [1 Jump]",
@@ -5247,7 +6009,9 @@
             "OneShot",
             "1 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92199": {
         "map_name": "Ion Cannon",
@@ -5261,7 +6025,9 @@
             "Checkpoint",
             "Jumps restricted by speed"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92171": {
         "map_name": "Bombi",
@@ -5274,7 +6040,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93569": {
         "map_name": "Sisyphus's Mountain (Official)",
@@ -5288,7 +6056,9 @@
             "OneShot",
             "Mars Push"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "combined"
     },
     "92219": {
         "map_name": "Taradell [1 Jump] (BOUNTY MAP)",
@@ -5303,7 +6073,9 @@
             "1 jump",
             "bounty"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92266": {
         "map_name": "Oh Man, Oh Boy (Official FWO) - 4 Jump Edition",
@@ -5317,7 +6089,9 @@
             "Checkpoint",
             "5 Jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92521": {
         "map_name": "Triple Jump Double Bomb",
@@ -5331,7 +6105,9 @@
             "OneShot",
             "triple jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92504": {
         "map_name": "Rhapsody",
@@ -5344,7 +6120,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92490": {
         "map_name": "Gravitron",
@@ -5358,7 +6136,9 @@
             "Checkpoint",
             "Tower"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92416": {
         "map_name": "Pathfinder",
@@ -5371,7 +6151,9 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92342": {
         "map_name": "Jumpn't",
@@ -5385,7 +6167,9 @@
             "OneShot",
             "0 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92341": {
         "map_name": "Space Walk",
@@ -5398,7 +6182,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92697": {
         "map_name": "Light Em Up (Official FWO)",
@@ -5412,7 +6198,9 @@
             "AnyGate",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92736": {
         "map_name": "Eeffoc",
@@ -5426,7 +6214,9 @@
             "Checkpoint",
             "5 jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "92998": {
         "map_name": "New 3 Map",
@@ -5439,7 +6229,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93185": {
         "map_name": "Bambox (hard edition)",
@@ -5452,7 +6244,9 @@
             "Solo",
             "OneShot"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93327": {
         "map_name": "Weakest Link",
@@ -5465,7 +6259,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93299": {
         "map_name": "Flappy Ball",
@@ -5480,7 +6276,9 @@
             "Unlimited Jumps",
             "Flappy Bird"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93402": {
         "map_name": "Detonation Dash 5",
@@ -5494,7 +6292,9 @@
             "Checkpoint",
             "Rolling Bomb"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93447": {
         "map_name": "Marble Run Race",
@@ -5509,7 +6309,9 @@
             "3 lap",
             "0 jump"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual"
     },
     "93508": {
         "map_name": "Buddy System 4 [Patched] 9bob9",
@@ -5522,7 +6324,9 @@
             "Buddy",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93499": {
         "map_name": "Discovery of Magic",
@@ -5537,7 +6341,9 @@
             "JJ boost",
             "mapsgiving"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93543": {
         "map_name": "Knife's Edge",
@@ -5551,7 +6357,9 @@
             "Checkpoint",
             "mapsgiving"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93596": {
         "map_name": "Hurdle Challenge",
@@ -5565,7 +6373,9 @@
             "Checkpoint",
             "Unlimited Jumps"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93598": {
         "map_name": "Buddy Union 4 HARDER: You want more?",
@@ -5579,7 +6389,9 @@
             "Checkpoint",
             "Juggling"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93599": {
         "map_name": "Juggles And Careys",
@@ -5593,7 +6405,9 @@
             "Checkpoint",
             "Juggling"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93601": {
         "map_name": "Team Building (Official FWO)",
@@ -5607,7 +6421,9 @@
             "Checkpoint",
             "Juggling"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93602": {
         "map_name": "Aussie Team Action V2 Complete [Juggles]",
@@ -5621,7 +6437,9 @@
             "Checkpoint",
             "Juggling"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93603": {
         "map_name": "Aussie team action 3.0 [Juggles]",
@@ -5635,7 +6453,9 @@
             "Checkpoint",
             "Juggling"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93611": {
         "map_name": "Team Trauma 2 v1.0 (Official)",
@@ -5649,7 +6469,9 @@
             "Checkpoint",
             "Juggling"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93612": {
         "map_name": "team building V1 (Official)",
@@ -5663,7 +6485,9 @@
             "Checkpoint",
             "Juggling"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93613": {
         "map_name": "Aussie Team Action V4.5 (Official)",
@@ -5677,7 +6501,9 @@
             "Checkpoint",
             "Juggling"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "60119": {
         "map_name": "Juggle Compendium",
@@ -5691,7 +6517,9 @@
             "Checkpoint",
             "Juggling"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93639": {
         "map_name": "Juggle Distance",
@@ -5705,7 +6533,9 @@
             "Checkpoint",
             "Juggling"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93638": {
         "map_name": "Bound by Gravity",
@@ -5721,7 +6551,9 @@
             "AnyGate",
             "mapsgiving"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "50263": {
         "map_name": "Warping Melody",
@@ -5737,7 +6569,9 @@
             "Portal Maze",
             ""
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93707": {
         "map_name": "Longer Shorter Circuit",
@@ -5751,7 +6585,9 @@
             "OneShot",
             "Remix"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93876": {
         "map_name": "Painting Jumpers",
@@ -5767,7 +6603,9 @@
             "AFK",
             "mapsgiving"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93845": {
         "map_name": "The Box",
@@ -5782,7 +6620,9 @@
             "Puzzle",
             "mapsgiving"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93863": {
         "map_name": "Cave System",
@@ -5796,7 +6636,9 @@
             "Checkpoint",
             "mapsgiving"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93913": {
         "map_name": "Ring of Fire",
@@ -5810,7 +6652,9 @@
             "Checkpoint",
             "mapsgiving"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93898": {
         "map_name": "I'm Not Your Buddy, Pal",
@@ -5825,7 +6669,9 @@
             "mapsgiving",
             "AnyGate"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     },
     "93942": {
         "map_name": "Spade",
@@ -5838,6 +6684,68 @@
             "Solo",
             "Checkpoint"
         ],
-        "grav_or_classic": "Grav"
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
+    },
+    "93988": {
+        "map_name": "jug full o bones",
+        "author": "Snack",
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefINyggtaiaaaJybraaasaaamaaaHpzE",
+        "map_id": "93988",
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
+    },
+    "94000": {
+        "map_name": "jug full o bones (easy mode)",
+        "author": "Snack",
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefINKggtacbiaaaJyaraaasaaamaaaHpzYEG",
+        "map_id": "94000",
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
+    },
+    "94003": {
+        "map_name": "jug full o bones (baby mode)",
+        "author": "Snack",
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefINNggtacbiaaaJyaraaasaaamaaaHpzYEG",
+        "map_id": "94003",
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
+    },
+    "94016": {
+        "map_name": "jug full o bones (reversed buffed baby edition)",
+        "author": "Snack",
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefIOaggtacbiaaaJyaraaasaaamaaaHpzYE",
+        "map_id": "94016",
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual"
     }
 }

@@ -13,6 +13,37 @@ def split_categories(category_row):
         return []
     return [category.strip() for category in category_row.split(',')]
 
+def derive_completion_type(team_caps_value):
+    """
+    Derive completion_type from the Team Caps column.
+    If the value is truthy ("true", "yes", "1"), return "individual".
+    Otherwise (null, empty, anything else), return "combined".
+    """
+    val = str(team_caps_value or "").strip().lower()
+
+    if val in ("true", "yes", "1"):
+        return "combined"
+    return "individual"
+
+def derive_caps_to_win(value):
+    """
+    Derive caps_to_win from the Caps To Win column.
+    If the value is a number or a string number, return it as a string (including "-1").
+    Otherwise (null, empty, anything else), return "1".
+    """
+    if value is None:
+        return "1"
+
+    val_str = str(value).strip()
+
+    # Accept integers, including negative ones like -1
+    try:
+        num = int(val_str)
+        return str(num)
+    except ValueError:
+        # Not a valid integer string
+        return "1"
+
 def get_map_metadata():
     # URL for the Google Sheet export
     url = "https://docs.google.com/spreadsheets/d/1OnuTCekHKCD91W39jXBG4uveTCCyMxf9Ofead43MMCU/export"
@@ -52,7 +83,9 @@ def get_map_metadata():
             "preset": row["Group Preset"],
             "map_id": row["Map ID"],
             "categories": split_categories(row["Category"]),
-            "grav_or_classic": row["Grav or\nClassic"]
+            "grav_or_classic": row["Grav or\nClassic"],
+            "caps_to_win": derive_caps_to_win(row["Num\nof caps"]),
+            "completion_type": derive_completion_type(row["Team\nCaps"])
         }
 
     # Save to a JSON file
