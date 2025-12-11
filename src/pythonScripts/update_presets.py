@@ -43,6 +43,16 @@ def derive_caps_to_win(value):
     except ValueError:
         # Not a valid integer string
         return "1"
+    
+def derive_allow_blue_caps(value):
+    """
+    Derive allow_blue_caps from the Allow Blue Caps column.
+    If value is "true" or "TRUE" (case-insensitive), return True.
+    Otherwise return False.
+    """
+    if isinstance(value, str) and value.strip().lower() == "true":
+        return True
+    return False
 
 def get_map_metadata():
     # URL for the Google Sheet export
@@ -85,7 +95,8 @@ def get_map_metadata():
             "categories": split_categories(row["Category"]),
             "grav_or_classic": row["Grav or\nClassic"],
             "caps_to_win": derive_caps_to_win(row["Num\nof caps"]),
-            "completion_type": derive_completion_type(row["Team\nCaps"])
+            "completion_type": derive_completion_type(row["Team\nCaps"]),
+            "allow_blue_caps": derive_allow_blue_caps(row["Allow Blue Caps"])
         }
 
     # Save to a JSON file
