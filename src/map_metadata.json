@@ -3682,7 +3682,7 @@
         "author": "jdkman13",
         "difficulty": "5.0",
         "balls_req": "1",
-        "preset": "gZMefGOJggtaiaaaJyaraaksaaamaaapZE",
+        "preset": "gZMefGOJggtaiaaaJyaraaksaaamaaaHpzpZE",
         "map_id": "88643",
         "categories": [
             "Solo",
@@ -3760,13 +3760,13 @@
         "completion_type": "individual",
         "allow_blue_caps": false
     },
-    "88652": {
+    "94046": {
         "map_name": "DeathRun Flappy Bird Version (Official FWO)",
         "author": "Fast-Ball",
         "difficulty": "3.3",
         "balls_req": "1",
-        "preset": "gZMefGOSggtaiaaaJyaraaksaaamaaapZE",
-        "map_id": "88652",
+        "preset": "gZMefIOEggtaiaaaJyaraaksaaamaaapZE",
+        "map_id": "94046",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -5467,7 +5467,7 @@
         "map_id": "89799",
         "categories": [
             "Buddy",
-            "Checkpoint",
+            "OneShot",
             "Unlimited Jumps",
             "Flappy Bird"
         ],
@@ -6169,7 +6169,7 @@
         "author": "Bambi (&3)",
         "difficulty": "3.6",
         "balls_req": "1",
-        "preset": "gZMefHHkggtaiaaaJyaraakYE",
+        "preset": "gZMefHHkggtaiaaaJyaraakHpzYE",
         "map_id": "90958",
         "categories": [
             "Solo",
@@ -7170,6 +7170,90 @@
         "categories": [
             "Solo",
             "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94049": {
+        "map_name": "Keep jumping and nobody explodes 2",
+        "author": "Ball-E",
+        "difficulty": "TBD",
+        "balls_req": "2",
+        "preset": "gZMefIOHggtaiaaaJyaraakpZE",
+        "map_id": "94049",
+        "categories": [
+            "Buddy",
+            "OneShot",
+            "Unlimited Jumps",
+            "Flappy Bird"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94050": {
+        "map_name": "Keep jumping and nobody explodes 2 (Checkpoint Version)",
+        "author": "Ball-E",
+        "difficulty": "TBD",
+        "balls_req": "2",
+        "preset": "gZMefIOIggtaiaaaJyaraakpZE",
+        "map_id": "94050",
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Unlimited Jumps",
+            "Flappy Bird"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94092": {
+        "map_name": "jug full o bones 2",
+        "author": "Snack",
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefIPyggtacbiaaaJyaraaasaaamaaaHpzYEG",
+        "map_id": "94092",
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94093": {
+        "map_name": "jug full o bones 2 (easy mode)",
+        "author": "Snack",
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefIPzggtacbiaaaJyaraaasaaamaaaHpzYEG",
+        "map_id": "94093",
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94097": {
+        "map_name": "PacMan with Gravity [Evil Checkpoints]",
+        "author": "ImNoSomeBall",
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefIPDggtaiaaaJraaksaaamaaaE",
+        "map_id": "94097",
+        "categories": [
+            "Solo",
+            "OneShot"
         ],
         "grav_or_classic": "Grav",
         "caps_to_win": "1",
