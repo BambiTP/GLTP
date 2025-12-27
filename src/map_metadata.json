@@ -770,7 +770,7 @@
     "85596": {
         "map_name": "Epic Mode (TM1 Version) 9bob9 (Official FWO)",
         "author": "Team1 & FWO & 9bob9",
-        "difficulty": "8.9",
+        "difficulty": "8.0",
         "balls_req": "2",
         "preset": "gZMefFIeggtaiaaaJraaksaaamaaYE",
         "map_id": "85596",
@@ -3243,7 +3243,7 @@
     "87545": {
         "map_name": "PacMan - POWER PELLET EDITION",
         "author": "ImNoSomeBall & SB Army SB",
-        "difficulty": "3.8",
+        "difficulty": "3.6",
         "balls_req": "1",
         "preset": "gZMefGtDggtaiaaaJraaksaaamaaaE",
         "map_id": "87545",
@@ -5630,9 +5630,9 @@
     "89801": {
         "map_name": "Lej's Ball Handling [Gravity]",
         "author": "Lej/xkcd",
-        "difficulty": "TBD",
+        "difficulty": "7.9",
         "balls_req": "1",
-        "preset": "gZMefHkXggtaiaaaJyaraaksaaamaaaE",
+        "preset": "gZMefHkXggtaiaaaJyaraaksaaamaaaHpzYEG",
         "map_id": "89801",
         "categories": [
             "Solo",
@@ -7082,7 +7082,7 @@
         "map_name": "I'm Not Your Buddy, Pal",
         "author": "BallSaget",
         "difficulty": "TBD",
-        "balls_req": "1",
+        "balls_req": "2",
         "preset": "gZMefILMggtaiaaaJraaksaaamaaauaaaVabWTbEF",
         "map_id": "93898",
         "categories": [
@@ -7115,7 +7115,7 @@
     "93988": {
         "map_name": "jug full o bones",
         "author": "Snack",
-        "difficulty": "TBD",
+        "difficulty": "3.0",
         "balls_req": "1",
         "preset": "gZMefINyggtaiaaaJybraaasaaamaaaHpzE",
         "map_id": "93988",
@@ -7131,7 +7131,7 @@
     "94000": {
         "map_name": "jug full o bones (easy mode)",
         "author": "Snack",
-        "difficulty": "TBD",
+        "difficulty": "2.6",
         "balls_req": "1",
         "preset": "gZMefINKggtacbiaaaJyaraaasaaamaaaHpzYEG",
         "map_id": "94000",
@@ -7147,7 +7147,7 @@
     "94003": {
         "map_name": "jug full o bones (baby mode)",
         "author": "Snack",
-        "difficulty": "TBD",
+        "difficulty": "2.3",
         "balls_req": "1",
         "preset": "gZMefINNggtacbiaaaJyaraaasaaamaaaHpzYEG",
         "map_id": "94003",
@@ -7163,7 +7163,7 @@
     "94016": {
         "map_name": "jug full o bones (reversed buffed baby edition)",
         "author": "Snack",
-        "difficulty": "TBD",
+        "difficulty": "3.2",
         "balls_req": "1",
         "preset": "gZMefIOaggtacbiaaaJyaraaasaaamaaaHpzYE",
         "map_id": "94016",
@@ -7197,7 +7197,7 @@
     "94050": {
         "map_name": "Keep jumping and nobody explodes 2 (Checkpoint Version)",
         "author": "Ball-E",
-        "difficulty": "TBD",
+        "difficulty": "3.7",
         "balls_req": "2",
         "preset": "gZMefIOIggtaiaaaJyaraakpZE",
         "map_id": "94050",
@@ -7215,7 +7215,7 @@
     "94092": {
         "map_name": "jug full o bones 2",
         "author": "Snack",
-        "difficulty": "TBD",
+        "difficulty": "3.2",
         "balls_req": "1",
         "preset": "gZMefIPyggtacbiaaaJyaraaasaaamaaaHpzYEG",
         "map_id": "94092",
@@ -7231,7 +7231,7 @@
     "94093": {
         "map_name": "jug full o bones 2 (easy mode)",
         "author": "Snack",
-        "difficulty": "TBD",
+        "difficulty": "2.8",
         "balls_req": "1",
         "preset": "gZMefIPzggtacbiaaaJyaraaasaaamaaaHpzYEG",
         "map_id": "94093",
@@ -7247,13 +7247,93 @@
     "94097": {
         "map_name": "PacMan with Gravity [Evil Checkpoints]",
         "author": "ImNoSomeBall",
-        "difficulty": "TBD",
+        "difficulty": "4.0",
         "balls_req": "1",
         "preset": "gZMefIPDggtaiaaaJraaksaaamaaaE",
         "map_id": "94097",
         "categories": [
             "Solo",
             "OneShot"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94147": {
+        "map_name": "jug full o bones 2 (baby mode)",
+        "author": "Snack",
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefIQBggtacbiaaaJyaraaasaaamaaaHpzYEG",
+        "map_id": "94147",
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94181": {
+        "map_name": "Pathfinder 2",
+        "author": "Snack",
+        "difficulty": "2.1",
+        "balls_req": "1",
+        "preset": "gZMefIRjggtacbiaaaJyaraaasaaamaaaYEG ",
+        "map_id": "94181",
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94210": {
+        "map_name": "Un-handle-able",
+        "author": "3",
+        "difficulty": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefIRMggtacbiaaaJyaraaasaaamaaaHpzYEG",
+        "map_id": "94210",
+        "categories": [
+            "Solo",
+            "Oneshot"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94331": {
+        "map_name": "Kickflip",
+        "author": "Snack",
+        "difficulty": "3.5",
+        "balls_req": "x",
+        "preset": "gZMefIUdggtacbiaaaJyaraaaHpzYEG",
+        "map_id": "94331",
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "91670": {
+        "map_name": "SSX TRICKY",
+        "author": "3",
+        "difficulty": "TBD",
+        "balls_req": "x",
+        "preset": "gZMefHUUggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "91670",
+        "categories": [
+            "Solo",
+            "Oneshot"
         ],
         "grav_or_classic": "Grav",
         "caps_to_win": "1",
