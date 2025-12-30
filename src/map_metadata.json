@@ -7339,5 +7339,31 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false
+    },
+    "94337": {
+        "map_name": "Fort",
+        "author": "3",
+        "difficulty": "TBD",
+        "balls_req": "x",
+        "preset": "gZMefIUjggtaiaaaJraakVadSHpzE",
+        "map_id": "94337",
+        "categories": [],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94371": {
+        "map_name": "Celestial Cycle",
+        "author": "3",
+        "difficulty": "TBD",
+        "balls_req": "x",
+        "preset": "gZMefIURggtaiaaaJyaraakmaaaVadSHpzYE",
+        "map_id": "94371",
+        "categories": [],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
     }
 }
