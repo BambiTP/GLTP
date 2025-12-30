@@ -7343,11 +7343,14 @@
     "94337": {
         "map_name": "Fort",
         "author": "3",
-        "difficulty": "TBD",
+        "difficulty": "3.8",
         "balls_req": "x",
         "preset": "gZMefIUjggtaiaaaJraakVadSHpzE",
         "map_id": "94337",
-        "categories": [],
+        "categories": [
+            "Solo",
+            "Oneshot"
+        ],
         "grav_or_classic": "Grav",
         "caps_to_win": "1",
         "completion_type": "individual",
@@ -7356,11 +7359,14 @@
     "94371": {
         "map_name": "Celestial Cycle",
         "author": "3",
-        "difficulty": "TBD",
+        "difficulty": "4.0",
         "balls_req": "x",
         "preset": "gZMefIURggtaiaaaJyaraakmaaaVadSHpzYE",
         "map_id": "94371",
-        "categories": [],
+        "categories": [
+            "Solo",
+            "Oneshot"
+        ],
         "grav_or_classic": "Grav",
         "caps_to_win": "1",
         "completion_type": "individual",
