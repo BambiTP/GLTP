@@ -15,6 +15,7 @@ This document tracks tasks and ideas for the project
 ---
 
 ## 🔜 Upcoming Tasks & Ideas
+- [ ] Better mobile UI for website
 - [ ] History / audit trail of world records
 - [ ] Show if player used to have a wr
 - [ ] Add "fastest lap" calculation for some racing maps
