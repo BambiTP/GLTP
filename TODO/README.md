@@ -15,8 +15,11 @@ This document tracks tasks and ideas for the project
 ---
 
 ## 🔜 Upcoming Tasks & Ideas
-
-- [ ] UserScript for ghost mode
+- [ ] Better mobile UI for website
+- [ ] History / audit trail of world records
+- [ ] Show if player used to have a wr
+- [ ] Add "fastest lap" calculation for some racing maps
+- [x] UserScript for ghost mode
 - [ ] Combine two replays into one, automated
 - [ ] Automate GLTP speedrun uploads
 - [ ] Python script to calculate OFM hold time from replay
