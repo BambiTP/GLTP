@@ -4016,13 +4016,13 @@
         "completion_type": "individual",
         "allow_blue_caps": false
     },
-    "89352": {
+    "94566": {
         "map_name": "Gravity Challenge [Reversed] (Official FWO)",
         "author": "QX and Fronj",
-        "difficulty": "8.0",
+        "difficulty": "7.5",
         "balls_req": "2",
-        "preset": "gZMefHcqggtaiaaaJraaksaaamaaaE",
-        "map_id": "89352",
+        "preset": "gZMefIYEggtaiaaaJraaksaaamaaaE",
+        "map_id": "94566",
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4381,7 +4381,7 @@
     "89086": {
         "map_name": "Be there or be square [Reversed]",
         "author": "The race & FWO",
-        "difficulty": "1.0",
+        "difficulty": "1.7",
         "balls_req": "1",
         "preset": "gZMefGXkggtaiaaaJyaraakE",
         "map_id": "89086",
