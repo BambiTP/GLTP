@@ -8,17 +8,18 @@ body {
   color: #e0e0e0;
 }
 
-/* Top bar for navigation */
+/* Top bar for navigation - IMPROVED */
 .top-bar {
   background-color: #1f1f1f;
+  padding: 12px 20px;
   color: #e0e0e0;
   display: flex;
-  justify-content: center !important;
-  align-items: center !important;
+  justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -672,14 +673,13 @@ a:hover {
 }
 
 #leaderboardContainer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
 .leaderboard-section {
-  flex: 1;
-  min-width: 250px;
+  min-width: 220px;
 }
 
 .leaderboard-table {

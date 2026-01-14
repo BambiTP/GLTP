@@ -43,7 +43,6 @@ export class Leaderboard {
       this.createSection("Overall Speed Records", this.speedData.worldRecordsLeaderboard);
       this.createSection("Solo Speed Records", this.speedData.soloWorldRecordsLeaderboard);
       this.createSection("Capping Speed Records", this.speedData.cappingWorldRecordsLeaderboard);
-      // Games Completed moved out
     } else if (view === "jump") {
       this.createSection("Overall Jump Records", this.jumpData.jumpWorldRecordsLeaderboard);
       this.createSection("Solo Jump Records", this.jumpData.jumpSoloLeaderboard);
@@ -52,6 +51,7 @@ export class Leaderboard {
       this.createSection("Overall Records (Speed + Jumps)", this.overallData.overallLeaderboard);
       this.createSection("Overall Solo Records", this.overallData.overallSoloLeaderboard);
       this.createSection("Overall Capping Records", this.overallData.overallCappingLeaderboard);
+      this.createSection("Unique Maps Completed", this.speedData.uniqueMapsLeaderboard);
       this.createSection("Games Completed", this.speedData.gamesCompletedLeaderboard);
     }
   }
@@ -77,37 +77,36 @@ export class Leaderboard {
     table.appendChild(headerRow);
 
     // Sort and add rows
-  let playersArray = Object.values(leaderboardObj).sort((a, b) => b.score - a.score);
+    let playersArray = Object.values(leaderboardObj).sort((a, b) => b.score - a.score);
 
-  playersArray.forEach(player => {
-    const row = document.createElement("tr");
+    playersArray.forEach(player => {
+      const row = document.createElement("tr");
 
-    // Create the first <td>
-    const nameCell = document.createElement("td");
+      // Create the first <td>
+      const nameCell = document.createElement("td");
 
-    if (player.user_id) {
-      // Create link element
-      const playerLink = document.createElement("a");
-      playerLink.href = `/GLTP/player.html?user_id=${player.user_id}`;
-      playerLink.textContent = player.name;
-      playerLink.classList.add("player-link");
-      nameCell.appendChild(playerLink);
-    } else {
-      // No user ID → plain text
-      nameCell.textContent = player.name;
-    }
+      if (player.user_id) {
+        // Create link element
+        const playerLink = document.createElement("a");
+        playerLink.href = `/GLTP/player.html?user_id=${player.user_id}`;
+        playerLink.textContent = player.name;
+        playerLink.classList.add("player-link");
+        nameCell.appendChild(playerLink);
+      } else {
+        // No user ID → plain text
+        nameCell.textContent = player.name;
+      }
 
-    // Score cell
-    const scoreCell = document.createElement("td");
-    scoreCell.textContent = player.score;
+      // Score cell
+      const scoreCell = document.createElement("td");
+      scoreCell.textContent = player.score;
 
-    // Add to row
-    row.appendChild(nameCell);
-    row.appendChild(scoreCell);
+      // Add to row
+      row.appendChild(nameCell);
+      row.appendChild(scoreCell);
 
-    table.appendChild(row);
-  });
-
+      table.appendChild(row);
+    });
 
     sectionDiv.appendChild(table);
     this.leaderboardContainer.appendChild(sectionDiv);
@@ -117,6 +116,7 @@ export class Leaderboard {
 // -------------------- Speed Records Processor --------------------
 export function processLeaderboardData(data) {
   let gamesCompletedLeaderboard = {};
+  let uniqueMapsLeaderboard = {};
   let worldRecordsLeaderboard = {};
   let soloWorldRecordsLeaderboard = {};
   let cappingWorldRecordsLeaderboard = {};
@@ -148,6 +148,37 @@ export function processLeaderboardData(data) {
       }
       recordsByMap[key].push(record);
     }
+  });
+
+  // Count unique maps completed per player
+  const playerUniqueMaps = {};
+  
+  data.forEach(record => {
+    if (record.record_time !== null) {
+      record.players.forEach(player => {
+        let key = getLeaderboardPlayerKey(player);
+        let displayName = getLeaderboardPlayerDisplayName(player);
+        
+        if (!playerUniqueMaps[key]) {
+          playerUniqueMaps[key] = {
+            name: displayName,
+            user_id: player.user_id,
+            maps: new Set()
+          };
+        }
+        
+        playerUniqueMaps[key].maps.add(record.map_id);
+      });
+    }
+  });
+
+  // Convert to leaderboard format with score = unique map count
+  Object.entries(playerUniqueMaps).forEach(([key, data]) => {
+    uniqueMapsLeaderboard[key] = {
+      name: data.name,
+      user_id: data.user_id,
+      score: data.maps.size
+    };
   });
 
   Object.values(bestRecords).forEach(record => {
@@ -199,6 +230,7 @@ export function processLeaderboardData(data) {
     worldRecordsLeaderboard,
     soloWorldRecordsLeaderboard,
     cappingWorldRecordsLeaderboard,
+    uniqueMapsLeaderboard,
     bestRecords,
     recordsByMap
   };
@@ -219,7 +251,6 @@ export function processJumpLeaderboardData(data, mapMetadata) {
     // detect classic maps
     const isClassic = meta.grav_or_classic === "Classic";
     const isZeroJumpCategory = (meta.categories || []).includes("0 jump");
-
 
     if ((isClassic || isZeroJumpCategory)) return;
     if (record.total_jumps !== null) {

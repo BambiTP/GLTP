@@ -20,6 +20,7 @@ fetch(dataUrl)
       worldRecordsLeaderboard,
       soloWorldRecordsLeaderboard,
       cappingWorldRecordsLeaderboard,
+      uniqueMapsLeaderboard,
       bestRecords,
       recordsByMap
     } = processLeaderboardData(data);
@@ -76,7 +77,8 @@ fetch(dataUrl)
         worldRecordsLeaderboard,
         soloWorldRecordsLeaderboard,
         cappingWorldRecordsLeaderboard,
-        gamesCompletedLeaderboard
+        gamesCompletedLeaderboard,
+        uniqueMapsLeaderboard
       },
       {
         jumpWorldRecordsLeaderboard,
