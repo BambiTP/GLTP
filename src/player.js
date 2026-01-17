@@ -312,6 +312,9 @@ function setupCompletionFilters(records, summary) {
       else if (gravityVal === "unbeaten") {
         matchesGravity = !beaten.has(m.map_id);
       }
+       else if (gravityVal === "beaten") {
+        matchesGravity = beaten.has(m.map_id);
+      }
 
       // Play Mode filter
       const matchesPlayMode = !playModeVal || categories.includes(playModeVal);

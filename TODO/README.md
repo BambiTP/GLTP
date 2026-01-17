@@ -8,23 +8,19 @@ This document tracks tasks and ideas for the project
 ## 🚧 In Progress
 
 - [ ] Valerian Website changes
-- [x] Click on a **player name** to view their world records
-- [x] Show a player's **fastest time on each map** (even if not a WR)
 - [ ] Better maps classification/categories in spreadsheet
+- [ ] Better mobile UI for website
+- [ ] History / audit trail of world records
+- [ ] Add "fastest lap" calculation for some racing maps
 
 ---
 
 ## 🔜 Upcoming Tasks & Ideas
-- [ ] Better mobile UI for website
-- [ ] History / audit trail of world records
 - [ ] Show if player used to have a wr
-- [ ] Add "fastest lap" calculation for some racing maps
-- [x] UserScript for ghost mode
 - [ ] Combine two replays into one, automated
 - [ ] Automate GLTP speedrun uploads
 - [ ] Python script to calculate OFM hold time from replay
 - [ ] Display **total number of completions** per map
-- [x] Separate Classic / Grav maps on leaderboard
 - [ ] Implement map voting (with account system or signup to ensure one vote per person) difficulty and fun ratings
 - [ ] Move bot workflow to cloud
 - [ ] Launch minigames from bot
@@ -44,7 +40,6 @@ This document tracks tasks and ideas for the project
 - [ ] link to the grav bot group (same pain, group link changes)
 - [ ] GLTP Signups
 - [ ] Grav Versus tourneys/elos (shift, pinecone, ofm, etc)
-- [x] Discord bot
 - [ ] UserScript for zombies mode
 - [ ] Auto generated new maps
 - [ ] Button to spawn a new group with a new bot
@@ -160,6 +155,13 @@ This document tracks tasks and ideas for the project
 
 - [x] Website WRs
 - [x] Website GLTP S2
+- [x] Click on a **player name** to view their world records
+- [x] Show a player's **fastest time on each map** (even if not a WR)
+- [x] Ghost Ball userScript
+- [x] Player profile
+- [x] Leaderboard for # of unique maps completed
+- [x] Separate Classic / Grav maps on leaderboard
+- [x] Discord bot
 
 ---
 
