@@ -89,6 +89,7 @@ def get_map_metadata():
             "map_name": map_name,
             "author": map_author,
             "difficulty": row["Average\nRating"],
+            "difficultyFinal": row["Final Rating"],
             "balls_req": row["Min\nBalls \nRec"],
             "preset": row["Group Preset"],
             "map_id": row["Map ID"],
