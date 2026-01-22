@@ -1926,7 +1926,7 @@
     "2454": {
         "map_name": "Slanted House",
         "author": "9bob9",
-        "difficulty": "1.1",
+        "difficulty": "2.1",
         "difficultyFinal": "1.3",
         "balls_req": "1",
         "preset": "gZMdfVkggtuiaaaJyaraaksaaamaaaE",
@@ -2906,14 +2906,14 @@
         "completion_type": "individual",
         "allow_blue_caps": false
     },
-    "86574": {
+    "94663": {
         "map_name": "Ultimate Buddy System (Official FWO)",
-        "author": "bowtie",
+        "author": "Bowtie",
         "difficulty": "NULL",
         "difficultyFinal": "TBD",
         "balls_req": "2",
-        "preset": "gZMefGaUtaiaaaJyaraaksaaamaaYE",
-        "map_id": "86574",
+        "preset": "gZMefJaxtaiaaaJyaraaksaaamaaYE",
+        "map_id": "94663",
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -7833,13 +7833,13 @@
         "map_name": "Rubble Rouser",
         "author": "Snack",
         "difficulty": "NULL",
-        "difficultyFinal": "3.7",
+        "difficultyFinal": "3.8",
         "balls_req": "x",
         "preset": "gZMefIZZggtuiaaaJyaraaaYEG",
         "map_id": "94639",
         "categories": [
             "Solo",
-            "Checkpoing",
+            "Checkpoint",
             "Mars Climb"
         ],
         "grav_or_classic": "Grav",
@@ -7855,6 +7855,57 @@
         "balls_req": "x",
         "preset": "gZMefIZjggtkyaabeEYpZEG",
         "map_id": "94597",
+        "categories": [
+            "Solo",
+            "Oneshot"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94668": {
+        "map_name": "Discovery of Magic (Easy Path Only)",
+        "author": "Snack",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "x",
+        "preset": "gZMefJaCggtacbiaaaJyaraaasaaamaaauaaaSPuYTbE",
+        "map_id": "94668",
+        "categories": [
+            "Solo",
+            "Oneshot"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94671": {
+        "map_name": "Discovery of Magic (Medium Path Only)",
+        "author": "Snack",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "x",
+        "preset": "gZMefJaFggtacbiaaaJyaraaasaaamaaauaaaSPuYTbE",
+        "map_id": "94671",
+        "categories": [
+            "Solo",
+            "Oneshot"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false
+    },
+    "94670": {
+        "map_name": "Discovery of Magic (Hard Path Only)",
+        "author": "Snack",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "x",
+        "preset": "gZMefJaEggtacbiaaaJyaraaasaaamaaauaaaSPuYTbE",
+        "map_id": "94670",
         "categories": [
             "Solo",
             "Oneshot"
