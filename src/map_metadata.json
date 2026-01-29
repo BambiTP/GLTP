@@ -3419,7 +3419,7 @@
     "46903": {
         "map_name": "Gravity Challenge (85% Complete)",
         "author": "QX",
-        "difficulty": "3.4",
+        "difficulty": "3.5",
         "difficultyFinal": "3.4",
         "balls_req": "1",
         "preset": "gZMefrrZggtaiaaaJyaraaksaaamaaaE",
@@ -7833,7 +7833,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "93327": {
