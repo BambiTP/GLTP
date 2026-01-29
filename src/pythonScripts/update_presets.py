@@ -97,7 +97,9 @@ def get_map_metadata():
             "grav_or_classic": row["Grav or\nClassic"],
             "caps_to_win": derive_caps_to_win(row["Num\nof caps"]),
             "completion_type": derive_completion_type(row["Team\nCaps"]),
-            "allow_blue_caps": derive_allow_blue_caps(row["Allow Blue Caps"])
+            "allow_blue_caps": derive_allow_blue_caps(row["Allow Blue Caps"]),
+            "allow_from_spawn": derive_allow_blue_caps(row["From Spawn"]),
+            "allow_from_grab": derive_allow_blue_caps(row["From Grab"]),
         }
 
     # Save to a JSON file
