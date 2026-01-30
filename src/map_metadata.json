@@ -1064,7 +1064,7 @@
     "86702": {
         "map_name": "Mars Climb",
         "author": "Ball-E",
-        "difficulty": "3.0",
+        "difficulty": "2.9",
         "difficultyFinal": "3.1",
         "balls_req": "1",
         "preset": "gZMefGdsggtuiaaaJyaraaksaaamabWE",
@@ -1651,7 +1651,7 @@
     "86708": {
         "map_name": "Mars Climb but hard",
         "author": "Ball-E",
-        "difficulty": "3.0",
+        "difficulty": "3.1",
         "difficultyFinal": "3.1",
         "balls_req": "1",
         "preset": "gZMefGdyggtuiaaaJyaraaksaaamaaaE",
@@ -5833,7 +5833,7 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": true
     },
     "89475": {
         "map_name": "Zoom (Gravity Race) [Instant Bomb]",
