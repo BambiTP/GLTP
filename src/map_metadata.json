@@ -885,7 +885,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82180": {
@@ -905,7 +905,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "85596": {
@@ -1349,7 +1349,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "36333": {
@@ -1369,7 +1369,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "46288": {
@@ -1582,7 +1582,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82709": {
@@ -1603,7 +1603,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "87112": {
@@ -1624,7 +1624,7 @@
         "caps_to_win": "-1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82336": {
@@ -1645,7 +1645,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86708": {
@@ -1745,7 +1745,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86711": {
@@ -1766,7 +1766,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82346": {
@@ -1786,7 +1786,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82380": {
@@ -1807,7 +1807,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82382": {
@@ -1828,7 +1828,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82415": {
@@ -1965,7 +1965,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82425": {
@@ -2140,7 +2140,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "2454": {
@@ -2217,7 +2217,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82449": {
@@ -2354,7 +2354,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82514": {
@@ -2374,7 +2374,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82517": {
@@ -2452,7 +2452,7 @@
         "caps_to_win": "-1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86714": {
@@ -2473,7 +2473,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82651": {
@@ -2554,7 +2554,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "46103": {
@@ -2726,7 +2726,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "83008": {
@@ -2865,7 +2865,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "82714": {
@@ -2886,7 +2886,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "85748": {
@@ -2905,7 +2905,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86977": {
@@ -2943,7 +2943,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "85931": {
@@ -2962,7 +2962,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86364": {
@@ -3117,7 +3117,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86142": {
@@ -3158,7 +3158,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89339": {
@@ -3451,7 +3451,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86721": {
@@ -3471,7 +3471,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86723": {
@@ -3491,7 +3491,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86858": {
@@ -3591,7 +3591,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "18326": {
@@ -3729,7 +3729,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86901": {
@@ -4281,7 +4281,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "88528": {
@@ -4300,7 +4300,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "88530": {
@@ -4320,7 +4320,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "88531": {
@@ -4422,7 +4422,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "88650": {
@@ -4498,7 +4498,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "88655": {
@@ -4519,7 +4519,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "88704": {
@@ -4638,7 +4638,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "88666": {
@@ -4699,7 +4699,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "88675": {
@@ -4719,7 +4719,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "88750": {
@@ -4823,7 +4823,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "88856": {
@@ -4844,7 +4844,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "88923": {
@@ -4864,7 +4864,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "88924": {
@@ -4942,7 +4942,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "47408": {
@@ -4963,7 +4963,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89046": {
@@ -5004,7 +5004,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89053": {
@@ -5025,7 +5025,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89059": {
@@ -5082,7 +5082,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "79475": {
@@ -5103,7 +5103,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "84610": {
@@ -5124,7 +5124,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89084": {
@@ -5145,7 +5145,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89085": {
@@ -5164,7 +5164,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89086": {
@@ -5184,7 +5184,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "80970": {
@@ -5205,7 +5205,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89087": {
@@ -5266,7 +5266,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89197": {
@@ -5287,7 +5287,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89199": {
@@ -5307,7 +5307,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89268": {
@@ -5346,7 +5346,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "76008": {
@@ -5367,7 +5367,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "76156": {
@@ -5388,7 +5388,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89201": {
@@ -5472,7 +5472,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89725": {
@@ -5570,7 +5570,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89384": {
@@ -5590,7 +5590,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89394": {
@@ -5629,7 +5629,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89412": {
@@ -5751,7 +5751,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89435": {
@@ -5770,7 +5770,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89450": {
@@ -5790,7 +5790,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89454": {
@@ -6032,7 +6032,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89585": {
@@ -6113,7 +6113,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89661": {
@@ -6134,7 +6134,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89719": {
@@ -6175,7 +6175,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89717": {
@@ -6274,7 +6274,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89749": {
@@ -6294,7 +6294,7 @@
         "caps_to_win": "3",
         "completion_type": "combined",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89750": {
@@ -6372,7 +6372,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89807": {
@@ -6433,7 +6433,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89799": {
@@ -6494,7 +6494,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89776": {
@@ -6514,7 +6514,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89777": {
@@ -6534,7 +6534,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "93518": {
@@ -6554,7 +6554,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89791": {
@@ -6573,7 +6573,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89792": {
@@ -6612,7 +6612,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89796": {
@@ -6632,7 +6632,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89801": {
@@ -6651,7 +6651,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89806": {
@@ -6692,7 +6692,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "83428": {
@@ -6713,7 +6713,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "1920": {
@@ -6733,7 +6733,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89834": {
@@ -6812,7 +6812,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89889": {
@@ -6832,7 +6832,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89882": {
@@ -6853,7 +6853,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89883": {
@@ -6873,7 +6873,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "89945": {
@@ -6932,7 +6932,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "90026": {
@@ -7030,7 +7030,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "90458": {
@@ -7188,7 +7188,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "90852": {
@@ -7227,7 +7227,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "90894": {
@@ -7246,7 +7246,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "90910": {
@@ -7265,7 +7265,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "90958": {
@@ -7284,7 +7284,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "90929": {
@@ -7304,7 +7304,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "91103": {
@@ -7342,7 +7342,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "91222": {
@@ -7361,7 +7361,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "91305": {
@@ -7380,7 +7380,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "91043": {
@@ -7400,7 +7400,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "91433": {
@@ -7420,7 +7420,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "91496": {
@@ -7499,7 +7499,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "92122": {
@@ -7538,7 +7538,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "92199": {
@@ -7577,7 +7577,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "93569": {
@@ -7618,7 +7618,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "92266": {
@@ -7658,7 +7658,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "92504": {
@@ -7736,7 +7736,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "92341": {
@@ -7755,7 +7755,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "92697": {
@@ -7814,7 +7814,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "93185": {
@@ -7873,7 +7873,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "93402": {
@@ -7954,7 +7954,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "93543": {
@@ -8238,7 +8238,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "93707": {
@@ -8258,7 +8258,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "93876": {
@@ -8556,7 +8556,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "94147": {
@@ -8613,7 +8613,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "94331": {
@@ -8651,7 +8651,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "94337": {
@@ -8670,7 +8670,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "94371": {
@@ -8689,7 +8689,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "94544": {
@@ -8708,7 +8708,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "94639": {
@@ -8747,7 +8747,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "94692": {
@@ -8766,7 +8766,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "94671": {
@@ -8785,7 +8785,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "94670": {
@@ -8804,7 +8804,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "94797": {
@@ -8827,5 +8827,24 @@
         "allow_blue_caps": true,
         "allow_from_spawn": false,
         "allow_from_grab": true
+    },
+    "94843": {
+        "map_name": "one sick jump",
+        "author": "Snack",
+        "difficulty": "NULL",
+        "difficultyFinal": "2.0",
+        "balls_req": "1",
+        "preset": "gZMefJdVggtaiaaaJyaraakYEG",
+        "map_id": "94843",
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": true,
+        "allow_from_grab": false
     }
 }
