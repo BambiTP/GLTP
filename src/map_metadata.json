@@ -3325,7 +3325,7 @@
         "map_id": "86583",
         "categories": [
             "Solo",
-            "Checkpoint",
+            "OneShot",
             "5 jump",
             "Fall"
         ],
@@ -3333,7 +3333,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86584": {
@@ -3346,7 +3346,7 @@
         "map_id": "86584",
         "categories": [
             "Solo",
-            "Checkpoint",
+            "OneShot",
             "5 jump",
             "Fall"
         ],
@@ -3354,7 +3354,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86585": {
@@ -3367,14 +3367,14 @@
         "map_id": "86585",
         "categories": [
             "Solo",
-            "Checkpoint",
-            "5 jump"
+            "OneShot",
+            "Fall"
         ],
         "grav_or_classic": "Grav",
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "86700": {
@@ -8714,7 +8714,7 @@
     "94639": {
         "map_name": "Rubble Rouser",
         "author": "Snack",
-        "difficulty": "NULL",
+        "difficulty": "3.8",
         "difficultyFinal": "3.8",
         "balls_req": "x",
         "preset": "gZMefIZZggtuiaaaJyaraaaYEG",
@@ -8734,7 +8734,7 @@
     "94597": {
         "map_name": "uppies",
         "author": "Snack",
-        "difficulty": "NULL",
+        "difficulty": "0.4",
         "difficultyFinal": "0.4",
         "balls_req": "x",
         "preset": "gZMefIZjggtkyaabeEYpZEG",
@@ -8753,7 +8753,7 @@
     "94692": {
         "map_name": "Discovery of Magic (Easy Path Only)",
         "author": "Snack",
-        "difficulty": "NULL",
+        "difficulty": "2.4",
         "difficultyFinal": "TBD",
         "balls_req": "x",
         "preset": "gZMefJbaggtacbiaaaJyaraaasaaamaaauaaaSPuYTbE",
@@ -8810,7 +8810,7 @@
     "94797": {
         "map_name": "Spike Maze (60 Sec) [Upside down]",
         "author": "Nice Person",
-        "difficulty": "NULL",
+        "difficulty": "2.0",
         "difficultyFinal": "2.0",
         "balls_req": "1",
         "preset": "gZMefJdbtaiaaaJyaraak",
@@ -8831,7 +8831,7 @@
     "94843": {
         "map_name": "one sick jump",
         "author": "Snack",
-        "difficulty": "NULL",
+        "difficulty": "2.0",
         "difficultyFinal": "2.0",
         "balls_req": "1",
         "preset": "gZMefJdVggtaiaaaJyaraakYEG",
