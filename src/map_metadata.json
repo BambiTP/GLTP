@@ -1800,7 +1800,7 @@
         "categories": [
             "Solo",
             "Tower",
-            "OneShot",
+            "Checkpoint",
             "VS Race"
         ],
         "grav_or_classic": "Grav",
