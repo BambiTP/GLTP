@@ -1807,7 +1807,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": true,
+        "allow_from_spawn": false,
         "allow_from_grab": false
     },
     "82382": {
@@ -7400,7 +7400,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": true,
+        "allow_from_spawn": false,
         "allow_from_grab": false
     },
     "91433": {
@@ -7954,7 +7954,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": true,
+        "allow_from_spawn": false,
         "allow_from_grab": false
     },
     "93543": {
@@ -8804,7 +8804,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": true,
+        "allow_from_spawn": false,
         "allow_from_grab": false
     },
     "94797": {
