@@ -6358,7 +6358,7 @@
     "35367": {
         "map_name": "Difficulty Easiest",
         "author": "Ball-E",
-        "difficulty": "3.4",
+        "difficulty": "3.2",
         "difficultyFinal": "3.5",
         "balls_req": "1",
         "preset": "gZMefnehggtaiaaaJraaksaaamaaaunqqE",
@@ -8619,7 +8619,7 @@
     "94331": {
         "map_name": "Kickflip",
         "author": "Snack",
-        "difficulty": "3.5",
+        "difficulty": "3.6",
         "difficultyFinal": "3.5",
         "balls_req": "1",
         "preset": "gZMefIUdggtacbiaaaJyaraaaHpzYEG",
@@ -8785,7 +8785,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": true,
+        "allow_from_spawn": false,
         "allow_from_grab": false
     },
     "94670": {
@@ -8804,7 +8804,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "94797": {
