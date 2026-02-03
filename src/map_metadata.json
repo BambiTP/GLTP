@@ -8478,7 +8478,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
-        "allow_from_spawn": false,
+        "allow_from_spawn": true,
         "allow_from_grab": false
     },
     "94050": {
