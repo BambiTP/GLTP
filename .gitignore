@@ -5,3 +5,7 @@
 /src/discordScripts/node_modules
 /src/discordScripts/package-lock.json
 src/pythonScripts/bot/__pycache__/
+src/pythonScripts/bot/events.txt
+src/pythonScripts/bot/replay_uuids.txt
+src/pythonScripts/bot/ws.txt
+.gitignore
