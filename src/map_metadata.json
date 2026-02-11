@@ -347,7 +347,7 @@
     "80900": {
         "map_name": "Jasmine 2023",
         "author": "Bumballbee & Inspire",
-        "difficulty": "8.5",
+        "difficulty": "9.0",
         "difficultyFinal": "8.5",
         "balls_req": "2",
         "preset": "gZMefDVOggtaiaaaJraaksaaamaaaE",
@@ -366,7 +366,7 @@
     "80902": {
         "map_name": "Jasmine 2023 (Solo)",
         "author": "Bumballbee & Inspire",
-        "difficulty": "8.2",
+        "difficulty": "8.8",
         "difficultyFinal": "8.2",
         "balls_req": "1",
         "preset": "gZMefDVQggtaiaaaJraaksaaamaaaE",
@@ -518,14 +518,14 @@
         "allow_from_spawn": false,
         "allow_from_grab": false
     },
-    "87055": {
-        "map_name": "Super Smash Buddy (testing delete)",
+    "95021": {
+        "map_name": "Super Smash Buddy",
         "author": "Danny",
         "difficulty": "NULL",
         "difficultyFinal": "TBD",
         "balls_req": "5",
-        "preset": "gZMefGkhggtaiaaaJraaksaaamabWE",
-        "map_id": "87055",
+        "preset": "gZMefJhrggtaiaaaJraaksaaamabWEF",
+        "map_id": "95021",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -911,7 +911,7 @@
     "85596": {
         "map_name": "Epic Mode (TM1 Version) 9bob9 (Official FWO)",
         "author": "Team1 & FWO & 9bob9",
-        "difficulty": "8.0",
+        "difficulty": "8.5",
         "difficultyFinal": "8.0",
         "balls_req": "2",
         "preset": "gZMefFIeggtaiaaaJraaksaaamaaYE",
@@ -1600,7 +1600,7 @@
             "VS Race"
         ],
         "grav_or_classic": "Grav",
-        "caps_to_win": "1",
+        "caps_to_win": "-1",
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
@@ -4050,7 +4050,7 @@
     "87891": {
         "map_name": "Quick Race (1v1) [Reversed]",
         "author": "Carey Price & FWO",
-        "difficulty": "8.3",
+        "difficulty": "8.9",
         "difficultyFinal": "8.3",
         "balls_req": "1",
         "preset": "gZMefGAlggtaiaaaJraaksaaamaaaE",
@@ -4148,14 +4148,14 @@
         "allow_from_spawn": false,
         "allow_from_grab": false
     },
-    "88191": {
+    "95023": {
         "map_name": "Buddy system 9 (TM1 Version) 9bob9 (Official FWO) [Reversed]",
         "author": "Team 1 & FWO",
         "difficulty": "7.0",
         "difficultyFinal": "7.0",
         "balls_req": "3",
-        "preset": "gZMefGFZggtaiaaaJraaksaaamaaaE",
-        "map_id": "88191",
+        "preset": "gZMefJhtggtaiaaaJraaksaaamaaaE",
+        "map_id": "95023",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -4908,7 +4908,7 @@
     "88976": {
         "map_name": "Jasmine (Hard Version)",
         "author": "Bumballbee & Inspire",
-        "difficulty": "8.7",
+        "difficulty": "8.3",
         "difficultyFinal": "8.7",
         "balls_req": "2",
         "preset": "gZMefGVeggtaiaaaJraaksaaamaaaE",
@@ -6638,7 +6638,7 @@
     "89801": {
         "map_name": "Lej's Ball Handling [Gravity]",
         "author": "Lej/xkcd",
-        "difficulty": "7.9",
+        "difficulty": "8.0",
         "difficultyFinal": "7.9",
         "balls_req": "1",
         "preset": "gZMefHkXggtaiaaaJyaraaksaaamaaaHpzYEG",
@@ -8060,7 +8060,7 @@
     "93602": {
         "map_name": "Aussie Team Action V2 Complete [Juggles]",
         "author": "Curveballed",
-        "difficulty": "NULL",
+        "difficulty": "2.9",
         "difficultyFinal": "TBD",
         "balls_req": "4",
         "preset": "gZMefIGcggtaiaaaJyaraaksaaamabWYEF",
@@ -8100,7 +8100,7 @@
     "93611": {
         "map_name": "Team Trauma 2 v1.0 (Official)",
         "author": "Sir Reginald",
-        "difficulty": "NULL",
+        "difficulty": "2.6",
         "difficultyFinal": "TBD",
         "balls_req": "4",
         "preset": "gZMefIGlggtaiaaaJyaraaksaaaYEF",
@@ -8140,7 +8140,7 @@
     "93613": {
         "map_name": "Aussie Team Action V4.5 (Official)",
         "author": "Curveballed",
-        "difficulty": "NULL",
+        "difficulty": "4.1",
         "difficultyFinal": "TBD",
         "balls_req": "3",
         "preset": "gZMefIGnggtaiaaaJyaraaksaaaYEF",
@@ -8264,7 +8264,7 @@
     "93876": {
         "map_name": "Painting Jumpers",
         "author": "Ball-E",
-        "difficulty": "NULL",
+        "difficulty": "4.1",
         "difficultyFinal": "TBD",
         "balls_req": "1 + afk",
         "preset": "gZMefILqggtucbiaaaybraaasaaamaaauaaazfzYjTEFG",
@@ -8344,14 +8344,14 @@
         "allow_from_spawn": false,
         "allow_from_grab": false
     },
-    "93898": {
+    "93989": {
         "map_name": "I'm Not Your Buddy, Pal",
         "author": "BallSaget",
         "difficulty": "NULL",
         "difficultyFinal": "TBD",
         "balls_req": "2",
-        "preset": "gZMefILMggtaiaaaJraaksaaamaaauaaaVabWTbEF",
-        "map_id": "93898",
+        "preset": "gZMefINzggtaiaaaJraaksaaamaaauaaaVabWTbEF",
+        "map_id": "93989",
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8850,7 +8850,7 @@
     "94942": {
         "map_name": "Burden of Proof",
         "author": "Snack",
-        "difficulty": "5.2",
+        "difficulty": "4.9",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJfQggtacbiaaaJyaraakYEG",
