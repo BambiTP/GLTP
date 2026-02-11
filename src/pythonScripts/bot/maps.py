@@ -7,7 +7,10 @@ import csv
 
 def inject_map_id_into_preset(preset, map_id):
     digits = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    n = int(map_id)
+    try:
+        n = int(map_id)
+    except (ValueError, TypeError):
+        return preset  # or raise, or return None depending on your logic
     enc = digits[0] if n == 0 else ""
     while n:
         n, r = divmod(n, 52)
