@@ -7,6 +7,7 @@
         "balls_req": "1",
         "preset": "gZMefGzCggtaiaaaJraaksaaamaaaE",
         "map_id": "87856",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -26,6 +27,7 @@
         "balls_req": "4",
         "preset": "gZMefGzDggtaiaaaJraaksaaamabWE",
         "map_id": "87857",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -45,6 +47,7 @@
         "balls_req": "1",
         "preset": "gZMefGzEggtaiaaaJraaksaaamaaaE",
         "map_id": "87858",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -65,6 +68,9 @@
         "balls_req": "2",
         "preset": "gZMefGzFggtaiaaaJraaksaaamaaaE",
         "map_id": "87859",
+        "equivalent_map_ids": [
+            "82036"
+        ],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -85,6 +91,7 @@
         "balls_req": "2",
         "preset": "gZMefGzIggtaiaaaJraaksaaamaaaE",
         "map_id": "87862",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -104,6 +111,7 @@
         "balls_req": "1",
         "preset": "gZMefGzKggtaiaaaJraaksaaamaaaE",
         "map_id": "87864",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -124,6 +132,7 @@
         "balls_req": "1",
         "preset": "gZMefGzLggtaiaaaJraaksaaamaaaE",
         "map_id": "87865",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -143,6 +152,7 @@
         "balls_req": "1",
         "preset": "gZMefGzMggtaiaaaJraaksaaamaaaE",
         "map_id": "87866",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -162,6 +172,7 @@
         "balls_req": "1",
         "preset": "gZMefGzNggtaiaaaJraaksaaamaaaE",
         "map_id": "87867",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -181,6 +192,7 @@
         "balls_req": "2",
         "preset": "gZMefGAnggtaiaaaJraaksaaamaaaE",
         "map_id": "87893",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -200,6 +212,7 @@
         "balls_req": "3",
         "preset": "gZMefEsnggtaiaaaJraaksaaaE",
         "map_id": "82069",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -219,6 +232,7 @@
         "balls_req": "3",
         "preset": "gZMefFKMggtaiaaaJraaksaaamaaaE",
         "map_id": "85734",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -238,6 +252,7 @@
         "balls_req": "1",
         "preset": "gZMefEsjggtaiaaaJraaksaaamaaaE",
         "map_id": "82065",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -257,6 +272,7 @@
         "balls_req": "2",
         "preset": "gZMefErxggtaiaaaJraaksaaamaaaE",
         "map_id": "82027",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -276,6 +292,7 @@
         "balls_req": "1",
         "preset": "gZMefGRbggtaiaaaJraaksaaamaaaE",
         "map_id": "88765",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -295,6 +312,7 @@
         "balls_req": "2",
         "preset": "gZMefrJJggtaiaaaJraaksaaamaaaunqqjbE",
         "map_id": "47823",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -314,6 +332,7 @@
         "balls_req": "1",
         "preset": "gZMefErCggtaiaaaJraaksaaamaaaE",
         "map_id": "82032",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -333,6 +352,7 @@
         "balls_req": "3",
         "preset": "gZMefErvggtaiaaaJraaksaaamaaaE",
         "map_id": "82025",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -352,6 +372,7 @@
         "balls_req": "2",
         "preset": "gZMefDVOggtaiaaaJraaksaaamaaaE",
         "map_id": "80900",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -371,6 +392,7 @@
         "balls_req": "1",
         "preset": "gZMefDVQggtaiaaaJraaksaaamaaaE",
         "map_id": "80902",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -390,6 +412,7 @@
         "balls_req": "1",
         "preset": "gZMefEsqggtaiaaaJraaksaaamaaaE",
         "map_id": "82072",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -409,6 +432,7 @@
         "balls_req": "1",
         "preset": "gZMefEssggtaiaaaJraaksaaamaaaE",
         "map_id": "82074",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -429,6 +453,7 @@
         "balls_req": "1",
         "preset": "gZMefEtgggtaiaaaJraaksaaamaaapfE",
         "map_id": "82114",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -449,6 +474,7 @@
         "balls_req": "1",
         "preset": "gZMefEAkggtaiaaaJraaksaaamaaaE",
         "map_id": "82482",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -469,6 +495,7 @@
         "balls_req": "4",
         "preset": "gZMefvAutaiaaaJyaraaksaaamacUE",
         "map_id": "58156",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -488,6 +515,7 @@
         "balls_req": "6",
         "preset": "gZMefEviggtaiaaaJraaksaaaE",
         "map_id": "82220",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -507,6 +535,7 @@
         "balls_req": "3",
         "preset": "gZMefEtkggtaiaaaJraaksaaamaaaE",
         "map_id": "82118",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -526,6 +555,7 @@
         "balls_req": "5",
         "preset": "gZMefJhrggtaiaaaJraaksaaamabWEF",
         "map_id": "95021",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -546,6 +576,7 @@
         "balls_req": "2",
         "preset": "gZMefEtbggtaiaaaJraaksaaamaaaE",
         "map_id": "82109",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -565,6 +596,7 @@
         "balls_req": "1",
         "preset": "gZMefEsSggtaiaaaJraaksaaamaaaE",
         "map_id": "82100",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -585,6 +617,7 @@
         "balls_req": "2",
         "preset": "gZMefGjKggtaiaaaJraaksaaamaaaE",
         "map_id": "87032",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy System",
             "Oneshot",
@@ -606,6 +639,7 @@
         "balls_req": "1",
         "preset": "gZMefEtfggtaiaaaJraaksaaamaaauaaajTE",
         "map_id": "82113",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -625,6 +659,7 @@
         "balls_req": "2",
         "preset": "gZMefFLwggtaiaaaJraaksaaamaaaE",
         "map_id": "85770",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "AnyGate",
@@ -645,6 +680,7 @@
         "balls_req": "3",
         "preset": "gZMefFLxggtaiaaaJraaksaaamaaaE",
         "map_id": "85771",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "AnyGate"
@@ -664,6 +700,7 @@
         "balls_req": "3",
         "preset": "gZMefEzeggtaiaaaJraaksaaamaaYE",
         "map_id": "82424",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -683,6 +720,7 @@
         "balls_req": "1",
         "preset": "gZMefEuMggtaiaaaJraaksaaamaaYE",
         "map_id": "82198",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -702,6 +740,7 @@
         "balls_req": "1",
         "preset": "gZMefEDDggtaiaaaJraaksaaaE",
         "map_id": "82657",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -721,6 +760,7 @@
         "balls_req": "1",
         "preset": "gZMefEtsggtaiaaaJraaksaaamaaaE",
         "map_id": "82126",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -740,6 +780,7 @@
         "balls_req": "2",
         "preset": "gZMefHfqggtaiaaaJraaksaaamaaapfE",
         "map_id": "89508",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -760,6 +801,7 @@
         "balls_req": "1",
         "preset": "gZMefEtWggtuiaaaJyaraaksaaamabWE",
         "map_id": "82156",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -780,6 +822,7 @@
         "balls_req": "1",
         "preset": "gZMefhTeggtuiaaaJyaraaksaaamnqqE",
         "map_id": "21272",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -800,6 +843,7 @@
         "balls_req": "1",
         "preset": "gZMefEuxggtuiaaaJyaraaksaaamaaaE",
         "map_id": "82183",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -820,6 +864,7 @@
         "balls_req": "?",
         "preset": "",
         "map_id": "82158",
+        "equivalent_map_ids": [],
         "categories": [],
         "grav_or_classic": "Grav",
         "caps_to_win": "3",
@@ -836,6 +881,7 @@
         "balls_req": "1",
         "preset": "gZMefGJqggtaiaaaJraaksaaamaaaE",
         "map_id": "88364",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -856,6 +902,7 @@
         "balls_req": "1",
         "preset": "gZMefECbggtuiaaaJyaraaksaaamabWE",
         "map_id": "82577",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -876,6 +923,7 @@
         "balls_req": "1",
         "preset": "gZMefEtqggtaiaaaJraaksaaamaaaE",
         "map_id": "82124",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -896,6 +944,7 @@
         "balls_req": "1",
         "preset": "gZMefEuuggtaiaaaJraaksaaamaaaE",
         "map_id": "82180",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -916,6 +965,7 @@
         "balls_req": "2",
         "preset": "gZMefFIeggtaiaaaJraaksaaamaaYE",
         "map_id": "85596",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -935,6 +985,7 @@
         "balls_req": "1",
         "preset": "gZMefECaggtuiaaaJyaraaksaaamaaaE",
         "map_id": "82576",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -955,6 +1006,7 @@
         "balls_req": "3",
         "preset": "gZMefExbggtaiaaaJraaksaaamaaaE",
         "map_id": "82317",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -974,6 +1026,7 @@
         "balls_req": "2",
         "preset": "gZMefHfsggtaiaaaJraaksaaamaaaE",
         "map_id": "89510",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -993,6 +1046,7 @@
         "balls_req": "3",
         "preset": "gZMefExNggtaiaaaJraaksaaamaaYE",
         "map_id": "82355",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1012,6 +1066,7 @@
         "balls_req": "3",
         "preset": "gZMefIDqggtaiaaaJraaksaaamaaaE",
         "map_id": "93460",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1031,6 +1086,7 @@
         "balls_req": "2",
         "preset": "gZMefiCBggtaiaaaJraaksaaamaaaE",
         "map_id": "23115",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1050,6 +1106,7 @@
         "balls_req": "1",
         "preset": "gZMefrwuggtaiaaaJraaksaaamaaaE",
         "map_id": "47132",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1069,6 +1126,9 @@
         "balls_req": "1",
         "preset": "gZMefGdsggtuiaaaJyaraaksaaamabWE",
         "map_id": "86702",
+        "equivalent_map_ids": [
+            "21061"
+        ],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -1089,6 +1149,7 @@
         "balls_req": "1",
         "preset": "gZMefGdtggtuiaaaJyaraaksaaamabWE",
         "map_id": "86703",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -1109,6 +1170,9 @@
         "balls_req": "1",
         "preset": "gZMefGduggtuiaaaJyaraaksaaamabWE",
         "map_id": "86704",
+        "equivalent_map_ids": [
+            "36022"
+        ],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -1129,6 +1193,7 @@
         "balls_req": "1",
         "preset": "gZMefrrxggtaiaaaJraaksaaamaaaE",
         "map_id": "46875",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1148,6 +1213,7 @@
         "balls_req": "3",
         "preset": "gZMefEziggtaiaaaJraakmaaaE",
         "map_id": "82428",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1167,6 +1233,9 @@
         "balls_req": "1",
         "preset": "gZMefGdvggtuiaaaJyaraaksaaamaaaE",
         "map_id": "86705",
+        "equivalent_map_ids": [
+            "82256"
+        ],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -1187,6 +1256,7 @@
         "balls_req": "2",
         "preset": "gZMefEwlggtaiaaaJraaksaaamaaYE",
         "map_id": "82275",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1206,6 +1276,7 @@
         "balls_req": "2",
         "preset": "gZMefEwYggtaiaaaJraaksaaamacUE",
         "map_id": "82314",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1225,6 +1296,7 @@
         "balls_req": "1",
         "preset": "gZMefGdwggtuiaaaJyaraaksaaamaaYE",
         "map_id": "86706",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -1245,6 +1317,7 @@
         "balls_req": "3",
         "preset": "gZMefEwNggtaiaaaJraaksaaamaaaE",
         "map_id": "82303",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1264,6 +1337,7 @@
         "balls_req": "3",
         "preset": "gZMefqFZggtaiaaaJraaksaaaE",
         "map_id": "44927",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1283,6 +1357,7 @@
         "balls_req": "3",
         "preset": "gZMefGltggtaiaaaJraaksaaamaaaE",
         "map_id": "87119",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1302,6 +1377,7 @@
         "balls_req": "3",
         "preset": "gZMefrKTggtaiaaaJraaksaaaE",
         "map_id": "47885",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1321,6 +1397,7 @@
         "balls_req": "1",
         "preset": "gZMefExHggtaiaaaJraaksaaamaaaE",
         "map_id": "82349",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1340,6 +1417,7 @@
         "balls_req": "1",
         "preset": "gZMefEwhggtaiaaaJraaksaaamaaaE",
         "map_id": "82271",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -1360,6 +1438,7 @@
         "balls_req": "1",
         "preset": "gZMefnwLggtaiaaaJraaksaaamaaaE",
         "map_id": "36333",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -1380,6 +1459,7 @@
         "balls_req": "1",
         "preset": "gZMefrgiggtaiaaaJraaksaaamaaaE",
         "map_id": "46288",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -1401,6 +1481,7 @@
         "balls_req": "1",
         "preset": "gZMefGgPggtaiaaaJraaksaaamaaaE",
         "map_id": "86881",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1420,6 +1501,7 @@
         "balls_req": "1",
         "preset": "gZMefEwjggtaiaaaJraaksaaamaaaE",
         "map_id": "82273",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1439,6 +1521,7 @@
         "balls_req": "1",
         "preset": "gZMefGjNggtaiaaaJraaksaaamaaaE",
         "map_id": "87035",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1458,6 +1541,7 @@
         "balls_req": "2",
         "preset": "gZMefEwUggtaiaaaJraaksaaamabWE",
         "map_id": "82310",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1477,6 +1561,7 @@
         "balls_req": "2",
         "preset": "gZMefEzaggtaiaaaJraaksaaamaaaE",
         "map_id": "82420",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1496,6 +1581,7 @@
         "balls_req": "3",
         "preset": "gZMefExOggtaiaaaJraaksaaamaaaE",
         "map_id": "82356",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1515,6 +1601,7 @@
         "balls_req": "2",
         "preset": "gZMefGgEggtuiaaaJyaraaksaaamaaaE",
         "map_id": "86870",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -1535,6 +1622,7 @@
         "balls_req": "4",
         "preset": "gZMefGgTggtaiaaaJraaksaaamaaaE",
         "map_id": "86885",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1554,6 +1642,7 @@
         "balls_req": "4",
         "preset": "gZMefrKSggtaiaaaJraaksaaamabWE",
         "map_id": "47884",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1573,6 +1662,7 @@
         "balls_req": "1",
         "preset": "gZMefExpggtaiaaaJraaksaaamaaYE",
         "map_id": "82331",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -1593,6 +1683,7 @@
         "balls_req": "1",
         "preset": "gZMefEEDggtaiaaaJraaksaaamaaYE",
         "map_id": "82709",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -1614,6 +1705,7 @@
         "balls_req": "1",
         "preset": "gZMefGlmggtuiaaaJyaraaksaaamaaaE",
         "map_id": "87112",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -1635,6 +1727,7 @@
         "balls_req": "1",
         "preset": "gZMefExuggtaiaaaJraaksaaamaaaE",
         "map_id": "82336",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -1656,6 +1749,7 @@
         "balls_req": "1",
         "preset": "gZMefGdyggtuiaaaJyaraaksaaamaaaE",
         "map_id": "86708",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -1676,6 +1770,7 @@
         "balls_req": "1",
         "preset": "gZMefGdzggtuiaaaJyaraaksaaamaaaE",
         "map_id": "86709",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -1696,6 +1791,7 @@
         "balls_req": "1",
         "preset": "gZMefGdAggtuiaaaJyaraaksaaamaaaE",
         "map_id": "86710",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -1716,6 +1812,7 @@
         "balls_req": "1",
         "preset": "gZMefEyKggtaiaaaJraaksaaamaaYE",
         "map_id": "82404",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1735,6 +1832,7 @@
         "balls_req": "1",
         "preset": "gZMefEyaggtaiaaaJraaksaaamaaaE",
         "map_id": "82368",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -1756,6 +1854,7 @@
         "balls_req": "1",
         "preset": "gZMefGdBggtuiaaaJyaraaksaaamaaaE",
         "map_id": "86711",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -1777,6 +1876,7 @@
         "balls_req": "1",
         "preset": "gZMefExEggtaiaaaJraaksaaamaaaE",
         "map_id": "82346",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -1797,6 +1897,7 @@
         "balls_req": "1",
         "preset": "gZMefEymggtaiaaaJraaksaaamaaaE",
         "map_id": "82380",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -1818,6 +1919,7 @@
         "balls_req": "1",
         "preset": "gZMefEyoggtaiaaaJraaksaaamaaaE",
         "map_id": "82382",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -1839,6 +1941,7 @@
         "balls_req": "1",
         "preset": "gZMefEyVggtaiaaaJraaksaaamaaaE",
         "map_id": "82415",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1858,6 +1961,7 @@
         "balls_req": "1",
         "preset": "gZMefGdIggtdoiaaaJyaraaksaaamaaaunqqdjbE",
         "map_id": "86718",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -1880,6 +1984,7 @@
         "balls_req": "1",
         "preset": "gZMefEyYggtaiaaaJraaksaaamaaaE",
         "map_id": "82418",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -1899,6 +2004,7 @@
         "balls_req": "2",
         "preset": "gZMefEyZggtaiaaaJraaksaaaE",
         "map_id": "82419",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1918,6 +2024,7 @@
         "balls_req": "1",
         "preset": "gZMefGPhggtaiaaaJraaksaaamaaapfE",
         "map_id": "88667",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -1938,6 +2045,7 @@
         "balls_req": "2",
         "preset": "gZMefEzcggtaiaaaJraaksaaaE",
         "map_id": "82422",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1957,6 +2065,7 @@
         "balls_req": "1",
         "preset": "gZMefEzJggtaiaaaJraaksaaamaaaE",
         "map_id": "82455",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -1976,6 +2085,7 @@
         "balls_req": "4? 5? 6?",
         "preset": "",
         "map_id": "82425",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -1995,6 +2105,7 @@
         "balls_req": "3",
         "preset": "gZMefGJtggtaiaaaJraaksaaamaaYE",
         "map_id": "88367",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2014,6 +2125,7 @@
         "balls_req": "1",
         "preset": "gZMefEzhggtaiaaaJraaksaaamaaYE",
         "map_id": "82427",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2033,6 +2145,7 @@
         "balls_req": "2",
         "preset": "gZMefEHVggtaiaaaJraaksaaamaaaE",
         "map_id": "82883",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2052,6 +2165,7 @@
         "balls_req": "1",
         "preset": "gZMefEAPggtuiaaaJyaraaksaaamabWE",
         "map_id": "82513",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -2072,6 +2186,7 @@
         "balls_req": "1",
         "preset": "gZMefnubggtuiaaaJyaraaksaaamaaaE",
         "map_id": "36193",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -2092,6 +2207,7 @@
         "balls_req": "1",
         "preset": "gZMefGdCggtuiaaaJyaraaksaaaE",
         "map_id": "86712",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Fall",
@@ -2112,6 +2228,7 @@
         "balls_req": "1",
         "preset": "gZMefEAyggtaiaaaJraaksaaamaaaE",
         "map_id": "82496",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2131,6 +2248,7 @@
         "balls_req": "1",
         "preset": "gZMefEAYggtaiaaaJraaksaaamaaaE",
         "map_id": "82522",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -2151,6 +2269,7 @@
         "balls_req": "1",
         "preset": "gZMdfVkggtuiaaaJyaraaksaaamaaaE",
         "map_id": "2454",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -2171,6 +2290,7 @@
         "balls_req": "1",
         "preset": "gZMefEAAggtaiaaaJraaksaaamaaaE",
         "map_id": "82498",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2190,6 +2310,7 @@
         "balls_req": "1",
         "preset": "gZMefEAXggtaiaaaJraaksaaamaaaE",
         "map_id": "82521",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2209,6 +2330,7 @@
         "balls_req": "1",
         "preset": "gZMefEzCggtaiaaaJraaksaaamaaaE",
         "map_id": "82448",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -2228,6 +2350,7 @@
         "balls_req": "1",
         "preset": "gZMefEzDggtuiaaaJyaraaksaaamaaaE",
         "map_id": "82449",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -2248,6 +2371,7 @@
         "balls_req": "4",
         "preset": "gZMefGkjggtaiaaaJraaksaaamaaaE",
         "map_id": "87057",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -2268,6 +2392,7 @@
         "balls_req": "1",
         "preset": "gZMefGRaggtuiaaaJyaraaksaaamaaabE",
         "map_id": "88764",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -2288,6 +2413,7 @@
         "balls_req": "4",
         "preset": "gZMefEAFggtaiaaaJraakE",
         "map_id": "82503",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2307,6 +2433,7 @@
         "balls_req": "1",
         "preset": "gZMefEAJggtaiaaaJraaksaaamaaaE",
         "map_id": "82507",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2326,6 +2453,7 @@
         "balls_req": "3",
         "preset": "gZMefFIfggtaiaaaJraaksaaaE",
         "map_id": "85597",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2345,6 +2473,7 @@
         "balls_req": "1",
         "preset": "gZMefEALggtaiaaaJraaksaaamaaaE",
         "map_id": "82509",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -2365,6 +2494,7 @@
         "balls_req": "1",
         "preset": "gZMefEAQggtaiaaaJraaksaaamaaaE",
         "map_id": "82514",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Fall",
@@ -2385,6 +2515,7 @@
         "balls_req": "1",
         "preset": "gZMefEATggtaiaaaJraaksaaamaaaE",
         "map_id": "82517",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2404,6 +2535,7 @@
         "balls_req": "2",
         "preset": "gZMefFKLggtaiaaaJraaksaaamaaaE",
         "map_id": "85733",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2423,6 +2555,7 @@
         "balls_req": "5",
         "preset": "gZMefFEoggtaiaaaJraaksaaamaaaE",
         "map_id": "85398",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2442,6 +2575,7 @@
         "balls_req": "1",
         "preset": "gZMefGdDggtuiaaaJyaraaksaaamaaaE",
         "map_id": "86713",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -2463,6 +2597,7 @@
         "balls_req": "1",
         "preset": "gZMefGdEggtuiaaaJyaraaksaaamaaaE",
         "map_id": "86714",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -2484,6 +2619,7 @@
         "balls_req": "1",
         "preset": "gZMefEDxggtaiaaaJraaksaaamaaaE",
         "map_id": "82651",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2504,6 +2640,7 @@
         "balls_req": "1",
         "preset": "gZMefEBXggtaiaaaJraaksaaamaaaE",
         "map_id": "82573",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2524,6 +2661,7 @@
         "balls_req": "1",
         "preset": "gZMefEDyggtaiaaaJraaksaaamaaapfE",
         "map_id": "82652",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2544,6 +2682,7 @@
         "balls_req": "1",
         "preset": "gZMefGtBggtuiaaaJyaraaksaaamaaaE",
         "map_id": "87543",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -2565,6 +2704,7 @@
         "balls_req": "1",
         "preset": "gZMefrcFggtaiaaaJraaksaaamaaaE",
         "map_id": "46103",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2584,6 +2724,7 @@
         "balls_req": "1",
         "preset": "gZMefEBUggtaiaaaJraaksaaamaaYE",
         "map_id": "82570",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2603,6 +2744,7 @@
         "balls_req": "3",
         "preset": "gZMefEDqggtaiaaaJraaksaaamabWE",
         "map_id": "82644",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2622,6 +2764,9 @@
         "balls_req": "3",
         "preset": "gZMefERkggtaiaaaJBraaksaaauaaajTE",
         "map_id": "83366",
+        "equivalent_map_ids": [
+            "83219"
+        ],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2641,6 +2786,7 @@
         "balls_req": "3",
         "preset": "gZMefFIyggtaiaaaJraaksaaamabWE",
         "map_id": "85616",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2660,6 +2806,7 @@
         "balls_req": "4",
         "preset": "gZMefEDrggtaiaaaJraaksaaamabWE",
         "map_id": "82645",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2679,6 +2826,7 @@
         "balls_req": "3",
         "preset": "gZMefEDjggtaiaaaJraaksaaamaaYE",
         "map_id": "82637",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2693,11 +2841,12 @@
     "83015": {
         "map_name": "Buddy Union 3.3 Deluxe (Official FWO)",
         "author": "Danny & FWO",
-        "difficulty": "8.3",
+        "difficulty": "6.6",
         "difficultyFinal": "8.3",
         "balls_req": "4",
         "preset": "gZMefEKxggtaiaaaJraaksaaaE",
         "map_id": "83015",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2717,6 +2866,7 @@
         "balls_req": "1",
         "preset": "gZMefHeBggtaiaaaJBraaksaaamaaaE",
         "map_id": "89467",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -2737,6 +2887,7 @@
         "balls_req": "2",
         "preset": "gZMefEKqggtaiaaaJraaksaaamaaaE",
         "map_id": "83008",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2756,6 +2907,7 @@
         "balls_req": "1",
         "preset": "gZMefEDQggtaiaaaJraaksaaamaaaE",
         "map_id": "82670",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2775,6 +2927,7 @@
         "balls_req": "2",
         "preset": "gZMefHfoggtaiaaaJraaksaaamabWE",
         "map_id": "89506",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -2794,6 +2947,7 @@
         "balls_req": "1",
         "preset": "gZMefEEmggtaiaaaJraaksaaamaaaE",
         "map_id": "82692",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -2814,6 +2968,7 @@
         "balls_req": "2",
         "preset": "gZMefGdGggtuiaaaJyaraaksaaamaaaE",
         "map_id": "86716",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Mars Climb",
@@ -2835,6 +2990,7 @@
         "balls_req": "1",
         "preset": "gZMefGdHggtuiaaaJyaraaksaaamaaaE",
         "map_id": "86717",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -2855,6 +3011,7 @@
         "balls_req": "1",
         "preset": "gZMefEEGggtaiaaaJraaksaaamaaaE",
         "map_id": "82712",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -2876,6 +3033,7 @@
         "balls_req": "1",
         "preset": "gZMefEEIggtaiaaaJraaksaaamaaaE",
         "map_id": "82714",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -2897,6 +3055,7 @@
         "balls_req": "1",
         "preset": "gZMefFLaggtaiaaaJraaksaaamaaaE",
         "map_id": "85748",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -2916,6 +3075,7 @@
         "balls_req": "1",
         "preset": "gZMefGiHggtaiaaaJraaksaaamaaaE",
         "map_id": "86977",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -2935,6 +3095,7 @@
         "balls_req": "1",
         "preset": "gZMefGQZggtaiaaaJraaksaaamaaaE",
         "map_id": "88763",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -2954,6 +3115,7 @@
         "balls_req": "1",
         "preset": "gZMefFOBtaiaaaJyaraaksaaamalCYEG",
         "map_id": "85931",
+        "equivalent_map_ids": [],
         "categories": [
             "Spike Maze",
             "OneShot"
@@ -2973,6 +3135,7 @@
         "balls_req": "4",
         "preset": "gZMefFWSggtaiaaaJraaksaaamaaaE",
         "map_id": "86364",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -2993,6 +3156,7 @@
         "balls_req": "1",
         "preset": "gZMefFXZggtaiaaaJraaksaaamaaaE",
         "map_id": "86423",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -3012,6 +3176,7 @@
         "balls_req": "2",
         "preset": "gZMefFYfggtaiaaaJraaksaaamaaYE",
         "map_id": "86429",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -3031,6 +3196,7 @@
         "balls_req": "1",
         "preset": "gZMefFZjggtaiaaaJraaksaaamaaaE",
         "map_id": "86485",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3050,6 +3216,7 @@
         "balls_req": "2",
         "preset": "",
         "map_id": "86488",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3070,6 +3237,7 @@
         "balls_req": "3",
         "preset": "gZMefFZoggtaiaaaJybraaksaaaE",
         "map_id": "86490",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -3089,6 +3257,7 @@
         "balls_req": "1",
         "preset": "gZMefFZpggtaiaaaJraaksaaamaaaE",
         "map_id": "86491",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3108,6 +3277,7 @@
         "balls_req": "1",
         "preset": "gZMefFWAggtaiaaaJyaraaksaaamaaaE",
         "map_id": "86346",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -3128,6 +3298,7 @@
         "balls_req": "2",
         "preset": "gZMefFSEtaiaaaJyaraaksaaamabWE",
         "map_id": "86142",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3148,6 +3319,7 @@
         "balls_req": "1",
         "preset": "gZMefFZyggtdiaaaJyaraaksaaamaaaE",
         "map_id": "86500",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -3169,6 +3341,7 @@
         "balls_req": "2",
         "preset": "gZMefHcdggtaiaaaJyYraaksaaamaaaOaakE",
         "map_id": "89339",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -3189,6 +3362,7 @@
         "balls_req": "1",
         "preset": "gZMefGaOggtaiaaaJyaraaksaaamaaaE",
         "map_id": "86568",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3208,6 +3382,9 @@
         "balls_req": "4",
         "preset": "gZMefHLHtaiaaaJyaraaksaaamabWE",
         "map_id": "91189",
+        "equivalent_map_ids": [
+            "86569"
+        ],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -3227,6 +3404,7 @@
         "balls_req": "3",
         "preset": "gZMefGaStaiaaaJyaraaksaaaE",
         "map_id": "86572",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -3246,6 +3424,7 @@
         "balls_req": "2",
         "preset": "gZMefJaxtaiaaaJyaraaksaaamaaYE",
         "map_id": "94663",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -3265,6 +3444,7 @@
         "balls_req": "2",
         "preset": "gZMefIIvtaiaaaJyaraakYG",
         "map_id": "93725",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "OneShot"
@@ -3284,6 +3464,7 @@
         "balls_req": "1",
         "preset": "gZMefGRcggtaiaaaJyaraaksaaamaaaE",
         "map_id": "88766",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3303,6 +3484,7 @@
         "balls_req": "1",
         "preset": "gZMefGllggtaiaaaJyaraaksaaamaaapfE",
         "map_id": "87111",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "AnyGate",
@@ -3323,6 +3505,7 @@
         "balls_req": "1",
         "preset": "gZMefGbdggtaiaaaJyaraaksaaamaaapfE",
         "map_id": "86583",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -3344,6 +3527,7 @@
         "balls_req": "1",
         "preset": "gZMefGbeggtaiaaaJyaraaksaaamaaapfE",
         "map_id": "86584",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -3365,6 +3549,7 @@
         "balls_req": "1",
         "preset": "gZMefGbfggtaiaaaJyaraaksaaamaaaE",
         "map_id": "86585",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -3385,6 +3570,7 @@
         "balls_req": "2",
         "preset": "gZMefGdqggtaiaaaJyaraaksaaamaaaE",
         "map_id": "86700",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3405,6 +3591,7 @@
         "balls_req": "2",
         "preset": "gZMefGdoggtaiaaaJyaraaksaaamaaaE",
         "map_id": "86698",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3424,6 +3611,7 @@
         "balls_req": "1",
         "preset": "gZMefrrZggtaiaaaJyaraaksaaamaaaE",
         "map_id": "46903",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3443,6 +3631,7 @@
         "balls_req": "1",
         "preset": "gZMefGhlggtaiaaaJraaksaaamaaajbE",
         "map_id": "86903",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -3462,6 +3651,7 @@
         "balls_req": "1",
         "preset": "gZMefGdLggtaiaaaJraaksaaamaaaE",
         "map_id": "86721",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -3482,6 +3672,7 @@
         "balls_req": "1",
         "preset": "gZMefGdNggtaiaaaJyaraaksaaamaaaE",
         "map_id": "86723",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -3502,6 +3693,7 @@
         "balls_req": "1",
         "preset": "gZMefGgsggtaiaaaJyaraaksaaamaakE",
         "map_id": "86858",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3521,6 +3713,7 @@
         "balls_req": "1",
         "preset": "gZMefdSHggtuiaaaJyaraaksaaamaaaunqqE",
         "map_id": "10433",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -3541,6 +3734,7 @@
         "balls_req": "1",
         "preset": "gZMefGemggtaiaaaJraaksaaaE",
         "map_id": "86748",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3562,6 +3756,7 @@
         "balls_req": "2",
         "preset": "gZMefGeoggtaiaaaJyaraaksaaamaaaE",
         "map_id": "86750",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -3581,6 +3776,7 @@
         "balls_req": "1",
         "preset": "gZMefDYqggtaiaaaJyaraaksaaamaaapfE",
         "map_id": "81032",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -3602,6 +3798,7 @@
         "balls_req": "1",
         "preset": "gZMefgOwtaiaaaJyaraaksaaamaaaE",
         "map_id": "18326",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3622,6 +3819,7 @@
         "balls_req": "2",
         "preset": "gZMefkOftaiaaaJyaraaksaaamabWunqqE",
         "map_id": "29125",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "AnyGate"
@@ -3641,6 +3839,7 @@
         "balls_req": "1",
         "preset": "gZMefGhataiaaaJyaraaksaaamaaaE",
         "map_id": "86892",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3661,6 +3860,7 @@
         "balls_req": "3",
         "preset": "gZMefhTTggtaiaaaJyaraaksaaamabWE",
         "map_id": "21313",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "OneShot",
@@ -3682,6 +3882,7 @@
         "balls_req": "3",
         "preset": "gZMefnbHtaiaaaJyaraak",
         "map_id": "35237",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "OneShot"
@@ -3701,6 +3902,7 @@
         "balls_req": "1",
         "preset": "gZMefGRhtaiaaaJyaraaksaaamaaaunqq",
         "map_id": "88771",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3721,6 +3923,7 @@
         "balls_req": "1",
         "preset": "gZMefGhiggtaiaaaJyaraaksaaamaaaE",
         "map_id": "86900",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -3740,6 +3943,7 @@
         "balls_req": "1",
         "preset": "gZMefGhjtaiaaaJyaraaksaaamaaaE",
         "map_id": "86901",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3760,6 +3964,7 @@
         "balls_req": "3",
         "preset": "gZMefGhNggtaiaaaJraaksaaamaaYE",
         "map_id": "86931",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -3779,6 +3984,7 @@
         "balls_req": "2",
         "preset": "gZMefGiCggtaiaaaJyaraaksaaamabWE",
         "map_id": "86972",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -3798,6 +4004,7 @@
         "balls_req": "2",
         "preset": "gZMefGivggtaiaaaJyaraaksaaamabWE",
         "map_id": "86965",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -3817,6 +4024,7 @@
         "balls_req": "1",
         "preset": "gZMefGiGggtaiaaaJraaksaaamaaaE",
         "map_id": "86976",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3836,6 +4044,7 @@
         "balls_req": "1",
         "preset": "gZMefGtDggtaiaaaJraaksaaamaaaE",
         "map_id": "87545",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -3855,6 +4064,7 @@
         "balls_req": "1",
         "preset": "gZMefGtJggtaiaaaJraaksaaamaaaE",
         "map_id": "87551",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3875,6 +4085,7 @@
         "balls_req": "1",
         "preset": "gZMefGykggtaiaaaJraaksaaamaaaE",
         "map_id": "87786",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3895,6 +4106,7 @@
         "balls_req": "1",
         "preset": "gZMefGvSggtaiaaaJraaksaaamaaaE",
         "map_id": "87664",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3915,6 +4127,7 @@
         "balls_req": "1",
         "preset": "gZMefGxeggtaiaaaJraaksaaamaaaE",
         "map_id": "87728",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3935,6 +4148,7 @@
         "balls_req": "1",
         "preset": "gZMefGxsggtaiaaaJraaksaaamaaaE",
         "map_id": "87742",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3955,6 +4169,7 @@
         "balls_req": "1",
         "preset": "gZMefGyHggtaiaaaJraaksaaamaaajbE",
         "map_id": "87809",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -3975,6 +4190,7 @@
         "balls_req": "2",
         "preset": "gZMefGyYggtaiaaaJraaksaaamaaaE",
         "map_id": "87826",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -3994,6 +4210,7 @@
         "balls_req": "2",
         "preset": "gZMefGznggtaiaaaJraaksaaamaaaE",
         "map_id": "87841",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -4014,6 +4231,9 @@
         "balls_req": "2",
         "preset": "gZMefGzAggtaiaaaJraaksaaamaaaE",
         "map_id": "87854",
+        "equivalent_map_ids": [
+            "87583"
+        ],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -4034,6 +4254,7 @@
         "balls_req": "2",
         "preset": "gZMefGzVggtuiaaaJyaraaksaaamaaaE",
         "map_id": "87875",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -4055,6 +4276,7 @@
         "balls_req": "1",
         "preset": "gZMefGAlggtaiaaaJraaksaaamaaaE",
         "map_id": "87891",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4076,6 +4298,7 @@
         "balls_req": "1",
         "preset": "gZMefGAuggtaiaaaJraaksaaamaaaE",
         "map_id": "87900",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4096,6 +4319,7 @@
         "balls_req": "1",
         "preset": "gZMefGGaggtaiaaaJraaksaaamaaaE",
         "map_id": "88192",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4116,6 +4340,7 @@
         "balls_req": "2",
         "preset": "gZMefGBVggtaiaaaJyaraaksaaamaaaE",
         "map_id": "87979",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -4136,6 +4361,7 @@
         "balls_req": "2",
         "preset": "gZMefHkmggtuiaaaJyaraaksaaamaaaE",
         "map_id": "89764",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -4151,11 +4377,14 @@
     "95023": {
         "map_name": "Buddy system 9 (TM1 Version) 9bob9 (Official FWO) [Reversed]",
         "author": "Team 1 & FWO",
-        "difficulty": "7.0",
+        "difficulty": "7.6",
         "difficultyFinal": "7.0",
         "balls_req": "3",
         "preset": "gZMefJhtggtaiaaaJraaksaaamaaaE",
         "map_id": "95023",
+        "equivalent_map_ids": [
+            "88191"
+        ],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -4176,6 +4405,7 @@
         "balls_req": "2",
         "preset": "gZMefGERggtaiaaaJraaksaaamaaaE",
         "map_id": "88131",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -4196,6 +4426,7 @@
         "balls_req": "2",
         "preset": "gZMefGLRggtaiaaaJyaraakmaaEunqqYE",
         "map_id": "88495",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -4215,6 +4446,7 @@
         "balls_req": "2",
         "preset": "gZMefGMuggtaiaaaJraaksaaamaaaE",
         "map_id": "88524",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "AnyGate",
@@ -4235,6 +4467,7 @@
         "balls_req": "2",
         "preset": "gZMefGqaggtaiaaaJraaksaaamaaaE",
         "map_id": "87360",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -4254,6 +4487,7 @@
         "balls_req": "1",
         "preset": "gZMefGqcggtaiaaaJraaksaaamaaaE",
         "map_id": "87362",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -4273,6 +4507,7 @@
         "balls_req": "1",
         "preset": "gZMefGKMggtaiaaaJraaksaaamaaaE",
         "map_id": "88438",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -4292,6 +4527,7 @@
         "balls_req": "1",
         "preset": "gZMefGMyggtaiaaaJraaksaaamaaaE",
         "map_id": "88528",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -4311,6 +4547,7 @@
         "balls_req": "1",
         "preset": "gZMefGMAggtaiaaaJaueuraaksaaamaaaE",
         "map_id": "88530",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -4331,6 +4568,7 @@
         "balls_req": "1",
         "preset": "gZMefGMBggtuiaaaJyaraaksaaamaaabE",
         "map_id": "88531",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -4351,6 +4589,7 @@
         "balls_req": "1",
         "preset": "gZMefGOJggtaiaaaJyaraaksaaamaaaHpzpZE",
         "map_id": "88643",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4371,6 +4610,7 @@
         "balls_req": "1",
         "preset": "gZMefGOLggtuiaaaJyaraaksaaamaaaunqqpZE",
         "map_id": "88645",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4392,6 +4632,7 @@
         "balls_req": "1",
         "preset": "gZMefGPRggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88703",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4412,6 +4653,7 @@
         "balls_req": "1",
         "preset": "gZMefGOPggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88649",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -4433,6 +4675,7 @@
         "balls_req": "1",
         "preset": "",
         "map_id": "88650",
+        "equivalent_map_ids": [],
         "categories": [],
         "grav_or_classic": "Grav",
         "caps_to_win": "1",
@@ -4449,6 +4692,9 @@
         "balls_req": "1",
         "preset": "gZMefIOEggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "94046",
+        "equivalent_map_ids": [
+            "88652"
+        ],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4469,6 +4715,7 @@
         "balls_req": "1",
         "preset": "gZMefGOTggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88653",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4489,6 +4736,7 @@
         "balls_req": "1",
         "preset": "gZMefGOUggtaiaaaJyaraaksaaamaaZE",
         "map_id": "88654",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -4509,6 +4757,7 @@
         "balls_req": "1",
         "preset": "gZMefGOVggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88655",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -4530,6 +4779,7 @@
         "balls_req": "1",
         "preset": "gZMefGPSggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88704",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4550,6 +4800,7 @@
         "balls_req": "1",
         "preset": "gZMefGOXggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88657",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4570,6 +4821,7 @@
         "balls_req": "1",
         "preset": "gZMefGPaggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88660",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "AnyGate",
@@ -4590,6 +4842,7 @@
         "balls_req": "1",
         "preset": "gZMefGPbggtaiaaaJyaraaksaaamaaaunqqpZE",
         "map_id": "88661",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4610,6 +4863,7 @@
         "balls_req": "1",
         "preset": "gZMefGPdggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88663",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4630,6 +4884,7 @@
         "balls_req": "1",
         "preset": "gZMefGPfggtaiaaaJyaraaksaaamaaaE",
         "map_id": "88665",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -4649,6 +4904,7 @@
         "balls_req": "1",
         "preset": "gZMefGPgggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88666",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4670,6 +4926,7 @@
         "balls_req": "1",
         "preset": "gZMefGPiggtaiaaaJraaksaaamaaapZE",
         "map_id": "88668",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4690,6 +4947,7 @@
         "balls_req": "1",
         "preset": "gZMefGPnggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88673",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Fall",
@@ -4710,6 +4968,7 @@
         "balls_req": "1",
         "preset": "gZMefGPpggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88675",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Fall",
@@ -4730,6 +4989,7 @@
         "balls_req": "1",
         "preset": "gZMefGQMggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88750",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4750,6 +5010,7 @@
         "balls_req": "2",
         "preset": "gZMefIYEggtaiaaaJraaksaaamaaaE",
         "map_id": "94566",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4770,6 +5031,7 @@
         "balls_req": "1",
         "preset": "gZMefGSLggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88853",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4792,6 +5054,7 @@
         "balls_req": "1",
         "preset": "gZMefGSMggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88854",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -4813,6 +5076,7 @@
         "balls_req": "1",
         "preset": "gZMefGSNggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88855",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Fall",
@@ -4834,6 +5098,7 @@
         "balls_req": "1",
         "preset": "gZMefGSOggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "88856",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Fall",
@@ -4855,6 +5120,7 @@
         "balls_req": "1",
         "preset": "gZMefGUdggtaiaaaJyaraaksaaamaaaE",
         "map_id": "88923",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -4875,6 +5141,7 @@
         "balls_req": "1",
         "preset": "gZMefGUeggtaiaaaJyaraaksaaamaaaE",
         "map_id": "88924",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -4894,6 +5161,7 @@
         "balls_req": "1",
         "preset": "gZMefGUfggtaiaaaJyaraaksaaamaaaE",
         "map_id": "88925",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -4913,6 +5181,7 @@
         "balls_req": "2",
         "preset": "gZMefGVeggtaiaaaJraaksaaamaaaE",
         "map_id": "88976",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -4932,6 +5201,7 @@
         "balls_req": "1",
         "preset": "gZMefrMOtaiaaaJraaksaaamaaa",
         "map_id": "47984",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -4953,6 +5223,7 @@
         "balls_req": "1",
         "preset": "gZMefrBKtaiaaaJraaksaaaunqq",
         "map_id": "47408",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -4974,6 +5245,7 @@
         "balls_req": "1",
         "preset": "gZMefGWwtkoiaaaJyaraaksaaa",
         "map_id": "89046",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -4994,6 +5266,7 @@
         "balls_req": "1",
         "preset": "gZMefGWxtaiaaaJyaraaksaaa",
         "map_id": "89047",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5015,6 +5288,7 @@
         "balls_req": "1",
         "preset": "gZMefGWDtaiaaaJyaraaksaaamaaa",
         "map_id": "89053",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5036,6 +5310,7 @@
         "balls_req": "1",
         "preset": "gZMefGWJggtaiaaaJyaraaksaaamaaaE",
         "map_id": "89059",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -5055,6 +5330,7 @@
         "balls_req": "1",
         "preset": "gZMefGWSggtaiaaaJyaraaksaaamaaaE",
         "map_id": "89068",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -5074,6 +5350,7 @@
         "balls_req": "1",
         "preset": "gZMeflaaggtaiaaaJyaraakmaaaHpzE",
         "map_id": "29744",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -5093,6 +5370,7 @@
         "balls_req": "1",
         "preset": "gZMefDuttaiaaaJyaraaksaaamaaa",
         "map_id": "79475",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5114,6 +5392,7 @@
         "balls_req": "1",
         "preset": "gZMefFpgtaiaaaJyaraaksaaamaaa",
         "map_id": "84610",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5135,6 +5414,7 @@
         "balls_req": "1",
         "preset": "gZMefGXitaiaaaJyaraak",
         "map_id": "89084",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5156,6 +5436,7 @@
         "balls_req": "1",
         "preset": "gZMefGXjggtaiaaaJyaraakE",
         "map_id": "89085",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -5175,6 +5456,7 @@
         "balls_req": "1",
         "preset": "gZMefGXkggtaiaaaJyaraakE",
         "map_id": "89086",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5195,6 +5477,7 @@
         "balls_req": "1",
         "preset": "gZMefDXgtaiaaaJyaraaksaaEmaaa",
         "map_id": "80970",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5216,6 +5499,7 @@
         "balls_req": "2",
         "preset": "gZMefGXlggtaiaaaJyaraaksaaamaaYE",
         "map_id": "89087",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -5235,6 +5519,7 @@
         "balls_req": "3",
         "preset": "gZMefGXotaiaaaJyaraak",
         "map_id": "89090",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -5255,6 +5540,7 @@
         "balls_req": "1",
         "preset": "gZMefvdStaiaaaJyaraak",
         "map_id": "56984",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5277,6 +5563,7 @@
         "balls_req": "1",
         "preset": "gZMefGZrtaiaaaJyaraak",
         "map_id": "89197",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5298,6 +5585,7 @@
         "balls_req": "1",
         "preset": "gZMefGZttaiaaaJyaraaksaaa",
         "map_id": "89199",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5318,6 +5606,7 @@
         "balls_req": "1",
         "preset": "gZMefHaKtaiaaaJyaraaksaaamaaE",
         "map_id": "89268",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5338,6 +5627,7 @@
         "balls_req": "1",
         "preset": "gZMefGweggtaiaaaJyaraaksaaamaaaE",
         "map_id": "87676",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -5357,6 +5647,7 @@
         "balls_req": "1",
         "preset": "gZMefCfKtaiaaaJyaraak",
         "map_id": "76008",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5378,6 +5669,7 @@
         "balls_req": "1",
         "preset": "gZMefCiCtaiaaaJyaraak",
         "map_id": "76156",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5399,6 +5691,7 @@
         "balls_req": "1",
         "preset": "gZMefGZvggtuiaaaJyaraaksaaamaakE",
         "map_id": "89201",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -5420,6 +5713,7 @@
         "balls_req": "1",
         "preset": "gZMefGZwggtuiaaaJyaraaksaaamaakE",
         "map_id": "89202",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -5441,6 +5735,7 @@
         "balls_req": "1",
         "preset": "gZMefGZxggtuiaaaJyaraaksaaamaakE",
         "map_id": "89203",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Mars Climb",
@@ -5462,6 +5757,7 @@
         "balls_req": "1",
         "preset": "gZMefHcbtaiaaaJyaraaksaaamaaa",
         "map_id": "89337",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5483,6 +5779,7 @@
         "balls_req": "3",
         "preset": "gZMefHjzggtaiaaaJyaraaksaaamaakE",
         "map_id": "89725",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -5502,6 +5799,7 @@
         "balls_req": "1",
         "preset": "gZMefHcfggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "89341",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -5522,6 +5820,7 @@
         "balls_req": "2",
         "preset": "gZMefHcRggtaiaaaJyaraakmaaEunqqYE",
         "map_id": "89379",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -5541,6 +5840,7 @@
         "balls_req": "1",
         "preset": "gZMefHdvggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "89409",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -5562,6 +5862,7 @@
         "balls_req": "1",
         "preset": "gZMefHcVggtaiaaaJraaksaaamaaaE",
         "map_id": "89383",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -5581,6 +5882,7 @@
         "balls_req": "1",
         "preset": "gZMefHcWggtaiaaaJyaraaksaaamaaapbE",
         "map_id": "89384",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5601,6 +5903,7 @@
         "balls_req": "1",
         "preset": "gZMefHdgggtaiaaaJraaksaaamaaaE",
         "map_id": "89394",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -5620,6 +5923,7 @@
         "balls_req": "1",
         "preset": "gZMefHcYggtaiaaaJraaksaaamaaapbE",
         "map_id": "89386",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5640,6 +5944,7 @@
         "balls_req": "1",
         "preset": "gZMefHdyggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "89412",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -5661,6 +5966,7 @@
         "balls_req": "1",
         "preset": "gZMefHdzggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "89413",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -5683,6 +5989,7 @@
         "balls_req": "3",
         "preset": "gZMefHexggtaiaaaJraaksaaamaaauaaaSPuTbE",
         "map_id": "89463",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "AnyGate",
@@ -5703,6 +6010,7 @@
         "balls_req": "1",
         "preset": "gZMefHdHggtaiaaaJraaasaaamaaauaaaE",
         "map_id": "89421",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "AnyGate",
@@ -5723,6 +6031,7 @@
         "balls_req": "1",
         "preset": "gZMefHdKggtaiaaaJyaraaksaaamaaaE",
         "map_id": "89424",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -5743,6 +6052,7 @@
         "balls_req": "1",
         "preset": "gZMefHeyggtaiaaaJraaksaaamaaaE",
         "map_id": "89464",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -5762,6 +6072,7 @@
         "balls_req": "1",
         "preset": "gZMefHdVggtaiaaaJyaraaksaaamaaaYE",
         "map_id": "89435",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -5781,6 +6092,7 @@
         "balls_req": "1",
         "preset": "gZMefHekggtaiaaaJyaraaksaaamaaaYE",
         "map_id": "89450",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5801,6 +6113,7 @@
         "balls_req": "2",
         "preset": "gZMefHeoggtaiaaaJNEraaamaaEE",
         "map_id": "89454",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "SoloPossible",
@@ -5822,6 +6135,7 @@
         "balls_req": "1",
         "preset": "gZMefHhhtaiaaaJyaraak",
         "map_id": "89603",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -5843,6 +6157,7 @@
         "balls_req": "1",
         "preset": "gZMefHeJggtuiaaaJyaraaksaaamaaaE",
         "map_id": "89475",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -5863,6 +6178,7 @@
         "balls_req": "1",
         "preset": "gZMefHeIggtaiaaaJraaksaaamaaaE",
         "map_id": "89474",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "AnyGate"
@@ -5882,6 +6198,7 @@
         "balls_req": "3",
         "preset": "gZMefHeYggtaiaaaJyaraaksaaaYpdE",
         "map_id": "89490",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -5902,6 +6219,7 @@
         "balls_req": "1",
         "preset": "gZMefHfjggtaiaaaJraaksaaamaaapZE",
         "map_id": "89501",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -5922,6 +6240,7 @@
         "balls_req": "2",
         "preset": "gZMefHfpggtaiaaaJraaksaaamaaapZE",
         "map_id": "89507",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -5942,6 +6261,7 @@
         "balls_req": "1",
         "preset": "gZMefHggggtaiaaaJraaksaaauaaajTE",
         "map_id": "89550",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -5962,6 +6282,7 @@
         "balls_req": "1",
         "preset": "gZMefDlJtaiaaaJraakmaaa",
         "map_id": "79023",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -5983,6 +6304,7 @@
         "balls_req": "1",
         "preset": "gZMefHgiggtaiaaaJraaksaaauaaajTE",
         "map_id": "89552",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -6003,6 +6325,7 @@
         "balls_req": "1",
         "preset": "gZMefHgLtaiaaaJraaksaaa",
         "map_id": "89581",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -6022,6 +6345,7 @@
         "balls_req": "1",
         "preset": "gZMefHgOtaiaaaJraak",
         "map_id": "89584",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6038,11 +6362,12 @@
     "89585": {
         "map_name": "Aussie Team Action V2 Complete [3 jump]",
         "author": "Curveballed & FWO",
-        "difficulty": "NULL",
+        "difficulty": "2.7",
         "difficultyFinal": "TBD",
         "balls_req": "3",
         "preset": "gZMefHgPggtaiaaaJyaraaksaaamabWYpdE",
         "map_id": "89585",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -6063,6 +6388,7 @@
         "balls_req": "1",
         "preset": "gZMefHhOggtaiaaaJraaksaaamaaauaaajbE",
         "map_id": "89636",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -6083,6 +6409,7 @@
         "balls_req": "1",
         "preset": "gZMefHigggtaiaaaJraakmaaaE",
         "map_id": "89654",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -6103,6 +6430,7 @@
         "balls_req": "1",
         "preset": "gZMefHiiggtaiaaaJBraaksaaEmabsuacUE",
         "map_id": "89656",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -6124,6 +6452,7 @@
         "balls_req": "1",
         "preset": "gZMefHinggtaiaaaJBraaksaaEmabsuacUE",
         "map_id": "89661",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -6145,6 +6474,7 @@
         "balls_req": "1",
         "preset": "gZMefHjtggtkiaaaJByaraaksaaEmabsuacUE",
         "map_id": "89719",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Tower",
@@ -6166,6 +6496,7 @@
         "balls_req": "1",
         "preset": "gZMefCGjtaiaaaJyaraak",
         "map_id": "77385",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6186,6 +6517,7 @@
         "balls_req": "1",
         "preset": "gZMefHjrggtaiaaaJyaraaksaaamaaauaaaTbpZE",
         "map_id": "89717",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -6207,6 +6539,7 @@
         "balls_req": "2",
         "preset": "gZMefHjKggtaiaaaJraaksaaamaaYE",
         "map_id": "89736",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -6226,6 +6559,7 @@
         "balls_req": "3",
         "preset": "gZMefHjvggtaiaaaJraaksaaamaaauaaajTE",
         "map_id": "89721",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -6246,6 +6580,7 @@
         "balls_req": "2",
         "preset": "gZMefHjTggtaiaaaJraaksaaamaaaE",
         "map_id": "89745",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -6266,6 +6601,7 @@
         "balls_req": "1",
         "preset": "gZMefHjUggtaiaaaJraakE",
         "map_id": "89746",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -6285,6 +6621,7 @@
         "balls_req": "1",
         "preset": "gZMefHjXtaiaaaJyaraaksaaa",
         "map_id": "89749",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6305,6 +6642,7 @@
         "balls_req": "1",
         "preset": "gZMefHjYggtaiaaaJraaksaaamaaauaaajbE",
         "map_id": "89750",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -6324,6 +6662,7 @@
         "balls_req": "1",
         "preset": "gZMefHkaggtaiaaaJyaraaksaaamaaEunqqE",
         "map_id": "89752",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "AnyGate"
@@ -6343,6 +6682,7 @@
         "balls_req": "1",
         "preset": "gZMefHkcggtuiaaaJyaraakE",
         "map_id": "89754",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6363,6 +6703,7 @@
         "balls_req": "1",
         "preset": "gZMefnehggtaiaaaJraaksaaamaaaunqqE",
         "map_id": "35367",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6383,6 +6724,7 @@
         "balls_req": "2",
         "preset": "gZMefHldtaiaaaJyaraak",
         "map_id": "89807",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -6405,6 +6747,7 @@
         "balls_req": "2",
         "preset": "gZMefHkkggtaiaaaJraakmaaaE",
         "map_id": "89762",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -6425,6 +6768,7 @@
         "balls_req": "1",
         "preset": "gZMefHktggtaiaaaJraaksaaamaaaE",
         "map_id": "89771",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -6444,6 +6788,7 @@
         "balls_req": "2",
         "preset": "gZMefHkVggtaiaaaJyaraakpZE",
         "map_id": "89799",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "OneShot",
@@ -6465,6 +6810,9 @@
         "balls_req": "1",
         "preset": "gZMefHlVtaiaaaJyaraaksaaamaaa",
         "map_id": "89851",
+        "equivalent_map_ids": [
+            "89818"
+        ],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -6485,6 +6833,7 @@
         "balls_req": "1",
         "preset": "gZMefznctaiaaaJyaraakmarq",
         "map_id": "68278",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6505,6 +6854,7 @@
         "balls_req": "1",
         "preset": "gZMefHkyggtaiaaaJyaraaksaaamaaaE",
         "map_id": "89776",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Fall",
@@ -6525,6 +6875,7 @@
         "balls_req": "1",
         "preset": "gZMefHkztaiaaaJyaraak",
         "map_id": "89777",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6545,6 +6896,7 @@
         "balls_req": "1",
         "preset": "gZMefIEwtaiaaaJyaraak",
         "map_id": "93518",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6565,6 +6917,7 @@
         "balls_req": "1",
         "preset": "gZMefHkNggtaiaaaJyaraakmaaaE",
         "map_id": "89791",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -6584,6 +6937,7 @@
         "balls_req": "1",
         "preset": "gZMefHkOggtaiaaaJyaraakmaaaunqqE",
         "map_id": "89792",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -6603,6 +6957,7 @@
         "balls_req": "1",
         "preset": "gZMefHkQggtaiaaaJraaksaaamaaaunqqE",
         "map_id": "89794",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6623,6 +6978,7 @@
         "balls_req": "1",
         "preset": "gZMefHkStaiaaaJyaraaksaaa",
         "map_id": "89796",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6643,6 +6999,7 @@
         "balls_req": "1",
         "preset": "gZMefHkXggtaiaaaJyaraaksaaamaaaHpzYEG",
         "map_id": "89801",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -6662,6 +7019,7 @@
         "balls_req": "3",
         "preset": "gZMefHlcggtuiaaaJyaraakmaaaE",
         "map_id": "89806",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -6683,6 +7041,7 @@
         "balls_req": "1",
         "preset": "gZMefHlwtaiaaaJyaraaksaaa",
         "map_id": "89826",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6703,6 +7062,7 @@
         "balls_req": "1",
         "preset": "gZMefESutaiaaaJyaraakuaaajT",
         "map_id": "83428",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6724,6 +7084,7 @@
         "balls_req": "1",
         "preset": "gZMdfKWggtaiaaaJyaraakE",
         "map_id": "1920",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6744,6 +7105,7 @@
         "balls_req": "1",
         "preset": "gZMefHlEggtaiaaaJyaraaksaaamaaEYE",
         "map_id": "89834",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -6763,6 +7125,7 @@
         "balls_req": "2",
         "preset": "gZMefHlJggtaiaaaJraakE",
         "map_id": "89839",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -6783,6 +7146,7 @@
         "balls_req": "2",
         "preset": "gZMefHmgggtaiaaaJraakE",
         "map_id": "89862",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -6803,6 +7167,7 @@
         "balls_req": "1",
         "preset": "gZMefHmtggtaiaaaJraaksaaaE",
         "map_id": "89875",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6823,6 +7188,7 @@
         "balls_req": "1",
         "preset": "gZMefHmHtaiaaaJyaraaksaaa",
         "map_id": "89889",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6843,6 +7209,7 @@
         "balls_req": "1",
         "preset": "gZMefHmAtaiaaaJyaraak",
         "map_id": "89882",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6864,6 +7231,7 @@
         "balls_req": "1",
         "preset": "gZMefHmBtaiaaaJyaraak",
         "map_id": "89883",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6884,6 +7252,7 @@
         "balls_req": "2",
         "preset": "gZMefHnLggtaiaaaJaEraaksaaaEG",
         "map_id": "89945",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -6904,6 +7273,7 @@
         "balls_req": "3",
         "preset": "gZMefHotggtaiaaaJraaksaaamabWE",
         "map_id": "89979",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -6923,6 +7293,7 @@
         "balls_req": "1",
         "preset": "gZMefHoQtaiaaaJyaraaksaaamaaa",
         "map_id": "90002",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -6943,6 +7314,7 @@
         "balls_req": "3",
         "preset": "gZMefHpoggtaiaaaJyaraaksaaaYEG",
         "map_id": "90026",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "OneShot"
@@ -6962,6 +7334,7 @@
         "balls_req": "2",
         "preset": "gZMefHlNggtaiaaaJraakmaaaE",
         "map_id": "89843",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -6982,6 +7355,7 @@
         "balls_req": "1",
         "preset": "gZMefHsoggtaiaaaJraaksaaamaaaE",
         "map_id": "90182",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7002,6 +7376,7 @@
         "balls_req": "5",
         "preset": "gZMefHsBggtaiaaaJyaraaasaaaYEG",
         "map_id": "90195",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "OneShot"
@@ -7021,6 +7396,7 @@
         "balls_req": "1",
         "preset": "gZMefHvGggtaiaaaJyaraaaYEG",
         "map_id": "90356",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -7041,6 +7417,7 @@
         "balls_req": "1",
         "preset": "gZMefHxEggtaiaaaJyaraaasaaamaaaYEG",
         "map_id": "90458",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "AnyGate"
@@ -7060,6 +7437,7 @@
         "balls_req": "1",
         "preset": "gZMefHzBggtacbiaaaJyaaseEraaksaakmaaaE",
         "map_id": "90559",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7080,6 +7458,7 @@
         "balls_req": "2",
         "preset": "gZMefHBtggtaiaaaJraaksaaamaaaE",
         "map_id": "90655",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -7100,6 +7479,7 @@
         "balls_req": "3",
         "preset": "gZMefHAvggtaiaaaJraakE",
         "map_id": "90605",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -7120,6 +7500,7 @@
         "balls_req": "1",
         "preset": "gZMefHDHggtaiaaaJraaksaaauaaajTE",
         "map_id": "90773",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7140,6 +7521,7 @@
         "balls_req": "2",
         "preset": "gZMefHIgggtaiaaaJraakmaaaE",
         "map_id": "91006",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -7160,6 +7542,7 @@
         "balls_req": "1",
         "preset": "gZMefHHvggtaiaaaJraaksaaaE",
         "map_id": "90969",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "AnyGate",
@@ -7180,6 +7563,9 @@
         "balls_req": "1",
         "preset": "gZMefHFLggtaiaaaJyaraakYE",
         "map_id": "90881",
+        "equivalent_map_ids": [
+            "90844"
+        ],
         "categories": [
             "Solo",
             "OneShot"
@@ -7199,6 +7585,7 @@
         "balls_req": "1",
         "preset": "gZMefHFiggtaiaaaJraaksaaauaaajTE",
         "map_id": "90852",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7219,6 +7606,7 @@
         "balls_req": "1",
         "preset": "gZMefHFxggtaiaaaJyaraakYE",
         "map_id": "90867",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -7238,6 +7626,7 @@
         "balls_req": "2",
         "preset": "gZMefHFYggtaiaaaJyaraakHtE",
         "map_id": "90894",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "OneShot"
@@ -7257,6 +7646,7 @@
         "balls_req": "1",
         "preset": "gZMefHGoggtacdiaaaJraakmaapkE",
         "map_id": "90910",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -7276,6 +7666,7 @@
         "balls_req": "1",
         "preset": "gZMefHHkggtaiaaaJyaraakHpzYE",
         "map_id": "90958",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -7295,6 +7686,7 @@
         "balls_req": "1",
         "preset": "gZMefHGHggtaiaaaJraaksaaamaaaE",
         "map_id": "90929",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -7315,6 +7707,7 @@
         "balls_req": "1",
         "preset": "gZMefHJZggtaiaaaJyaraaksaaamaaaYE",
         "map_id": "91103",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -7334,6 +7727,7 @@
         "balls_req": "1",
         "preset": "gZMefHLoggtaiaaaJyaraakmaaaE",
         "map_id": "91170",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -7353,6 +7747,7 @@
         "balls_req": "1",
         "preset": "gZMefHMoggtaiaaaJyaelraakmaakYE",
         "map_id": "91222",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -7372,6 +7767,7 @@
         "balls_req": "1",
         "preset": "gZMefHNTggtaiaaaJyaraakYEG",
         "map_id": "91305",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -7391,6 +7787,7 @@
         "balls_req": "1",
         "preset": "gZMefHIRtaiaaaJyaraaaYjTG",
         "map_id": "91043",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -7411,6 +7808,7 @@
         "balls_req": "1",
         "preset": "gZMefHQrggtaiaaaJyaasesraaksaaamaaaYE",
         "map_id": "91433",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -7431,6 +7829,7 @@
         "balls_req": "1",
         "preset": "gZMefHRCggtaiaaaJyaraaksaaamaaaE",
         "map_id": "91496",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7451,6 +7850,7 @@
         "balls_req": "1",
         "preset": "gZMefGdMggtaiaaaJyaraaksaaamaaapaE",
         "map_id": "86722",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7471,6 +7871,7 @@
         "balls_req": "1",
         "preset": "gZMefeSoggtaiaaaJyaanenraaksaaamaaapaE",
         "map_id": "13118",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7491,6 +7892,7 @@
         "balls_req": "1",
         "preset": "gZMefHZNggtaiaaaJyaraaksaaaHtYEG",
         "map_id": "91923",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -7510,6 +7912,7 @@
         "balls_req": "2",
         "preset": "gZMefIdEggtaiaaaJyaraaksaaamabWE",
         "map_id": "92122",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -7529,6 +7932,7 @@
         "balls_req": "1",
         "preset": "gZMefIegggtacbiaaaJyaraaksaakmaauYpbE",
         "map_id": "92150",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -7549,6 +7953,7 @@
         "balls_req": "1",
         "preset": "gZMefIfdggtaiaaaJyaraaksaaamaaaY",
         "map_id": "92199",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7569,6 +7974,7 @@
         "balls_req": "1",
         "preset": "gZMefIeBggtaiaaaJyaraaksaaamaaaYE",
         "map_id": "92171",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -7588,6 +7994,7 @@
         "balls_req": "1",
         "preset": "gZMefIFvggtaiaaaJyaraakYE",
         "map_id": "93569",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -7608,6 +8015,7 @@
         "balls_req": "1",
         "preset": "gZMefIfxggtacbiaaaJyasaakmaakYpbE",
         "map_id": "92219",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -7629,6 +8037,7 @@
         "balls_req": "1",
         "preset": "gZMefIgsggtaiaaaJraaksaaamaaapeE",
         "map_id": "92266",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7649,6 +8058,7 @@
         "balls_req": "1",
         "preset": "gZMefIlnggtaiaaaJyaraaasaaamaaaHpYE",
         "map_id": "92521",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -7669,6 +8079,7 @@
         "balls_req": "2",
         "preset": "gZMefIkWggtaiaaaJyaraaksaaamaaaHpYE",
         "map_id": "92504",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -7688,6 +8099,7 @@
         "balls_req": "1",
         "preset": "gZMefIkIggtaiaaaJraaasaaamaaaHpE",
         "map_id": "92490",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7708,6 +8120,7 @@
         "balls_req": "1",
         "preset": "gZMefIjmggtaiaaaJraaasaaamaaaE",
         "map_id": "92416",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -7727,6 +8140,7 @@
         "balls_req": "1",
         "preset": "gZMefIhQggtaiaaaJyaraaasaaamaaaYpaEG",
         "map_id": "92342",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -7747,6 +8161,7 @@
         "balls_req": "1",
         "preset": "gZMefIhPggtaiaaaJyaraaksaaamaaaYE",
         "map_id": "92341",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -7766,6 +8181,7 @@
         "balls_req": "1",
         "preset": "gZMefIoHggtaiaaaJyaraaksaaamaaapZE",
         "map_id": "92697",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "AnyGate",
@@ -7786,6 +8202,7 @@
         "balls_req": "1",
         "preset": "gZMefIpuggtaiaaaJyaraakmaaaHppfE",
         "map_id": "92736",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7806,6 +8223,7 @@
         "balls_req": "1",
         "preset": "gZMefIuwggtaiaaaJyaraakHpYpfEG",
         "map_id": "92998",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -7825,6 +8243,7 @@
         "balls_req": "1",
         "preset": "gZMefIybggtaiaaaJraaksaaamaaaE",
         "map_id": "93185",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -7844,6 +8263,7 @@
         "balls_req": "3",
         "preset": "gZMefIANggtaiaaaJraaksaaamaaEE",
         "map_id": "93327",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -7863,6 +8283,7 @@
         "balls_req": "1",
         "preset": "gZMefIAlggtaiaaaJyaraaksaaamaaapZE ",
         "map_id": "93299",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -7884,6 +8305,7 @@
         "balls_req": "1",
         "preset": "gZMefICkggtaiaaaJraaksaaauaaajTE",
         "map_id": "93402",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7904,6 +8326,7 @@
         "balls_req": "1",
         "preset": "gZMefIDdggtuoiaaaJyaraaksaaamaaaYpaEG",
         "map_id": "93447",
+        "equivalent_map_ids": [],
         "categories": [
             "Individual",
             "Race",
@@ -7925,6 +8348,7 @@
         "balls_req": "2",
         "preset": "gZMefIEmggtaiaaaJraaksaaamaaaunqqjbE",
         "map_id": "93508",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint"
@@ -7944,6 +8368,7 @@
         "balls_req": "1",
         "preset": "gZMefIEdggtacbiaaaJyaraaasaaamaaauaaaSPuYTbE",
         "map_id": "93499",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -7965,6 +8390,7 @@
         "balls_req": "1",
         "preset": "gZMefIEVggtacbiaaayaraaasaaamaaaE",
         "map_id": "93543",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -7985,6 +8411,7 @@
         "balls_req": "1",
         "preset": "gZMefIFWggtaiaaaJyaraakpZE",
         "map_id": "93596",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -8005,6 +8432,7 @@
         "balls_req": "3",
         "preset": "gZMefIFYggtaiaaaJyaraaksaaamabWEF",
         "map_id": "93598",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8025,6 +8453,7 @@
         "balls_req": "3?",
         "preset": "gZMefIFZggtaiaaaJyaraaksaaamabWEF",
         "map_id": "93599",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8045,6 +8474,7 @@
         "balls_req": "3",
         "preset": "gZMefIGbggtaiaaaJyaraaksaaamaaaEF",
         "map_id": "93601",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8060,11 +8490,12 @@
     "93602": {
         "map_name": "Aussie Team Action V2 Complete [Juggles]",
         "author": "Curveballed",
-        "difficulty": "2.9",
+        "difficulty": "3.0",
         "difficultyFinal": "TBD",
         "balls_req": "4",
         "preset": "gZMefIGcggtaiaaaJyaraaksaaamabWYEF",
         "map_id": "93602",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8085,6 +8516,7 @@
         "balls_req": "5",
         "preset": "gZMefIGdggtaiaaaJyaraaksaaaYEF",
         "map_id": "93603",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8105,6 +8537,7 @@
         "balls_req": "4",
         "preset": "gZMefIGlggtaiaaaJyaraaksaaaYEF",
         "map_id": "93611",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8125,6 +8558,7 @@
         "balls_req": "2",
         "preset": "gZMefIGmggtaiaaaJyaraaksaaaYEF",
         "map_id": "93612",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8145,6 +8579,7 @@
         "balls_req": "3",
         "preset": "gZMefIGnggtaiaaaJyaraaksaaaYEF",
         "map_id": "93613",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8165,6 +8600,7 @@
         "balls_req": "2",
         "preset": "gZMefwmhggtaiaaaJyaraakYEF",
         "map_id": "60119",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8185,6 +8621,7 @@
         "balls_req": "2",
         "preset": "gZMefIGNggtaiaaaJyaraakYEF",
         "map_id": "93639",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8205,6 +8642,7 @@
         "balls_req": "2",
         "preset": "gZMefIGMggtaiaaaJyaraaksaaamaaaYpbEF",
         "map_id": "93638",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8227,6 +8665,7 @@
         "balls_req": "x",
         "preset": "gZMefsEFggtaiaaaJyaraakmaaaYE",
         "map_id": "50263",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -8249,6 +8688,7 @@
         "balls_req": "x",
         "preset": "gZMefIIdggtaiaaaJyYraaksaaamaaaHpzE",
         "map_id": "93707",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -8269,6 +8709,9 @@
         "balls_req": "1 + afk",
         "preset": "gZMefILqggtucbiaaaybraaasaaamaaauaaazfzYjTEFG",
         "map_id": "93876",
+        "equivalent_map_ids": [
+            "93832"
+        ],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -8291,6 +8734,7 @@
         "balls_req": "2",
         "preset": "gZMefIKLggtacbiaaaJybmadSE",
         "map_id": "93845",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8312,6 +8756,7 @@
         "balls_req": "1",
         "preset": "gZMefILdggtacbiaaaJyaraaksaaamaaauaaaVnqqUadSHpzYTbnEF",
         "map_id": "93863",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -8332,6 +8777,7 @@
         "balls_req": "1",
         "preset": "gZMefIMbggtuoyaraaasaaamaaaVadSHpYE",
         "map_id": "93913",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -8352,6 +8798,7 @@
         "balls_req": "2",
         "preset": "gZMefINzggtaiaaaJraaksaaamaaauaaaVabWTbEF",
         "map_id": "93989",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8373,6 +8820,7 @@
         "balls_req": "1",
         "preset": "gZMefIMEggtaiaaaJyaraakVadSUadSHpzYE",
         "map_id": "93942",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -8392,6 +8840,7 @@
         "balls_req": "1",
         "preset": "gZMefINyggtaiaaaJybraaasaaamaaaHpzE",
         "map_id": "93988",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -8411,6 +8860,7 @@
         "balls_req": "1",
         "preset": "gZMefINKggtacbiaaaJyaraaasaaamaaaHpzYEG",
         "map_id": "94000",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -8430,6 +8880,7 @@
         "balls_req": "1",
         "preset": "gZMefINNggtacbiaaaJyaraaasaaamaaaHpzYEG",
         "map_id": "94003",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -8449,6 +8900,7 @@
         "balls_req": "1",
         "preset": "gZMefIOaggtacbiaaaJyaraaasaaamaaaHpzYE",
         "map_id": "94016",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -8468,6 +8920,7 @@
         "balls_req": "2",
         "preset": "gZMefIOHggtaiaaaJyaraakpZE",
         "map_id": "94049",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "OneShot",
@@ -8489,6 +8942,7 @@
         "balls_req": "2",
         "preset": "gZMefIOIggtaiaaaJyaraakpZE",
         "map_id": "94050",
+        "equivalent_map_ids": [],
         "categories": [
             "Buddy",
             "Checkpoint",
@@ -8510,6 +8964,7 @@
         "balls_req": "1",
         "preset": "gZMefIPyggtacbiaaaJyaraaasaaamaaaHpzYEG",
         "map_id": "94092",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -8529,6 +8984,7 @@
         "balls_req": "1",
         "preset": "gZMefIPzggtacbiaaaJyaraaasaaamaaaHpzYEG",
         "map_id": "94093",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -8548,6 +9004,7 @@
         "balls_req": "1",
         "preset": "gZMefIPDggtaiaaaJraaksaaamaaaE",
         "map_id": "94097",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -8567,6 +9024,7 @@
         "balls_req": "1",
         "preset": "gZMefIQBggtacbiaaaJyaraaasaaamaaaHpzYEG",
         "map_id": "94147",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -8586,6 +9044,7 @@
         "balls_req": "1",
         "preset": "gZMefIRjggtacbiaaaJyaraaasaaamaaaYEG ",
         "map_id": "94181",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -8605,6 +9064,7 @@
         "balls_req": "1",
         "preset": "gZMefIRMggtacbiaaaJyaraaasaaamaaaHpzYEG",
         "map_id": "94210",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Oneshot"
@@ -8624,6 +9084,7 @@
         "balls_req": "1",
         "preset": "gZMefIUdggtacbiaaaJyaraaaHpzYEG",
         "map_id": "94331",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
@@ -8643,6 +9104,7 @@
         "balls_req": "1",
         "preset": "gZMefHUUggtaiaaaJyaraaksaaamaaaE",
         "map_id": "91670",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Oneshot"
@@ -8662,6 +9124,7 @@
         "balls_req": "1",
         "preset": "gZMefIUjggtaiaaaJraakVadSHpzE",
         "map_id": "94337",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Oneshot"
@@ -8681,6 +9144,7 @@
         "balls_req": "1",
         "preset": "gZMefIURggtaiaaaJyaraakmaaaVadSHpzYE",
         "map_id": "94371",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Oneshot"
@@ -8700,6 +9164,7 @@
         "balls_req": "1",
         "preset": "gZMefIYiggtaiaaaJyaraaksaaamaaaHpzYEG",
         "map_id": "94544",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Oneshot"
@@ -8719,6 +9184,7 @@
         "balls_req": "x",
         "preset": "gZMefIZZggtuiaaaJyaraaaYEG",
         "map_id": "94639",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint",
@@ -8739,6 +9205,7 @@
         "balls_req": "x",
         "preset": "gZMefIZjggtkyaabeEYpZEG",
         "map_id": "94597",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Oneshot"
@@ -8758,6 +9225,7 @@
         "balls_req": "x",
         "preset": "gZMefJbaggtacbiaaaJyaraaasaaamaaauaaaSPuYTbE",
         "map_id": "94692",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Oneshot"
@@ -8772,11 +9240,12 @@
     "94671": {
         "map_name": "Discovery of Magic (Medium Path Only)",
         "author": "Snack",
-        "difficulty": "NULL",
+        "difficulty": "3.5",
         "difficultyFinal": "TBD",
         "balls_req": "x",
         "preset": "gZMefJaFggtacbiaaaJyaraaasaaamaaauaaaSPuYTbE",
         "map_id": "94671",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Oneshot"
@@ -8796,6 +9265,7 @@
         "balls_req": "x",
         "preset": "gZMefJaEggtacbiaaaJyaraaasaaamaaauaaaSPuYTbE",
         "map_id": "94670",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Oneshot"
@@ -8815,6 +9285,7 @@
         "balls_req": "1",
         "preset": "gZMefJdbtaiaaaJyaraak",
         "map_id": "94797",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot",
@@ -8836,6 +9307,7 @@
         "balls_req": "1",
         "preset": "gZMefJdVggtaiaaaJyaraakYEG",
         "map_id": "94843",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "OneShot"
@@ -8855,11 +9327,56 @@
         "balls_req": "1",
         "preset": "gZMefJfQggtacbiaaaJyaraakYEG",
         "map_id": "94942",
+        "equivalent_map_ids": [],
         "categories": [
             "Solo",
             "Checkpoint"
         ],
         "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false
+    },
+    "93536": {
+        "map_name": "Super Spike Maze",
+        "author": "Nice Person (Karasu Version)",
+        "difficulty": "2.1",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefIEOtaiaaaJyaraak",
+        "map_id": "93536",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "OneShot",
+            "Spike Maze"
+        ],
+        "grav_or_classic": "Classic",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": true
+    },
+    "28423": {
+        "map_name": "Ball-e Bridge",
+        "author": "gingerdg",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefkAFgrtkoyasaaamacUuafOT",
+        "map_id": "28423",
+        "equivalent_map_ids": [
+            "Ball-e Bridge"
+        ],
+        "categories": [
+            "Solo",
+            "OneShot",
+            "Spike Maze"
+        ],
+        "grav_or_classic": "Racing",
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,

@@ -13,6 +13,16 @@ def split_categories(category_row):
         return []
     return [category.strip() for category in category_row.split(',')]
 
+def split_pseudo_map_ids(pseudo_map_id_row):
+    """
+    Splits the Pseudo Map ID column into an array based on comma separation.
+    Example: '12345, 67890, CustomName' = ['12345', '67890', 'CustomName']
+    Returns empty array if the cell is empty.
+    """
+    if not pseudo_map_id_row:
+        return []
+    return [map_id.strip() for map_id in pseudo_map_id_row.split(',') if map_id.strip()]
+
 def derive_completion_type(team_caps_value):
     """
     Derive completion_type from the Team Caps column.
@@ -93,6 +103,7 @@ def get_map_metadata():
             "balls_req": row["Min\nBalls \nRec"],
             "preset": row["Group Preset"],
             "map_id": row["Map ID"],
+            "equivalent_map_ids": split_pseudo_map_ids(row["Pseudo \nMap ID"]),
             "categories": split_categories(row["Category"]),
             "grav_or_classic": row["Grav or\nClassic"],
             "caps_to_win": derive_caps_to_win(row["Num\nof caps"]),
