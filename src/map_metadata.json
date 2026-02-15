@@ -547,14 +547,14 @@
         "allow_from_spawn": false,
         "allow_from_grab": false
     },
-    "95021": {
+    "95096": {
         "map_name": "Super Smash Buddy",
         "author": "Danny",
-        "difficulty": "NULL",
+        "difficulty": "6.4",
         "difficultyFinal": "TBD",
         "balls_req": "5",
-        "preset": "gZMefJhrggtaiaaaJraaksaaamabWEF",
-        "map_id": "95021",
+        "preset": "gZMefJiOggtaiaaaJraaksaaamabWVadSUadSEF",
+        "map_id": "95096",
         "equivalent_map_ids": [],
         "categories": [
             "Buddy",
@@ -4379,7 +4379,7 @@
     "88131": {
         "map_name": "Trust Fall 3: The Return of Trust Fall [Reversed]",
         "author": "Carey Price",
-        "difficulty": "8.2",
+        "difficulty": "8.9",
         "difficultyFinal": "8.2",
         "balls_req": "2",
         "preset": "gZMefGERggtaiaaaJraaksaaamaaaE",
