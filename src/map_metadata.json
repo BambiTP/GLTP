@@ -3398,7 +3398,7 @@
     "94663": {
         "map_name": "Ultimate Buddy System (Official FWO)",
         "author": "Bowtie",
-        "difficulty": "NULL",
+        "difficulty": "3.3",
         "difficultyFinal": "TBD",
         "balls_req": "3",
         "preset": "gZMefJaxtaiaaaJyaraaksaaamaaYE",
@@ -8406,7 +8406,7 @@
     "93598": {
         "map_name": "Buddy Union 4 HARDER: You want more?",
         "author": "Danny",
-        "difficulty": "NULL",
+        "difficulty": "3.2",
         "difficultyFinal": "TBD",
         "balls_req": "3",
         "preset": "gZMefIFYggtaiaaaJyaraaksaaamabWEF",
@@ -8424,14 +8424,14 @@
         "allow_from_spawn": false,
         "allow_from_grab": false
     },
-    "93599": {
+    "95087": {
         "map_name": "Juggles And Careys",
         "author": "Danny and Carey Price",
         "difficulty": "NULL",
         "difficultyFinal": "TBD",
         "balls_req": "3?",
-        "preset": "gZMefIFZggtaiaaaJyaraaksaaamabWEF",
-        "map_id": "93599",
+        "preset": "gZMefJiFggtaiaaaJyaraaksaaamabWEF",
+        "map_id": "95087",
         "equivalent_map_ids": [],
         "categories": [
             "Buddy",
@@ -8448,7 +8448,7 @@
     "93601": {
         "map_name": "Team Building (Official FWO)",
         "author": "HeinousAnus",
-        "difficulty": "NULL",
+        "difficulty": "4.0",
         "difficultyFinal": "TBD",
         "balls_req": "3",
         "preset": "gZMefIGbggtaiaaaJyaraaksaaamaaaEF",
@@ -8490,7 +8490,7 @@
     "93603": {
         "map_name": "Aussie team action 3.0 [Juggles]",
         "author": "Ez Buddy & Curveballed & FWO",
-        "difficulty": "NULL",
+        "difficulty": "3.9",
         "difficultyFinal": "TBD",
         "balls_req": "5",
         "preset": "gZMefIGdggtaiaaaJyaraaksaaaYEF",
@@ -8532,7 +8532,7 @@
     "93612": {
         "map_name": "team building V1 (Official)",
         "author": "Curveballed",
-        "difficulty": "NULL",
+        "difficulty": "4.0",
         "difficultyFinal": "TBD",
         "balls_req": "2",
         "preset": "gZMefIGmggtaiaaaJyaraaksaaaYEF",
