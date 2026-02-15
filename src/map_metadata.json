@@ -227,7 +227,7 @@
     "85734": {
         "map_name": "Buddy Well Test (Official FWO)",
         "author": "bad",
-        "difficulty": "8.0",
+        "difficulty": "6.5",
         "difficultyFinal": "8.0",
         "balls_req": "3",
         "preset": "gZMefFKMggtaiaaaJraaksaaamaaaE",
@@ -367,7 +367,7 @@
     "80900": {
         "map_name": "Jasmine 2023",
         "author": "Bumballbee & Inspire",
-        "difficulty": "9.0",
+        "difficulty": "8.3",
         "difficultyFinal": "8.5",
         "balls_req": "2",
         "preset": "gZMefDVOggtaiaaaJraaksaaamaaaE",
@@ -387,7 +387,7 @@
     "80902": {
         "map_name": "Jasmine 2023 (Solo)",
         "author": "Bumballbee & Inspire",
-        "difficulty": "8.8",
+        "difficulty": "7.8",
         "difficultyFinal": "8.2",
         "balls_req": "1",
         "preset": "gZMefDVQggtaiaaaJraaksaaamaaaE",
@@ -3208,27 +3208,6 @@
         "allow_from_spawn": false,
         "allow_from_grab": false
     },
-    "86488": {
-        "map_name": "4 Ways Race",
-        "author": "Carey Price",
-        "difficulty": "NULL",
-        "difficultyFinal": "TBD",
-        "balls_req": "2",
-        "preset": "",
-        "map_id": "86488",
-        "equivalent_map_ids": [],
-        "categories": [
-            "Buddy",
-            "Checkpoint",
-            "5 jump"
-        ],
-        "grav_or_classic": "Grav",
-        "caps_to_win": "1",
-        "completion_type": "individual",
-        "allow_blue_caps": true,
-        "allow_from_spawn": false,
-        "allow_from_grab": false
-    },
     "86490": {
         "map_name": "Team Trials 1 (Official FWO)",
         "author": "Sir Reginald & FWO",
@@ -3421,7 +3400,7 @@
         "author": "Bowtie",
         "difficulty": "NULL",
         "difficultyFinal": "TBD",
-        "balls_req": "2",
+        "balls_req": "3",
         "preset": "gZMefJaxtaiaaaJyaraaksaaamaaYE",
         "map_id": "94663",
         "equivalent_map_ids": [],
@@ -5071,7 +5050,7 @@
     "88855": {
         "map_name": "Gravity Fall (Insane) (Unlimited jumps) [Reversed]",
         "author": "Carey Price & FWO",
-        "difficulty": "1.9",
+        "difficulty": "2.3",
         "difficultyFinal": "2.3",
         "balls_req": "1",
         "preset": "gZMefGSNggtaiaaaJyaraaksaaamaaapZE",
@@ -5176,7 +5155,7 @@
     "88976": {
         "map_name": "Jasmine (Hard Version)",
         "author": "Bumballbee & Inspire",
-        "difficulty": "8.3",
+        "difficulty": "8.4",
         "difficultyFinal": "8.7",
         "balls_req": "2",
         "preset": "gZMefGVeggtaiaaaJraaksaaamaaaE",
@@ -5984,7 +5963,7 @@
     "89463": {
         "map_name": "Juiced Up (JJ Grav, Boost/Bomb instant) (official version)",
         "author": "DAD.",
-        "difficulty": "6.3",
+        "difficulty": "6.1",
         "difficultyFinal": "6.5",
         "balls_req": "3",
         "preset": "gZMefHexggtaiaaaJraaksaaamaaauaaaSPuTbE",
@@ -6783,7 +6762,7 @@
     "89799": {
         "map_name": "Keep jumping and nobody explodes",
         "author": "Ball-E",
-        "difficulty": "NULL",
+        "difficulty": "3.5",
         "difficultyFinal": "TBD",
         "balls_req": "2",
         "preset": "gZMefHkVggtaiaaaJyaraakpZE",
@@ -6994,7 +6973,7 @@
     "89801": {
         "map_name": "Lej's Ball Handling [Gravity]",
         "author": "Lej/xkcd",
-        "difficulty": "8.0",
+        "difficulty": "8.3",
         "difficultyFinal": "7.9",
         "balls_req": "1",
         "preset": "gZMefHkXggtaiaaaJyaraaksaaamaaaHpzYEG",
@@ -7866,7 +7845,7 @@
     "13118": {
         "map_name": "Skatepark",
         "author": "Dr. Juke",
-        "difficulty": "1.3",
+        "difficulty": "1.5",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefeSoggtaiaaaJyaanenraaksaaamaaapaE",
@@ -8616,7 +8595,7 @@
     "93639": {
         "map_name": "Juggle Distance",
         "author": "Ball-E",
-        "difficulty": "NULL",
+        "difficulty": "2.5",
         "difficultyFinal": "TBD",
         "balls_req": "2",
         "preset": "gZMefIGNggtaiaaaJyaraakYEF",
@@ -8637,7 +8616,7 @@
     "93638": {
         "map_name": "Bound by Gravity",
         "author": "DAD.",
-        "difficulty": "NULL",
+        "difficulty": "3.7",
         "difficultyFinal": "TBD",
         "balls_req": "2",
         "preset": "gZMefIGMggtaiaaaJyaraaksaaamaaaYpbEF",
@@ -8729,7 +8708,7 @@
     "93845": {
         "map_name": "The Box",
         "author": "Thanos Ball",
-        "difficulty": "NULL",
+        "difficulty": "2.6",
         "difficultyFinal": "TBD",
         "balls_req": "2",
         "preset": "gZMefIKLggtacbiaaaJybmadSE",
@@ -8751,7 +8730,7 @@
     "93863": {
         "map_name": "Cave System",
         "author": "3",
-        "difficulty": "NULL",
+        "difficulty": "4.3",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefILdggtacbiaaaJyaraaksaaamaaauaaaVnqqUadSHpzYTbnEF",
@@ -8772,7 +8751,7 @@
     "93913": {
         "map_name": "Ring of Fire",
         "author": "rollingstone",
-        "difficulty": "NULL",
+        "difficulty": "3.0",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefIMbggtuoyaraaasaaamaaaVadSHpYE",
@@ -8915,7 +8894,7 @@
     "94049": {
         "map_name": "Keep jumping and nobody explodes 2",
         "author": "Ball-E",
-        "difficulty": "NULL",
+        "difficulty": "4.0",
         "difficultyFinal": "TBD",
         "balls_req": "2",
         "preset": "gZMefIOHggtaiaaaJyaraakpZE",
@@ -8979,7 +8958,7 @@
     "94093": {
         "map_name": "jug full o bones 2 (easy mode)",
         "author": "Snack",
-        "difficulty": "2.7",
+        "difficulty": "2.8",
         "difficultyFinal": "2.8",
         "balls_req": "1",
         "preset": "gZMefIPzggtacbiaaaJyaraaasaaamaaaHpzYEG",
@@ -9019,7 +8998,7 @@
     "94147": {
         "map_name": "jug full o bones 2 (baby mode)",
         "author": "Snack",
-        "difficulty": "2.2",
+        "difficulty": "2.4",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefIQBggtacbiaaaJyaraaasaaamaaaHpzYEG",
