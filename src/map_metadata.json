@@ -1617,7 +1617,7 @@
     "86885": {
         "map_name": "Join The Group (Official FWO)",
         "author": "DragonBeast & FWO",
-        "difficulty": "8.4",
+        "difficulty": "6.6",
         "difficultyFinal": "8.4",
         "balls_req": "4",
         "preset": "gZMefGgTggtaiaaaJraaksaaamaaaE",
@@ -3940,7 +3940,7 @@
         "author": "Danny & FWO",
         "difficulty": "3.7",
         "difficultyFinal": "3.7",
-        "balls_req": "3",
+        "balls_req": "2",
         "preset": "gZMefGhNggtaiaaaJraaksaaamaaYE",
         "map_id": "86931",
         "equivalent_map_ids": [],
@@ -8114,7 +8114,7 @@
     "92342": {
         "map_name": "Jumpn't",
         "author": "snack",
-        "difficulty": "NULL",
+        "difficulty": "4.7",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefIhQggtaiaaaJyaraaasaaamaaaYpaEG",
@@ -9342,7 +9342,7 @@
     "28423": {
         "map_name": "Ball-e Bridge",
         "author": "gingerdg",
-        "difficulty": "NULL",
+        "difficulty": "1.2",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefkAFgrtkoyasaaamacUuafOT",
@@ -9356,6 +9356,46 @@
             "Spike Maze"
         ],
         "grav_or_classic": "Racing",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false
+    },
+    "95131": {
+        "map_name": "Triptych (Solo)",
+        "author": "Snack",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJjxggtacbiaaaJraakmaaaHpzE",
+        "map_id": "95131",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false
+    },
+    "95132": {
+        "map_name": "Triptych",
+        "author": "Snack",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJjyggtaiaaaJraakmaaaHpE ",
+        "map_id": "95132",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Buddy",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": false,
