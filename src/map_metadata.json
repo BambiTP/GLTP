@@ -9362,14 +9362,14 @@
         "allow_from_spawn": false,
         "allow_from_grab": false
     },
-    "95131": {
+    "95154": {
         "map_name": "Triptych (Solo)",
         "author": "Snack",
         "difficulty": "NULL",
         "difficultyFinal": "TBD",
         "balls_req": "1",
-        "preset": "gZMefJjxggtacbiaaaJraakmaaaHpzE",
-        "map_id": "95131",
+        "preset": "gZMefJjUggtacbiaaaJraakmaaaHpzE",
+        "map_id": "95154",
         "equivalent_map_ids": [],
         "categories": [
             "Solo",
@@ -9393,6 +9393,26 @@
         "equivalent_map_ids": [],
         "categories": [
             "Buddy",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false
+    },
+    "95169": {
+        "map_name": "Evil Crazy Demon Fortress",
+        "author": "3",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJkjggtaiaaaJyaraapsaaamaaaVadSUadSHpzYE",
+        "map_id": "95169",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
             "Checkpoint"
         ],
         "grav_or_classic": "Grav",
