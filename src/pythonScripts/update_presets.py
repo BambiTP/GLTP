@@ -64,6 +64,16 @@ def derive_allow_blue_caps(value):
         return True
     return False
 
+def derive_laps(value):
+    """
+    Derive laps from the Laps column.
+    If value is "spawn" or "grab" (case-insensitive), return value.
+    Otherwise return False.
+    """
+    if isinstance(value, str) and (value.strip().upper() == "SPAWN" or value.strip().upper() == "GRAB"):
+        return value.strip().upper()
+    return False
+
 def get_map_metadata():
     # URL for the Google Sheet export
     url = "https://docs.google.com/spreadsheets/d/1OnuTCekHKCD91W39jXBG4uveTCCyMxf9Ofead43MMCU/export"
@@ -111,6 +121,7 @@ def get_map_metadata():
             "allow_blue_caps": derive_allow_blue_caps(row["Allow Blue Caps"]),
             "allow_from_spawn": derive_allow_blue_caps(row["From Spawn"]),
             "allow_from_grab": derive_allow_blue_caps(row["From Grab"]),
+            "laps": derive_laps(row["Laps"]),
         }
 
     # Save to a JSON file

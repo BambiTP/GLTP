@@ -17,7 +17,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87857": {
         "map_name": "Gem's Buddy System (v1) Official (FWO)",
@@ -37,7 +38,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87858": {
         "map_name": "Uptown Funk (2 Jumps) (Instant Bombs)",
@@ -58,7 +60,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87859": {
         "map_name": "A Castle on a Cloud 1.0.8",
@@ -81,7 +84,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87862": {
         "map_name": "Buddy Pipe System Version 1.0.1 (Official)",
@@ -101,7 +105,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87864": {
         "map_name": "Quick Race (1v1)",
@@ -122,7 +127,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87865": {
         "map_name": "A-Maze-Ing (Official)",
@@ -142,7 +148,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87866": {
         "map_name": "Mini Test (Official FWO)",
@@ -162,7 +169,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87867": {
         "map_name": "The Challenge of Secrets (Official FWO)",
@@ -182,7 +190,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87893": {
         "map_name": "Cancer[buddy system] (Official)",
@@ -202,7 +211,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82069": {
         "map_name": "AUSSIE Teambuilding 1 v1.3 (Official FWO)",
@@ -222,7 +232,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "85734": {
         "map_name": "Buddy Well Test (Official FWO)",
@@ -242,7 +253,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82065": {
         "map_name": "PacMan with Gravity (Easier) (Official FWO)",
@@ -262,7 +274,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82027": {
         "map_name": "Buddy System 11 (TM1 Version) 9bob9",
@@ -282,7 +295,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88765": {
         "map_name": "Trust Fall 2! (Official FWO)",
@@ -302,7 +316,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "47823": {
         "map_name": "Buddy System 4 (TM1 version) 9bob9",
@@ -322,7 +337,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82032": {
         "map_name": "Trust Fall 3: The Return of Trust Fall (Official)",
@@ -342,7 +358,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82025": {
         "map_name": "Trust Fall (3 Person Buddy) (Official)",
@@ -362,7 +379,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "80900": {
         "map_name": "Jasmine 2023",
@@ -382,7 +400,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "80902": {
         "map_name": "Jasmine 2023 (Solo)",
@@ -402,7 +421,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82072": {
         "map_name": "Hall of Ball (Official FWO)",
@@ -422,7 +442,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82074": {
         "map_name": "Tower Race Down 1.0.3 (Official FWO)",
@@ -443,7 +464,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82114": {
         "map_name": "Oh Man, Oh Boy (Official FWO)",
@@ -464,7 +486,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82482": {
         "map_name": "Buddy Race (Official FWO v2)",
@@ -485,7 +508,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "58156": {
         "map_name": "Buddy System Complete with perma portals",
@@ -505,7 +529,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82220": {
         "map_name": "Gravity Buddy Guy V.2.6.0 (Official FWO v2)",
@@ -525,7 +550,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82118": {
         "map_name": "Buddy (Official FWO)",
@@ -545,7 +571,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "95096": {
         "map_name": "Super Smash Buddy",
@@ -566,7 +593,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82109": {
         "map_name": "2 Person Buddy' (Official FWO)",
@@ -586,7 +614,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82100": {
         "map_name": "Tower Race Down 3 (Official FWO)",
@@ -607,7 +636,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87032": {
         "map_name": "Tower Race Down 2 (Official FWO)",
@@ -629,7 +659,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82113": {
         "map_name": "The Impossible Map (Official FWO)",
@@ -649,7 +680,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "85770": {
         "map_name": "Celestial Tether (Buddy System Grav, Boost/Bomb instant)",
@@ -670,7 +702,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "85771": {
         "map_name": "Orbit Euphoria (Buddy System Grav, Boost/Bomb instant) (official version)",
@@ -690,7 +723,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82424": {
         "map_name": "Buddy System 1 (TM1 Version) 9bob9 (Official FWO)",
@@ -710,7 +744,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82198": {
         "map_name": "The World's Hardest Map (Official FWO V2)",
@@ -730,7 +765,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82657": {
         "map_name": "Super Buddy (Official FWO v2)",
@@ -750,7 +786,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82126": {
         "map_name": "Daily Spike Fall 1.0.1 Final (Official FWO)",
@@ -770,7 +807,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89508": {
         "map_name": "Jump! - Van Halen (5 Jump) (Official FWO)",
@@ -791,7 +829,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82156": {
         "map_name": "Wacky Races!",
@@ -812,7 +851,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "21272": {
         "map_name": "Zoom (Gravity Race)",
@@ -833,7 +873,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82183": {
         "map_name": "Ski Cross",
@@ -854,7 +895,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82158": {
         "map_name": "Team Race (Official FWO)",
@@ -871,7 +913,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88364": {
         "map_name": "I'm Back (1v1 Race)!",
@@ -892,7 +935,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82577": {
         "map_name": "GET DOWN (gravity)",
@@ -913,7 +957,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82124": {
         "map_name": "Insane Gravity Challenge (Official FWO)",
@@ -934,7 +979,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82180": {
         "map_name": "Up And Down (Official FWO)",
@@ -955,7 +1001,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "85596": {
         "map_name": "Epic Mode (TM1 Version) 9bob9 (Official FWO)",
@@ -975,7 +1022,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82576": {
         "map_name": "Gravity Race 4 (Official FWO)",
@@ -996,7 +1044,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82317": {
         "map_name": "Dragon'sCove[BuddySystem] (Official FWO)",
@@ -1016,7 +1065,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89510": {
         "map_name": "New Gravity Buddy (Official FWO)",
@@ -1036,7 +1086,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82355": {
         "map_name": "Octopus [Gravity Buddy] (Official FWO)",
@@ -1056,7 +1107,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93460": {
         "map_name": "FlappyBirdBuddyGrav",
@@ -1076,7 +1128,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "23115": {
         "map_name": "Gravity Buddy System [FIXED]",
@@ -1096,7 +1149,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "47132": {
         "map_name": "Solo Grav Bottle",
@@ -1116,7 +1170,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86702": {
         "map_name": "Mars Climb",
@@ -1139,7 +1194,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86703": {
         "map_name": "Mars Climb Part II",
@@ -1160,7 +1216,8 @@
         "completion_type": "combined",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86704": {
         "map_name": "Mars Climb 2",
@@ -1183,7 +1240,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "46875": {
         "map_name": "Gravity Challenge",
@@ -1203,7 +1261,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82428": {
         "map_name": "Buddy (Official FWO)",
@@ -1223,7 +1282,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86705": {
         "map_name": "Mars Climb 4",
@@ -1246,7 +1306,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82275": {
         "map_name": "You Need Two (Official FWO)",
@@ -1266,7 +1327,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82314": {
         "map_name": "Buddy System 3 Final Version (Official FWO)",
@@ -1286,7 +1348,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86706": {
         "map_name": "Mars Climb Part 3",
@@ -1307,7 +1370,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82303": {
         "map_name": "Buddy system 9 (TM1 Version) 9bob9 (Official FWO)",
@@ -1327,7 +1391,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "44927": {
         "map_name": "Buddy system 5 w/ permagates",
@@ -1347,7 +1412,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87119": {
         "map_name": "Metroid [Gravity Buddy] (Official FWO)",
@@ -1367,7 +1433,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "47885": {
         "map_name": "Buddy System 8 (TM1 Version) 9bob9",
@@ -1387,7 +1454,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82349": {
         "map_name": "The Worlds Hardest Map 2 (Official FWO)",
@@ -1407,7 +1475,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82271": {
         "map_name": "Climb (Official FWO)",
@@ -1428,7 +1497,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "36333": {
         "map_name": "Test climb",
@@ -1449,7 +1519,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "46288": {
         "map_name": "Climb",
@@ -1471,7 +1542,8 @@
         "completion_type": "combined",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86881": {
         "map_name": "Skill Test (Official FWO v2)",
@@ -1491,7 +1563,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82273": {
         "map_name": "Ups and Downs [FINAL] (Official FWO)",
@@ -1511,7 +1584,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87035": {
         "map_name": "Worlds Hardest Map 3 (Official FWO)",
@@ -1531,7 +1605,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82310": {
         "map_name": "Buddy System 2 (TM1version) 9bob9 (Official FWO V3)",
@@ -1551,7 +1626,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82420": {
         "map_name": "Rerun [Gravity Buddy] (Official FWO)",
@@ -1571,7 +1647,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82356": {
         "map_name": "V8 [Gravity Buddy] (Official FWO)",
@@ -1591,7 +1668,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86870": {
         "map_name": "20480 [Gravity Buddy] (Official FWO)",
@@ -1612,7 +1690,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86885": {
         "map_name": "Join The Group (Official FWO)",
@@ -1632,7 +1711,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "47884": {
         "map_name": "Buddy System 7 (TM1 Version) 9bob9",
@@ -1652,7 +1732,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82331": {
         "map_name": "Ball-E Wood Tower of Tear Her (Official FWO)",
@@ -1673,7 +1754,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82709": {
         "map_name": "Twin Towers (Official FWO v2)",
@@ -1695,7 +1777,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87112": {
         "map_name": "Tower Power (Official FWO)",
@@ -1717,7 +1800,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82336": {
         "map_name": "Tower 1-4 (Official FWO)",
@@ -1739,7 +1823,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86708": {
         "map_name": "Mars Climb but hard",
@@ -1760,7 +1845,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86709": {
         "map_name": "Mars Climb 3",
@@ -1781,7 +1867,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86710": {
         "map_name": "Mars Climb?",
@@ -1802,7 +1889,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82404": {
         "map_name": "Fall (Official FWO)",
@@ -1822,7 +1910,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82368": {
         "map_name": "Birthday Tower of Doom (Official FWO)",
@@ -1844,7 +1933,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86711": {
         "map_name": "Birthday Tower 1-5 (Official FWO)",
@@ -1866,7 +1956,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82346": {
         "map_name": "Towered",
@@ -1887,7 +1978,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82380": {
         "map_name": "Tower w/ A BUDDY SHORTCUT!!",
@@ -1909,7 +2001,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82382": {
         "map_name": "Tower of Doom 0-0 (Official FWO)",
@@ -1931,7 +2024,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82415": {
         "map_name": "Easy, Medium, or Hard? 3in1Tower (Official FWO)",
@@ -1951,7 +2045,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86718": {
         "map_name": "Birthday Tower 2018 (Official FWO)",
@@ -1974,7 +2069,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82418": {
         "map_name": "UGH (Official FWO)",
@@ -1994,7 +2090,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82419": {
         "map_name": "Spike Ball Hall 1.0.5 (Official FWO)",
@@ -2014,7 +2111,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88667": {
         "map_name": "Unlimited Jumps Buddy (5 jump version) (Official FWO)",
@@ -2035,7 +2133,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82422": {
         "map_name": "Gravity 2 players (Official FWO v1)",
@@ -2055,7 +2154,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82455": {
         "map_name": "A Step Back",
@@ -2075,7 +2175,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82425": {
         "map_name": "Hope This Is Possible (testing)",
@@ -2095,7 +2196,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88367": {
         "map_name": "Trust(Multiplayer) (Official FWO)",
@@ -2115,7 +2217,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82427": {
         "map_name": "(Map)Test 2",
@@ -2135,7 +2238,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82883": {
         "map_name": "10 Levels 1 Map",
@@ -2155,7 +2259,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82513": {
         "map_name": "Ball Runner",
@@ -2176,7 +2281,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "36193": {
         "map_name": "Tunnel racer",
@@ -2197,7 +2303,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86712": {
         "map_name": "How good are you?",
@@ -2218,7 +2325,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82496": {
         "map_name": "Challenging Run (Bombs instant, Boost Instant) (Official FWO)",
@@ -2238,7 +2346,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82522": {
         "map_name": "20 Seconds (Official FWO)",
@@ -2259,7 +2368,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "2454": {
         "map_name": "Slanted House",
@@ -2280,7 +2390,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82498": {
         "map_name": "You're Pushing My Buttons (Official FWO)",
@@ -2300,7 +2411,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82521": {
         "map_name": "Randomly Generated Mapwe (Official FWO)",
@@ -2320,7 +2432,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82448": {
         "map_name": "Jump",
@@ -2340,7 +2453,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82449": {
         "map_name": "Tweak Course",
@@ -2361,7 +2475,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87057": {
         "map_name": "Rather Easy (Official FWO)",
@@ -2382,7 +2497,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88764": {
         "map_name": "Ball From Space",
@@ -2403,7 +2519,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82503": {
         "map_name": "Protal 2: 2 Many Puzzles(Rate at the end) (Needs 3+) (Official FWO v1)",
@@ -2423,7 +2540,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82507": {
         "map_name": "The Challenge (Official FWO)",
@@ -2443,7 +2561,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "85597": {
         "map_name": "Alliance testing (Official FWO)",
@@ -2463,7 +2582,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82509": {
         "map_name": "t0W3r",
@@ -2484,7 +2604,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82514": {
         "map_name": "Don't touch the spikes",
@@ -2505,7 +2626,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82517": {
         "map_name": "Long Jumps (Official FWO)",
@@ -2525,7 +2647,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "85733": {
         "map_name": "Fall Down Final (Instant Boosts) (Official FWO)",
@@ -2545,7 +2668,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "85398": {
         "map_name": "Fall Down Final (instant boosts) (Official FWO)",
@@ -2565,7 +2689,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86713": {
         "map_name": "Tower Shower",
@@ -2587,7 +2712,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86714": {
         "map_name": "Tower of the TagPro Dragon (Official FWO v1)",
@@ -2609,7 +2735,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82651": {
         "map_name": "What you say about my first map!?!?!?! (aka Revenge) (Official FWO)",
@@ -2630,7 +2757,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82573": {
         "map_name": "Portal Timer Race (1 Cap) (Instant Boosts) (Official FWO)",
@@ -2651,7 +2779,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82652": {
         "map_name": "Carey Am Pro Race (5 Jumps) (Official FWO)",
@@ -2672,7 +2801,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87543": {
         "map_name": "Tower of Doom 1-3 (Official FWO)",
@@ -2694,7 +2824,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "46103": {
         "map_name": "ACTH Agonist",
@@ -2714,7 +2845,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82570": {
         "map_name": "Gauntlet (Official FWO)",
@@ -2734,7 +2866,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82644": {
         "map_name": "b u d d y s y s t e m 1 (Official FWO v3)",
@@ -2754,7 +2887,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "83366": {
         "map_name": "AUSSIE Teambuilding 2 v1.5 (Official FWO)",
@@ -2776,7 +2910,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "85616": {
         "map_name": "AUSSIE Teambuilding 3 v1.1 (non buddy jump version) (Official FWO)",
@@ -2796,7 +2931,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82645": {
         "map_name": "AUSSIE Teambuilding 4 v1.5 (Official FWO)",
@@ -2816,7 +2952,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82637": {
         "map_name": "Buddy Union .55 BONUS STUFF (Official FWO)",
@@ -2836,7 +2973,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "83015": {
         "map_name": "Buddy Union 3.3 Deluxe (Official FWO)",
@@ -2856,7 +2994,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89467": {
         "map_name": "Survivor Tower",
@@ -2877,7 +3016,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "83008": {
         "map_name": "Carabdis Masochism FINAL v1.11 (Official FWO)",
@@ -2897,7 +3037,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82670": {
         "map_name": "Carabdis Masochism FINAL v1.11 (solo version) (Official FWO)",
@@ -2917,7 +3058,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89506": {
         "map_name": "Hexaforce 6+ Person Gravity Puzzle (Official FWO)",
@@ -2937,7 +3079,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82692": {
         "map_name": "Potato Sack Race (2v2) (Official FWO)",
@@ -2958,7 +3101,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86716": {
         "map_name": "Mars Climb Part |||",
@@ -2980,7 +3124,8 @@
         "completion_type": "combined",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86717": {
         "map_name": "Mars Climb 1",
@@ -3001,7 +3146,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82712": {
         "map_name": "Tower 1-2 [FINAL]",
@@ -3023,7 +3169,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "82714": {
         "map_name": "Tower 1-2 (Official FWO)",
@@ -3045,7 +3192,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "85748": {
         "map_name": "GREATEST GRAVITY BUDDY SYSTEM",
@@ -3065,7 +3213,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86977": {
         "map_name": "ULTIMATE GRAVITY BUDDY SYSTEM (HARD)",
@@ -3085,7 +3234,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88763": {
         "map_name": "The Temple Maze (Official FWO)",
@@ -3105,7 +3255,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "85931": {
         "map_name": "Colosseum",
@@ -3125,7 +3276,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86364": {
         "map_name": "Astral Synergy (Buddy System Grav, Boost/Bomb instant) (Official Version)",
@@ -3146,7 +3298,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86423": {
         "map_name": "Map of Sisyphus",
@@ -3166,7 +3319,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86429": {
         "map_name": "Boldy System (Official FWO)",
@@ -3186,7 +3340,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86485": {
         "map_name": "Kinda ez (Official FWO)",
@@ -3206,7 +3361,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86490": {
         "map_name": "Team Trials 1 (Official FWO)",
@@ -3226,7 +3382,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86491": {
         "map_name": "Choose Your Type [Instant boost would be good]",
@@ -3246,7 +3403,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86346": {
         "map_name": "help me",
@@ -3267,7 +3425,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86142": {
         "map_name": "8+ Group system",
@@ -3288,7 +3447,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86500": {
         "map_name": "Timed Gravity Race",
@@ -3310,7 +3470,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89339": {
         "map_name": "Short Circuit",
@@ -3331,7 +3492,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86568": {
         "map_name": "Solo Grav Track (Official FWO)",
@@ -3351,7 +3513,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "91189": {
         "map_name": "PopCulture Buddy System v5",
@@ -3373,7 +3536,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86572": {
         "map_name": "Buddy Trio Test",
@@ -3393,7 +3557,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94663": {
         "map_name": "Ultimate Buddy System (Official FWO)",
@@ -3413,7 +3578,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93725": {
         "map_name": "Ball-E's INSANE 15 minute buddy challenge",
@@ -3433,7 +3599,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88766": {
         "map_name": "BartJr's Gravity Challenge (Official FWO)",
@@ -3453,7 +3620,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87111": {
         "map_name": "Light Em Up Again (Inspired by Carey Price) (5 jump version) (Official FWO)",
@@ -3474,7 +3642,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86583": {
         "map_name": "Gravity Fall",
@@ -3496,7 +3665,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86584": {
         "map_name": "Gravity Fall (Insane)",
@@ -3518,7 +3688,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86585": {
         "map_name": "Skill Fall",
@@ -3539,7 +3710,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86700": {
         "map_name": "Dragonsaine V.3 Hard Mode (Official FWO)",
@@ -3560,7 +3732,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86698": {
         "map_name": "Dragonsaine V.2 (Official FWO)",
@@ -3580,7 +3753,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "46903": {
         "map_name": "Gravity Challenge (85% Complete)",
@@ -3600,7 +3774,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86903": {
         "map_name": "Jump!",
@@ -3620,7 +3795,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86721": {
         "map_name": "JUMP!",
@@ -3641,7 +3817,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86723": {
         "map_name": "Jumper",
@@ -3662,7 +3839,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86858": {
         "map_name": "My AFK buddy",
@@ -3682,7 +3860,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "10433": {
         "map_name": "Toothy",
@@ -3703,7 +3882,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86748": {
         "map_name": "Competitive gravity",
@@ -3725,7 +3905,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86750": {
         "map_name": "Small Buddy 1.1 skip 2",
@@ -3745,7 +3926,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "81032": {
         "map_name": "Survivor Snipe Skills",
@@ -3767,7 +3949,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "18326": {
         "map_name": "Grav Well Course",
@@ -3788,7 +3971,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "29125": {
         "map_name": "Maze Challenge",
@@ -3808,7 +3992,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86892": {
         "map_name": "crosky's Ludicrous Challenge",
@@ -3829,7 +4014,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "21313": {
         "map_name": "Marsball Gravity Race",
@@ -3851,7 +4037,8 @@
         "completion_type": "combined",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "35237": {
         "map_name": "MiniChallenge",
@@ -3871,7 +4058,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88771": {
         "map_name": "Ultimate Challenge (With Halfway Shortcut)",
@@ -3892,7 +4080,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86900": {
         "map_name": "Ball-E's absolutely INSANE challenge",
@@ -3912,7 +4101,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86901": {
         "map_name": "Infinity Boost [Challenge] V1",
@@ -3933,7 +4123,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86931": {
         "map_name": "A random Danny map (Official FWO)",
@@ -3953,7 +4144,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86972": {
         "map_name": "Boldy System 2",
@@ -3973,7 +4165,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86965": {
         "map_name": "Boldy System 3",
@@ -3993,7 +4186,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86976": {
         "map_name": "ULTIMATE GRAVITY BUDDY SYSTEM",
@@ -4013,7 +4207,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87545": {
         "map_name": "PacMan - POWER PELLET EDITION",
@@ -4033,7 +4228,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87551": {
         "map_name": "The Impossible (Portal Edition) 1.0.2 [Reversed]",
@@ -4054,7 +4250,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87786": {
         "map_name": "Uptown Funk (2 Jumps) (Instant Bombs) [Reversed]",
@@ -4075,7 +4272,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87664": {
         "map_name": "A Castle on a Cloud 1.0.8 [Reversed]",
@@ -4096,7 +4294,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87728": {
         "map_name": "A-Maze-Ing (Official) [Reversed]",
@@ -4117,7 +4316,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87742": {
         "map_name": "The Challenge of Secrets (Official FWO) [Reversed]",
@@ -4138,7 +4338,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87809": {
         "map_name": "Jump! [reversed]",
@@ -4159,7 +4360,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87826": {
         "map_name": "2 Person Buddy' v2 (Official FWO)",
@@ -4179,7 +4381,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87841": {
         "map_name": "2 Person Buddy' (Official FWO) [Reversed]",
@@ -4200,7 +4403,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87854": {
         "map_name": "2 Person Buddy' (Official FWO) [Verticalized]",
@@ -4223,7 +4427,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87875": {
         "map_name": "Mars Climb 11 (blue team required)",
@@ -4245,7 +4450,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87891": {
         "map_name": "Quick Race (1v1) [Reversed]",
@@ -4267,7 +4473,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87900": {
         "map_name": "Mini Test (Official FWO) [Reversed]",
@@ -4288,7 +4495,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88192": {
         "map_name": "Daily Spike Fall 1.0.1 Final (Official FWO) [Reversed]",
@@ -4309,7 +4517,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87979": {
         "map_name": "Buddy System 11 (TM1 Version) [Reversed]",
@@ -4330,7 +4539,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89764": {
         "map_name": "Mars Buddy Climb",
@@ -4351,7 +4561,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "95023": {
         "map_name": "Buddy system 9 (TM1 Version) 9bob9 (Official FWO) [Reversed]",
@@ -4374,7 +4585,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88131": {
         "map_name": "Trust Fall 3: The Return of Trust Fall [Reversed]",
@@ -4395,7 +4607,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88495": {
         "map_name": "Cube Goldberg",
@@ -4415,7 +4628,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88524": {
         "map_name": "Celestial Tether [Reversed] (Buddy System Grav, Boost/Bomb instant)",
@@ -4436,7 +4650,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87360": {
         "map_name": "Jasmine",
@@ -4456,7 +4671,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87362": {
         "map_name": "Jasmine (Solo)",
@@ -4476,7 +4692,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88438": {
         "map_name": "LONGGGGG",
@@ -4496,7 +4713,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88528": {
         "map_name": "Climbing race",
@@ -4516,7 +4734,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88530": {
         "map_name": "RACE TOWER",
@@ -4537,7 +4756,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88531": {
         "map_name": "stairs",
@@ -4558,7 +4778,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88643": {
         "map_name": "The Climb - Miley Cyrus (Infinite Jumps) (Official FWO)",
@@ -4579,7 +4800,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88645": {
         "map_name": "Skill Climbing (Infinite Jumps) (Official FWO)",
@@ -4601,7 +4823,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88703": {
         "map_name": "Hopscotch (Official FWO)",
@@ -4622,7 +4845,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88649": {
         "map_name": "FlappyBird [UnlimitedJumps] (Official FWO)",
@@ -4644,7 +4868,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88650": {
         "map_name": "Narrow Lanes",
@@ -4661,7 +4886,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94046": {
         "map_name": "DeathRun Flappy Bird Version (Official FWO)",
@@ -4684,7 +4910,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88653": {
         "map_name": "Spike System",
@@ -4705,7 +4932,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88654": {
         "map_name": "Flappy Cap",
@@ -4726,7 +4954,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88655": {
         "map_name": "Flappy Bird (Official FWO)",
@@ -4748,7 +4977,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88704": {
         "map_name": "CD9 (Infinite Jumps)(Official FWO)",
@@ -4769,7 +4999,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88657": {
         "map_name": "JDC (Infinite Jumps) (Official FWO)",
@@ -4790,7 +5021,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88660": {
         "map_name": "Light Em Up Again (Inspired by Carey Price)",
@@ -4811,7 +5043,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88661": {
         "map_name": "The Map Destroyer(Infinite Jumps) (Official FWO)",
@@ -4832,7 +5065,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88663": {
         "map_name": "Jump! - Van Halen (Infinite Jump Race)",
@@ -4853,7 +5087,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88665": {
         "map_name": "Bruh!",
@@ -4873,7 +5108,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88666": {
         "map_name": "Flight Path Race (Official FWO)",
@@ -4895,7 +5131,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88668": {
         "map_name": "Unlimited Jumps Buddy (Official FWO)",
@@ -4916,7 +5153,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88673": {
         "map_name": "Gravity Fall (unlimited jumps)",
@@ -4937,7 +5175,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88675": {
         "map_name": "Gravity Fall (Insane) (Unlimited jumps)",
@@ -4958,7 +5197,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88750": {
         "map_name": "Compact Disc (Official FWO)",
@@ -4979,7 +5219,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94566": {
         "map_name": "Gravity Challenge [Reversed] (Official FWO)",
@@ -5000,7 +5241,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88853": {
         "map_name": "Hopscotch (Official FWO) [Reversed]",
@@ -5023,7 +5265,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88854": {
         "map_name": "Spike System [Reversed]",
@@ -5045,7 +5288,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88855": {
         "map_name": "Gravity Fall (Insane) (Unlimited jumps) [Reversed]",
@@ -5067,7 +5311,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88856": {
         "map_name": "Gravity Fall (unlimited jumps) [Reversed]",
@@ -5089,7 +5334,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88923": {
         "map_name": "Super Weird Map",
@@ -5110,7 +5356,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88924": {
         "map_name": "Single person map Final (instant boosts and bombs)",
@@ -5130,7 +5377,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88925": {
         "map_name": "Barbed Wire (Official FWO)",
@@ -5150,7 +5398,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "88976": {
         "map_name": "Jasmine (Hard Version)",
@@ -5170,7 +5419,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "47984": {
         "map_name": "RACE 1v1 new",
@@ -5192,7 +5442,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "47408": {
         "map_name": "Race you? 1v1 Easy v2",
@@ -5214,7 +5465,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89046": {
         "map_name": "RACE (1 cap collected counts as 1 lap)",
@@ -5235,7 +5487,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89047": {
         "map_name": "RACE",
@@ -5257,7 +5510,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89053": {
         "map_name": "Memory Lane",
@@ -5279,7 +5533,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89059": {
         "map_name": "The Caverns Below",
@@ -5299,7 +5554,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89068": {
         "map_name": "On Edge (Official FWO)",
@@ -5319,7 +5575,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "29744": {
         "map_name": "edge master",
@@ -5339,7 +5596,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "79475": {
         "map_name": "(FIC) Spike & Spike",
@@ -5361,7 +5619,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "84610": {
         "map_name": "Shadow Snipes",
@@ -5383,7 +5642,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89084": {
         "map_name": "RollCareful",
@@ -5405,7 +5665,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89085": {
         "map_name": "Be there or be square",
@@ -5425,7 +5686,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89086": {
         "map_name": "Be there or be square [Reversed]",
@@ -5446,7 +5708,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "80970": {
         "map_name": "Tiki Tunnel of Terror",
@@ -5468,7 +5731,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89087": {
         "map_name": "hjnkm, (Official FWO)",
@@ -5488,7 +5752,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89090": {
         "map_name": "RACE",
@@ -5509,7 +5774,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "56984": {
         "map_name": "30 Second Challenge - Spikes",
@@ -5532,7 +5798,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89197": {
         "map_name": "spikefield",
@@ -5554,7 +5821,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89199": {
         "map_name": "spike map",
@@ -5575,7 +5843,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89268": {
         "map_name": "Spikey Speedrun",
@@ -5596,7 +5865,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "87676": {
         "map_name": "Bomb Tower Bounce",
@@ -5616,7 +5886,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "76008": {
         "map_name": "Doorways Season 4",
@@ -5638,7 +5909,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "76156": {
         "map_name": "Doorways Season 9",
@@ -5660,7 +5932,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89201": {
         "map_name": "Vertical Doom",
@@ -5682,7 +5955,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89202": {
         "map_name": "Climb Guys Deluxe",
@@ -5704,7 +5978,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89203": {
         "map_name": "Climb Guys",
@@ -5726,7 +6001,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89337": {
         "map_name": "Shadow Snipes with bomb",
@@ -5748,7 +6024,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89725": {
         "map_name": "Ferguson (Bombs: 1 sec, Boost: Instant)",
@@ -5768,7 +6045,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89341": {
         "map_name": "Compact Disc without cheeze (Official FWO)",
@@ -5789,7 +6067,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89379": {
         "map_name": "Cube Goldberg (red team version)",
@@ -5809,7 +6088,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89409": {
         "map_name": "Hopscotch (Official FWO) [Reversed] (no cheeze) by Carey Price",
@@ -5831,7 +6111,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89383": {
         "map_name": "Jump (back and forth version)",
@@ -5851,7 +6132,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89384": {
         "map_name": "Gravity Race 4 (1 jump version)",
@@ -5872,7 +6154,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89394": {
         "map_name": "Bambox",
@@ -5892,7 +6175,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89386": {
         "map_name": "Jump [1 jump]",
@@ -5913,7 +6197,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89412": {
         "map_name": "Hopscotch (Official FWO) [Inverted]",
@@ -5935,7 +6220,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89413": {
         "map_name": "Hopscotch (Official FWO) [Reversed] [Inverted]",
@@ -5958,7 +6244,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89463": {
         "map_name": "Juiced Up (JJ Grav, Boost/Bomb instant) (official version)",
@@ -5979,7 +6266,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89421": {
         "map_name": "SpawnPro Gravity System",
@@ -6000,7 +6288,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89424": {
         "map_name": "Single Player Map (Instant bombs, Boosts) (Official FWO)",
@@ -6021,7 +6310,8 @@
         "completion_type": "combined",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89464": {
         "map_name": "The Impossible",
@@ -6041,7 +6331,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89435": {
         "map_name": "Trial Of Deer",
@@ -6061,7 +6352,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89450": {
         "map_name": "Trial Of Deer [Reversed]",
@@ -6082,7 +6374,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89454": {
         "map_name": "Ball Pit",
@@ -6104,7 +6397,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89603": {
         "map_name": "Spike Maze (60 Sec)",
@@ -6126,7 +6420,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": true
+        "allow_from_grab": true,
+        "laps": false
     },
     "89475": {
         "map_name": "Zoom (Gravity Race) [Instant Bomb]",
@@ -6147,7 +6442,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89474": {
         "map_name": "Trust Fall 3: The Return of Trust Fall [AnyGate]",
@@ -6167,7 +6463,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89490": {
         "map_name": "Aussie team action 3.0 [3 jump]",
@@ -6188,7 +6485,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89501": {
         "map_name": "Oh Man, Oh Boy [unlimited]",
@@ -6209,7 +6507,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89507": {
         "map_name": "4 Ways Race [Unlimited]",
@@ -6230,7 +6529,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89550": {
         "map_name": "Detonation Dash",
@@ -6251,7 +6551,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "79023": {
         "map_name": "The Tox Tower",
@@ -6273,7 +6574,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89552": {
         "map_name": "Detonation Dash 2",
@@ -6294,7 +6596,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89581": {
         "map_name": "!!!OBSTACLE COURSE!!!",
@@ -6314,7 +6617,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89584": {
         "map_name": "Obstacle Race V2",
@@ -6336,7 +6640,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89585": {
         "map_name": "Aussie Team Action V2 Complete [3 jump]",
@@ -6357,7 +6662,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89636": {
         "map_name": "Skybound Tower",
@@ -6378,7 +6684,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89654": {
         "map_name": "Bomby Bird [Gravity]",
@@ -6399,7 +6706,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89656": {
         "map_name": "Pirates of the Caribballan: The Legend of Juke Sparrowkeys [1st Half]",
@@ -6421,7 +6729,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89661": {
         "map_name": "Pirates of the Caribballan: The Legend of Juke Sparrowkeys [Ship Half]",
@@ -6443,7 +6752,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89719": {
         "map_name": "Pirates of the Caribballan: The Legend of Juke Sparrowkeys [Bridge Half]",
@@ -6465,7 +6775,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "77385": {
         "map_name": "wet bust will make you mad",
@@ -6486,7 +6797,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89717": {
         "map_name": "Flappy Ball",
@@ -6508,7 +6820,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89736": {
         "map_name": "You Need Two [hard version]",
@@ -6528,7 +6841,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89721": {
         "map_name": "Aftershock (RB Grav, Boost/Bomb instant) (Official Version)",
@@ -6549,7 +6863,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89745": {
         "map_name": "Pocket Grav Pal",
@@ -6570,7 +6885,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89746": {
         "map_name": "A Jog",
@@ -6590,7 +6906,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89749": {
         "map_name": "This is a Bad Time",
@@ -6611,7 +6928,8 @@
         "completion_type": "combined",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89750": {
         "map_name": "Mt Everest",
@@ -6631,7 +6949,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89752": {
         "map_name": "Endurance",
@@ -6651,7 +6970,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89754": {
         "map_name": "Zag",
@@ -6672,7 +6992,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "35367": {
         "map_name": "Difficulty Easiest",
@@ -6693,7 +7014,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89807": {
         "map_name": "2v2 Rock n' Roll",
@@ -6716,7 +7038,8 @@
         "completion_type": "combined",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89762": {
         "map_name": "Pocket Grav Pal #002",
@@ -6737,7 +7060,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89771": {
         "map_name": "House of Hell",
@@ -6757,7 +7081,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89799": {
         "map_name": "Keep jumping and nobody explodes",
@@ -6779,7 +7104,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89851": {
         "map_name": "Mini Games",
@@ -6802,7 +7128,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "68278": {
         "map_name": "hardddd",
@@ -6823,7 +7150,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89776": {
         "map_name": "NOPE's Gravity Fall",
@@ -6844,7 +7172,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89777": {
         "map_name": "dangerous",
@@ -6865,7 +7194,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93518": {
         "map_name": "Walls Are Unnecessary",
@@ -6886,7 +7216,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89791": {
         "map_name": "20by20 test",
@@ -6906,7 +7237,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89792": {
         "map_name": "20by30 test",
@@ -6926,7 +7258,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89794": {
         "map_name": "129 in 60",
@@ -6947,7 +7280,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89796": {
         "map_name": "Practiboost 1: 45s and 90s",
@@ -6968,7 +7302,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89801": {
         "map_name": "Lej's Ball Handling [Gravity]",
@@ -6988,7 +7323,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89806": {
         "map_name": "Pocket Grav Pal #004",
@@ -7010,7 +7346,8 @@
         "completion_type": "combined",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89826": {
         "map_name": "Boost Practice",
@@ -7031,7 +7368,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "83428": {
         "map_name": "Hedge Maze",
@@ -7053,7 +7391,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "1920": {
         "map_name": "2 Lap Gold Rush",
@@ -7074,7 +7413,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89834": {
         "map_name": "Stonky Tonk Tonk",
@@ -7094,7 +7434,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89839": {
         "map_name": "Pocket Grav Pal #003",
@@ -7115,7 +7456,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89862": {
         "map_name": "Pocket Grav Pal #005",
@@ -7136,7 +7478,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89875": {
         "map_name": "easy map",
@@ -7157,7 +7500,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89889": {
         "map_name": "Pixel perfect spike maze",
@@ -7178,7 +7522,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89882": {
         "map_name": "Slolem Maze",
@@ -7200,7 +7545,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89883": {
         "map_name": "Classic Maze",
@@ -7221,7 +7567,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89945": {
         "map_name": "Pocket Grav Pal #007",
@@ -7242,7 +7589,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89979": {
         "map_name": "AUSSIE Teambuilding 3 v1.1 [GLTP]",
@@ -7262,7 +7610,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90002": {
         "map_name": "Time Trial Map V1",
@@ -7283,7 +7632,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90026": {
         "map_name": "Harry Botter and the Shaft of Dangers",
@@ -7303,7 +7653,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "89843": {
         "map_name": "Pocket Grav Pal #006",
@@ -7324,7 +7675,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90182": {
         "map_name": "Solo Grav Bottle [Patched]",
@@ -7345,7 +7697,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90195": {
         "map_name": "GLTP Bounty Season 2",
@@ -7365,7 +7718,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90356": {
         "map_name": "PP",
@@ -7386,7 +7740,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90458": {
         "map_name": "The Triad ⚜",
@@ -7406,7 +7761,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90559": {
         "map_name": "Fat Bambox",
@@ -7427,7 +7783,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90655": {
         "map_name": "Pocket Grav Pal #008",
@@ -7448,7 +7805,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90605": {
         "map_name": "stairmaster",
@@ -7469,7 +7827,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90773": {
         "map_name": "Detonation Dash 3",
@@ -7490,7 +7849,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "91006": {
         "map_name": "Pocket Grav Pal #009",
@@ -7511,7 +7871,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90969": {
         "map_name": "33 Jumps",
@@ -7532,7 +7893,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90881": {
         "map_name": "Dying Bird",
@@ -7554,7 +7916,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90852": {
         "map_name": "Detonation Dash 4",
@@ -7575,7 +7938,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90867": {
         "map_name": "Dead Bird",
@@ -7595,7 +7959,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90894": {
         "map_name": "Lava System",
@@ -7615,7 +7980,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90910": {
         "map_name": "Chillest Map Ever",
@@ -7635,7 +8001,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90958": {
         "map_name": "ToD Jump 3x (AWFUL) (DONT TRY) (HELL)",
@@ -7655,7 +8022,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "90929": {
         "map_name": "The Temple Maze [Reversed] (Official FWO)",
@@ -7676,7 +8044,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "91103": {
         "map_name": "Evil Scary Vampire Castle",
@@ -7696,7 +8065,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "91170": {
         "map_name": "wow",
@@ -7716,7 +8086,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "91222": {
         "map_name": "SB Space Force Rocket Challenge",
@@ -7736,7 +8107,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "91305": {
         "map_name": "Triple Jump Challenge",
@@ -7756,7 +8128,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "91043": {
         "map_name": "RB puzzle",
@@ -7777,7 +8150,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "91433": {
         "map_name": "Fat Trial of Deer",
@@ -7798,7 +8172,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "91496": {
         "map_name": "Ice Climbers Without Ice",
@@ -7819,7 +8194,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "86722": {
         "map_name": "NoJump Course",
@@ -7840,7 +8216,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "13118": {
         "map_name": "Skatepark",
@@ -7861,7 +8238,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "91923": {
         "map_name": "iCarly",
@@ -7881,7 +8259,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92122": {
         "map_name": "Boldy System 2.1",
@@ -7901,7 +8280,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92150": {
         "map_name": "Taradell [1 Jump]",
@@ -7922,7 +8302,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92199": {
         "map_name": "Ion Cannon",
@@ -7943,7 +8324,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92171": {
         "map_name": "Bombi",
@@ -7963,7 +8345,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93569": {
         "map_name": "Sisyphus's Mountain (Official)",
@@ -7984,7 +8367,8 @@
         "completion_type": "combined",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92219": {
         "map_name": "Taradell [1 Jump] (BOUNTY MAP)",
@@ -8006,7 +8390,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92266": {
         "map_name": "Oh Man, Oh Boy (Official FWO) - 4 Jump Edition",
@@ -8027,7 +8412,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92521": {
         "map_name": "Triple Jump Double Bomb",
@@ -8048,7 +8434,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92504": {
         "map_name": "Rhapsody",
@@ -8068,7 +8455,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92490": {
         "map_name": "Gravitron",
@@ -8089,7 +8477,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92416": {
         "map_name": "Pathfinder",
@@ -8109,7 +8498,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92342": {
         "map_name": "Jumpn't",
@@ -8130,7 +8520,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92341": {
         "map_name": "Space Walk",
@@ -8150,7 +8541,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92697": {
         "map_name": "Light Em Up (Official FWO)",
@@ -8171,7 +8563,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92736": {
         "map_name": "Eeffoc",
@@ -8192,7 +8585,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "92998": {
         "map_name": "New 3 Map",
@@ -8212,7 +8606,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93185": {
         "map_name": "Bambox (hard edition)",
@@ -8232,7 +8627,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93327": {
         "map_name": "Weakest Link",
@@ -8252,7 +8648,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93299": {
         "map_name": "Flappy Ball",
@@ -8274,7 +8671,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93402": {
         "map_name": "Detonation Dash 5",
@@ -8295,7 +8693,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93447": {
         "map_name": "Marble Run Race",
@@ -8317,7 +8716,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93508": {
         "map_name": "Buddy System 4 [Patched] 9bob9",
@@ -8337,7 +8737,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93499": {
         "map_name": "Discovery of Magic",
@@ -8359,7 +8760,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93543": {
         "map_name": "Knife's Edge",
@@ -8380,7 +8782,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93596": {
         "map_name": "Hurdle Challenge",
@@ -8401,7 +8804,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93598": {
         "map_name": "Buddy Union 4 HARDER: You want more?",
@@ -8422,7 +8826,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "95087": {
         "map_name": "Juggles And Careys",
@@ -8443,7 +8848,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93601": {
         "map_name": "Team Building (Official FWO)",
@@ -8464,7 +8870,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93602": {
         "map_name": "Aussie Team Action V2 Complete [Juggles]",
@@ -8485,7 +8892,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93603": {
         "map_name": "Aussie team action 3.0 [Juggles]",
@@ -8506,7 +8914,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93611": {
         "map_name": "Team Trauma 2 v1.0 (Official)",
@@ -8527,7 +8936,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93612": {
         "map_name": "team building V1 (Official)",
@@ -8548,7 +8958,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93613": {
         "map_name": "Aussie Team Action V4.5 (Official)",
@@ -8569,7 +8980,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "60119": {
         "map_name": "Juggle Compendium",
@@ -8590,7 +9002,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93639": {
         "map_name": "Juggle Distance",
@@ -8611,7 +9024,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93638": {
         "map_name": "Bound by Gravity",
@@ -8634,7 +9048,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "50263": {
         "map_name": "Warping Melody",
@@ -8657,7 +9072,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93707": {
         "map_name": "Longer Shorter Circuit",
@@ -8678,7 +9094,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93876": {
         "map_name": "Painting Jumpers",
@@ -8703,7 +9120,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93845": {
         "map_name": "The Box",
@@ -8725,7 +9143,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93863": {
         "map_name": "Cave System",
@@ -8746,7 +9165,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93913": {
         "map_name": "Ring of Fire",
@@ -8767,7 +9187,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93989": {
         "map_name": "I'm Not Your Buddy, Pal",
@@ -8789,7 +9210,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93942": {
         "map_name": "Spade",
@@ -8809,7 +9231,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93988": {
         "map_name": "jug full o bones",
@@ -8829,7 +9252,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94000": {
         "map_name": "jug full o bones (easy mode)",
@@ -8849,7 +9273,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94003": {
         "map_name": "jug full o bones (baby mode)",
@@ -8869,7 +9294,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94016": {
         "map_name": "jug full o bones (reversed buffed baby edition)",
@@ -8889,7 +9315,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94049": {
         "map_name": "Keep jumping and nobody explodes 2",
@@ -8911,7 +9338,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94050": {
         "map_name": "Keep jumping and nobody explodes 2 (Checkpoint Version)",
@@ -8933,7 +9361,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94092": {
         "map_name": "jug full o bones 2",
@@ -8953,7 +9382,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94093": {
         "map_name": "jug full o bones 2 (easy mode)",
@@ -8973,7 +9403,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94097": {
         "map_name": "PacMan with Gravity [Evil Checkpoints]",
@@ -8993,7 +9424,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94147": {
         "map_name": "jug full o bones 2 (baby mode)",
@@ -9013,7 +9445,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94181": {
         "map_name": "Pathfinder 2",
@@ -9033,7 +9466,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94210": {
         "map_name": "Un-handle-able",
@@ -9053,7 +9487,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94331": {
         "map_name": "Kickflip",
@@ -9073,7 +9508,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "91670": {
         "map_name": "SSX TRICKY",
@@ -9093,7 +9529,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94337": {
         "map_name": "Fort",
@@ -9113,7 +9550,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94371": {
         "map_name": "Celestial Cycle",
@@ -9133,7 +9571,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94544": {
         "map_name": "awesome challenge",
@@ -9153,7 +9592,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94639": {
         "map_name": "Rubble Rouser",
@@ -9174,7 +9614,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94597": {
         "map_name": "uppies",
@@ -9194,7 +9635,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94692": {
         "map_name": "Discovery of Magic (Easy Path Only)",
@@ -9214,7 +9656,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94671": {
         "map_name": "Discovery of Magic (Medium Path Only)",
@@ -9234,7 +9677,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94670": {
         "map_name": "Discovery of Magic (Hard Path Only)",
@@ -9254,7 +9698,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94797": {
         "map_name": "Spike Maze (60 Sec) [Upside down]",
@@ -9276,7 +9721,8 @@
         "completion_type": "individual",
         "allow_blue_caps": true,
         "allow_from_spawn": false,
-        "allow_from_grab": true
+        "allow_from_grab": true,
+        "laps": false
     },
     "94843": {
         "map_name": "one sick jump",
@@ -9296,7 +9742,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "94942": {
         "map_name": "Burden of Proof",
@@ -9316,7 +9763,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "93536": {
         "map_name": "Super Spike Maze",
@@ -9337,7 +9785,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": true
+        "allow_from_grab": true,
+        "laps": false
     },
     "28423": {
         "map_name": "Ball-e Bridge",
@@ -9360,7 +9809,8 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": "SPAWN"
     },
     "95154": {
         "map_name": "Triptych (Solo)",
@@ -9380,14 +9830,15 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "95132": {
         "map_name": "Triptych",
         "author": "Snack",
         "difficulty": "NULL",
         "difficultyFinal": "TBD",
-        "balls_req": "1",
+        "balls_req": "2",
         "preset": "gZMefJjyggtaiaaaJraakmaaaHpE ",
         "map_id": "95132",
         "equivalent_map_ids": [],
@@ -9400,12 +9851,13 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     },
     "95169": {
         "map_name": "Evil Crazy Demon Fortress",
         "author": "3",
-        "difficulty": "NULL",
+        "difficulty": "5.6",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJkjggtaiaaaJyaraapsaaamaaaVadSUadSHpzYE",
@@ -9420,6 +9872,7 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
-        "allow_from_grab": false
+        "allow_from_grab": false,
+        "laps": false
     }
 }
