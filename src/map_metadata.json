@@ -9805,7 +9805,7 @@
             "Spike Maze"
         ],
         "grav_or_classic": "Racing",
-        "caps_to_win": "1",
+        "caps_to_win": "3",
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": false,
