@@ -2369,7 +2369,7 @@
         "allow_blue_caps": false,
         "allow_from_spawn": true,
         "allow_from_grab": false,
-        "laps": false
+        "laps": "SPAWN"
     },
     "2454": {
         "map_name": "Slanted House",
@@ -2454,7 +2454,7 @@
         "allow_blue_caps": false,
         "allow_from_spawn": true,
         "allow_from_grab": false,
-        "laps": false
+        "laps": "SPAWN"
     },
     "82449": {
         "map_name": "Tweak Course",
@@ -6421,7 +6421,7 @@
         "allow_blue_caps": true,
         "allow_from_spawn": false,
         "allow_from_grab": true,
-        "laps": false
+        "laps": "GRAB"
     },
     "89475": {
         "map_name": "Zoom (Gravity Race) [Instant Bomb]",
@@ -9722,7 +9722,7 @@
         "allow_blue_caps": true,
         "allow_from_spawn": false,
         "allow_from_grab": true,
-        "laps": false
+        "laps": "GRAB"
     },
     "94843": {
         "map_name": "one sick jump",
@@ -9743,7 +9743,7 @@
         "allow_blue_caps": false,
         "allow_from_spawn": true,
         "allow_from_grab": false,
-        "laps": false
+        "laps": "SPAWN"
     },
     "94942": {
         "map_name": "Burden of Proof",
@@ -9786,7 +9786,7 @@
         "allow_blue_caps": false,
         "allow_from_spawn": false,
         "allow_from_grab": true,
-        "laps": false
+        "laps": "GRAB"
     },
     "28423": {
         "map_name": "Ball-e Bridge",
