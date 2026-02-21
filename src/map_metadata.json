@@ -3713,14 +3713,14 @@
         "allow_from_grab": false,
         "laps": false
     },
-    "86700": {
+    "95117": {
         "map_name": "Dragonsaine V.3 Hard Mode (Official FWO)",
         "author": "DragonBeast & FWO",
         "difficulty": "9.3",
         "difficultyFinal": "9.3",
         "balls_req": "2",
-        "preset": "gZMefGdqggtaiaaaJyaraaksaaamaaaE",
-        "map_id": "86700",
+        "preset": "gZMefJjjggtaiaaaJyaraaksaaamaaaE",
+        "map_id": "95117",
         "equivalent_map_ids": [],
         "categories": [
             "Solo",
