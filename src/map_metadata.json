@@ -2,7 +2,7 @@
     "87856": {
         "map_name": "The Impossible (Portal Edition) 1.0.2",
         "author": "Jean Valjean",
-        "difficulty": "2.3",
+        "difficulty": "2.2",
         "difficultyFinal": "2.0",
         "balls_req": "1",
         "preset": "gZMefGzCggtaiaaaJraaksaaamaaaE",
@@ -44,7 +44,7 @@
     "87858": {
         "map_name": "Uptown Funk (2 Jumps) (Instant Bombs)",
         "author": "Carey Price",
-        "difficulty": "4.5",
+        "difficulty": "4.4",
         "difficultyFinal": "4.5",
         "balls_req": "1",
         "preset": "gZMefGzEggtaiaaaJraaksaaamaaaE",
@@ -3998,7 +3998,7 @@
     "86892": {
         "map_name": "crosky's Ludicrous Challenge",
         "author": "crosky",
-        "difficulty": "2.3",
+        "difficulty": "4.0",
         "difficultyFinal": "2.3",
         "balls_req": "1",
         "preset": "gZMefGhataiaaaJyaraaksaaamaaaE",
@@ -4107,7 +4107,7 @@
     "86901": {
         "map_name": "Infinity Boost [Challenge] V1",
         "author": "DragonBeast",
-        "difficulty": "NULL",
+        "difficulty": "3.3",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefGhjtaiaaaJyaraaksaaamaaaE",
@@ -4892,7 +4892,7 @@
     "94046": {
         "map_name": "DeathRun Flappy Bird Version (Official FWO)",
         "author": "Fast-Ball",
-        "difficulty": "3.3",
+        "difficulty": "3.4",
         "difficultyFinal": "3.3",
         "balls_req": "1",
         "preset": "gZMefIOEggtaiaaaJyaraaksaaamaaapZE",
@@ -7681,7 +7681,7 @@
     "90182": {
         "map_name": "Solo Grav Bottle [Patched]",
         "author": "Gloopus",
-        "difficulty": "2.5",
+        "difficulty": "2.8",
         "difficultyFinal": "2.5",
         "balls_req": "1",
         "preset": "gZMefHsoggtaiaaaJraaksaaamaaaE",
@@ -9887,6 +9887,69 @@
         "categories": [
             "Solo",
             "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "95442": {
+        "map_name": "Freelance",
+        "author": "BallSaget",
+        "difficulty": "5.5",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJpwggtacbiaaaJyaraaksaaaVadSUadSHpzQiYE",
+        "map_id": "95442",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Anygate"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "95372": {
+        "map_name": "Rosie (Checkpoints)",
+        "author": "BallSaget",
+        "difficulty": "6.5",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJoeggtacbiaaaJyaraaksaaamaaYVadSUadSHpzpZE",
+        "map_id": "95372",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "95370": {
+        "map_name": "Rosie",
+        "author": "BallSaget",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJocggtacbiaaaJyaraaksaaamaaYVadSUadSHpzpZE",
+        "map_id": "95370",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "OneShot"
         ],
         "grav_or_classic": "Grav",
         "caps_to_win": "1",
