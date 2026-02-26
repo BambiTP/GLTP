@@ -9958,5 +9958,48 @@
         "allow_from_spawn": false,
         "allow_from_grab": false,
         "laps": false
+    },
+    "95482": {
+        "map_name": "Wavedash",
+        "author": "BallSaget",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJqkggtaiaaaJyaraaksaaamaaauaaaVaaYHpzQiYTbE",
+        "map_id": "95482",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "VS Race"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "95598": {
+        "map_name": "Space Train",
+        "author": "BallSaget",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJswggtaiaaaJyaraaksaaamaaauaaaVadSHpzQiYjTE",
+        "map_id": "95598",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
     }
 }
