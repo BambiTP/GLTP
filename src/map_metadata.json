@@ -9992,6 +9992,50 @@
         "equivalent_map_ids": [],
         "categories": [
             "Solo",
+            "OneShot",
+            "AFK"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "95752": {
+        "map_name": "Dancing Dragon",
+        "author": "BallSaget",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJvuggtaiaaaJyasaaamaaauaaaVadSHpzQiYEG",
+        "map_id": "95752",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "OneShot",
+            "AFK"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "95927": {
+        "map_name": "Hell Dance",
+        "author": "3",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJyNggtaiaaaJyaraaksaaamaaaVadSHpzYE",
+        "map_id": "95927",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
             "OneShot"
         ],
         "grav_or_classic": "Grav",
