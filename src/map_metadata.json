@@ -8832,9 +8832,9 @@
     "95087": {
         "map_name": "Juggles And Careys",
         "author": "Danny and Carey Price",
-        "difficulty": "NULL",
+        "difficulty": "4.1",
         "difficultyFinal": "TBD",
-        "balls_req": "3?",
+        "balls_req": "3",
         "preset": "gZMefJiFggtaiaaaJyaraaksaaamabWEF",
         "map_id": "95087",
         "equivalent_map_ids": [],
@@ -9896,14 +9896,14 @@
         "allow_from_grab": false,
         "laps": false
     },
-    "95442": {
+    "95444": {
         "map_name": "Freelance",
         "author": "BallSaget",
         "difficulty": "5.5",
         "difficultyFinal": "TBD",
         "balls_req": "1",
-        "preset": "gZMefJpwggtacbiaaaJyaraaksaaaVadSUadSHpzQiYE",
-        "map_id": "95442",
+        "preset": "gZMefJpyggtacbiaaaJyaraaksaaaVadSUadSHpzQiYE",
+        "map_id": "95444",
         "equivalent_map_ids": [],
         "categories": [
             "Solo",
@@ -9962,7 +9962,7 @@
     "95482": {
         "map_name": "Wavedash",
         "author": "BallSaget",
-        "difficulty": "NULL",
+        "difficulty": "5.8",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJqkggtaiaaaJyaraaksaaamaaauaaaVaaYHpzQiYTbE",
