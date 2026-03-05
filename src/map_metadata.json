@@ -10045,5 +10045,26 @@
         "allow_from_spawn": false,
         "allow_from_grab": false,
         "laps": false
+    },
+    "95943": {
+        "map_name": "Hell Dance (Checkpoints)",
+        "author": "3",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJzdggtaiaaaJyaraaksaaamaaaVadSHpzYE",
+        "map_id": "95943",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
     }
 }
