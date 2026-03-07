@@ -10087,5 +10087,26 @@
         "allow_from_spawn": false,
         "allow_from_grab": false,
         "laps": false
+    },
+    "95982": {
+        "map_name": "Ladder",
+        "author": "SB Army SB",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJzQggtaiaaaJBraaksaaEmabsuacUVadSUadSE",
+        "map_id": "95982",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": true,
+        "allow_from_grab": false,
+        "laps": false
     }
 }
