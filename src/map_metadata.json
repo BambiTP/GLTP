@@ -10049,7 +10049,7 @@
     "95943": {
         "map_name": "Hell Dance (Checkpoints)",
         "author": "3",
-        "difficulty": "NULL",
+        "difficulty": "6.0",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJzdggtaiaaaJyaraaksaaamaaaVadSHpzYE",
@@ -10106,6 +10106,27 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "96282": {
+        "map_name": "Triptych (Solo) (Easy)",
+        "author": "Snack",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJFEggtacbiaaaJraakmaaaHpzE",
+        "map_id": "96282",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
         "allow_from_grab": false,
         "laps": false
     }
