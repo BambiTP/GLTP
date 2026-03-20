@@ -9,3 +9,4 @@ src/pythonScripts/bot/events.txt
 src/pythonScripts/bot/replay_uuids.txt
 src/pythonScripts/bot/ws.txt
 .gitignore
+/src/pythonScripts/bot/stashpi
