@@ -175,7 +175,7 @@
     "87867": {
         "map_name": "The Challenge of Secrets (Official FWO)",
         "author": "Danny & FWO",
-        "difficulty": "2.4",
+        "difficulty": "2.8",
         "difficultyFinal": "2.8",
         "balls_req": "1",
         "preset": "gZMefGzNggtaiaaaJraaksaaamaaaE",
@@ -705,14 +705,14 @@
         "allow_from_grab": false,
         "laps": false
     },
-    "85771": {
-        "map_name": "Orbit Euphoria (Buddy System Grav, Boost/Bomb instant) (official version)",
+    "96531": {
+        "map_name": "Orbit Euphoria (Buddy System Grav) (official version)",
         "author": "DAD & Inspire",
         "difficulty": "8.0",
         "difficultyFinal": "8.0",
         "balls_req": "3",
-        "preset": "gZMefFLxggtaiaaaJraaksaaamaaaE",
-        "map_id": "85771",
+        "preset": "gZMefJKtggtaiaaaJraaksaaamaaaHpE",
+        "map_id": "96531",
         "equivalent_map_ids": [],
         "categories": [
             "Buddy",
@@ -2374,7 +2374,7 @@
     "2454": {
         "map_name": "Slanted House",
         "author": "9bob9",
-        "difficulty": "2.1",
+        "difficulty": "1.3",
         "difficultyFinal": "1.3",
         "balls_req": "1",
         "preset": "gZMdfVkggtuiaaaJyaraaksaaamaaaE",
@@ -6027,14 +6027,14 @@
         "allow_from_grab": false,
         "laps": false
     },
-    "89725": {
+    "96532": {
         "map_name": "Ferguson (Bombs: 1 sec, Boost: Instant)",
         "author": "UNITY",
         "difficulty": "NULL",
         "difficultyFinal": "TBD",
         "balls_req": "3",
-        "preset": "gZMefHjzggtaiaaaJyaraaksaaamaakE",
-        "map_id": "89725",
+        "preset": "gZMefJKuggtaiaaaJyaraaksaaamaakE",
+        "map_id": "96532",
         "equivalent_map_ids": [],
         "categories": [
             "Buddy",
@@ -8594,7 +8594,7 @@
         "difficulty": "3.0",
         "difficultyFinal": "3.0",
         "balls_req": "1",
-        "preset": "gZMefIuwggtaiaaaJyaraakHpYpfEG",
+        "preset": "gZMefIuwggtaiaaaJyaraakHpzYpfEG",
         "map_id": "92998",
         "equivalent_map_ids": [],
         "categories": [
@@ -10133,13 +10133,16 @@
     "96415": {
         "map_name": "Potholes",
         "author": "Snack",
-        "difficulty": "6.2",
+        "difficulty": "5.2",
         "difficultyFinal": "TBD",
         "balls_req": "x",
         "preset": "gZMefJIhggtacbiaaaJraakHpzE",
         "map_id": "96415",
         "equivalent_map_ids": [],
-        "categories": [],
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
         "grav_or_classic": "Grav",
         "caps_to_win": "1",
         "completion_type": "individual",
@@ -10157,7 +10160,31 @@
         "preset": "gZMefIoEggtaiaaaJyaraaksaaamaaaVadSUadSHpzYE",
         "map_id": "92694",
         "equivalent_map_ids": [],
-        "categories": [],
+        "categories": [
+            "Solo",
+            "Anygate"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "96613": {
+        "map_name": "Hellholes",
+        "author": "Snack",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "x",
+        "preset": "gZMefJLXggtkcbiaaaJyaraaksaaaUadSHpzYE",
+        "map_id": "96613",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
         "grav_or_classic": "Grav",
         "caps_to_win": "1",
         "completion_type": "individual",

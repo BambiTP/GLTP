@@ -32,7 +32,7 @@
     "Tower Race Down 2 (Official FWO)": "gZMefGjKggtaiaaaJraaksaaamaaaE",
     "The Impossible Map (Official FWO)": "gZMefEtfggtaiaaaJraaksaaamaaauaaajTE",
     "Celestial Tether (Buddy System Grav, Boost/Bomb instant)": "gZMefFLwggtaiaaaJraaksaaamaaaE",
-    "Orbit Euphoria (Buddy System Grav, Boost/Bomb instant) (official version)": "gZMefFLxggtaiaaaJraaksaaamaaaE",
+    "Orbit Euphoria (Buddy System Grav) (official version)": "gZMefJKtggtaiaaaJraaksaaamaaaHpE",
     "Buddy System 1 (TM1 Version) 9bob9 (Official FWO)": "gZMefEzeggtaiaaaJraaksaaamaaYE",
     "The World's Hardest Map (Official FWO V2)": "gZMefEuMggtaiaaaJraaksaaamaaYE",
     "Super Buddy (Official FWO v2)": "gZMefEDDggtaiaaaJraaksaaaE",
@@ -271,7 +271,7 @@
     "Climb Guys Deluxe": "gZMefGZwggtuiaaaJyaraaksaaamaakE",
     "Climb Guys": "gZMefGZxggtuiaaaJyaraaksaaamaakE",
     "Shadow Snipes with bomb": "gZMefHcbtaiaaaJyaraaksaaamaaa",
-    "Ferguson (Bombs: 1 sec, Boost: Instant)": "gZMefHjzggtaiaaaJyaraaksaaamaakE",
+    "Ferguson (Bombs: 1 sec, Boost: Instant)": "gZMefJKuggtaiaaaJyaraaksaaamaakE",
     "Compact Disc without cheeze (Official FWO)": "gZMefHcfggtaiaaaJyaraaksaaamaaapZE",
     "Cube Goldberg (red team version)": "gZMefHcRggtaiaaaJyaraakmaaEunqqYE",
     "Hopscotch (Official FWO) [Reversed] (no cheeze) by Carey Price": "gZMefHdvggtaiaaaJyaraaksaaamaaapZE",
@@ -388,7 +388,7 @@
     "Space Walk": "gZMefIhPggtaiaaaJyaraaksaaamaaaYE",
     "Light Em Up (Official FWO)": "gZMefIoHggtaiaaaJyaraaksaaamaaapZE",
     "Eeffoc": "gZMefIpuggtaiaaaJyaraakmaaaHppfE",
-    "New 3 Map": "gZMefIuwggtaiaaaJyaraakHpYpfEG",
+    "New 3 Map": "gZMefIuwggtaiaaaJyaraakHpzYpfEG",
     "Bambox (hard edition)": "gZMefIybggtaiaaaJraaksaaamaaaE",
     "Weakest Link": "gZMefIANggtaiaaaJraaksaaamaaEE",
     "Detonation Dash 5": "gZMefICkggtaiaaaJraaksaaauaaajTE",
@@ -459,5 +459,7 @@
     "Ladder": "gZMefJzQggtaiaaaJBraaksaaEmabsuacUVadSUadSE",
     "Triptych (Solo) (Easy)": "gZMefJFEggtacbiaaaJraakmaaaHpzE",
     "Potholes": "gZMefJIhggtacbiaaaJraakHpzE",
-    "Saltpeter": "gZMefIoEggtaiaaaJyaraaksaaamaaaVadSUadSHpzYE"
+    "Saltpeter": "gZMefIoEggtaiaaaJyaraaksaaamaaaVadSUadSHpzYE",
+    "Hellholes": "gZMefJLXggtkcbiaaaJyaraaksaaaUadSHpzYE",
+    "Copy This to add a new map": "preset"
 }
