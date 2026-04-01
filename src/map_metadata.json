@@ -10192,5 +10192,73 @@
         "allow_from_spawn": false,
         "allow_from_grab": false,
         "laps": false
+    },
+    "96719": {
+        "map_name": "Hall of Ball (reversed) (Official FWO)",
+        "author": "Jean Valjean & FWO",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJNZggtaiaaaJraaksaaamaaaE",
+        "map_id": "96719",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Reversed"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "96798": {
+        "map_name": "Detonation Dash [Reversed]",
+        "author": "DAD.",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJPAggtaiaaaJraaksaaamaakuaaaHpzfflfjTE",
+        "map_id": "96798",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Rolling Bomb",
+            "Reversed"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "96799": {
+        "map_name": "Detonation Dash [Power Pellet]",
+        "author": "DAD.",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJPBggtaiaaaJraaksaaamaakuaaaHpzfflfjTE",
+        "map_id": "96799",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Rolling Bomb",
+            "Power Pellet"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
     }
 }
