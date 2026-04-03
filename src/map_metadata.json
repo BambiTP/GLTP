@@ -10260,5 +10260,48 @@
         "allow_from_spawn": false,
         "allow_from_grab": false,
         "laps": false
+    },
+    "96860": {
+        "map_name": "[One Shot] Gravity Challenge (85% Complete)",
+        "author": "QX",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJQKggtaiaaaJyaraaksaaamaaaHpzE",
+        "map_id": "96860",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "OneShot"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": true,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "96861": {
+        "map_name": "Detonation Dash 2 [Reversed Oneshot]",
+        "author": "DAD.",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJQLggtaiaaaJraaksaaauaaaHpzfflfjTE",
+        "map_id": "96861",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "OneShot",
+            "Reversed"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": true,
+        "allow_from_grab": false,
+        "laps": false
     }
 }
