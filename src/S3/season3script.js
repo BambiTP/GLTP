@@ -2,7 +2,6 @@
 const navItems = {
   home: { linkId: 'homeLink', pageId: 'homePage' },
   standings: { linkId: 'standingsLink', pageId: 'standingsPage' },
-  ofm: { linkId: 'ofmLink', pageId: 'ofmPage' },
   bounties: { linkId: 'bountiesLink', pageId: 'bountiesPage' },
   links: { linkId: 'linksLink', pageId: 'linksPage' },
   week1: { linkId: 'week1Link', pageId: 'week1Page' },
@@ -75,7 +74,6 @@ function fetchSeasonData() {
       loadPageContent('season3Content', data.pages?.season3?.content || "Season 3 content not found.");
 
       // Load static content
-      loadStaticContent('ofmContent', 'ofm.html');
       loadStaticContent('bountiesContent', 'bounties.html');
       loadStaticContent('linksContent', 'gltp_links.html');
 
