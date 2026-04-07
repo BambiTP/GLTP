@@ -81,19 +81,19 @@ function fetchSeasonData() {
       if (data.week1 && data.week1.length > 0) {
         renderWeekContent('week1Content', data.week1);
       } else {
-        loadStaticContent('week1Content', 'S2W1.html');
+        loadStaticContent('week1Content', 'S3W1.html');
       }
 
       if (data.week2 && data.week2.length > 0) {
         renderWeekContent('week2Content', data.week2);
       } else {
-        loadStaticContent('week2Content', 'S2W2.html');
+        loadStaticContent('week2Content', 'S3W2.html');
       }
 
       if (data.week3 && data.week3.length > 0) {
         renderWeekContent('week3Content', data.week3);
       } else {
-        loadStaticContent('week3Content', 'S2W3.html');
+        loadStaticContent('week3Content', 'S3W3.html');
       }
 
       // Render standings and rosters
@@ -220,7 +220,7 @@ function renderWeekContent(containerId, weekData) {
   if (!container || !weekData) return;
 
   let weekNumber = containerId.replace('week', '').replace('Content', '');
-  let html = `<h1>GLTP Season 2 Week ${weekNumber} Maps</h1>`;
+  let html = `<h1>GLTP Season 3 Week ${weekNumber} Maps</h1>`;
 
   // Create maps table
   html += `
@@ -338,7 +338,7 @@ function renderStandings(containerId, teamsData) {
     b["Total\nPoints"] - a["Total\nPoints"]
   );
 
-  let html = `<h2 class="white-header">GLTP Season 2 Standings</h2>
+  let html = `<h2 class="white-header">GLTP Season 3 Standings</h2>
   <table>
     <thead>
       <tr>
@@ -493,7 +493,7 @@ function renderRosters(containerId, teamsData) {
   let html = `
   <table>
     <tr>
-      <th class="title" colspan="${teamsData.length}">Season 2 GLTP Rosters</th>
+      <th class="title" colspan="${teamsData.length}">Season 3 GLTP Rosters</th>
     </tr>
     <tr>
   `;
