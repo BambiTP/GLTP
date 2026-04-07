@@ -10,3 +10,6 @@ src/pythonScripts/bot/replay_uuids.txt
 src/pythonScripts/bot/ws.txt
 .gitignore
 /src/pythonScripts/bot/stashpi
+/src/pythonScripts/bot/cache
+src/pythonScripts/bot/ws.txt.stash1
+src/pythonScripts/bot/ws.txt.stash2.gz
