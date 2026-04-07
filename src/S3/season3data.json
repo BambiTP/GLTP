@@ -1,421 +1,87 @@
 {
   "week1": [
     {
-      "mapName": "Tunnel racer",
-      "author": "9bob9",
-      "link": "https://fortunatemaps.herokuapp.com/map/36193",
+      "mapName": "Castle",
+      "author": "oSo Squiggly",
+      "link": "https://fortunatemaps.herokuapp.com/map/96986",
       "recommendedBalls": "1+",
-      "preset": "gZMefnubggtuiaaaJyaraaksaaamaaaE",
-      "speedrunPreset": "gZMefnubggtkiaaaJyaraaasaaamaaaYEG",
-      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant\n3 laps",
+      "preset": "gZMefJTgggtkiaaaJyaraakYE",
+      "speedrunPreset": "gZMefJTgggtkiaaaJyaraaaYEG",
+      "settings": "3 laps",
       "points": 1,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Easy",
       "speedruns": [
-        {
-          "time": "2:30.775",
-          "players": [
-            "Some Ball 64"
-          ],
-          "team": "Fall Bondlers",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=e3cd344d-382b-4fcc-81cc-0f1496682edf",
-          "includeOnSpeedrun": "no"
-        },
-        {
-          "time": "3:04.991",
-          "players": [
-            "DAD.",
-            "Beach"
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=ea2f9ea6-70c6-422b-a6be-62d0828ee12d",
-          "includeOnSpeedrun": "no"
-        },
-        {
-          "time": "999:59:999",
-          "players": [
-            "Burt",
-            "HappyCracker",
-            "PoonLuvr69",
-            "L1GMa"
-          ],
-          "team": "Honkeys",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=4eefd6cf-e513-476d-ac57-ee47edc00a15",
-          "includeOnSpeedrun": "no"
-        },
-        {
-          "time": "2:26.043",
-          "players": [
-            "DAD."
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=e6696a8d-4c58-49e5-ac2e-01042a021186",
-          "includeOnSpeedrun": "no"
-        },
-        {
-          "time": "2:20.969",
-          "players": [
-            "DAD.",
-            "Madoka"
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=6746875e-23d1-4142-ba5c-5e6ef593d1b9",
-          "includeOnSpeedrun": "no"
-        },
-        {
-          "time": "2:44.009",
-          "players": [
-            "EvTheSmev"
-          ],
-          "team": "West Coasters",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=abc7590a-3461-4c7d-8378-75467284eb15",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "1:01.395",
-          "players": [
-            "DAD.",
-            "Madoka",
-            "MarcusYallow"
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=a4be10fe-6dc9-47ca-88b6-0aa90e969ec7",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "1:50.009",
-          "players": [
-            "Some Ball 64",
-            "perl"
-          ],
-          "team": "Fall Bondlers",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=e3cd344d-382b-4fcc-81cc-0f1496682edf",
-          "includeOnSpeedrun": "yes"
-        }
       ]
     },
     {
-      "mapName": "2 Person Buddy' v2 (Official FWO)",
-      "author": "Splittin'",
-      "link": "https://fortunatemaps.herokuapp.com/map/87826",
-      "recommendedBalls": "2+",
-      "preset": "gZMefGyYggtaiaaaJraaksaaamaaaE",
-      "speedrunPreset": "gZMefGyYggtaiaaaJyaraaasaaamaaaYEG",
-      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
-      "points": 1,
-      "fastestPoints": "1st = 2 points\n2nd = 1 point",
-      "difficulty": "Easy",
-      "speedruns": [
-        {
-          "time": "1:53.986",
-          "players": [
-            "Some Ball 64",
-            "Billy",
-            "Ball Of Fame"
-          ],
-          "team": "Fall Bondlers",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=a9dac72b-3c48-423f-9e86-6e7b848640d7",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "1:52.347",
-          "players": [
-            "DAD.",
-            "Madoka",
-            "Beach",
-            "MarcusYallow"
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=c202a904-8757-43ee-b07b-93dfa03eb054",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "4:16.263",
-          "players": [
-            "Valerian",
-            "MRCOW"
-          ],
-          "team": "West Coasters",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=40379b05-73b1-4a5a-b422-fab6864dadb9",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "37:46.712",
-          "players": [
-            "Burt",
-            "HappyCracker",
-            "PoonLuvr69",
-            "L1GMa"
-          ],
-          "team": "Honkeys",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=a1209f9a-5c41-417b-aac0-47379500674d",
-          "includeOnSpeedrun": "no"
-        }
-      ]
-    },
-    {
-      "mapName": "Mars Climb Part II",
-      "author": "Ball-E & FWO",
-      "link": "https://fortunatemaps.herokuapp.com/map/86703",
+      "mapName": "jug full o bones",
+      "author": "Snack'",
+      "link": "https://fortunatemaps.herokuapp.com/map/93988",
       "recommendedBalls": "1+",
-      "preset": "gZMefGdtggtuiaaaJyaraaksaaamaaaYE",
-      "speedrunPreset": "gZMefGdtggtkiaaaJyaraaasaaamaaaYEG",
+      "preset": "gZMefINyggtaiaaaJybraaasaaamaaaHpzE",
+      "speedrunPreset": "gZMefINyggtkiaaaJyaraaasaaamaaaHpzYEG",
       "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
       "points": 2,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Easy",
       "speedruns": [
-        {
-          "time": "40.736",
-          "players": [
-            "Some Ball 64"
-          ],
-          "team": "Fall Bondlers",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=f53ac64d-9931-4b1c-9bc9-24e7b7031a76",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "40.762",
-          "players": [
-            "MarcusYallow"
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=80e2b911-b7a0-4fd7-ae6e-4a35fd768a95",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "51.509",
-          "players": [
-            "EvTheSmev"
-          ],
-          "team": "West Coasters",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=a969bd6e-390b-40cd-81c9-9bebf79baad2",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "19:30.565",
-          "players": [
-            "Burt",
-            "HappyCracker",
-            "PoonLuvr69",
-            "L1GMa"
-          ],
-          "team": "Honkeys",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=8bf20d32-1b96-430b-8e33-98254e4dcac5",
-          "includeOnSpeedrun": "no"
-        },
-        {
-          "time": "30.886",
-          "players": [
-            "BigBird"
-          ],
-          "team": "Momentum Mori",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=31e07696-fbf1-4a1d-bd1b-00b1aada0fbf",
-          "youtube": "https://youtu.be/EnbEMm3torc",
-          "includeOnSpeedrun": "yes"
-        }
       ]
     },
     {
-      "mapName": "Hopscotch (Official FWO)",
-      "author": "Carey Price",
-      "link": "https://fortunatemaps.herokuapp.com/map/88703",
+      "mapName": "Discovery of Magic",
+      "author": "Snack'",
+      "link": "https://fortunatemaps.herokuapp.com/map/93499",
       "recommendedBalls": "1+",
-      "preset": "gZMefGPRggtaiaaaJyaraaksaaamaaapaE",
-      "speedrunPreset": "gZMefGPRggtkcbiaaaJybraaasaaamaaaYpaEG",
-      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant\nunlimited jumps",
-      "points": 2,
-      "fastestPoints": "1st = 2 points\n2nd = 1 point",
-      "difficulty": "Medium",
-      "speedruns": [
-        {
-          "time": "1:37.955",
-          "players": [
-            "DAD.",
-            "Madoka",
-            "MarcusYallow"
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=7efa5c49-980e-44b8-95bb-d1d80a01b29b",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "1:37.829",
-          "players": [
-            "BigBird"
-          ],
-          "team": "Momentum Mori",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=55f749df-1855-44b6-9163-255782dd8bcf",
-          "youtube": "https://youtu.be/f5q7Zln-plA",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "1:29.913",
-          "players": [
-            "DAD.",
-            "Madoka"
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=d64daf90-74b5-485c-9311-f40630265170",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "22:41.088",
-          "players": [
-            "TeaForYou&Me"
-          ],
-          "team": "West Coasters",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=5f84f0a7-3350-410b-b5ec-7755d0afdaf7",
-          "includeOnSpeedrun": "no"
-        },
-        {
-          "time": "5:55.283",
-          "players": [
-            "Some Ball 64"
-          ],
-          "team": "Fall Bondlers",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=5f0b9918-604e-4b10-8b0a-c7a4ff870317",
-          "includeOnSpeedrun": "yes"
-        }
-      ]
-    },
-    {
-      "mapName": "Buddy System 8 (TM1 Version) 9bob9",
-      "author": "Team 1",
-      "link": "https://fortunatemaps.herokuapp.com/map/47885",
-      "recommendedBalls": "3+",
-      "preset": "gZMefrKTggtaiaaaJraaksaaaE",
-      "speedrunPreset": "gZMefrKTggtkcbiaaaJybraaasaaaYEG",
-      "settings": "Bomb Respawn: Default\nBoost Respawn: Instant",
+      "preset": "gZMefIEdggtacbiaaaJyaraaasaaamaaauaaaSPuYTbE",
+      "speedrunPreset": "gZMefIEdggtkcbiaaaJyaraaasaaamaaauaaaSPuYTbEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
       "points": 3,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
       "speedruns": [
-        {
-          "time": "7:41.259",
-          "players": [
-            "Some Ball 64",
-            "Billy",
-            "Ball Of Fame",
-            "perl"
-          ],
-          "team": "Fall Bondlers",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=3f0fb6ad-a786-467c-ac3d-6db919eb88f2",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "33:41.859",
-          "players": [
-            "DAD.",
-            "Beach",
-            "MarcusYallow"
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=8905e92f-9409-47ab-bd7c-9fd92cc601ec",
-          "includeOnSpeedrun": "no"
-        },
-        {
-          "time": "5:10.460",
-          "players": [
-            "DAD.",
-            "Madoka",
-            "MarcusYallow"
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=1d78bd47-8885-4eb2-9a96-b91f74825488",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "31:47.184",
-          "players": [
-            "Valerian",
-            "MRCOW",
-            "EvTheSmev",
-            "TeaForYou&Me"
-          ],
-          "team": "West Coasters",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=5d2737bf-ba2b-4703-a235-34db1209b26b",
-          "includeOnSpeedrun": "yes"
-        }
       ]
     },
     {
-      "mapName": "AUSSIE Teambuilding 3 v1.1 [GLTP]",
-      "author": "leddy & FWO",
-      "link": "https://fortunatemaps.herokuapp.com/map/89979",
+      "mapName": "Buddy system 5 w/ permagates",
+      "author": "ez gravity",
+      "link": "https://fortunatemaps.herokuapp.com/map/44927",
       "recommendedBalls": "3+",
-      "preset": "gZMefHotggtaiaaaJraaksaaamabWE",
-      "speedrunPreset": "gZMefHotggtaiaaaJyaraaasaaamabWYEG",
-      "settings": "Bomb Respawn: 10 Sec\nBoost Respawn: Instant",
+      "preset": "gZMefqFZggtaiaaaJraaksaaaE",
+      "speedrunPreset": "gZMefqFZggtkiaaaJyaraaasaaaYEG",
+      "settings": "Boost Respawn: Instant",
       "points": 3,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
       "speedruns": [
-        {
-          "time": "31:56.917",
-          "players": [
-            "DAD.",
-            "Beach",
-            "MarcusYallow"
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=da4132a7-79b3-411f-808f-10567279e870",
-          "includeOnSpeedrun": "no"
-        },
-        {
-          "time": "5:39.990",
-          "players": [
-            "BigBird"
-          ],
-          "team": "Momentum Mori",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=e4d2e772-9e72-40e9-ad0a-eb93ecfd04ba",
-          "youtube": "https://youtu.be/SRIazEFRogw",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "11:33.392",
-          "players": [
-            "DAD.",
-            "Madoka"
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=82653bd8-9b47-420a-b06a-383269462672",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "10:25.984",
-          "players": [
-            "Ball of Fame",
-            "Some Ball 64",
-            "LogisticMap",
-            "Billy",
-            "hmmmm"
-          ],
-          "team": "Fall Bondlers",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=ae8cbbcf-3ef5-487a-a820-ec7009176256",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "4:55.874",
-          "players": [
-            "DAD.",
-            "Madoka"
-          ],
-          "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=085e0b4f-2924-495c-8549-4e98cd40e9a8",
-          "includeOnSpeedrun": "yes"
-        },
-        {
-          "time": "55:01.260",
-          "players": [
-            "TeaForYou&Me",
-            "MRCOW",
-            "Valerian"
-          ],
-          "team": "West Coasters",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=436c5017-e5e1-458e-af8b-2aafcc267a32",
-          "includeOnSpeedrun": "yes"
-        }
+      ]
+    },
+    {
+      "mapName": "Weakest Link",
+      "author": "SB Army SB",
+      "link": "https://fortunatemaps.herokuapp.com/map/93327",
+      "recommendedBalls": "3+",
+      "preset": "gZMefIANggtaiaaaJraaksaaamaaEE",
+      "speedrunPreset": "gZMefIANggtkiaaaJyaraaasaaamaaEYEG",
+      "settings": "Bomb Respawn: 3 sec\nBoost Respawn: Instant",
+      "points": 3,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Hell Dance (Checkpoints)",
+      "author": "3",
+      "link": "https://fortunatemaps.herokuapp.com/map/95943",
+      "recommendedBalls": "1+",
+      "preset": "gZMefJzdggtaiaaaJyaraaksaaamaaaVadSHpzYE",
+      "speedrunPreset": "gZMefJzdggtkiaaaJyaraaasaaamaaaVadSHpzYEG",
+      "settings": "",
+      "points": 4,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Hard",
+      "speedruns": [
       ]
     }
   ],
