@@ -26,11 +26,11 @@ Object.entries(navItems).forEach(([key, { linkId, pageId }]) => {
       window.location.href = '/GLTP/S3/home.html';
       return;
     }
-    if (key === 'season1Link') {
+    if (key === 'season1') {
       window.location.href = '/GLTP/S1/home.html';
       return;
     }
-    if (key === 'season2Link') {
+    if (key === 'season2') {
       window.location.href = '/GLTP/S2/home.html';
       return;
     }
