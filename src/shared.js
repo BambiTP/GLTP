@@ -117,7 +117,7 @@ export function setupNavigation() {
   speedRecordsLink.addEventListener("click", () => showPage("mapsRecordsContainer"));
   jumpRecordsLink.addEventListener("click", () => showPage("jumpRecordsContainer"));
   leaderboardLink.addEventListener("click", () => showPage("leaderboardPage"));
-  gltpLink.addEventListener("click", () => (window.location.href = "S2/home.html"));
+  gltpLink.addEventListener("click", () => (window.location.href = "S3/home.html"));
 
   // Initialize the chosen tab
   showPage(activePage);
