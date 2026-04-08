@@ -20,6 +20,15 @@
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=34321825-7baf-4067-a9e4-1eba2c580cf8",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:26.117",
+          "players": [
+            "DAD."
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=eb9d6edc-40e9-42e1-92fa-246e08a51228",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
