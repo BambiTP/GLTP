@@ -1,6 +1,89 @@
 {
   "week1": [
-
+    {
+      "mapName": "Castle",
+      "author": "oSo Squiggly",
+      "link": "https://fortunatemaps.herokuapp.com/map/96986",
+      "recommendedBalls": "1+",
+      "preset": "gZMefJTgggtkiaaaJyaraakYE",
+      "speedrunPreset": "gZMefJTgggtkiaaaJyaraaaYEG",
+      "settings": "3 laps",
+      "points": 1,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Easy",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "jug full o bones",
+      "author": "Snack'",
+      "link": "https://fortunatemaps.herokuapp.com/map/93988",
+      "recommendedBalls": "1+",
+      "preset": "gZMefINyggtaiaaaJybraaasaaamaaaHpzE",
+      "speedrunPreset": "gZMefINyggtkiaaaJyaraaasaaamaaaHpzYEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 2,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Easy",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Discovery of Magic",
+      "author": "Snack'",
+      "link": "https://fortunatemaps.herokuapp.com/map/93499",
+      "recommendedBalls": "1+",
+      "preset": "gZMefIEdggtacbiaaaJyaraaasaaamaaauaaaSPuYTbE",
+      "speedrunPreset": "gZMefIEdggtkcbiaaaJyaraaasaaamaaauaaaSPuYTbEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 3,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Buddy system 5 w/ permagates",
+      "author": "ez gravity",
+      "link": "https://fortunatemaps.herokuapp.com/map/44927",
+      "recommendedBalls": "3+",
+      "preset": "gZMefqFZggtaiaaaJraaksaaaE",
+      "speedrunPreset": "gZMefqFZggtkiaaaJyaraaasaaaYEG",
+      "settings": "Boost Respawn: Instant",
+      "points": 3,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Weakest Link",
+      "author": "SB Army SB",
+      "link": "https://fortunatemaps.herokuapp.com/map/93327",
+      "recommendedBalls": "3+",
+      "preset": "gZMefIANggtaiaaaJraaksaaamaaEE",
+      "speedrunPreset": "gZMefIANggtkiaaaJyaraaasaaamaaEYEG",
+      "settings": "Bomb Respawn: 3 sec\nBoost Respawn: Instant",
+      "points": 3,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Hell Dance (Checkpoints)",
+      "author": "3",
+      "link": "https://fortunatemaps.herokuapp.com/map/95943",
+      "recommendedBalls": "1+",
+      "preset": "gZMefJzdggtaiaaaJyaraaksaaamaaaVadSHpzYE",
+      "speedrunPreset": "gZMefJzdggtkiaaaJyaraaasaaamaaaVadSHpzYEG",
+      "settings": "",
+      "points": 4,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Hard",
+      "speedruns": [
+      ]
+    }
   ],
   "week2": [
   ],
@@ -37,7 +120,8 @@
         "MarcusYallow",
         "caprae",
         "o o l e r",
-        "Phreak"
+        "Phreak",
+        "Gamma"
       ]
     },
     {
@@ -55,7 +139,8 @@
         "Alpha",
         "UNlTY",
         "Some Ball",
-        "Riley_2025"
+        "Riley_2025",
+        "Eashy"
       ]
     },
     {
