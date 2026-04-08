@@ -7706,7 +7706,7 @@
         "difficulty": "NULL",
         "difficultyFinal": "TBD",
         "balls_req": "5",
-        "preset": "gZMefHsBggtaiaaaJyaraaasaaaYEG",
+        "preset": "gZMefHsBggtaiaaaJyaraaasaaaYEFG",
         "map_id": "90195",
         "equivalent_map_ids": [],
         "categories": [
@@ -10301,6 +10301,114 @@
         "completion_type": "individual",
         "allow_blue_caps": false,
         "allow_from_spawn": true,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "96986": {
+        "map_name": "Castle",
+        "author": "oSo Squiggly",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJTgggtkiaaaJyaraakYE",
+        "map_id": "96986",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Individual",
+            "Race",
+            "3 lap"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": "SPAWN"
+    },
+    "96982": {
+        "map_name": "MAPSWAP 4/6/2026",
+        "author": "3 Snack 64 DAD Unity",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJTcggtaiaaaJraaksaaamaaauaaaHpzjTE",
+        "map_id": "96982",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Mapswap"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "96937": {
+        "map_name": "MAPSWAP",
+        "author": "3",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJSjggtaiaaaJraaksaaamaaaHpzE",
+        "map_id": "96937",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Mapswap"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "96908": {
+        "map_name": "Gravity Shift Speedrun",
+        "author": "SB Army SB",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJRGggtdcbiaakJByaraaksaakTE",
+        "map_id": "96908",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "96884": {
+        "map_name": "Detonation Dash 3 [Reversed]",
+        "author": "DAD.",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJRiggtaiaaaJraaksaaauaaaVadSUadSHpzfflfjTE ",
+        "map_id": "96884",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Reversed"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
         "allow_from_grab": false,
         "laps": false
     }

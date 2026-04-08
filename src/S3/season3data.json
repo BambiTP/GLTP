@@ -12,6 +12,15 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Easy",
       "speedruns": [
+         {
+          "time": "1:32.546",
+          "players": [
+            "Slush Puppy"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=a43ff996-74f4-40e3-b93a-5522b926fa5d",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
@@ -54,6 +63,27 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
       "speedruns": [
+        {
+          "time": "5:29.222",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=cc18f54d-95e6-463f-a423-1882c51115bb",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "17:06.523",
+          "players": [
+            "3",
+            "Some Ball 64",
+            "UNlTY"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=8a018afd-f1c8-4ccd-be82-a78a791762cf",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
@@ -82,6 +112,16 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Hard",
       "speedruns": [
+        {
+          "time": "28:41.589",
+          "players": [
+            "3",
+            "Some Ball 64"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=0f07b79d-fe2a-4f95-8e3e-58dbdf3b8dbe",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     }
   ],
@@ -138,7 +178,7 @@
         "Some Ball 64",
         "Alpha",
         "UNlTY",
-        "Some Ball",
+        "Slush Puppy",
         "Riley_2025",
         "Eashy"
       ]
