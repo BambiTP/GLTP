@@ -13,12 +13,12 @@
       "difficulty": "Easy",
       "speedruns": [
          {
-          "time": "1:26.905",
+          "time": "1:15.578",
           "players": [
             "Slush Puppy"
           ],
           "team": "Team Tanka",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=fc3610d0-eb3b-472b-b741-7cd96604e753",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=fcb2b581-16a9-485f-b08c-76f9be37256f",
           "includeOnSpeedrun": "yes"
         },
         {
@@ -28,6 +28,15 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=eb9d6edc-40e9-42e1-92fa-246e08a51228",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "1:13.952",
+          "players": [
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=cd5ccc9f-4f88-4a45-ac72-35942e570e3a",
           "includeOnSpeedrun": "yes"
         },
         {
@@ -76,6 +85,15 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
       "speedruns": [
+        {
+          "time": "1:30.593",
+          "players": [
+            "Snack"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=9b4cfdd7-8c2a-48d8-8d50-82c808a22b8b",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
