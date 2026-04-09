@@ -106,6 +106,15 @@
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=9b4cfdd7-8c2a-48d8-8d50-82c808a22b8b",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:13.527",
+          "players": [
+            "3"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=6128dbfa-95f3-4b8f-8c33-2c79d5d94d10",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -178,6 +187,15 @@
           ],
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=0f07b79d-fe2a-4f95-8e3e-58dbdf3b8dbe",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "14:04.503",
+          "players": [
+            "DAD."
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=be8b8791-2b9b-4768-bbde-ab0ec5471070",
           "includeOnSpeedrun": "yes"
         }
       ]
