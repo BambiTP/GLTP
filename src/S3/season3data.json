@@ -180,6 +180,15 @@
       "difficulty": "Hard",
       "speedruns": [
         {
+          "time": "3:53.120",
+          "players": [
+            "3"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=d3953e4e-72ab-46ae-a188-b7c3061e2444",
+          "includeOnSpeedrun": "yes"
+        },
+        {
           "time": "28:41.589",
           "players": [
             "3",
@@ -187,15 +196,15 @@
           ],
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=0f07b79d-fe2a-4f95-8e3e-58dbdf3b8dbe",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
-          "time": "4:15.496",
+          "time": "2:51.108",
           "players": [
             "DAD."
           ],
           "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=5587dacd-899f-4011-ae7d-be4b3fac52d1",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=967270c4-0707-449c-a599-14dd0540fe50",
           "includeOnSpeedrun": "yes"
         }
       ]
