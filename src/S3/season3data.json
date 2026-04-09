@@ -63,12 +63,25 @@
       "difficulty": "Easy",
       "speedruns": [
         {
-          "time": "2:12.520",
+          "time": "1:23.778",
           "players": [
-            "BallSaget"
+            "BallSaget",
+            "Snack"
           ],
           "team": "Grabity",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=2a46a164-6f50-47a5-a7a8-797740d2f54c",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=b31077e7-fd57-48e2-b6aa-00e527af7694",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:30.650",
+          "players": [
+            "3",
+            "Alpha",
+            "Some Ball 64",
+            "Eashy"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=2cd3cf9a-c456-4089-be3d-c147383e8b9f",
           "includeOnSpeedrun": "yes"
         }
       ]
