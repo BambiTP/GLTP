@@ -58,12 +58,22 @@
           "includeOnSpeedrun": "no"
         },
         {
-          "time": "1:11.448",
+          "time": "1:13.000",
           "players": [
             "BallSaget"
           ],
           "team": "Grabity",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=d1b67626-ebe9-48e5-9d99-e8144151bb22",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=74d849aa-551a-411e-ab65-20f5a12c2161",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "1:10.779",
+          "players": [
+            "BallSaget",
+            "Snack"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=82a5c79b-ee57-4664-a271-f9d3c04467bc",
           "includeOnSpeedrun": "yes"
         }
       ]
