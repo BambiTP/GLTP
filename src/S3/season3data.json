@@ -37,6 +37,15 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=cd5ccc9f-4f88-4a45-ac72-35942e570e3a",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "1:10.284",
+          "players": [
+            "MarcusYallow"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=cdef4703-713c-4835-987d-36f33e88d462",
           "includeOnSpeedrun": "yes"
         },
         {
@@ -46,6 +55,15 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=5fc7b2b8-54a9-4392-9cd1-dec8592daca8",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "1:13.000",
+          "players": [
+            "BallSaget"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=74d849aa-551a-411e-ab65-20f5a12c2161",
           "includeOnSpeedrun": "yes"
         }
       ]
