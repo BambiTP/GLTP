@@ -153,6 +153,15 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=91fec973-7d43-4d44-8f7e-58f379c9f137",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "0:57.858",
+          "players": [
+            "DAD."
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=bb49441c-ab9e-4f61-994c-a1e78013866b",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
