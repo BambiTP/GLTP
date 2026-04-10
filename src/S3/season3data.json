@@ -58,13 +58,13 @@
           "includeOnSpeedrun": "no"
         },
         {
-          "time": "1:13.000",
+          "time": "1:10.200",
           "players": [
             "BallSaget"
           ],
           "team": "Grabity",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=74d849aa-551a-411e-ab65-20f5a12c2161",
-          "includeOnSpeedrun": "no"
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=f8a6e918-c91d-4f90-b42a-3ecbf99517b1",
+          "includeOnSpeedrun": "yes"
         },
         {
           "time": "1:10.779",
@@ -74,7 +74,7 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=82a5c79b-ee57-4664-a271-f9d3c04467bc",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         }
       ]
     },
@@ -162,7 +162,7 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=91fec973-7d43-4d44-8f7e-58f379c9f137",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "0:57.858",
