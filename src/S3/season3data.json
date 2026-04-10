@@ -136,12 +136,12 @@
           "includeOnSpeedrun": "yes"
         },
         {
-          "time": "1:01.377",
+          "time": "1:00.061",
           "players": [
             "3"
           ],
           "team": "Team Tanka",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=6ac7de59-44b4-448f-accd-57a07eb30218",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=3eeccd2a-d51f-4cfd-badf-e841bc646130",
           "includeOnSpeedrun": "yes"
         },
         {
@@ -298,6 +298,17 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=967270c4-0707-449c-a599-14dd0540fe50",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "58:28.548",
+          "players": [
+            "BallSaget",
+            "Snack",
+            "perl"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=db59362f-a5ec-4c0e-bd24-f945a5bd45e4",
           "includeOnSpeedrun": "yes"
         }
       ]
