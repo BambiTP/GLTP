@@ -136,12 +136,22 @@
           "includeOnSpeedrun": "yes"
         },
         {
-          "time": "1:04.584",
+          "time": "1:01.377",
           "players": [
             "3"
           ],
           "team": "Team Tanka",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=fb9b1489-1ed9-4fba-8fb5-ed1e12a9b369",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=6ac7de59-44b4-448f-accd-57a07eb30218",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:41.278",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=91fec973-7d43-4d44-8f7e-58f379c9f137",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -177,6 +187,28 @@
           ],
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=8a018afd-f1c8-4ccd-be82-a78a791762cf",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "9:10.524",
+          "players": [
+            "3",
+            "Alpha",
+            "UNlTY"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=94aaa628-31bb-4826-9224-aaa769338b0a",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "31:06.600",
+          "players": [
+            "perl",
+            "Snack",
+            "BallSaget"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=cf06514c-9753-4d0d-b279-9b7e018760e6",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -193,6 +225,39 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
       "speedruns": [
+        {
+          "time": "7:16.935",
+          "players": [
+            "3",
+            "Some Ball 64",
+            "Alpha"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=bf41397d-db23-464f-b23d-2a7d781c37dd",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "17:36.984",
+          "players": [
+            "DAD.",
+            "Madoka",
+            "AJ"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=548fed5a-5ae3-446f-b577-ef32b0d4477e",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "23:57.676",
+          "players": [
+            "snack",
+            "BallSaget",
+            "perl"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=bd47b351-00d0-4bb5-a719-8eab316fddd2",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
