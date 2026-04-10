@@ -101,6 +101,16 @@
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=2cd3cf9a-c456-4089-be3d-c147383e8b9f",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:16.434",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=5b393a58-0765-4e36-91ea-eae02998a57d",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -126,12 +136,12 @@
           "includeOnSpeedrun": "yes"
         },
         {
-          "time": "1:13.527",
+          "time": "1:04.584",
           "players": [
             "3"
           ],
           "team": "Team Tanka",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=6128dbfa-95f3-4b8f-8c33-2c79d5d94d10",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=fb9b1489-1ed9-4fba-8fb5-ed1e12a9b369",
           "includeOnSpeedrun": "yes"
         }
       ]
