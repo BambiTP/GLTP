@@ -121,6 +121,17 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=5b393a58-0765-4e36-91ea-eae02998a57d",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "4:17.678",
+          "players": [
+            "EvTheSmev",
+            "MRCOW",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=b1c46af6-e997-4fdf-827c-8d5983956c62",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -152,6 +163,15 @@
           ],
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=3eeccd2a-d51f-4cfd-badf-e841bc646130",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "0:56.946",
+          "players": [
+            "3"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=e1bc1fbf-52d9-4979-a478-8bc04e949600",
           "includeOnSpeedrun": "yes"
         },
         {
