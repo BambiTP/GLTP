@@ -40,12 +40,12 @@
           "includeOnSpeedrun": "no"
         },
         {
-          "time": "1:10.284",
+          "time": "1:08.403",
           "players": [
             "MarcusYallow"
           ],
           "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=cdef4703-713c-4835-987d-36f33e88d462",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=cac18c90-f7af-4f1d-9195-407ae7eeaab9",
           "includeOnSpeedrun": "yes"
         },
         {
@@ -166,12 +166,12 @@
           "includeOnSpeedrun": "no"
         },
         {
-          "time": "0:56.946",
+          "time": "0:53.853",
           "players": [
             "3"
           ],
           "team": "Team Tanka",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=e1bc1fbf-52d9-4979-a478-8bc04e949600",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=9d3d026b-e8b8-4ed1-820e-fe3eefcca90d",
           "includeOnSpeedrun": "yes"
         },
         {
@@ -248,6 +248,17 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=cf06514c-9753-4d0d-b279-9b7e018760e6",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "11:09.754",
+          "players": [
+            "EvTheSmev",
+            "MRCOW",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=f22ad5f3-857a-4e2e-a04c-776a86725a2a",
           "includeOnSpeedrun": "yes"
         }
       ]
