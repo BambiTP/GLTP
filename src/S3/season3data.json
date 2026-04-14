@@ -89,6 +89,15 @@
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=538d1523-fdc1-460e-afc1-edeef9653e67",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:18.401",
+          "players": [
+            "EvTheSmev"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=331fdf0a-1c26-4d5c-9336-870f4bffd102",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
