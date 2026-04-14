@@ -9203,7 +9203,8 @@
             "Buddy",
             "Checkpoint",
             "mapsgiving",
-            "AnyGate"
+            "AnyGate",
+            "Juggling"
         ],
         "grav_or_classic": "Grav",
         "caps_to_win": "1",
@@ -10241,7 +10242,7 @@
     "96799": {
         "map_name": "Detonation Dash [Power Pellet]",
         "author": "DAD.",
-        "difficulty": "NULL",
+        "difficulty": "1.0",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJPBggtaiaaaJraaksaaamaakuaaaHpzfflfjTE",
@@ -10351,7 +10352,7 @@
     "96937": {
         "map_name": "MAPSWAP",
         "author": "3",
-        "difficulty": "NULL",
+        "difficulty": "1.7",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJSjggtaiaaaJraaksaaamaaaHpzE",
@@ -10372,7 +10373,7 @@
     "96908": {
         "map_name": "Gravity Shift Speedrun",
         "author": "SB Army SB",
-        "difficulty": "NULL",
+        "difficulty": "2.9",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJRGggtdcbiaakJByaraaksaakTE",
@@ -10403,6 +10404,93 @@
             "Solo",
             "Checkpoint",
             "Reversed"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "97115": {
+        "map_name": "Spinout Raceway 2 [GLTP]",
+        "author": "Ball-E",
+        "difficulty": "NULL",
+        "difficultyFinal": "1.7",
+        "balls_req": "1",
+        "preset": "gZMefJVFggtkiaaaJyaraakYE",
+        "map_id": "97115",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Individual",
+            "Race",
+            "3 lap"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "3",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": "SPAWN"
+    },
+    "97126": {
+        "map_name": "The Challenge of Secrets [GLTP]",
+        "author": "Danny & FWO",
+        "difficulty": "NULL",
+        "difficultyFinal": "2.9",
+        "balls_req": "1",
+        "preset": "gZMefJBJggtaiaaaJyaraaksaaumaaYYE",
+        "map_id": "97126",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "Juggling"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "97111": {
+        "map_name": "Le Epic Bacon d0000m :3",
+        "author": "SB Army SB",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJVBggtdcbiaakJByaraaksaakTEF ",
+        "map_id": "97111",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Buddy",
+            "OneShot",
+            "Juggling"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "96079": {
+        "map_name": "NGB [Gravity Buddy]",
+        "author": "Canvas",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefJBJggtaiaaaJyaraaksaaumaaYYE",
+        "map_id": "96079",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Buddy",
+            "Checkpoint"
         ],
         "grav_or_classic": "Grav",
         "caps_to_win": "1",

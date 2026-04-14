@@ -424,7 +424,105 @@
       ]
     }
   ],
-  "week2": [
+  "week4": [
+    {
+      "mapName": "Spinout Raceway 2 [GLTP]",
+      "author": "Ball-E",
+      "link": "https://fortunatemaps.herokuapp.com/map/97115",
+      "recommendedBalls": "1+",
+      "preset": "gZMefJVFggtkiaaaJyaraakYE",
+      "speedrunPreset": "gZMefJVFggtkiaaaJyaraaaYEG",
+      "settings": "Bomb Respawn: Default\nBoost Respawn: Default",
+      "points": 1,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Easy",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "The Challenge of Secrets [GLTP]",
+      "author": "Danny & FWO",
+      "link": "https://fortunatemaps.herokuapp.com/map/97126",
+      "recommendedBalls": "2+",
+      "preset": "gZMefJVQggtaiaaaJraaksaaamaaaEF",
+      "speedrunPreset": "gZMefJVQggtaiaaaJyaraaasaaamaaaYEFG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant\nBuddy Jumps",
+      "points": 1,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Easy",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "You're Pushing My Buttons (Official FWO)",
+      "author": "Carey Price",
+      "link": "https://fortunatemaps.herokuapp.com/map/82498",
+      "recommendedBalls": "1+",
+      "preset": "gZMefEAAggtaiaaaJraaksaaamaaaE",
+      "speedrunPreset": "gZMefEAAggtaiaaaJyaraaasaaamaaaYEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 2,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "The Caverns Below",
+      "author": "Snack",
+      "link": "https://fortunatemaps.herokuapp.com/map/89059",
+      "recommendedBalls": "2+",
+      "preset": "gZMefGWJggtaiaaaJyaraaksaaamaaaE",
+      "speedrunPreset": "gZMefGWJggtaiaaaJyaraaasaaamaaaYEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 3,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Aussie Team Action V2 Complete [Juggles]",
+      "author": "Curveballed",
+      "link": "https://fortunatemaps.herokuapp.com/map/93602",
+      "recommendedBalls": "2+",
+      "preset": "gZMefIGcggtaiaaaJyaraaksaaamabWYEF",
+      "speedrunPreset": "gZMefIGcggtkiaaaJyaraaasaaamabWYEFG",
+      "settings": "Bomb Respawn: 10 sec\nBoost Respawn: Instant\nBuddy Jumps",
+      "points": 3,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "NGB [Gravity Buddy]",
+      "author": "Canvas",
+      "link": "http://fortunatemaps.herokuapp.com/map/96079",
+      "recommendedBalls": "1+",
+      "preset": "gZMefJBJggtaiaaaJyaraaksaaumaaYYE",
+      "speedrunPreset": "gZMefJBJggtaiaaaJyaraaasaaumaaYYEG",
+      "settings": "Bomb Respawn: 5 sec\nBoost Respawn: 2 sec",
+      "points": 3,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Worlds Hardest Map 3 (Official FWO)",
+      "author": "Danny & FWO",
+      "link": "https://fortunatemaps.herokuapp.com/map/87035",
+      "recommendedBalls": "1+",
+      "preset": "gZMefGjNggtaiaaaJraaksaaamaaaE",
+      "speedrunPreset": "gZMefGjNggtaiaaaJyaraaasaaamaaaYEG",
+      "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
+      "points": 4,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Hard",
+      "speedruns": [
+      ]
+    }
   ],
   "week3": [
   ],
@@ -437,6 +535,19 @@
       "preset": "gZMefHsBggtaiaaaJyaraaasaaaYEG",
       "speedrunPreset": "gZMefHsBggtaiaaaJyaraaasaaaYEG",
       "settings": "Bomb Respawn: n/a\nBoost Respawn: Instant",
+      "points": 3,
+      "difficulty": "Very Hard",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Le Epic Bacon d0000m :3",
+      "author": "SB Army SB",
+      "link": "https://fortunatemaps.herokuapp.com/map/97111",
+      "recommendedBalls": "2",
+      "preset": "gZMefJVBggtdcbiaakJByaraaksaakTEF",
+      "speedrunPreset": "gZMefJVBggtdcbiaakJByaraaksaakTEF",
+      "settings": "Bomb Respawn: n/a\nBoost Respawn: n/a",
       "points": 3,
       "difficulty": "Very Hard",
       "speedruns": [
