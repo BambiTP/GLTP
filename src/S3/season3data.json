@@ -58,12 +58,12 @@
           "includeOnSpeedrun": "no"
         },
         {
-          "time": "1:10.200",
+          "time": "1:09.524",
           "players": [
             "BallSaget"
           ],
           "team": "Grabity",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=f8a6e918-c91d-4f90-b42a-3ecbf99517b1",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=9997a8c3-403f-44b8-b227-526a6ba16239",
           "includeOnSpeedrun": "yes"
         },
         {
@@ -75,6 +75,20 @@
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=82a5c79b-ee57-4664-a271-f9d3c04467bc",
           "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "3:05.951",
+          "players": [
+            "dickhead",
+            "burt",
+            "PoonLuvr69",
+            "Honky",
+            "sir cumalot",
+            "Some Ball"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=538d1523-fdc1-460e-afc1-edeef9653e67",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -131,6 +145,19 @@
           ],
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=b1c46af6-e997-4fdf-827c-8d5983956c62",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "35:08.388",
+          "players": [
+            "dickhead",
+            "burt",
+            "PoonLuvr69",
+            "Honky",
+            "sir cumalot"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=a70b7392-b7ec-4223-9129-e426de95cf7c",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -260,6 +287,19 @@
           "team": "West Coasters",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=f22ad5f3-857a-4e2e-a04c-776a86725a2a",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "43:23.335",
+          "players": [
+            "dickhead",
+            "The Ledgler",
+            "PoonLuvr69",
+            "Honky",
+            "justin sucks"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=a270a6a9-7182-474e-98a0-416fb03d59f3",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -306,6 +346,17 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=bd47b351-00d0-4bb5-a719-8eab316fddd2",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "52:28.759",
+          "players": [
+            "EvTheSmev",
+            "MRCOW",
+            "TeaForYou&Me"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=35c6575f-caab-4e18-8b94-1732282db420",
           "includeOnSpeedrun": "yes"
         }
       ]
