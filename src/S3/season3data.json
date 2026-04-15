@@ -481,7 +481,7 @@
       "mapName": "The Caverns Below",
       "author": "Snack",
       "link": "https://fortunatemaps.herokuapp.com/map/89059",
-      "recommendedBalls": "2+",
+      "recommendedBalls": "1+",
       "preset": "gZMefGWJggtaiaaaJyaraaksaaamaaaE",
       "speedrunPreset": "gZMefGWJggtaiaaaJyaraaasaaamaaaYEG",
       "settings": "Bomb Respawn: Instant\nBoost Respawn: Instant",
@@ -496,6 +496,15 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=37e7ccf2-1464-4f03-997e-58bd75e595ea",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "2:49.787",
+          "players": [
+            "LogisticMap"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=37fdbe2f-938a-47ce-980e-12d0a305ffdc",
           "includeOnSpeedrun": "yes"
         }
       ]
