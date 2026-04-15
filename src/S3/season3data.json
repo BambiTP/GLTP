@@ -424,7 +424,7 @@
       ]
     }
   ],
-  "week4": [
+  "week2": [
     {
       "mapName": "Spinout Raceway 2 [GLTP]",
       "author": "Ball-E",
@@ -485,7 +485,7 @@
       "mapName": "Aussie Team Action V2 Complete [Juggles]",
       "author": "Curveballed",
       "link": "https://fortunatemaps.herokuapp.com/map/93602",
-      "recommendedBalls": "2+",
+      "recommendedBalls": "3+",
       "preset": "gZMefIGcggtaiaaaJyaraaksaaamabWYEF",
       "speedrunPreset": "gZMefIGcggtkiaaaJyaraaasaaamabWYEFG",
       "settings": "Bomb Respawn: 10 sec\nBoost Respawn: Instant\nBuddy Jumps",
@@ -499,7 +499,7 @@
       "mapName": "NGB [Gravity Buddy]",
       "author": "Canvas",
       "link": "http://fortunatemaps.herokuapp.com/map/96079",
-      "recommendedBalls": "1+",
+      "recommendedBalls": "2+",
       "preset": "gZMefJBJggtaiaaaJyaraaksaaumaaYYE",
       "speedrunPreset": "gZMefJBJggtaiaaaJyaraaasaaumaaYYEG",
       "settings": "Bomb Respawn: 5 sec\nBoost Respawn: 2 sec",
