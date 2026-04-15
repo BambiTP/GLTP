@@ -58,12 +58,12 @@
           "includeOnSpeedrun": "no"
         },
         {
-          "time": "1:09.524",
+          "time": "1:08.234",
           "players": [
             "BallSaget"
           ],
           "team": "Grabity",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=9997a8c3-403f-44b8-b227-526a6ba16239",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=702e3352-0238-4d63-99ca-c306a24db8db",
           "includeOnSpeedrun": "yes"
         },
         {
@@ -446,6 +446,15 @@
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=d437661f-52a2-4c07-823d-5986cee906a0",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "2:33.330",
+          "players": [
+            "Snack"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=5fe0ae59-4878-4d4a-9846-49e0502d544c",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -461,6 +470,17 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Easy",
       "speedruns": [
+        {
+          "time": "10:00.175",
+          "players": [
+            "3",
+            "Alpha",
+            "Some Ball 64"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=93781af8-d023-4ea9-a8c9-87bd34bb446a",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
@@ -475,6 +495,16 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
       "speedruns": [
+        {
+          "time": "14:04.889",
+          "players": [
+            "3",
+            "Alpha"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=534f8c23-8ec9-4acd-94a7-eab1b54ccb54",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
@@ -505,6 +535,16 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=37fdbe2f-938a-47ce-980e-12d0a305ffdc",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "13:49.854",
+          "players": [
+            "3",
+            "Slush Puppy"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=bc255601-1027-4ca7-a23a-b2d79f6dbfe8",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -561,6 +601,17 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Hard",
       "speedruns": [
+        {
+          "time": "51:34.065",
+          "players": [
+            "3",
+            "Alpha",
+            "Some Ball 64"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=40f1463c-ba10-457d-aeec-72aeb180fb69",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     }
   ],
