@@ -437,6 +437,16 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Easy",
       "speedruns": [
+        {
+          "time": "4:08.962",
+          "players": [
+            "Alpha",
+            "3"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=d437661f-52a2-4c07-823d-5986cee906a0",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
@@ -493,6 +503,18 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
       "speedruns": [
+        {
+          "time": "36:52.853",
+          "players": [
+            "DAD.",
+            "Madoka",
+            "AJ",
+            "Phreak"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=e08393e9-1476-4cbf-bea5-34ffdc5e165d",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
