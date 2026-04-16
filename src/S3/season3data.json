@@ -441,7 +441,7 @@
       "recommendedBalls": "1+",
       "preset": "gZMefJVFggtkiaaaJyaraakYE",
       "speedrunPreset": "gZMefJVFggtkiaaaJyaraaaYEG",
-      "settings": "Bomb Respawn: Default\nBoost Respawn: Default",
+      "settings": "Bomb Respawn: Default\nBoost Respawn: Default\n3 laps",
       "points": 1,
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Easy",
@@ -463,6 +463,15 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=5fe0ae59-4878-4d4a-9846-49e0502d544c",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "5:21.547",
+          "players": [
+            "burt"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=ac1582ea-a4ac-4403-80fa-6d9f2c91cf6d",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -488,6 +497,30 @@
           ],
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=93781af8-d023-4ea9-a8c9-87bd34bb446a",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "106:25.000",
+          "players": [
+            "dickhead",
+            "burt",
+            "PoonLuvr69",
+            "Honky",
+            "sir cumalot"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=78bd7539-7c58-4f92-a4ae-f3c10780020a",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=bc220af3-a0d5-4bb7-a1d5-22fbf365b1f9",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "27:17.002",
+          "players": [
+            "Snack",
+            "BallSaget"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=6cf10276-3b85-4237-8b7f-887be323bac3",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -596,6 +629,16 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
       "speedruns": [
+        {
+          "time": "38:59.898",
+          "players": [
+            "Snack",
+            "BallSaget"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=ef7c49c8-2451-45b0-a9cb-4c6ab7911052",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
