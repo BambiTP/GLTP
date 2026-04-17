@@ -598,6 +598,16 @@
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=bc255601-1027-4ca7-a23a-b2d79f6dbfe8",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "2:31.001",
+          "players": [
+            "FWO",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=a9f5392e-8990-4f49-8733-15f38665dde6",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
