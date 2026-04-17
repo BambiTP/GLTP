@@ -703,6 +703,16 @@
       "points": 3,
       "difficulty": "Very Hard",
       "speedruns": [
+        {
+          "time": "322",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=2a4b6aea-d51e-4134-b417-875985cd5d00",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     }
   ],
