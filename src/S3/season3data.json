@@ -473,6 +473,15 @@
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=ac1582ea-a4ac-4403-80fa-6d9f2c91cf6d",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "2:02.335",
+          "players": [
+            "DAD."
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=68b93a8c-7a9a-49b8-adac-221a6baf60bb",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
