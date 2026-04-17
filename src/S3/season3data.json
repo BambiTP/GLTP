@@ -228,6 +228,15 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=bb49441c-ab9e-4f61-994c-a1e78013866b",
           "includeOnSpeedrun": "yes"
+        },
+         {
+          "time": "1:06.277",
+          "players": [
+            "EvTheSmev"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=0020fb9a-f3de-4f4d-b051-1beaa4864c81",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
