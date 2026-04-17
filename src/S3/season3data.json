@@ -522,6 +522,16 @@
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=6cf10276-3b85-4237-8b7f-887be323bac3",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "2:31.001",
+          "players": [
+            "FWO",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=d33145a3-3583-421e-ba28-7ff451339aa6",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
