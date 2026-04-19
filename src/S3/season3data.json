@@ -463,7 +463,7 @@
           ],
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=d437661f-52a2-4c07-823d-5986cee906a0",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "2:33.330",
@@ -490,6 +490,15 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=68b93a8c-7a9a-49b8-adac-221a6baf60bb",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:52.133",
+          "players": [
+            "3"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=5f995d01-785d-47a8-948d-7737e8e3cabc",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -703,12 +712,12 @@
           "includeOnSpeedrun": "yes"
         },
         {
-          "time": "20:24.849",
+          "time": "10:56.474",
           "players": [
             "DAD."
           ],
           "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=c7c45160-f9e4-4f4d-b7f9-8272d0d989df",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=7049fe98-f423-4598-b475-5801bb3370fc",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -748,7 +757,7 @@
             "Madoka"
           ],
           "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=2a4b6aea-d51e-4134-b417-875985cd5d00",
+          "replay": "https://tagpro.koalabeast.com/game?replay=aeG5STUKrV85rh3rUrsCYTMwFRIGAAAE&t=414715",
           "includeOnSpeedrun": "yes"
         }
       ]
