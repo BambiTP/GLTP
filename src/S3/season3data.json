@@ -707,6 +707,16 @@
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=ef7c49c8-2451-45b0-a9cb-4c6ab7911052",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "15:34.264",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=bad27116-18bf-4ab0-89c0-41a0d331f5c9",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
