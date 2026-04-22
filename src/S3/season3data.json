@@ -193,21 +193,21 @@
           "includeOnSpeedrun": "yes"
         },
         {
-          "time": "0:51.789",
+          "time": "0:48.667",
           "players": [
             "3"
           ],
           "team": "Team Tanka",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=56a1518e-ac7a-4626-8e1b-8dad508625fb",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=659355da-f187-4284-b3a0-057b097fb032",
           "includeOnSpeedrun": "yes"
         },
         {
-          "time": "0:53.572",
+          "time": "0:48.610",
           "players": [
             "BallSaget"
           ],
           "team": "Grabity",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=4e9e7786-d373-4103-ba3e-d037da0fa400",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=940e2409-6aff-49a6-aa32-f1d5278bc5c6",
           "includeOnSpeedrun": "yes"
         },
         {
@@ -740,6 +740,16 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=7049fe98-f423-4598-b475-5801bb3370fc",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "6:32.165",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=845dcad7-f69a-43cf-a031-338e428672bb",
           "includeOnSpeedrun": "yes"
         }
       ]
