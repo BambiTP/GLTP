@@ -345,14 +345,14 @@
           "includeOnSpeedrun": "yes"
         },
         {
-          "time": "8:53.093",
+          "time": "4:25.712",
           "players": [
             "DAD.",
             "Madoka",
             "AJ"
           ],
           "team": "FWO",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=5765c786-b4dc-4b3d-a568-9063b34bb70d",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=fa143064-1cdc-4010-a02b-5c78b7d19708",
           "includeOnSpeedrun": "yes"
         },
         {
@@ -603,6 +603,17 @@
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=534f8c23-8ec9-4acd-94a7-eab1b54ccb54",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "6:03.548",
+          "players": [
+            "FWO",
+            "Madoka",
+            "AJ"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=a1163196-d3d0-49d3-a2f3-6c0231697e33",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -775,7 +786,6 @@
     }
   ],
   "week3": [
-    
   ],
   "bounties": [
     {
