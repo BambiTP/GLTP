@@ -787,8 +787,9 @@
   ],
   "week3": [
     {
-      "mapName": "Detonation Dash 6 by DAD.",
-      "author": "BallSaget",
+      "mapName": "Detonation Dash 6",
+      "author": "DAD.",
+      "teamAuthor": "FWO",
       "link": "https://fortunatemaps.herokuapp.com/map/97379",
       "recommendedBalls": "1+",
       "preset": "gZMefKaJggtaiaaaJyaraaksaaamaaauaaaHpzfflfYjTE",
@@ -803,6 +804,7 @@
     {
       "mapName": "The incident 2001",
       "author": "Team Tanka",
+      "teamAuthor": "Team Tanka",
       "link": "https://fortunatemaps.herokuapp.com/map/97397",
       "recommendedBalls": "2+",
       "preset": "gZMefKbbggtacbiaaaJyaraaasaaamaaaHpYE",
@@ -817,6 +819,7 @@
     {
       "mapName": "Tower -1",
       "author": "Snack & BallSaget",
+      "teamAuthor": "Grabity",
       "link": "https://fortunatemaps.herokuapp.com/map/97371",
       "recommendedBalls": "2+",
       "preset": "gZMefKaBggtacbiaaaJyaraaasaaamaaaQiYpa",
