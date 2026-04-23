@@ -786,6 +786,48 @@
     }
   ],
   "week3": [
+    {
+      "mapName": "Tower -1",
+      "author": "Snack & BallSaget",
+      "link": "https://fortunatemaps.herokuapp.com/map/97371",
+      "recommendedBalls": "2+",
+      "preset": "gZMefKaBggtacbiaaaJyaraaasaaamaaaQiYpa",
+      "speedrunPreset": "gZMefKaBggtacbiaaaJyaraaasaaamaaaQiYpaG",
+      "settings": "",
+      "points": 2,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "hard",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "Detonation Dash 6 by DAD.",
+      "author": "BallSaget",
+      "link": "https://fortunatemaps.herokuapp.com/map/97379",
+      "recommendedBalls": "1+",
+      "preset": "gZMefKaJggtaiaaaJyaraaksaaamaaauaaaHpzfflfYjTE",
+      "speedrunPreset": "gZMefKaaggtacbiaaaJyaraaasaaaVadSUadSHpzQiYEG",
+      "settings": "",
+      "points": 3,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    },
+    {
+      "mapName": "The incident 2001",
+      "author": "Team Tanka",
+      "link": "https://fortunatemaps.herokuapp.com/map/97397",
+      "recommendedBalls": "1+",
+      "preset": "gZMefKbbggtacbiaaaJyaraaasaaamaaaHpYE",
+      "speedrunPreset": "gZMefKaaggtacbiaaaJyaraaasaaaVadSUadSHpzQiYEG",
+      "settings": "",
+      "points": 3,
+      "fastestPoints": "1st = 2 points\n2nd = 1 point",
+      "difficulty": "Medium",
+      "speedruns": [
+      ]
+    }
   ],
   "bounties": [
     {
