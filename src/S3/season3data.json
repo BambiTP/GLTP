@@ -833,6 +833,17 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Medium",
       "speedruns": [
+        {
+          "time": "12:45.553",
+          "players": [
+            "3",
+            "Alpha",
+            "Some Ball 64"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=596c62bc-ca9d-4357-a88d-ff62cfe5ed6f",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
