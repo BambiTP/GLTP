@@ -807,6 +807,16 @@
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=7abe6893-84f0-4148-b2aa-ee0f2399b3b1",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "2:34.354",
+          "players": [
+            "3",
+            "Alpha"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=d8bb1f1f-8938-4a51-a945-f146d1077c1a",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
