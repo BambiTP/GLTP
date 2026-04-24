@@ -193,12 +193,12 @@
           "includeOnSpeedrun": "yes"
         },
         {
-          "time": "0:48.667",
+          "time": "0:47.751",
           "players": [
             "3"
           ],
           "team": "Team Tanka",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=659355da-f187-4284-b3a0-057b097fb032",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=c816b20c-7f26-44ab-916a-6d86c47b574d",
           "includeOnSpeedrun": "yes"
         },
         {
@@ -799,6 +799,15 @@
       "fastestPoints": "1st = 2 points\n2nd = 1 point",
       "difficulty": "Easy",
       "speedruns": [
+        {
+          "time": "8:03.810",
+          "players": [
+            "Snack"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=7abe6893-84f0-4148-b2aa-ee0f2399b3b1",
+          "includeOnSpeedrun": "yes"
+        }
       ]
     },
     {
