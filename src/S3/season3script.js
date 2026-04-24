@@ -123,6 +123,7 @@ function calculateAllTeamPoints(data) {
   data.teams.forEach(team => {
     team["Completion\nPoints"] = 0;
     team["Speedrun\nPoints"] = 0;
+    team["Map\nPoints"] = 0;
     team["Week1\nPoints"] = 0;
     team["Week2\nPoints"] = 0;
     team["Week3\nPoints"] = 0;
@@ -149,7 +150,7 @@ function calculateAllTeamPoints(data) {
 
   // Calculate total points
   data.teams.forEach(team => {
-    team["Total\nPoints"] = team["Completion\nPoints"] + team["Speedrun\nPoints"] + team.bounties;
+    team["Total\nPoints"] = team["Completion\nPoints"] + team["Speedrun\nPoints"] + team["Map\nPoints"] + team.bounties;
   });
 }
 
@@ -158,21 +159,20 @@ function calculateWeekPoints(teams, weekData, weekNumber) {
   teams.forEach(team => {
     let weekCompletionPoints = 0;
     let weekSpeedrunPoints = 0;
+    let weekMapPoints = 0;
 
     weekData.forEach(map => {
-      // Calculate completion points
-      const completionPoints = calculateCompletionPoints(team.name, map);
-      weekCompletionPoints += completionPoints;
-
-      // Calculate speedrun points
-      const speedrunPoints = calculateSpeedrunPoints(team.name, map);
-      weekSpeedrunPoints += speedrunPoints;
+      const pointsBreakdown = getMapPointsBreakdown(team.name, map, weekNumber);
+      weekCompletionPoints += pointsBreakdown.completionPoints;
+      weekSpeedrunPoints += pointsBreakdown.speedrunPoints;
+      weekMapPoints += pointsBreakdown.mapPoints;
     });
 
     // Update team data
     team["Completion\nPoints"] += weekCompletionPoints;
     team["Speedrun\nPoints"] += weekSpeedrunPoints;
-    team[`Week${weekNumber}\nPoints`] = weekCompletionPoints + weekSpeedrunPoints;
+    team["Map\nPoints"] += weekMapPoints;
+    team[`Week${weekNumber}\nPoints`] = weekCompletionPoints + weekSpeedrunPoints + weekMapPoints;
   });
 }
 
@@ -205,6 +205,57 @@ function calculateSpeedrunPoints(teamName, map) {
   return speedrunRank ? getPointsForRank(speedrunRank) : 0;
 }
 
+function isSeason3Week3SpecialMap(weekNumber, map) {
+  return weekNumber === 3 && Boolean(map.teamAuthor);
+}
+
+function getUniqueCompletingTeams(map) {
+  const validTeamNames = new Set((seasonData?.teams || []).map(team => team.name));
+  const uniqueTeams = new Set();
+
+  (map.speedruns || []).forEach(run => {
+    if (!run.team) return;
+    if (validTeamNames.size > 0 && !validTeamNames.has(run.team)) return;
+    uniqueTeams.add(run.team);
+  });
+
+  return uniqueTeams;
+}
+
+function calculateWeekSpecificCompletionPoints(teamName, map, weekNumber) {
+  if (!teamCompletedMap(teamName, map)) return 0;
+
+  if (isSeason3Week3SpecialMap(weekNumber, map)) {
+    return map.teamAuthor === teamName ? 0 : 2;
+  }
+
+  return calculateCompletionPoints(teamName, map);
+}
+
+function calculateMapAuthorPoints(teamName, map, weekNumber) {
+  if (!isSeason3Week3SpecialMap(weekNumber, map) || map.teamAuthor !== teamName) {
+    return 0;
+  }
+
+  return Math.min(getUniqueCompletingTeams(map).size, 3);
+}
+
+function getMapPointsBreakdown(teamName, map, weekNumber) {
+  const hasCompleted = teamCompletedMap(teamName, map);
+  const speedrunRank = teamSpeedrunRank(teamName, map);
+  const completionPoints = calculateWeekSpecificCompletionPoints(teamName, map, weekNumber);
+  const speedrunPoints = speedrunRank ? calculateSpeedrunPoints(teamName, map) : 0;
+  const mapPoints = calculateMapAuthorPoints(teamName, map, weekNumber);
+
+  return {
+    hasCompleted,
+    speedrunRank,
+    completionPoints,
+    speedrunPoints,
+    mapPoints
+  };
+}
+
 // Helper function to load simple page content
 function loadPageContent(containerId, content) {
   const container = document.getElementById(containerId);
@@ -229,6 +280,16 @@ function renderWeekContent(containerId, weekData) {
 
   let weekNumber = containerId.replace('week', '').replace('Content', '');
   let html = `<h1>GLTP Season 3 Week ${weekNumber} Maps</h1>`;
+
+  if (weekNumber === '3' && weekData.some(map => map.teamAuthor)) {
+    html += `
+    <p>
+      <strong>Week 3 special scoring:</strong>
+      2 points for completing another team's map, 1 map point to the author for each unique team completion
+      (max 3), and speedruns stay at 2 points for 1st and 1 point for 2nd.
+    </p>
+    `;
+  }
 
   // Create maps table
   html += `
@@ -255,6 +316,10 @@ function renderWeekContent(containerId, weekData) {
 
   // Add each map to the table
   weekData.forEach(map => {
+    const pointsDisplay = weekNumber === '3' && map.teamAuthor
+      ? '2 (other teams only)<br>Author: 1 per unique team completion<br>Max 3 author points'
+      : map.points;
+
     html += `
     <tr>
       <td><a href="${map.link}" target="_blank">${map.mapName} <br> by ${map.author} </a> <br><br> ${map.recommendedBalls} balls recommended</td>
@@ -269,7 +334,7 @@ function renderWeekContent(containerId, weekData) {
         <button class="open-button" onclick="openMap(this)">Launch Group</button>
       </td>
       <td>${map.settings.replace(/\n/g, "<br>")}</td>
-      <td>${map.points}</td>
+      <td>${pointsDisplay}</td>
       <td>${map.fastestPoints.replace(/\n/g, "<br>")}</td>
       <td>${map.difficulty}</td>
     </tr>
@@ -355,6 +420,7 @@ function renderStandings(containerId, teamsData) {
         <th>Total Points</th>
         <th>Completion Points</th>
         <th>Speedrun Points</th>
+        <th>Map Points</th>
         <th>Week1 Points</th>
         <th>Week2 Points</th>
         <th>Week3 Points</th>
@@ -372,6 +438,7 @@ function renderStandings(containerId, teamsData) {
         <td>${team["Total\nPoints"]}</td>
         <td>${team["Completion\nPoints"]}</td>
         <td>${team["Speedrun\nPoints"]}</td>
+        <td>${team["Map\nPoints"]}</td>
         <td>${team["Week1\nPoints"]}</td>
         <td>${team["Week2\nPoints"]}</td>
         <td>${team["Week3\nPoints"]}</td>
@@ -400,6 +467,7 @@ function renderStandings(containerId, teamsData) {
             <th>Speedrun</th>
             <th>CPoints</th>
             <th>SPoints</th>
+            <th>MPoints</th>
           </tr>
         </thead>
         <tbody>
@@ -413,23 +481,20 @@ function renderStandings(containerId, teamsData) {
         const weekNumber = weekKey.replace('week', '');
 
         seasonData[weekKey].forEach((map, idx) => {
-          // Check if team completed this map (has a speedrun entry)
-          const hasCompleted = teamCompletedMap(team.name, map);
-          const speedrunRank = teamSpeedrunRank(team.name, map);
-          const completionPoints = hasCompleted ? map.points : 0;
-          const speedrunPoints = speedrunRank ? getPointsForRank(speedrunRank) : 0;
+          const pointsBreakdown = getMapPointsBreakdown(team.name, map, Number(weekNumber));
 
           html += `
           <tr>
             <td>${weekNumber}</td>
             <td><a href="${map.link}" target="_blank">${map.mapName}</a></td>
-            <td>${hasCompleted ?
+            <td>${pointsBreakdown.hasCompleted ?
               '<i class="fas fa-check green-icon" aria-label="Yes"></i>' :
               '<i class="fas fa-times red-icon" aria-label="No"></i>'}</td>
-            <td>${speedrunRank ? getMedalForRank(speedrunRank) :
+            <td>${pointsBreakdown.speedrunRank ? getMedalForRank(pointsBreakdown.speedrunRank) :
               '<i class="fas fa-times red-icon" aria-label="No"></i>'}</td>
-            <td>${completionPoints}</td>
-            <td>${speedrunPoints}</td>
+            <td>${pointsBreakdown.completionPoints}</td>
+            <td>${pointsBreakdown.speedrunPoints}</td>
+            <td>${pointsBreakdown.mapPoints}</td>
           </tr>
           `;
         });
