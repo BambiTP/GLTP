@@ -316,7 +316,7 @@ function renderWeekContent(containerId, weekData) {
 
   // Add each map to the table
   weekData.forEach(map => {
-    const pointsDisplay = weekNumber === '3' && map.teamAuthor
+    const pointsDisplay = weekNumber === '3' && map.teamAuthor && false
       ? '2 (other teams only)<br>Author: 1 per unique team completion<br>Max 3 author points'
       : map.points;
 
