@@ -216,6 +216,7 @@ function getUniqueCompletingTeams(map) {
   (map.speedruns || []).forEach(run => {
     if (!run.team) return;
     if (validTeamNames.size > 0 && !validTeamNames.has(run.team)) return;
+    if (run.team === map.teamAuthor) return;
     uniqueTeams.add(run.team);
   });
 
