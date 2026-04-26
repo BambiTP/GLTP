@@ -133,7 +133,7 @@
           ],
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=2cd3cf9a-c456-4089-be3d-c147383e8b9f",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "1:16.434",
@@ -167,6 +167,17 @@
           ],
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=a70b7392-b7ec-4223-9129-e426de95cf7c",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:30.650",
+          "players": [
+            "3",
+            "Alpha",
+            "Some Ball 64"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=7546ada4-9a33-4873-8169-3a0854da07e5",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -602,7 +613,7 @@
           ],
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=534f8c23-8ec9-4acd-94a7-eab1b54ccb54",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "6:03.548",
@@ -613,6 +624,19 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=a1163196-d3d0-49d3-a2f3-6c0231697e33",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "5:41.060",
+          "players": [
+            "3",
+            "Alpha",
+            "Some Ball 64",
+            "Eashy",
+            "UNlTY"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=1076eca5-2e15-4984-ba42-b095f13b8064",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -703,6 +727,17 @@
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=128425c7-b7b0-4032-b36f-579307a2af04",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "7:27.516",
+          "players": [
+            "3",
+            "Alpha",
+            "Some Ball 64"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=595354ae-848d-4246-9c97-f8593b3619eb",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -736,6 +771,17 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=bad27116-18bf-4ab0-89c0-41a0d331f5c9",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "12:41.690",
+          "players": [
+            "3",
+            "Alpha",
+            "Slush Puppy"
+          ],
+          "team": "Team Tanka",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=fbc0e1f1-1ff1-47ca-834b-03fe19a5f60d",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -800,12 +846,12 @@
       "difficulty": "Easy",
       "speedruns": [
         {
-          "time": "8:03.810",
+          "time": "2:34.960",
           "players": [
             "Snack"
           ],
           "team": "Grabity",
-          "replay": "https://tagpro.koalabeast.com/replays?uuid=7abe6893-84f0-4148-b2aa-ee0f2399b3b1",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=9e5b80af-0e42-4eac-a656-dfb35c176bdd",
           "includeOnSpeedrun": "yes"
         },
         {
