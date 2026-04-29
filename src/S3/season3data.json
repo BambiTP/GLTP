@@ -740,7 +740,7 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=128425c7-b7b0-4032-b36f-579307a2af04",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "7:27.516",
@@ -751,6 +751,19 @@
           ],
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=595354ae-848d-4246-9c97-f8593b3619eb",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "6:27.897",
+          "players": [
+            "Snack",
+            "BallSaget",
+            "perl",
+            "ASAP",
+            "LogisticMap"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=6cf37ee4-54c5-4d7f-9acf-9faf423c0d6d",
           "includeOnSpeedrun": "yes"
         }
       ]
