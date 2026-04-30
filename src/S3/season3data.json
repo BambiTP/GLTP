@@ -503,7 +503,7 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=5fe0ae59-4878-4d4a-9846-49e0502d544c",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "5:21.547",
@@ -530,6 +530,15 @@
           ],
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=5f995d01-785d-47a8-948d-7737e8e3cabc",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:43.963",
+          "players": [
+            "BallSaget"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=edcf8bea-9b87-4f17-99ca-2375294d338f",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -854,6 +863,15 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=845dcad7-f69a-43cf-a031-338e428672bb",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "46:27.713",
+          "players": [
+            "BallSaget"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=6ae14084-f61c-44c8-9130-767042fe67ec",
+          "includeOnSpeedrun": "yes"
         }
       ]
     }
@@ -879,7 +897,7 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=bd8408c7-caf5-4306-b71a-55737579a476",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "2:34.354",
@@ -889,6 +907,15 @@
           ],
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=d8bb1f1f-8938-4a51-a945-f146d1077c1a",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:12.644",
+          "players": [
+            "BallSaget"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=4c2c1137-2dd6-47e6-b8f9-a21746d18eb7",
           "includeOnSpeedrun": "yes"
         }
       ]
