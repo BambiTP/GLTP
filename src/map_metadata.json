@@ -5441,7 +5441,7 @@
         "caps_to_win": "1",
         "completion_type": "individual",
         "allow_blue_caps": true,
-        "allow_from_spawn": true,
+        "allow_from_spawn": false,
         "allow_from_grab": false,
         "laps": false
     },
@@ -10244,7 +10244,7 @@
     "96799": {
         "map_name": "Detonation Dash [Power Pellet]",
         "author": "DAD.",
-        "difficulty": "1.0",
+        "difficulty": "NULL",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJPBggtaiaaaJraaksaaamaakuaaaHpzfflfjTE",
@@ -10310,7 +10310,7 @@
     "96986": {
         "map_name": "Castle",
         "author": "oSo Squiggly",
-        "difficulty": "NULL",
+        "difficulty": "1.0",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJTgggtkiaaaJyaraakYE",
@@ -10354,7 +10354,7 @@
     "96937": {
         "map_name": "MAPSWAP",
         "author": "3",
-        "difficulty": "1.7",
+        "difficulty": "NULL",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJSjggtaiaaaJraaksaaamaaaHpzE",
@@ -10375,7 +10375,7 @@
     "96908": {
         "map_name": "Gravity Shift Speedrun",
         "author": "SB Army SB",
-        "difficulty": "2.9",
+        "difficulty": "NULL",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJRGggtdcbiaakJByaraaksaakTE",
@@ -10418,7 +10418,7 @@
     "97115": {
         "map_name": "Spinout Raceway 2 [GLTP]",
         "author": "Ball-E",
-        "difficulty": "4.5",
+        "difficulty": "1.7",
         "difficultyFinal": "1.7",
         "balls_req": "1",
         "preset": "gZMefJVFggtkiaaaJyaraakYE",
@@ -10440,7 +10440,7 @@
     "97126": {
         "map_name": "The Challenge of Secrets [GLTP]",
         "author": "Danny & FWO",
-        "difficulty": "NULL",
+        "difficulty": "2.9",
         "difficultyFinal": "2.9",
         "balls_req": "2",
         "preset": "gZMefJBJggtaiaaaJyaraaksaaumaaYYE",
@@ -10484,7 +10484,7 @@
     "96079": {
         "map_name": "NGB [Gravity Buddy]",
         "author": "Canvas",
-        "difficulty": "3.3",
+        "difficulty": "4.5",
         "difficultyFinal": "TBD",
         "balls_req": "2",
         "preset": "gZMefJBJggtaiaaaJyaraaksaaumaaYYE",
@@ -10505,7 +10505,7 @@
     "97086": {
         "map_name": "MAPSWAP 4/12/2026",
         "author": "3",
-        "difficulty": "6.3",
+        "difficulty": "NULL",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJVcggtaiaaaJyaraaksaaamaaaVadSHpzE",
@@ -10548,7 +10548,7 @@
     "97379": {
         "map_name": "Detonation Dash 6",
         "author": "DAD.",
-        "difficulty": "NULL",
+        "difficulty": "3.3",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefKaJggtaiaaaJyaraaksaaamaaauaaaHpzfflfYjTE",
@@ -10570,7 +10570,7 @@
     "97371": {
         "map_name": "Tower -1",
         "author": "Snack & BallSaget",
-        "difficulty": "NULL",
+        "difficulty": "6.3",
         "difficultyFinal": "TBD",
         "balls_req": "2",
         "preset": "gZMefKaAggtacbiaaaJyaraaasaaamaaaQiYpaG",
