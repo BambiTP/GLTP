@@ -304,7 +304,7 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=cf06514c-9753-4d0d-b279-9b7e018760e6",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "11:09.754",
@@ -328,6 +328,18 @@
           ],
           "team": "Honkeys",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=a270a6a9-7182-474e-98a0-416fb03d59f3",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "7:35.509",
+          "players": [
+            "BallSaget",
+            "Snack",
+            "ASAP",
+            "fiue"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=2d5bbd6a-82e2-44be-b5a4-e642959080d3",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -588,7 +600,7 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=6cf10276-3b85-4237-8b7f-887be323bac3",
-          "includeOnSpeedrun": "yes"
+          "includeOnSpeedrun": "no"
         },
         {
           "time": "2:31.001",
@@ -598,6 +610,17 @@
           ],
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=d33145a3-3583-421e-ba28-7ff451339aa6",
+          "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "4:41.519",
+          "players": [
+            "BallSaget",
+            "Snack",
+            "fiue"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=a38b354a-7605-45a5-8182-3dd12e1feebc",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -819,6 +842,19 @@
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=fbc0e1f1-1ff1-47ca-834b-03fe19a5f60d",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "8:18.359",
+          "players": [
+            "BallSaget",
+            "Snack",
+            "ASAP",
+            "fiue",
+            "Some Ball"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=47b079f9-1f2d-4c06-a0e9-96b59b623132",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -943,6 +979,18 @@
           "team": "Team Tanka",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=596c62bc-ca9d-4357-a88d-ff62cfe5ed6f",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "10:08.432",
+          "players": [
+            "BallSaget",
+            "Snack",
+            "ASAP",
+            "Some Ball"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=b531f420-0abc-4129-b656-cb0ceca72bb1",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -967,6 +1015,18 @@
           ],
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=ef308cb8-fbc0-410d-96c5-a6e7ed3044b5",
+          "includeOnSpeedrun": "no"
+        },
+        {
+          "time": "28:08.555",
+          "players": [
+            "BallSaget",
+            "Snack",
+            "ASAP",
+            "fiue"
+          ],
+          "team": "Grabity",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=ee2e30d5-0e89-41e0-adf0-f1281b770f19",
           "includeOnSpeedrun": "yes"
         }
       ]
@@ -1061,7 +1121,7 @@
       "roster": [
         "BallSaget",
         "ASAP",
-        "Hue",
+        "hue",
         "vic",
         "perl",
         "LogisticMap",
