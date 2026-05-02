@@ -1014,6 +1014,17 @@
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=b531f420-0abc-4129-b656-cb0ceca72bb1",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "6:48.975",
+          "players": [
+            "DAD.",
+            "Madoka",
+            "AJ"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=5e45e327-0bc3-4ffb-a2f3-a325bd647dc8",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
@@ -1051,6 +1062,16 @@
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=ee2e30d5-0e89-41e0-adf0-f1281b770f19",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "3 hours",
+          "players": [
+            "DAD.",
+            "Madoka"
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=ef308cb8-fbc0-410d-96c5-a6e7ed3044b5",
+          "includeOnSpeedrun": "no"
         }
       ]
     }
