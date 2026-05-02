@@ -736,6 +736,20 @@
           "team": "FWO",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=a9f5392e-8990-4f49-8733-15f38665dde6",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "59:59:.999",
+          "players": [
+            "dickhead",
+            "burt",
+            "PoonLuvr69",
+            "Honky",
+            "sir cumalot",
+            "Some Ball"
+          ],
+          "team": "Honkeys",
+          "replay": "https://tagpro.koalabeast.com/game?replay=aegvPYrOAagrhRpzU4zl1hE6lQ8EtRHr",
+          "includeOnSpeedrun": "no"
         }
       ]
     },
