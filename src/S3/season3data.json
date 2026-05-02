@@ -953,6 +953,15 @@
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=4c2c1137-2dd6-47e6-b8f9-a21746d18eb7",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "1:06.528",
+          "players": [
+            "DAD."
+          ],
+          "team": "FWO",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=cd7144a8-2dfb-456d-8d2d-f7cf2117f007",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
