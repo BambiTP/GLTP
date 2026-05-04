@@ -631,6 +631,16 @@
           "team": "Grabity",
           "replay": "https://tagpro.koalabeast.com/replays?uuid=a38b354a-7605-45a5-8182-3dd12e1feebc",
           "includeOnSpeedrun": "yes"
+        },
+        {
+          "time": "51:15.763",
+          "players": [
+            "EvTheSmev",
+            "MRCOW"
+          ],
+          "team": "West Coasters",
+          "replay": "https://tagpro.koalabeast.com/replays?uuid=b6be1569-08d8-41db-a062-7fdd05c73868",
+          "includeOnSpeedrun": "yes"
         }
       ]
     },
