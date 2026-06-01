@@ -239,7 +239,7 @@ export class TableModule {
       }
     });
 
-    this.render(this.recordsArray);
+this.tbody.innerHTML = ''; this.recordsArray.forEach(rec => this.renderRow(rec));
   }
 
   // Render entry-point: mirrors current behavior on each page
