@@ -242,7 +242,6 @@ export class TableModule {
 this.tbody.innerHTML = ''; this.recordsArray.forEach(rec => this.renderRow(rec));
   }
 
-  // Render entry-point: mirrors current behavior on each page
   render(records) {
     if (this.mode === 'jump') {
       // Jump page defaults to gravity maps only (as current code does)
@@ -261,24 +260,327 @@ this.tbody.innerHTML = ''; this.recordsArray.forEach(rec => this.renderRow(rec))
     this.recordsArray.forEach(rec => this.renderRow(rec));
   }
 
-   render(records) {
+ renderRow(record) {
+    // 1. Create the primary data row
+    const mainTr = document.createElement('tr');
+    mainTr.className = 'map-row';
+
+    // Map name
+    const nameTd = document.createElement('td');
+    nameTd.className = 'map-name';
+    nameTd.textContent = record.map_name;
+    mainTr.appendChild(nameTd);
+
+    // Author
+    const authorTd = document.createElement('td');
+    authorTd.textContent = record.map_author || 'Anon';
+    mainTr.appendChild(authorTd);
+
+    // Mode-specific primary stat column(s)
     if (this.mode === 'jump') {
-      // Jump page defaults to gravity maps only (as current code does)
-      const gravityOnly = (records || []).filter(r => {
-        const meta = this.mapMetadata[r.map_id] || {};
-        return ((meta.grav_or_classic || '')).toLowerCase() === 'grav';
-      });
-      this.allRecords = gravityOnly;
-      this.recordsArray = gravityOnly;
+        const jumpsTd = document.createElement('td');
+        jumpsTd.textContent = record.total_jumps;
+        mainTr.appendChild(jumpsTd);
+
+        const timeTd = document.createElement('td');
+        timeTd.textContent = formatTime(record.record_time);
+        mainTr.appendChild(timeTd);
     } else {
-      this.allRecords = records || [];
-      this.recordsArray = records || [];
+        const timeTd = document.createElement('td');
+        timeTd.textContent = formatTime(record.record_time);
+        mainTr.appendChild(timeTd);
     }
 
-    this.tbody.innerHTML = '';
-    this.recordsArray.forEach(rec => this.renderRow(rec));
-  }
+    // Relative time
+    const relTd = document.createElement('td');
+    relTd.textContent = formatRelativeTime(record.timestamp);
+    mainTr.appendChild(relTd);
 
+    // Capping player
+    const capTd = document.createElement('td');
+    if (record.capping_player) {
+      const dummy = { name: record.capping_player, user_id: record.capping_player_user_id };
+      if (dummy.user_id) {
+        const link = document.createElement('a');
+        link.href = `/GLTP/player.html?user_id=${dummy.user_id}`;
+        link.textContent = getMapsPlayerDisplayName(dummy);
+        capTd.appendChild(link);
+      } else {
+        capTd.textContent = getMapsPlayerDisplayName(dummy);
+      }
+    } else {
+      capTd.textContent = 'DNF';
+    }
+    mainTr.appendChild(capTd);
+
+    // Difficulty
+    const meta = this.mapMetadata[record.map_id] || {};
+    const diffTd = document.createElement('td');
+    diffTd.textContent = meta.difficulty || 'N/A';
+    diffTd.className = 'difficulty-col';
+    mainTr.appendChild(diffTd);
+
+    // Balls required
+    const ballsTd = document.createElement('td');
+    ballsTd.textContent = meta.balls_req || 'N/A';
+    ballsTd.className = 'balls-col';
+    mainTr.appendChild(ballsTd);
+
+    // 2. Create the hidden expandable detail row
+    const detailTr = document.createElement('tr');
+    detailTr.className = 'detail-row';
+    detailTr.style.display = 'none'; // Hidden by default
+
+    const detailTd = document.createElement('td');
+    detailTd.colSpan = this.mode === 'jump' ? 8 : 7; 
+    detailTd.style.padding = '10px 10px 15px 10px';
+    // Let JS handle the border based on the expansion state
+
+    // 3. Flex container to hold 'leftDetail' and 'mapPreview' side-by-side
+    const expandedContainer = document.createElement('div');
+    expandedContainer.style.display = 'flex';
+    expandedContainer.style.alignItems = 'flex-start';
+    expandedContainer.style.gap = '30px';
+
+    // --- Build Left Detail Block ---
+    const detailDiv = document.createElement('div');
+    detailDiv.className = 'detail';
+    detailDiv.style.marginTop = '0'; // Clean alignment
+
+    const leftDetail = document.createElement('div');
+    leftDetail.className = 'left-detail';
+
+    // Date
+    const dateDiv = document.createElement('div');
+    dateDiv.textContent = 'Date: ' + new Date(record.timestamp).toLocaleDateString();
+    leftDetail.appendChild(dateDiv);
+
+    // Replay link
+    const replayLink = document.createElement('a');
+    replayLink.href = `https://tagpro.koalabeast.com/replays?uuid=${record.uuid}`;
+    replayLink.textContent = 'Watch Replay';
+    replayLink.target = '_blank';
+    leftDetail.appendChild(replayLink);
+
+    // Players list
+    const playersDiv = document.createElement('div');
+    playersDiv.textContent = 'Players: ';
+    const seen = new Set();
+    const uniquePlayers = [];
+    (record.players || []).forEach(p => {
+      const key = getMapsPlayerKey(p);
+      if (!seen.has(key)) { seen.add(key); uniquePlayers.push(p); }
+    });
+
+    uniquePlayers.forEach((p, i) => {
+      if (p.user_id) {
+        const playerLink = document.createElement('a');
+        playerLink.href = `/GLTP/player.html?user_id=${p.user_id}`;
+        playerLink.textContent = getMapsPlayerDisplayName(p);
+        playerLink.classList.add('player-link');
+        playersDiv.appendChild(playerLink);
+      } else {
+        const span = document.createElement('span');
+        span.textContent = getMapsPlayerDisplayName(p);
+        playersDiv.appendChild(span);
+      }
+      if (i < uniquePlayers.length - 1) {
+        playersDiv.appendChild(document.createTextNode(', '));
+      }
+    });
+    leftDetail.appendChild(playersDiv);
+
+    // Preset + Map ID
+    const presetValue = this.presets[record.map_name] || 'N/A';
+    const infoDiv = document.createElement('div');
+    infoDiv.textContent = 'Preset: ' + presetValue + ' | Map ID: ' + record.map_id;
+    leftDetail.appendChild(infoDiv);
+
+    // Quote
+    if (record.capping_player_quote) {
+      const quoteDiv = document.createElement('div');
+      quoteDiv.className = 'capping-player-quote';
+      quoteDiv.textContent = `"${record.capping_player_quote}"`;
+      leftDetail.appendChild(quoteDiv);
+    }
+
+    // Copy preset button
+    const copyBtn = document.createElement('button');
+    copyBtn.textContent = 'Copy Preset';
+    copyBtn.classList.add('copy-button');
+    copyBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (presetValue !== 'N/A') {
+        navigator.clipboard.writeText(presetValue)
+          .then(() => {
+            copyBtn.textContent = 'Copied!';
+            copyBtn.classList.add('copied');
+            setTimeout(() => {
+              copyBtn.textContent = 'Copy Preset';
+              copyBtn.classList.remove('copied');
+            }, 2000);
+          })
+          .catch(err => console.error('Error copying preset:', err));
+      }
+    });
+    leftDetail.appendChild(copyBtn);
+
+    // Launch group button
+    const launchBtn = document.createElement('button');
+    launchBtn.textContent = 'Launch Group';
+    launchBtn.classList.add('copy-button');
+    launchBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (presetValue !== 'N/A') launchTagproGroup(presetValue);
+    });
+    leftDetail.appendChild(launchBtn);
+
+    // Medal panel
+    const medalPanel = document.createElement('div');
+    medalPanel.className = 'medal-panel';
+
+    const key = record.map_id;
+    const mapRecords = this.recordsByMap[key] || [];
+    const top3 = mapRecords.slice(0, 3);
+    const medalLabels = ['1st', '2nd', '3rd'];
+    const medalColors = ['#FFD700', '#C0C0C0', '#CD7F32'];
+
+    top3.forEach((rec, idx) => {
+      const replayLinkMedal = document.createElement('a');
+      replayLinkMedal.href = `https://tagpro.koalabeast.com/replays?uuid=${rec.uuid}`;
+      replayLinkMedal.target = '_blank';
+      replayLinkMedal.className = 'medal-link';
+
+      const row = document.createElement('div');
+      row.className = 'medal-row';
+      row.style.borderColor = medalColors[idx];
+
+      const label = document.createElement('span');
+      label.className = 'medal-label';
+      label.style.color = medalColors[idx];
+      label.textContent = medalLabels[idx];
+
+      const stat = document.createElement('span');
+      stat.className = 'medal-time';
+      stat.style.color = medalColors[idx];
+      stat.textContent = this.mode === 'jump' ? rec.total_jumps : formatTime(rec.record_time);
+
+      row.appendChild(label);
+      row.appendChild(stat);
+      replayLinkMedal.appendChild(row);
+      medalPanel.appendChild(replayLinkMedal);
+    });
+
+    // --- NEW HISTORY BUTTON ---
+    const historyLink = document.createElement('a');
+    historyLink.href = `map.html?map_id=${record.map_id}`;
+    historyLink.className = 'medal-link';
+
+    const historyRow = document.createElement('div');
+    historyRow.className = 'medal-row';
+    historyRow.style.borderColor = '#888888'; // Grey border
+    historyRow.style.justifyContent = 'center'; // Center the text inside the button
+    historyRow.style.marginTop = '8px'; // Optional: slight separation from the medals
+
+    const historyLabel = document.createElement('span');
+    historyLabel.className = 'medal-label';
+    historyLabel.style.color = '#888888'; // Grey text
+    historyLabel.textContent = 'History';
+
+    historyRow.appendChild(historyLabel);
+    historyLink.appendChild(historyRow);
+    medalPanel.appendChild(historyLink);
+    // --------------------------
+
+    const detailWrapper = document.createElement('div');
+    detailWrapper.className = 'detail-wrapper';
+    detailWrapper.appendChild(leftDetail);
+    detailWrapper.appendChild(medalPanel);
+    detailDiv.appendChild(detailWrapper);
+
+    // --- Build Right Map Preview Block ---
+    let mapPreview = null;
+    if (record.map_id) {
+      mapPreview = document.createElement('div');
+      mapPreview.className = 'map-preview';
+      mapPreview.style.marginTop = '0';
+      mapPreview.innerHTML = '<div class="loading-spinner">Click to load preview</div>';
+    }
+
+    // Append both to the flex container
+    expandedContainer.appendChild(detailDiv);
+    if (mapPreview) expandedContainer.appendChild(mapPreview);
+
+    detailTd.appendChild(expandedContainer);
+    detailTr.appendChild(detailTd);
+
+    // 4. Pure JS Toggle visibility and border logic
+    const toggleExpansion = () => {
+      const expanding = detailTr.style.display === 'none';
+      detailTr.style.display = expanding ? 'table-row' : 'none';
+
+      // Dynamically remove the bottom border of every cell in the main row when expanded
+      Array.from(mainTr.children).forEach(td => {
+        td.style.borderBottom = expanding ? 'none' : '';
+      });
+      
+      // Ensure the detail row is properly closed off
+      detailTd.style.borderTop = 'none';
+      detailTd.style.borderBottom = expanding ? '1px solid #444' : 'none';
+
+      if (expanding && record.map_id && mapPreview) {
+        if (mapPreview.querySelector('.loading-spinner')) {
+          mapPreview.innerHTML = '<div class="loading-spinner">Loading...</div>';
+          const img = document.createElement('img');
+          const url = `https://fortunatemaps.herokuapp.com/preview/${record.map_id}`;
+          img.src = url;
+          img.alt = `Preview of ${record.map_name}`;
+          img.style.cursor = 'pointer';
+          img.style.maxWidth = '300px'; 
+          img.style.objectFit = 'contain';
+
+          img.onload = () => { mapPreview.innerHTML = ''; mapPreview.appendChild(img); };
+          img.onerror = () => { mapPreview.innerHTML = '<div class="error">Preview failed</div>'; };
+          
+          img.onclick = (e) => { 
+            e.stopPropagation();
+            this.showLargePreview(record.map_name, url); 
+          };
+        }
+      }
+    };
+
+    // Attach click events to anywhere on the rows
+    mainTr.style.cursor = 'pointer';
+    mainTr.addEventListener('click', toggleExpansion);
+    
+    detailTr.addEventListener('click', (e) => {
+      // Don't close if the user clicked inside the content boxes, links, or buttons
+      if (e.target.closest('.left-detail, .medal-panel, .map-preview, a, button')) {
+        return; 
+      }
+      toggleExpansion();
+    });
+
+    // 5. Pure JS Hover Logic (Uses your existing #2a2a2a hover color)
+    const addSyncGlow = () => {
+      mainTr.style.backgroundColor = '#2a2a2a';
+      detailTr.style.backgroundColor = '#2a2a2a';
+    };
+    const removeSyncGlow = () => {
+      mainTr.style.backgroundColor = '';
+      detailTr.style.backgroundColor = '';
+    };
+
+    mainTr.addEventListener('mouseenter', addSyncGlow);
+    mainTr.addEventListener('mouseleave', removeSyncGlow);
+    detailTr.addEventListener('mouseenter', addSyncGlow);
+    detailTr.addEventListener('mouseleave', removeSyncGlow);
+
+    // 6. Append BOTH rows to the table body
+    this.tbody.appendChild(mainTr);
+    this.tbody.appendChild(detailTr);
+} 
   renderUnbeatenRow(map) {
     const tr = document.createElement('tr');
     tr.className = 'map-row unbeaten';
