@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map History & Leaderboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+     <div class="nav">
+        <a id="speedRecordsLink" href="/GLTP/#speed">Speed Records</a>
+        <a id="jumpRecordsLink" href="/GLTP/#jump">Jump Records</a>
+        <a id="leaderboardLink" href="/GLTP/#leaderboard">Leaderboard</a>
+        <a id="gltpLink" href="S3/home.html">GLTP</a>
+        <a id="profileLink" href="player.html">Player Profile</a>
+    </div>
+  </div>
+
+  <div style="max-width: 1400px; margin: 20px auto; padding: 0 20px; box-sizing: border-box; display: flex; gap: 30px; align-items: flex-start; flex-wrap: wrap;">
+    
+    <div style="flex: 1; min-width: 420px; display: flex; flex-direction: column; gap: 20px;">
+      <div class="player-summary-box" style="margin: 0; width: 100%; box-sizing: border-box;">
+        <h2 id="mapName">Loading Map...</h2>
+        <div class="details-box details-flex" style="background-color: transparent; padding: 0; box-shadow: none;">
+          <div class="map-meta-player">
+            <div class="summary-grid">
+              <div><span>Author:</span> <span id="mapAuthor">—</span></div>
+              <div><span>Difficulty:</span> <span id="mapDifficulty">—</span></div>
+              <div><span>Balls Required:</span> <span id="mapBallsReq">—</span></div>
+              <div><span>Type:</span> <span id="mapType">—</span></div>
+              <div><span>Map ID:</span> <span id="mapIdLabel">—</span></div>
+              <div><span>Preset:</span> <span id="mapPreset">—</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 8px; margin-top: 12px;">
+          <button id="copyPresetBtn" class="copy-button">Copy Preset</button>
+          <button id="launchGroupBtn" class="copy-button">Launch Group</button>
+        </div>
+      </div>
+
+      <div class="map-preview-player" id="mapPreviewContainer" style="width: 100%; height: 320px; display: flex; align-items: flex-start; justify-content: flex-start; background-color: transparent; border-radius: 8px; overflow: hidden; border: none;">
+        <div id="mapPreviewStatus" class="loading-spinner">Loading preview...</div>
+        <img id="mapPreviewImg" style="display: none; max-width: 100%; max-height: 100%; object-fit: contain; cursor: pointer;" alt="Map Preview">
+      </div>
+    </div>
+
+    <div class="table-container" style="flex: 1.5; margin-top: 0; min-width: 500px;">
+      
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 15px;">
+        <h2 id="tableTitle" style="margin: 0; font-size: 1.35rem;">Run Data View</h2>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; background-color: rgba(0,0,0,0.2); padding: 6px; border-radius: 8px;">
+          <div style="display: flex; gap: 4px; background: rgba(0,0,0,0.15); padding: 4px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.15);">
+            <button class="tab-btn view-tab" data-view="all">All Runs</button>
+            <button class="tab-btn view-tab" data-view="history">World Records</button>
+            <button class="tab-btn view-tab" data-view="leaderboard">Leaderboard</button>
+          </div>
+
+          <div style="display: flex; gap: 4px; background: rgba(0,0,0,0.15); padding: 4px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.15);">
+            <button class="tab-btn type-tab" data-type="solo">Solo</button>
+            <button class="tab-btn type-tab" data-type="team">Team</button>
+          </div>
+
+          <div style="display: flex; gap: 4px; background: rgba(0,0,0,0.15); padding: 4px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.15);">
+            <button class="tab-btn metric-tab" data-metric="speed">Time</button>
+            <button class="tab-btn metric-tab" data-metric="jumps">Jumps</button>
+            <button class="tab-btn metric-tab" data-metric="completions" id="completionsToggle" style="display: none;">Completions</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table id="historyTable">
+          <thead id="historyTableHead"></thead>
+          <tbody id="historyTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+ <script type="module">
+    import { dataUrl, formatTime, getMapsPlayerDisplayName, launchTagproGroup } from './shared.js';
+
+    const PREVIEW_BASE = 'https://fortunatemaps.herokuapp.com/preview/';
+
+    let state = { 
+      maps: {},
+      presets: {},
+      mapMetadata: {},
+      playerType: 'solo',   
+      metricType: 'speed',   
+      viewType: 'all' 
+    };
+
+    // --- Formatters ---
+    const formatDate = (ts) => new Date(ts).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+
+    const formatDuration = (ms) => {
+      const days = Math.floor(ms / 86400000);
+      const hours = Math.floor((ms % 86400000) / 3600000);
+      const mins = Math.floor((ms % 3600000) / 60000);
+      const parts = [];
+      if (days > 0) parts.push(`${days}d`);
+      if (hours > 0) parts.push(`${hours}h`);
+      if (mins > 0) parts.push(`${mins}m`);
+      return parts.length > 0 ? parts.join(' ') : '< 1m';
+    };
+
+    // --- Table Module ---
+    class RunTableModule {
+      constructor(headId, bodyId) {
+        this.thead = document.getElementById(headId);
+        this.tbody = document.getElementById(bodyId);
+        this.currentSort = { property: 'timestamp', direction: 'desc' };
+        this.records = [];
+        this.viewType = 'all';
+        this.metricField = 'record_time';
+      }
+
+      setupHeaders(headers) {
+        this.thead.innerHTML = '<tr>' + headers.map(h => 
+          `<th style="width: ${h.width}; cursor: ${h.sort ? 'pointer' : 'default'}" data-sort="${h.sort}" data-type="${h.type}">${h.label}</th>`
+        ).join('') + '</tr>';
+
+        this.thead.querySelectorAll('th').forEach(th => {
+          const sortProp = th.getAttribute('data-sort');
+          if (sortProp && sortProp !== 'null') {
+            th.addEventListener('click', () => this.sortRecords(sortProp, th.getAttribute('data-type')));
+          }
+        });
+      }
+
+      render(records, metricField, viewType) {
+        this.records = records;
+        this.metricField = metricField;
+        this.viewType = viewType;
+        this.drawBody();
+      }
+
+      sortRecords(property, type) {
+        if (this.currentSort.property === property) {
+          this.currentSort.direction = this.currentSort.direction === 'asc' ? 'desc' : 'asc';
+        } else {
+          this.currentSort.property = property;
+          this.currentSort.direction = 'asc';
+        }
+
+        const dir = this.currentSort.direction;
+        this.records.sort((a, b) => {
+          let aV = a[property], bV = b[property];
+          if (type === 'numeric') return dir === 'asc' ? aV - bV : bV - aV;
+          return dir === 'asc' ? String(aV).localeCompare(String(bV)) : String(bV).localeCompare(String(aV));
+        });
+        this.drawBody();
+      }
+
+      drawBody() {
+        this.tbody.innerHTML = '';
+        if (!this.records.length) {
+          this.tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding:20px; color:#888;">No runs found.</td></tr>';
+          return;
+        }
+
+        this.records.forEach((record, idx) => {
+          const mainTr = document.createElement('tr');
+          mainTr.className = 'map-row';
+          
+          // Handle display formatting based on metric (Speed vs Jumps vs Completions)
+          const displayVal = this.metricField === 'record_time' 
+            ? formatTime(record[this.metricField]) 
+            : record[this.metricField];
+
+          if (this.viewType === 'all') {
+            const compNum = this.records.length - idx;
+            mainTr.innerHTML = `<td>${compNum}</td><td>${formatDate(record.timestamp)}</td><td>${record.capping_player}</td><td><strong>${displayVal}</strong></td>`;
+          } else if (this.viewType === 'history') {
+            const diffStr = record.shaved ? `<small style="color:#4ec9b0">(-${this.metricField==='record_time'?(record.shaved/1000).toFixed(2)+'s':record.shaved})</small>` : '';
+            mainTr.innerHTML = `<td><strong>${displayVal}</strong> ${diffStr}</td><td>${record.capping_player}</td><td>${formatDate(record.timestamp)}</td><td>${formatDuration(record.duration || 0)}</td>`;
+          } else {
+            // Leaderboard row (Removed total_caps static column)
+            const rank = idx + 1;
+            mainTr.innerHTML = `<td>${rank}</td><td>${record.capping_player}</td><td><strong>${displayVal}</strong></td>`;
+          }
+
+          const detailTr = document.createElement('tr');
+          detailTr.className = 'detail-row';
+          detailTr.style.display = 'none';
+          
+          const pList = record.players ? record.players.map(p => getMapsPlayerDisplayName(p)).join(', ') : record.capping_player;
+          const replayHtml = record.uuid ? `<a href="https://tagpro.koalabeast.com/replays?uuid=${record.uuid}" target="_blank" style="color:#4da6ff; text-decoration:none;">▶ Watch Replay</a>` : '<span style="color:#666">No Replay</span>';
+          
+          detailTr.innerHTML = `<td colspan="5" style="padding:15px; border-bottom: 1px solid #444;"><div style="margin-bottom:8px;"><span style="color:#888">Players:</span> ${pList}</div>${replayHtml}</td>`;
+
+          mainTr.addEventListener('click', () => {
+            const isOpen = detailTr.style.display === 'table-row';
+            detailTr.style.display = isOpen ? 'none' : 'table-row';
+            mainTr.style.backgroundColor = isOpen ? '' : '#2a2a2a';
+          });
+
+          this.tbody.appendChild(mainTr);
+          this.tbody.appendChild(detailTr);
+        });
+      }
+    }
+
+    const runTable = new RunTableModule('historyTableHead', 'historyTableBody');
+
+    // --- Data Logic ---
+    function computeWRHistory(runs, field) {
+      const sorted = [...runs].sort((a, b) => a.timestamp - b.timestamp);
+      let best = Infinity;
+      const history = [];
+      sorted.forEach(run => {
+        if (run[field] < best) {
+          best = run[field];
+          history.push({...run});
+        }
+      });
+      history.reverse();
+      const now = Date.now();
+      history.forEach((run, i) => {
+        const brokenBy = history[i-1] ? history[i-1].timestamp : null;
+        run.duration = brokenBy ? brokenBy - run.timestamp : now - run.timestamp;
+        if (history[i+1]) run.shaved = history[i+1][field] - run[field];
+      });
+      return history;
+    }
+
+    function computeLeaderboard(runs, field) {
+      const pbs = {};
+      runs.forEach(run => {
+        if (!pbs[run.capping_player]) {
+          pbs[run.capping_player] = {...run, total_caps: 0};
+        }
+        
+        // Count total completions for the player
+        pbs[run.capping_player].total_caps++;
+
+        // Keep the best run for the specific field (if it's not completions)
+        if (field !== 'total_caps' && run[field] < pbs[run.capping_player][field]) {
+           const currentCaps = pbs[run.capping_player].total_caps;
+           pbs[run.capping_player] = {...run, total_caps: currentCaps};
+        }
+      });
+
+      const list = Object.values(pbs);
+      
+      // Sort logic depends on the field
+      if (field === 'total_caps') {
+        list.sort((a, b) => b.total_caps - a.total_caps); // Highest completions first
+      } else {
+        list.sort((a, b) => a[field] - b[field]); // Lowest time/jumps first
+      }
+      
+      return list;
+    }
+
+    // --- Large Preview Modal ---
+    function showLargePreview(mapName, imageSrc) {
+      const modal = document.createElement('div');
+      modal.className = 'preview-modal';
+      const modalContent = document.createElement('div');
+      modalContent.className = 'modal-content';
+      const img = document.createElement('img');
+      img.src = imageSrc;
+      img.alt = `Large preview of ${mapName}`;
+      const closeButton = document.createElement('div');
+      closeButton.innerHTML = '×';
+      closeButton.className = 'close-button';
+      const mapNameLabel = document.createElement('div');
+      mapNameLabel.textContent = mapName;
+      mapNameLabel.className = 'map-name-label';
+      modalContent.appendChild(img);
+      modalContent.appendChild(closeButton);
+      modalContent.appendChild(mapNameLabel);
+      modal.appendChild(modalContent);
+      const closeModal = () => document.body.removeChild(modal);
+      modal.addEventListener('click', closeModal);
+      closeButton.addEventListener('click', (e) => { e.stopPropagation(); closeModal(); });
+      const handleEscape = (e) => {
+        if (e.key === 'Escape') { closeModal(); document.removeEventListener('keydown', handleEscape); }
+      };
+      document.addEventListener('keydown', handleEscape);
+      document.body.appendChild(modal);
+    }
+
+    // --- Map Page Render ---
+    function renderMapPage() {
+      const mapId = window.location.hash.replace('#/map/', '').replace('#', '') || (new URLSearchParams(window.location.search)).get('map_id');
+      const map = state.maps[mapId];
+      if (!map) return;
+
+      const meta = state.mapMetadata[mapId] || {};
+      const preset = state.presets[map.map_name] || meta.preset || '—';
+
+      document.getElementById('mapName').textContent = map.map_name;
+      document.getElementById('mapAuthor').textContent = meta.author || map.map_author || '—';
+      document.getElementById('mapIdLabel').textContent = map.map_id;
+      document.getElementById('mapDifficulty').textContent = meta.difficulty || '—';
+      document.getElementById('mapBallsReq').textContent = meta.balls_req || '—';
+      document.getElementById('mapType').textContent = meta.grav_or_classic || '—';
+      document.getElementById('mapPreset').textContent = preset;
+
+      const copyBtn = document.getElementById('copyPresetBtn');
+      const launchBtn = document.getElementById('launchGroupBtn');
+
+      copyBtn.onclick = () => {
+        if (preset !== '—') {
+          navigator.clipboard.writeText(preset).then(() => {
+            copyBtn.textContent = 'Copied!';
+            copyBtn.classList.add('copied');
+            setTimeout(() => { copyBtn.textContent = 'Copy Preset'; copyBtn.classList.remove('copied'); }, 2000);
+          });
+        }
+      };
+
+      launchBtn.onclick = () => {
+        if (preset !== '—') launchTagproGroup(preset);
+      };
+
+      const previewUrl = `${PREVIEW_BASE}${map.map_id}.jpeg`;
+      const img = document.getElementById('mapPreviewImg');
+      img.src = previewUrl;
+      img.onload = () => { img.style.display='block'; document.getElementById('mapPreviewStatus').style.display='none'; };
+      img.onclick = () => showLargePreview(map.map_name, previewUrl);
+
+      const runPool = state.playerType === 'solo' ? map.solo : map.multi;
+      
+      // Determine the metric to use
+      let field, label;
+      if (state.metricType === 'speed') {
+        field = 'record_time'; label = 'Time';
+      } else if (state.metricType === 'jumps') {
+        field = 'total_jumps'; label = 'Jumps';
+      } else if (state.metricType === 'completions') {
+        field = 'total_caps'; label = 'Completions';
+      }
+
+      if (state.viewType === 'all') {
+        runTable.setupHeaders([
+          { label: 'Comp #', width: '15%', sort: 'timestamp', type: 'numeric' },
+          { label: 'Date', width: '25%', sort: 'timestamp', type: 'numeric' },
+          { label: 'Capping Player', width: '40%', sort: 'capping_player', type: 'string' },
+          { label: label, width: '20%', sort: field, type: 'numeric' }
+        ]);
+        runTable.render([...runPool].sort((a,b) => b.timestamp - a.timestamp), field, 'all');
+      } else if (state.viewType === 'history') {
+        runTable.setupHeaders([
+          { label: label, width: '25%', sort: field, type: 'numeric' },
+          { label: 'Capping Player', width: '30%', sort: 'capping_player', type: 'string' },
+          { label: 'Set Date', width: '25%', sort: 'timestamp', type: 'numeric' },
+          { label: 'Held For', width: '20%', sort: 'duration', type: 'numeric' }
+        ]);
+        runTable.render(computeWRHistory(runPool, field), field, 'history');
+      } else {
+        // Leaderboard Headers
+        runTable.setupHeaders([
+          { label: 'Rank', width: '15%', sort: null },
+          { label: 'Capping Player', width: '55%', sort: 'capping_player', type: 'string' },
+          { label: state.metricType === 'completions' ? 'Completions' : `Best ${label}`, width: '30%', sort: field, type: 'numeric' }
+        ]);
+        runTable.render(computeLeaderboard(runPool, field), field, 'leaderboard');
+      }
+    }
+
+    function updateUI() {
+      // Toggle visibility of the Completions tab
+      const compToggle = document.getElementById('completionsToggle');
+      if (state.viewType === 'leaderboard') {
+        compToggle.style.display = 'inline-block';
+      } else {
+        compToggle.style.display = 'none';
+        // Reset to default if user leaves leaderboard view while completions is selected
+        if (state.metricType === 'completions') {
+          state.metricType = 'speed';
+        }
+      }
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        const val = btn.getAttribute('data-view') || btn.getAttribute('data-type') || btn.getAttribute('data-metric');
+        const active = [state.viewType, state.playerType, state.metricType].includes(val);
+        btn.style.background = active ? '#2a2a2a' : 'transparent';
+        btn.style.color = active ? '#fff' : '#888';
+        // Replaced static transparent border with conditional background/text logic since border is now on the parent wrapper
+        btn.style.border = active ? '1px solid #555' : '1px solid transparent';
+      });
+      renderMapPage();
+    }
+
+    async function init() {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          if (btn.classList.contains('view-tab')) state.viewType = btn.dataset.view;
+          if (btn.classList.contains('type-tab')) state.playerType = btn.dataset.type;
+          if (btn.classList.contains('metric-tab')) state.metricType = btn.dataset.metric;
+          updateUI();
+        });
+      });
+
+      // Load presets + metadata
+      const [presets, mapMetadata] = await Promise.all([
+        fetch('./presets.json').then(r => r.json()),
+        fetch('./map_metadata.json').then(r => r.json())
+      ]);
+      state.presets = presets;
+      state.mapMetadata = mapMetadata;
+
+      // Using the imported dataUrl
+      const res = await fetch(dataUrl);
+      const data = await res.json();
+      data.forEach(run => {
+        if (!state.maps[run.map_id]) state.maps[run.map_id] = { ...run, solo: [], multi: [] };
+        if (run.is_solo) state.maps[run.map_id].solo.push(run);
+        else state.maps[run.map_id].multi.push(run);
+      });
+
+      window.addEventListener('hashchange', renderMapPage);
+      updateUI();
+    }
+    init();
+  </script>
+
+  <style>
+    body { background: #121212; color: #eee; font-family: sans-serif; margin: 0; }
+  </style>
+</body>
+</html>
