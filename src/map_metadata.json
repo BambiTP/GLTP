@@ -10264,14 +10264,14 @@
         "allow_from_grab": false,
         "laps": false
     },
-    "96860": {
+    "97984": {
         "map_name": "[One Shot] Gravity Challenge (85% Complete)",
         "author": "QX",
         "difficulty": "NULL",
         "difficultyFinal": "TBD",
         "balls_req": "1",
-        "preset": "gZMefJQKggtaiaaaJyaraaksaaamaaaHpzE",
-        "map_id": "96860",
+        "preset": "gZMefKmqggtaiaaaJyaraaksaaamaaaHpzE",
+        "map_id": "97984",
         "equivalent_map_ids": [],
         "categories": [
             "Solo",
@@ -10440,7 +10440,7 @@
     "97126": {
         "map_name": "The Challenge of Secrets [GLTP]",
         "author": "Danny & FWO",
-        "difficulty": "2.9",
+        "difficulty": "3.2",
         "difficultyFinal": "2.9",
         "balls_req": "2",
         "preset": "gZMefJBJggtaiaaaJyaraaksaaumaaYYE",
@@ -10484,7 +10484,7 @@
     "96079": {
         "map_name": "NGB [Gravity Buddy]",
         "author": "Canvas",
-        "difficulty": "4.5",
+        "difficulty": "4.0",
         "difficultyFinal": "TBD",
         "balls_req": "2",
         "preset": "gZMefJBJggtaiaaaJyaraaksaaumaaYYE",
@@ -10570,7 +10570,7 @@
     "97371": {
         "map_name": "Tower -1",
         "author": "Snack & BallSaget",
-        "difficulty": "6.3",
+        "difficulty": "7.2",
         "difficultyFinal": "TBD",
         "balls_req": "2",
         "preset": "gZMefKaAggtacbiaaaJyaraaasaaamaaaQiYpaG",
@@ -10592,7 +10592,7 @@
     "97397": {
         "map_name": "The incident 2001",
         "author": "Team Tanka",
-        "difficulty": "NULL",
+        "difficulty": "3.4",
         "difficultyFinal": "TBD",
         "balls_req": "3",
         "preset": "gZMefKaBggtacbiaaaJyaraaasaaamaaaQiYpa",
