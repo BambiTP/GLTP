@@ -68,11 +68,14 @@ def get_maps():
         for conf in csv.DictReader(csv_file)
         if conf["Group Preset"].strip()
     ]
-    illegal_maps = [
-        m for m in map_data if
-        not m["preset"].strip() or
-        not m["map_id"] or
-        inject_map_id_into_preset(m["preset"], m["map_id"]) != m["preset"]
-    ]
+
+    illegal_map_ids = {
+        m["map_id"]
+        for m in map_data
+        if not m["preset"].strip()
+        or not m["map_id"]
+        or inject_map_id_into_preset(m["preset"], m["map_id"]) != m["preset"]
+    }
+
+    illegal_maps = [m for m in map_data if m["map_id"] in illegal_map_ids]
     print("illegal maps:", illegal_maps)
-    return [m for m in map_data if m["map_id"] not in [im["map_id"] for im in illegal_maps]]
