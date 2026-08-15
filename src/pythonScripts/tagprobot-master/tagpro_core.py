@@ -1,3 +1,4 @@
+import http.client
 import http.cookiejar
 import logging
 from pathlib import Path
@@ -145,6 +146,9 @@ class WebSocketHandler:
 
 
 class TagProSession:
+    READ_CHUNK_BYTES = 64 * 1024
+    GET_READ_ATTEMPTS = 3
+
     def __init__(self, *, base_url, cookie=None):
         self.base_url = base_url.rstrip("/")
         self.initial_cookie = cookie
@@ -164,6 +168,7 @@ class TagProSession:
         return "; ".join(parts)
 
     def request(self, method, path, data=None, *, send_cookies=True):
+        method = method.upper()
         body = (
             urllib.parse.urlencode(data).encode()
             if data is not None
@@ -183,16 +188,61 @@ class TagProSession:
             urllib.parse.urljoin(self.base_url + "/", path),
             data=body,
             headers=headers,
-            method=method.upper(),
+            method=method,
         )
         open_url = self.opener.open if send_cookies else urllib.request.urlopen
+        attempts = self.GET_READ_ATTEMPTS if method == "GET" else 1
 
-        with open_url(request, timeout=15) as response:
-            charset = response.headers.get_content_charset() or "utf-8"
-            return (
-                response.read().decode(charset, "replace"),
-                response.geturl(),
+        for attempt in range(attempts):
+            with open_url(request, timeout=15) as response:
+                charset = response.headers.get_content_charset() or "utf-8"
+                body, complete, expected = self._read_response(response)
+                final_url = response.geturl()
+
+            if complete:
+                return body.decode(charset, "replace"), final_url
+
+            if attempt + 1 < attempts:
+                warnings.warn(
+                    f"Incomplete response from TagPro for {method} {path} "
+                    f"({len(body)} of {expected} bytes); retrying.",
+                    stacklevel=2,
+                )
+                time.sleep(0.5 * (attempt + 1))
+                continue
+
+            warnings.warn(
+                f"Using incomplete response from TagPro for {method} {path} "
+                f"({len(body)} of {expected} bytes).",
+                stacklevel=2,
             )
+            return body.decode(charset, "replace"), final_url
+
+        raise RuntimeError(f"Could not read TagPro response for {method} {path}.")
+
+    def _read_response(self, response):
+        expected = response.headers.get("Content-Length")
+        try:
+            expected = int(expected) if expected is not None else None
+        except ValueError:
+            expected = None
+
+        chunks = []
+        try:
+            while True:
+                chunk = response.read(self.READ_CHUNK_BYTES)
+                if not chunk:
+                    break
+                chunks.append(chunk)
+        except http.client.IncompleteRead as error:
+            if error.partial:
+                chunks.append(error.partial)
+            body = b"".join(chunks)
+            return body, False, expected or "unknown"
+
+        body = b"".join(chunks)
+        complete = expected is None or len(body) >= expected
+        return body, complete, expected or "unknown"
 
 
 class TagProCore:
