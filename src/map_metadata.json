@@ -10609,5 +10609,27 @@
         "allow_from_spawn": false,
         "allow_from_grab": false,
         "laps": false
+    },
+    "98925": {
+        "map_name": "Simple grav initial lock mech",
+        "author": "Anonymous",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "3",
+        "preset": "gZMefKEvggtaiaaaJyaraakYEG",
+        "map_id": "98925",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "first try"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
     }
 }
