@@ -184,6 +184,7 @@ class GravityBot(TagProCore):
         self.settings = dict(config["map_defaults"])
         self.current_preset = None
         self.current_game_preset = self.launching_at = None
+        self.game_info_sent = False
 
         values = {
             "discord_link": config.get("discord_link", ""),
@@ -205,7 +206,7 @@ class GravityBot(TagProCore):
         )
         self.group.game.hook(
             "time",
-            lambda _data: self.group.send_chat(map_details_str(self.current_game_preset)),
+            self.handle_game_start,
             match={"state": 1},
         )
         self.group.register_task(self.handle_group, 2)
@@ -237,6 +238,9 @@ class GravityBot(TagProCore):
             self.current_preset = self.launching_at = None
             return
 
+        if self.group.game_active and not self.game_info_sent:
+            return
+
         if not (self.current_preset or self.launching_at):
             maps = self.legal_maps(self.settings)
             if not maps:
@@ -249,11 +253,19 @@ class GravityBot(TagProCore):
 
     def handle_game(self, game_id):
         if game_id is not None:
-            self.current_game_preset = self.current_preset
+            self.current_game_preset = self.current_game_preset or self.current_preset
             self.current_preset = self.launching_at = None
+            self.game_info_sent = False
         elif self.current_game_preset:
             self.group.send_chat(self.config["end_message"])
             self.current_game_preset = None
+            self.game_info_sent = False
+
+    def handle_game_start(self, _data):
+        if self.game_info_sent:
+            return
+        self.game_info_sent = True
+        self.group.send_chat(map_details_str(self.current_game_preset))
 
     def handle_chat(self, msg, sender, auth):
         if msg in self.config["ignored_messages"]:
@@ -386,6 +398,8 @@ class GravityBot(TagProCore):
             return
 
         self.launching_at = time.time()
+        self.current_game_preset = self.current_preset
+        self.game_info_sent = False
         if end_current:
             self.group.end_game()
         self.group.launch_game()
