@@ -10199,7 +10199,7 @@
     "96719": {
         "map_name": "Hall of Ball (reversed) (Official FWO)",
         "author": "Jean Valjean & FWO",
-        "difficulty": "NULL",
+        "difficulty": "2.9",
         "difficultyFinal": "TBD",
         "balls_req": "1",
         "preset": "gZMefJNZggtaiaaaJraaksaaamaaaE",
@@ -10623,6 +10623,94 @@
             "Solo",
             "Checkpoint",
             "first try"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99593": {
+        "map_name": "Hall of Ball (reversed) (patched) (Official FWO)",
+        "author": "Jean Valjean & FWO",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKRnggtaiaaaJraaksaaamaaaE",
+        "map_id": "99593",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "Reversed"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99587": {
+        "map_name": "Counterpoint",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKRhggtaiaaaJraaksaaamaaaVadSUadSE",
+        "map_id": "99587",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Buddy",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99580": {
+        "map_name": "Afterimage Relay",
+        "author": "OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKRaggtaiaaayaraakVadSUadSE",
+        "map_id": "99580",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99583": {
+        "map_name": "TFW Falling But No Jumps",
+        "author": "SB Army SB",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKRdggtaiaaayaanraakmaakuaaaVadSUadSHpzTbpaE",
+        "map_id": "99583",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "0 jump"
         ],
         "grav_or_classic": "Grav",
         "caps_to_win": "1",
