@@ -11071,5 +11071,181 @@
         "allow_from_spawn": false,
         "allow_from_grab": false,
         "laps": false
+    },
+    "99884": {
+        "map_name": "Parallax",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKWSggtaiaaaJraaksaaamaaaVadSUadSHpzEqny",
+        "map_id": "99884",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99885": {
+        "map_name": "Escapement",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKWTggtaiaaaJraaksaaamaaaVadSUadSHpzEqny",
+        "map_id": "99885",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99886": {
+        "map_name": "Riptide",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKWUggtaiaaaJraaksaaamaaaVadSUadSHpzEqny",
+        "map_id": "99886",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99893": {
+        "map_name": "Glasshouse",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKXbggtaiaaaJraaksaaamaaaVadSUadSHpzEqny",
+        "map_id": "99893",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99894": {
+        "map_name": "Kiln Nine",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKXcggtaiaaaJraaksaaamaaaVadSUadSHpzEqny",
+        "map_id": "99894",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99895": {
+        "map_name": "Plumbline",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKXdggtaiaaaJraaksaaamaaaVadSUadSHpzEqny",
+        "map_id": "99895",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99897": {
+        "map_name": "Afterimage",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKXfggtaiaaaJraaksaaamaaaVadSUadSHpzEqny",
+        "map_id": "99897",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99898": {
+        "map_name": "Tide Clock",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKXgggtaiaaaJraaksaaamaaaVadSUadSHpzEqny",
+        "map_id": "99898",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
     }
 }
