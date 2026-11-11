@@ -11750,5 +11750,93 @@
         "allow_from_spawn": false,
         "allow_from_grab": false,
         "laps": false
+    },
+    "99913": {
+        "map_name": "Night Shift at the Orrery",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKXvggtaiaaaJraaksaaamaaaVadSUadSHpzE",
+        "map_id": "99913",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99909": {
+        "map_name": "Switchboard: Flywheel",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKXrggtaiaaaJraaksaaamaaaVadSUadSHpzE",
+        "map_id": "99909",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99911": {
+        "map_name": "Slipstream Observatory III",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKXtggtaiaaaJraaksaaamaaaVadSUadSHpzE",
+        "map_id": "99911",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "99912": {
+        "map_name": "Latchkey III",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKXuggtaiaaaJraaksaaamaaaVadSUadSHpzE",
+        "map_id": "99912",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Checkpoint",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
     }
 }
