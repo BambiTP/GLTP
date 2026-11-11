@@ -11662,5 +11662,93 @@
         "allow_from_spawn": false,
         "allow_from_grab": false,
         "laps": false
+    },
+    "100046": {
+        "map_name": "Impulse Atlas 13",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKZYggtaiaaaJraaksaaamaaaVadSUadSHpzE",
+        "map_id": "100046",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Anygate",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "100047": {
+        "map_name": "Impulse Atlas 14",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefKZZggtaiaaaJraaksaaamaaaVadSUadSHpzE",
+        "map_id": "100047",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Anygate",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "100048": {
+        "map_name": "Impulse Atlas 15",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefLaaggtaiaaaJraaksaaamaaaVadSUadSHpzE",
+        "map_id": "100048",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Anygate",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
+    },
+    "100075": {
+        "map_name": "Impulse Atlas 12 [part 2]",
+        "author": "SBArmySB & OpenAI",
+        "difficulty": "NULL",
+        "difficultyFinal": "TBD",
+        "balls_req": "1",
+        "preset": "gZMefLaBggtaiaaaJraaksaaamaaaVadSUadSHpzE",
+        "map_id": "100075",
+        "equivalent_map_ids": [],
+        "categories": [
+            "Solo",
+            "Anygate",
+            "AI"
+        ],
+        "grav_or_classic": "Grav",
+        "caps_to_win": "1",
+        "completion_type": "individual",
+        "allow_blue_caps": false,
+        "allow_from_spawn": false,
+        "allow_from_grab": false,
+        "laps": false
     }
 }
